@@ -133,6 +133,11 @@ ScreenManager
             TabbedPanelItem
                 id: tab_maps
                 text: 'About'
-                RstDocument
+                Label:
+                    padding: dp(12), dp(12)
+                    text_size: self.size
+                    valign: 'top'
+                    halign: 'justify'
+                    markup: True
                     text: app.about_text
     
