@@ -24,6 +24,13 @@
     LeftAlignedLabel:
         text: root.spkr_detail
 
+<TabbedPanelItem>
+    color: (59./256., 205./256., 155./256., 1) if self.state == 'down' else (1, 1, 1, 1)
+    background_color:62./256., 70./256., 81./256., 1
+
+    background_normal:''
+    background_down: ''
+
 ScreenManager
     Screen
         TabbedPanel:
@@ -33,9 +40,8 @@ ScreenManager
                 text: 'Schedule'
                 TabbedPanel
                     id: panel_schedule
-                    on_parent: if self.parent: tab_audi_3.trigger_action()
-                    do_default_tab: False
                     tab_pos: 'left_top'
+                    default_tab: tab_audi_3
                     TabbedPanelItem
                         id: tab_audi_3
                         text: "Audi 3"
