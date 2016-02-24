@@ -119,10 +119,12 @@ ScreenManager
                 StencilView
                     id: stencil_maps
                     Image:
+                        on_touch_down: if args[1].is_double_tap: sctr_map.center = stencil_maps.center
                         size: stencil_maps.size
                         allow_stretch: True
                         source: 'data/center.jpg'
                     Scatter:
+                        id: sctr_map
                         size_hint: None, None
                         size: map_img.size
                         Image
