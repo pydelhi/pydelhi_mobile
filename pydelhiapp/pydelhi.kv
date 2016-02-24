@@ -2,118 +2,118 @@
 
 <GridH@GridLayout>
     size_hint: 1, None
-	height: self.minimum_height
+    height: self.minimum_height
 
 <EventItemDetail@Popup>
     separator_color: active_text_color
-	links: ''
-	speaker_name: ''
-	description: ''
-	GridH:
-	    LeftAlignedLabel
-		    text: root.links
-		LeftAlignedLabel
-		LeftAlignedLabel
+    links: ''
+    speaker_name: ''
+    description: ''
+    GridH:
+        LeftAlignedLabel
+            text: root.links
+        LeftAlignedLabel
+        LeftAlignedLabel
         LeftAlignedLabel
 
 
 <LeftAlignedLabel@Label>
     padding: dp(12), dp(12)
-	text_size: self.size
-	valign: 'middle'
-	halign: 'left'
-	
+    text_size: self.size
+    valign: 'middle'
+    halign: 'left'
+    
 <MicImg@Widget>
     canvas:
-	    Ellipse:
-		    source: 'data/mic.jpg'
-			pos:self.pos
-			size:self.size
+        Ellipse:
+            source: 'data/mic.jpg'
+            pos:self.pos
+            size:self.size
 
 <EventItem@BoxLayout>
     spkr_detail: 'Dummy Speaker'
-	title: 'Dummy Title'
-	time: '9:00 - 10:00'
-	size_hint: 1, None
-	
-	MicImg
-	    size_hint_x: None
-		width: dp(100)
-	BoxLayout
-	    height: dp(100)
-		canvas.before:
-		    Color:
-			    rgba: 39./256., 115./256., 90./256., 1
-			Rectangle:
-			    pos: self.pos
-				size: self.size
-		orientation: 'vertical'
-		LeftAlignedLabel:
-		    text: root.time
-		LeftAlignedLabel:
-		    text: root.title
-		LeftAlignedLabel:
-		    text: root.spkr_detail
+    title: 'Dummy Title'
+    time: '9:00 - 10:00'
+    size_hint: 1, None
+    
+    MicImg
+        size_hint_x: None
+        width: dp(100)
+    BoxLayout
+        height: dp(100)
+        canvas.before:
+            Color:
+                rgba: 39./256., 115./256., 90./256., 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        orientation: 'vertical'
+        LeftAlignedLabel:
+            text: root.time
+        LeftAlignedLabel:
+            text: root.title
+        LeftAlignedLabel:
+            text: root.spkr_detail
 
 <TabbedPanelItem>
     color: active_text_color if self.state == 'down' else (1, 1, 1, 1)
-	background_color:62./256., 70./256., 81./256., 1
+    background_color:62./256., 70./256., 81./256., 1
 
     background_normal:''
     background_down: ''
 
 ScreenManager
     Screen
-	    TabbedPanel:
+        TabbedPanel:
             do_default_tab: False
             TabbedPanelItem:
                 id: tab_schedule
-				text: 'Schedule'
-				TabbedPanel
-				    id: panel_schedule
-					tab_pos: 'left_top'
-					default_tab: tab_audi_3
-					TabbedPanelItem
-					    id: tab_audi_3
-						text: "Audi 3"
-						ScrollView
-						    GridLayout
-							    cols: 1
-								spacing: dp(3)
-								size_hint: 1, None
-								height: self.minimum_height
-								EventItem
-								    spkr_detail: 'Kiran Jonnalagadda'
-									title: 'KeyNote'
-									time: '10:00AM - 10:45AM'
-								EventItem
-								    spkr_detail: 'Workshop by Prof. Kannan Moudgalya'
-									title: 'FOSSEE/Spoken Tutorial'
-									time: '10:45AM - 12:30PM'
-								EventItem
-								    spkr_detail: 'Talk by Mayank Jain'
-									title: 'REAL TIME WEB APPLICATION USING DJANGO, TORNADO AND SOCKJS'
-									time: '12:30PM - 1:00PM'
-							    EventItem
-								    spkr_detail: 'Talk by Mohammad Asad Siddiqui'
-									title: 'DEVELOPMENT OF AN ACADEMIC CLOUD INFRASTRUCTURE AT IIT DELHI'
-									time: '1:30PM - 2:00PM'
+                text: 'Schedule'
+                TabbedPanel
+                    id: panel_schedule
+                    tab_pos: 'left_top'
+                    default_tab: tab_audi_3
+                    TabbedPanelItem
+                        id: tab_audi_3
+                        text: "Audi 3"
+                        ScrollView
+                            GridLayout
+                                cols: 1
+                                spacing: dp(3)
+                                size_hint: 1, None
+                                height: self.minimum_height
                                 EventItem
-								    spkr_detail: 'TBA'
-									title: 'Workshop'
-									time: '2:15PM - 4:00PM'
+                                    spkr_detail: 'Kiran Jonnalagadda'
+                                    title: 'KeyNote'
+                                    time: '10:00AM - 10:45AM'
                                 EventItem
-								    spkr_detail: 'Talk by Arulalan T'
-									title: 'ADVANTAGES OF PYTHON IN ATMOSPHERIC AND OCEANIC SCIENCES'
-									time: '4:00PM - 4:30PM'
+                                    spkr_detail: 'Workshop by Prof. Kannan Moudgalya'
+                                    title: 'FOSSEE/Spoken Tutorial'
+                                    time: '10:45AM - 12:30PM'
                                 EventItem
-								    spkr_detail: 'Talk by Sridhar Rao'
-									title: 'PYTHON IN THE SDN WORLD'
-									time: '4:50PM - 5:20PM'
+                                    spkr_detail: 'Talk by Mayank Jain'
+                                    title: 'REAL TIME WEB APPLICATION USING DJANGO, TORNADO AND SOCKJS'
+                                    time: '12:30PM - 1:00PM'
                                 EventItem
-								    spkr_detail: 'Dummy Speaker'
-									title: 'Dummy Title'
-									time: '9:00 - 10:00'
+                                    spkr_detail: 'Talk by Mohammad Asad Siddiqui'
+                                    title: 'DEVELOPMENT OF AN ACADEMIC CLOUD INFRASTRUCTURE AT IIT DELHI'
+                                    time: '1:30PM - 2:00PM'
+                                EventItem
+                                    spkr_detail: 'TBA'
+                                    title: 'Workshop'
+                                    time: '2:15PM - 4:00PM'
+                                EventItem
+                                    spkr_detail: 'Talk by Arulalan T'
+                                    title: 'ADVANTAGES OF PYTHON IN ATMOSPHERIC AND OCEANIC SCIENCES'
+                                    time: '4:00PM - 4:30PM'
+                                EventItem
+                                    spkr_detail: 'Talk by Sridhar Rao'
+                                    title: 'PYTHON IN THE SDN WORLD'
+                                    time: '4:50PM - 5:20PM'
+                                EventItem
+                                    spkr_detail: 'Dummy Speaker'
+                                    title: 'Dummy Title'
+                                    time: '9:00 - 10:00'
                     TabbedPanelItem
                         text: "Lecture Hall 1"
 
