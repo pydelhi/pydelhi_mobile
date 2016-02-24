@@ -1,6 +1,10 @@
+#:import Animation kivy.animation.Animation
+#:import webbrowser webbrowser
 #:set active_text_color 59./256., 205./256., 155./256., 1
+#:set background_color 62./256., 70./256., 81./256., 1
 
 <GridH@GridLayout>
+    cols: 1
     size_hint: 1, None
     height: self.minimum_height
 
@@ -18,72 +22,106 @@
 
 
 <LeftAlignedLabel@Label>
-    padding: dp(12), dp(12)
-    text_size: self.size
+    padding: dp(12), dp(4)
+    text_size: self.width, None
+    size_hint_y: None
+    height: self.texture_size[1]
     valign: 'middle'
     halign: 'left'
-    
-<MicImg@Widget>
-    canvas:
-        Ellipse:
-            source: 'data/mic.jpg'
-            pos:self.pos
-            size:self.size
 
-<EventItem@BoxLayout>
+<RightAlignedLabel@LeftAlignedLabel>
+    halign: 'right'
+
+<EventItem@GridH>
     spkr_detail: 'Dummy Speaker'
     title: 'Dummy Title'
     time: '9:00 - 10:00'
-    size_hint: 1, None
-    
-    MicImg
-        size_hint_x: None
-        width: dp(100)
-    BoxLayout
-        height: dp(100)
-        canvas.before:
-            Color:
-                rgba: 39./256., 115./256., 90./256., 1
-            Rectangle:
-                pos: self.pos
-                size: self.size
-        orientation: 'vertical'
-        LeftAlignedLabel:
-            text: root.time
-        LeftAlignedLabel:
-            text: root.title
-        LeftAlignedLabel:
-            text: root.spkr_detail
+    orientation: 'vertical'
+    canvas.before:
+        Color:
+            rgba: 39./256., 115./256., 90./256., 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    RightAlignedLabel:
+        text: root.time
+        font_size: '12dp'
+    LeftAlignedLabel:
+        text: root.title
+    LeftAlignedLabel:
+        text: root.spkr_detail
 
-<TabbedPanelItem>
+<TabbedPanelHeader>
     color: active_text_color if self.state == 'down' else (1, 1, 1, 1)
-    background_color:62./256., 70./256., 81./256., 1
-
-    background_normal:''
+    background_color: background_color
+    size_hint_x: None
+    width: (self.texture_size[0] + dp(12)) if self.texture else dp(100)
+    background_normal: ''
     background_down: ''
+    alpha: 0
+    on_state:
+        Animation.cancel_all(self)
+        Animation(alpha = 1 if self.state == 'down' else 0).start(self)
+    canvas.after:
+        Color:
+            rgba: 1, 1, 1, self.alpha
+        BorderImage:
+            border: 4, 4, 4, 4
+            display_border: dp(1), dp(1), dp(1), dp(1)
+            source: 'data/but_overlay.png'
+            size: self.size
+            pos: self.pos
 
-ScreenManager
+<PyDelButton@Button>
+    default: False
+    background_normal: 'data/but_{}.png'.format('light' if self.default else 'drk')
+    background_down: 'data/but_{}.png'.format('drk' if self.default else 'light')
+
+
+BoxLayout:
+    canvas.before:
+        Color:
+            rgba: background_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    orientation: 'vertical'
+    ActionBar
+        backgroun_image: ''
+        background_color: 1, 1, 1, .1
+        ActionView
+            ActionPrevious
+                with_previous: False
+                app_icon: 'data/logo.png'
+            ActionButton
+                text: app.time_left
     Screen
         TabbedPanel:
             do_default_tab: False
+            tab_width: None
             TabbedPanelItem:
                 id: tab_schedule
                 text: 'Schedule'
                 TabbedPanel
                     id: panel_schedule
                     tab_pos: 'left_top'
-                    default_tab: tab_audi_3
+                    do_default_tab: False
+                    canvas.before:
+                        Color:
+                            rgba: background_color
+                        Rectangle:
+                            pos: self.pos
+                            size: self.size
                     TabbedPanelItem
                         id: tab_audi_3
                         text: "Audi 3"
                         ScrollView
-                            GridLayout
-                                cols: 1
+                            GridH
                                 spacing: dp(3)
                                 size_hint: 1, None
                                 height: self.minimum_height
                                 EventItem
-                                    spkr_detail: 'Kiran Jonnalagadda'
+                                    spkr_detail: 'By Kiran Jonnalagadda'
                                     title: 'KeyNote'
                                     time: '10:00AM - 10:45AM'
                                 EventItem
@@ -111,9 +149,9 @@ ScreenManager
                                     title: 'PYTHON IN THE SDN WORLD'
                                     time: '4:50PM - 5:20PM'
                                 EventItem
-                                    spkr_detail: 'Dummy Speaker'
-                                    title: 'Dummy Title'
-                                    time: '9:00 - 10:00'
+                                    spkr_detail: 'Assorted Speakers'
+                                    title: 'Ligntning Talks'
+                                    time: '5:20pm - 6:00pm'
                     TabbedPanelItem
                         text: "Lecture Hall 1"
 
@@ -154,7 +192,8 @@ ScreenManager
                 StencilView
                     id: stencil_maps
                     Image:
-                        on_touch_down: if args[1].is_double_tap: sctr_map.center = stencil_maps.center
+                        on_touch_down:
+                            if args[1].is_double_tap: Animation(center = stencil_maps.center).start(sctr_map)
                         size: stencil_maps.size
                         allow_stretch: True
                         source: 'data/center.jpg'
@@ -162,19 +201,96 @@ ScreenManager
                         id: sctr_map
                         size_hint: None, None
                         size: map_img.size
+                        on_touch_down:
+                            if args[1].is_double_tap: Animation(scale = 1 if sctr_map.scale >2 else 10).start(sctr_map)
                         Image
                             id: map_img
+                            canvas.before:
+                                Color:
+                                    rgba: active_text_color[0], active_text_color[1], active_text_color[2], .3
+                                Rectangle:
+                                    size: self.size
                             size: dp(200), dp(200)
                             allow_stretch: True
                             source: 'data/conference-map.png'
+                    PyDelButton:
+                        text: 'Open Map'
+                        pos: stencil_maps.right - self.width - dp(10), dp(10)
+                        size: dp(100), dp(40)
+                        default: True
+                        on_release:
+                            webbrowser.open('https://www.google.co.in/maps/place/Convention+Center/@28.5418632,77.1636535,16z/data=!4m5!1m2!2m1!1sJNU+Convention+center!3m1!1s0x390d1ddb55725eaf:0xdf1d45bdd082aedf?hl=en')
+
+            TabbedPanelItem
+                id: tab_sponsors
+                text: 'Sponsors'
+                BoxLayout
+                    padding: dp(4)
+                    orientation: 'vertical'
+                    spacing: dp(4)
+                    Image
+                        source: 'data/fossee.png'
+                        allow_strech: True
+                        size_hint: 1, .5
+                    GridLayout
+                        cols: 2
+                        rows: 2
+                        spacing: dp(4)
+                        #Image
+                        #Image
+                        #Image
+                        #Image
+                    PyDelButton
+                        text: 'Sponsor Us'
+                        default: True
+                        size_hint_y: None
+                        height: dp(40)
+                        on_release: webbrowser.open('https://conference.pydelhi.org/data/SponsorshipProspectus2016.pdf')
+                    PyDelButton
+                        text: 'Contact Us'
+                        size_hint_y: None
+                        height: dp(40)
+                        on_release: webbrowser.open('mailto:sponsorship@pydelhi.org')
+
+            TabbedPanelItem
+                id: tickets
+                text: 'Tickets'
+                RelativeLayout
+                    BoxLayout
+                        spacing: dp(12)
+                        pos_hint: {'center_x': .5, 'center_y': .5}
+                        size_hint: None, None
+                        size: dp(300), dp(200)
+                        orientation: 'vertical'
+                        PyDelButton
+                            id: my_ticket
+                            text: 'My tickets'
+                            on_release:
+                                webbrowser.open('https://in.explara.com/e/pydelhi-conference/')
+                        PyDelButton
+                            default: True
+                            text: 'Buy tickets'
+                            on_release:
+                                my_ticket.trigger_action()
+
             TabbedPanelItem
                 id: tab_maps
                 text: 'About'
-                Label:
-                    padding: dp(12), dp(12)
-                    text_size: self.size
-                    valign: 'top'
-                    halign: 'justify'
-                    markup: True
-                    text: app.about_text
-    
+                BoxLayout
+                    padding: dp(4)
+                    spacing: dp(4)
+                    orientation: 'vertical'
+                    LeftAlignedLabel:
+                        padding: dp(12), dp(12)
+                        markup: True
+                        text: app.about_text
+                        on_ref_press: webbrowser.open('http://pydelhi.org')
+                    Widget
+                    PyDelButton
+                        default: True
+                        text: 'History'
+                        size_hint:1, None
+                        height: dp(40)
+                        on_release:
+                            webbrowser.open('http://www.meetup.com/pydelhi/events/past/?scroll=true')
+
