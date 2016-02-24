@@ -1,17 +1,71 @@
+<LeftAlignedLabel@Label>
+    padding: dp(12), dp(12)
+    text_size: self.size
+    valign: 'middle'
+    halign: 'left'
+
+<EventItem@BoxLayout>
+    spkr_detail: 'Dummy Speaker'
+    title: 'Dummy Title'
+    time: '9:00 - 10:00'
+    size_hint: 1, None
+    height: dp(100)
+    canvas.before:
+        Color:
+            rgba: 39./256., 115./256., 90./256., 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    orientation: 'vertical'
+    LeftAlignedLabel:
+        text: root.time
+    LeftAlignedLabel:
+        text: root.title
+    LeftAlignedLabel:
+        text: root.spkr_detail
+
 ScreenManager
     Screen
         TabbedPanel:
+            do_default_tab: False
             TabbedPanelItem:
                 id: tab_schedule
                 text: 'Schedule'
-            TabbedPanelItem
-                id: tab_talks
-                text: 'Talks'
-            TabbedPanelItem
-                id: tab_workshops
-                text: 'Workshops'
+                TabbedPanel
+                    id: panel_schedule
+                    on_parent: if self.parent: tab_audi_3.trigger_action()
+                    do_default_tab: False
+                    tab_pos: 'left_top'
+                    TabbedPanelItem
+                        id: tab_audi_3
+                        text: "Audi 3"
+                        ScrollView
+                            GridLayout
+                                cols: 1
+                                spacing: dp(3)
+                                size_hint: 1, None
+                                height: self.minimum_height
+                                EventItem
+                                    title: 'Keynote'
+                                EventItem
+                                EventItem
+                                EventItem
+                                EventItem
+                                EventItem
+                                EventItem
+                                EventItem
+                                
+                        
+                    TabbedPanelItem
+                        text: "Lecture Hall 1"
+                    TabbedPanelItem
+                        text: "Lecture Hall 2"
             TabbedPanelItem
                 id: tab_maps
-                text: 'Maps'
-    
+                text: 'Location'
+            TabbedPanelItem
+                id: tab_maps
+                text: 'About'
+                RstDocument
+                    text: app.about_text
     
