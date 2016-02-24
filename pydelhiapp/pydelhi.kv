@@ -22,26 +22,38 @@
     text_size: self.size
     valign: 'middle'
     halign: 'left'
+    
+<MicImg@Widget>
+    canvas:
+        Ellipse:
+            source: 'data/mic.jpg'
+            pos:self.pos
+            size:self.size
 
 <EventItem@BoxLayout>
     spkr_detail: 'Dummy Speaker'
     title: 'Dummy Title'
     time: '9:00 - 10:00'
     size_hint: 1, None
-    height: dp(100)
-    canvas.before:
-        Color:
-            rgba: 39./256., 115./256., 90./256., 1
-        Rectangle:
-            pos: self.pos
-            size: self.size
-    orientation: 'vertical'
-    LeftAlignedLabel:
-        text: root.time
-    LeftAlignedLabel:
-        text: root.title
-    LeftAlignedLabel:
-        text: root.spkr_detail
+    
+    MicImg
+        size_hint_x: None
+        width: dp(100)
+    BoxLayout
+        height: dp(100)
+        canvas.before:
+            Color:
+                rgba: 39./256., 115./256., 90./256., 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        orientation: 'vertical'
+        LeftAlignedLabel:
+            text: root.time
+        LeftAlignedLabel:
+            text: root.title
+        LeftAlignedLabel:
+            text: root.spkr_detail
 
 <TabbedPanelItem>
     color: active_text_color if self.state == 'down' else (1, 1, 1, 1)
@@ -71,14 +83,37 @@ ScreenManager
                                 size_hint: 1, None
                                 height: self.minimum_height
                                 EventItem
-                                    title: 'Keynote'
+                                    spkr_detail: 'Kiran Jonnalagadda'
+                                    title: 'KeyNote'
+                                    time: '10:00AM - 10:45AM'
                                 EventItem
+                                    spkr_detail: 'Workshop by Prof. Kannan Moudgalya'
+                                    title: 'FOSSEE/Spoken Tutorial'
+                                    time: '10:45AM - 12:30PM'
                                 EventItem
+                                    spkr_detail: 'Talk by Mayank Jain'
+                                    title: 'REAL TIME WEB APPLICATION USING DJANGO, TORNADO AND SOCKJS'
+                                    time: '12:30PM - 1:00PM'
                                 EventItem
+                                    spkr_detail: 'Talk by Mohammad Asad Siddiqui'
+                                    title: 'DEVELOPMENT OF AN ACADEMIC CLOUD INFRASTRUCTURE AT IIT DELHI'
+                                    time: '1:30PM - 2:00PM'
                                 EventItem
+                                    spkr_detail: 'TBA'
+                                    title: 'Workshop'
+                                    time: '2:15PM - 4:00PM'
                                 EventItem
+                                    spkr_detail: 'Talk by Arulalan T'
+                                    title: 'ADVANTAGES OF PYTHON IN ATMOSPHERIC AND OCEANIC SCIENCES'
+                                    time: '4:00PM - 4:30PM'
                                 EventItem
+                                    spkr_detail: 'Talk by Sridhar Rao'
+                                    title: 'PYTHON IN THE SDN WORLD'
+                                    time: '4:50PM - 5:20PM'
                                 EventItem
+                                    spkr_detail: 'Dummy Speaker'
+                                    title: 'Dummy Title'
+                                    time: '9:00 - 10:00'
                     TabbedPanelItem
                         text: "Lecture Hall 1"
 
