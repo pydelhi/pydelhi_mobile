@@ -60,15 +60,48 @@ ScreenManager
                                 EventItem
                                 EventItem
                                 EventItem
-                                
-                        
                     TabbedPanelItem
                         text: "Lecture Hall 1"
+
+                        ScrollView
+                            GridLayout
+                                cols: 1
+                                spacing: dp(3)
+                                size_hint: 1, None
+                                height: self.minimum_height
+                                EventItem
+                                    title: 'Keynote'
+                                EventItem
+                                EventItem
+                                EventItem
+                                EventItem
+                                EventItem
+                                EventItem
                     TabbedPanelItem
                         text: "Lecture Hall 2"
+
+                        ScrollView
+                            GridLayout
+                                cols: 1
+                                spacing: dp(3)
+                                size_hint: 1, None
+                                height: self.minimum_height
+                                EventItem
+                                    title: 'Keynote'
+                                EventItem
+                                EventItem
+                                EventItem
+                                EventItem
+                                EventItem
+                                EventItem
             TabbedPanelItem
                 id: tab_maps
                 text: 'Location'
+                StencilView
+                    Scatter:
+                        Image
+                            id: map_img
+                            source: 'data/conference-map.png'
             TabbedPanelItem
                 id: tab_maps
                 text: 'About'
