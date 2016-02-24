@@ -1,3 +1,22 @@
+#:set active_text_color 59./256., 205./256., 155./256., 1
+
+<GridH@GridLayout>
+    size_hint: 1, None
+    height: self.minimum_height
+
+<EventItemDetail@Popup>
+    separator_color: active_text_color
+    links: ''
+    speaker_name: ''
+    description: ''
+    GridH:
+        LeftAlignedLabel
+            text: root.links
+        LeftAlignedLabel
+        LeftAlignedLabel
+        LeftAlignedLabel
+
+
 <LeftAlignedLabel@Label>
     padding: dp(12), dp(12)
     text_size: self.size
@@ -37,7 +56,7 @@
 			text: root.spkr_detail
 
 <TabbedPanelItem>
-    color: (59./256., 205./256., 155./256., 1) if self.state == 'down' else (1, 1, 1, 1)
+    color: active_text_color if self.state == 'down' else (1, 1, 1, 1)
     background_color:62./256., 70./256., 81./256., 1
 
     background_normal:''
@@ -133,13 +152,29 @@ ScreenManager
                 id: tab_maps
                 text: 'Location'
                 StencilView
+                    id: stencil_maps
+                    Image:
+                        on_touch_down: if args[1].is_double_tap: sctr_map.center = stencil_maps.center
+                        size: stencil_maps.size
+                        allow_stretch: True
+                        source: 'data/center.jpg'
                     Scatter:
+                        id: sctr_map
+                        size_hint: None, None
+                        size: map_img.size
                         Image
                             id: map_img
+                            size: dp(200), dp(200)
+                            allow_stretch: True
                             source: 'data/conference-map.png'
             TabbedPanelItem
                 id: tab_maps
                 text: 'About'
-                RstDocument
+                Label:
+                    padding: dp(12), dp(12)
+                    text_size: self.size
+                    valign: 'top'
+                    halign: 'justify'
+                    markup: True
                     text: app.about_text
     
