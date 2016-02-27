@@ -14,9 +14,10 @@ from datetime import datetime
 
 from kivy.app import App
 from kivy.clock import Clock
-from kivy.properties import StringProperty
+from kivy.properties import StringProperty, ObjectProperty
+from kivy.factory import Factory
 
-
+Factory.register('TouchRippleBehavior', module='uix.behaviors')
 
 
 class PyDelhiApp(App):
