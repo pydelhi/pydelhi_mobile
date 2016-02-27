@@ -44,12 +44,17 @@
             pos: self.pos
             size: self.size
     RightAlignedLabel:
-        text: root.time
-        font_size: '12dp'
+        markup: True
+        text: '[color=rgb(255,244,139)]{}[/color]'.format(root.time)
+        font_size: sp(10)
     LeftAlignedLabel:
         text: root.title
+        font_size: sp(14)
     LeftAlignedLabel:
-        text: root.spkr_detail
+        markup: True
+        text: '[color=rgb(255,244,139)]{}[/color]'.format(root.spkr_detail)
+        font_size: sp(11)
+
 
 <TabbedPanelHeader>
     color: active_text_color if self.state == 'down' else (1, 1, 1, 1)
@@ -94,7 +99,9 @@ BoxLayout:
                 with_previous: False
                 app_icon: 'data/logo.png'
             ActionButton
-                text: app.time_left
+                markup: True
+                text: '[color=rgb(255,244,139)]{}[/color]'.format(app.time_left)
+                font_size: sp(12)
     Screen
         TabbedPanel:
             do_default_tab: False
