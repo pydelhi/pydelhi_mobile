@@ -307,25 +307,23 @@ BoxLayout:
                             text: 'My tickets'
                             on_release:
                                 webbrowser.open('https://in.explara.com/e/pydelhi-conference/')
-                        PyDelButton
-                            default: True
-                            text: 'Buy tickets'
-                            on_release:
-                                my_ticket.trigger_action()
+                        
 
             TabbedPanelItem
                 id: tab_maps
                 text: 'About'
                 BoxLayout
-                    padding: dp(4)
-                    spacing: dp(4)
                     orientation: 'vertical'
-                    LeftAlignedLabel:
-                        padding: dp(12), dp(12)
-                        markup: True
-                        text: app.about_text
-                        on_ref_press: webbrowser.open('http://pydelhi.org')
-                    Widget
+                    ScrollView
+                        padding: dp(4)
+                        spacing: dp(4)
+                        orientation: 'vertical'
+                        LeftAlignedLabel:
+                            padding: dp(12), dp(12)
+                            markup: True
+                            text: app.about_text
+                            on_ref_press: webbrowser.open('http://pydelhi.org')
+                    
                     PyDelButton
                         default: True
                         text: 'History'
