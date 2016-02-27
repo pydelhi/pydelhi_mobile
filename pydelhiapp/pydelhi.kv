@@ -7,6 +7,7 @@
     cols: 1
     size_hint: 1, None
     height: self.minimum_height
+    padding: [5,5,7,5]
 
 <EventItemDetail@Popup>
     separator_color: active_text_color
@@ -37,6 +38,7 @@
     title: 'Dummy Title'
     time: '9:00 - 10:00'
     orientation: 'vertical'
+    padding: [0,4,0,4]
     canvas.before:
         Color:
             rgba: 39./256., 115./256., 90./256., 1
@@ -87,7 +89,7 @@ BoxLayout:
             pos: self.pos
     orientation: 'vertical'
     ActionBar
-        backgroun_image: ''
+        background_image: ''
         background_color: 1, 1, 1, .1
         ActionView
             ActionPrevious
