@@ -39,7 +39,7 @@ class PyDelhiApp(App):
         days = td.days
         hours, remainder = divmod(td.seconds, 3600)
         minutes, seconds = divmod(remainder, 60)
-        self.time_left = 'Days: {} {}:{}:{}'.format(days, hours, minutes, seconds)
+        self.time_left = '{}d, {}:{}:{} to go'.format(days, hours, minutes, seconds)
 
 if __name__ == '__main__':
     PyDelhiApp().run()
