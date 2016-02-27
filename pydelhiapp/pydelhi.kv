@@ -9,6 +9,7 @@
     padding: dp(20)
     size_hint: 1, None
     height: self.minimum_height
+    padding: [5,5,7,5]
 
 <EventItemDetail@Popup>
     separator_color: active_text_color
@@ -39,6 +40,7 @@
     title: 'Dummy Title'
     time: '9:00 - 10:00'
     orientation: 'vertical'
+    padding: [0,4,0,4]
     canvas.before:
         Color:
             rgba: 39./256., 115./256., 90./256., 1
@@ -46,12 +48,17 @@
             pos: self.pos
             size: self.size
     RightAlignedLabel:
-        text: root.time
-        font_size: '12dp'
+        markup: True
+        text: '[color=rgb(255,244,139)]{}[/color]'.format(root.time)
+        font_size: sp(10)
     LeftAlignedLabel:
         text: root.title
+        font_size: sp(14)
     LeftAlignedLabel:
-        text: root.spkr_detail
+        markup: True
+        text: '[color=rgb(255,244,139)]{}[/color]'.format(root.spkr_detail)
+        font_size: sp(11)
+
 
 <TabbedPanelHeader>
     color: active_text_color if self.state == 'down' else (1, 1, 1, 1)
@@ -74,6 +81,7 @@
             size: self.size
             pos: self.pos
 
+
 <PyDelButton@Button>
     default: False
     size_hint: 1, None
@@ -81,10 +89,13 @@
     background_normal: 'data/but_{}.png'.format('light' if self.default else 'drk')
     background_down: 'data/but_{}.png'.format('drk' if self.default else 'light')
 
+
 <NavigationItem@Button>
     background_color: background_color if self.state == 'normal' else (1, 1, 1, 1)
     background_normal: ''
     background_down: 'data/but_overlay.png'
+    on_release: app.root.ids.screen_manager.current = self.text
+
 
 <ScreenSchedule@Screen>
     TabbedPanel
@@ -138,7 +149,6 @@
                         time: '5:20pm - 6:00pm'
         TabbedPanelItem
             text: "Lecture Hall 1"
-
             ScrollView
                 GridLayout
                     cols: 1
@@ -322,6 +332,10 @@
 
 <ActionBox@ActionItem+BoxLayout>
 
+
+###### Root widget starts here
+######
+
 NavigationDrawer
     id: navigationdrawer
     BoxLayout
@@ -335,19 +349,14 @@ NavigationDrawer
         orientation: 'vertical'
         NavigationItem:
             text: 'Schedule'
-            on_release: screen_manager.current = 'scrn_schedule'
         NavigationItem:
             text: 'Location'
-            on_release: screen_manager.current = 'scrn_location'
         NavigationItem:
             text: 'Sponsors'
-            on_release: screen_manager.current = 'scrn_sponsors'
         NavigationItem:
             text: 'Tickets'
-            on_release: screen_manager.current = 'scrn_tickets'
         NavigationItem:
             text: 'About'
-            on_release: screen_manager.current = 'scrn_about'
         Widget
 
     BoxLayout:
@@ -376,14 +385,14 @@ NavigationDrawer
         ScreenManager
             id: screen_manager
             ScreenSchedule
-                name: 'scrn_schedule'
+                name: 'Schedule'
             ScreenMaps
                 name: 'scrn_location'
             ScreenSponsors
-                name: 'scrn_sponsors'
+                name: 'Sponsors'
             ScreenTickets
-                name: 'scrn_tickets'
+                name: 'Tickets'
             ScreenAbout
-                name: 'scrn_about'
+                name: 'About'
                 
                         
