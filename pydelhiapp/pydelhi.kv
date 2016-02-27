@@ -2,9 +2,11 @@
 #:import webbrowser webbrowser
 #:set active_text_color 59./256., 205./256., 155./256., 1
 #:set background_color 62./256., 70./256., 81./256., 1
+#:import NavigationDrawer kivy.garden.NavigationDrawer
 
 <GridH@GridLayout>
     cols: 1
+    padding: dp(20)
     size_hint: 1, None
     height: self.minimum_height
 
@@ -74,263 +76,314 @@
 
 <PyDelButton@Button>
     default: False
+    size_hint: 1, None
+    height: dp(27)
     background_normal: 'data/but_{}.png'.format('light' if self.default else 'drk')
     background_down: 'data/but_{}.png'.format('drk' if self.default else 'light')
 
+<NavigationItem@Button>
+    background_color: background_color if self.state == 'normal' else (1, 1, 1, 1)
+    background_normal: ''
+    background_down: 'data/but_overlay.png'
 
-BoxLayout:
-    canvas.before:
-        Color:
-            rgba: background_color
-        Rectangle:
-            size: self.size
-            pos: self.pos
-    orientation: 'vertical'
-    ActionBar
-        backgroun_image: ''
-        background_color: 1, 1, 1, .1
-        ActionView
-            ActionPrevious
-                with_previous: False
-                app_icon: 'data/logo.png'
-            ActionButton
-                text: app.time_left
-    Screen
-        TabbedPanel:
-            do_default_tab: False
-            tab_width: None
-            TabbedPanelItem:
-                id: tab_schedule
-                text: 'Schedule'
-                TabbedPanel
-                    id: panel_schedule
-                    tab_pos: 'left_top'
-                    do_default_tab: False
-                    canvas.before:
-                        Color:
-                            rgba: background_color
-                        Rectangle:
-                            pos: self.pos
-                            size: self.size
-                    TabbedPanelItem
-                        id: tab_audi_3
-                        text: "Audi 3"
-                        ScrollView
-                            GridH
-                                spacing: dp(3)
-                                size_hint: 1, None
-                                height: self.minimum_height
-                                EventItem
-                                    spkr_detail: 'By Kiran Jonnalagadda'
-                                    title: 'KeyNote'
-                                    time: '10:00AM - 10:45AM'
-                                EventItem
-                                    spkr_detail: 'Workshop by Prof. Kannan Moudgalya'
-                                    title: 'FOSSEE/Spoken Tutorial'
-                                    time: '10:45AM - 12:30PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Mayank Jain'
-                                    title: 'Real time web application using Django, Tornado and SockJS'
-                                    time: '12:30PM - 1:00PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Mohammad Asad Siddiqui'
-                                    title: 'Development of an academic cloud infrastructure at IIT Delhi'
-                                    time: '1:30PM - 2:00PM'
-                                EventItem
-                                    spkr_detail: 'TBA'
-                                    title: 'Workshop'
-                                    time: '2:15PM - 4:00PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Arulalan T'
-                                    title: 'Advantages of Python in Atmospheric and Oceanic Sciences'
-                                    time: '4:00PM - 4:30PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Sridhar Rao'
-                                    title: 'Python in the SDN World'
-                                    time: '4:50PM - 5:20PM'
-                                EventItem
-                                    spkr_detail: 'Assorted Speakers'
-                                    title: 'Ligntning Talks'
-                                    time: '5:20pm - 6:00pm'
-                    TabbedPanelItem
-                        text: "Lecture Hall 1"
+<ScreenSchedule@Screen>
+    TabbedPanel
+        id: panel_schedule
+        do_default_tab: False
+        canvas.before:
+            Color:
+                rgba: background_color
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        TabbedPanelItem
+            id: tab_audi_3
+            text: "Audi 3"
+            ScrollView
+                GridH
+                    spacing: dp(3)
+                    size_hint: 1, None
+                    height: self.minimum_height
+                    EventItem
+                        spkr_detail: 'By Kiran Jonnalagadda'
+                        title: 'KeyNote'
+                        time: '10:00AM - 10:45AM'
+                    EventItem
+                        spkr_detail: 'Workshop by Prof. Kannan Moudgalya'
+                        title: 'FOSSEE/Spoken Tutorial'
+                        time: '10:45AM - 12:30PM'
+                    EventItem
+                        spkr_detail: 'Talk by Mayank Jain'
+                        title: 'Real time web application using Django, Tornado and SockJS'
+                        time: '12:30PM - 1:00PM'
+                    EventItem
+                        spkr_detail: 'Talk by Mohammad Asad Siddiqui'
+                        title: 'Development of an academic cloud infrastructure at IIT Delhi'
+                        time: '1:30PM - 2:00PM'
+                    EventItem
+                        spkr_detail: 'TBA'
+                        title: 'Workshop'
+                        time: '2:15PM - 4:00PM'
+                    EventItem
+                        spkr_detail: 'Talk by Arulalan T'
+                        title: 'Advantages of Python in Atmospheric and Oceanic Sciences'
+                        time: '4:00PM - 4:30PM'
+                    EventItem
+                        spkr_detail: 'Talk by Sridhar Rao'
+                        title: 'Python in the SDN World'
+                        time: '4:50PM - 5:20PM'
+                    EventItem
+                        spkr_detail: 'Assorted Speakers'
+                        title: 'Ligntning Talks'
+                        time: '5:20pm - 6:00pm'
+        TabbedPanelItem
+            text: "Lecture Hall 1"
 
-                        ScrollView
-                            GridLayout
-                                cols: 1
-                                spacing: dp(3)
-                                size_hint: 1, None
-                                height: self.minimum_height
-                                EventItem
-                                    spkr_detail: 'Workshop by Suman Debnath'
-                                    title: 'Ansible and Vagrant'
-                                    time: '10:45AM - 12:30PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Jaidev Deshpande'
-                                    title: 'Automatic Data Validation and Cleaning with PySemantic'
-                                    time: '12:30PM - 1:00PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Peeyush Aggarwal'
-                                    title: 'Forget InstaGram. Make your own filters'
-                                    time: '1:30PM - 2:00PM'
-                                EventItem
-                                    spkr_detail: 'Workshop by Rishabh Shukla'
-                                    title: 'Deep Learning in NLP - Powered by Python'
-                                    time: '2:15 PM - 4:00 PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Amit Singh Sethi'
-                                    title: 'Lettuce, Salad and How to write beautiful tests'
-                                    time: '4:00 PM - 4:30 PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Manoj Pandey'
-                                    title: 'An Introduction to Web Scraping using Python'
-                                    time: '4:50 PM - 5:20 PM'
-                                EventItem
-                                    spkr_detail: ' '
-                                    title: 'Open Space'
-                                    time: '5:20pm - 6:00pm'
-                    TabbedPanelItem
-                        text: "Lecture Hall 2"
+            ScrollView
+                GridLayout
+                    cols: 1
+                    spacing: dp(3)
+                    size_hint: 1, None
+                    height: self.minimum_height
+                    EventItem
+                        spkr_detail: 'Workshop by Suman Debnath'
+                        title: 'Ansible and Vagrant'
+                        time: '10:45AM - 12:30PM'
+                    EventItem
+                        spkr_detail: 'Talk by Jaidev Deshpande'
+                        title: 'Automatic Data Validation and Cleaning with PySemantic'
+                        time: '12:30PM - 1:00PM'
+                    EventItem
+                        spkr_detail: 'Talk by Peeyush Aggarwal'
+                        title: 'Forget InstaGram. Make your own filters'
+                        time: '1:30PM - 2:00PM'
+                    EventItem
+                        spkr_detail: 'Workshop by Rishabh Shukla'
+                        title: 'Deep Learning in NLP - Powered by Python'
+                        time: '2:15 PM - 4:00 PM'
+                    EventItem
+                        spkr_detail: 'Talk by Amit Singh Sethi'
+                        title: 'Lettuce, Salad and How to write beautiful tests'
+                        time: '4:00 PM - 4:30 PM'
+                    EventItem
+                        spkr_detail: 'Talk by Manoj Pandey'
+                        title: 'An Introduction to Web Scraping using Python'
+                        time: '4:50 PM - 5:20 PM'
+                    EventItem
+                        spkr_detail: ' '
+                        title: 'Open Space'
+                        time: '5:20pm - 6:00pm'
+        TabbedPanelItem
+            text: "Lecture Hall 2"
 
-                        ScrollView
-                            GridLayout
-                                cols: 1
-                                spacing: dp(3)
-                                size_hint: 1, None
-                                height: self.minimum_height
-                                EventItem
-                                    spkr_detail: 'Workshop by Sanyam, Rishabh, Rajat & Anuvrat'
-                                    title: 'Mobile as Microbit teaching Python for beginners'
-                                    time: '10:45AM - 12:30PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Ashutosh Singh & Nupur Agrahari'
-                                    title: 'Python Byte elongating Battery Life'
-                                    time: '12:30PM - 1:00PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Abhinandan Kothari'
-                                    title: 'Functional Testing of Mobile Applications using Appium and Python'
-                                    time: '1:30PM - 2:00PM'
-                                EventItem
-                                    spkr_detail: 'Workshop by Sandeep Nagar'
-                                    title: 'IoT with Python and Rasberry Pi'
-                                    time: '2:15 PM - 4:00 PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Dhruv Kalaan'
-                                    title: 'Fraud & Anomaly Detection Using ELK Stack, Kibana & Python Elast-Alert'
-                                    time: '4:00 PM - 4:30 PM'
-                                EventItem
-                                    spkr_detail: 'Talk by Shantanu'
-                                    title: 'Extending Zulip for Inhouse Chat-With-Customer tool'
-                                    time: '4:50 PM - 5:20 PM'
-                                EventItem
-                                    spkr_detail: ' '
-                                    title: 'Open Space'
-                                    time: '5:20pm - 6:00pm'
-            TabbedPanelItem
-                id: tab_maps
-                text: 'Location'
-                StencilView
-                    id: stencil_maps
+            ScrollView
+                GridLayout
+                    cols: 1
+                    spacing: dp(3)
+                    size_hint: 1, None
+                    height: self.minimum_height
+                    EventItem
+                        spkr_detail: 'Workshop by Sanyam, Rishabh, Rajat & Anuvrat'
+                        title: 'Mobile as Microbit teaching Python for beginners'
+                        time: '10:45AM - 12:30PM'
+                    EventItem
+                        spkr_detail: 'Talk by Ashutosh Singh & Nupur Agrahari'
+                        title: 'Python Byte elongating Battery Life'
+                        time: '12:30PM - 1:00PM'
+                    EventItem
+                        spkr_detail: 'Talk by Abhinandan Kothari'
+                        title: 'Functional Testing of Mobile Applications using Appium and Python'
+                        time: '1:30PM - 2:00PM'
+                    EventItem
+                        spkr_detail: 'Workshop by Sandeep Nagar'
+                        title: 'IoT with Python and Rasberry Pi'
+                        time: '2:15 PM - 4:00 PM'
+                    EventItem
+                        spkr_detail: 'Talk by Dhruv Kalaan'
+                        title: 'Fraud & Anomaly Detection Using ELK Stack, Kibana & Python Elast-Alert'
+                        time: '4:00 PM - 4:30 PM'
+                    EventItem
+                        spkr_detail: 'Talk by Shantanu'
+                        title: 'Extending Zulip for Inhouse Chat-With-Customer tool'
+                        time: '4:50 PM - 5:20 PM'
+                    EventItem
+                        spkr_detail: ' '
+                        title: 'Open Space'
+                        time: '5:20pm - 6:00pm'
+
+
+<ScreenMaps@Screen>
+    id: scr_maps
+    text: 'Location'
+    StencilView
+        id: stencil_maps
+        Image:
+            on_touch_down:
+                if args[1].is_double_tap: Animation(center = stencil_maps.center).start(sctr_map)
+            size: stencil_maps.size
+            allow_stretch: True
+            source: 'data/center.jpg'
+        Scatter:
+            id: sctr_map
+            size_hint: None, None
+            size: map_img.size
+            on_touch_down:
+                if args[1].is_double_tap: Animation(scale = 1 if sctr_map.scale >2 else 10).start(sctr_map)
+            Image
+                id: map_img
+                canvas.before:
+                    Color:
+                        rgba: active_text_color[0], active_text_color[1], active_text_color[2], .3
+                    Rectangle:
+                        size: self.size
+                size: dp(200), dp(200)
+                allow_stretch: True
+                source: 'data/conference-map.png'
+        PyDelButton:
+            text: 'Open Map'
+            pos: stencil_maps.right - self.width - dp(10), dp(10)
+            size: dp(100), dp(40)
+            default: True
+            on_release:
+                webbrowser.open('https://www.google.co.in/maps/place/Convention+Center/@28.5418632,77.1636535,16z/data=!4m5!1m2!2m1!1sJNU+Convention+center!3m1!1s0x390d1ddb55725eaf:0xdf1d45bdd082aedf?hl=en')
+
+<ScreenSponsors@Screen>
+    id: tab_sponsors
+    text: 'Sponsors'
+    BoxLayout
+        padding: dp(4)
+        orientation: 'vertical'
+        spacing: dp(4)
+        Image
+            source: 'data/fossee.png'
+            allow_strech: True
+            size_hint: 1, .5
+        GridLayout
+            cols: 2
+            rows: 2
+            spacing: dp(4)
+            #Image
+            #Image
+            #Image
+            #Image
+        PyDelButton
+            text: 'Sponsor Us'
+            default: True
+            size_hint_y: None
+            height: dp(40)
+            on_release: webbrowser.open('https://conference.pydelhi.org/data/SponsorshipProspectus2016.pdf')
+        PyDelButton
+            text: 'Contact Us'
+            size_hint_y: None
+            height: dp(40)
+            on_release: webbrowser.open('mailto:sponsorship@pydelhi.org')
+
+<ScreenTickets@Screen>
+    id: tickets
+    text: 'Tickets'
+    RelativeLayout
+        BoxLayout
+            spacing: dp(12)
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            size_hint: None, None
+            size: dp(300), dp(200)
+            orientation: 'vertical'
+            PyDelButton
+                id: my_ticket
+                text: 'My tickets'
+                on_release:
+                    webbrowser.open('https://in.explara.com/e/pydelhi-conference/')
+            PyDelButton
+                default: True
+                text: 'Buy tickets'
+                on_release:
+                    my_ticket.trigger_action()
+
+<ScreenAbout@Screen>
+    id: tab_maps
+    text: 'About'
+    BoxLayout
+        padding: dp(4)
+        spacing: dp(4)
+        orientation: 'vertical'
+        LeftAlignedLabel:
+            padding: dp(12), dp(12)
+            markup: True
+            text: app.about_text
+            on_ref_press: webbrowser.open('http://pydelhi.org')
+        Widget
+        PyDelButton
+            default: True
+            text: 'History'
+            size_hint:1, None
+            height: dp(40)
+            on_release:
+                webbrowser.open('http://www.meetup.com/pydelhi/events/past/?scroll=true')
+
+<ActionBox@ActionItem+BoxLayout>
+
+NavigationDrawer
+    id: navigationdrawer
+    BoxLayout
+        canvas.before:
+            Color:
+                rgba: 47./255, 47./255., 47./255., 1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        spacing: dp(4)
+        orientation: 'vertical'
+        NavigationItem:
+            text: 'Schedule'
+            on_release: screen_manager.current = 'scrn_schedule'
+        NavigationItem:
+            text: 'Location'
+            on_release: screen_manager.current = 'scrn_location'
+        NavigationItem:
+            text: 'Sponsors'
+            on_release: screen_manager.current = 'scrn_sponsors'
+        NavigationItem:
+            text: 'Tickets'
+            on_release: screen_manager.current = 'scrn_tickets'
+        NavigationItem:
+            text: 'About'
+            on_release: screen_manager.current = 'scrn_about'
+        Widget
+
+    BoxLayout:
+        canvas.before:
+            Color:
+                rgba: background_color
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        orientation: 'vertical'
+        ActionBar
+            backgroun_image: ''
+            background_color: 1, 1, 1, .1
+            ActionView
+                ActionPrevious
+                    previous_image: 'data/hamburger.png'
+                    app_icon: 'data/transparent.png'
+                    on_release: navigationdrawer.toggle_state()
+                ActionBox
+                    important: True
+                    Widget:
                     Image:
-                        on_touch_down:
-                            if args[1].is_double_tap: Animation(center = stencil_maps.center).start(sctr_map)
-                        size: stencil_maps.size
-                        allow_stretch: True
-                        source: 'data/center.jpg'
-                    Scatter:
-                        id: sctr_map
-                        size_hint: None, None
-                        size: map_img.size
-                        on_touch_down:
-                            if args[1].is_double_tap: Animation(scale = 1 if sctr_map.scale >2 else 10).start(sctr_map)
-                        Image
-                            id: map_img
-                            canvas.before:
-                                Color:
-                                    rgba: active_text_color[0], active_text_color[1], active_text_color[2], .3
-                                Rectangle:
-                                    size: self.size
-                            size: dp(200), dp(200)
-                            allow_stretch: True
-                            source: 'data/conference-map.png'
-                    PyDelButton:
-                        text: 'Open Map'
-                        pos: stencil_maps.right - self.width - dp(10), dp(10)
-                        size: dp(100), dp(40)
-                        default: True
-                        on_release:
-                            webbrowser.open('https://www.google.co.in/maps/place/Convention+Center/@28.5418632,77.1636535,16z/data=!4m5!1m2!2m1!1sJNU+Convention+center!3m1!1s0x390d1ddb55725eaf:0xdf1d45bdd082aedf?hl=en')
-
-            TabbedPanelItem
-                id: tab_sponsors
-                text: 'Sponsors'
-                BoxLayout
-                    padding: dp(4)
-                    orientation: 'vertical'
-                    spacing: dp(4)
-                    Image
-                        source: 'data/fossee.png'
-                        allow_strech: True
-                        size_hint: 1, .5
-                    GridLayout
-                        cols: 2
-                        rows: 2
-                        spacing: dp(4)
-                        #Image
-                        #Image
-                        #Image
-                        #Image
-                    PyDelButton
-                        text: 'Sponsor Us'
-                        default: True
-                        size_hint_y: None
-                        height: dp(40)
-                        on_release: webbrowser.open('https://conference.pydelhi.org/data/SponsorshipProspectus2016.pdf')
-                    PyDelButton
-                        text: 'Contact Us'
-                        size_hint_y: None
-                        height: dp(40)
-                        on_release: webbrowser.open('mailto:sponsorship@pydelhi.org')
-
-            TabbedPanelItem
-                id: tickets
-                text: 'Tickets'
-                RelativeLayout
-                    BoxLayout
-                        spacing: dp(12)
-                        pos_hint: {'center_x': .5, 'center_y': .5}
-                        size_hint: None, None
-                        size: dp(300), dp(200)
-                        orientation: 'vertical'
-                        PyDelButton
-                            id: my_ticket
-                            text: 'My tickets'
-                            on_release:
-                                webbrowser.open('https://in.explara.com/e/pydelhi-conference/')
-                        PyDelButton
-                            default: True
-                            text: 'Buy tickets'
-                            on_release:
-                                my_ticket.trigger_action()
-
-            TabbedPanelItem
-                id: tab_maps
-                text: 'About'
-                BoxLayout
-                    padding: dp(4)
-                    spacing: dp(4)
-                    orientation: 'vertical'
-                    LeftAlignedLabel:
-                        padding: dp(12), dp(12)
-                        markup: True
-                        text: app.about_text
-                        on_ref_press: webbrowser.open('http://pydelhi.org')
-                    Widget
-                    PyDelButton
-                        default: True
-                        text: 'History'
-                        size_hint:1, None
-                        height: dp(40)
-                        on_release:
-                            webbrowser.open('http://www.meetup.com/pydelhi/events/past/?scroll=true')
-
+                        source: 'data/logo.png'
+                        size_hint: None, 1
+                        width:  self.texture_size[0]
+        ScreenManager
+            id: screen_manager
+            ScreenSchedule
+                name: 'scrn_schedule'
+            ScreenMaps
+                name: 'scrn_location'
+            ScreenSponsors
+                name: 'scrn_sponsors'
+            ScreenTickets
+                name: 'scrn_tickets'
+            ScreenAbout
+                name: 'scrn_about'
+                
+                        
