@@ -54,7 +54,7 @@
     padding: [0,4,0,4]
     canvas.before:
         Color:
-            rgba: 39./256., 115./256., 90./256., .9
+            rgba: 39./256., 115./256., 90./256., .7
         Rectangle:
             pos: self.pos
             size: self.size
@@ -80,16 +80,10 @@
 
 
 <ScreenSchedule@Screen>
-    canvas.before:
-        Color:
-            rgba: background_color
-        Rectangle:
-            pos: self.pos
-            size: self.size
     Image:
-        source: 'data/icon.png'
+        source: 'data/mic.png'
         allow_stretch: True
-        opacity: .1
+        opacity: .5
     AndroidTabs
         id: panel_schedule
         do_default_tab: False
@@ -233,6 +227,13 @@
             default: True
             on_release:
                 webbrowser.open('https://www.google.co.in/maps/place/Convention+Center/@28.5418632,77.1636535,16z/data=!4m5!1m2!2m1!1sJNU+Convention+center!3m1!1s0x390d1ddb55725eaf:0xdf1d45bdd082aedf?hl=en')
+        PyDelButton:
+            text: 'Open Street view'
+            pos: dp(15), dp(15)
+            size: dp(200), dp(40)
+            default: True
+            on_release:
+                webbrowser.open('https://www.google.co.in/maps/@28.53792,77.1662708,3a,75y,314.71h,71.28t/data=!3m6!1e1!3m4!1sk22VqhFqAcHHxi_gm9_M1w!2e0!7i13312!8i6656?hl=en')
 
 <ScreenSponsors@Screen>
     id: tab_sponsors
@@ -274,7 +275,8 @@
         spacing:dp(5)
         Image:
             source: 'data/ticket.png'
-            opacity: .05
+            allow_stretch: True
+            opacity: .1
         PyDelButton
             text: 'My tickets'
             size_hint_y: None
@@ -319,6 +321,8 @@
     background_color: background_color if self.state == 'normal' else (1, 1, 1, 1)
     background_normal: ''
     background_down: 'data/but_overlay.png'
+    size_hint_y: None
+    height: dp(45)
     on_release:
         app.root.ids.screen_manager.current = self.text
         app.root.toggle_state()
@@ -329,6 +333,8 @@
 NavigationDrawer
     id: navigationdrawer
     BoxLayout
+        padding: dp(4)
+        spacing: dp(4)
         canvas.before:
             Color:
                 rgba: 47./255, 47./255., 47./255., 1
@@ -337,6 +343,11 @@ NavigationDrawer
                 pos: self.pos
         spacing: dp(4)
         orientation: 'vertical'
+        Image: 
+            size_hint_y: None
+            height: dp(90)
+            source: 'data/logo.png'
+            allow_stretch: True
         NavigationItem:
             text: 'Schedule'
         NavigationItem:
