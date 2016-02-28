@@ -18,7 +18,7 @@ from kivy.properties import StringProperty, ObjectProperty
 from kivy.factory import Factory
 
 Factory.register('TouchRippleBehavior', module='uix.behaviors')
-
+Factory.register('TabbedCarousel', module='uix.tabbedcarousel')
 
 class PyDelhiApp(App):
     ''' Our main app class

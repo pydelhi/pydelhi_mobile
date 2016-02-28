@@ -3,8 +3,6 @@
 #:set active_text_color 59./256., 205./256., 155./256., 1
 #:set background_color 62./256., 70./256., 81./256., 1
 #:import NavigationDrawer uix.navigationdrawer.NavigationDrawer
-#:import AndroidTabs uix.androidtabs.AndroidTabs
-#:import AndroidTabsBase uix.androidtabs.AndroidTabsBase
 
 
 <GridH@GridLayout>
@@ -40,7 +38,7 @@
             rgba: 0, 0, 0, .5
         Rectangle:
             texture: self.texture
-            pos: self.x + dp(3), self.y - dp(3)
+            pos: self.x + dp(2), self.y - dp(2)
             size: self.size
 
 <RightAlignedLabel@LeftAlignedLabel>
@@ -81,15 +79,14 @@
 
 <ScreenSchedule@Screen>
     Image:
+        pos: 0, dp(-70)
         source: 'data/mic.png'
         allow_stretch: True
         opacity: .5
-    AndroidTabs
+    TabbedCarousel
         id: panel_schedule
-        do_default_tab: False
-        AndroidTabItem
-            id: tab_audi_3
-            text: "Audi 3"
+        Screen
+            tab: tab_audi_3
             ScrollView
                 GridH
                     id: grid_audi3
@@ -125,8 +122,8 @@
                         spkr_detail: 'Assorted Speakers'
                         title: 'Ligntning Talks'
                         time: '5:20pm - 6:00pm'
-        AndroidTabItem
-            text: "Lecture Hall 1"
+        Screen
+            tab: tab_lh1
             ScrollView
                 GridH
                     id: grid_hall_1
@@ -158,8 +155,8 @@
                         spkr_detail: ' '
                         title: 'Open Space'
                         time: '5:20pm - 6:00pm'
-        AndroidTabItem
-            text: "Lecture Hall 2"
+        Screen
+            tab: tab_lh2
             ScrollView
                 GridH
                     id: grid_hall_2
@@ -191,6 +188,18 @@
                         spkr_detail: ' '
                         title: 'Open Space'
                         time: '5:20pm - 6:00pm'
+        CleanHeader
+            id: tab_audi_3
+            text: "Audi 3"
+            slide: 0
+        CleanHeader
+            id: tab_lh1
+            slide: 1
+            text: "Lecture Hall 1"
+        CleanHeader
+            id: tab_lh2
+            slide: 2
+            text: "Lecture Hall 2"
 
 <ScreenMaps@Screen>
     id: scr_maps
@@ -205,7 +214,7 @@
                 allow_stretch: True
                 source: 'data/center.jpg'
                 on_touch_down: 
-                    if args[1].is_double_tap: Animation(center = sctr_space.center).start(sctr_map)
+                    if args[1].is_double_tap: Animation(center = sctr_space.center, rotation=0, scale = 1).start(sctr_map)
             RelativeLayout:
                 id: sctr_space
                 Scatter:
@@ -315,7 +324,37 @@
 <ImageButton@ButtonBehavior+Image>
     opacity: .5 if self.state == 'down' else 1
 
-<AndroidTabItem@AndroidTabsBase+BoxLayout>
+<StripLayout>
+    padding: 0, 0, 0, 0
+
+<TabbedPanelStrip>:
+    on_parent:
+        if self.parent: self.parent.bar_width = 0
+        if self.parent: self.parent.scroll_x = 0.5
+
+<TabbedCarousel>
+    carousel: carousel
+    do_default_tab: False
+    Carousel:
+        scroll_timeout: 120
+        scroll_distance: '20dp'
+        anim_type: 'out_quart'
+        min_move: .05
+        anim_move_duration: .1
+        anim_cancel_duration: .54
+        on_index: root.on_index(*args)
+        id: carousel
+
+<CleanHeader@TabbedPanelHeader>
+    border: 16, 0, 16, 0
+    markup: False
+    text_size: self.size
+    halign: 'center'
+    valign: 'middle'
+    font_size: '13sp'
+    background_normal: 'data/transparent.png'
+    background_down: 'data/but_overlay.png'
+    always_release: True
 
 <NavigationItem@TouchRippleBehavior+Button>
     background_color: background_color if self.state == 'normal' else (1, 1, 1, 1)
@@ -332,33 +371,31 @@
 
 NavigationDrawer
     id: navigationdrawer
-    BoxLayout
-        padding: dp(4)
-        spacing: dp(4)
+    ScrollView
         canvas.before:
             Color:
                 rgba: 47./255, 47./255., 47./255., 1
             Rectangle:
                 size: self.size
                 pos: self.pos
-        spacing: dp(4)
-        orientation: 'vertical'
-        Image: 
-            size_hint_y: None
-            height: dp(90)
-            source: 'data/logo.png'
-            allow_stretch: True
-        NavigationItem:
-            text: 'Schedule'
-        NavigationItem:
-            text: 'Location'
-        NavigationItem:
-            text: 'Sponsors'
-        NavigationItem:
-            text: 'Tickets'
-        NavigationItem:
-            text: 'About'
-        Widget
+        GridH
+            padding: dp(4)
+            spacing: dp(4)
+            Image: 
+                size_hint_y: None
+                height: dp(90)
+                source: 'data/logo.png'
+                allow_stretch: True
+            NavigationItem:
+                text: 'Schedule'
+            NavigationItem:
+                text: 'Location'
+            NavigationItem:
+                text: 'Sponsors'
+            NavigationItem:
+                text: 'Tickets'
+            NavigationItem:
+                text: 'About'
 
     BoxLayout:
         opacity: 1 - ((self.x+1)/dp(300))
@@ -372,7 +409,7 @@ NavigationDrawer
         orientation: 'vertical'
         BoxLayout
             size_hint_y: None
-            height: dp(40)
+            height: dp(54)
             canvas.before:
                 Color: 
                     rgba: 1, 1, 1, .02
