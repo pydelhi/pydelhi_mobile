@@ -35,6 +35,13 @@
     height: self.texture_size[1]
     valign: 'middle'
     halign: 'left'
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, .5
+        Rectangle:
+            texture: self.texture
+            pos: self.x + dp(3), self.y - dp(3)
+            size: self.size
 
 <RightAlignedLabel@LeftAlignedLabel>
     halign: 'right'
@@ -47,7 +54,7 @@
     padding: [0,4,0,4]
     canvas.before:
         Color:
-            rgba: 39./256., 115./256., 90./256., 1
+            rgba: 39./256., 115./256., 90./256., .9
         Rectangle:
             pos: self.pos
             size: self.size
@@ -73,15 +80,19 @@
 
 
 <ScreenSchedule@Screen>
+    canvas.before:
+        Color:
+            rgba: background_color
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    Image:
+        source: 'data/icon.png'
+        allow_stretch: True
+        opacity: .1
     AndroidTabs
         id: panel_schedule
         do_default_tab: False
-        canvas.before:
-            Color:
-                rgba: background_color
-            Rectangle:
-                pos: self.pos
-                size: self.size
         AndroidTabItem
             id: tab_audi_3
             text: "Audi 3"
@@ -192,34 +203,32 @@
     text: 'Location'
     StencilView
         id: stencil_maps
-        Image:
-            on_touch_down:
-                if args[1].is_double_tap: Animation(center = (stencil_maps.width, stencil_maps.height/2)).start(sctr_map)
-            size: stencil_maps.width, stencil_maps.height/2
-            pos: dp(0), stencil_maps.top - self.height - dp(5)
-            allow_stretch: True
-            source: 'data/center.jpg'
-        Scatter:
-            id: sctr_map
-            size_hint: None, None
-            size: map_img.size
-            on_touch_down:
-                if args[1].is_double_tap: Animation(scale = 1 if sctr_map.scale >2 else 3).start(sctr_map)
+        BoxLayout:
+            size: stencil_maps.size
+            pos: 0, 0
+            orientation: 'vertical'
             Image:
-                id: map_img
-                size: stencil_maps.width, stencil_maps.height/2
-                pos: dp(0), dp(0)
-                canvas.before:
-                    Color:
-                        rgba: active_text_color[0], active_text_color[1], active_text_color[2], .3
-                    Rectangle:
-                        size: self.width, self.height - dp(10)
-                # size: dp(200), dp(200)
                 allow_stretch: True
-                source: 'data/jnu.png'
+                source: 'data/center.jpg'
+                on_touch_down: 
+                    if args[1].is_double_tap: Animation(center = sctr_space.center).start(sctr_map)
+            RelativeLayout:
+                id: sctr_space
+                Scatter:
+                    id: sctr_map
+                    size_hint: None, None
+                    size: sctr_space.size
+                    Image:
+                        id: map_img
+                        size: sctr_space.size
+                        pos: dp(0), dp(0)
+                        allow_stretch: True
+                        source: 'data/jnu.png'
+                        on_touch_down:
+                            if args[1].is_double_tap and self.collide_point(*args[1].pos): Animation(center = sctr_space.center, rotation=0, scale = 1 if sctr_map.scale >2 else 3).start(sctr_map)
         PyDelButton:
             text: 'Open Map'
-            pos: stencil_maps.right - self.width - dp(10), dp(-5)
+            pos: stencil_maps.right - self.width - dp(10), dp(15)
             size: dp(100), dp(40)
             default: True
             on_release:
@@ -229,12 +238,12 @@
     id: tab_sponsors
     text: 'Sponsors'
     BoxLayout
-        padding: dp(4)
+        padding: dp(12)
         orientation: 'vertical'
         spacing: dp(4)
         Image
             source: 'data/fossee.png'
-            allow_strech: True
+            allow_stretch: True
             size_hint: 1, .5
         GridLayout
             cols: 2

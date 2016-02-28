@@ -28,7 +28,7 @@ class PyDelhiApp(App):
     time_left = StringProperty('')
 
     def build(self):
-        self.about_text = '[b]About the conference[/b]\n\nPyDelhi conference is hosted annually by Pydelhi community with an aim to promote Python programming language. We provide a single platform to users from different spheres such as students, global entrepreneur and professionals from startup and established firms to connect and share their ideas. Experts from various domains showcase their use of Python besides discussing about the recent and upcoming trends in technology.\n\n\n[b]App Designed and implenented by PyDelhi Team visit us at [color=rgb(49,207,155)][ref=http://PyDelhi.org]http://PyDelhi.org[/ref][/color][/b]'
+        self.about_text = '[b]About the conference[/b]\n\nPyDelhi conference is hosted annually by Pydelhi community with an aim to promote Python programming language. We provide a single platform to users from different spheres such as students, global entrepreneur and professionals from startup and established firms to connect and share their ideas. Experts from various domains showcase their use of Python besides discussing about the recent and upcoming trends in technology.\n\n\n[b]App designed and implenented by PyDelhi Team visit us at [color=rgb(49,207,155)][ref=http://PyDelhi.org]http://PyDelhi.org[/ref][/color][/b]'
         self.icon = 'data/icon.png'
 
     def on_pause(self):
