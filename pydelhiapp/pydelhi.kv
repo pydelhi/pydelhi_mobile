@@ -194,8 +194,9 @@
         id: stencil_maps
         Image:
             on_touch_down:
-                if args[1].is_double_tap: Animation(center = stencil_maps.center).start(sctr_map)
-            size: stencil_maps.size
+                if args[1].is_double_tap: Animation(center = (stencil_maps.width, stencil_maps.height/2)).start(sctr_map)
+            size: stencil_maps.width, stencil_maps.height/2
+            pos: dp(0), stencil_maps.top - self.height - dp(5)
             allow_stretch: True
             source: 'data/center.jpg'
         Scatter:
@@ -203,20 +204,22 @@
             size_hint: None, None
             size: map_img.size
             on_touch_down:
-                if args[1].is_double_tap: Animation(scale = 1 if sctr_map.scale >2 else 10).start(sctr_map)
-            Image
+                if args[1].is_double_tap: Animation(scale = 1 if sctr_map.scale >2 else 3).start(sctr_map)
+            Image:
                 id: map_img
+                size: stencil_maps.width, stencil_maps.height/2
+                pos: dp(0), dp(0)
                 canvas.before:
                     Color:
                         rgba: active_text_color[0], active_text_color[1], active_text_color[2], .3
                     Rectangle:
-                        size: self.size
-                size: dp(200), dp(200)
+                        size: self.width, self.height - dp(10)
+                # size: dp(200), dp(200)
                 allow_stretch: True
-                source: 'data/conference-map.png'
+                source: 'data/jnu.png'
         PyDelButton:
             text: 'Open Map'
-            pos: stencil_maps.right - self.width - dp(10), dp(10)
+            pos: stencil_maps.right - self.width - dp(10), dp(-5)
             size: dp(100), dp(40)
             default: True
             on_release:
