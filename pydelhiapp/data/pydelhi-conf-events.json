@@ -9,11 +9,11 @@
         {
             "img": "img/welcome.jpg",
             "schedule-item-date": "9:00 AM - 9:30 AM",
-            "schedule-item-title": "Welcome Ceremony &amp; Inauguration",
+            "schedule-item-title": "Welcome Ceremony & Inauguration",
             "schedule-item-text": "The welcome ceremony is a 30 minute function where prominent members of Python community including Kiran Jonnalagadda, Arvind Singh, Debabrata Nayak, Gora Mohanty and Ashish Gilotra would inaugurate the conference and say a few words about the conference and its impact on society. We shall parallely be registering the participants during this time."
         },
         {
-            "img": "img/tea_break.jpg",
+            "img": "img/tea_break.jpg`",
             "schedule-item-date": "9:30 AM - 9:45 AM",
             "schedule-item-title": "Tea Break",
             "schedule-item-text": ""
@@ -22,18 +22,18 @@
             "img": "img/kiran.jpg",
             "schedule-item-date": "10:00 AM - 10:45 AM",
             "schedule-item-title": "Keynote by Kiran Jonnalagadda",
-            "schedule-item-text": "Kiran Jonnalagadda is a co-founder of <a href='http://hasgeek.com'>HasGeek</a>, creator of <a href='http://hasjob.co'>Hasjob</a>, and a volunteer with the <a href='http://savetheinternet.in'>SaveTheInternet.in'</a> Coalition."
+            "schedule-item-text": "Kiran Jonnalagadda is a co-founder of [ref='http://hasgeek.com']HasGeek[/ref], creator of [ref='http://hasjob.co']Hasjob[/ref], and a volunteer with the [ref='http://savetheinternet.in]SaveTheInternet.in[/ref] Coalition."
         },
         {
             "img": "img/mic.jpg",
             "schedule-item-date": "10:45 AM - 12:30 PM",
             "schedule-item-title": "FOSSEE / Spoken Tutorial",
-            "schedule-item-text": ""
+            "schedule-item-text": "Workshop by Prof. Kannan Moudgalya"
         },
         {
             "img": "img/mic.jpg",
             "schedule-item-date": "12:30 PM - 1:00 PM",
-            "schedule-item-title": "<a href='https://cfp.pydelhi.org/pydelhi-conference-2016/proposals/real-time-web-application-using-django-tornado-and-sockjs/' target='_blank'>Real time web application using Django, Tornado and SockJS</a>",
+            "schedule-item-title": "[ref='https://cfp.pydelhi.org/pydelhi-conference-2016/proposals/real-time-web-application-using-django-tornado-and-sockjs/']Real time web application using Django, Tornado and SockJS[/ref]",
             "schedule-item-text": "Talk by Mayank Jain"
         },
         {
@@ -45,19 +45,25 @@
         {
             "img": "img/mic.jpg",
             "schedule-item-date": "1:30 PM - 2:00 PM",
-            "schedule-item-title": "<a href='https://cfp.pydelhi.org/pydelhi-conference-2016/proposals/develepment-of-an-academic-cloud-at-iit-delhi/' target='_blank'>Development of an academic cloud infrastructure at IIT Delhi</a>",
+            "schedule-item-title": "[ref='https://cfp.pydelhi.org/pydelhi-conference-2016/proposals/develepment-of-an-academic-cloud-at-iit-delhi/']Development of an academic cloud infrastructure at IIT Delhi[/ref]",
             "schedule-item-text": "Talk by Mohammad Asad Siddiqui"
         },
         {
             "img": "img/mic.jpg",
-            "schedule-item-date": "2:15 PM - 4:00 PM",
-            "schedule-item-title": "Workshop",
-            "schedule-item-text": "<a href='' target='_blank'>To be announced soon</a>"
+            "schedule-item-date": "2:15 PM - 2:45 PM",
+            "schedule-item-title": "Open Group & E-Governance",
+            "schedule-item-text": "[ref=''] target='_blank'>Debabrata Nayak</a>"
+        },
+        {
+            "img": "img/mic.jpg",
+            "schedule-item-date": "2:50 PM - 4:00 PM",
+            "schedule-item-title": "Panal Discussion",
+            "schedule-item-text": "[ref=''] target='_blank'>Debabrata Nayak</a>"
         },
         {
             "img": "img/mic.jpg",
             "schedule-item-date": "4:00 PM - 4:30 PM",
-            "schedule-item-title": "<a href='https://cfp.pydelhi.org/pydelhi-conference-2016/proposals/advantages-of-python-in-atmospheric-and-oceanic-sciences/' target='_blank'>Advantages of Python in Atmospheric and Oceanic Sciences",
+            "schedule-item-title": "[ref='https://cfp.pydelhi.org/pydelhi-conference-2016/proposals/advantages-of-python-in-atmospheric-and-oceanic-sciences/']Advantages of Python in Atmospheric and Oceanic Sciences[/ref]",
             "schedule-item-text": "Talk by Arulalan T"
         },
         {
@@ -69,7 +75,7 @@
         {
             "img": "img/mic.jpg",
             "schedule-item-date": "4:50 PM - 5:20 PM",
-            "schedule-item-title": "<a href='https://cfp.pydelhi.org/pydelhi-conference-2016/proposals/python-in-the-sdn-world/' target='_blank'>Python in the SDN World</a></h3>",
+            "schedule-item-title": "[ref='https://cfp.pydelhi.org/pydelhi-conference-2016/proposals/python-in-the-sdn-world/']Python in the SDN World[/ref]",
             "schedule-item-text": "Talk by Sridhar Rao"
         },
         {
