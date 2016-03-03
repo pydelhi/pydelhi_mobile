@@ -1,6 +1,7 @@
 from kivy.factory import Factory
 from kivy.properties import ObjectProperty
 
+
 class TabbedCarousel(Factory.TabbedPanel):
     '''Custom TabbedPanel using a carousel used in the Main Screen
     '''

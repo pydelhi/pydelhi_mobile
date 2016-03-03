@@ -1,8 +1,10 @@
 #:import Animation kivy.animation.Animation
 #:import webbrowser webbrowser
+#:import Factory kivy.factory.Factory
+#:import NavigationDrawer uix.navigationdrawer.NavigationDrawer
 #:set active_text_color 59./256., 205./256., 155./256., 1
 #:set background_color 62./256., 70./256., 81./256., 1
-#:import NavigationDrawer uix.navigationdrawer.NavigationDrawer
+
 
 
 <GridH@GridLayout>
@@ -14,16 +16,21 @@
     padding: [5,5,7,5]
 
 <EventItemDetail@Popup>
+    size_hint: .5, .5
     separator_color: active_text_color
     links: ''
     speaker_name: ''
     description: ''
+    on_open:
+        Animation.cancel_all(self)
+        Animation(opacity=1).start(self)
     GridH:
         LeftAlignedLabel
+        LeftAlignedLabel
+        LeftAlignedLabel
+            text: 'Speaker Name'
+        LeftAlignedLabel
             text: root.links
-        LeftAlignedLabel
-        LeftAlignedLabel
-        LeftAlignedLabel
 
 
 <LeftAlignedLabel@Label>
@@ -50,9 +57,15 @@
     time: '9:00 - 10:00'
     orientation: 'vertical'
     padding: [0,4,0,4]
+    on_release:
+        ed = app.event_details
+        if not ed: app.event_details = ed = Factory.EventItemDetail()
+        ed.title = self.title
+        ed.opacity = 0
+        ed.open()
     canvas.before:
         Color:
-            rgba: 39./256., 115./256., 90./256., .7
+            rgba: 39./256., 115./256., 90./256., .3
         Rectangle:
             pos: self.pos
             size: self.size
@@ -73,14 +86,14 @@
     default: False
     size_hint: 1, None
     height: dp(27)
-    background_normal: 'data/but_{}.png'.format('light' if self.default else 'drk')
-    background_down: 'data/but_{}.png'.format('drk' if self.default else 'light')
+    background_normal: 'atlas://data/default/but_{}'.format('light' if self.default else 'drk')
+    background_down: 'atlas://data/default/but_{}'.format('drk' if self.default else 'light')
 
 
 <ScreenSchedule@Screen>
     TabbedCarousel
         id: panel_schedule
-        background_image: 'data/ig.jpg'
+        background_image: 'atlas://data/default/ig'
         Screen
             tab: tab_audi_3
             ScrollView
@@ -211,7 +224,7 @@
             orientation: 'vertical'
             Image:
                 allow_stretch: True
-                source: 'data/center.jpg'
+                source: 'atlas://data/default/center'
                 on_touch_down: 
                     if args[1].is_double_tap: Animation(center = sctr_space.center, rotation=0, scale = 1).start(sctr_map)
             RelativeLayout:
@@ -225,7 +238,7 @@
                         size: sctr_space.size
                         pos: dp(0), dp(0)
                         allow_stretch: True
-                        source: 'data/jnu.png'
+                        source: 'atlas://data/default/jnu'
                         on_touch_down:
                             if args[1].is_double_tap and self.collide_point(*args[1].pos): Animation(center = sctr_space.center, rotation=0, scale = 1 if sctr_map.scale >2 else 3).start(sctr_map)
         PyDelButton:
@@ -251,17 +264,21 @@
         orientation: 'vertical'
         spacing: dp(4)
         Image
-            source: 'data/fossee.png'
+            source: 'atlas://data/default/fossee'
             allow_stretch: True
-            size_hint: 1, .5
-        GridLayout
-            cols: 2
-            rows: 2
-            spacing: dp(4)
-            #Image
-            #Image
-            #Image
-            #Image
+            size_hint: 1, 1
+        BoxLayout
+            orientation: 'vertical'
+            spacing: dp(12)
+            Image
+                allow_stretch: True
+                source: 'atlas://data/default/delhivery'
+            BoxLayout
+                orientation: 'vertical'
+                Widget
+                Image
+                    allow_stretch: True
+                    source: 'atlas://data/default/analyticsvidya'
         PyDelButton
             text: 'Sponsor Us'
             default: True
@@ -282,7 +299,7 @@
         orientation: 'vertical'
         spacing:dp(5)
         Image:
-            source: 'data/ticket.png'
+            source: 'atlas://data/default/ticket'
             allow_stretch: True
             opacity: .1
         PyDelButton
@@ -351,14 +368,14 @@
     halign: 'center'
     valign: 'middle'
     font_size: '13sp'
-    background_normal: 'data/transparent.png'
-    background_down: 'data/but_overlay.png'
+    background_normal: 'atlas://data/default/transparent'
+    background_down: 'atlas://data/default/but_overlay'
     always_release: True
 
 <NavigationItem@TouchRippleBehavior+Button>
     background_color: background_color if self.state == 'normal' else (1, 1, 1, 1)
     background_normal: ''
-    background_down: 'data/but_overlay.png'
+    background_down: 'atlas://data/default/but_overlay'
     size_hint_y: None
     height: dp(45)
     on_release:
@@ -383,7 +400,7 @@ NavigationDrawer
             Image: 
                 size_hint_y: None
                 height: dp(90)
-                source: 'data/logo.png'
+                source: 'atlas://data/default/logo'
                 allow_stretch: True
             NavigationItem:
                 text: 'Schedule'
@@ -417,12 +434,13 @@ NavigationDrawer
                     pos: self.pos
             ImageButton
                 id: hamburger
-                source: 'data/hamburger.png'
+                source: 'atlas://data/default/hamburger'
                 size_hint: None, 1
                 width:  self.height 
                 on_release: navigationdrawer.toggle_state()
             ImageButton
-                source: 'data/logo.png'
+                allow_stretch: True
+                source: 'atlas://data/default/logo'
             Widget:
                 size_hint_x: None
                 width: hamburger.width
