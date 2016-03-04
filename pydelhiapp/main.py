@@ -46,11 +46,37 @@ class PyDelhiApp(App):
     def on_pause(self):
     	return True 
 
-    # def on_start(self):
+    def on_start(self):
     #     #Clock.schedule_interval(self.calc_time_left, 1)
     #     #self.load_local_schedule()
     #     #update_from_remote_schedule(callback=schedule_callback)
-    #     pass
+        self._navigation_higherarchy = ['Schedule']
+        from kivy.base import EventLoop
+        EventLoop.window.bind(on_keyboard=self.hook_keyboard)
+
+    def hook_keyboard(self, window, key, *largs):
+        if key == 27:
+            # do what you want, return True for stopping the propagation
+            self.go_back_in_history()
+            return True 
+
+    def go_back_in_history(self):
+        try:
+            print self.root.ids.screen_manager.current
+            self.root.ids.screen_manager.current = self._navigation_higherarchy.pop()
+        except IndexError:
+            panel = self.root.ids.screen_schedule.ids.panel_schedule
+            #curtab = panel.current_tab
+            #if curtab.text == 'Audi 3':
+            #    panel.current_tab = self.root.ids.screen_schedule.ids.panel_schedule
+            from kivy.utils import platform
+            if platform == 'android':
+                from jnius import cast
+                from jnius import autoclass
+                PythonActivity = autoclass('org.kivy.android.PythonActivity')
+                currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
+                currentActivity.moveTaskToBack(True)
+            self.stop()
 
     # def schedule_callback(self, status, data):
     #     if status == 'success':

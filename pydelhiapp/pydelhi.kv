@@ -15,22 +15,33 @@
     height: self.minimum_height
     padding: [5,5,7,5]
 
-<EventItemDetail@Popup>
-    size_hint: .5, .5
+<EventItemDetail>
+    size_hint: .9, .9
     separator_color: active_text_color
-    links: ''
-    speaker_name: ''
-    description: ''
     on_open:
         Animation.cancel_all(self)
         Animation(opacity=1).start(self)
-    GridH:
-        LeftAlignedLabel
-        LeftAlignedLabel
-        LeftAlignedLabel
-            text: 'Speaker Name'
-        LeftAlignedLabel
-            text: root.links
+    BoxLayout
+        orientation: 'vertical'
+        ScrollView:
+            GridH:
+                padding: dp(12)
+                spacing: dp(9)
+                AsyncImage:
+                    id: img
+                    size_hint_y: None
+                    height: dp(240)
+                    allow_stretch: True
+                    source: root.image
+                LeftAlignedLabel
+                    markup: True
+                    text: root.description
+                    on_ref_press: webbrowser.open(args[1])
+        PyDelButton
+            height: dp(45)
+            text: 'close'
+            default: True
+            on_release: root.dismiss()
 
 
 <LeftAlignedLabel@Label>
@@ -57,11 +68,16 @@
     time: '9:00 - 10:00'
     orientation: 'vertical'
     padding: [0,4,0,4]
+    description: ''
+    image: ''
+    links: []
     on_release:
         ed = app.event_details
         if not ed: app.event_details = ed = Factory.EventItemDetail()
         ed.title = self.title
         ed.opacity = 0
+        ed.description = self.description
+        ed.image = self.image
         ed.open()
     canvas.before:
         Color:
@@ -103,6 +119,8 @@
                         spkr_detail: 'By Kiran Jonnalagadda'
                         title: 'KeyNote'
                         time: '10:00AM - 10:45AM'
+                        image: 'http://www.firstpost.com/wp-content/uploads/2013/03/hasgeek_Kiran.jpg'
+                        description: "Kiran Jonnalagadda is a co-founder of [color=rgb(49,207,155)][ref=http://hasgeek.com]HasGeek[/ref][/color], creator of [color=rgb(49,207,155)][ref=http://hasjob.co]Hasjob[/ref][/color], and a volunteer with the [color=rgb(49,207,155)][ref=http://savetheinternet.in]SaveTheInternet.in[/ref][/color] Coalition."
                     EventItem
                         spkr_detail: 'Workshop by Prof. Kannan Moudgalya'
                         title: 'FOSSEE/Spoken Tutorial'
@@ -117,18 +135,19 @@
                         time: '1:30PM - 2:00PM'
                     EventItem
                         spkr_detail: "Debabrata Nayak"
+                        title: 'Opensource use in Digilocker Architecture'
                         time: '2:15 - 2:45'
                     EventItem
-                        spkr_detail: 'TBA'
-                        title: 'Workshop'
+                        spkr_detail: 'Dr. Ajith Kumar B.P , Gora Mohanty , Prof. Kannan Moudgalya , Satyakaam Goswami , Sirtaj'
+                        title: 'Panel Discussion'
                         time: '2:15PM - 4:00PM'
                     EventItem
                         spkr_detail: 'Talk by Arulalan T'
                         title: 'Advantages of Python in Atmospheric and Oceanic Sciences'
                         time: '4:00PM - 4:30PM'
                     EventItem
-                        spkr_detail: 'Talk by Sridhar Rao'
-                        title: 'Python in the SDN World'
+                        spkr_detail: 'Talk by Jithin B.P'
+                        title: 'Integrating Theory and Experiments with Python'
                         time: '4:50PM - 5:20PM'
                     EventItem
                         spkr_detail: 'Assorted Speakers'
@@ -446,7 +465,12 @@ NavigationDrawer
                 width: hamburger.width
         ScreenManager
             id: screen_manager
+            on_current:
+                hc = app._navigation_higherarchy
+                if args[1] in hc: num = hc.index(args[1]); hc.pop(num)
+                hc.append(args[1])
             ScreenSchedule
+                id: screen_schedule
                 name: 'Schedule'
             ScreenMaps
                 name: 'Location'

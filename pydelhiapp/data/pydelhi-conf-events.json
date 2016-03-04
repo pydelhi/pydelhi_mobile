@@ -22,7 +22,7 @@
             "img": "img/kiran.jpg",
             "schedule-item-date": "10:00 AM - 10:45 AM",
             "schedule-item-title": "Keynote by Kiran Jonnalagadda",
-            "schedule-item-text": "Kiran Jonnalagadda is a co-founder of [ref='http://hasgeek.com']HasGeek[/ref], creator of [ref='http://hasjob.co']Hasjob[/ref], and a volunteer with the [ref='http://savetheinternet.in]SaveTheInternet.in[/ref] Coalition."
+            "schedule-item-text": "Kiran Jonnalagadda is a co-founder of [color=rgb(49,207,155)][ref='http://hasgeek.com']HasGeek[/ref][/color], creator of [color=rgb(49,207,155)][ref='http://hasjob.co']Hasjob[/ref][/color], and a volunteer with the [color=rgb(49,207,155)][ref='http://savetheinternet.in]SaveTheInternet.in[/ref][/color] Coalition."
         },
         {
             "img": "img/mic.jpg",
@@ -75,8 +75,8 @@
         {
             "img": "img/mic.jpg",
             "schedule-item-date": "4:50 PM - 5:20 PM",
-            "schedule-item-title": "[ref='https://cfp.pydelhi.org/pydelhi-conference-2016/proposals/python-in-the-sdn-world/']Python in the SDN World[/ref]",
-            "schedule-item-text": "Talk by Sridhar Rao"
+            "schedule-item-title": "Talk on ",
+            "schedule-item-text": "Talk by Jithin Kumar B.P"
         },
         {
             "img": "img/panel.jpg",
