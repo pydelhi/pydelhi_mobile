@@ -63,7 +63,8 @@ class PyDelhiApp(App):
     def go_back_in_history(self):
         try:
             print self.root.ids.screen_manager.current
-            self.root.ids.screen_manager.current = self._navigation_higherarchy.pop()
+            nc = self._navigation_higherarchy.pop()
+            print nc
         except IndexError:
             panel = self.root.ids.screen_schedule.ids.panel_schedule
             #curtab = panel.current_tab

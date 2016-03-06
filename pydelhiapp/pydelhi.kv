@@ -564,6 +564,7 @@ NavigationDrawer
             id: screen_manager
             on_current:
                 hc = app._navigation_higherarchy
+                print app._navigation_higherarchy, '_navigation_higherarchy', args[1]
                 if args[1] in hc: num = hc.index(args[1]); hc.pop(num)
                 hc.append(args[1])
             ScreenSchedule
@@ -577,5 +578,3 @@ NavigationDrawer
                 name: 'Tickets'
             ScreenAbout
                 name: 'About'
-                
-                        

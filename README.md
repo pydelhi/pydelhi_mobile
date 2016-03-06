@@ -10,3 +10,14 @@
 
 ### Help on screens
 - https://kivy.org/docs/api-kivy.modules.screen.html
+
+## to make apk **prefer linux**
+
+1. Install buildozer: pip install buildozer
+2. Edit the buildozer.spec to specify if you have android ndk and sdk,
+   if not they will be automatically be downloaded by the next step.
+3. Connect your mobile, enable usb debugging, Then goto PyDelhiMobile
+   folder and type `make apk`
+
+
+***   Enjoy   ***
