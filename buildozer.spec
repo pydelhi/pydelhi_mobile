@@ -33,7 +33,7 @@ version = 0.3
 
 # (list) Application requirements
 # comma seperated e.g. requirements = sqlite3,kivy
-requirements = hostpython2,android,kivy,docutils
+requirements = hostpython2,android,openssl,kivy,docutils
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
