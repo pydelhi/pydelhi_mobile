@@ -12,6 +12,12 @@ PyCon India 2016 Application
 ### Help on screens
 - https://kivy.org/docs/api-kivy.modules.screen.html
 
+## To change image
+   - Paste/change the image in PyCon-Mobile-App/tools/theming
+   - Change your directory to PyCon-Mobile-App
+   - Run command ``make theming`` 
+     this command will aggregate all the png images in your file to one.
+
 ## to make apk **prefer linux**
 
 1. Install buildozer: pip install buildozer
