@@ -1,9 +1,12 @@
 PyCon India 2016 Application 
 =======
 > Mobile App for PyConIndia
-
+## Requirements:
 ## Kivy Installation:
 - https://kivy.org/docs/installation/installation.html
+
+## Junction Client Installation:
+- pip install git+git://github.com/pythonindia/junction-client.git --user
 
 ### To test install kivy and run the following::
 
