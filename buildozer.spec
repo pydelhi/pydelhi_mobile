@@ -33,7 +33,7 @@ version = 0.3
 
 # (list) Application requirements
 # comma seperated e.g. requirements = sqlite3,kivy
-requirements = hostpython2,android,openssl,kivy,docutils
+requirements = hostpython2,android,openssl,kivy,git+http://github.com/pythonindia/junctionclient
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -158,6 +158,7 @@ fullscreen = 1
 # (str) Name of the certificate to use for signing the debug version
 # Get a list of available identities: buildozer ios list_identities
 #ios.codesign.debug = "iPhone Developer: <lastname> <firstname> (<hexstring>)"
+ios.codesign.debug = "iPhone Distribution: Akshay Arora (RPJ7XAT92V)"
 
 # (str) Name of the certificate to use for signing the release version
 #ios.codesign.release = %(ios.codesign.debug)s

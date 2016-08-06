@@ -4,6 +4,7 @@ Custom Behaviors are defined in this module.
 from kivy.app import App
 from kivy.animation import Animation
 from kivy.clock import Clock
+from kivy.event import EventDispatcher
 from kivy.properties import (NumericProperty, StringProperty,
                              ListProperty)
 from kivy.graphics import (Rectangle, Color, Ellipse, StencilPop,
@@ -11,21 +12,24 @@ from kivy.graphics import (Rectangle, Color, Ellipse, StencilPop,
 
 
 
-class TouchRippleBehavior(object):
+class TouchRippleBehavior(EventDispatcher):
+
+    __events__ = ('on_released',) 
+
     ripple_rad = NumericProperty(10)
     ripple_pos = ListProperty([0, 0])
     #141 ,188, 234
     ripple_color = ListProperty((141./256., 188./256., 234./256., 1))
     ripple_duration_in = NumericProperty(.3)
     ripple_duration_out = NumericProperty(.3)
-    fade_to_alpha = NumericProperty(.2)
+    fade_to_alpha = NumericProperty(.3)
     ripple_scale = NumericProperty(2.0)
     ripple_func_in = StringProperty('out_quad')
     ripple_func_out = StringProperty('in_quad')
 
     def on_touch_down(self, touch):
         if self.collide_point(touch.x, touch.y):
-            self.anim_complete(self, self)
+            # self.anim_complete(self, self)
             self.ripple_pos = ripple_pos = (touch.x, touch.y)
             Animation.cancel_all(self, 'ripple_rad', 'ripple_color')
             rc = self.ripple_color
@@ -38,7 +42,7 @@ class TouchRippleBehavior(object):
                 duration=self.ripple_duration_in)
             anim.bind(on_complete=self.anim_complete)
             anim.start(self)
-            with self.canvas.before:
+            with self.canvas:
                 StencilPush()
                 Rectangle(size=self.size, pos=self.pos)
                 StencilUse()
@@ -65,13 +69,20 @@ class TouchRippleBehavior(object):
     def set_color(self, instance, value):
         self.col_instruction.rgba = value
 
-    def on_press(self):
+    def on_release(self):
         rc = self.ripple_color
         anim = Animation(ripple_color=[rc[0], rc[1], rc[2], 0.], 
             t=self.ripple_func_out, duration=self.ripple_duration_out)
-        anim.bind(on_complete=self.anim_complete)
-        Clock.schedule_once(lambda dt: anim.start(self), self.ripple_duration_in)
+        anim.bind(on_complete=self.anim_completed)
+        anim.start(self)
 
     def anim_complete(self, anim, instance):
         self.ripple_rad = 10
-        self.canvas.before.remove_group('one')
+        self.canvas.remove_group('one')
+
+    def on_released(self):
+        pass
+
+    def anim_completed(self, anim, instance):
+        self.anim_complete(anim, instance)
+        self.dispatch('on_released')

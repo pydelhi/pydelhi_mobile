@@ -1,10 +1,25 @@
 from kivy.factory import Factory
 from kivy.properties import ObjectProperty
+from kivy.lang import Builder
 
 
 class TabbedCarousel(Factory.TabbedPanel):
     '''Custom TabbedPanel using a carousel used in the Main Screen
     '''
+    Builder.load_string('''
+<TabbedCarousel>
+    carousel: carousel
+    do_default_tab: False
+    Carousel:
+        scroll_timeout: 120
+        scroll_distance: '20dp'
+        anim_type: 'out_quart'
+        min_move: .05
+        anim_move_duration: .1
+        anim_cancel_duration: .54
+        on_index: root.on_index(*args)
+        id: carousel
+''')
 
     carousel = ObjectProperty(None)
 

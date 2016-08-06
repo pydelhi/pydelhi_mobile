@@ -1,114 +1,145 @@
 # -*- coding: utf8 -*-
-'''
-PyDelhi App: 
-- Displays Schedule: static √
-- Static map: √
-- Link to open location externally √
-- Talk/Workshop details √
-- Feedback ...
-- Social Media:
-	- Facebook
-	- Twitter
-- Dynamic schedule 
+'''PyConIndia App for 2016:
+
+Github Repo: http://github.com/pythonindia/PyCon-Mobile-App
 '''
 
-#from datetime import datetime
-import os
+__version__ = '0.0.2'
+
+
+
+# imports 
+import os, sys
 from os.path import abspath, dirname
 
+# This allows you to use a custom data dir for kivy allowing you to
+# load only the images that you set here in this dir.
+# This way you avoid first loading kivy default images and .kv then
+# loading your data files on top.
 os.environ['KIVY_DATA_DIR'] = abspath(dirname(__file__)) + '/data'
 
+# import App this is the main Class that manages UI's event loop
 from kivy.app import App
-from kivy.clock import Clock
 
-from kivy.config import Config
-Config.set('widgets', 'scroll_distance', '13')
-from kivy.properties import StringProperty, ObjectProperty
-from kivy.factory import Factory
+# Kivy's properties are based on a observer pattern
+# :ref: https://en.wikipedia.org/wiki/Observer_pattern
+from kivy.properties import ListProperty, StringProperty, ObjectProperty
 
-Factory.register('TouchRippleBehavior', module='uix.behaviors')
-Factory.register('TabbedCarousel', module='uix.tabbedcarousel')
+script_path = os.path.dirname(os.path.realpath(__file__))
 
-#from background_services import update_from_remote_schedule
+# add module path for screen so they can be ynamically be imported
+module_path = script_path + '/uix/screens/'
+sys.path.insert(0, module_path)
 
-class PyDelhiApp(App):
-    ''' Our main app class
+
+class PyConIndiaApp(App):
+    ''' Our main app class:
+    - 
     '''
-    about_text = StringProperty('')
 
-    #time_left = StringProperty('')
+    base_active_color = ListProperty([220/256., 47/256., 29/256., 1])
+    '''This is the base Color in the app that is used to denote the currently
+    active widgets, active buttons and highlited areas. Format
+    is RGBA.
+
+    :attr:`base_active_color` is a :class:`~kivy.properties.ListProperty`
+
+    defaults to Red(217, 52, 47)
+    '''
+
+    base_inactive_color = ListProperty([61/256., 61/256., 61/256., 1])
+    '''This is the base Color in the app that is used to denote the currently
+    inactive items, inactive buttons and highlited areas. Format
+    is RGBA.
+
+    :attr:`base_inactive_color` is a :class:`~kivy.properties.ListProperty`
+
+    defaults to Red(217, 52, 47)
+    '''
+
+    base_inactive_light = ListProperty([225/256., 224/256., 224/256., 1])
+    '''This is the base Color in the app that is used to denote the currently
+    active color used to display active buttons and highlited areas. Format
+    is RGBA.
+
+    :attr:`base_active_color` is a :class:`~kivy.properties.ListProperty`
+
+    defaults to Red(225p, 224, 224)
+    '''
+
+    base_color = ListProperty([250/256., 250/256., 250/256., 1])
+    '''This is the base Color in the app that is used to for bakgrounds.
+
+    :attr:`base_color` is a :class:`~kivy.properties.ListProperty`
+
+    defaults to Red(250, 250, 250, 1)
+    '''
 
     def build(self):
-        self.event_details = None
-        self.about_text = '[b]About the conference[/b]\n\nPyDelhi conference is hosted annually by Pydelhi community with an aim to promote Python programming language. We provide a single platform to users from different spheres such as students, global entrepreneur and professionals from startup and established firms to connect and share their ideas. Experts from various domains showcase their use of Python besides discussing about the recent and upcoming trends in technology.\n\n\n[b]App designed and implenented by PyDelhi Team visit us at [color=rgb(49,207,155)][ref=http://PyDelhi.org]http://PyDelhi.org[/ref][/color][/b]'
         self.icon = 'data/icon.png'
+        # Here we build our own navigation higherarchy.
+        # So we can decide what to do when the back
+        # button is pressed.
+        self._navigation_higherarchy = []
+        # this is the main entry point of our app
+        from uix.pycon import PyConScreenManager
+        sm = PyConScreenManager()
+        # This `sm` is the root widget of our app refered by app.root
+        return sm
 
     def on_pause(self):
-    	return True 
+        # return True to allow for the app to pause
+        return True 
 
     def on_start(self):
-    #     #Clock.schedule_interval(self.calc_time_left, 1)
-    #     #self.load_local_schedule()
-    #     #update_from_remote_schedule(callback=schedule_callback)
-        self._navigation_higherarchy = ['Schedule']
-        from kivy.base import EventLoop
-        EventLoop.window.bind(on_keyboard=self.hook_keyboard)
+        # bind to the keyboard to listen to 
+        # specific key codes
+        from utils.keyboard import hook_keyboard
+        hook_keyboard()
+        # let's load our first screen
+        self.load_screen('StartupScreen')
 
-    def hook_keyboard(self, window, key, *largs):
-        if key == 27:
-            # do what you want, return True for stopping the propagation
-            self.go_back_in_history()
-            return True 
 
     def go_back_in_history(self):
         try:
-            print self.root.ids.screen_manager.current
-            nc = self._navigation_higherarchy.pop()
-            print nc
-        except IndexError:
-            panel = self.root.ids.screen_schedule.ids.panel_schedule
-            #curtab = panel.current_tab
-            #if curtab.text == 'Audi 3':
-            #    panel.current_tab = self.root.ids.screen_schedule.ids.panel_schedule
-            from kivy.utils import platform
-            if platform == 'android':
-                from jnius import cast
-                from jnius import autoclass
-                PythonActivity = autoclass('org.kivy.android.PythonActivity')
-                currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
-                currentActivity.moveTaskToBack(True)
-            self.stop()
+            print self._navigation_higherarchy.pop()
+        except IndexError: 
+            # at root of app. Pause it.
+            from utils import pause_app
 
-    # def schedule_callback(self, status, data):
-    #     if status == 'success':
-    #         # update schedule
-    #         self.load_data(data)
+    def load_screen(self, screen, manager=None, store_back=True):
+        '''Load the provided screen:
+        arguments::
+            `screen`: is the name of the screen to be loaded
+            `manager`: the manager to load this screen, this defaults to
+            the main class.
+        '''
+        store_back = False if screen == 'StartupScreen' else store_back
 
-    # def load_local_schedule(self):
-    #     import json
-    #     data = json.load(open('data/pydelhi-conf-events.json'))
-    #     self.load_data(data)
+        manager = manager or self.root
+        # load screen modules dynamically
+        # for example load_screen('LoginScreen')
+        # will look for uix/screens/loginscreen
+        # load LoginScreen 
+        module_path = screen.lower()
+        if not hasattr(self, module_path):
+            import imp
+            module = imp.load_module(screen, *imp.find_module(module_path))
+            screen_class = getattr(module, screen)
+            sc = screen_class()
+            setattr(self, module_path, sc)
+            manager.add_widget(sc)
 
-    # def load_data(self, data):
-    #     grid = self.root.ids.grid_audi_3
-    #     grid.clear_widgets()
-    #     EventItem = Factory.EventItem
-    #     gridadd = grid.add_widgets
-    #     for hall in data.keys():
-    #         talks = data[hall]
-    #         for talk in talks:
-    #             title = talk['schedule-item-date']
-    #             date = talk['schedule-item-date']
-    #             text = talk['schedule-item-text']
-    #             gridadd(EventItem(title=title, time=date, spkrdetail=text))
+        else:
+            sc = getattr(self, module_path  )
+        manager.current = screen
+
+        if store_back:
+            self._navigation_higherarchy.append(sc)
+
+        return getattr(self, module_path)
 
 
-    # def calc_time_left(self, dt):
-    #     td = datetime(2016, 3, 5, 9) - datetime.now()
-    #     days = td.days
-    #     hours, remainder = divmod(td.seconds, 3600)
-    #     minutes, seconds = divmod(remainder, 60)
-    #     self.time_left = '{}d, {}:{}:{} to go'.format(days, hours, minutes, seconds)
-
+# Check if app is started as main and only then insitantiate the App class.
 if __name__ == '__main__':
-    PyDelhiApp().run()
+    PyConIndiaApp().run()
