@@ -61,12 +61,12 @@ class ScreenSchedule(Screen):
         Color
             rgba: root.back_color if root.back_color else (1, 1, 1, 1)
         Rectangle
-            size: dp(300), dp(36)
+            size: dp(270), dp(36)
             pos: self.x, self.top - dp(36)
         Color
             rgba: (list(root.back_color[:3]) + [.3]) if root.back_color else (1, 1, 1, 1)
         Rectangle
-            size: dp(300), dp(36)
+            size: dp(270), dp(36)
             pos: self.x + dp(7), self.top - (dp(36) + dp(7))
     
 
@@ -91,7 +91,7 @@ class ScreenSchedule(Screen):
         # from utils import fetch_data
         # fetch_data()
     BoxLayout
-        spacing: dp(13)
+        spacing: dp(20)
         orientation: 'vertical'
         padding: dp(4)
         Topic
