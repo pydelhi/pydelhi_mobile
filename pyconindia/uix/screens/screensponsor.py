@@ -24,22 +24,25 @@ class ScreenSponsor(Screen):
             spacing: dp(12)
             Image
                 allow_stretch: True
-                source: 'atlas://data/default/delhivery'
+                source: ''
             BoxLayout
                 orientation: 'vertical'
                 Widget
                 Image
                     allow_stretch: True
-                    source: 'atlas://data/default/analyticsvidya'
-        Button
-            text: 'Sponsor Us'
-            default: True
+                    source: ''
+        BoxLayout
             size_hint_y: None
-            height: dp(40)
-            on_release: webbrowser.open('https://in.pycon.org/2016/sponsorship-prospectus.pdf')
-        Button
-            text: 'Contact Us'
-            size_hint_y: None
-            height: dp(40)
-            on_release: webbrowser.open('mailto:sponsorship@in.pycon.org')
+            height: dp(50)
+            PyConButton
+                text: 'Sponsor Us'
+                default: True
+                size_hint_y: None
+                height: dp(40)
+                on_release: webbrowser.open('https://in.pycon.org/2016/sponsorship-prospectus.pdf')
+            PyConButton
+                text: 'Contact Us'
+                size_hint_y: None
+                height: dp(40)
+                on_release: webbrowser.open('mailto:sponsorship@in.pycon.org')
 ''')
