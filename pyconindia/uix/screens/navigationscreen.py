@@ -67,6 +67,9 @@ class NavigationScreen(Screen):
                 text: 'Quiz'
                 on_release: app.load_screen('ScreenQuiz', manager=app.navigation_manager)
             MenuButton
+                text: 'Pong'
+                on_release: app.load_screen('ScreenPong', manager=app.navigation_manager)
+            MenuButton
                 text: 'About'
             MenuButton
                 text: 'Exit'
@@ -85,6 +88,7 @@ class NavigationScreen(Screen):
 <RightPanel@BoxLayout+Background>
     source: 'atlas://data/default/bg'
     orientation: "vertical"
+    color: (.2, .2, .2, 1) if nav_sm.current in ('ScreenPong', 'ScreenQuiz') else (1, 1, 1, 1)
     TopBar
     ScreenManager
         on_parent: app.navigation_manager = nav_sm
