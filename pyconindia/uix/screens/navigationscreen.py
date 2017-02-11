@@ -51,16 +51,15 @@ class NavigationScreen(Screen):
                 on_release: app.load_screen('ScreenSponsor', manager=app.navigation_manager)
             MenuButton
                 text: 'Venue'
+                on_release: app.load_screen('ScreenVenue', manager=app.navigation_manager)
             # MenuButton
             #     text: 'OpenSpaces'
-            # MenuButton
-            #     text: 'DevSprints'
+            MenuButton
+                text: 'DevSprints'
             MenuButton
                 text: 'Ticket'
             MenuButton
                 text: 'Community'
-            MenuButton
-                text: 'Quiz'
             MenuButton
                 text: 'About'
             MenuButton
