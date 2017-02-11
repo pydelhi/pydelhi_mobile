@@ -1,16 +1,16 @@
 [app]
 
 # (str) Title of your application
-title = PyDelhiConf
+title = PyDelhi Conf 2017
 
 # (str) Package name
 package.name = conference
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.pydelhi
+package.domain = org.pydelhiconf
 
 # (str) Source code where the main.py live
-source.dir = ./pydelhiapp
+source.dir = ./pydelhiconf
 
 # (list) Source files to include (let empty to include all the files)
 source.include_exts = py,png,jpg,kv,atlas
@@ -33,7 +33,7 @@ version = 0.3
 
 # (list) Application requirements
 # comma seperated e.g. requirements = sqlite3,kivy
-requirements = hostpython2,android,openssl,kivy,git+http://github.com/pythonindia/junctionclient
+requirements = hostpython2,android,openssl,kivy
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
