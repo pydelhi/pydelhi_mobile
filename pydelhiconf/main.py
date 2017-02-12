@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
-'''PyConIndia App for 2016:
+'''App for PyDelhi Conf 2017:
 
-Github Repo: http://github.com/pythonindia/PyCon-Mobile-App
+Github Repo: http://github.com/
 '''
 
 __version__ = '0.0.2'
@@ -37,7 +37,7 @@ class PyConApp(App):
     - 
     '''
 
-    base_active_color = ListProperty([220/256., 47/256., 29/256., 1])
+    base_active_color = ListProperty([85./255, 172./255, 238./255, 1])
     '''This is the base Color in the app that is used to denote the currently
     active widgets, active buttons and highlited areas. Format
     is RGBA.
@@ -82,8 +82,8 @@ class PyConApp(App):
         # button is pressed.
         self._navigation_higherarchy = []
         # this is the main entry point of our app
-        from uix.pycon import PyConScreenManager
-        sm = PyConScreenManager()
+        from uix.pydelhiconf import PyDelhiConfScreenManager
+        sm = PyDelhiConfScreenManager()
         # This `sm` is the root widget of our app refered by app.root
         return sm
 
@@ -132,18 +132,18 @@ class PyConApp(App):
         # will look for uix/screens/loginscreen
         # load LoginScreen 
         module_path = screen.lower()
-        print 'module_path', module_path
         if not hasattr(self, module_path):
             import imp
             module = imp.load_module(screen, *imp.find_module(module_path))
+            print "module ", module
             screen_class = getattr(module, screen)
+            print "screen_class ", screen_class
             sc = screen_class()
             setattr(self, module_path, sc)
             manager.add_widget(sc)
 
         else:
             sc = getattr(self, module_path)
-        print manager.screen_names
         manager.current = screen
 
         if store_back:

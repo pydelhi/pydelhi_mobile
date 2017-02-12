@@ -19,3 +19,8 @@ def pause_app():
     else:
         app.stop()
 
+
+def fetch_data():
+    '''
+    FIXME
+    '''

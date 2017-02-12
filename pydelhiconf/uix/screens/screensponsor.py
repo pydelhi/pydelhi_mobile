@@ -15,8 +15,8 @@ class ScreenSponsor(Screen):
         padding: dp(12)
         orientation: 'vertical'
         spacing: dp(4)
-        Image
-            source: 'atlas://data/default/fossee'
+        AsyncImage
+            source: 'https://conference.pydelhi.org/img/platinum_sponsor.jpg'
             allow_stretch: True
             size_hint: 1, 1
         BoxLayout

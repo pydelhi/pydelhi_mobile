@@ -9,23 +9,7 @@ from uix.tabbedcarousel import TabbedCarousel
 
 class ScreenSchedule(Screen):
     '''
-     ----------------------------------------
-    |             Pycon India 2016        v  |
-     ----------------------------------------
-    |   September 23rd Friday Workshop Day   |
-     ----------------------------------------
-    |Timings:     |  Hall 1       | Hall 2   | Hall 3 |
-    |----------------------------------------|
-    |9:00 -  10:00| Keynote       |          |
-    |10:00 - 12:00| Workshop 1    |          |
-    |12:00 - 02:00| Workshop 2    |          |
-    |02:00 - 03:00| Lunch         |          |
-    |03:00 - 05:00| Workshop 3    |          |
-    |----------------------------------------|
-    |   September 24th Saturday Conf Day 1   |
-    |----------------------------------------|
-    |   September 24th Saturday Conf Day 2   |
-     ----------------------------------------
+    FIXME
 
     '''
 
@@ -95,13 +79,13 @@ class ScreenSchedule(Screen):
         orientation: 'vertical'
         padding: dp(4)
         Topic
-            text: 'PyCon India 2016'
+            text: 'PyDelhi Conf 2017'
         Accordion
             id: accordian_days
             orientation: 'vertical'
             AccordionItem
                 back_color: app.base_active_color
-                title: 'Friday September 23 2016'
+                title: 'Saturday March 18, 2017'
                 BoxLayout
                     ScrollView
                         id: left_scroll
@@ -139,11 +123,7 @@ class ScreenSchedule(Screen):
                             Button
                                 height: dp(900)
                             Button
-
-            AccordionItem
-                back_color: app.base_inactive_color
-                title: 'Saturday September 24 2016'
             AccordionItem
                 back_color: 45/256, 191/256., 212/256., 1
-                title: 'Sunday September 25 2016'
+                title: 'Sunday March 19, 2017'
  ''')

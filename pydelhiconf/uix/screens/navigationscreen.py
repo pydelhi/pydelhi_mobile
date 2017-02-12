@@ -40,6 +40,7 @@ class NavigationScreen(Screen):
         source: "atlas://data/default/logo"
         size_hint: 1, None
         height: dp(130)
+        mipmap: True
     ScrollView
         GridLayout
             cols: 1
@@ -54,21 +55,15 @@ class NavigationScreen(Screen):
             MenuButton
                 text: 'Venue'
                 on_release: app.load_screen('ScreenVenue', manager=app.navigation_manager)
-            # MenuButton
-            #     text: 'OpenSpaces'
-            # MenuButton
-            #     text: 'DevSprints'
+            MenuButton
+                text: 'OpenSpaces'
+            MenuButton
+                text: 'DevSprints'
             MenuButton
                 text: 'Ticket'
                 on_release: app.load_screen('ScreenTicket', manager=app.navigation_manager)
             MenuButton
                 text: 'Community'
-            MenuButton
-                text: 'Quiz'
-                on_release: app.load_screen('ScreenQuiz', manager=app.navigation_manager)
-            MenuButton
-                text: 'Pong'
-                on_release: app.load_screen('ScreenPong', manager=app.navigation_manager)
             MenuButton
                 text: 'About'
             MenuButton
