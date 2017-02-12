@@ -102,9 +102,12 @@ class PyConApp(App):
 
     def go_back_in_history(self):
         try:
-            self._navigation_higherarchy.pop()
+            scr = self._navigation_higherarchy.pop()
+            if scr.name == 'ScreenSchedule':
+                from utils import pause_app
+                pause_app()
+                return
             scr = self._navigation_higherarchy[-1]
-            print 'go back to', scr.name
             self.load_screen(
                 scr.name,
                 manager=scr.manager,
@@ -112,6 +115,7 @@ class PyConApp(App):
         except IndexError: 
             # at root of app. Pause it.
             from utils import pause_app
+            pause_app()
 
     def load_screen(self, screen, manager=None, store_back=True):
         '''Load the provided screen:
