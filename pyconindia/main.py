@@ -32,7 +32,7 @@ module_path = script_path + '/uix/screens/'
 sys.path.insert(0, module_path)
 
 
-class PyConIndiaApp(App):
+class PyConApp(App):
     ''' Our main app class:
     - 
     '''
@@ -102,7 +102,13 @@ class PyConIndiaApp(App):
 
     def go_back_in_history(self):
         try:
-            print self._navigation_higherarchy.pop()
+            self._navigation_higherarchy.pop()
+            scr = self._navigation_higherarchy[-1]
+            print 'go back to', scr.name
+            self.load_screen(
+                scr.name,
+                manager=scr.manager,
+                store_back=False)
         except IndexError: 
             # at root of app. Pause it.
             from utils import pause_app
@@ -122,6 +128,7 @@ class PyConIndiaApp(App):
         # will look for uix/screens/loginscreen
         # load LoginScreen 
         module_path = screen.lower()
+        print 'module_path', module_path
         if not hasattr(self, module_path):
             import imp
             module = imp.load_module(screen, *imp.find_module(module_path))
@@ -131,7 +138,8 @@ class PyConIndiaApp(App):
             manager.add_widget(sc)
 
         else:
-            sc = getattr(self, module_path  )
+            sc = getattr(self, module_path)
+        print manager.screen_names
         manager.current = screen
 
         if store_back:
@@ -142,4 +150,4 @@ class PyConIndiaApp(App):
 
 # Check if app is started as main and only then insitantiate the App class.
 if __name__ == '__main__':
-    PyConIndiaApp().run()
+    PyConApp().run()

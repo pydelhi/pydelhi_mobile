@@ -55,7 +55,7 @@ class ScreenSchedule(Screen):
     halign: 'left'
     valign: 'middle'
 
-<AccordionItem@TouchRippleBehavior+AccordionItem>
+<AccordionItem>
     back_color: app.base_active_color
     canvas.before:
         Color

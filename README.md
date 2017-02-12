@@ -80,7 +80,7 @@ That's it. Now to load this screen::
 
     Button:
     	on_release:
-            app.load_screen('ScreenSponsor', manager=anager=app.navigation_manager)
+            app.load_screen('ScreenSponsor', manager=app.navigation_manager)
 
 `manager=` is a optional parameter, which specifies which `ScreenManager` to load this screen in.
 If it is omitted this screen will be loaded into the main Screen Manager Which is responsobile for loading `StartupScreen` and `NavigationScreen`.
