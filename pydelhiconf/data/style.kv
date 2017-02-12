@@ -99,6 +99,17 @@
 <TabbedPanelStrip>
     rows: 1
 
+<SplitterStrip>:
+    border: self.parent.border if self.parent else (3, 3, 3, 3)
+    horizontal: '_h' if self.parent and self.parent.sizable_from[0] in  ('t', 'b') else ''
+    background_normal: 'atlas://data/images/defaulttheme/splitter{}{}'.format('_disabled' if self.disabled else '', self.horizontal)
+    background_down: 'atlas://data/images/defaulttheme/splitter_down{}{}'.format('_disabled' if self.disabled else '', self.horizontal)
+    Image:
+        pos: root.pos
+        size: root.size
+        allow_stretch: True
+        source: 'atlas://data/images/defaulttheme/splitter_grip' + root.horizontal
+
 <StripLayout>
     padding: '2dp', '2dp', '2dp', '2dp'
     canvas.before:

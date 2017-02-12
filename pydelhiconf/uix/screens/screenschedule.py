@@ -17,12 +17,12 @@ class ScreenSchedule(Screen):
 <Topic@Label>
     canvas.before:
         Color
-            rgba: 45/256, 191/256., 212/256., 1
+            rgba: app.base_inactive_light
         Rectangle
             size: dp(300), self.height
             pos: self.right - dp(300), self.y
         Color
-            rgba: 45/256, 191/256., 212/256., .5
+            rgba: app.base_inactive_light[:3]+[.5]
         Rectangle
             size: dp(300), self.height
             pos: self.right - dp(310), self.y - dp(10)
@@ -43,12 +43,12 @@ class ScreenSchedule(Screen):
     back_color: app.base_active_color
     canvas.before:
         Color
-            rgba: root.back_color if root.back_color else (1, 1, 1, 1)
+            rgba: root.back_color or (1, 1, 1, 1)
         Rectangle
             size: dp(270), dp(36)
             pos: self.x, self.top - dp(36)
         Color
-            rgba: (list(root.back_color[:3]) + [.3]) if root.back_color else (1, 1, 1, 1)
+            rgba: (list(root.back_color[:3])+[.3]) if root.back_color else (1, 1, 1, 1)
         Rectangle
             size: dp(270), dp(36)
             pos: self.x + dp(7), self.top - (dp(36) + dp(7))
@@ -124,6 +124,8 @@ class ScreenSchedule(Screen):
                                 height: dp(900)
                             Button
             AccordionItem
-                back_color: 45/256, 191/256., 212/256., 1
+                back_color: app.base_inactive_light
                 title: 'Sunday March 19, 2017'
  ''')
+    # TODO take schedule from json and display data based on it
+    # what's present above is only a simple test

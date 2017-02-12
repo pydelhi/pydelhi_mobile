@@ -18,6 +18,7 @@ class StartupScreen(Screen):
         from kivy.clock import Clock
         Clock.schedule_once(lambda dt: app.load_screen('NavigationScreen'), 2)
     Image:
+        color: app.base_color
         source: 'atlas://data/default/bg'
         allow_stretch: True
         keep_ratio: False

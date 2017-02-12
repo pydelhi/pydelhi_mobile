@@ -9,14 +9,16 @@ class PyDelhiConfScreenManager(ScreenManager):
 #:import WipeTransition kivy.uix.screenmanager.WipeTransition
 
 <ImgBut@ButtonBehavior+Image>
+    color: 1, 1, 1, 1
+    mipmap: True
     opacity: .5 if self.state =='down' else 1
 
 <Background@Widget>
 	source: ''
-	color: 1, 1, 1, 1
+	color: app.base_color
 	canvas.before:
     	Color:
-    		rgba: root.color
+    		rgba: root.color if root.color else (1, 1, 1, 1)
     	Rectangle:
     		source: root.source
     		size: self.size

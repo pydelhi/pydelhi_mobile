@@ -21,13 +21,15 @@ class ScreenVenue(Screen):
             source: 'atlas://data/default/venue'
             allow_stretch: True
             keep_ratio: True
-        MapView:
-            zoom: 11
-            lat: 28.6235184
-            lon: 77.3551479 
-            MapMarker
+        Splitter
+            sizable_from: 'top'
+            MapView:
+                zoom: 11
                 lat: 28.6235184
-                lon: 77.3551479
+                lon: 77.3551479 
+                MapMarker
+                    lat: 28.6235184
+                    lon: 77.3551479
         BoxLayout:
             size_hint: 1, None
             height: dp(45)
