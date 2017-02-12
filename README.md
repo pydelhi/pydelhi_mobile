@@ -1,24 +1,22 @@
-PyCon India 2016 Application 
-=======
-> Mobile App for PyConIndia
+PyDelhi Conf 2017 Application 
+=============================
+
+
+> Mobile App for PyDelhi Conf 2017
 
 ## Kivy Installation:
 - https://kivy.org/docs/installation/installation.html
 
-## requirements
-
-pip install git+git://github.com/pythonindia/junction-client.git --user
-
 ### To test install kivy and run the following::
 
-    $ python pyconindia/main.py -m screen:droid2,portrait -m inspector
+    $ python pydelhiconf/main.py -m screen:droid2,portrait -m inspector
 
 ### Help on screens
 - https://kivy.org/docs/api-kivy.modules.screen.html
 
 ## To change images in app
-   - Paste/change the image in PyCon-Mobile-App/tools/theming
-   - Change your directory to PyCon-Mobile-App
+   - Paste/change the image in PyDelhiConf/tools/theming
+   - Change your directory to PyDelhiConf
    - Run command ``make theming`` 
 
 This command will aggregate all the png images in your file to one atlas
@@ -29,7 +27,7 @@ from which the images are loaded.
 1. Install buildozer: pip install buildozer
 2. Edit the buildozer.spec to specify if you have android ndk and sdk,
    if not they will be automatically be downloaded by the next step.
-3. Connect your mobile, enable usb debugging, Then goto PyConIndia
+3. Connect your mobile, enable usb debugging, Then goto pydelhiconf
    folder and type `make apk`
 
 Link to a existing vm that can be re-used will be added for convenience.
@@ -74,16 +72,16 @@ Take special note of the names::
     The `name: ScreenSponsor`, in this same as the class name `class ScreenSponsor(...)`.
 
 
-Step 2: Save the file as `screensponsor.py` in the folder `<PyCon-Mobile-App/pyconindia/uix/screens>`. Take note to name the file same as the class name,  in our case `ScreenSponsor` in lowercase with .py appended at end.
+Step 2: Save the file as `screensponsor.py` in the folder `<PyDelhiConf/pydelhiconf/uix/screens>`. Take note to name the file same as the class name,  in our case `ScreenSponsor` in lowercase with .py appended at end.
 
 That's it. Now to load this screen::
 
     Button:
     	on_release:
-            app.load_screen('ScreenSponsor', manager=anager=app.navigation_manager)
+            app.load_screen('ScreenSponsor', manager=app.navigation_manager)
 
 `manager=` is a optional parameter, which specifies which `ScreenManager` to load this screen in.
-If it is omitted this screen will be loaded into the main Screen Manager Which is responsobile for loading `StartupScreen` and `NavigationScreen`
+If it is omitted this screen will be loaded into the main Screen Manager Which is responsobile for loading `StartupScreen` and `NavigationScreen`.
 
 ** Release Notes **
 

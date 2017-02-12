@@ -1,10 +1,10 @@
-'''uix.pycon module which should house all common widgets.
+'''uix.pydelhiconf module which should house all common widgets.
 '''
 
 from kivy.uix.screenmanager import ScreenManager
 from kivy.lang import Builder
 
-class PyConScreenManager(ScreenManager):
+class PyDelhiConfScreenManager(ScreenManager):
 	Builder.load_string('''
 #:import WipeTransition kivy.uix.screenmanager.WipeTransition
 
@@ -22,6 +22,6 @@ class PyConScreenManager(ScreenManager):
     		size: self.size
     		pos: self.pos
 
-<PyConScreenManager>
+<PyDelhiConfScreenManager>
 	transition: WipeTransition()
 ''')

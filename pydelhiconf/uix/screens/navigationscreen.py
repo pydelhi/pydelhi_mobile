@@ -16,19 +16,21 @@ class NavigationScreen(Screen):
 <TouchRippleBehavior>
     ripple_color: app.base_active_color
 
-<MenuButton@TouchRippleBehavior+ToggleButtonBehavior+Background>
+<PyConButton@TouchRippleBehavior+ToggleButtonBehavior+Background>
     text: ''
     size_hint_y: None
     allow_no_selection: False
-    group: 'LeftPanel'
     height: dp(45)
     color: app.base_active_color if self.state == 'normal' else app.base_inactive_color
     source: 'atlas://data/default/but_light'
-    on_released: app.navigationdrawer.toggle_state()
     Label:
         size: root.size
         pos: root.pos
         text: root.text
+
+<MenuButton@PyConButton>
+    group: 'LeftPanel'
+    on_released: app.navigationdrawer.toggle_state()
 
 <LeftPanel@BoxLayout+Background>
     source: 'atlas://data/default/bg'
@@ -38,6 +40,7 @@ class NavigationScreen(Screen):
         source: "atlas://data/default/logo"
         size_hint: 1, None
         height: dp(130)
+        mipmap: True
     ScrollView
         GridLayout
             cols: 1
@@ -51,16 +54,16 @@ class NavigationScreen(Screen):
                 on_release: app.load_screen('ScreenSponsor', manager=app.navigation_manager)
             MenuButton
                 text: 'Venue'
-            # MenuButton
-            #     text: 'OpenSpaces'
-            # MenuButton
-            #     text: 'DevSprints'
+                on_release: app.load_screen('ScreenVenue', manager=app.navigation_manager)
+            MenuButton
+                text: 'OpenSpaces'
+            MenuButton
+                text: 'DevSprints'
             MenuButton
                 text: 'Ticket'
+                on_release: app.load_screen('ScreenTicket', manager=app.navigation_manager)
             MenuButton
                 text: 'Community'
-            MenuButton
-                text: 'Quiz'
             MenuButton
                 text: 'About'
             MenuButton
@@ -80,6 +83,7 @@ class NavigationScreen(Screen):
 <RightPanel@BoxLayout+Background>
     source: 'atlas://data/default/bg'
     orientation: "vertical"
+    color: (.2, .2, .2, 1) if nav_sm.current in ('ScreenPong', 'ScreenQuiz') else (1, 1, 1, 1)
     TopBar
     ScreenManager
         on_parent: app.navigation_manager = nav_sm
