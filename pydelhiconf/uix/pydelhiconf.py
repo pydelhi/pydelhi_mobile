@@ -13,17 +13,6 @@ class PyDelhiConfScreenManager(ScreenManager):
     mipmap: True
     opacity: .5 if self.state =='down' else 1
 
-<Background@Widget>
-	source: ''
-	color: app.base_color
-	canvas.before:
-    	Color:
-    		rgba: root.color if root.color else (1, 1, 1, 1)
-    	Rectangle:
-    		source: root.source
-    		size: self.size
-    		pos: self.pos
-
 <PyDelhiConfScreenManager>
 	transition: WipeTransition()
 ''')

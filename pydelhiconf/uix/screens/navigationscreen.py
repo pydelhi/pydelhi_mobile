@@ -13,6 +13,8 @@ class NavigationScreen(Screen):
   '''
 
   Builder.load_string('''
+#:import WipeTransition kivy.uix.screenmanager.WipeTransition
+
 <TouchRippleBehavior>
     ripple_color: app.base_active_color
 

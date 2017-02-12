@@ -9,6 +9,18 @@ class StartupScreen(Screen):
     '''
     '''
     Builder.load_string('''
+<Background@Widget>
+    source: ''
+    color: app.base_color
+    canvas.before:
+        Color:
+            rgba: root.color if root.color else (1, 1, 1, 1)
+        Rectangle:
+            source: root.source
+            size: self.size
+            pos: self.pos
+
+
 <StartupScreen>
     name: 'StartupScreen'
     on_enter:
@@ -17,11 +29,9 @@ class StartupScreen(Screen):
         Animation(d=.5, width=self.width, top=self.height/2, height=self.height/2).start(img_venue)
         from kivy.clock import Clock
         Clock.schedule_once(lambda dt: app.load_screen('NavigationScreen'), 2)
-    Image:
+    Background:
         color: app.base_color
         source: 'atlas://data/default/bg'
-        allow_stretch: True
-        keep_ratio: False
     Image
         id: img_venue
         source: 'atlas://data/default/venue'
