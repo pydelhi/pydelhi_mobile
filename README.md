@@ -83,10 +83,14 @@ That's it. Now to load this screen::
 `manager=` is a optional parameter, which specifies which `ScreenManager` to load this screen in.
 If it is omitted this screen will be loaded into the main Screen Manager Which is responsobile for loading `StartupScreen` and `NavigationScreen`.
 
-TODO:
+**TODO**
+
 1) Get schedule from https://conference.pydelhi.org/api/schedule.json and display accordingly.
+
 2) Get event details from https://conference.pydelhi.org/api/event.json
+
 3) Get sponsor details from https://conference.pydeli.org/api/sponsors.json
+
 4) Send Feedback to `api/talk_id/feedback`; `api/conference/feedback`; `api/current_talk/feedback`
 
 ** Release Notes **
