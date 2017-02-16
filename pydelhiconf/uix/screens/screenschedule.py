@@ -4,6 +4,7 @@
 
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
+from kivy.factory import Factory
 from uix.tabbedcarousel import TabbedCarousel
 
 
@@ -83,49 +84,59 @@ class ScreenSchedule(Screen):
         Accordion
             id: accordian_days
             orientation: 'vertical'
-            AccordionItem
-                back_color: app.base_active_color
-                title: 'Saturday March 18, 2017'
-                BoxLayout
-                    ScrollView
-                        id: left_scroll
-                        on_scroll_y: right_scroll.scroll_y = args[1]
-                        size_hint_x: None
-                        width: dp(100)
-                        GridLayout
-                            cols: 1
-                            size_hint: 1, None
-                            height: self.minimum_height
-                            padding: dp(2)
-                            spacing: dp(2)
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                            TimeSlice
-                    ScrollView
-                        id: right_scroll
-                        on_scroll_y: left_scroll.scroll_y = args[1]
-                        GridLayout
-                            cols: 1
-                            size_hint: 1, None
-                            height: sp(900)
-                            Button
-                                height: dp(900)
-                            Button
-            AccordionItem
-                back_color: app.base_inactive_light
-                title: 'Sunday March 19, 2017'
+            # AccordionItem
+            #     back_color: app.base_active_color
+            #     title: 'Saturday March 18, 2017'
+            #     BoxLayout
+            #         ScrollView
+            #             id: left_scroll
+            #             on_scroll_y: right_scroll.scroll_y = args[1]
+            #             size_hint_x: None
+            #             width: dp(100)
+            #             GridLayout
+            #                 cols: 1
+            #                 size_hint: 1, None
+            #                 height: self.minimum_height
+            #                 padding: dp(2)
+            #                 spacing: dp(2)
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #                 TimeSlice
+            #         ScrollView
+            #             id: right_scroll
+            #             on_scroll_y: left_scroll.scroll_y = args[1]
+            #             GridLayout
+            #                 cols: 1
+            #                 size_hint: 1, None
+            #                 height: sp(900)
+            #                 Button
+            #                     height: dp(900)
+            #                 Button
+            # AccordionItem
+            #     back_color: app.base_inactive_light
+            #     title: 'Sunday March 19, 2017'
  ''')
     # TODO take schedule from json and display data based on it
     # what's present above is only a simple test
+
+
+    def on_enter(self):
+        days = ['18/03/2017', '19/03/2017']
+        self.ids.accordian_days.clear_widgets()
+        for day in days:
+            cday = Factory.AccordionItem(title=day)
+            self.ids.accordian_days.add_widget(cday)
+
+
