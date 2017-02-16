@@ -134,6 +134,7 @@ class ScreenSchedule(Screen):
 
     def on_enter(self):
         days = ['18/03/2017', '19/03/2017']
+        self.ids.accordian_days.clear_widgets()
         for day in days:
             cday = Factory.AccordionItem(title=day)
             self.ids.accordian_days.add_widget(cday)
