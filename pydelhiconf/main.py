@@ -86,9 +86,27 @@ class PyConApp(App):
 
     venue_name = StringProperty('')
     '''
-    This is the name of the event.
+    This is the name of the venue.
 
     :attr:`venue_name` is a :class:`~kivy.properties.StringProperty`
+
+    defaults to ''
+    '''
+
+    start_time = StringProperty('')
+    '''
+    This is the start_time of talks/workshops.
+
+    :attr:`start_time` is a :class:`~kivy.properties.StringProperty`
+
+    defaults to ''
+    '''
+
+    end_time = StringProperty('')
+    '''
+    This is the end_time of talks/workshops.
+
+    :attr:`end_time` is a :class:`~kivy.properties.StringProperty`
 
     defaults to ''
     '''
