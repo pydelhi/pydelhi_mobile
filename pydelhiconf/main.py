@@ -75,6 +75,25 @@ class PyConApp(App):
     defaults to Red(250, 250, 250, 1)
     '''
 
+    event_name = StringProperty('')
+    '''
+    This is the name of the event.
+
+    :attr:`event_name` is a :class:`~kivy.properties.StringProperty`
+
+    defaults to ''
+    '''
+
+    venue_name = StringProperty('')
+    '''
+    This is the name of the event.
+
+    :attr:`venue_name` is a :class:`~kivy.properties.StringProperty`
+
+    defaults to ''
+    '''
+
+    
     def build(self):
         self.icon = 'data/icon.png'
         # Here we build our own navigation higherarchy.
