@@ -1,0 +1,62 @@
+{
+  "results": [
+    {
+      "2017-05-01": [
+        {
+          "title": "Introductions",
+          "speaker_name": "",
+          "start_time": "12:00",
+          "end_time": "12:30",
+          "venue": "Lecture Hall 1",
+          "type": "talk"
+        },
+        {
+          "title": "Introductions",
+          "speaker_name": "",
+          "start_time": "12:00",
+          "end_time": "12:30",
+          "venue": "Lecture Hall 1",
+          "type": "talk"
+        },
+        {
+          "title": "Introductions",
+          "speaker_name": "",
+          "start_time": "12:00",
+          "end_time": "12:30",
+          "venue": "Lecture Hall 1",
+          "type": "talk"
+        }
+      ],
+      "2017-05-02": [
+        {
+          "title": "Introductions",
+          "speaker_name": "",
+          "start_time": "12:00",
+          "end_time": "12:30",
+          "venue": "Lecture Hall 1",
+          "type": "talk"
+        }
+      ],
+      "2017-05-03": [
+        {
+          "title": "Introductions",
+          "speaker_name": "",
+          "start_time": "12:00",
+          "end_time": "12:30",
+          "venue": "Lecture Hall 1",
+          "type": "talk"
+        }
+      ],
+      "2017-05-04": [
+        {
+          "title": "Introductions",
+          "speaker_name": "",
+          "start_time": "12:00",
+          "end_time": "12:30",
+          "venue": "Lecture Hall 1",
+          "type": "talk"
+        }
+      ]
+    }
+  ]
+}
