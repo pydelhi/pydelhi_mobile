@@ -17,10 +17,13 @@ class ScreenVenue(Screen):
         spacing: dp(13)
         orientation: 'vertical'
         padding: dp(4)
-        Image:
-            source: 'atlas://data/default/venue'
-            allow_stretch: True
-            keep_ratio: True
+        BoxLayout
+            SingleLineLabel:
+                text: app.venue_name
+            Image:
+                source: 'atlas://data/default/venue'
+                allow_stretch: True
+                keep_ratio: True
         Splitter
             sizable_from: 'top'
             MapView:
@@ -53,3 +56,4 @@ class ScreenVenue(Screen):
                     import webbrowser
                     webbrowser.open('https://www.google.co.in/maps/dir/''/iim+lucknow+noida+campus') 
 ''')
+
