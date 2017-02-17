@@ -1,11 +1,12 @@
 '''Screen Schedule
 '''
 
-
+from kivy.app import App
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
 from kivy.factory import Factory
-from uix.tabbedcarousel import TabbedCarousel
+
+app = App.get_running_app()
 
 
 class ScreenSchedule(Screen):
@@ -80,7 +81,7 @@ class ScreenSchedule(Screen):
         orientation: 'vertical'
         padding: dp(4)
         Topic
-            text: 'PyDelhi Conf 2017'
+            text: app.event_name
         Accordion
             id: accordian_days
             orientation: 'vertical'
@@ -133,10 +134,48 @@ class ScreenSchedule(Screen):
 
 
     def on_enter(self):
-        days = ['18/03/2017', '19/03/2017']
+        
         self.ids.accordian_days.clear_widgets()
-        for day in days:
-            cday = Factory.AccordionItem(title=day)
+        from network import get_data
+        # this should update the file on disk
+        event = get_data('event')
+        schedule = get_data('schedule')
+        # read the file from disk
+
+        app.event_name = event['name']
+        app.venue_name = event['venue']
+
+        start_date = event['start_date']
+        end_date = event['end_date']
+
+        dates = schedule['results'][0].keys()
+        
+        # See if this would be needed at all
+        #
+        # from datetime import datetime
+        # start_date = datetime.strptime(start_date, '%Y-%m-%dT%H:%M:%SZ')
+        # end_date = datetime.strptime(end_date, '%Y-%m-%dT%H:%M:%SZ')
+        # days = (end_date - start_date).days + 1
+        # dates = schedule['results'][0].keys()
+        # print dates, '<<<<'
+
+        # Content to be added to timeslice
+        #
+        # dates = schedule['results'][0].keys()
+        #
+        # i=0
+        # for date in dates:
+        #     schedule['results'][0][date][i]['title']
+        #     schedule['results'][0][date][i]['start_time']
+        #     schedule['results'][0][date][i]['end_time']
+        #     schedule['results'][0][date][i]['type']
+        #     schedule['results'][0][date][i]['speaker_name']
+        #     i+=1
+
+        for date in dates:
+            cday = Factory.AccordionItem(title=date)
             self.ids.accordian_days.add_widget(cday)
+
+            # TODO: Dates are not sorted
 
 
