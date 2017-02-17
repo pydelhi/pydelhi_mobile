@@ -9,6 +9,10 @@ class StartupScreen(Screen):
     '''
     '''
     Builder.load_string('''
+<SingleLineLabel@Label>
+    text_size: self.size
+    size_hint_y: None
+    height: '45dp'
 <Background@Widget>
     source: ''
     color: app.base_color
