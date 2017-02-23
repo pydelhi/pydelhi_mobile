@@ -9,7 +9,7 @@ from kivy.uix.label import Label
 from kivy.lang import Builder
 from kivy.core.window import Window
 from kivy.factory import Factory
-
+import datetime
 app = App.get_running_app()
 
 
@@ -120,11 +120,12 @@ class ScreenSchedule(Screen):
         end_date = event['end_date']
         
         dates = schedule['results'][0].keys()     
-
+        dates = sorted(dates, key=lambda x: datetime.datetime.strptime(x, '%Y-%m-%d'))
         for date in dates:
             cday = Factory.AccordionItem(title=date)
             self.ids.accordian_days.add_widget(cday)
-            sched = schedule['results'][0][date]          
+            sched = schedule['results'][0][date] 
+
             items = len(sched)
             sv = ScrollView()
             gl = GridLayout(cols=4,
