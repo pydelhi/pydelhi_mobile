@@ -77,7 +77,6 @@ class ScreenSchedule(Screen):
             pos: self.x + dp(7), self.top - (dp(36) + dp(7)) 
 
 <TimeSlice@Label>
-    text: app.start_time + '-' + app.end_time
     size_hint_y: None
     height: dp(27)
     background_color: app.base_active_color[:3] + [.3]
@@ -128,26 +127,28 @@ class ScreenSchedule(Screen):
             sched = schedule['results'][0][date]          
             items = len(sched)
             sv = ScrollView()
-            gl = GridLayout(cols=1,
+            gl = GridLayout(cols=4,
                             size_hint_y=None,
                             padding='2dp',
                             spacing='2dp')
             gl.bind(minimum_height=gl.setter('height'))
+            for x in ['Time','Title','talk Type','Speaker']:
+                ts = Factory.TimeSlice(text=x)
+                gl.add_widget(ts)
             i = 0
             for i in xrange(0, items):
-                app.start_time = sched[i]['start_time']
-                app.end_time = sched[i]['end_time']
-                ts = Factory.TimeSlice()
-                gl.add_widget(ts)
+                start_time = sched[i]['start_time']
+                end_time = sched[i]['end_time']
+                l = Label(text = "%s - %s"%(start_time,end_time))
+                gl.add_widget(l)
                 gl.add_widget(Label(text=sched[i]['title'], height='27dp',
                     size_hint_y=None))
-                gl.add_widget(Label(text='Type: ' + sched[i]['type'],
+                gl.add_widget(Label(text=sched[i]['type'],
                     height='27dp', size_hint_y=None))
-                gl.add_widget(Label(text='Speaker: ' + sched[i]['speaker_name'],
+                gl.add_widget(Label(text=sched[i]['speaker_name'],
                     height='27dp', size_hint_y=None))
                 
                 i+=1
-
             sv.add_widget(gl)
             cday.add_widget(sv)
             
