@@ -100,7 +100,7 @@ class ScreenSchedule(Screen):
  ''')
 
 
-    def on_enter(self):
+    def on_enter(self, onsuccess=False):
         '''Series of actions to be performed when Schedule screen is entered
         '''
         
@@ -108,8 +108,9 @@ class ScreenSchedule(Screen):
         from network import get_data
 
         # this should update the file on disk
-        event = get_data('event')
-        schedule = get_data('schedule')
+        print onsuccess
+        event = get_data('event', onsuccess=onsuccess)
+        schedule = get_data('schedule', onsuccess=onsuccess)
 
         # read the file from disk
         app.event_name = event['name']
