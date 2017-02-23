@@ -9,7 +9,7 @@ from kivy.uix.label import Label
 from kivy.lang import Builder
 from kivy.core.window import Window
 from kivy.factory import Factory
-
+import datetime
 app = App.get_running_app()
 
 
@@ -41,19 +41,21 @@ class ScreenSchedule(Screen):
         Color
             rgba: app.base_inactive_light
         Rectangle
-            size: dp(300), self.height
-            pos: self.right - dp(300), self.y
+            size: self.width, self.height
+            pos: self.right - self.width  , self.y
         Color
             rgba: app.base_inactive_light[:3]+[.5]
         Rectangle
-            size: dp(300), self.height
-            pos: self.right - dp(310), self.y - dp(10)
+            size: self.width, self.height
+            pos: self.right - self.width -10, self.y - dp(10)
     font_size: dp(27)
-    text_size: self.width - dp(10), self.height
-    size_hint_y: None
-    height: dp(50)
+    text_size: self.width - dp(10), None
+    size_hint: None, None
+    height: self.texture_size[1]
+    width: dp(300)
     halign: 'right'
     valign: 'middle'
+    pos_hint: {'right': 1}
 
 <AccordionItemTitle>
     text_size: self.width - dp(10), self.height
@@ -75,7 +77,6 @@ class ScreenSchedule(Screen):
             pos: self.x + dp(7), self.top - (dp(36) + dp(7)) 
 
 <TimeSlice@Label>
-    text: app.start_time + '-' + app.end_time
     size_hint_y: None
     height: dp(27)
     background_color: app.base_active_color[:3] + [.3]
@@ -119,33 +120,36 @@ class ScreenSchedule(Screen):
         end_date = event['end_date']
         
         dates = schedule['results'][0].keys()     
-
+        dates = sorted(dates, key=lambda x: datetime.datetime.strptime(x, '%Y-%m-%d'))
         for date in dates:
             cday = Factory.AccordionItem(title=date)
             self.ids.accordian_days.add_widget(cday)
-            sched = schedule['results'][0][date]          
+            sched = schedule['results'][0][date] 
+
             items = len(sched)
             sv = ScrollView()
-            gl = GridLayout(cols=1,
+            gl = GridLayout(cols=4,
                             size_hint_y=None,
                             padding='2dp',
                             spacing='2dp')
             gl.bind(minimum_height=gl.setter('height'))
+            for x in ['Time','Title','talk Type','Speaker']:
+                ts = Factory.TimeSlice(text=x)
+                gl.add_widget(ts)
             i = 0
             for i in xrange(0, items):
-                app.start_time = sched[i]['start_time']
-                app.end_time = sched[i]['end_time']
-                ts = Factory.TimeSlice()
-                gl.add_widget(ts)
+                start_time = sched[i]['start_time']
+                end_time = sched[i]['end_time']
+                l = Label(text = "%s - %s"%(start_time,end_time))
+                gl.add_widget(l)
                 gl.add_widget(Label(text=sched[i]['title'], height='27dp',
                     size_hint_y=None))
-                gl.add_widget(Label(text='Type: ' + sched[i]['type'],
+                gl.add_widget(Label(text=sched[i]['type'],
                     height='27dp', size_hint_y=None))
-                gl.add_widget(Label(text='Speaker: ' + sched[i]['speaker_name'],
+                gl.add_widget(Label(text=sched[i]['speaker_name'],
                     height='27dp', size_hint_y=None))
                 
                 i+=1
-
             sv.add_widget(gl)
             cday.add_widget(sv)
             
