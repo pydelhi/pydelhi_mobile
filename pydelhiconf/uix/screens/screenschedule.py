@@ -129,6 +129,7 @@ class ScreenSchedule(Screen):
                             size_hint_y=None,
                             padding='2dp',
                             spacing='2dp')
+            gl.bind(minimum_height=gl.setter('height'))
             i = 0
             for i in xrange(0, items):
                 app.start_time = sched[i]['start_time']
