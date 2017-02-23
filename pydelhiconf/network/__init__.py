@@ -29,7 +29,7 @@ def get_data(endpoint, onsuccess=False):
 
     jsondata = None
 
-    with open('pydelhiconf/data/{}.json'.format(endpoint)) as fd:
+    with open(filepath) as fd:
         jsondata = json.load(fd)
 
     return jsondata
