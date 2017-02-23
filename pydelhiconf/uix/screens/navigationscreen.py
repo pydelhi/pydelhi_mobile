@@ -75,8 +75,9 @@ class NavigationScreen(Screen):
                 on_release: app.stop()
 
 <TopBar@BoxLayout>
-    size_hint_y: None
+    size_hint: None, None
     height: dp(45)
+    width: dp(45)
     ImgBut
         source: 'atlas://data/default/hamburger'
         size_hint_x: None

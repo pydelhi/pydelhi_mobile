@@ -41,19 +41,21 @@ class ScreenSchedule(Screen):
         Color
             rgba: app.base_inactive_light
         Rectangle
-            size: dp(300), self.height
-            pos: self.right - dp(300), self.y
+            size: self.width, self.height
+            pos: self.right - self.width  , self.y
         Color
             rgba: app.base_inactive_light[:3]+[.5]
         Rectangle
-            size: dp(300), self.height
-            pos: self.right - dp(310), self.y - dp(10)
+            size: self.width, self.height
+            pos: self.right - self.width -10, self.y - dp(10)
     font_size: dp(27)
-    text_size: self.width - dp(10), self.height
-    size_hint_y: None
-    height: dp(50)
+    text_size: self.width - dp(10), None
+    size_hint: None, None
+    height: self.texture_size[1]
+    width: dp(300)
     halign: 'right'
     valign: 'middle'
+    pos_hint: {'right': 1}
 
 <AccordionItemTitle>
     text_size: self.width - dp(10), self.height

@@ -1,0 +1,4 @@
+Cython==0.25.2
+futures==3.0.5
+Kivy==1.9.1
+Kivy-Garden==0.1.4
