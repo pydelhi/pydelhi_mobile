@@ -130,51 +130,53 @@ class ScreenSchedule(Screen):
 
         # this should update the file on disk
         print onsuccess
-        event = get_data('event', onsuccess=onsuccess).get('0.0.1')[0]
-        schedule = get_data('schedule', onsuccess=onsuccess)
+        events = get_data('event', onsuccess=onsuccess).get('0.0.1')
+        schedule = get_data('schedule', onsuccess=onsuccess).get('0.0.1')[0]
 
         # read the file from disk
         # pprint.pprint(event)
-        app.event_name = event['name']
-        app.venue_name = event['venue']
-        start_date = event['start_date']
-        end_date = event['end_date']
-        
-        dates = schedule['results'][0].keys()     
-        dates = sorted(dates, key=lambda x: datetime.datetime.strptime(x, '%Y-%m-%d'))
-        for date in dates:
-            cday = Factory.AccordionItem(title=date)
-            self.ids.accordian_days.add_widget(cday)
-            sched = schedule['results'][0][date] 
+        for event in events:
+            app.event_name = event['name']
+            app.venue_name = event['venue']
+            start_date = event['start_date']
+            end_date = event['end_date']
+            
+            dates = schedule.keys()   
+            dates.pop(0)  
+            dates = sorted(dates, key=lambda x: datetime.datetime.strptime(x, '%Y-%m-%d'))
+            for date in dates:
+                cday = Factory.AccordionItem(title=date)
+                self.ids.accordian_days.add_widget(cday)
+                sched = schedule[date] 
 
-            items = len(sched)
-            sv = ScrollView()
-            gl = GridLayout(cols=2,
-                            row_default_height="27dp",
-                            size_hint_y=None,
-                            padding='5dp')
-            # gl.bind(minimum_height=gl.setter('height'))
-            # for x in ['Time','Title']:
-            #     ts = Factory.TimeSlice(text=x)
-            #     gl.add_widget(ts)
-            i = 0
-            for i in xrange(0, items):
-                start_time = sched[i]['start_time']
-                end_time = sched[i]['end_time']
-                l = Factory.GridLabel(text = "%s - %s"%(start_time,end_time), width= '100dp')
-                l.xx = i%2==0
-                gl.add_widget(l)
-                # bg = 
-                texts = ['title','type','speaker_name']
-                for t in texts:
-                    l = Factory.GridLabel1(text=sched[i][t])
+                items = len(sched)
+                sv = ScrollView()
+                gl = GridLayout(cols=2,
+                                row_default_height="27dp",
+                                size_hint_y=None,
+                                padding='15dp',spacing='2dp')
+                # gl.bind(minimum_height=gl.setter('height'))
+                # for x in ['Time','Title']:
+                #     ts = Factory.TimeSlice(text=x)
+                #     gl.add_widget(ts)
+                i = 0
+                for i in xrange(0, items):
+                    start_time = sched[i]['start_time']
+                    end_time = sched[i]['end_time']
+                    l = Factory.GridLabel(text = "%s - %s"%(start_time,end_time), width= '100dp')
                     l.xx = i%2==0
                     gl.add_widget(l)
-                
+                    # bg = 
+                    texts = ['title','type','speaker_name']
+                    for t in texts:
+                        l = Factory.GridLabel1(text=sched[i][t])
+                        l.xx = i%2==0
+                        gl.add_widget(l)
+                    
 
-                i+=1
-            sv.add_widget(gl)
-            cday.add_widget(sv)
+                    i+=1
+                sv.add_widget(gl)
+                cday.add_widget(sv)
             
 
             # TODO: Dates are not sorted
