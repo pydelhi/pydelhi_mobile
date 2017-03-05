@@ -90,20 +90,19 @@ class ScreenSchedule(Screen):
             pos: self.pos
 <GridLabel@Label>
     height: dp(27)
-    size_hint: None, None
+    size_hint: 1, None
     halign: 'left'
-    width: dp(100)
     text_size:self.width, self.height
-    xx : True
+    padding: dp(5), dp(10)
+    xx:True
     canvas.before:
         Color
-            rgba: app.base_inactive_light[:3]+[.3] if self.xx else (1,1,1,0)
+            rgba: app.base_inactive_light[:3]+[.3] if hasattr(self, 'xx') and self.xx else (1,1,1,0)
         Rectangle
             size: self.size
             pos: self.pos
 
 <GridLabel1@GridLabel>
-    size_hint: 1, None
     text_size:self.width, None
     height: self.texture_size[1]
     
@@ -111,7 +110,7 @@ class ScreenSchedule(Screen):
 <ScreenSchedule>
     name: 'ScreenSchedule'
     BoxLayout
-        spacing: dp(20)
+        # spacing: dp(20)
         orientation: 'vertical'
         padding: dp(4)
         Topic
@@ -153,8 +152,8 @@ class ScreenSchedule(Screen):
             gl = GridLayout(cols=2,
                             row_default_height="27dp",
                             size_hint_y=None,
-                            padding='2dp')
-            gl.bind(minimum_height=gl.setter('height'))
+                            padding='5dp')
+            # gl.bind(minimum_height=gl.setter('height'))
             # for x in ['Time','Title']:
             #     ts = Factory.TimeSlice(text=x)
             #     gl.add_widget(ts)
@@ -162,13 +161,17 @@ class ScreenSchedule(Screen):
             for i in xrange(0, items):
                 start_time = sched[i]['start_time']
                 end_time = sched[i]['end_time']
-                l = Factory.GridLabel(text = "%s - %s"%(start_time,end_time),xx=i%2==0)
+                l = Factory.GridLabel(text = "%s - %s"%(start_time,end_time), width= '100dp')
+                l.xx = i%2==0
                 gl.add_widget(l)
                 # bg = 
-                gl.add_widget(Factory.GridLabel1(text=sched[i]['title'],xx=i%2==0))
-                gl.add_widget(Factory.GridLabel(text=sched[i]['type'],xx=i%2==0))
-                gl.add_widget(Factory.GridLabel1(text=sched[i]['speaker_name'],xx=i%2==0))
+                texts = ['title','type','speaker_name']
+                for t in texts:
+                    l = Factory.GridLabel1(text=sched[i][t])
+                    l.xx = i%2==0
+                    gl.add_widget(l)
                 
+
                 i+=1
             sv.add_widget(gl)
             cday.add_widget(sv)
