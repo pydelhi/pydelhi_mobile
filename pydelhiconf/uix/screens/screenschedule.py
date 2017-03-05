@@ -93,8 +93,15 @@ class ScreenSchedule(Screen):
     size_hint: None, None
     halign: 'left'
     width: dp(100)
-    text_size:self.width, None
-    
+    text_size:self.width, self.height
+    xx : True
+    canvas.before:
+        Color
+            rgba: app.base_inactive_light[:3]+[.3] if self.xx else (1,1,1,0)
+        Rectangle
+            size: self.size
+            pos: self.pos
+
 <GridLabel1@GridLabel>
     size_hint: 1, None
     text_size:self.width, None
