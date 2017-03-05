@@ -9,7 +9,7 @@ from kivy.uix.label import Label
 from kivy.lang import Builder
 from kivy.core.window import Window
 from kivy.factory import Factory
-import datetime
+import datetime, pprint
 app = App.get_running_app()
 
 
@@ -79,6 +79,8 @@ class ScreenSchedule(Screen):
 <TimeSlice@Label>
     size_hint_y: None
     height: dp(27)
+    width: dp(40)
+    size_hint: None, 1
     background_color: app.base_active_color[:3] + [.3]
     canvas.before:
         Color
@@ -86,6 +88,18 @@ class ScreenSchedule(Screen):
         Rectangle
             size: self.size
             pos: self.pos
+<GridLabel@Label>
+    height: dp(27)
+    size_hint: None, None
+    halign: 'left'
+    width: dp(100)
+    text_size:self.width, None
+    
+<GridLabel1@GridLabel>
+    size_hint: 1, None
+    text_size:self.width, None
+    height: self.texture_size[1]
+    
    
 <ScreenSchedule>
     name: 'ScreenSchedule'
@@ -110,10 +124,11 @@ class ScreenSchedule(Screen):
 
         # this should update the file on disk
         print onsuccess
-        event = get_data('event', onsuccess=onsuccess)
+        event = get_data('event', onsuccess=onsuccess).get('0.0.1')[0]
         schedule = get_data('schedule', onsuccess=onsuccess)
 
         # read the file from disk
+        # pprint.pprint(event)
         app.event_name = event['name']
         app.venue_name = event['venue']
         start_date = event['start_date']
@@ -128,26 +143,24 @@ class ScreenSchedule(Screen):
 
             items = len(sched)
             sv = ScrollView()
-            gl = GridLayout(cols=4,
+            gl = GridLayout(cols=2,
+                            row_default_height="27dp",
                             size_hint_y=None,
-                            padding='2dp',
-                            spacing='2dp')
+                            padding='2dp')
             gl.bind(minimum_height=gl.setter('height'))
-            for x in ['Time','Title','talk Type','Speaker']:
-                ts = Factory.TimeSlice(text=x)
-                gl.add_widget(ts)
+            # for x in ['Time','Title']:
+            #     ts = Factory.TimeSlice(text=x)
+            #     gl.add_widget(ts)
             i = 0
             for i in xrange(0, items):
                 start_time = sched[i]['start_time']
                 end_time = sched[i]['end_time']
-                l = Label(text = "%s - %s"%(start_time,end_time))
+                l = Factory.GridLabel(text = "%s - %s"%(start_time,end_time),xx=i%2==0)
                 gl.add_widget(l)
-                gl.add_widget(Label(text=sched[i]['title'], height='27dp',
-                    size_hint_y=None))
-                gl.add_widget(Label(text=sched[i]['type'],
-                    height='27dp', size_hint_y=None))
-                gl.add_widget(Label(text=sched[i]['speaker_name'],
-                    height='27dp', size_hint_y=None))
+                # bg = 
+                gl.add_widget(Factory.GridLabel1(text=sched[i]['title'],xx=i%2==0))
+                gl.add_widget(Factory.GridLabel(text=sched[i]['type'],xx=i%2==0))
+                gl.add_widget(Factory.GridLabel1(text=sched[i]['speaker_name'],xx=i%2==0))
                 
                 i+=1
             sv.add_widget(gl)
