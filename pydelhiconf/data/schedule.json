@@ -1,60 +1,188 @@
 {
-  "results": [
+  "0.0.1": [
     {
-      "2017-05-1": [
+      "tracks": ["Audi 1", "Audi 2", "Audi 3"],
+      "2017-03-18": [
         {
-          "title": "Introductions",
+          "talk_id": "00",
+          "title": "Registeration",
+          "speaker_name": "PyDelhi Registeration Team",
+          "start_time": "08:30",
+          "end_time": "09:00",
+          "track": "all",
+          "type": "Talk"
+        },
+        {
+          "talk_id": "01",
+          "title": "Introductions & Opening Ceremony",
+          "speaker_name": "Anuvrat Parashar & Sheeba Khan",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "all",
+          "type": "Talk"
+        },
+        {
+          "talk_id": "02",
+          "title": "High Tea",
+          "speaker_name": "Stomach",
+          "start_time": "09:30",
+          "end_time": "10:00",
+          "track": "all",
+          "type": "Workshop"
+        },
+        {
+          "talk_id": "03",
+          "title": "Keynote: How & where python is used by scientists",
+          "speaker_name": "Ricardo Rocha",
+          "start_time": "10:00",
+          "end_time": "11:00",
+          "track": "all",
+          "type": "Keynote"
+        },
+        {
+          "talk_id": "04",
+          "title": "talk 01",
           "speaker_name": "",
-          "start_time": "12:00",
-          "end_time": "12:30",
-          "venue": "Lecture Hall 1",
+          "start_time": "11:10",
+          "end_time": "11:40",
+          "track": "1",
           "type": "talk"
         },
         {
-          "title": "Introductions",
+          "talk_id": "05",
+          "title": "talk 02",
           "speaker_name": "",
-          "start_time": "12:00",
-          "end_time": "12:30",
-          "venue": "Lecture Hall 1",
+          "start_time": "11:10",
+          "end_time": "11:40",
+          "track": "2",
           "type": "talk"
         },
         {
-          "title": "Introductions",
+          "talk_id": "06",
+          "title": "talk 03",
           "speaker_name": "",
-          "start_time": "12:00",
-          "end_time": "12:30",
-          "venue": "Lecture Hall 1",
+          "start_time": "11:10",
+          "end_time": "11:40",
+          "track": "2",
           "type": "talk"
+        },
+        {
+          "talk_id": "07",
+          "title": "talk 04",
+          "speaker_name": "",
+          "start_time": "11:50",
+          "end_time": "12:20",
+          "track": "1",
+          "type": "talk"
+        },
+        {
+          "talk_id": "08",
+          "title": "talk 05",
+          "speaker_name": "",
+          "start_time": "11:50",
+          "end_time": "12:20",
+          "track": "2",
+          "type": "talk"
+        },
+        {
+          "talk_id": "09",
+          "title": "talk 06",
+          "speaker_name": "",
+          "start_time": "11:50",
+          "end_time": "12:20",
+          "track": "3",
+          "type": "talk"
+        },
+        {
+          "talk_id": "10",
+          "title": "talk 07",
+          "speaker_name": "",
+          "start_time": "12:30",
+          "end_time": "01:00",
+          "track": "1",
+          "type": "talk"
+        },
+        {
+          "talk_id": "11",
+          "title": "talk 08",
+          "speaker_name": "",
+          "start_time": "12:30",
+          "end_time": "01:00",
+          "track": "2",
+          "type": "talk"
+        },
+        {
+          "talk_id": "12",
+          "title": "talk 09",
+          "speaker_name": "",
+          "start_time": "12:30",
+          "end_time": "01:00",
+          "track": "3",
+          "type": "talk"
+        },
+        {
+          "talk_id": "13",
+          "title": "Lunch",
+          "speaker_name": "Stomach",
+          "start_time": "01:00",
+          "end_time": "01:00",
+          "track": "all",
+          "type": "lunch"
+        },
+        {
+          "talk_id": "14",
+          "title": "Data Science: What's all the hoopla about?",
+          "speaker_name": "Moderator: Jaidev Deshpande",
+          "start_time": "02:00",
+          "end_time": "03:00",
+          "track": "all",
+          "type": "Panel Discussion"
+        },
+        {
+          "talk_id": "14",
+          "title": "Workshop 01",
+          "speaker_name": "",
+          "start_time": "03:00",
+          "end_time": "05:00",
+          "track": "1",
+          "type": "Workshop"
+        },
+        {
+          "talk_id": "15",
+          "title": "Workshop 01",
+          "speaker_name": "",
+          "start_time": "03:00",
+          "end_time": "05:00",
+          "track": "2",
+          "type": "Workshop"
+        },
+        {
+          "talk_id": "16",
+          "title": "Workshop 03",
+          "speaker_name": "",
+          "start_time": "03:00",
+          "end_time": "05:00",
+          "track": "3",
+          "type": "Workshop"
+        },
+        {
+          "talk_id": "15",
+          "title": "Lightning Talks",
+          "speaker_name": "",
+          "start_time": "05:00",
+          "end_time": "06:00",
+          "track": "all",
+          "type": "Workshop"
         }
       ],
       "2017-05-02": [
         {
           "title": "Introductions",
           "speaker_name": "",
-          "start_time": "12:00",
+          "start_time": "10:00",
           "end_time": "12:30",
-          "venue": "Lecture Hall 1",
-          "type": "talk"
-        }
-      ],
-      "2017-05-03": [
-        {
-          "title": "Introductions",
-          "speaker_name": "",
-          "start_time": "12:00",
-          "end_time": "12:30",
-          "venue": "Lecture Hall 1",
-          "type": "talk"
-        }
-      ],
-      "2017-05-04": [
-        {
-          "title": "Introductions",
-          "speaker_name": "",
-          "start_time": "12:00",
-          "end_time": "12:30",
-          "venue": "Lecture Hall 1",
-          "type": "talk"
+          "track": "Lecture Hall 1",
+          "type": "Talk"
         }
       ]
     }
