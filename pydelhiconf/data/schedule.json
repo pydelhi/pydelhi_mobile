@@ -5,184 +5,251 @@
       "2017-03-18": [
         {
           "talk_id": "00",
-          "title": "Registeration",
-          "speaker_name": "PyDelhi Registeration Team",
-          "start_time": "08:30",
+          "title": "Registration",
+          "start_time": "08:00",
           "end_time": "09:00",
-          "track": "all",
-          "type": "Talk"
+          "track": "all"
         },
         {
           "talk_id": "01",
           "title": "Introductions & Opening Ceremony",
-          "speaker_name": "Anuvrat Parashar & Sheeba Khan",
           "start_time": "09:00",
           "end_time": "09:30",
-          "track": "all",
-          "type": "Talk"
+          "track": "all"
         },
         {
           "talk_id": "02",
-          "title": "High Tea",
-          "speaker_name": "Stomach",
+          "title": "Tea",
           "start_time": "09:30",
           "end_time": "10:00",
-          "track": "all",
-          "type": "Workshop"
+          "track": "all"
         },
         {
           "talk_id": "03",
           "title": "Keynote: How & where python is used by scientists",
-          "speaker_name": "Ricardo Rocha",
           "start_time": "10:00",
-          "end_time": "11:00",
-          "track": "all",
-          "type": "Keynote"
+          "end_time": "10:50",
+          "track": "all"
         },
         {
           "talk_id": "04",
-          "title": "talk 01",
-          "speaker_name": "",
-          "start_time": "11:10",
-          "end_time": "11:40",
-          "track": "1",
-          "type": "talk"
+          "title": "Telegram bot using Python",
+          "start_time": "11:00",
+          "end_time": "11:30",
+          "track": "1"
         },
         {
           "talk_id": "05",
-          "title": "talk 02",
-          "speaker_name": "",
-          "start_time": "11:10",
-          "end_time": "11:40",
-          "track": "2",
-          "type": "talk"
+          "title": "Lets talk about GIL",
+          "start_time": "11:00",
+          "end_time": "11:30",
+          "track": "2"
         },
         {
           "talk_id": "06",
-          "title": "talk 03",
-          "speaker_name": "",
+          "title": "Sponsored slot 1",
           "start_time": "11:10",
           "end_time": "11:40",
-          "track": "2",
-          "type": "talk"
+          "track": "3"
         },
         {
           "talk_id": "07",
-          "title": "talk 04",
-          "speaker_name": "",
-          "start_time": "11:50",
-          "end_time": "12:20",
-          "track": "1",
-          "type": "talk"
+          "title": "Concurrency in Python 3.0 world - Oh My!",
+          "start_time": "11:40",
+          "end_time": "01:40",
+          "track": "1"
         },
         {
           "talk_id": "08",
-          "title": "talk 05",
-          "speaker_name": "",
-          "start_time": "11:50",
-          "end_time": "12:20",
-          "track": "2",
-          "type": "talk"
+          "title": "Making IoT smarter",
+          "start_time": "11:40",
+          "end_time": "01:40",
+          "track": "2"
         },
         {
           "talk_id": "09",
-          "title": "talk 06",
-          "speaker_name": "",
-          "start_time": "11:50",
-          "end_time": "12:20",
-          "track": "3",
-          "type": "talk"
+          "title": "Building chatbots with Python/Django",
+          "start_time": "11:40",
+          "end_time": "01:40",
+          "track": "3"
         },
         {
           "talk_id": "10",
-          "title": "talk 07",
-          "speaker_name": "",
-          "start_time": "12:30",
-          "end_time": "01:00",
-          "track": "1",
-          "type": "talk"
+          "title": "Lunch",
+          "start_time": "01:40",
+          "end_time": "02:40"
         },
         {
           "talk_id": "11",
-          "title": "talk 08",
-          "speaker_name": "",
-          "start_time": "12:30",
-          "end_time": "01:00",
-          "track": "2",
-          "type": "talk"
+          "title": "Panel Discussion: Data Science Training vs Data Science in the Industry",
+          "start_time": "02:40",
+          "end_time": "03:40",
+          "track": "all"
         },
         {
           "talk_id": "12",
-          "title": "talk 09",
-          "speaker_name": "",
-          "start_time": "12:30",
-          "end_time": "01:00",
-          "track": "3",
-          "type": "talk"
+          "title": "Property based testing 101",
+          "start_time": "03:50",
+          "end_time": "04:20",
+          "track": "1"
         },
         {
           "talk_id": "13",
-          "title": "Lunch",
-          "speaker_name": "Stomach",
-          "start_time": "01:00",
-          "end_time": "01:00",
-          "track": "all",
-          "type": "lunch"
+          "title": "Debugging: An art for smart",
+          "start_time": "03:50",
+          "end_time": "04:20",
+          "track": "2"
         },
         {
           "talk_id": "14",
-          "title": "Data Science: What's all the hoopla about?",
-          "speaker_name": "Moderator: Jaidev Deshpande",
-          "start_time": "02:00",
-          "end_time": "03:00",
-          "track": "all",
-          "type": "Panel Discussion"
-        },
-        {
-          "talk_id": "14",
-          "title": "Workshop 01",
-          "speaker_name": "",
-          "start_time": "03:00",
-          "end_time": "05:00",
-          "track": "1",
-          "type": "Workshop"
+          "title": "Comparing word embeddings with Gensim",
+          "start_time": "03:50",
+          "end_time": "04:20",
+          "track": "3"
         },
         {
           "talk_id": "15",
-          "title": "Workshop 01",
-          "speaker_name": "",
-          "start_time": "03:00",
-          "end_time": "05:00",
-          "track": "2",
-          "type": "Workshop"
+          "title": "Tea",
+          "start_time": "04:20",
+          "end_time": "04:50",
+          "track": "all"
         },
         {
           "talk_id": "16",
-          "title": "Workshop 03",
-          "speaker_name": "",
-          "start_time": "03:00",
-          "end_time": "05:00",
-          "track": "3",
-          "type": "Workshop"
+          "title": "Optimizing Django for building high performance systems",
+          "start_time": "04:50",
+          "end_time": "05:20",
+          "track": "1"
         },
         {
-          "talk_id": "15",
-          "title": "Lightning Talks",
-          "speaker_name": "",
-          "start_time": "05:00",
-          "end_time": "06:00",
-          "track": "all",
-          "type": "Workshop"
-        }
-      ],
-      "2017-05-02": [
+          "talk_id": "17",
+          "title": "Functional programming in Python",
+          "start_time": "04:50",
+          "end_time": "05:20",
+          "track": "2"
+         },
         {
-          "title": "Introductions",
-          "speaker_name": "",
-          "start_time": "10:00",
-          "end_time": "12:30",
-          "track": "Lecture Hall 1",
-          "type": "Talk"
+          "talk_id": "18",
+          "title": "Multilingual resume ranking API based on NLP and contextual word embeddings ",
+          "start_time": "04:50",
+          "end_time": "05:20",
+          "track": "3"
+         },
+         {
+          "talk_id": "19",
+          "title": "Lightning Talks"
+         }
+      ],
+      "2017-03-19": [
+        {
+          "talk_id": "20",
+          "title": "Registration",
+          "start_time": "08:30",
+          "end_time": "09:00",
+          "track": "all"
+        },
+        {
+          "talk_id": "21",
+          "title": "Tea",
+          "start_time": "09:00",
+          "end_time": "9:30",
+          "track": "all"
+        },
+        {
+          "talk_id": "22",
+          "title": "Multi-threading/Multi-Processing in Python using ZeroMQ.",
+          "start_time": "9:30",
+          "end_time": "10:00",
+          "track": "1"
+        },
+        {
+          "talk_id": "23",
+          "title": "Mocking in Python",
+          "start_time": "9:30",
+          "end_time": "10:00",
+          "track": "2"
+        },
+        {
+          "talk_id": "24",
+          "title": "Sponsored Slot 2",
+          "start_time": "9:30",
+          "end_time": "10:00",
+          "track": "3"
+        },
+        {
+          "talk_id": "25",
+          "title": "Tango with Django",
+          "start_time": "10:10",
+          "end_time": "12:10",
+          "track": "1"
+        },
+        {
+          "talk_id": "26",
+          "title": "Understanding Neural Networks with Theano",
+          "start_time": "10:10",
+          "end_time": "12:10",
+          "track": "2",
+          "type": "talk"
+        },
+        {
+          "talk_id": "27",
+          "title": "Android app with Python",
+          "start_time": "10:10",
+          "end_time": "12:10",
+          "track": "3"
+        },
+        {
+          "talk_id": "28",
+          "title": "Panel Discussion: State of Python in Delhi/NCR",
+          "start_time": "12:20",
+          "end_time": "01:10",
+          "track": "all"
+        },
+        {
+          "talk_id": "29",
+          "title": "Lunch",
+          "start_time": "01:10",
+          "end_time": "02:00"
+        },
+        {
+          "talk_id": "30",
+          "title": "A lazy programmer's guide to automation",
+          "start_time": "02:00",
+          "end_time": "02:30",
+          "track": "1"
+        },
+        {
+          "talk_id": "31",
+          "title": "Creating Image Thumbnails using AWS Lamda",
+          "start_time": "02:00",
+          "end_time": "02:30",
+          "track": "2"
+        },
+        {
+          "talk_id": "32",
+          "title": "An Introduction to Bayesian Statistics for the Python Programmer (no data science experience needed)",
+          "start_time": "02:00",
+          "end_time": "02:30",
+          "track": "3"
+        },
+        {
+          "talk_id": "33",
+          "title": "Community efforts and the way forward",
+          "start_time": "02:40",
+          "end_time": "03:40",
+          "track": "all"
+        },
+        {
+          "talk_id": "34",
+          "title": "Tea",
+          "start_time": "03:40",
+          "end_time": "04:10"
+        },
+        {
+          "talk_id": "35",
+          "title": "Closing ceremony/ Feedback session",
+          "start_time": "04:10",
+          "end_time": "04:30"
         }
       ]
     }

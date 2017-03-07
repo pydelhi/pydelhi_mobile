@@ -93,25 +93,7 @@ class PyConApp(App):
     defaults to ''
     '''
 
-    start_time = StringProperty('')
-    '''
-    This is the start_time of talks/workshops.
 
-    :attr:`start_time` is a :class:`~kivy.properties.StringProperty`
-
-    defaults to ''
-    '''
-
-    end_time = StringProperty('')
-    '''
-    This is the end_time of talks/workshops.
-
-    :attr:`end_time` is a :class:`~kivy.properties.StringProperty`
-
-    defaults to ''
-    '''
-
-    
     def build(self):
         self.script_path = script_path
         self.icon = 'data/icon.png'

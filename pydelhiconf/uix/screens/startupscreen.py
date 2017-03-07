@@ -23,7 +23,8 @@ class StartupScreen(Screen):
             source: root.source
             size: self.size
             pos: self.pos
-
+<LeftAlignedLabel@SingleLineLabel>
+    halign: 'left'
 
 <StartupScreen>
     name: 'StartupScreen'

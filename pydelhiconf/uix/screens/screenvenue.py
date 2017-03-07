@@ -20,7 +20,8 @@ class ScreenVenue(Screen):
         BoxLayout
             SingleLineLabel:
                 text: app.venue_name
-            Image:
+            AsyncImage:
+                id: img_venue
                 source: 'atlas://data/default/venue'
                 allow_stretch: True
                 keep_ratio: True

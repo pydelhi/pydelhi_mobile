@@ -10,7 +10,31 @@ from kivy.lang import Builder
 from kivy.core.window import Window
 from kivy.factory import Factory
 import datetime, pprint
+from kivy.properties import StringProperty
+import datetime
 app = App.get_running_app()
+
+class TalkInfo(Factory.ButtonBehavior, Factory.BoxLayout):
+    '''
+    '''
+
+    title = StringProperty('empty talk title')
+
+    time = StringProperty('00:00')
+
+    Builder.load_string('''
+<TalkInfo>
+    size_hint_y: None
+    height: dp(45)
+    spacing: dp(9)
+    LeftAlignedLabel:
+        size_hint_x: None
+        text: root.time
+    LeftAlignedLabel:
+        text: root.title
+''')
+
+
 
 
 class ScreenSchedule(Screen):
@@ -76,7 +100,7 @@ class ScreenSchedule(Screen):
             size: dp(270), dp(36)
             pos: self.x + dp(7), self.top - (dp(36) + dp(7)) 
 
-<TimeSlice@Label>
+<Header@LeftAlignedLabel>
     size_hint_y: None
     height: dp(27)
     width: dp(40)
@@ -88,23 +112,6 @@ class ScreenSchedule(Screen):
         Rectangle
             size: self.size
             pos: self.pos
-<GridLabel@Label>
-    height: dp(27)
-    size_hint: 1, None
-    halign: 'left'
-    text_size:self.width, self.height
-    padding: dp(5), dp(10)
-    xx:True
-    canvas.before:
-        Color
-            rgba: app.base_inactive_light[:3]+[.3] if hasattr(self, 'xx') and self.xx else (1,1,1,0)
-        Rectangle
-            size: self.size
-            pos: self.pos
-
-<GridLabel1@GridLabel>
-    text_size:self.width, None
-    height: self.texture_size[1]
     
    
 <ScreenSchedule>
@@ -118,8 +125,18 @@ class ScreenSchedule(Screen):
         Accordion
             id: accordian_days
             orientation: 'vertical'
- ''')
 
+<TalkTitle@BoxLayout>
+    spacing: dp(9)   
+    height: dp(30)
+    size_hint_y: None
+    Header
+        size_hint: None,None
+        text: 'Time'
+    Header
+        text: 'Ttile'
+
+ ''')
 
     def on_enter(self, onsuccess=False):
         '''Series of actions to be performed when Schedule screen is entered
@@ -134,7 +151,6 @@ class ScreenSchedule(Screen):
         schedule = get_data('schedule', onsuccess=onsuccess).get('0.0.1')[0]
 
         # read the file from disk
-        # pprint.pprint(event)
         for event in events:
             app.event_name = event['name']
             app.venue_name = event['venue']
@@ -155,28 +171,24 @@ class ScreenSchedule(Screen):
                                 row_default_height="27dp",
                                 size_hint_y=None,
                                 padding='15dp',spacing='2dp')
-                # gl.bind(minimum_height=gl.setter('height'))
-                # for x in ['Time','Title']:
-                #     ts = Factory.TimeSlice(text=x)
-                #     gl.add_widget(ts)
+                gl.bind(minimum_height=gl.setter('height'))
                 i = 0
                 for i in xrange(0, items):
                     start_time = sched[i]['start_time']
                     end_time = sched[i]['end_time']
-                    l = Factory.GridLabel(text = "%s - %s"%(start_time,end_time), width= '100dp')
+                    self.talkid = sched[i]['talk_id']
+                    l = TalkInfo(time = "%s - %s"%(start_time,end_time),
+                        title=sched[i]['title'], width= '100dp',
+                        on_release=self.load_screentalk)
                     l.xx = i%2==0
                     gl.add_widget(l)
-                    # bg = 
-                    texts = ['title','type','speaker_name']
-                    for t in texts:
-                        l = Factory.GridLabel1(text=sched[i][t])
-                        l.xx = i%2==0
-                        gl.add_widget(l)
                     
 
                     i+=1
                 sv.add_widget(gl)
                 cday.add_widget(sv)
-            
 
-            # TODO: Dates are not sorted
+
+    def load_screentalk(self, instance):
+        ldscr = app.load_screen('ScreenTalks', manager=app.navigation_manager)
+        ldscr.talkid = self.talkid
