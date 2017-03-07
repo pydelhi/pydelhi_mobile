@@ -63,7 +63,7 @@
           "speaker_name": "",
           "start_time": "11:10",
           "end_time": "11:40",
-          "track": "2",
+          "track": "3",
           "type": "talk"
         },
         {
@@ -175,14 +175,123 @@
           "type": "Workshop"
         }
       ],
-      "2017-05-02": [
+      "2017-03-19": [
         {
-          "title": "Introductions",
-          "speaker_name": "",
-          "start_time": "10:00",
-          "end_time": "12:30",
-          "track": "Lecture Hall 1",
+          "talk_id": "16",
+          "title": "Registeration",
+          "speaker_name": "PyDelhi Registeration Team",
+          "start_time": "08:30",
+          "end_time": "09:00",
+          "track": "all",
           "type": "Talk"
+        },
+        {
+          "talk_id": "17",
+          "title": "High Tea",
+          "speaker_name": "Stomach",
+          "start_time": "09:00",
+          "end_time": "9:30",
+          "track": "all",
+          "type": "Workshop"
+        },
+        {
+          "talk_id": "18",
+          "title": "talk 10",
+          "speaker_name": "",
+          "start_time": "9:30",
+          "end_time": "10:00",
+          "track": "1",
+          "type": "talk"
+        },
+        {
+          "talk_id": "19",
+          "title": "talk 11",
+          "speaker_name": "",
+          "start_time": "9:30",
+          "end_time": "10:00",
+          "track": "2",
+          "type": "talk"
+        },
+        {
+          "talk_id": "20",
+          "title": "talk 12",
+          "speaker_name": "",
+          "start_time": "9:30",
+          "end_time": "10:00",
+          "track": "3",
+          "type": "talk"
+        },
+        {
+          "talk_id": "21",
+          "title": "talk 13",
+          "speaker_name": "",
+          "start_time": "10:10",
+          "end_time": "10:40",
+          "track": "1",
+          "type": "talk"
+        },
+        {
+          "talk_id": "22",
+          "title": "talk 14",
+          "speaker_name": "",
+          "start_time": "10:10",
+          "end_time": "10:40",
+          "track": "2",
+          "type": "talk"
+        },
+        {
+          "talk_id": "23",
+          "title": "talk 15",
+          "speaker_name": "",
+          "start_time": "10:10",
+          "end_time": "10:40",
+          "track": "3",
+          "type": "talk"
+        },
+        {
+          "talk_id": "24",
+          "title": "Panel Discussion: State of Python in Delhi/NCR",
+          "speaker_name": "Moderator: Anuvrat parashar",
+          "start_time": "10:50",
+          "end_time": "11:50",
+          "track": "all",
+          "type": "panel discussion"
+        },
+        {
+          "talk_id": "25",
+          "title": "Panel Discussion: Community efforts & the way forward.",
+          "speaker_name": "Moderator: ",
+          "start_time": "12:00",
+          "end_time": "01:00",
+          "track": "all",
+          "type": "panel discussion"
+        },
+        {
+          "talk_id": "26",
+          "title": "Workshop 04",
+          "speaker_name": "",
+          "start_time": "02:00",
+          "end_time": "04:00",
+          "track": "1",
+          "type": "Workshop"
+        },
+        {
+          "talk_id": "27",
+          "title": "Workshop 05",
+          "speaker_name": "",
+          "start_time": "02:00",
+          "end_time": "04:00",
+          "track": "2",
+          "type": "Workshop"
+        },
+        {
+          "talk_id": "28",
+          "title": "Workshop 05",
+          "speaker_name": "",
+          "start_time": "02:00",
+          "end_time": "04:00",
+          "track": "3",
+          "type": "Workshop"
         }
       ]
     }
