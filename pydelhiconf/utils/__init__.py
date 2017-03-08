@@ -18,9 +18,3 @@ def pause_app():
         currentActivity.moveTaskToBack(True)
     else:
         app.stop()
-
-
-def fetch_data():
-    '''
-    FIXME
-    '''
