@@ -10,7 +10,8 @@ from kivy.lang import Builder
 from kivy.core.window import Window
 from kivy.factory import Factory
 import datetime, pprint
-from kivy.properties import StringProperty
+from kivy.properties import ObjectProperty
+from uix.tabbedcarousel import TabbedCarousel
 import datetime
 app = App.get_running_app()
 
@@ -18,9 +19,7 @@ class TalkInfo(Factory.ButtonBehavior, Factory.BoxLayout):
     '''
     '''
 
-    title = StringProperty('empty talk title')
-
-    time = StringProperty('00:00')
+    talk = ObjectProperty(None)
 
     Builder.load_string('''
 <TalkInfo>
@@ -29,9 +28,9 @@ class TalkInfo(Factory.ButtonBehavior, Factory.BoxLayout):
     spacing: dp(9)
     LeftAlignedLabel:
         size_hint_x: None
-        text: root.time
+        text: "{}-{}".format(root.talk['start_time'], root.talk['end_time'])
     LeftAlignedLabel:
-        text: root.title
+        text: root.talk['title']
 ''')
 
 
@@ -136,57 +135,76 @@ class ScreenSchedule(Screen):
     Header
         text: 'Ttile'
 
+<Track@Screen>
+    ScrollView
+        GridLayout
+            id: container
+            cols: 1
+            size_hint_y: None
+            padding: '15dp'
+            spacing: '2dp'
+            height: self.minimum_height
  ''')
 
     def on_enter(self, onsuccess=False):
         '''Series of actions to be performed when Schedule screen is entered
         '''
-        
         self.ids.accordian_days.clear_widgets()
         from network import get_data
 
         # this should update the file on disk
-        print onsuccess
         events = get_data('event', onsuccess=onsuccess).get('0.0.1')
         schedule = get_data('schedule', onsuccess=onsuccess).get('0.0.1')[0]
 
-        # read the file from disk
-        for event in events:
-            app.event_name = event['name']
-            app.venue_name = event['venue']
-            start_date = event['start_date']
-            end_date = event['end_date']
+        # take first event as the one to display schedule for.
+        event = events[0]
+        app.event_name = event['name']
+        app.venue_name = event['venue']
+        start_date = event['start_date']
+        end_date = event['end_date']
+        
+        dates = schedule.keys()[1:]
+        # each day could have multiple tracks
+        tracks = schedule['tracks']
+        dates = sorted(
+            dates,
+            key=lambda x: datetime.datetime.strptime(x, '%Y-%m-%d'))
+
+        # perf optims, minimize dot lookups
+        acordion_add = self.ids.accordian_days.add_widget
+        AccordionItem = Factory.AccordionItem
+        Track = Factory.Track
+
+        for date in dates:
+            # add current day as accordion widget
+            cday = AccordionItem(title=date)
+            acordion_add(cday)
+            sched = schedule[date]
+            # create a carousel for each track
+            tcarousel = TabbedCarousel()
             
-            dates = schedule.keys()   
-            dates.pop(0)  
-            dates = sorted(dates, key=lambda x: datetime.datetime.strptime(x, '%Y-%m-%d'))
-            for date in dates:
-                cday = Factory.AccordionItem(title=date)
-                self.ids.accordian_days.add_widget(cday)
-                sched = schedule[date] 
+            # this carousel would show each track as new tab
+            trackscreens = []
+            for track in tracks:
+                trk = Track(name=track)
+                trackscreens.append(trk)
+                # add track to carousel
+                tcarousel.add_widget(trk)
+            
+            items = len(sched)
+            for i in xrange(items):
+                talk = sched[i]
+                tid = talk['track']
+                print tid
+                if tid.lower() == 'all':
+                    for tlk in trackscreens:
+                        ti = TalkInfo(talk=talk)
+                        tlk.ids.container.add_widget(ti)
+                    continue
+                ti = TalkInfo(talk=talk)
+                trackscreens[int(tid)-1].ids.container.add_widget(ti)
 
-                items = len(sched)
-                sv = ScrollView()
-                gl = GridLayout(cols=2,
-                                row_default_height="27dp",
-                                size_hint_y=None,
-                                padding='15dp',spacing='2dp')
-                gl.bind(minimum_height=gl.setter('height'))
-                i = 0
-                for i in xrange(0, items):
-                    start_time = sched[i]['start_time']
-                    end_time = sched[i]['end_time']
-                    self.talkid = sched[i]['talk_id']
-                    l = TalkInfo(time = "%s - %s"%(start_time,end_time),
-                        title=sched[i]['title'], width= '100dp',
-                        on_release=self.load_screentalk)
-                    l.xx = i%2==0
-                    gl.add_widget(l)
-                    
-
-                    i+=1
-                sv.add_widget(gl)
-                cday.add_widget(sv)
+            cday.add_widget(tcarousel)
 
 
     def load_screentalk(self, instance):

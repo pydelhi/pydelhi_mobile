@@ -1,7 +1,7 @@
 from kivy.factory import Factory
 from kivy.properties import ObjectProperty
 from kivy.lang import Builder
-
+from weakref import ref
 
 class TabbedCarousel(Factory.TabbedPanel):
     '''Custom TabbedPanel using a carousel used in the Main Screen
@@ -44,9 +44,10 @@ class TabbedCarousel(Factory.TabbedPanel):
 
     def on_index(self, instance, value):
         current_slide = instance.current_slide
+        
         if not hasattr(current_slide, 'tab'):
             return
-        tab = current_slide.tab
+        tab = current_slide.tab()
         ct = self.current_tab
         try:
             if ct.text != tab.text:
@@ -87,6 +88,10 @@ class TabbedCarousel(Factory.TabbedPanel):
     def add_widget(self, widget, index=0):
         if isinstance(widget, Factory.Screen):
             self.carousel.add_widget(widget)
+            tp = Factory.TabbedPanelHeader(text=widget.name)
+            tp.slide = self.carousel.slides.index(widget)
+            widget.tab = ref(tp)
+            super(TabbedCarousel, self).add_widget(tp, index=index)
             return
         super(TabbedCarousel, self).add_widget(widget, index=index)
 

@@ -29,10 +29,15 @@ def get_data(endpoint, onsuccess=False):
             timeout=2)
 
     import json
-
+    
     jsondata = None
 
-    with open(filepath) as fd:
-        jsondata = json.load(fd)
+    try:
+        with open(filepath) as fd:
+            jsondata = json.load(fd)
+    except (IOError, ValueError) as err:
+        import time
+        # give thread a chance to download and fix data
+        time.sleep(2)
 
     return jsondata

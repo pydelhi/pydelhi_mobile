@@ -77,7 +77,8 @@
           "talk_id": "10",
           "title": "Lunch",
           "start_time": "01:40",
-          "end_time": "02:40"
+          "end_time": "02:40",
+          "track": "all"
         },
         {
           "talk_id": "11",
@@ -139,7 +140,8 @@
           "talk_id": "19",
           "title": "Lightning Talks",
           "start_time": "05:30",
-          "end_time": "06:30"
+          "end_time": "06:30",
+          "track": "all"
          }
       ],
       "2017-03-19": [
@@ -211,7 +213,8 @@
           "talk_id": "29",
           "title": "Lunch",
           "start_time": "01:10",
-          "end_time": "02:00"
+          "end_time": "02:00",
+          "track": "all"
         },
         {
           "talk_id": "30",
@@ -245,13 +248,16 @@
           "talk_id": "34",
           "title": "Tea",
           "start_time": "03:40",
-          "end_time": "04:10"
+          "end_time": "04:10",
+          "track": "all"
+
         },
         {
           "talk_id": "35",
           "title": "Closing ceremony/ Feedback session",
           "start_time": "04:10",
-          "end_time": "04:30"
+          "end_time": "04:30",
+          "track": "all"
         }
       ]
     }
