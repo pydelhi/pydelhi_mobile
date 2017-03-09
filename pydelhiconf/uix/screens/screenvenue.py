@@ -18,6 +18,7 @@ class ScreenVenue(Screen):
         orientation: 'vertical'
         padding: dp(4)
         BoxLayout
+            orientation: 'vertical'
             SingleLineLabel:
                 text: app.venue_name
             AsyncImage:
@@ -40,17 +41,13 @@ class ScreenVenue(Screen):
             spacing: dp(13)
             padding: dp(4)
             Button:
-                size_hint: 1, None
-                height: dp(72)
-                background_color: 1, 0, 0, 1
-                color: 1, 1, 1, 1
+                background_normal: ''
+                background_color: app.base_active_color
                 opacity: .5 if self.state == 'down' else 1
                 text: 'Open Street View'
             Button:
-                size_hint: 1, None
-                height: dp(72)
-                background_color: 1, 0, 0, 1
-                color: 1, 1, 1, 1
+                background_normal: ''
+                background_color: app.base_active_color
                 opacity: .5 if self.state == 'down' else 1
                 text: 'Get Directions'
                 on_release:

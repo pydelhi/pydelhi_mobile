@@ -18,25 +18,29 @@ class ScreenTicket(Screen):
         Image:
             source: 'atlas://data/default/ticket'
             allow_stretch: True
-            keep_ratio: False
             size: root.size
             opacity: 1
         BoxLayout
             size_hint_y: None
             height: dp(50)
-            PyConButton
+            spacing: dp(5)
+            Button
                 text: 'My tickets'
                 size_hint_y: None
                 group: 'tickets'
                 height: dp(54)
-                on_released:
+                background_normal: ''
+                background_color: app.base_active_color
+                on_release:
                     webbrowser.open('http://in.explara.com/a/account/manage/my-orders')
-            PyConButton
+            Button
                 default: True
                 group: 'tickets'
                 text: 'Buy tickets'
                 size_hint_y: None
                 height: dp(54)
+                background_normal: ''
+                background_color: app.base_active_color
                 on_release:
                     webbrowser.open('http://bit.do/pydelhiconf2017tickets')
 ''')  
