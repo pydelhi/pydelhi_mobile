@@ -16,7 +16,7 @@ import datetime
 app = App.get_running_app()
 
 
-class TalkInfo(Factory.ButtonBehavior, Factory.BoxLayout):
+class TalkInfo(Factory.TouchRippleBehavior, Factory.ButtonBehavior, Factory.BoxLayout):
     '''
     '''
 
