@@ -155,9 +155,7 @@ class PyConApp(App):
         if not hasattr(self, module_path):
             import imp
             module = imp.load_module(screen, *imp.find_module(module_path))
-            print "module ", module
             screen_class = getattr(module, screen)
-            print "screen_class ", screen_class
             sc = screen_class()
             setattr(self, module_path, sc)
             manager.add_widget(sc)
