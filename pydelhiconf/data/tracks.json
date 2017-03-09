@@ -14,7 +14,7 @@
 					"photo": "",
 					"social": [
 						{
-							"about": ""
+							"website": ""
 						}
 					]
 				}
@@ -29,7 +29,7 @@
 				"speaker": {
 					"name": "Ricardo Rocha",
 					"info": "Ricardo Rocha is a software engineer at CERN. He's currently a member of the CERN OpenStack team, focusing on service and application orchestration and container deployments. Previous work included development of data storage, bookkeeping and monitoring services for the LHC Computing Grid (LCG).",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 					    {
 						"linkedin": "https://www.linkedin.com/in/ricardo-rocha-739aa718"
@@ -42,9 +42,9 @@
 				"description": "Telegram messenger has been a really interesting platform because of its Bot API and the cloud-based file management system. This talk will be a hands-on tutorial about Telegram Bot API and how to use it with Python. I'll be making a new bot on stage using Python Telegram Bot and Telepot.",
 				"pre": "Attendees should have a basic knowledge of Working with Python Modules and Working with APIs",
 				"speaker": {
-					"name": "Shashank Aryan",
-					"info":"Shashank is a Computer Science undergrad from Noida Institute Of Engineering and Technology. I'm a Python Enthusiast, open source contributor and like to learn about the buzz-words in this technological era. You can find out more about me by the given links.I've given a lightning talk on Telegram Bot using Python on PyDelhi where I created a bot for PyDelhi's Telegram group which you can see in action on https://telegram.me/pydelhibot",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"name": "Shashank Kumar",
+					"info":"Shashank is a Computer Science undergrad from Noida Institute Of Engineering and Technology. He's a Python Enthusiast, open source contributor and like to learn about the buzz-words in this technological era. You can find out more about him by the given links. He's given a lightning talk on Telegram Bot using Python on PyDelhi where Ihecreated a bot for PyDelhi's Telegram group which you can see in action on https://telegram.me/pydelhibot",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"website": "http://shanky.xyz",
@@ -59,7 +59,7 @@
 				"speaker": {
 					"name": "Amit Kumar",
 					"info":"I am a Software Development Engineer at Zomato's Machine Learning Team. Before Zomato I was a Software Engineering Intern at HackerEarth's R & D Team. I also participated in Google Summer of Code 2016 as a Mentor in SymPy organization. In 2015 I participated as a Student under Python Software Foundation to work on SymPy's Equation Solvers module in Google Summer of Code 2015. I graduated as a Mathematics and Computing Engineer from Delhi Technological University (formerly known as Delhi College of Engineering) in May 2016. I am a programmer, learner, presenter and a Software Engineer in the process. I have spoken at various national and international conferences and local meetups. I am usually found at New Delhi, India. You may find me with handle @aktech on the Web.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"twitter": "https://twitter.com/iaktech",
@@ -89,7 +89,7 @@
 				"speaker": {
 					"name": "Anand B. Pillai",
 					"info":"Anand has been a long time advocate and community leader of the Python programming language in India and Bangalore. Anand founded the BangPypers community in Feb 2005 as the result of a meeting of Bangalore Pythonistas. Discussions in this community went on to build other communities and laid the foundation of PyCon India and similar conferences. He has 17+ years of software development experience having worked in a variety of technical roles in a number of software companies. He is currently working as Director Engineering, Synup at Bangalore. His interests are high performance computing architectures, scalability & security. Recently he has been wetting his hands in data visualization and machine learning using Python.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"twitter": "http://twitter.com/skeptichacker",
@@ -104,7 +104,7 @@
 				"speaker": {
 					"name" : "Smit Thakkar",
 					"info":"Smit Thakkar is a Software Developer, currently leading the development of a robot-advisor platform at LendCypher. Perviously he was a Technical Co-Founder at Punchit.io. As an avid speaker, Smit has participated in multiple Meetups and tech events. One of his most noted and major public key speaking experiences are Angular2 session at GDG Devfest Ahmedabad and a two-day Python workshop at DAIICT, which was attended by more than 200 students. He has been programming since 9th Grade and is eager to spread love and awareness about open source and cool technologies through like-minded developers. He is the author of two open source flask extensions Flask-NSFW and Flask-ReqParse . He loves participating in Hackathons and listening to Taylor Swift, not necessarily in that order.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"github": "https://github.com/smitthakkar96"
@@ -118,7 +118,7 @@
 				"speaker": {
 					"name": "Dorai Thodla",
 					"info":"Dorai Thodla - Designs and builds skillbots (chatbots for skill development and assessement), conducts Chatbot workshops, Bot Sprints and other events Bhavani Ravi - A developer of Interview Bot and helps Dorai in conductig chatbot workshops and Bot Sprints.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"website": "http://doraithodla.com/"
@@ -140,7 +140,7 @@
 				"speaker": {
 					"name": "Aniket Maithani",
 					"info": "Aniket Maithani works @Corseco Technologies, handles Development & Dev-Ops, B.Tech (CS&E) graduate from Amity University Noida, loves to travel, blogs during free time, cricket Lover, 'CHAI' addict and Plays Guitar too!",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"twitter": "https://twitter.com/2aniketmaithani",
@@ -191,7 +191,7 @@
 				"speaker": {
 					"name": "Sanyam Khurana",
 					"info": "Sanyam is an Open Source Contributor from Delhi, India. Mostly goes by CuriousLearner all over the web. He contributes to various upstream projects in different organizations & maintains a few of them. He has contributed various patches and bug reports upstream to Gecko Engine from Mozilla Organization. He is a vouched Mozillian & an official Representative of Mozilla and has been listed in AUTHORS as well as credits section of every browser ever released by Mozilla. He mentored for PyDSA in RGSoC 2017. He volunteers for PyCon India and PyDelhiConf and has been an active member of PyDelhi, ILUG-D, LinuxChixIndia and DGPLUG.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 							"github": "http://www.github.com/CuriousLearner",
@@ -206,7 +206,7 @@
 				"speaker": {
 					"name": "Shagun Sodhani",
 					"info":"I am a developer working with the Analytics and Data Science team at Adobe Systems where I contribute to solving novel problems in the domain of Machine Learning. I recently won the Outstanding Young Engineers Award as well. I have been actively using Python for the past 4 years. I have previously given talks at PyCon India and Big Data Training Program, IIT Roorkee. I also worked as a teaching assistant for the 3-course series on Data Science and Engineering with Spark XSeries, created by professors from University of California, Berkeley, University of California, Los Angeles and Databricks and offered on the edX platform.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"github": "https://github.com/shagunsodhani",
@@ -221,7 +221,7 @@
 				"speaker": {
 					"name": "Manas Ranjan Kar",
 					"info":"Manas likes helping clients making sense of their data and build a powerful case for business change using analytics in their respective companies. He is currently heading the NLP team at Episource, a US healthcare company. He has architected multiple commercial NLP solutions in the area of healthcare, foods & beverages, finance and retail. He is deeply involved in functionally architecting large scale business process automation & deep insights from structured & unstructured data using Natural Language Processing & Machine Learning. He has contributed to Gensim & ConceptNet as well.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"linkedin": "https://in.linkedin.com/in/manasranjankar",
@@ -247,7 +247,7 @@
 				"speaker": {
 					"name": "Akash Mishra",
 					"info":"Akash Mishra (@akash47) is working as a software developer at Betaout. He stumbled onto ZeroMQ while wandering in the python land for better concurrency options. ZeroMQ allowed him to keep his hair while writing concurrent code in python and hence he wants to tell everyone about how awesome it is. ",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 						}
@@ -260,7 +260,7 @@
 				"speaker": {
 					"name": "Saurabh Kumar",
 					"info":"Saurabh is technical reviewer at Two Scoops of Django 1.8 & maintainer of pydanny/cookiecutter-django, core developer at python-dotenv, fueled/django-init, pythonindia/junction, fossevents/fossevents.in and senior backend developer at Fueled.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"website": "https://saurabh-kumar.com/",
@@ -274,7 +274,7 @@
 				"description": "about talk",
 				"speaker": {
 					"info":"about speaker",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"twitter": "www.twitter.com/pydelhi",
@@ -289,7 +289,7 @@
 				"speaker": {
 					"name": "Jaysinh Shukla",
 					"info":"Jaysinh Shukla is a Full-stack developer by profession, A Computer scientist by heart, An Actor by gene. I am Speaker, Vimmer, Blogger and Organizer. Core member of PyKutch.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"twitter": "https://twitter.com/jaysinhp",
@@ -305,7 +305,7 @@
 				"speaker": {
 					"name": "Jaidev Deshpande",
 					"info":"I am a data scientist based in New Delhi. I currently work at Juxt SmartMandate Analytic Solutions as Practice Lead in data science. I have been an active member of the Delhi, Pune and Mumbai Python users' groups and am also an organizer of the SciPy India conference. My background is in statistical signal processing and applications of machine learning in signal processing. I am currently working on various projects involving NLP, recommender systems and deep learning for computer vision.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"twitter": "http://twitter.com/jaidevd",
@@ -344,7 +344,7 @@
 				"speaker": {
 					"name": "Pradhvan Bisht",
 					"info":"I am a Computer Science Junior at Greater Noida Institute of Technology. I am a web developer and an open source enthusiast. I am also a Python lover and use it to automate everything I can.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"linkedin": "https://in.linkedin.com/in/pradhvanbisht"
@@ -373,7 +373,7 @@
 				"speaker": {
 					"name": "Chris Stucchio",
 					"info":"Chris Stucchio is the Director of Data Science at Wingify (the parent company of Visual Website Optimizer). He’s had a variety of careers, including physicist, stock trader, call center worker, bodyguard and demolition worker. He’s been using python for scientific computing since the Numarray days (anyone else remember life before Numpy?). He’s a big proponent of careful reasoning and wants to teach the world about the best tool to do that.",
-					"photo": "https://img.clipartfest.com/adedba72cc75869856c03f60d0f2643a_male-silhouette-clipart-male-silhouette-front_1280-1024.jpeg",
+					"photo": "http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.hi.png",
 					"social": [
 						{
 					    	"github": "https://github.com/stucchio",
