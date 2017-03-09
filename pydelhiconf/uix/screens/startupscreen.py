@@ -30,17 +30,13 @@ class StartupScreen(Screen):
     name: 'StartupScreen'
     on_enter:
         from kivy.animation import Animation
-        Animation(d=.5, width=self.width, top=self.height, height=self.height/2).start(img_logo)
-        Animation(d=.5, width=self.width, top=self.height/2, height=self.height/2).start(img_venue)
+        img_logo.opacity=0
+        Animation(d=1, top=self.height/1.5, height=self.height/2, opacity=1).start(img_logo)
         from kivy.clock import Clock
         Clock.schedule_once(lambda dt: app.load_screen('NavigationScreen'), 2)
     Background:
         color: app.base_color
         source: 'atlas://data/default/bg'
-    Image
-        id: img_venue
-        source: 'atlas://data/default/venue'
-        size_hint_y: None
     Image
         id: img_logo
         source: 'atlas://data/default/logo'
