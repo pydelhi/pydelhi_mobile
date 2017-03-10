@@ -1,7 +1,7 @@
 {
   "0.0.1": [
     {
-      "tracks": ["Audi 1", "Audi 2", "Audi 3"],
+      "tracks": ["Audi 1", "Lecture Hall 1", "Lecture Hall 2"],
       "2017-03-18": [
         {
           "talk_id": "00",
@@ -35,7 +35,7 @@
           "talk_id": "04",
           "title": "Telegram bot using Python",
           "start_time": "11:00",
-          "end_time": "11:30",
+          "end_time": "11:40",
           "track": "1"
         },
         {
@@ -48,7 +48,7 @@
         {
           "talk_id": "06",
           "title": "Sponsored slot 1",
-          "start_time": "11:10",
+          "start_time": "11:00",
           "end_time": "11:40",
           "track": "3"
         },

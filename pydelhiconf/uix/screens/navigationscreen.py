@@ -23,7 +23,7 @@ class NavigationScreen(Screen):
     size_hint_y: None
     allow_no_selection: False
     height: dp(45)
-    color: app.base_active_color if self.state == 'normal' else app.base_inactive_color
+    backcolor: app.base_active_color if self.state == 'normal' else app.base_inactive_color
     source: 'atlas://data/default/but_light'
     Label:
         size: root.size
@@ -49,6 +49,7 @@ class NavigationScreen(Screen):
             size_hint_y: None
             height: self.minimum_height
             MenuButton
+                id: bt_sched
                 text: 'Schedule'
                 on_release: app.load_screen('ScreenSchedule', manager=app.navigation_manager)
             MenuButton
@@ -105,6 +106,7 @@ class NavigationScreen(Screen):
         id: navigationdrawer
         on_parent: app.navigationdrawer = navigationdrawer
         LeftPanel
+            id: left_panel
         RightPanel
             opacity: 1-(self.x/root.right)
 ''')

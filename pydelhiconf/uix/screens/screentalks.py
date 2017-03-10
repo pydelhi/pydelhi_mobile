@@ -11,26 +11,22 @@ from kivy.properties import ObjectProperty
 app = App.get_running_app()
 
 
-class SpeakerDetails(Factory.BoxLayout):
+class SpeakerDetails(Factory.ScrollGrid):
 
     speaker = ObjectProperty(None)
 
     Builder.load_string('''
 <SpeakerDetails>
-    spacing: dp(13)
-    orientation: 'vertical'
-    padding: dp(4)
     AsyncImage:
         source: root.speaker['photo']
         allow_stretch: True
-        keep_ratio: True
-    Label
+        size_hint_y: None
+        height: dp(150)
+        mipmap: True
+    BackLabel
         text: root.speaker['name']
-    Label
+    BackLabel
         text: root.speaker['info']
-        valign: 'middle'
-        size: self.texture_size
-        text_size: self.width, None
         ''')
 
 class ScreenTalks(Screen):
@@ -64,50 +60,56 @@ class ScreenTalks(Screen):
 
     Builder.load_string('''
 <ScreenTalks>
-    size_hint_y: None
-    height: dp(45)
     spacing: dp(9)
     name: 'ScreenTalks'
-    BoxLayout
-        orientation: 'vertical'
-        padding: dp(4)
-        Label:
-            id: talk_title
-            valign: 'middle'
-            size: self.texture_size
-            text_size: self.width, None
-        Label:
-            id: talk_desc
-            valign: 'middle'
-            size: self.texture_size
-            text_size: self.width, None
+    ScrollView
+        ScrollGrid
+            id: container
+            BackLabel:
+                id: talk_title
+            BackLabel:
+                id: talk_desc
     
 <ImBut@ButtonBehavior+Image>
     text_size: self.size
     size_hint_y: None
+    mipmap: True
+    height: dp(45)
         ''')
+    def on_pre_enter(self):
+        container = self.ids.container
+        container.opacity = 0
 
-    def on_enter(self):
+    def on_enter(self, onsuccess=False):
+        container = self.ids.container
+        if len(container.children) > 2:
+                container.remove_widget(container.children[0])
         from network import get_data
         talks = get_data('tracks', onsuccess=False)
+        gl = None
+        if not talks:
+            return
         talk_info = talks['0.0.1'][0][self.talkid]
         self.ids.talk_title.text = talk_info['title']
         self.ids.talk_desc.text = talk_info['description']
         if 'speaker' in talk_info.keys():
-            speaker = SpeakerDetails(speaker=talk_info['speaker'])
-            speaker_social = talk_info['speaker']['social'][0]
-            social_len = len(speaker_social)
-            gl = GridLayout(cols=social_len,
+            speaker_class = SpeakerDetails(speaker=talk_info['speaker'])
+            speaker=talk_info['speaker']
+            if 'social' in speaker:
+                speaker_social = speaker['social'][0]
+                social_len = len(speaker_social)
+                gl = GridLayout(cols=social_len,
                             size_hint_y=None,
                             padding='2dp',
                             spacing='2dp')
-            import webbrowser
-            for social_acc, social_link in speaker_social.items():
-                imbt = Factory.ImBut()
-                imbt.source = app.script_path + '/data/' + social_acc + '.png'
-                imbt.on_release = lambda *x: webbrowser.open(social_link)
-                gl.add_widget(imbt)
-
-            self.add_widget(speaker)
-            speaker.add_widget(gl)
+                import webbrowser
+                for social_acc, social_link in speaker_social.items():
+                    imbt = Factory.ImBut()
+                    imbt.source = 'atlas://data/default/' + social_acc.lower()
+                    imbt.on_release = lambda *x: webbrowser.open(social_link)
+                    gl.add_widget(imbt)
+            if gl is not None:
+                speaker_class.add_widget(gl)
+            self.ids.container.add_widget(speaker_class)
+            Factory.Animation(opacity=1, d=.5).start(container)
       

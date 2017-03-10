@@ -13,8 +13,8 @@ class ScreenTicket(Screen):
     name: 'ScreenTicket'
     BoxLayout
         padding: dp(12)
+        spacing: dp(12)
         orientation: 'vertical'
-        spacing:dp(5)
         Image:
             source: 'atlas://data/default/ticket'
             allow_stretch: True
@@ -29,8 +29,8 @@ class ScreenTicket(Screen):
                 size_hint_y: None
                 group: 'tickets'
                 height: dp(54)
-                background_normal: ''
                 background_color: app.base_active_color
+                background_normal: ''
                 on_release:
                     webbrowser.open('http://in.explara.com/a/account/manage/my-orders')
             Button
@@ -39,8 +39,8 @@ class ScreenTicket(Screen):
                 text: 'Buy tickets'
                 size_hint_y: None
                 height: dp(54)
-                background_normal: ''
                 background_color: app.base_active_color
+                background_normal: ''
                 on_release:
                     webbrowser.open('http://bit.do/pydelhiconf2017tickets')
 ''')  

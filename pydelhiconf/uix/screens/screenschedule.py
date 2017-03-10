@@ -152,25 +152,29 @@ class ScreenSchedule(Screen):
 
 <Track@Screen>
     ScrollView
-        GridLayout
+        ScrollGrid
             id: container
-            cols: 1
-            size_hint_y: None
-            padding: '15dp'
-            spacing: '4dp'
-            height: self.minimum_height
  ''')
+
+    def on_pre_enter(self):
+        container = self.ids.accordian_days
+        container.opacity = 0
 
     def on_enter(self, onsuccess=False):
         '''Series of actions to be performed when Schedule screen is entered
         '''
+
+        container = self.ids.accordian_days
+
+        app.navigationscreen.ids.left_panel.ids.bt_sched.state = 'down'
         self.ids.accordian_days.clear_widgets()
         from network import get_data
 
         # this should update the file on disk
         events = get_data('event', onsuccess=onsuccess).get('0.0.1')
-        print onsuccess
         schedule = get_data('schedule', onsuccess=onsuccess).get('0.0.1')[0]
+        if not events or not schedule:
+            return
 
         # take first event as the one to display schedule for.
         event = events[0]
@@ -222,4 +226,5 @@ class ScreenSchedule(Screen):
                 trackscreens[int(tid)-1].ids.container.add_widget(ti)
 
             cday.add_widget(tcarousel)
-            self.ids.accordian_days.select(first)
+            container.select(first)
+            Factory.Animation(d=.5, opacity=1).start(container)
