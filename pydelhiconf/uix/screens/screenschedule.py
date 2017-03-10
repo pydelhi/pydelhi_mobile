@@ -31,7 +31,7 @@ class TalkInfo(Factory.TouchRippleBehavior, Factory.ButtonBehavior, Factory.BoxL
             size: self.size
             pos: self.pos
     size_hint_y: None
-    height: (lblinfo.texture_size[1] + dp(4)) if lblinfo.text else 0
+    height: max(lblinfo.texture_size[1] + dp(4), dp(40))
     spacing: dp(9)
     on_release: 
         scr = app.load_screen('ScreenTalks', manager=app.navigation_manager)
