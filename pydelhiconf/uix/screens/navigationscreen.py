@@ -50,7 +50,7 @@ class NavigationScreen(Screen):
             height: self.minimum_height
             MenuButton
                 text: 'Schedule'
-                on_released: app.load_screen('ScreenSchedule', manager=app.navigation_manager)
+                on_release: app.load_screen('ScreenSchedule', manager=app.navigation_manager)
             MenuButton
                 text: 'Sponsors'
                 on_release: app.load_screen('ScreenSponsor', manager=app.navigation_manager)
@@ -59,17 +59,22 @@ class NavigationScreen(Screen):
                 on_release: app.load_screen('ScreenVenue', manager=app.navigation_manager)
             MenuButton
                 text: 'OpenSpaces'
+                on_release: app.load_screen('ScreenOpenSpaces', manager=app.navigation_manager)
             MenuButton
                 text: 'DevSprints'
+                on_release: app.load_screen('ScreenDevSprints', manager=app.navigation_manager)
             MenuButton
                 text: 'Feedback'
+                on_release: app.load_screen('ScreenFeedback', manager=app.navigation_manager)
             MenuButton
                 text: 'Ticket'
                 on_release: app.load_screen('ScreenTicket', manager=app.navigation_manager)
             MenuButton
                 text: 'Community'
+                on_release: app.load_screen('ScreenCommunity', manager=app.navigation_manager)
             MenuButton
                 text: 'About'
+                on_release: app.load_screen('ScreenAbout', manager=app.navigation_manager)
             MenuButton
                 text: 'Exit'
                 on_release: app.stop()
