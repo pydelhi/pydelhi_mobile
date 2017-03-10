@@ -31,17 +31,21 @@ class TalkInfo(Factory.TouchRippleBehavior, Factory.ButtonBehavior, Factory.BoxL
             size: self.size
             pos: self.pos
     size_hint_y: None
-    height: dp(40)
+    height: (lblinfo.texture_size[1] + dp(4)) if lblinfo.text else 0
     spacing: dp(9)
     on_release: 
         scr = app.load_screen('ScreenTalks', manager=app.navigation_manager)
         scr.talkid = self.talk['talk_id']
     LeftAlignedLabel:
-        size_hint_x: None
+        size_hint: None, 1
+        valign: 'middle'
         width: dp(45)
         text: "{}\\n{}".format(root.talk['start_time'], root.talk['end_time'])
-    LeftAlignedLabel:
+    Label:
+        id: lblinfo
         valign: 'middle'
+        size_hint: 1, 1
+        text_size: self.width, None
         text: root.talk['title']
 ''')
 
@@ -153,7 +157,7 @@ class ScreenSchedule(Screen):
             cols: 1
             size_hint_y: None
             padding: '15dp'
-            spacing: '2dp'
+            spacing: '4dp'
             height: self.minimum_height
  ''')
 

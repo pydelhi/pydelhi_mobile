@@ -15,10 +15,10 @@ class StartupScreen(Screen):
     height: '45dp'
 <Background@Widget>
     source: ''
-    color: app.base_color
+    backcolor: app.base_color
     canvas.before:
         Color:
-            rgba: root.color if root.color else (1, 1, 1, 1)
+            rgba: root.backcolor if root.backcolor else (1, 1, 1, 1)
         Rectangle:
             source: root.source
             size: self.size
@@ -35,7 +35,7 @@ class StartupScreen(Screen):
         from kivy.clock import Clock
         Clock.schedule_once(lambda dt: app.load_screen('NavigationScreen'), 2)
     Background:
-        color: app.base_color
+        backcolor: app.base_color
         source: 'atlas://data/default/bg'
     Image
         id: img_logo
