@@ -85,16 +85,18 @@ class ScreenTalks(Screen):
         if len(container.children) > 2:
                 container.remove_widget(container.children[0])
         from network import get_data
-        talks = get_data('tracks', onsuccess=False)
+        if not onsuccess:
+            talks = get_data('tracks', onsuccess=False)
         gl = None
         if not talks:
+            print 'no talks'
             return
         talk_info = talks['0.0.1'][0][self.talkid]
         self.ids.talk_title.text = talk_info['title']
         self.ids.talk_desc.text = talk_info['description']
         if 'speaker' in talk_info.keys():
-            speaker_class = SpeakerDetails(speaker=talk_info['speaker'])
             speaker=talk_info['speaker']
+            speaker_details = SpeakerDetails(speaker=speaker)
             if 'social' in speaker:
                 speaker_social = speaker['social'][0]
                 social_len = len(speaker_social)
@@ -108,8 +110,6 @@ class ScreenTalks(Screen):
                     imbt.source = 'atlas://data/default/' + social_acc.lower()
                     imbt.on_release = lambda *x: webbrowser.open(social_link)
                     gl.add_widget(imbt)
-            if gl is not None:
-                speaker_class.add_widget(gl)
-            self.ids.container.add_widget(speaker_class)
-            Factory.Animation(opacity=1, d=.5).start(container)
-      
+                speaker_details.add_widget(gl)
+            self.ids.container.add_widget(speaker_details)
+        Factory.Animation(opacity=1, d=.5).start(container)
