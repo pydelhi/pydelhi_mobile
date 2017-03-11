@@ -163,10 +163,13 @@ class ScreenSchedule(Screen):
     def on_enter(self, onsuccess=False):
         '''Series of actions to be performed when Schedule screen is entered
         '''
-
         container = self.ids.accordian_days
-
+        # make sure the corresponding navigation is depressed
         app.navigationscreen.ids.left_panel.ids.bt_sched.state = 'down'
+        # if the screen loads by pressing back, do nothing.
+        if self.from_back == True:
+            Factory.Animation(d=.5, opacity=1).start(container)
+            return
         self.ids.accordian_days.clear_widgets()
         from network import get_data
 

@@ -160,12 +160,15 @@ class PyConApp(App):
             import imp
             module = imp.load_module(screen, *imp.find_module(module_path))
             screen_class = getattr(module, screen)
-            sc = screen_class()
+            sc = screen_class() 
+            sc.from_back = not store_back
             setattr(self, module_path, sc)
             manager.add_widget(sc)
 
         else:
             sc = getattr(self, module_path)
+
+        sc.from_back = not store_back
         manager.current = screen
 
         if store_back:
