@@ -80,12 +80,13 @@
 		},
 		"06": {
 			"title": "Sponsored slot 1",
-			"description": "about talk",
+			"description": "",
 			"proposal": "",
 			"type": "default",
 			"speaker": {
+				"name": "Sponsors",
 				"info": "about speaker",
-				"photo": "https://cdn-az.allevents.in/banners/a5d4a04e774a86569c03e4dba8b6ec21",
+				"photo": "",
 				"social": [{
 					"twitter": "www.twitter.com/pydelhi",
 					"github": "www.github.com/pydelhi"
@@ -137,7 +138,7 @@
 		},
 		"10": {
 			"title": "Lunch",
-			"description": "Lunch, the abbreviation for luncheon, is a light meal typically eaten at midday.[1] The origin of the words lunch and luncheon relate to a small snack originally eaten at any time of the day or night. During the 20th century the meaning gradually narrowed to a small or mid-sized meal eaten at midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.",
+			"description": "Lunch, the abbreviation for luncheon, is a light meal typically eaten at midday. The origin of the words lunch and luncheon relate to a small snack originally eaten at any time of the day or night. During the 20th century the meaning gradually narrowed to a small or mid-sized meal eaten at midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.",
 			"proposal": "",
 			"type": "default",
 			"speaker": {
@@ -267,7 +268,7 @@
 			"type": "lightningtalks",
 			"speaker": {
 				"name": "Enquire at registeration desk",
-				"info": "People are incouraged to register for lightning talks at the registeration desk",
+				"info": "People are encouraged to register for lightning talks at the registeration desk",
 				"photo": "https://media.arabnet.me/site_media/uploads/home_page_images/2013/02/07/announcing-lightning-talks-arabnet-beirut-2013.jpg"
 			}
 		},
@@ -326,6 +327,7 @@
 			"proposal": "",
 			"type": "talk",
 			"speaker": {
+				"name": "Sponsors",
 				"info": "about speaker",
 				"photo": "http://static.wixstatic.com/media/2653cd_02a8474e57b5420e8ae1f5b25ce3685c.jpg",
 				"social": [{
@@ -394,7 +396,7 @@
 		},
 		"29": {
 			"title": "Lunch",
-			"description": "Lunch, the abbreviation for luncheon, is a light meal typically eaten at midday.[1] The origin of the words lunch and luncheon relate to a small snack originally eaten at any time of the day or night. During the 20th century the meaning gradually narrowed to a small or mid-sized meal eaten at midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.",
+			"description": "Lunch, the abbreviation for luncheon, is a light meal typically eaten at midday. The origin of the words lunch and luncheon relate to a small snack originally eaten at any time of the day or night. During the 20th century the meaning gradually narrowed to a small or mid-sized meal eaten at midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.",
 			"proposal": "",
 			"type": "default",
 			"speaker": {
