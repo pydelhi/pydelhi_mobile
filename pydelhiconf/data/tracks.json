@@ -70,7 +70,7 @@
 			"speaker": {
 				"name": "Amit Kumar",
 				"info": "I am a Software Development Engineer at Zomato's Machine Learning Team. Before Zomato I was a Software Engineering Intern at HackerEarth's R & D Team. I also participated in Google Summer of Code 2016 as a Mentor in SymPy organization. In 2015 I participated as a Student under Python Software Foundation to work on SymPy's Equation Solvers module in Google Summer of Code 2015. I graduated as a Mathematics and Computing Engineer from Delhi Technological University (formerly known as Delhi College of Engineering) in May 2016. I am a programmer, learner, presenter and a Software Engineer in the process. I have spoken at various national and international conferences and local meetups. I am usually found at New Delhi, India. You may find me with handle @aktech on the Web.",
-				"photo": "http://static.wixstatic.com/media/2653cd_02a8474e57b5420e8ae1f5b25ce3685c.jpg",
+				"photo": "http://www.gravatar.com/avatar/8ba60fb7f1b68c0252bd8f63f3e60b24?s=290&20161115",
 				"social": [{
 					"twitter": "https://twitter.com/iaktech",
 					"github": "https://github.com/aktech",
@@ -109,16 +109,20 @@
 			}
 		},
 		"08": {
-			"title": "Developing Scalable Apps in Python with Google App Engine",
-			"description": "You will learn about challenges of building applications that can serve hundreds of thousands of users, and how you can prepare for them as a developer. And more importantly - you will learn how to harness the power of App Engine - Platform as a Service, run by Google, so you can focus on your application's features, not on managing infrastructure that runs your app. Let Google run and scale the infrastructure and do what you do best - write code! You will learn the best practices of using Cloud Endpoints that allow you to easily create API services and make them accessible to iOS, Android and Javascript clients. They allow you to automatically generate client libraries to make wiring up the frontend easy. And there are some nifty built-in features, like denial-of-service protection and OAuth 2.0 support.",
 			"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/developing-scalable-apps-in-python-with-google-app-engine~bmw0e/",
 			"type": "workshop",
+			"title": "Python 101",
+			"description": "You will learn about the basics of Python. A in depth workshop to help you get started with python development.",
 			"speaker": {
-				"name": "Smit Thakkar",
-				"info": "Smit Thakkar is a Software Developer, currently leading the development of a robot-advisor platform at LendCypher. Perviously he was a Technical Co-Founder at Punchit.io. As an avid speaker, Smit has participated in multiple Meetups and tech events. One of his most noted and major public key speaking experiences are Angular2 session at GDG Devfest Ahmedabad and a two-day Python workshop at DAIICT, which was attended by more than 200 students. He has been programming since 9th Grade and is eager to spread love and awareness about open source and cool technologies through like-minded developers. He is the author of two open source flask extensions Flask-NSFW and Flask-ReqParse . He loves participating in Hackathons and listening to Taylor Swift, not necessarily in that order.",
-				"photo": "http://static.wixstatic.com/media/2653cd_02a8474e57b5420e8ae1f5b25ce3685c.jpg",
+				"name": "Ashutosh Kumar Singh",
+				"info": "Full Stack Developer at RoadToNaukri.com",
+				"photo": "https://avatars3.githubusercontent.com/u/5015212?v=3&s=400",
 				"social": [{
-					"github": "https://github.com/smitthakkar96"
+					"twitter": "https://twitter.com/juggernaut451",
+					"github": "https://github.com/juggernaut451",
+					"website": "http://ashutoshksingh.com",
+					"facebook": "https://www.facebook.com/ashutosh.k.singh.902?fref=hovercard",
+					"linkedin": "https://www.linkedin.com/in/ashutosh-kumar-singh-a4b59785/"
 				}]
 			}
 		},
@@ -185,7 +189,7 @@
 			"speaker": {
 				"name": "Pushplata Ranjan",
 				"info": "Pushplata a full-stack developer having 3+ years of experience . BIT Mesra alumni. National player of volleyball. Love to cook.",
-				"photo": "http://cliparts.co/cliparts/dT4/oAa/dT4oAaEGc.jpg",
+				"photo": "https://pbs.twimg.com/profile_images/779995345220624384/xOJiOILu.jpg",
 				"social": [{
 					"github": "https://github.com/pushp"
 				}]
@@ -239,7 +243,7 @@
 			"speaker": {
 				"name": "Shagun Sodhani",
 				"info": "I am a developer working with the Analytics and Data Science team at Adobe Systems where I contribute to solving novel problems in the domain of Machine Learning. I recently won the Outstanding Young Engineers Award as well. I have been actively using Python for the past 4 years. I have previously given talks at PyCon India and Big Data Training Program, IIT Roorkee. I also worked as a teaching assistant for the 3-course series on Data Science and Engineering with Spark XSeries, created by professors from University of California, Berkeley, University of California, Los Angeles and Databricks and offered on the edX platform.",
-				"photo": "http://static.wixstatic.com/media/2653cd_02a8474e57b5420e8ae1f5b25ce3685c.jpg",
+				"photo": "https://courses.edx.org/asset-v1:BerkeleyX+CS105x+1T2016+type@asset+block@Shagun-Sodhani.JPG",
 				"social": [{
 					"github": "https://github.com/shagunsodhani",
 					"website": "https://shagunsodhani.in/"

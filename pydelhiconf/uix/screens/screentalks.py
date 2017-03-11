@@ -65,6 +65,7 @@ class ScreenTalks(Screen):
     spacing: dp(9)
     name: 'ScreenTalks'
     ScrollView
+        id: scroll
         ScrollGrid
             id: container
             BackLabel:
@@ -85,6 +86,10 @@ class ScreenTalks(Screen):
 
     def on_enter(self, onsuccess=False):
         container = self.ids.container
+        
+        if self.from_back:
+            return
+
         if len(container.children) > 2:
                 container.remove_widget(container.children[0])
         from network import get_data
@@ -115,3 +120,4 @@ class ScreenTalks(Screen):
                 speaker_details.add_widget(gl)
             self.ids.container.add_widget(speaker_details)
         Factory.Animation(opacity=1, d=.5).start(container)
+        Factory.Animation(scroll_y=1, d=.3).start(self.ids.scroll)
