@@ -7,6 +7,7 @@ from kivy.factory import Factory
 from kivy.lang import Builder
 from kivy.properties import StringProperty
 from kivy.properties import ObjectProperty
+from functools import partial
 
 app = App.get_running_app()
 
@@ -72,7 +73,7 @@ class ScreenTalks(Screen):
             BackLabel:
                 id: talk_desc
     
-<ImBut@ButtonBehavior+Image>
+<ImBut@TouchRippleBehavior+ButtonBehavior+Image>
     text_size: self.size
     size_hint_y: None
     mipmap: True
@@ -109,7 +110,7 @@ class ScreenTalks(Screen):
                 for social_acc, social_link in speaker_social.items():
                     imbt = Factory.ImBut()
                     imbt.source = 'atlas://data/default/' + social_acc.lower()
-                    imbt.on_release = lambda *x: webbrowser.open(social_link)
+                    imbt.on_released = partial(webbrowser.open,social_link)
                     gl.add_widget(imbt)
                 speaker_details.add_widget(gl)
             self.ids.container.add_widget(speaker_details)
