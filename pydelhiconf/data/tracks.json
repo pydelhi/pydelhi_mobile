@@ -33,7 +33,7 @@
 			"speaker": {
 				"name": "Ricardo Rocha",
 				"info": "Ricardo Rocha is a software engineer at CERN. He's currently a member of the CERN OpenStack team, focusing on service and application orchestration and container deployments. Previous work included development of data storage, bookkeeping and monitoring services for the LHC Computing Grid (LCG).",
-				"photo": "http://static.wixstatic.com/media/2653cd_02a8474e57b5420e8ae1f5b25ce3685c.jpg",
+				"photo": "https://openparallel.files.wordpress.com/2014/01/ricardo_rocha.jpg",
 				"social": [{
 					"linkedin": "https://www.linkedin.com/in/ricardo-rocha-739aa718"
 				}]
@@ -81,11 +81,11 @@
 		},
 		"07": {
 			"title": "Concurrency in Python 3.0 world - Oh My!",
-			"description": "In Python 3.0, concurrent programming takes many forms. One can go with traditional threads using the threading module or perform process based parallelism using the multiprocessing module. However Python 3.x also comes with concurrent futures a way to parallelize your code using multiple threads or processes and receive the results in a future object - combining parallel processing with asynchronous execution - Pretty elegant! Wait - there is also the asyncio module with its support for Asynchronous execution - for executing tasks truly asynchronously but with zero parallelism. It is an exciting way of execution typically in one thread but covering multiple tasks bit by bit - in a truly concurrent fashion. This module introduces new ways of creating co-routines using the exciting async and await keywords. The talk will also explore a few libraries outside core Python - especially we will look at an example of parallelizing execution of a Fractal generation program using multiple cores using PyMP - which is inspired by OpenMP. We will also briefly explore asynchronous programming with Twisted and also look at some examples using Gevent/Eventlet towards end of the workshop. The aim of the workshop is to introduce concurrency and parallel programming to it via Python 3.x. We will be touching upon the basics such as GIL, concurrency vs parallelism etc with real world examples and analogies, so even if you are new to the entire topic, the workshop should suit you.",
+			"description": "The aim of the workshop is to introduce concurrency and parallel programming to it via Python 3.x. We will be touching upon the basics such as GIL, concurrency vs parallelism etc with real world examples and analogies, so even if you are new to the entire topic, the workshop should suit you.",
 			"speaker": {
 				"name": "Anand B. Pillai",
 				"info": "Anand has been a long time advocate and community leader of the Python programming language in India and Bangalore. Anand founded the BangPypers community in Feb 2005 as the result of a meeting of Bangalore Pythonistas. Discussions in this community went on to build other communities and laid the foundation of PyCon India and similar conferences. He has 17+ years of software development experience having worked in a variety of technical roles in a number of software companies. He is currently working as Director Engineering, Synup at Bangalore. His interests are high performance computing architectures, scalability & security. Recently he has been wetting his hands in data visualization and machine learning using Python.",
-				"photo": "http://static.wixstatic.com/media/2653cd_02a8474e57b5420e8ae1f5b25ce3685c.jpg",
+				"photo": "https://lh3.googleusercontent.com/-lNLUWSZgn4c/AAAAAAAAAAI/AAAAAAAAAng/1Iz3uTFhRcM/s640/photo.jpg",
 				"social": [{
 					"twitter": "http://twitter.com/skeptichacker",
 					"github": "https://github.com/pythonhacker"
@@ -118,7 +118,12 @@
 		},
 		"10": {
 			"title": "Lunch",
-			"description": ""
+			"description": "Lunch, the abbreviation for luncheon, is a light meal typically eaten at midday.[1] The origin of the words lunch and luncheon relate to a small snack originally eaten at any time of the day or night. During the 20th century the meaning gradually narrowed to a small or mid-sized meal eaten at midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.",
+			"speaker": {
+				"name": "Jagmohan & Company",
+				"info": "Nature provides a free lunch, but only if we control our appetites.",
+				"photo": "https://cristinaparrotte.files.wordpress.com/2011/03/yotam-ottolenghi-vegetarian.jpg?w=640&h=392&crop=1"
+			}
 		},
 		"11": {
 			"title": "Panel Discussion: Data Science Training vs Data Science in the Industry",
@@ -180,7 +185,7 @@
 			"speaker": {
 				"name": "Sanyam Khurana",
 				"info": "Sanyam is an Open Source Contributor from Delhi, India. Mostly goes by CuriousLearner all over the web. He contributes to various upstream projects in different organizations & maintains a few of them. He has contributed various patches and bug reports upstream to Gecko Engine from Mozilla Organization. He is a vouched Mozillian & an official Representative of Mozilla and has been listed in AUTHORS as well as credits section of every browser ever released by Mozilla. He mentored for PyDSA in RGSoC 2017. He volunteers for PyCon India and PyDelhiConf and has been an active member of PyDelhi, ILUG-D, LinuxChixIndia and DGPLUG.",
-				"photo": "http://static.wixstatic.com/media/2653cd_02a8474e57b5420e8ae1f5b25ce3685c.jpg",
+				"photo": "https://www.gravatar.com/avatar/b3b24db20c76e4a24941c0382718dd43?s=328&d=identicon&r=PG",
 				"social": [{
 					"github": "http://www.github.com/CuriousLearner",
 					"website": "http://www.sanyamkhurana.com/"
@@ -214,11 +219,22 @@
 			}
 		},
 		"19": {
-			"title": "Lightning talks"
+			"title": "Lightning talks",
+			"description": "A lightning talk is a very short presentation lasting only a few minutes, given at a conference or similar forum. Several lightning talks will usually be delivered by different speakers in a single session, sometimes called a data blitz.",
+			"speaker": {
+				"name": "Enquire at registeration desk",
+				"info": "People are incouraged to register for lightning talks at the registeration desk",
+				"photo": "https://media.arabnet.me/site_media/uploads/home_page_images/2013/02/07/announcing-lightning-talks-arabnet-beirut-2013.jpg"
+			}
 		},
 		"20": {
 			"title": "Registration",
-			"Description": ""
+			"description": "Register yourselves and get your goodie bag. Have a great day!",
+			"speaker": {
+				"name": "Registration Team PyDelhi",
+				"info": " The team of PyDelhi would help you to get registered for the event.\n Please lineup on the registeration counter at the entrance of the venue.",
+				"photo": "https://cdn2.iconfinder.com/data/icons/healer-flat-vol-1/201/registration-reservation-admission-cashier-512.png"
+			}
 		},
 		"21": {
 			"title": "High Tea",
@@ -311,7 +327,12 @@
 		},
 		"29": {
 			"title": "Lunch",
-			"Description": ""
+			"description": "Lunch, the abbreviation for luncheon, is a light meal typically eaten at midday.[1] The origin of the words lunch and luncheon relate to a small snack originally eaten at any time of the day or night. During the 20th century the meaning gradually narrowed to a small or mid-sized meal eaten at midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.",
+			"speaker": {
+				"name": "Jagmohan & Company",
+				"info": "Nature provides a free lunch, but only if we control our appetites.",
+				"photo": "https://cristinaparrotte.files.wordpress.com/2011/03/yotam-ottolenghi-vegetarian.jpg?w=640&h=392&crop=1"
+			}
 		},
 		"30": {
 			"title": "A lazy programmer's guide to automation",
