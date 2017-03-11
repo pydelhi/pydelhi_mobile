@@ -37,6 +37,10 @@ class PyConApp(App):
     - 
     '''
 
+    base_active_bright = ListProperty((226/255.,168/255.,180/255., 1))
+    '''
+    '''
+
     base_active_color = ListProperty([186/256., 106/256., 54./255, 1])
     '''This is the base Color in the app that is used to denote the currently
     active widgets, active buttons and highlited areas. Format

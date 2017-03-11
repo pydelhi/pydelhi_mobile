@@ -24,6 +24,7 @@ class SpeakerDetails(Factory.ScrollGrid):
         height: dp(150)
         mipmap: True
     BackLabel
+        backcolor: app.base_inactive_color[:3] + [.5]
         text: root.speaker['name']
     BackLabel
         text: root.speaker['info']
@@ -66,6 +67,7 @@ class ScreenTalks(Screen):
         ScrollGrid
             id: container
             BackLabel:
+                backcolor: app.base_inactive_color[:3] + [.5]
                 id: talk_title
             BackLabel:
                 id: talk_desc
@@ -89,7 +91,6 @@ class ScreenTalks(Screen):
             talks = get_data('tracks', onsuccess=False)
         gl = None
         if not talks:
-            print 'no talks'
             return
         talk_info = talks['0.0.1'][0][self.talkid]
         self.ids.talk_title.text = talk_info['title']

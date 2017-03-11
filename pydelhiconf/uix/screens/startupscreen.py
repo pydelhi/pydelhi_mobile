@@ -37,7 +37,7 @@ class StartupScreen(Screen):
     valign: 'middle'
     size_hint_y: None
     height: (self.texture_size[1] + dp(9)) if self.text else 0
-    backcolor: (226/255.,168/255.,180/255., 0.5)
+    backcolor: app.base_active_bright[:3] +  [0.5]
     text_size: self.width - dp(9), None   
     halign: 'center'    
 
