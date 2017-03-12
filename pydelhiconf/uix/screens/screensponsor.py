@@ -7,14 +7,20 @@ from kivy.lang import Builder
 from network import get_data
 from kivy.properties import ObjectProperty
 from kivy.factory import Factory
-from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.stacklayout import StackLayout
+from kivy.uix.popup import Popup
 
 
-class Sponsor(BoxLayout):
-     data = ObjectProperty(None)
+class Sponsor(StackLayout):
+    data = ObjectProperty(None)
+    def popup(self):
+        label = Factory.popupLabel(text = self.data['about'])
+        popup = Factory.Popup(title=self.data['name'], content=label)
+        popup.open()
+
 
 class ScreenSponsor(Screen):
-   
+
     
     Builder.load_string('''
 <ScreenSponsor>
@@ -44,28 +50,45 @@ class ScreenSponsor(Screen):
             import webbrowser
             webbrowser.open('mailto:sponsorship@in.pycon.org')
 
-<Sponsor@BoxLayout>
-    orientation: 'vertical'
+<Sponsor@ButtonBehavior+StackLayout>
+    orientation: 'tb-rl'
     spacing: dp(12)
     size_hint: 1, 1
-    
     Label
         text: self.parent.data['name']
-        
+        size_hint: 1, None
+        height: dp(18)
+        font_size:dp(15)
+    
+    Button:
+        text: "more ..."
+        size_hint:None,None
+        height:dp(10)
+        width:dp(50)
+        pos_hint:{'right':1}
+        font_size:dp(10)
+        background_color: (1.0, 0.0, 0.0, 0)
+
+        on_release:
+            self.parent.popup()
+
     AsyncImage
-        size_hint:.8,.8
+        size_hint:1,.8
         halign: 'center'
+        padding: dp(10), dp(10)
         valign: 'middle'
-        allow_stretch:True
+        allow_stretch:False
         source: self.parent.data['logo']
     
-    Label
-        text: self.parent.data['about']
-        size_hint:1,None
-        padding: dp(5), dp(10)
-        font_size: dp(10)
-        halign:'left'
-        text_size: self.width, None
+    
+<popupLabel@Label>
+    size_hint:1,1
+    padding: dp(5), dp(10)
+    font_size: dp(10)
+    halign:'left'
+    valign:'top'
+    text_size: self.width, self.height
+
 ''')
 
     def on_enter(self, onsuccess=False):
