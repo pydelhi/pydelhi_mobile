@@ -13,10 +13,6 @@ from kivy.uix.popup import Popup
 
 class Sponsor(StackLayout):
     data = ObjectProperty(None)
-    def popup(self):
-        label = Factory.popupLabel(text = self.data['about'])
-        popup = Factory.Popup(title=self.data['name'], content=label)
-        popup.open()
 
 
 class ScreenSponsor(Screen):
@@ -69,15 +65,9 @@ class ScreenSponsor(Screen):
     allow_stretch:False
     source: self.parent.data['logo']
     on_release:
-        self.parent.popup()
+        import webbrowser
+        webbrowser.open(self.parent.data['website'])
     
-<popupLabel@Label>
-    size_hint:1,1
-    padding: dp(5), dp(10)
-    font_size: dp(10)
-    halign:'left'
-    valign:'top'
-    text_size: self.width, self.height
 
 ''')
 
