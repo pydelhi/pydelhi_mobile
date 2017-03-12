@@ -101,7 +101,10 @@ class NavigationScreen(Screen):
 
 <NavigationScreen>
     name: 'NavigationScreen'
-    on_enter: app.load_screen('ScreenSchedule', manager=app.navigation_manager)
+    on_enter: 
+        import os
+        scr = os.environ.get('PYDELHI_STARTUP_SCREEN','ScreenSchedule')
+        app.load_screen(scr, manager=app.navigation_manager)
     NavigationDrawer
         id: navigationdrawer
         on_parent: app.navigationdrawer = navigationdrawer
