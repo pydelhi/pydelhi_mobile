@@ -31,9 +31,7 @@ class ScreenSponsor(Screen):
         id:main
         
 <Footer@BoxLayout>
-    id:footer
-    size_hint_y: None
-    height: dp(50)
+    size_hint_y: .2
     PyConButton
         text: 'Sponsor Us'
         default: True
@@ -50,36 +48,28 @@ class ScreenSponsor(Screen):
             import webbrowser
             webbrowser.open('mailto:sponsorship@in.pycon.org')
 
-<Sponsor@ButtonBehavior+StackLayout>
+<Sponsor@StackLayout>
     orientation: 'tb-rl'
     spacing: dp(12)
     size_hint: 1, 1
     Label
         text: self.parent.data['name']
         size_hint: 1, None
-        height: dp(18)
-        font_size:dp(15)
+        height: dp(20)
+        font_size:dp(18)
     
-    Button:
-        text: "more ..."
-        size_hint:None,None
-        height:dp(10)
-        width:dp(50)
-        pos_hint:{'right':1}
-        font_size:dp(10)
-        background_color: (1.0, 0.0, 0.0, 0)
+    SponsorImage
 
-        on_release:
-            self.parent.popup()
 
-    AsyncImage
-        size_hint:1,.8
-        halign: 'center'
-        padding: dp(10), dp(10)
-        valign: 'middle'
-        allow_stretch:False
-        source: self.parent.data['logo']
-    
+<SponsorImage@ButtonBehavior+AsyncImage>
+    size_hint:1,.8
+    halign: 'center'
+    padding: dp(10), dp(10)
+    valign: 'middle'
+    allow_stretch:False
+    source: self.parent.data['logo']
+    on_release:
+        self.parent.popup()
     
 <popupLabel@Label>
     size_hint:1,1
@@ -100,10 +90,11 @@ class ScreenSponsor(Screen):
         main_box = self.ids.main;
 
         for s in sponsors:
-            bl = Factory.Sponsor(size_hint_y=1/len(sponsors), data=s)
+            bl = Factory.Sponsor(size_hint_y=.8/len(sponsors), data=s)
             main_box.add_widget(bl)
-        # footer = self.ids.footer;
-        # main_box.add_widget(footer)
+        footer = Factory.Footer()
+        print footer
+        main_box.add_widget(footer)
 
 # Label
 #         Text:getattr(self, 'data',{}).get('logo')
