@@ -47,7 +47,7 @@
         },
         {
           "talk_id": "06",
-          "title": "Sponsored slot 1",
+          "title": "Docker-izing and debugging Python applications with VS Code",
           "start_time": "11:00",
           "end_time": "11:40",
           "track": "3"

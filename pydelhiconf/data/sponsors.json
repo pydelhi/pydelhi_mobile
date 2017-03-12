@@ -1,0 +1,18 @@
+{
+  "0.0.1": [
+    {
+      "name": "Microsoft",
+      "type": "Platinum",
+      "website": "https://microsoft.com",
+      "logo": "http://cdn-5.famouslogos.us/images/microsoft-new-logo.jpg",
+      "about": "https://conference.pydelhi.org/#"
+    },
+    {
+      "name": "Incubator IIM Lucknow Noida Campus",
+      "type": "Gold",
+      "website": "http://www.ecelliiml.com/incubation.php",
+      "logo": "https://paste.opensuse.org/images/97979538.jpg",
+      "about": "The incubation center at IIM Lucknow - 'Abhiyan' is a space for students and new age entrepreneurs who are interested in setting up their own venture. It aims transform the innovative ideas of students into viable business propositions.\n Abhiyan, a separate entity under the aegis of IIM Lucknow has a management council which directs and administers its functioning. The primary goal is to facilitate a platform for a budding entrepreneur to start a business venture with minimum risks. Abhiyan will ensure that the incubates are provided adequate infrastructural, financial and mentorship support throughout the period of incubation. Incubates will also have access to technological assistance which will be generated through mentors with multidisciplinary expertise.\nThe introduction of Placement Holiday in IIM Lucknow will further give boost to incubation activities in the campus."
+    }
+  ]
+}
