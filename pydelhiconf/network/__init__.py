@@ -38,10 +38,10 @@ def get_data(endpoint, onsuccess=False):
             on_error=on_error,
             on_failure=on_failure,
             timeout=2)
-
+        print req
     import json
     
-    jsondata = None
+    jsondata = {}
 
     try:
         with open(filepath) as fd:
