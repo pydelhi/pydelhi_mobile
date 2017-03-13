@@ -8,6 +8,12 @@ class ScreenOpenSpaces(Screen):
     name: 'ScreenOpenSpaces'
     ScrollView
         ScrollGrid
+            AsyncImage
+                source: "https://s-media-cache-ak0.pinimg.com/originals/75/71/45/7571452d437eac4801e6c490f5d2401e.jpg"
+                size_hint_y: None
+                allow_stretch: True
+                height: dp(200)
+                mipmap: True
             BackLabel
                 text: "Open Space is the only process that focuses on expanding time and space for the force of self-organisation to do its thing. Although one can't predict specific outcomes, it's always highly productive for whatever issue people want to attend to. Some of the inspiring side effects that are regularly noted are laughter, hard work which feels like play, surprising results and fascinating new questions. \\n-Michael M Pannwitz, Open Space practitioner"
             BackLabel
