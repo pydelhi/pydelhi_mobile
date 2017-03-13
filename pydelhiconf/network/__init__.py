@@ -11,7 +11,12 @@ def on_success(req, oldata, endpoint):
     if ndata == oldata:
         return
     # check which endpoint got a response
-    app.screenschedule.on_enter(onsuccess=True)
+    scr = {'schedule':'screenschedule',
+        "tracks": 'screentalks',
+        'sponsors': 'screensponsor',
+        'about': 'screenabout',
+        'venue': 'screenvenue'}[endpoint]
+    getattr(app, scr).on_enter(onsuccess=True)
 
 def on_failure(*args, **kwargs):
     print "Failure! ", args
@@ -38,7 +43,6 @@ def get_data(endpoint, onsuccess=False):
             on_error=on_error,
             on_failure=on_failure,
             timeout=2)
-        print req
     import json
     
     jsondata = {}

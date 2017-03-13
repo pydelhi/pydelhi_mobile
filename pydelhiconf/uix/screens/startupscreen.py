@@ -44,6 +44,24 @@ class StartupScreen(Screen):
 <LeftAlignedLabel@SingleLineLabel>
     halign: 'left'
 
+<TouchRippleBehavior>
+    ripple_color: app.base_active_color
+
+<PyConButton@TouchRippleBehavior+ToggleButtonBehavior+Background>
+    text: ''
+    size_hint_y: None
+    allow_no_selection: False
+    height: dp(45)
+    backcolor: app.base_active_color if self.state == 'normal' else app.base_inactive_color
+    source: 'atlas://data/default/but_light'
+    Label:
+        size: root.size
+        pos: root.pos
+        text: root.text
+
+<ActiveButton@PyConButton>
+    source: ''
+
 <StartupScreen>
     name: 'StartupScreen'
     on_enter:

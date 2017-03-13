@@ -75,16 +75,17 @@
 			}
 		},
 		"06": {
-			"title": "Sponsored slot 1",
+			"title": "Docker-izing and debugging Python applications with VS Code",
 			"description": "",
 			"type": "default",
 			"speaker": {
-				"name": "Sponsors",
-				"info": "about speaker",
+				"name": "Brij Raj Singh",
+				"info": "Brij is a Tech evangelist @Microsoft",
 				"photo": "",
 				"social": [{
 					"twitter": "www.twitter.com/pydelhi",
-					"github": "www.github.com/pydelhi"
+					"github": "www.github.com/pydelhi",
+					"website": "link to website"
 				}]
 			}
 		},
@@ -296,7 +297,7 @@
 			"speaker": {
 				"name": "Akash Mishra",
 				"info": "Akash Mishra (@akash47) is working as a software developer at Betaout. He stumbled onto ZeroMQ while wandering in the python land for better concurrency options. ZeroMQ allowed him to keep his hair while writing concurrent code in python and hence he wants to tell everyone about how awesome it is. ",
-				"photo": "http://findaway.in/img/team/Akash.jpg",
+				"photo": "http://paste.opensuse.org/images/25961691.jpg",
 				"social": [{
 					"github": "https://github.com/akash-47",
 					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/multi-threadingmulti-processing-in-python-using-zeromq~bDRne/"
