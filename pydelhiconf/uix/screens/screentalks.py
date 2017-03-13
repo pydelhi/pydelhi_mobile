@@ -78,7 +78,7 @@ class ScreenTalks(Screen):
     text_size: self.size
     size_hint_y: None
     mipmap: True
-    height: dp(45)
+    height: dp(30)
         ''')
     def on_pre_enter(self):
         container = self.ids.container

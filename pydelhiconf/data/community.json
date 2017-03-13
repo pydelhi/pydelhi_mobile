@@ -1,0 +1,18 @@
+{
+	"0.0.1":[
+		{
+			"name": "PyDelhi",
+			"about": "A community is formed by people with something in common.\\nPyDelhi community has been a group of buoyant developers and sparkling newbies from Delhi NCR who love Python. PyDelhi provides a place where not just the code but community matters. A community which runs because of efforts put in by the ones wanting to keep Python and developer circles alive. \\n\\nWe're enthralled to have you as a part of us.",
+			"social":{
+				"website": "http://pydelhi.org/",
+				"twitter": "https://twitter.com/pydelhi",
+				"facebook": "https://www.facebook.com/groups/ncrpython",
+				"github": "https://github.com/pydelhi",
+				"telegram": "https://t.me/joinchat/AAAAAEK2nzPg0IlwbbAing",
+				"googleplus": "https://plus.google.com/communities/112480684024193475272",
+				"youtube": "https://www.youtube.com/channel/UC3QVyJ-Zt0QoYAibn4SD20A",
+				"meetup": "https://www.meetup.com/pydelhi/"
+			}
+		}
+	]
+}
