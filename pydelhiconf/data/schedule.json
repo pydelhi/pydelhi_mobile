@@ -26,7 +26,7 @@
         },
         {
           "talk_id": "03",
-          "title": "Keynote: How & where python is used by scientists",
+          "title": "Keynote: How & Where Python is used by Scientists",
           "start_time": "10:00",
           "end_time": "10:50",
           "track": "all"
@@ -131,7 +131,7 @@
          },
         {
           "talk_id": "18",
-          "title": "Multilingual resume ranking API based on NLP and contextual word embeddings ",
+          "title": "Open Spaces",
           "start_time": "04:50",
           "end_time": "05:20",
           "track": "3"
@@ -175,7 +175,7 @@
         },
         {
           "talk_id": "24",
-          "title": "Sponsored Slot 2",
+          "title": "Sponsored Talk II",
           "start_time": "9:30",
           "end_time": "10:00",
           "track": "3"
