@@ -76,16 +76,16 @@
 		},
 		"06": {
 			"title": "Docker-izing and debugging Python applications with VS Code",
-			"description": "",
+			"description": "A fast paced introduction to Docker. Dockerize your first Python application, learn to debug it while running in containers.",
 			"type": "default",
 			"speaker": {
 				"name": "Brij Raj Singh",
-				"info": "Brij is a Tech evangelist @Microsoft",
-				"photo": "",
+				"info": "Brij is a Sr. Tech evangelist @Microsoft. Brij has a decade worth of experience in both Microsoft technologies as well as with open source technologies. Brij has architected Highly scalable and reliable solutions using Open source technologies. Brij works with a number of startups to help them shape their products over cloud. He tweets interesting anecdotes on OSS, IOT and Microsoft at @brijrajsingh.",
+				"photo": "http://imgur.com/dhi3eMI",
 				"social": [{
-					"twitter": "www.twitter.com/pydelhi",
-					"github": "www.github.com/pydelhi",
-					"website": "link to website"
+					"twitter": "www.twitter.com/brijrajsingh",
+					"github": "www.github.com/brijrajsingh",
+					"website": "https://blogs.msdn.microsoft.com/brijrajsingh"
 				}]
 			}
 		},
@@ -246,18 +246,14 @@
 			}
 		},
 		"18": {
-			"title": "Multilingual resume ranking API based on NLP and contextual word embeddings ",
-			"description": "How can we create a resume ranking engine based purely on job descriptions on job boards? Can I create recommendations purely based on the skillset & job role? How do I use natural language processing techniques to create valid recommendations of related skillsets? For example, how can I recommend “AngularJS” to an HTML developer who wants to prop up his CV? The other challenge lies in dealing with multilingualism - from English & Dutch job boards? How do we account for the proper skillsets and build it in our ranking systems? The talk will answer these questions and showcase effectiveness of such a resume ranking engine.",
+			"title": "Open Spaces",
+			"description": "Open Space is the only process that focuses on expanding time and space for the force of self-organisation to do its thing. Although one can't predict specific outcomes, it's always highly productive for whatever issue people want to attend to. Some of the inspiring side effects that are regularly noted are laughter, hard work which feels like play, surprising results and fascinating new questions. -Michael M Pannwitz, Open Space practitioner.",
 			"type": "talk",
 			"speaker": {
-				"name": "Manas Ranjan Kar",
-				"info": "Manas likes helping clients making sense of their data and build a powerful case for business change using analytics in their respective companies. He is currently heading the NLP team at Episource, a US healthcare company. He has architected multiple commercial NLP solutions in the area of healthcare, foods & beverages, finance and retail. He is deeply involved in functionally architecting large scale business process automation & deep insights from structured & unstructured data using Natural Language Processing & Machine Learning. He has contributed to Gensim & ConceptNet as well.",
-				"photo": "https://avatars3.githubusercontent.com/u/6917857?v=3&s=400",
-				"social": [{
-					"linkedin": "https://in.linkedin.com/in/manasranjankar",
-					"github": "https://github.com/manasRK",
-					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/multilingual-resume-ranking-api-based-on-nlp-and-contextual-word-embeddings~axk9e/"
-				}]
+				"name": "Everyone",
+				"info": "The best part about attending any meetups or conferences is getting a chance to converse with people with similar interests. Know about their domains of expertise, tell them about yours and if the interests meet up, collaborate for any future projects/prospects. Open Spaces are exactly for providing such environment for you. So go ahead, find a place, interact with people and make the best of this conference. Have a great time!",
+				"photo": "http://conference.pydelhi.org/img/open-spaces.jpg",
+				"social": []
 			}
 		},
 		"19": {
