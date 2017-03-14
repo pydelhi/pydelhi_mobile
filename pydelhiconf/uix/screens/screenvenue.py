@@ -21,6 +21,9 @@ class ScreenVenue(Screen):
             orientation: 'vertical'
             SingleLineLabel:
                 text: app.venue_name
+                halign: 'center'
+                size_hint_y: None
+                height: dp(25)
             AsyncImage:
                 id: img_venue
                 source: 'atlas://data/default/venue'
@@ -40,15 +43,9 @@ class ScreenVenue(Screen):
             height: dp(45)
             spacing: dp(13)
             padding: dp(4)
-            Button:
-                background_normal: ''
-                background_color: app.base_active_color
-                opacity: .5 if self.state == 'down' else 1
+            ActiveButton:
                 text: 'Open Street View'
-            Button:
-                background_normal: ''
-                background_color: app.base_active_color
-                opacity: .5 if self.state == 'down' else 1
+            ActiveButton:
                 text: 'Get Directions'
                 on_release:
                     import webbrowser

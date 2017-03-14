@@ -20,19 +20,16 @@ class ScreenCommunity(Screen):
             BackLabel
                 id: bcklbl
 
-<ImBut@TouchRippleBehavior+ButtonBehavior+Image>
-    text_size: self.size
-    size_hint_y: None
-    mipmap: True
-    height: dp(30)
         ''')
 
     def on_enter(self, onsuccess=False):
         from network import get_data
-        community = get_data('community', onsuccess=onsuccess).get('0.0.1')[0]
+        community = get_data('community', onsuccess=onsuccess)
 
         if not community:
             return
+
+        community = community.get('0.0.1')[0]
 
         self.ids.bcklbl.text = community['about']
 

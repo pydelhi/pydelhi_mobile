@@ -15,20 +15,6 @@ class NavigationScreen(Screen):
   Builder.load_string('''
 #:import WipeTransition kivy.uix.screenmanager.WipeTransition
 
-<TouchRippleBehavior>
-    ripple_color: app.base_active_color
-
-<PyConButton@TouchRippleBehavior+ToggleButtonBehavior+Background>
-    text: ''
-    size_hint_y: None
-    allow_no_selection: False
-    height: dp(45)
-    backcolor: app.base_active_color if self.state == 'normal' else app.base_inactive_color
-    source: 'atlas://data/default/but_light'
-    Label:
-        size: root.size
-        pos: root.pos
-        text: root.text
 
 <MenuButton@PyConButton>
     group: 'LeftPanel'
@@ -51,34 +37,34 @@ class NavigationScreen(Screen):
             MenuButton
                 id: bt_sched
                 text: 'Schedule'
-                on_release: app.load_screen('ScreenSchedule', manager=app.navigation_manager)
+                on_released: app.load_screen('ScreenSchedule', manager=app.navigation_manager)
             MenuButton
                 text: 'Sponsors'
-                on_release: app.load_screen('ScreenSponsor', manager=app.navigation_manager)
+                on_released: app.load_screen('ScreenSponsor', manager=app.navigation_manager)
             MenuButton
                 text: 'Venue'
-                on_release: app.load_screen('ScreenVenue', manager=app.navigation_manager)
+                on_released: app.load_screen('ScreenVenue', manager=app.navigation_manager)
             MenuButton
                 text: 'OpenSpaces'
-                on_release: app.load_screen('ScreenOpenSpaces', manager=app.navigation_manager)
+                on_released: app.load_screen('ScreenOpenSpaces', manager=app.navigation_manager)
             MenuButton
                 text: 'DevSprints'
-                on_release: app.load_screen('ScreenDevSprints', manager=app.navigation_manager)
+                on_released: app.load_screen('ScreenDevSprints', manager=app.navigation_manager)
             MenuButton
                 text: 'Feedback'
-                on_release: app.load_screen('ScreenFeedback', manager=app.navigation_manager)
+                on_released: app.load_screen('ScreenFeedback', manager=app.navigation_manager)
             MenuButton
                 text: 'Ticket'
-                on_release: app.load_screen('ScreenTicket', manager=app.navigation_manager)
+                on_released: app.load_screen('ScreenTicket', manager=app.navigation_manager)
             MenuButton
                 text: 'Community'
-                on_release: app.load_screen('ScreenCommunity', manager=app.navigation_manager)
+                on_released: app.load_screen('ScreenCommunity', manager=app.navigation_manager)
             MenuButton
                 text: 'About'
-                on_release: app.load_screen('ScreenAbout', manager=app.navigation_manager)
+                on_released: app.load_screen('ScreenAbout', manager=app.navigation_manager)
             MenuButton
                 text: 'Exit'
-                on_release: app.stop()
+                on_released: app.stop()
 
 <TopBar@BoxLayout>
     size_hint: None, None

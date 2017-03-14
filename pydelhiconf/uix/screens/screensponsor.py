@@ -12,11 +12,9 @@ from kivy.uix.popup import Popup
 
 
 class Sponsor(StackLayout):
+    ''' This is a simple StackLayout that holds the image 
+    '''
     data = ObjectProperty(None)
-    def popup(self):
-        label = Factory.popupLabel(text = self.data['about'])
-        popup = Factory.Popup(title=self.data['name'], content=label)
-        popup.open()
 
 
 class ScreenSponsor(Screen):
@@ -32,15 +30,16 @@ class ScreenSponsor(Screen):
         
 <Footer@BoxLayout>
     size_hint_y: .2
-    PyConButton
+    padding: dp(9)
+    spacing: dp(9)
+    ActiveButton
         text: 'Sponsor Us'
-        default: True
         size_hint_y: None
         height: dp(40)
         on_release:
             import webbrowser
             webbrowser.open('https://in.pycon.org/2016/sponsorship-prospectus.pdf')
-    PyConButton
+    ActiveButton
         text: 'Contact Us'
         size_hint_y: None
         height: dp(40)
@@ -48,7 +47,7 @@ class ScreenSponsor(Screen):
             import webbrowser
             webbrowser.open('mailto:sponsorship@in.pycon.org')
 
-<Sponsor@StackLayout>
+<Sponsor>
     orientation: 'tb-rl'
     spacing: dp(12)
     size_hint: 1, 1
@@ -57,9 +56,10 @@ class ScreenSponsor(Screen):
         size_hint: 1, None
         height: dp(20)
         font_size:dp(18)
-    
     SponsorImage
-
+        on_release:
+            import webbrowser
+            webbrowser.open(root.data['website'])
 
 <SponsorImage@ButtonBehavior+AsyncImage>
     size_hint:1,.8
@@ -68,16 +68,6 @@ class ScreenSponsor(Screen):
     valign: 'middle'
     allow_stretch:False
     source: self.parent.data['logo']
-    on_release:
-        self.parent.popup()
-    
-<popupLabel@Label>
-    size_hint:1,1
-    padding: dp(5), dp(10)
-    font_size: dp(10)
-    halign:'left'
-    valign:'top'
-    text_size: self.width, self.height
 
 ''')
 
@@ -86,17 +76,16 @@ class ScreenSponsor(Screen):
         '''
 
         # this should update the file on disk
-        sponsors = get_data('sponsors', onsuccess=onsuccess).get('0.0.1')
-        main_box = self.ids.main;
+        sponsors = get_data('sponsors', onsuccess=onsuccess)
+        if not sponsors:
+            return
 
+        sponsors = sponsors.get('0.0.1')
+        main_box = self.ids.main;
+        main_box.clear_widgets()
         for s in sponsors:
             bl = Factory.Sponsor(size_hint_y=.8/len(sponsors), data=s)
             main_box.add_widget(bl)
         footer = Factory.Footer()
-        print footer
         main_box.add_widget(footer)
 
-# Label
-#         Text:getattr(self, 'data',{}).get('logo')
-#     Label
-#         Text:getattr(self, 'data',{}).get('logo')

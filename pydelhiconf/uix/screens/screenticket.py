@@ -24,23 +24,12 @@ class ScreenTicket(Screen):
             size_hint_y: None
             height: dp(50)
             spacing: dp(5)
-            Button
+            ActiveButton
                 text: 'My tickets'
-                size_hint_y: None
-                group: 'tickets'
-                height: dp(54)
-                background_color: app.base_active_color
-                background_normal: ''
                 on_release:
                     webbrowser.open('http://in.explara.com/a/account/manage/my-orders')
-            Button
-                default: True
-                group: 'tickets'
+            ActiveButton
                 text: 'Buy tickets'
-                size_hint_y: None
-                height: dp(54)
-                background_color: app.base_active_color
-                background_normal: ''
                 on_release:
                     webbrowser.open('http://bit.do/pydelhiconf2017tickets')
 ''')  
