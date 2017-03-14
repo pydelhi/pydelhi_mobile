@@ -76,7 +76,11 @@ class ScreenSponsor(Screen):
         '''
 
         # this should update the file on disk
-        sponsors = get_data('sponsors', onsuccess=onsuccess).get('0.0.1')
+        sponsors = get_data('sponsors', onsuccess=onsuccess)
+        if not sponsors:
+            return
+
+        sponsors = sponsors.get('0.0.1')
         main_box = self.ids.main;
         main_box.clear_widgets()
         for s in sponsors:

@@ -173,14 +173,19 @@ class ScreenSchedule(Screen):
         self.ids.accordian_days.clear_widgets()
         from network import get_data
 
-        # this should update the file on disk
-        events = get_data('event', onsuccess=onsuccess).get('0.0.1')
-        schedule = get_data('schedule', onsuccess=onsuccess).get('0.0.1')[0]
-        if not events or not schedule:
+        events = get_data('event', onsuccess=onsuccess)
+        if not events:
             return
 
+        schedule = get_data('schedule', onsuccess=onsuccess)
+        if not schedule:
+            return
+
+        events = events.get('0.0.1')
+        self.schedule = schedule = schedule.get('0.0.1')[0]
+
         # take first event as the one to display schedule for.
-        event = events[0]
+        self.event = event = events[0]
         app.event_name = event['name']
         app.venue_name = event['venue']
         start_date = event['start_date']

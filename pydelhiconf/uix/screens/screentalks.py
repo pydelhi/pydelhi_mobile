@@ -73,12 +73,6 @@ class ScreenTalks(Screen):
                 id: talk_title
             BackLabel:
                 id: talk_desc
-    
-<ImBut@TouchRippleBehavior+ButtonBehavior+Image>
-    text_size: self.size
-    size_hint_y: None
-    mipmap: True
-    height: dp(30)
         ''')
     def on_pre_enter(self):
         container = self.ids.container

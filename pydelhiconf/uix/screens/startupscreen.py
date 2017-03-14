@@ -59,6 +59,12 @@ class StartupScreen(Screen):
         pos: root.pos
         text: root.text
 
+<ImBut@TouchRippleBehavior+ButtonBehavior+Image>
+    text_size: self.size
+    size_hint_y: None
+    mipmap: True
+    height: dp(30)
+
 <ActiveButton@PyConButton>
     source: ''
 
@@ -77,5 +83,6 @@ class StartupScreen(Screen):
         id: img_logo
         source: 'atlas://data/default/logo'
         size_hint_y: None
+
 ''')
     

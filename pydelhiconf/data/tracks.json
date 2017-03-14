@@ -231,13 +231,13 @@
 			}
 		},
 		"17": {
-			"title": "Functional programming in Python",
+			"title": "Functional Programming in Python",
 			"description": "Functional Programming is a programming paradigm that treats functions as the first class citizens and as the fundamental building blocks for any program. This results in a workflow where the programmer focuses on describing what is to be done and not on how it is to be done. Functional programming encourages concise code and safe programming (less OffByOne mistakes). Stateless functions and immutable data structures helps to write concurrent code. In the talk, I would cover the brief overview to Functional Programming and to what extent does Python (more specifically Python3) support these concepts.",
 			"type": "talk",
 			"speaker": {
 				"name": "Shagun Sodhani",
 				"info": "I am a developer working with the Analytics and Data Science team at Adobe Systems where I contribute to solving novel problems in the domain of Machine Learning. I recently won the Outstanding Young Engineers Award as well. I have been actively using Python for the past 4 years. I have previously given talks at PyCon India and Big Data Training Program, IIT Roorkee. I also worked as a teaching assistant for the 3-course series on Data Science and Engineering with Spark XSeries, created by professors from University of California, Berkeley, University of California, Los Angeles and Databricks and offered on the edX platform.",
-				"photo": "https://courses.edx.org/asset-v1:BerkeleyX+CS105x+1T2016+type@asset+block@Shagun-Sodhani.JPG",
+				"photo": "https://shagunsodhani.in/assets/images/profile.png",
 				"social": [{
 					"github": "https://github.com/shagunsodhani",
 					"website": "https://shagunsodhani.in/",
