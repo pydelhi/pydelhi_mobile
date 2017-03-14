@@ -182,7 +182,7 @@ class ScreenSchedule(Screen):
             return
 
         events = events.get('0.0.1')
-        self.schedule = schedule = schedule.get('0.0.1')[0]
+        schedule = schedule.get('0.0.1')[0]
 
         # take first event as the one to display schedule for.
         self.event = event = events[0]
@@ -215,11 +215,13 @@ class ScreenSchedule(Screen):
             
             # this carousel would show each track as new tab
             trackscreens = []
+            tsa = trackscreens.append
+            tca = tcarousel.add_widget
             for track in tracks:
                 trk = Track(name=track)
-                trackscreens.append(trk)
+                tsa(trk)
                 # add track to carousel
-                tcarousel.add_widget(trk)
+                tca(trk)
             
             items = len(sched)
             for i in xrange(items):

@@ -77,7 +77,7 @@ def get_data(endpoint, onsuccess=False):
         fetch_remote_data._args = endpoint, filepath, oldata
         trigger_fetch_remote_data()
 
-    jsondata = None
+    jsondata = json.loads(oldata)
 
     try:
         with open(filepath) as fd:
