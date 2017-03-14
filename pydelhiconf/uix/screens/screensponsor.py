@@ -12,6 +12,8 @@ from kivy.uix.stacklayout import StackLayout
 
 
 class Sponsor(StackLayout):
+    ''' This is a simple StackLayout that holds the image 
+    '''
     data = ObjectProperty(None)
 
 
@@ -35,15 +37,16 @@ class ScreenSponsor(Screen):
         
 <Footer@BoxLayout>
     size_hint_y: .2
-    PyConButton
+    padding: dp(9)
+    spacing: dp(9)
+    ActiveButton
         text: 'Sponsor Us'
-        default: True
         size_hint_y: None
         height: dp(40)
         on_release:
             import webbrowser
             webbrowser.open('https://in.pycon.org/2016/sponsorship-prospectus.pdf')
-    PyConButton
+    ActiveButton
         text: 'Contact Us'
         size_hint_y: None
         height: dp(40)
@@ -51,18 +54,19 @@ class ScreenSponsor(Screen):
             import webbrowser
             webbrowser.open('mailto:sponsorship@in.pycon.org')
 
-<Sponsor@StackLayout>
+<Sponsor>
     orientation: 'tb-rl'
     spacing: dp(12)
     size_hint: 1, 1
     BackLabel
         text: self.parent.data['name']
         size_hint: 1, None
-        height: dp(17)
-        font_size:dp(15)
-    
+        height: dp(20)
+        font_size:dp(18)
     SponsorImage
-
+        on_release:
+            import webbrowser
+            webbrowser.open(root.data['website'])
 
 <SponsorImage@ButtonBehavior+AsyncImage>
     size_hint:1,.8
@@ -74,7 +78,6 @@ class ScreenSponsor(Screen):
     on_release:
         import webbrowser
         webbrowser.open(self.parent.data['website'])
-    
 
 ''')
 
@@ -83,7 +86,11 @@ class ScreenSponsor(Screen):
         '''
 
         # this should update the file on disk
-        sponsors = get_data('sponsors', onsuccess=onsuccess).get('0.0.1')
+        sponsors = get_data('sponsors', onsuccess=onsuccess)
+        if not sponsors:
+            return
+
+        sponsors = sponsors.get('0.0.1')
         main_box = self.ids.main;
         main_box.clear_widgets()
         for s in sponsors:
@@ -92,7 +99,3 @@ class ScreenSponsor(Screen):
         footer = Factory.Footer()
         main_box.add_widget(footer)
 
-# Label
-#         Text:getattr(self, 'data',{}).get('logo')
-#     Label
-#         Text:getattr(self, 'data',{}).get('logo')

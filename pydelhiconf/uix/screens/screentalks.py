@@ -73,12 +73,6 @@ class ScreenTalks(Screen):
                 id: talk_title
             BackLabel:
                 id: talk_desc
-    
-<ImBut@TouchRippleBehavior+ButtonBehavior+Image>
-    text_size: self.size
-    size_hint_y: None
-    mipmap: True
-    height: dp(30)
         ''')
     def on_pre_enter(self):
         container = self.ids.container
@@ -93,8 +87,7 @@ class ScreenTalks(Screen):
         if len(container.children) > 2:
                 container.remove_widget(container.children[0])
         from network import get_data
-        if not onsuccess:
-            talks = get_data('tracks', onsuccess=False)
+        talks = get_data('tracks', onsuccess=onsuccess)
         gl = None
         if not talks:
             return
@@ -119,5 +112,5 @@ class ScreenTalks(Screen):
                     gl.add_widget(imbt)
                 speaker_details.add_widget(gl)
             self.ids.container.add_widget(speaker_details)
-        Factory.Animation(opacity=1, d=.5).start(container)
-        Factory.Animation(scroll_y=1, d=.3).start(self.ids.scroll)
+        Factory.Animation(opacity=1, d=.3).start(container)
+        self.ids.scroll.scroll_y = 1
