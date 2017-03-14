@@ -4,11 +4,11 @@ Display all the logos of the sponsors.
 
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
-from network import get_data
 from kivy.properties import ObjectProperty
+from network import get_data
 from kivy.factory import Factory
 from kivy.uix.stacklayout import StackLayout
-from kivy.uix.popup import Popup
+
 
 
 class Sponsor(StackLayout):
@@ -27,6 +27,13 @@ class ScreenSponsor(Screen):
         orientation: 'vertical'
         spacing: dp(4)
         id:main
+        BackLabel
+            text: "Sponsors"
+            backcolor: app.base_inactive_color[:3] + [.5]
+            pos_hint:{'top':1}
+            size_hint: 1 , None
+            height: dp(10)
+            font_size:dp(20)
         
 <Footer@BoxLayout>
     size_hint_y: .2
@@ -51,7 +58,7 @@ class ScreenSponsor(Screen):
     orientation: 'tb-rl'
     spacing: dp(12)
     size_hint: 1, 1
-    Label
+    BackLabel
         text: self.parent.data['name']
         size_hint: 1, None
         height: dp(20)
@@ -68,6 +75,9 @@ class ScreenSponsor(Screen):
     valign: 'middle'
     allow_stretch:False
     source: self.parent.data['logo']
+    on_release:
+        import webbrowser
+        webbrowser.open(self.parent.data['website'])
 
 ''')
 

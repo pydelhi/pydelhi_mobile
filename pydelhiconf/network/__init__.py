@@ -72,7 +72,6 @@ def get_data(endpoint, onsuccess=False):
 
     if os.environ.get("PYDELHI_OFFLINE_MODE", None) == '1':
         onsuccess = True
-    
     if not onsuccess:
         fetch_remote_data._args = endpoint, filepath, oldata
         trigger_fetch_remote_data()
