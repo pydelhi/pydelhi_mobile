@@ -8,12 +8,27 @@ import time
 
 app = App.get_running_app()
 
+def is_json(data):
+    try:
+        json.loads(data)
+    except:
+        return False
+    return True
+
+def write_oldata(fpath, data):
+    with open(fpath, 'w') as f:
+        f.write(data)
+
 def on_success(req, oldata, endpoint):
     # got new data, update the schedule
     ndata = None
     with open(req.file_path) as f:
         ndata = f.read()
     if ndata == oldata:
+        return
+
+    if not is_json(ndata):
+        write_oldata(req.file_path, oldata)
         return
     # check which endpoint got a response
     scr = {'schedule':'screenschedule',
@@ -31,11 +46,10 @@ def _check_data(req, oldata):
         ndata = f.read()
     if ndata == oldata:
         return
-    #data is invalid in file
+    # data is invalid in file
     # overwrite file with old data
 
-    with open(req.file_path, 'w') as f:
-        f.write(oldata)
+    write_oldata(req.file_path, oldata)
 
 def on_failure(req, oldata, endpoint):
     _check_data(req, oldata)
@@ -47,7 +61,6 @@ def on_error(req, oldata, endpoint):
 def fetch_remote_data(dt):
     '''Fetch remote data from the endpoint
     '''
-    print 'fetching', fetch_remote_data._args[0]
     endpoint, filepath, oldata = fetch_remote_data._args
     req = UrlRequest(
         #FIXME: initial url should be abstracted out too.
@@ -65,7 +78,7 @@ trigger_fetch_remote_data = Clock.create_trigger(fetch_remote_data, 9)
 def get_data(endpoint, onsuccess=False):
     filepath = app.script_path + '/data/' + endpoint + '.json'
     
-    #use od data to check if anything in the data has been updated.
+    #use old data to check if anything in the data has been updated.
     oldata = None
     with open(filepath) as f:
         oldata = f.read()
@@ -84,5 +97,5 @@ def get_data(endpoint, onsuccess=False):
     except (IOError, ValueError) as err:
         # give thread a chance to download and fix data
         time.sleep(2)
-    # if local data is corrupt, jsondata would be None
+
     return jsondata
