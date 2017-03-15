@@ -22,6 +22,10 @@ class ScreenAbout(Screen):
                 id: comm_desc
         ''')
 
+    def on_pre_enter(self):
+        container = self.ids.scroll
+        container.opacity = 0
+
     def on_enter(self, onsuccess=False):
         from network import get_data
         about = get_data('about', onsuccess=onsuccess)

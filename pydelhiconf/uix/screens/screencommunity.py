@@ -10,6 +10,7 @@ class ScreenCommunity(Screen):
 <ScreenCommunity>
     name: 'ScreenCommunity'
     ScrollView
+        id: main
         ScrollGrid
             AsyncImage
                 id: aimg
@@ -26,6 +27,10 @@ class ScreenCommunity(Screen):
                 padding: '9dp'
                 spacing: '9dp'
         ''')
+
+    def on_pre_enter(self):
+        container = self.ids.main
+        container.opacity = 0
 
     def on_enter(self, onsuccess=False):
         from network import get_data
