@@ -1,5 +1,6 @@
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
+from kivy.factory import Factory
 from functools import partial
 
 import webbrowser
@@ -13,7 +14,6 @@ class ScreenAbout(Screen):
     ScrollView
         id: scroll
         ScrollGrid
-            id: container
             AsyncImage
                 id: imgbt
                 size_hint_y: None
@@ -23,8 +23,7 @@ class ScreenAbout(Screen):
         ''')
 
     def on_pre_enter(self):
-        container = self.ids.scroll
-        container.opacity = 0
+        self.ids.scroll.opacity = 0
 
     def on_enter(self, onsuccess=False):
         from network import get_data
@@ -36,5 +35,8 @@ class ScreenAbout(Screen):
         about = about.get('0.0.1')[0]
         imbt = self.ids.imgbt
         imbt.source = about['logo']
+        imbt.on_released = partial(webbrowser.open, about['website'])
 
         self.ids.comm_desc.text = about['about']
+
+        Factory.Animation(opacity=1, d=.5).start(self.ids.scroll)

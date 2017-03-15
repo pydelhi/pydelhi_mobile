@@ -29,8 +29,7 @@ class ScreenCommunity(Screen):
         ''')
 
     def on_pre_enter(self):
-        container = self.ids.main
-        container.opacity = 0
+        self.ids.main.opacity=0
 
     def on_enter(self, onsuccess=False):
         from network import get_data
@@ -55,3 +54,5 @@ class ScreenCommunity(Screen):
             imbt.source = 'atlas://data/default/' + social_acc.lower()
             imbt.on_released = partial(webbrowser.open, social_link)
             gl.add_widget(imbt)
+
+        Factory.Animation(opacity=1, d=.5).start(self.ids.main)
