@@ -10,6 +10,7 @@ class ScreenCommunity(Screen):
 <ScreenCommunity>
     name: 'ScreenCommunity'
     ScrollView
+        id: main
         ScrollGrid
             AsyncImage
                 id: aimg
@@ -26,6 +27,9 @@ class ScreenCommunity(Screen):
                 padding: '9dp'
                 spacing: '9dp'
         ''')
+
+    def on_pre_enter(self):
+        self.ids.main.opacity=0
 
     def on_enter(self, onsuccess=False):
         from network import get_data
@@ -50,3 +54,5 @@ class ScreenCommunity(Screen):
             imbt.source = 'atlas://data/default/' + social_acc.lower()
             imbt.on_released = partial(webbrowser.open, social_link)
             gl.add_widget(imbt)
+
+        Factory.Animation(opacity=1, d=.5).start(self.ids.main)
