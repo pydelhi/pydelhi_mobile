@@ -62,9 +62,6 @@ class NavigationScreen(Screen):
             MenuButton
                 text: 'About'
                 on_released: app.load_screen('ScreenAbout', manager=app.navigation_manager)
-            MenuButton
-                text: 'Exit'
-                on_released: app.stop()
 
 <TopBar@BoxLayout>
     size_hint: None, None
