@@ -45,14 +45,14 @@ class ScreenSponsor(Screen):
         height: dp(40)
         on_release:
             import webbrowser
-            webbrowser.open('https://in.pycon.org/2016/sponsorship-prospectus.pdf')
+            webbrowser.open('https://conference.pydelhi.org/data/SponsorshipProspectus2017.pdf')
     ActiveButton
         text: 'Contact Us'
         size_hint_y: None
         height: dp(40)
         on_release:
             import webbrowser
-            webbrowser.open('mailto:sponsorship@in.pycon.org')
+            webbrowser.open('mailto:sponsorship@pydelhi.org')
 
 <Sponsor>
     orientation: 'tb-rl'
