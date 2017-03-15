@@ -20,8 +20,6 @@ os.environ['KIVY_DATA_DIR'] = abspath(dirname(__file__)) + '/data'
 
 # import App this is the main Class that manages UI's event loop
 from kivy.app import App
-# from kivy.utils import platform
-# from kivy.core.window import Window
 
 # Kivy's properties are based on a observer pattern
 # :ref: https://en.wikipedia.org/wiki/Observer_pattern
@@ -32,78 +30,6 @@ script_path = os.path.dirname(os.path.realpath(__file__))
 # add module path for screen so they can be ynamically be imported
 module_path = script_path + '/uix/screens/'
 sys.path.insert(0, module_path)
-
-# import webbrowser
-
-# if platform == 'android':
-#     from jnius import autoclass
-#     from android.runnable import run_on_ui_thread
-
-#     WebView = autoclass('android.webkit.WebView')
-#     print "webview"
-#     WebViewClient = autoclass('android.webkit.WebViewClient')
-#     print "got client"
-#     activity = autoclass('org.kivy.android.PythonActivity').mActivity
-#     print "activity"
-
-#     import os
-
-#     @run_on_ui_thread
-#     def initiate_webview():
-#         webview = WebView(activity)
-#         webbrowser._webview = webview
-#         webbrowser._view_cached = activity.getCurrentFocus()
-#         settings = webbrowser._webview.getSettings()
-#         settings.setJavaScriptEnabled(True)
-#         settings.setUseWideViewPort(True) # enables viewport html meta tags
-#         settings.setLoadWithOverviewMode(True) # uses viewport
-#         settings.setSupportZoom(True) # enables zoom
-#         settings.setBuiltInZoomControls(True) # enables zoom controls
-#         wvc = WebViewClient()
-#         webbrowser._webview.setWebViewClient(wvc)
-            
-#     initiate_webview()
-
-#     def _webopen(*args, **kwargs):
-#         #print '9'*90
-#         @run_on_ui_thread
-#         def webopen(*args, **kwargs):
-#             # open webview here
-#             url = args[0]
-#             print url, "<<<<<<<<<<<<<<<<<<"
-#             webview = webbrowser._webview
-#             webview.resumeTimers()
-#             webview.clearHistory()
-#             webview.loadUrl("about:blank")
-#             webview.clearCache(True)
-#             webview.freeMemory()
-#             activity.setContentView(webview)
-#             webbrowser._webview.loadUrl('{}'.format(url))
-#             webbrowser._opened = True   
-
-#         webopen(*args, **kwargs)
-#         return True
-
-#     @run_on_ui_thread
-#     def close(*args):
-#         if not webbrowser._webview:
-#             print "no_webview"*20
-#             return
-
-#         wv = webbrowser._webview
-#         wv.clearHistory()
-#         wv.clearCache(True)
-#         wv.loadUrl("about:blank")
-#         print 'abt bank'*3
-#         wv.freeMemory()
-#         print 'free mem'*3
-#         wv.pauseTimers()
-#         print 'pause timers'*3
-#         activity.setContentView(webbrowser._view_cached)
-#         webbrowser._opened = False
-
-#     webbrowser.open = _webopen
-#     webbrowser.close = close
 
 
 class PyConApp(App):
@@ -170,10 +96,6 @@ class PyConApp(App):
 
     defaults to ''
     '''
-
-    # def __init__(self):
-    #     super(PyConApp, self).__init__()
-    #     Window.bind(on_keyboard=self.on_back_button)
 
     def build(self):
         self.script_path = script_path
@@ -252,21 +174,6 @@ class PyConApp(App):
             self._navigation_higherarchy.append(sc)
 
         return getattr(self, module_path)
-
-    # def on_back_button(self, window, key, *args):
-    #     """ To be called whenever user presses Back/Esc Key """
-    #     # If user presses Back/Esc Key
-    #     if platform == 'android':
-    #         if key == 27:
-    #             import webbrowser
-    #             print "here 0000000000"
-    #             if hasattr(webbrowser, '_opened') and webbrowser._opened:
-    #                 print "back press 999999999999999999999"
-    #                 webbrowser.close()
-    #                 return True
-    #     else:
-    #         pass
-
 
 # Check if app is started as main and only then insitantiate the App class.
 if __name__ == '__main__':
