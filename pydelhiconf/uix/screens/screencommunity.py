@@ -11,15 +11,20 @@ class ScreenCommunity(Screen):
     name: 'ScreenCommunity'
     ScrollView
         ScrollGrid
-            id: container
             AsyncImage
-                source: "atlas://data/default/community"
+                id: aimg
                 size_hint_y: None
                 allow_stretch: True
                 height: dp(120)
             BackLabel
                 id: bcklbl
-
+            GridLayout
+                id: container
+                row: 2
+                cols: 4
+                size_hint_y: None
+                padding: '9dp'
+                spacing: '9dp'
         ''')
 
     def on_enter(self, onsuccess=False):
@@ -32,19 +37,16 @@ class ScreenCommunity(Screen):
         community = community.get('0.0.1')[0]
 
         self.ids.bcklbl.text = community['about']
+        self.ids.aimg.source = community['photo']
 
         social_comm = community['social']
         social_len = len(social_comm)
 
-        gl = GridLayout(cols=social_len,
-                    size_hint_y=None,
-                    padding='2dp',
-                    spacing='2dp')
+        gl = self.ids.container
+        gl.clear_widgets()
         import webbrowser
         for social_acc, social_link in social_comm.items():
             imbt = Factory.ImBut()
             imbt.source = 'atlas://data/default/' + social_acc.lower()
             imbt.on_released = partial(webbrowser.open, social_link)
             gl.add_widget(imbt)
-
-        self.ids.container.add_widget(gl)
