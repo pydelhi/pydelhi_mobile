@@ -150,12 +150,12 @@
 		},
 		"11": {
 			"title": "Panel Discussion: Data Science Training vs Data Science in the Industry",
-			"description": "",
+			"description": "- The rift between data science education and data science in the industry, especially how it may lead to bad hiring decisions. The applicability of data science, gap between research and its applicability in real life - Whether Python,as a technology, can help bridge this gap. - Shortcomings of Python as a data science language - if there a few reasons you could pick as to why Python 's a _bad_ language for data  science, what would those be? What can we do to fix these?",
 			"type": "panel",
 			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
+				"name": "Jaidev Deshpande, Chris Stucchio, Ricardo Rocha, Kunal Jain",
+				"info": "Various members of industry, educational institutes, community.",
+				"photo": "http://thehipp.org/wp-content/uploads/2015/12/paneldis.jpg"
 			}
 		},
 		"12": {
@@ -378,12 +378,12 @@
 		},
 		"28": {
 			"title": "Panel Discussion on state of Python in Delhi/NCR",
-			"description": "",
+			"description": "Talking Points: Current state of education, Python and it's importance in education, Industry and it's expectation. How to bridge the gap?",
 			"type": "panel",
 			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
+				"name": "Anuvrat Parashar(Community), Brij Raj Singh(Industry), Nikhil(Education), Shagun Sodhani(Industry)",
+				"info": "Various speakers from the industry, community and education institutes.",
+				"photo": "http://thehipp.org/wp-content/uploads/2015/12/paneldis.jpg"
 			}
 		},
 		"29": {
@@ -442,12 +442,12 @@
 		},
 		"33": {
 			"title": "Community efforts and the way forward",
-			"description": "This is a panel discussion on local open source communities",
+			"description": "Open Communities in Delhi/NCR. Common issues. How communities can collobrate to grow together.",
 			"type": "talk",
 			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
+				"name": "Satyaakam Goswami, Akshay Arora, Anuvrat Parashar, Jaidev Deshpande, Mrityunjay Mishra",
+				"info": "All open communities from Delhi/NCR are invited to be part of this discussion.",
+				"photo": "http://thehipp.org/wp-content/uploads/2015/12/paneldis.jpg"
 			}
 		},
 		"34": {

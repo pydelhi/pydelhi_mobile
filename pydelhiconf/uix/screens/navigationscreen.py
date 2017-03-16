@@ -70,7 +70,9 @@ class NavigationScreen(Screen):
     ImBut
         source: 'atlas://data/default/hamburger'
         size_hint_x: None
+        size_hint_y: 1
         width: self.height
+        allow_stretch: True
         on_released: app.navigationdrawer.toggle_state()
 
 
