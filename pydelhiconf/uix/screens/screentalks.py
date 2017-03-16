@@ -19,7 +19,8 @@ class SpeakerDetails(Factory.ScrollGrid):
     Builder.load_string('''
 <SpeakerDetails>
     AsyncImage:
-        source: root.speaker['photo']
+        source: root.speaker['photo'] 
+        opacity: 1 if root.speaker['photo']  else 0
         allow_stretch: True
         size_hint_y: None
         height: dp(200)
@@ -92,25 +93,27 @@ class ScreenTalks(Screen):
         if not talks:
             return
         talk_info = talks['0.0.1'][0][self.talkid]
+
         self.ids.talk_title.text = talk_info['title']
         self.ids.talk_desc.text = talk_info['description']
         if 'speaker' in talk_info.keys():
             speaker=talk_info['speaker']
-            speaker_details = SpeakerDetails(speaker=speaker)
-            if 'social' in speaker:
-                speaker_social = speaker['social'][0]
-                social_len = len(speaker_social)
-                gl = GridLayout(cols=social_len,
-                            size_hint_y=None,
-                            padding='2dp',
-                            spacing='2dp')
-                import webbrowser
-                for social_acc, social_link in speaker_social.items():
-                    imbt = Factory.ImBut()
-                    imbt.source = 'atlas://data/default/' + social_acc.lower()
-                    imbt.on_released = partial(webbrowser.open,social_link)
-                    gl.add_widget(imbt)
-                speaker_details.add_widget(gl)
-            self.ids.container.add_widget(speaker_details)
+            if speaker['name']:
+                speaker_details = SpeakerDetails(speaker=speaker)
+                if 'social' in speaker:
+                    speaker_social = speaker['social'][0]
+                    social_len = len(speaker_social)
+                    gl = GridLayout(cols=social_len,
+                                size_hint_y=None,
+                                padding='2dp',
+                                spacing='2dp')
+                    import webbrowser
+                    for social_acc, social_link in speaker_social.items():
+                        imbt = Factory.ImBut()
+                        imbt.source = 'atlas://data/default/' + social_acc.lower()
+                        imbt.on_released = partial(webbrowser.open,social_link)
+                        gl.add_widget(imbt)
+                    speaker_details.add_widget(gl)
+                self.ids.container.add_widget(speaker_details)
         Factory.Animation(opacity=1, d=.3).start(container)
         self.ids.scroll.scroll_y = 1
