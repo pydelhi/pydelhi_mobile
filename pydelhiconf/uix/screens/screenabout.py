@@ -21,6 +21,16 @@ class ScreenAbout(Screen):
                 height: dp(200)
             BackLabel
                 id: comm_desc
+            FloatLayout
+                size_hint_y: None
+                height: dp(45)
+                ActiveButton
+                    id: but
+                    text: "Visit our website"
+                    size_hint: None, None
+                    width: dp(200)
+                    center_x: comm_desc.center_x
+                    top: comm_desc.y - dp(10)
         ''')
 
     def on_pre_enter(self):
@@ -36,7 +46,7 @@ class ScreenAbout(Screen):
         about = about.get('0.0.1')[0]
         imbt = self.ids.imgbt
         imbt.source = about['logo']
-        imbt.on_released = partial(webbrowser.open, about['website'])
+        self.ids.but.on_released = partial(webbrowser.open, about['website'])
 
         self.ids.comm_desc.text = about['about']
 
