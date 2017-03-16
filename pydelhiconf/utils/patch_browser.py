@@ -2,6 +2,7 @@ from kivy.utils import platform
 from kivy.core.window import Window
 
 import webbrowser
+webbrowser._opened = False
 
 if platform == 'android':
     from jnius import autoclass
@@ -38,7 +39,6 @@ if platform == 'android':
         def webopen(*args, **kwargs):
             # open webview here
             url = args[0]
-            print url, "<<<<<<<<<<<<<<<<<<"
             webview = webbrowser._webview
             webview.resumeTimers()
             webview.clearHistory()

@@ -11,7 +11,6 @@ __version__ = '0.0.3'
 # imports 
 import os, sys
 from os.path import abspath, dirname
-
 # This allows you to use a custom data dir for kivy allowing you to
 # load only the images that you set here in this dir.
 # This way you avoid first loading kivy default images and .kv then
@@ -30,6 +29,11 @@ script_path = os.path.dirname(os.path.realpath(__file__))
 # add module path for screen so they can be ynamically be imported
 module_path = script_path + '/uix/screens/'
 sys.path.insert(0, module_path)
+
+# patch the browser to open webview on mobile
+from utils import patch_browser
+import webbrowser
+
 
 
 class PyConApp(App):
@@ -125,11 +129,20 @@ class PyConApp(App):
 
     def go_back_in_history(self):
         try:
+            # check webbbrowser
+            if webbrowser._opened:
+                webbrowser.close()
+                return
+            # go back to previous screen
+            # first pop current screen
             scr = self._navigation_higherarchy.pop()
             if scr.name == 'ScreenSchedule':
+                # we are at top of Nav higherarchy
                 from utils import pause_app
                 pause_app()
                 return
+
+            # we are not at root of Nav higherarchy
             scr = self._navigation_higherarchy[-1]
             self.load_screen(
                 scr.name,

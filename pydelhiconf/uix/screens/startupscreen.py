@@ -59,7 +59,7 @@ class StartupScreen(Screen):
         pos: root.pos
         text: root.text
 
-<ImBut@TouchRippleBehavior+ButtonBehavior+Image>
+<ImBut@TouchRippleBehavior+ButtonBehavior+AsyncImage>
     text_size: self.size
     size_hint_y: None
     mipmap: True
@@ -68,12 +68,15 @@ class StartupScreen(Screen):
 <ActiveButton@PyConButton>
     source: ''
 
+<AsyncImage>
+    anim_delay: .05
+
 <StartupScreen>
     name: 'StartupScreen'
     on_enter:
         from kivy.animation import Animation
         img_logo.opacity=0
-        Animation(d=.5, top=self.height/1.3, height=self.height/2, opacity=1).start(img_logo)
+        Animation(d=.5, top=self.height/1.3, height=self.height/2., width = self.width, opacity=1).start(img_logo)
         from kivy.clock import Clock
         Clock.schedule_once(lambda dt: app.load_screen('NavigationScreen'), 1)
     Background:
@@ -81,6 +84,7 @@ class StartupScreen(Screen):
         source: 'atlas://data/default/bg'
     Image
         id: img_logo
+        allow_strech: True
         source: 'atlas://data/default/logo'
         size_hint_y: None
 

@@ -10,7 +10,7 @@ from kivy.lang import Builder
 from kivy.core.window import Window
 from kivy.factory import Factory
 import datetime
-from kivy.properties import ObjectProperty
+from kivy.properties import ObjectProperty, ListProperty
 from uix.tabbedcarousel import TabbedCarousel
 import datetime
 app = App.get_running_app()
@@ -21,12 +21,13 @@ class TalkInfo(Factory.TouchRippleBehavior, Factory.ButtonBehavior, Factory.BoxL
     '''
 
     talk = ObjectProperty(None)
+    color = ListProperty((.5, .5, .5, .2))
 
     Builder.load_string('''
 <TalkInfo>
     canvas.before:
         Color:
-            rgba: (.5, .5, .5, .2) if root.parent and root.parent.children.index(self)%2 == 0 else (.3, .3, .3, .2)
+            rgba: root.color
         Rectangle:
             size: self.size
             pos: self.pos
@@ -209,7 +210,7 @@ class ScreenSchedule(Screen):
             cday = AccordionItem(title=date)
             if not first: first = cday
             acordion_add(cday)
-            sched = schedule[date]
+            day_sched = schedule[date]
             # create a carousel for each track
             tcarousel = TabbedCarousel()
             
@@ -218,23 +219,24 @@ class ScreenSchedule(Screen):
             tsa = trackscreens.append
             tca = tcarousel.add_widget
             for track in tracks:
-                trk = Track(name=track)
-                tsa(trk)
+                new_trk = Track(name=track)
+                tsa(new_trk)
                 # add track to carousel
-                tca(trk)
+                tca(new_trk)
             
-            items = len(sched)
-            for i in xrange(items):
-                talk = sched[i]
+            for talk in day_sched:
                 tid = talk['track']
                 if tid.lower() == 'all':
-                    for tlk in trackscreens:
+                    for i in xrange(len(trackscreens)):
+                        tlk = trackscreens[i]
+                        tc = tlk.ids.container
                         ti = TalkInfo(talk=talk)
-                        tlk.ids.container.add_widget(ti)
+                        ti.color = (.5, .5, .5, .2) if i%2 == 0 else (.3, .3, .3, .2)
+                        tc.add_widget(ti)
                     continue
                 ti = TalkInfo(talk=talk)
                 trackscreens[int(tid)-1].ids.container.add_widget(ti)
 
             cday.add_widget(tcarousel)
-            container.select(first)
-            Factory.Animation(d=.5, opacity=1).start(container)
+        container.select(first)
+        Factory.Animation(d=.5, opacity=1).start(container)

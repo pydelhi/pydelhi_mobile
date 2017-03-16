@@ -81,7 +81,7 @@
 			"speaker": {
 				"name": "Brij Raj Singh",
 				"info": "Brij is a Sr. Tech evangelist @Microsoft. Brij has a decade worth of experience in both Microsoft technologies as well as with open source technologies. Brij has architected Highly scalable and reliable solutions using Open source technologies. Brij works with a number of startups to help them shape their products over cloud. He tweets interesting anecdotes on OSS, IOT and Microsoft at @brijrajsingh.",
-				"photo": "http://imgur.com/dhi3eMI",
+				"photo": "https://paste.opensuse.org/images/f539ebb8.jpg",
 				"social": [{
 					"twitter": "www.twitter.com/brijrajsingh",
 					"github": "www.github.com/brijrajsingh",
@@ -129,7 +129,7 @@
 			"speaker": {
 				"name": "Dorai Thodla & Bhavani Ravi",
 				"info": "Dorai Thodla - Designs and builds skillbots (chatbots for skill development and assessement), conducts Chatbot workshops, Bot Sprints and other events Bhavani Ravi - A developer of Interview Bot and helps Dorai in conductig chatbot workshops and Bot Sprints.",
-				"photo": "http://static.wixstatic.com/media/2653cd_02a8474e57b5420e8ae1f5b25ce3685c.jpg",
+				"photo": "http://startupsclub.org/wp-content/uploads/2016/11/dorai-thodla-dd.jpg",
 				"social": [{
 					"website": "http://doraithodla.com/",
 					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/building-chatbots-with-pythondjango~dJ62d/",
@@ -237,7 +237,7 @@
 			"speaker": {
 				"name": "Shagun Sodhani",
 				"info": "I am a developer working with the Analytics and Data Science team at Adobe Systems where I contribute to solving novel problems in the domain of Machine Learning. I recently won the Outstanding Young Engineers Award as well. I have been actively using Python for the past 4 years. I have previously given talks at PyCon India and Big Data Training Program, IIT Roorkee. I also worked as a teaching assistant for the 3-course series on Data Science and Engineering with Spark XSeries, created by professors from University of California, Berkeley, University of California, Los Angeles and Databricks and offered on the edX platform.",
-				"photo": "https://shagunsodhani.in/assets/images/profile.png",
+				"photo": "https://paste.opensuse.org/images/70594065.png",
 				"social": [{
 					"github": "https://github.com/shagunsodhani",
 					"website": "https://shagunsodhani.in/",
@@ -252,8 +252,8 @@
 			"speaker": {
 				"name": "Everyone",
 				"info": "The best part about attending any meetups or conferences is getting a chance to converse with people with similar interests. Know about their domains of expertise, tell them about yours and if the interests meet up, collaborate for any future projects/prospects. Open Spaces are exactly for providing such environment for you. So go ahead, find a place, interact with people and make the best of this conference. Have a great time!",
-				"photo": "http://conference.pydelhi.org/img/open-spaces.jpg",
-				"social": []
+				"photo": "https://s-media-cache-ak0.pinimg.com/originals/75/71/45/7571452d437eac4801e6c490f5d2401e.jpg",
+				"social": [{}]
 			}
 		},
 		"19": {

@@ -16,6 +16,7 @@ class ScreenAbout(Screen):
         ScrollGrid
             AsyncImage
                 id: imgbt
+                allow_stretch: True
                 size_hint_y: None
                 height: dp(200)
             BackLabel

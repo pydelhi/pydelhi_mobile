@@ -67,11 +67,11 @@ class NavigationScreen(Screen):
     size_hint: None, None
     height: dp(45)
     width: dp(45)
-    ImgBut
+    ImBut
         source: 'atlas://data/default/hamburger'
         size_hint_x: None
         width: self.height
-        on_release: app.navigationdrawer.toggle_state()
+        on_released: app.navigationdrawer.toggle_state()
 
 
 <RightPanel@BoxLayout+Background>

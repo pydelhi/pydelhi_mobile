@@ -12,7 +12,7 @@
         },
         {
           "talk_id": "01",
-          "title": "Introductions & Opening Ceremony",
+          "title": "Introduction to PyDelhiConf 2017 & IIM L Incubator Introduction",
           "start_time": "09:00",
           "end_time": "09:30",
           "track": "all"
@@ -175,7 +175,7 @@
         },
         {
           "talk_id": "24",
-          "title": "Sponsored Talk II",
+          "title": "Women in Python World",
           "start_time": "9:30",
           "end_time": "10:00",
           "track": "3"
@@ -239,7 +239,7 @@
         },
         {
           "talk_id": "33",
-          "title": "Community efforts and the way forward",
+          "title": "Panel Discussion: OSS Communities in Delhi NCR: How we can possibly collaborate",
           "start_time": "02:40",
           "end_time": "03:40",
           "track": "all"
