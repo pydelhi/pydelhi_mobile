@@ -1,8 +1,6 @@
 __all__ = ['keyboard', 'pause_app']
 
 from kivy.app import App
-import threading
-import pickle 
 
 def pause_app():
     '''

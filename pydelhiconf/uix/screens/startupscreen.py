@@ -59,7 +59,7 @@ class StartupScreen(Screen):
         pos: root.pos
         text: root.text
 
-<ImBut@TouchRippleBehavior+ButtonBehavior+AsyncImage>
+<ImBut@TouchRippleBehavior+ButtonBehavior+Image>
     text_size: self.size
     size_hint_y: None
     mipmap: True
