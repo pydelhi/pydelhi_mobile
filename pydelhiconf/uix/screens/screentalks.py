@@ -22,7 +22,7 @@ class SpeakerDetails(Factory.ScrollGrid):
         source: root.speaker['photo']
         allow_stretch: True
         size_hint_y: None
-        height: dp(150)
+        height: dp(200)
         mipmap: True
     BackLabel
         backcolor: app.base_inactive_color[:3] + [.5]

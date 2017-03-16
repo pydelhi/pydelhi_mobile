@@ -227,11 +227,10 @@ class ScreenSchedule(Screen):
             for talk in day_sched:
                 tid = talk['track']
                 if tid.lower() == 'all':
-                    for i in xrange(len(trackscreens)):
-                        tlk = trackscreens[i]
+                    for tlk in trackscreens:
                         tc = tlk.ids.container
                         ti = TalkInfo(talk=talk)
-                        ti.color = (.5, .5, .5, .2) if i%2 == 0 else (.3, .3, .3, .2)
+                        ti.color = (.5, .5, .5, .2) if len(tc.children)%2 == 0 else (.3, .3, .3, .2)
                         tc.add_widget(ti)
                     continue
                 ti = TalkInfo(talk=talk)

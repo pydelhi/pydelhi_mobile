@@ -4,8 +4,6 @@ from kivy.app import App
 import threading
 import pickle 
 
-app = App.get_running_app()
-
 def pause_app():
     '''
     '''
@@ -17,4 +15,5 @@ def pause_app():
         currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
         currentActivity.moveTaskToBack(True)
     else:
+        app = App.get_running_app()
         app.stop()
