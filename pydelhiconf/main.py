@@ -31,7 +31,7 @@ module_path = script_path + '/uix/screens/'
 sys.path.insert(0, module_path)
 
 # patch the browser to open webview on mobile
-from utils import patch_browser
+#from utils import patch_browser
 import webbrowser
 
 
@@ -130,9 +130,9 @@ class PyConApp(App):
     def go_back_in_history(self):
         try:
             # check webbbrowser
-            if webbrowser._opened:
-                webbrowser.close()
-                return
+            # if webbrowser._opened:
+            #     webbrowser.close()
+            #     return
             # go back to previous screen
             # first pop current screen
             scr = self._navigation_higherarchy.pop()
