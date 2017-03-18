@@ -10,7 +10,7 @@ class ScreenFeedback(Screen):
     name: 'ScreenFeedback'
 ''')
     def on_pre_enter(self):
-        webbrowser.open('http://pydelhi.vkd.me/')
+        webbrowser.open('https://feedback.pydelhi.org')
 
     def on_enter(self):
         app = App.get_running_app()
