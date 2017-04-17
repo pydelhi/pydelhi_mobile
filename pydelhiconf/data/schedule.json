@@ -34,113 +34,113 @@
         {
           "talk_id": "04",
           "title": "Telegram bot using Python",
-          "start_time": "11:00",
-          "end_time": "11:40",
+          "start_time": "11:40",
+          "end_time": "12:20",
           "track": "1"
         },
         {
           "talk_id": "05",
           "title": "Lets talk about GIL",
-          "start_time": "11:00",
-          "end_time": "11:30",
+          "start_time": "11:40",
+          "end_time": "12:20",
           "track": "2"
         },
         {
           "talk_id": "06",
           "title": "Docker-izing and debugging Python applications with VS Code",
-          "start_time": "11:00",
-          "end_time": "11:40",
+          "start_time": "11:40",
+          "end_time": "12:20",
           "track": "3"
         },
         {
           "talk_id": "07",
           "title": "Concurrency in Python 3.0 world - Oh My!",
-          "start_time": "11:40",
-          "end_time": "01:40",
+          "start_time": "12:20",
+          "end_time": "14:20",
           "track": "1"
         },
         {
           "talk_id": "08",
           "title": "Python 101",
-          "start_time": "11:40",
-          "end_time": "01:40",
+          "start_time": "12:20",
+          "end_time": "14:20",
           "track": "2"
         },
         {
           "talk_id": "09",
           "title": "Building chatbots with Python/Django",
-          "start_time": "11:40",
-          "end_time": "01:40",
+          "start_time": "12:20",
+          "end_time": "14:20",
           "track": "3"
         },
         {
           "talk_id": "10",
           "title": "Lunch",
-          "start_time": "01:40",
-          "end_time": "02:40",
+          "start_time": "14:20",
+          "end_time": "15:00",
           "track": "all"
         },
         {
           "talk_id": "11",
           "title": "Panel Discussion: Data Science Training vs Data Science in the Industry",
-          "start_time": "02:40",
-          "end_time": "03:40",
+          "start_time": "15:00",
+          "end_time": "16:00",
           "track": "all"
         },
         {
           "talk_id": "12",
           "title": "Property based testing 101",
-          "start_time": "03:50",
-          "end_time": "04:20",
+          "start_time": "16:00",
+          "end_time": "16:20",
           "track": "1"
         },
         {
           "talk_id": "13",
           "title": "Debugging: An art for smart",
-          "start_time": "03:50",
-          "end_time": "04:20",
+          "start_time": "16:00",
+          "end_time": "16:30",
           "track": "2"
         },
         {
           "talk_id": "14",
           "title": "Comparing word embeddings with Gensim",
-          "start_time": "03:50",
-          "end_time": "04:20",
+          "start_time": "16:00",
+          "end_time": "16:30",
           "track": "3"
         },
         {
           "talk_id": "15",
           "title": "Tea",
-          "start_time": "04:20",
-          "end_time": "04:50",
+          "start_time": "16:30",
+          "end_time": "16:50",
           "track": "all"
         },
         {
           "talk_id": "16",
           "title": "Optimizing Django for building high performance systems",
-          "start_time": "04:50",
-          "end_time": "05:20",
+          "start_time": "16:50",
+          "end_time": "17:20",
           "track": "1"
         },
         {
           "talk_id": "17",
           "title": "Functional programming in Python",
-          "start_time": "04:50",
-          "end_time": "05:20",
+          "start_time": "16:50",
+          "end_time": "17:20",
           "track": "2"
          },
         {
           "talk_id": "18",
-          "title": "Open Spaces",
-          "start_time": "04:50",
-          "end_time": "05:20",
+          "title": "Artificial Intelligence & python, opencv: L-Incubator IIM",
+          "start_time": "16:50",
+          "end_time": "17:20",
           "track": "3"
          },
          {
           "talk_id": "19",
           "title": "Lightning Talks",
-          "start_time": "05:30",
-          "end_time": "06:30",
+          "start_time": "17:30",
+          "end_time": "18:30",
           "track": "all"
          }
       ],
@@ -175,7 +175,7 @@
         },
         {
           "talk_id": "24",
-          "title": "Women in Python World",
+          "title": "Android app with Python",
           "start_time": "9:30",
           "end_time": "10:00",
           "track": "3"
@@ -197,7 +197,7 @@
         },
         {
           "talk_id": "27",
-          "title": "Android app with Python",
+          "title": "Women in Python World",
           "start_time": "10:10",
           "end_time": "12:10",
           "track": "3"
@@ -206,57 +206,57 @@
           "talk_id": "28",
           "title": "Panel Discussion: State of Python in Delhi/NCR",
           "start_time": "12:20",
-          "end_time": "01:10",
+          "end_time": "13:10",
           "track": "all"
         },
         {
           "talk_id": "29",
           "title": "Lunch",
-          "start_time": "01:10",
-          "end_time": "02:00",
+          "start_time": "13:10",
+          "end_time": "14:00",
           "track": "all"
         },
         {
           "talk_id": "30",
           "title": "A lazy programmer's guide to automation",
-          "start_time": "02:00",
-          "end_time": "02:30",
+          "start_time": "14:00",
+          "end_time": "14:30",
           "track": "1"
         },
         {
           "talk_id": "31",
           "title": "Creating Image Thumbnails using AWS Lamda",
-          "start_time": "02:00",
-          "end_time": "02:30",
+          "start_time": "14:00",
+          "end_time": "14:30",
           "track": "2"
         },
         {
           "talk_id": "32",
           "title": "An Introduction to Bayesian Statistics for the Python Programmer (no data science experience needed)",
-          "start_time": "02:00",
-          "end_time": "02:30",
+          "start_time": "14:00",
+          "end_time": "14:30",
           "track": "3"
         },
         {
           "talk_id": "33",
           "title": "Panel Discussion: OSS Communities in Delhi NCR: How we can possibly collaborate",
-          "start_time": "02:40",
-          "end_time": "03:40",
+          "start_time": "14:40",
+          "end_time": "15:40",
           "track": "all"
         },
         {
           "talk_id": "34",
           "title": "Tea",
-          "start_time": "03:40",
-          "end_time": "04:10",
+          "start_time": "15:40",
+          "end_time": "16:10",
           "track": "all"
 
         },
         {
           "talk_id": "35",
           "title": "Closing ceremony/ Feedback session",
-          "start_time": "04:10",
-          "end_time": "04:30",
+          "start_time": "16:10",
+          "end_time": "16:30",
           "track": "all"
         }
       ]

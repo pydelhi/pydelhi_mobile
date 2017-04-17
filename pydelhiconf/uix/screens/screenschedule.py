@@ -12,7 +12,7 @@ from kivy.factory import Factory
 import datetime
 from kivy.properties import ObjectProperty, ListProperty
 from uix.tabbedcarousel import TabbedCarousel
-import datetime
+
 app = App.get_running_app()
 
 
@@ -27,7 +27,7 @@ class TalkInfo(Factory.TouchRippleBehavior, Factory.ButtonBehavior, Factory.BoxL
 <TalkInfo>
     canvas.before:
         Color:
-            rgba: root.color
+            rgba: root.color 
         Rectangle:
             size: self.size
             pos: self.pos
@@ -205,10 +205,15 @@ class ScreenSchedule(Screen):
         Track = Factory.Track
 
         first = None
+        today = datetime.datetime.now()
+        
         for date in dates:
             # add current day as accordion widget
-            cday = AccordionItem(title=date)
-            if not first: first = cday
+            ccday = datetime.datetime.strptime(date,"%Y-%m-%d")
+            cday = AccordionItem(title=ccday.strftime("%d %b %Y"))
+
+            if ccday.date()  >=  today.date():
+                if not first: first = cday
             acordion_add(cday)
             day_sched = schedule[date]
             # create a carousel for each track
@@ -225,17 +230,26 @@ class ScreenSchedule(Screen):
                 tca(new_trk)
             
             for talk in day_sched:
+                try:
+                    stime  = "%s -- %s"%(date, talk['start_time'])
+                    etime  = "%s -- %s"%(date, talk['end_time'])
+                    stime = datetime.datetime.strptime(stime,"%Y-%m-%d -- %H:%M")
+                    etime = datetime.datetime.strptime(etime,"%Y-%m-%d -- %H:%M")
+                    talk['current'] = today > stime and today < etime
+                except:
+                    pass
                 tid = talk['track']
                 if tid.lower() == 'all':
                     for tlk in trackscreens:
                         tc = tlk.ids.container
                         ti = TalkInfo(talk=talk)
                         ti.color = (.5, .5, .5, .2) if len(tc.children)%2 == 0 else (.3, .3, .3, .2)
+                        if talk['current']: ti.color = ti.color[:3] + [.8]
                         tc.add_widget(ti)
                     continue
                 ti = TalkInfo(talk=talk)
                 trackscreens[int(tid)-1].ids.container.add_widget(ti)
 
             cday.add_widget(tcarousel)
-        container.select(first)
+        if first: container.select(first)
         Factory.Animation(d=.5, opacity=1).start(container)
