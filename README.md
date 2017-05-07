@@ -7,6 +7,12 @@ PyDelhi Conf 2017 Application
 ## Kivy Installation:
 - https://kivy.org/docs/installation/installation.html
 
+## Make sure you build the theme before using the app.
+   - Make sure you have `pillow` installed. `pip install pillow --user`
+   - Paste/change the image in PyDelhiConf/tools/theming
+   - Change your directory to PyDelhiConf
+   - Run command ``make theming`` 
+
 ### To test install kivy and run the following::
 
     $ python pydelhiconf/main.py -m screen:droid2,portrait -m inspector
@@ -14,10 +20,6 @@ PyDelhi Conf 2017 Application
 ### Help on screens
 - https://kivy.org/docs/api-kivy.modules.screen.html
 
-## To change images in app
-   - Paste/change the image in PyDelhiConf/tools/theming
-   - Change your directory to PyDelhiConf
-   - Run command ``make theming`` 
 
 This command will aggregate all the png images in your file to one atlas
 from which the images are loaded.
