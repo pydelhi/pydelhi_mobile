@@ -10,6 +10,8 @@ __version__ = '1.0.0'
 
 # imports 
 import os, sys
+os.environ['KIVY_IMAGE'] = 'pil,sdl2
+'
 from os.path import abspath, dirname
 # This allows you to use a custom data dir for kivy allowing you to
 # load only the images that you set here in this dir.

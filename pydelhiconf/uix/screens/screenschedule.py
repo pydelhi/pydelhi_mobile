@@ -192,7 +192,7 @@ class ScreenSchedule(Screen):
         start_date = event['start_date']
         end_date = event['end_date']
         
-        dates = schedule.keys()[1:]
+        dates = list(schedule.keys())[1:]
         # each day could have multiple tracks
         tracks = schedule['tracks']
         dates = sorted(

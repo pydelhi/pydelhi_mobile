@@ -5,7 +5,7 @@
 			"description": "Register yourselves and get your goodie bag. Have a great day!",
 			"type": "default",
 			"speaker": {
-				"name": "Registration Team PyDelhi",
+				"name": "",
 				"info": " The team of PyDelhi would help you to get registered for the event.\n Please lineup on the registeration counter at the entrance of the venue.",
 				"photo": "https://cdn2.iconfinder.com/data/icons/healer-flat-vol-1/201/registration-reservation-admission-cashier-512.png"
 			}
@@ -15,8 +15,8 @@
 			"description": "",
 			"type": "default",
 			"speaker": {
-				"name": "Anuvrat Parashar & Sheeba Khan",
-				"info": "Official opening of PyDelhiConf 2017. Our presenters Anuvrat Parashar & Sheeba Khan would be introducing our special guests to the audience and asking them to speak a few word about the event.",
+				"name": "S R Mustafa & Sheeba Khan",
+				"info": "Official opening of PyDelhiConf 2017. Our presenters Anuvrat Parashar, S R Mustafa, V.P L-Incubator & Sheeba Khan Manager at L-Incubator, would be introducing our special guests to the audience and asking them to speak a few word about the event.",
 				"photo": "http://www.newscaststudio.com/wp-content/uploads/2016/07/2016-rio-olympics-opening-ceremony-promo.png"
 			}
 		},
@@ -25,7 +25,7 @@
 			"description": "Food & Beverages",
 			"type": "default",
 			"speaker": {
-				"name": "High Tea",
+				"name": "",
 				"info": "Afternoon tea is a creative way to build relationships. ... a spa, something special to add to a meeting agenda without the sweating",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
 			}
@@ -143,7 +143,7 @@
 			"description": "Lunch, the abbreviation for luncheon, is a light meal typically eaten at midday. The origin of the words lunch and luncheon relate to a small snack originally eaten at any time of the day or night. During the 20th century the meaning gradually narrowed to a small or mid-sized meal eaten at midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.",
 			"type": "default",
 			"speaker": {
-				"name": "Jagmohan & Company",
+				"name": "",
 				"info": "Nature provides a free lunch, but only if we control our appetites.",
 				"photo": "https://cristinaparrotte.files.wordpress.com/2011/03/yotam-ottolenghi-vegetarian.jpg?w=640&h=392&crop=1"
 			}
@@ -210,7 +210,7 @@
 			"description": "Food & Beverages",
 			"type": "default",
 			"speaker": {
-				"name": "High Tea",
+				"name": "",
 				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
 			}
@@ -250,7 +250,7 @@
 			"description": "Open Space is the only process that focuses on expanding time and space for the force of self-organisation to do its thing. Although one can't predict specific outcomes, it's always highly productive for whatever issue people want to attend to. Some of the inspiring side effects that are regularly noted are laughter, hard work which feels like play, surprising results and fascinating new questions. -Michael M Pannwitz, Open Space practitioner.",
 			"type": "talk",
 			"speaker": {
-				"name": "Everyone",
+				"name": "",
 				"info": "The best part about attending any meetups or conferences is getting a chance to converse with people with similar interests. Know about their domains of expertise, tell them about yours and if the interests meet up, collaborate for any future projects/prospects. Open Spaces are exactly for providing such environment for you. So go ahead, find a place, interact with people and make the best of this conference. Have a great time!",
 				"photo": "https://s-media-cache-ak0.pinimg.com/originals/75/71/45/7571452d437eac4801e6c490f5d2401e.jpg",
 				"social": [{}]
@@ -271,7 +271,7 @@
 			"description": "Register yourselves and get your goodie bag. Have a great day!",
 			"type": "default",
 			"speaker": {
-				"name": "Registration Team PyDelhi",
+				"name": "",
 				"info": " The team of PyDelhi would help you to get registered for the event.\n Please lineup on the registeration counter at the entrance of the venue.",
 				"photo": "https://cdn2.iconfinder.com/data/icons/healer-flat-vol-1/201/registration-reservation-admission-cashier-512.png"
 			}
@@ -281,7 +281,7 @@
 			"description": "Food & Beverages",
 			"type": "default",
 			"speaker": {
-				"name": "High Tea",
+				"name": "",
 				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
 			}
@@ -316,16 +316,17 @@
 			}
 		},
 		"24": {
-			"title": "Sponsored Slot 2",
-			"description": "about talk",
-			"type": "talk",
+			"title": "Android app with Python",
+			"description": "What if you could avoid the hassle of writing Java code for building an app for android? What if that app could also work on other platforms? You're looking for an amazing thing called Kivy. To top it all, the cross-platform app is written in Python.",
+			"type": "workshop",
 			"speaker": {
-				"name": "Sponsors",
-				"info": "about speaker",
-				"photo": "http://static.wixstatic.com/media/2653cd_02a8474e57b5420e8ae1f5b25ce3685c.jpg",
+				"name": "Shivani Bhardwaj",
+				"info": "Shivani Bhardwaj is a programmer from Delhi, India. She has recently started learning kivy and has been building apps for Android and iOS using Kivy. She was also an Outreachy intern for Linux kernel's netfilter project and the recipient of Training Scholarship by The Linux Foundation.",
+				"photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAe5AAAAJDRhNTgxYWM1LTBjYWMtNGZmYS1hMzNmLTg1M2VjNmU3YmYwOA.jpg",
 				"social": [{
-					"twitter": "www.twitter.com/pydelhi",
-					"github": "www.github.com/pydelhi"
+					"twitter": "www.twitter.com/tuxish",
+					"github": "https://github.com/shivan1b",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/android-app-with-python~dNxza/"
 				}]
 			}
 		},
@@ -362,18 +363,13 @@
 			}
 		},
 		"27": {
-			"title": "Android app with Python",
-			"description": "What if you could avoid the hassle of writing Java code for building an app for android? What if that app could also work on other platforms? You're looking for an amazing thing called Kivy. To top it all, the cross-platform app is written in Python.",
-			"type": "workshop",
+			"title": "Women in Python World",
+			"description": "There are numerous women making big names and doing great things in Python World. We're going to appreciate all such women and have a discussion about current and future state of diversity in the community.",
+			"type": "talk",
 			"speaker": {
-				"name": "Shivani Bhardwaj",
-				"info": "Shivani Bhardwaj is a programmer from Delhi, India. She has recently started learning kivy and has been building apps for Android and iOS using Kivy. She was also an Outreachy intern for Linux kernel's netfilter project and the recipient of Training Scholarship by The Linux Foundation.",
-				"photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAe5AAAAJDRhNTgxYWM1LTBjYWMtNGZmYS1hMzNmLTg1M2VjNmU3YmYwOA.jpg",
-				"social": [{
-					"twitter": "www.twitter.com/tuxish",
-					"github": "https://github.com/shivan1b",
-					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/android-app-with-python~dNxza/"
-				}]
+				"name": "Panelists",
+				"info": "",
+				"photo": "http://waysidehotel.com/wp-content/uploads/2015/08/Female-Silhouette.jpg"
 			}
 		},
 		"28": {
@@ -445,7 +441,7 @@
 			"description": "Open Communities in Delhi/NCR. Common issues. How communities can collobrate to grow together.",
 			"type": "talk",
 			"speaker": {
-				"name": "Satyaakam Goswami, Akshay Arora, Anuvrat Parashar, Jaidev Deshpande, Mrityunjay Mishra",
+				"name": "Satyaakam Goswami, Akshay Arora, Anuvrat Parashar, Jaidev Deshpande, Mrutyunjay Mishra",
 				"info": "All open communities from Delhi/NCR are invited to be part of this discussion.",
 				"photo": "http://thehipp.org/wp-content/uploads/2015/12/paneldis.jpg"
 			}
@@ -456,7 +452,7 @@
 			"proposal": "",
 			"type": "default",
 			"speaker": {
-				"name": "High Tea",
+				"name": "",
 				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg?=e.jpg"
 			}
