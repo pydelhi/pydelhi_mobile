@@ -1,0 +1,5 @@
+Cython==0.25.2
+pillow==4.1.1
+futures==3.0.5
+Kivy==1.10.0
+Kivy-Garden==0.1.4
