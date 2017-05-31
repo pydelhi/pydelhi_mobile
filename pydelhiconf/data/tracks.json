@@ -5,7 +5,7 @@
 			"description": "Register yourselves and get your goodie bag. Have a great day!",
 			"type": "default",
 			"speaker": {
-				"name": "",
+				"name": "Volunteers",
 				"info": " The team of PyDelhi would help you to get registered for the event.\n Please lineup on the registeration counter at the entrance of the venue.",
 				"photo": "https://cdn2.iconfinder.com/data/icons/healer-flat-vol-1/201/registration-reservation-admission-cashier-512.png"
 			}
@@ -25,7 +25,7 @@
 			"description": "Food & Beverages",
 			"type": "default",
 			"speaker": {
-				"name": "",
+				"name": "Cateror",
 				"info": "Afternoon tea is a creative way to build relationships. ... a spa, something special to add to a meeting agenda without the sweating",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
 			}
@@ -143,7 +143,7 @@
 			"description": "Lunch, the abbreviation for luncheon, is a light meal typically eaten at midday. The origin of the words lunch and luncheon relate to a small snack originally eaten at any time of the day or night. During the 20th century the meaning gradually narrowed to a small or mid-sized meal eaten at midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.",
 			"type": "default",
 			"speaker": {
-				"name": "",
+				"name": "Cateror",
 				"info": "Nature provides a free lunch, but only if we control our appetites.",
 				"photo": "https://cristinaparrotte.files.wordpress.com/2011/03/yotam-ottolenghi-vegetarian.jpg?w=640&h=392&crop=1"
 			}
@@ -210,7 +210,7 @@
 			"description": "Food & Beverages",
 			"type": "default",
 			"speaker": {
-				"name": "",
+				"name": "Cateror",
 				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
 			}
@@ -250,7 +250,7 @@
 			"description": "Open Space is the only process that focuses on expanding time and space for the force of self-organisation to do its thing. Although one can't predict specific outcomes, it's always highly productive for whatever issue people want to attend to. Some of the inspiring side effects that are regularly noted are laughter, hard work which feels like play, surprising results and fascinating new questions. -Michael M Pannwitz, Open Space practitioner.",
 			"type": "talk",
 			"speaker": {
-				"name": "",
+				"name": "Community",
 				"info": "The best part about attending any meetups or conferences is getting a chance to converse with people with similar interests. Know about their domains of expertise, tell them about yours and if the interests meet up, collaborate for any future projects/prospects. Open Spaces are exactly for providing such environment for you. So go ahead, find a place, interact with people and make the best of this conference. Have a great time!",
 				"photo": "https://s-media-cache-ak0.pinimg.com/originals/75/71/45/7571452d437eac4801e6c490f5d2401e.jpg",
 				"social": [{}]
@@ -271,7 +271,7 @@
 			"description": "Register yourselves and get your goodie bag. Have a great day!",
 			"type": "default",
 			"speaker": {
-				"name": "",
+				"name": "PyDelhi Team",
 				"info": " The team of PyDelhi would help you to get registered for the event.\n Please lineup on the registeration counter at the entrance of the venue.",
 				"photo": "https://cdn2.iconfinder.com/data/icons/healer-flat-vol-1/201/registration-reservation-admission-cashier-512.png"
 			}
@@ -281,7 +281,7 @@
 			"description": "Food & Beverages",
 			"type": "default",
 			"speaker": {
-				"name": "",
+				"name": "Caterors",
 				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
 			}
@@ -452,7 +452,7 @@
 			"proposal": "",
 			"type": "default",
 			"speaker": {
-				"name": "",
+				"name": "Caterors",
 				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg?=e.jpg"
 			}
