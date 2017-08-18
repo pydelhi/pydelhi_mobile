@@ -10,12 +10,23 @@ PyCon-Mobile-App
 |___ eventsapp
        |___ main.py: "This is the main entry point of our application"
        |___ uix: "This is where our user interface elements go."
-             |___ 
+             |___ screens: "This is where all our UI screens of the app go."
 |
 |___ tools: "This is where all our tools including assets etc go."
-       |___ images: 'this is where all our image assets go'
+       |___ images: "This is where all our image assets go'
+       |___ raw_assets: "This is where the raw assets from the design team go"
 |___ tests: "All our tests go here"
 '''
+
+# imports 
+import os, sys
+from os.path import abspath, dirname
+script_path = os.path.dirname(os.path.realpath(__file__))
+
+# add module path for screen so they can be ynamically be imported
+module_path = script_path + '/uix/screens/'
+sys.path.insert(0, module_path)
+
 
 from kivy.app import App
 
@@ -24,16 +35,56 @@ class EventsApp(App):
     '''This is our entry point for the application
     '''
     
-    def load_screen(self):
-        '''Load screens dynamically
-        '''
+    def build(self):
+       from kivy.uix.screenmanager import ScreenManager
+       root = ScreenManager()
+       #return the root widget here
+       return root
 
+    def on_start(self):
+       self.load_screen('LogoScreen')
+    
     def on_pause(self):
         # allow the app to pause on android and ios
         return True
 
     def on_resume(self):
         pass
+
+    def load_screen(self, screen, manager=None, store_back=True):
+        '''Load the provided screen:
+        arguments::
+            `screen`: is the name of the screen to be loaded
+            `manager`: the manager to load this screen, this defaults to
+            the main class.
+        '''
+        store_back = False if screen == 'StartupScreen' else store_back
+
+        manager = manager or self.root
+        # load screen modules dynamically
+        # for example load_screen('LoginScreen')
+        # will look for uix/screens/loginscreen
+        # load LoginScreen 
+        module_path = screen.lower()
+        if not hasattr(self, module_path):
+            import imp
+            module = imp.load_module(screen, *imp.find_module(module_path))
+            screen_class = getattr(module, screen)
+            sc = screen_class() 
+            sc.from_back = not store_back
+            setattr(self, module_path, sc)
+            manager.add_widget(sc)
+
+        else:
+            sc = getattr(self, module_path)
+
+        sc.from_back = not store_back
+        manager.current = screen
+
+        # if store_back:
+        #     self._navigation_higherarchy.append(sc)
+
+        return getattr(self, module_path)
 
 
 
