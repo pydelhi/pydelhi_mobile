@@ -23,7 +23,7 @@ import os, sys
 from os.path import abspath, dirname
 script_path = os.path.dirname(os.path.realpath(__file__))
 
-# add module path for screen so they can be ynamically be imported
+# add module path for screen so they can be dynamically be imported
 module_path = script_path + '/uix/screens/'
 sys.path.insert(0, module_path)
 
@@ -56,10 +56,15 @@ class EventsApp(App):
         arguments::
             `screen`: is the name of the screen to be loaded
             `manager`: the manager to load this screen, this defaults to
-            the main class.
+            the root screen manager.
         '''
+        # store_back is used to load the previous screen when a user
+        # chooses to press back, the last screen in the navigation
+        # higherarchy is loaded
         store_back = False if screen == 'StartupScreen' else store_back
 
+        # Default manager is the root widget.
+        # override that with the manager argument if passed.
         manager = manager or self.root
         # load screen modules dynamically
         # for example load_screen('LoginScreen')
