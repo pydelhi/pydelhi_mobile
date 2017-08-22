@@ -87,6 +87,9 @@ class EventsApp(App):
         return getattr(self, module_path)
 
 
-
+# is our app being launched by python interpretter directly?
+# or is it being imported as a module?
 if __name__ == '__main__':
+    # app is being run directly
+    # instanciate our app and run it.
     EventsApp().run()
