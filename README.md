@@ -8,11 +8,10 @@ PyCon India 2017 Application
 
 WIP
 ====
-**rest not yet setup for 2017**
 
 ### To test install kivy and run the following::
 
-    $ python pyconindia/main.py -m screen:droid2,portrait -m inspector
+    $ python eventsapp/main.py -m screen:droid2,portrait -m inspector
 
 ### Help on screens
 - https://kivy.org/docs/api-kivy.modules.screen.html
