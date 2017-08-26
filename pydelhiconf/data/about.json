@@ -1,9 +1,9 @@
 {
  "0.0.1": [
    {
-    "logo": "https://cdn.explara.com/logo20170117124754.png",
-    "website":"https://conference.pydelhi.org/",
-    "about":"PyDelhi Conf is the annual conference hosted by PyDelhi community. It will be bringing together developers, experts, researchers, scientists, enthusiasts and companies dealing in python. It is a completely volunteer driven event, managed by PyDelhi(https://pydelhi.org/) Python Delhi Users Group. On its maiden year PyDelhi Conf attracted a total attendance of 300 people."
+    "logo": "https://pydata.org/delhi2017/static/images/logo.288981a8dfa8.png",
+    "website":"https://pydata.org/delhi2017/",
+    "about":"PyData conferences bring together users and developers of data analysis tools to share ideas and learn from each other. The PyData community gathers to discuss how best to apply Python tools, as well as tools using R and Julia, to meet evolving challenges in data management, processing, analytics, and visualization. "
    }
   ]
 }
