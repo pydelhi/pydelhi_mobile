@@ -63,10 +63,29 @@ class NavigationScreen(Screen):
                 text: 'About'
                 on_released: app.load_screen('ScreenAbout', manager=app.navigation_manager)
 
+<Topic@Label>
+    opacity: 0
+    canvas.before:
+        Color
+            rgba: 0, 0, 0, .5
+        Rectangle
+            texture: self.texture
+            size: self.width - dp(50), self.height
+            pos: self.x + dp(28), self.y - dp(3)
+    font_size: dp(20)
+    text_size: self.width - dp(50), self.height
+    halign: 'left'
+    valign: 'middle'
+
 <TopBar@BoxLayout>
-    size_hint: None, None
+    size_hint: 1, None
     height: dp(45)
-    width: dp(45)
+    canvas.before:
+        Color:
+            rgba: 92./256., 110./256., 118./255, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
     ImBut
         source: 'atlas://data/default/hamburger'
         size_hint_x: None
@@ -75,11 +94,16 @@ class NavigationScreen(Screen):
         allow_stretch: True
         on_released: app.navigationdrawer.toggle_state()
 
+    Topic
+        id: topic
+        text: app.event_name
+
 
 <RightPanel@BoxLayout+Background>
     source: 'atlas://data/default/bg'
     orientation: "vertical"
     TopBar
+        id: topbar
     ScreenManager
         on_parent: app.navigation_manager = nav_sm
         id: nav_sm
@@ -90,11 +114,13 @@ class NavigationScreen(Screen):
         import os
         scr = os.environ.get('PYDELHI_STARTUP_SCREEN','ScreenSchedule')
         app.load_screen(scr, manager=app.navigation_manager)
+        right_panel.ids.topbar.ids.topic.opacity=1
     NavigationDrawer
         id: navigationdrawer
         on_parent: app.navigationdrawer = navigationdrawer
         LeftPanel
             id: left_panel
         RightPanel
+            id: right_panel
             opacity: 1-(self.x/root.right)
 ''')

@@ -21,7 +21,7 @@ class TalkInfo(Factory.TouchRippleBehavior, Factory.ButtonBehavior, Factory.BoxL
     '''
 
     talk = ObjectProperty(None)
-    color = ListProperty((.5, .5, .5, .2))
+    color = ListProperty((.5, .5, .5, .7))
 
     Builder.load_string('''
 <TalkInfo>
@@ -61,32 +61,6 @@ class ScreenSchedule(Screen):
     '''
 
     Builder.load_string('''
-<Topic@Label>
-    canvas.before:
-        Color
-            rgba: app.base_active_color
-        Rectangle
-            size: self.width, self.height
-            pos: self.right - self.width  , self.y + dp(5)
-        Color
-            rgba: app.base_active_color[:3]+[.5]
-        Rectangle
-            size: self.width, self.height
-            pos: self.right - self.width - dp(5), self.y
-        Color
-            rgba: 0, 0, 0, .5
-        Rectangle
-            texture: self.texture
-            size: self.width - dp(50), self.height
-            pos: self.x + dp(28), self.y - dp(3)
-    font_size: dp(27)
-    text_size: self.width - dp(50), self.height
-    size_hint: None, None
-    width: dp(300)
-    height: dp(45)
-    halign: 'right'
-    valign: 'middle'
-    pos_hint: {'right': 1}
 
 <AccordionItemTitle>
     text_size: self.width - dp(10), self.height
@@ -127,8 +101,6 @@ class ScreenSchedule(Screen):
         # spacing: dp(20)
         orientation: 'vertical'
         padding: dp(4)
-        Topic
-            text: app.event_name
         Accordion
             id: accordian_days
             orientation: 'vertical'
@@ -243,9 +215,9 @@ class ScreenSchedule(Screen):
                     for tlk in trackscreens:
                         tc = tlk.ids.container
                         ti = TalkInfo(talk=talk)
-                        ti.color = (.5, .5, .5, .2) if len(tc.children)%2 == 0 else (.3, .3, .3, .2)
-                        if talk['current']: ti.color = ti.color[:3] + [.8]
                         tc.add_widget(ti)
+                        print len(tc.children)
+                        ti.color = (.5, .5, .5, .7) if len(tc.children)%2 == 0 else (.3, .3, .3, .7)
                     continue
                 ti = TalkInfo(talk=talk)
                 trackscreens[int(tid)-1].ids.container.add_widget(ti)
