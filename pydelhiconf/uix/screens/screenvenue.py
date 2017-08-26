@@ -33,11 +33,11 @@ class ScreenVenue(Screen):
             sizable_from: 'top'
             MapView:
                 zoom: 11
-                lat: 28.6235184
-                lon: 77.3551479 
+                lat: 28.5456282
+                lon: 77.2731505 
                 MapMarker
-                    lat: 28.6235184
-                    lon: 77.3551479
+                    lat: 28.5456282
+                    lon: 77.2731505
         BoxLayout:
             size_hint: 1, None
             height: dp(45)
