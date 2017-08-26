@@ -1,13 +1,13 @@
 {
   "0.0.1":[{
-  "name": "PyDelhi Conf 2017",
-  "venue": "IIM Lucknow Noida Campus",
-  "start_date": "2017-03-18T8:00:00Z",
-  "end_date": "2017-03-19T18:00:00Z",
+  "name": "PyData Delhi",
+  "venue": "IIIT Delhi",
+  "start_date": "2017-09-2T8:00:00Z",
+  "end_date": "2017-09-3T18:00:00Z",
   "venue_partners": [{
       "name": "IIM Lucknow Noida Campus",
-      "about": "The Indian Institute of Management Lucknow is fourth in the prestigious IIM family of management schools to be established in India after IIM Calcutta, IIM Ahmedabad and IIM Bangalore. The establishment of IIMs was envisioned and initiated by the first Prime Minister of India – Pandit Jawaharlal Nehru.\n\nThe Institute was established in the year 1984. Since then IIML has touched million lives directly or indirectly through its faculty, alumni and support staff. IIML moulds its students into value driven leaders, managers and global players. The institute undertakes a diverse range of academic activities aimed at creation, dissemination and application of management knowledge and practice.\n\nIn 2005, IIM Lucknow expanded its area of influence in the realm of management education by becoming the first IIM to set up a satellite campus exclusively for Executive Education at NOIDA in Delhi NCR region.\n\nSituated in a city known for its cultural heritage, the campus is spread over more than 190 acres of beautifully landscaped area. With its foundation in the city of “Tehzeeb”, IIM Lucknow as well inculcates human values and professional ethics in the students to help them make a positive impact not just on the nation but on a global platform. IIM Lucknow is an ideal setup conducive to learning, accessibility and excellence.",
-      "url": "http://www.iiml.ac.in/?page_id=4264"
+      "about": "Indraprastha Institute of Information Technology, Delhi is an autonomous university in Delhi, India. It is a research-oriented university with a focus on Computer Science and Electronics. The institute began with its first batch of 60 BTech students in 2008. This first batch graduated in 2012 - the first Convocation took place in November, 2012. By that time, the institute has attracted nearly 30 faculty members, and its academic program consisted of B.Tech., M.Tech. and Ph.D. programs in CSE and ECE. Smt. Sheila Dikshit, Chief Minister of Delhi, inaugurated the campus on October, 2012.",
+      "url": "http://iiitd.ac.in/"
     }]
   }]
 }
