@@ -65,7 +65,7 @@ class PyConApp(App):
     defaults to Red(217, 52, 47)
     '''
 
-    base_inactive_light = ListProperty([56/255.,171/255.,180/255., 1])
+    base_inactive_light = ListProperty([142/255.,185/255.,198/255., 2])
     '''This is the base Color in the app that is used to denote the currently
     active color used to display active buttons and highlited areas. Format
     is RGBA.

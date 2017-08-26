@@ -116,7 +116,7 @@ class ScreenSchedule(Screen):
         text: 'Title'
 
 <TabbedCarousel>
-    background_color: 1, 1, 1, 0
+    background_color: 210./256., 127./256., 59./255, 0
 
 <TabbedPanelHeader>
     background_color: (1, 1, 1, 1) if self.state == 'down' else app.base_active_color
@@ -216,8 +216,6 @@ class ScreenSchedule(Screen):
                         tc = tlk.ids.container
                         ti = TalkInfo(talk=talk)
                         tc.add_widget(ti)
-                        print len(tc.children)
-                        ti.color = (.5, .5, .5, .7) if len(tc.children)%2 == 0 else (.3, .3, .3, .7)
                     continue
                 ti = TalkInfo(talk=talk)
                 trackscreens[int(tid)-1].ids.container.add_widget(ti)
