@@ -45,7 +45,7 @@ class PyConApp(App):
     '''
     '''
 
-    base_active_color = ListProperty([186/256., 106/256., 54./255, 1])
+    base_active_color = ListProperty([92./256., 110./256., 118./255, 1])
     '''This is the base Color in the app that is used to denote the currently
     active widgets, active buttons and highlited areas. Format
     is RGBA.
@@ -65,7 +65,7 @@ class PyConApp(App):
     defaults to Red(217, 52, 47)
     '''
 
-    base_inactive_light = ListProperty([163/256., 112/256., 80/256., 1])
+    base_inactive_light = ListProperty([142/255.,185/255.,198/255., 2])
     '''This is the base Color in the app that is used to denote the currently
     active color used to display active buttons and highlited areas. Format
     is RGBA.
@@ -75,7 +75,7 @@ class PyConApp(App):
     defaults to Red(225p, 224, 224)
     '''
 
-    base_color = ListProperty([120./255, 64./255, 75./255, 1])
+    base_color = ListProperty([1, 1, 1, 1])
     '''This is the base Color in the app that is used to for bakgrounds.
 
     :attr:`base_color` is a :class:`~kivy.properties.ListProperty`
