@@ -7,11 +7,11 @@ from kivy.lang import Builder
 from kivy.properties import ObjectProperty
 from network import get_data
 from kivy.factory import Factory
-from kivy.uix.stacklayout import StackLayout
+from kivy.uix.boxlayout import BoxLayout
 
 
 
-class Sponsor(StackLayout):
+class Sponsor(BoxLayout):
     ''' This is a simple StackLayout that holds the image 
     '''
     data = ObjectProperty(None)
@@ -35,27 +35,27 @@ class ScreenSponsor(Screen):
             height: dp(10)
             font_size:dp(20)
         
-<Footer@BoxLayout>
-    size_hint_y: .2
-    padding: dp(9)
-    spacing: dp(9)
-    ActiveButton
-        text: 'Sponsor Us'
-        size_hint_y: None
-        height: dp(40)
-        on_release:
-            import webbrowser
-            webbrowser.open('https://conference.pydelhi.org/data/SponsorshipProspectus2017.pdf')
-    ActiveButton
-        text: 'Contact Us'
-        size_hint_y: None
-        height: dp(40)
-        on_release:
-            import webbrowser
-            webbrowser.open('mailto:sponsorship@pydelhi.org')
+# <Footer@BoxLayout>
+#     size_hint_y: .2
+#     padding: dp(9)
+#     spacing: dp(9)
+#     ActiveButton
+#         text: 'Sponsor Us'
+#         size_hint_y: None
+#         height: dp(40)
+#         on_release:
+#             import webbrowser
+#             webbrowser.open('https://conference.pydelhi.org/data/SponsorshipProspectus2017.pdf')
+#     ActiveButton
+#         text: 'Contact Us'
+#         size_hint_y: None
+#         height: dp(40)
+#         on_release:
+#             import webbrowser
+#             webbrowser.open('mailto:sponsorship@pydelhi.org')
 
 <Sponsor>
-    orientation: 'tb-rl'
+    orientation: 'vertical'
     spacing: dp(12)
     size_hint: 1, 1
     BackLabel
@@ -96,6 +96,6 @@ class ScreenSponsor(Screen):
         for s in sponsors:
             bl = Factory.Sponsor(size_hint_y=.8/len(sponsors), data=s)
             main_box.add_widget(bl)
-        footer = Factory.Footer()
-        main_box.add_widget(footer)
+        # footer = Factory.Footer()
+        # main_box.add_widget(footer)
 

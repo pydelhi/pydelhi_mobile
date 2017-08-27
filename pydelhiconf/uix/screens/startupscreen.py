@@ -60,6 +60,7 @@ class StartupScreen(Screen):
         text: root.text
 
 <ImBut@TouchRippleBehavior+ButtonBehavior+Image>
+    color: app.base_active_color
     text_size: self.size
     size_hint_y: None
     mipmap: True

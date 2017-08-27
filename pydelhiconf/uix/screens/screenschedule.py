@@ -16,6 +16,7 @@ from uix.tabbedcarousel import TabbedCarousel
 app = App.get_running_app()
 
 
+
 class TalkInfo(Factory.TouchRippleBehavior, Factory.ButtonBehavior, Factory.BoxLayout):
     '''
     '''
@@ -34,9 +35,9 @@ class TalkInfo(Factory.TouchRippleBehavior, Factory.ButtonBehavior, Factory.BoxL
     size_hint_y: None
     height: max(lblinfo.texture_size[1] + dp(4), dp(40))
     spacing: dp(9)
-    on_release: 
-        scr = app.load_screen('ScreenTalks', manager=app.navigation_manager)
-        scr.talkid = self.talk['talk_id']
+    # on_release: 
+    #     scr = app.load_screen('ScreenTalks', manager=app.navigation_manager)
+    #     scr.talkid = self.talk['talk_id']
     LeftAlignedLabel:
         size_hint: None, 1
         valign: 'middle'

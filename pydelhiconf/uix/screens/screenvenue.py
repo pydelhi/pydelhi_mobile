@@ -49,6 +49,6 @@ class ScreenVenue(Screen):
                 text: 'Get Directions'
                 on_release:
                     import webbrowser
-                    webbrowser.open('https://www.google.co.in/maps/dir/''/iim+lucknow+noida+campus') 
+                    webbrowser.open("https://www.google.co.in/maps/dir/''/IIIT+Delhi/@28.5456102,77.2031102,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x390ce3e564daac1d:0x2c582e340e7bc556!2m2!1d77.2731505!2d28.5456282") 
 ''')
 
