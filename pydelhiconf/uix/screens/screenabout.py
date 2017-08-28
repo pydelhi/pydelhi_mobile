@@ -20,6 +20,7 @@ class ScreenAbout(Screen):
                 size_hint_y: None
                 height: dp(200)
             BackLabel
+                backcolor: app.base_active_color[:3] + [.5]
                 id: comm_desc
             FloatLayout
                 size_hint_y: None

@@ -26,7 +26,7 @@ class SpeakerDetails(Factory.ScrollGrid):
         height: dp(200)
         mipmap: True
     BackLabel
-        backcolor: app.base_inactive_color[:3] + [.5]
+        backcolor: app.base_active_color[:3] + [.5]
         text: root.speaker['name']
     BackLabel
         text: root.speaker['info']
@@ -70,7 +70,7 @@ class ScreenTalks(Screen):
         ScrollGrid
             id: container
             BackLabel:
-                backcolor: app.base_inactive_color[:3] + [.5]
+                backcolor: app.base_active_color[:3] + [.5]
                 id: talk_title
             BackLabel:
                 id: talk_desc

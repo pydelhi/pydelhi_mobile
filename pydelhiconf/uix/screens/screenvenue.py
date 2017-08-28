@@ -43,8 +43,10 @@ class ScreenVenue(Screen):
             height: dp(45)
             spacing: dp(13)
             padding: dp(4)
-            ActiveButton:
-                text: 'Open Street View'
+            Widget
+                # this is a space holder
+            # ActiveButton:
+            #     text: 'Open Street View'
             ActiveButton:
                 text: 'Get Directions'
                 on_release:

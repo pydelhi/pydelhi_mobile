@@ -15,17 +15,17 @@
           "title": "Opening Notes: Conference Committee - James + Manoj",
           "start_time": "09:00",
           "end_time": "09:15",
-          "track": "all"
+          "track": "1"
         },
         {
           "talk_id": "02",
-          "title": "  Keynote: Siraj Raval [Maths Behind Deep Learning]",
+          "title": "Keynote: Siraj Raval [Maths Behind Deep Learning]",
           "start_time": "09:15",
           "end_time": "10:00",
-          "track": "all"
+          "track": "1"
         },
         {
-          "talk_id": "03",
+          "talk_id": "05",
           "title": "Regression Analysis - The good, the bad and the untold - Jalem Raj Rohit",
           "start_time": "10:00",
           "end_time": "10:30",
@@ -61,7 +61,7 @@
         },
         {
           "talk_id": "08",
-          "title": "  Building camera based intelligent applications - Nabarun Pal",
+          "title": "Building camera based intelligent applications - Nabarun Pal",
           "start_time": "11:00",
           "end_time": "11:30",
           "track": "1"
@@ -71,7 +71,7 @@
           "title": "Difficulties in working with the government data and how can tech help us resolve it - Ankita Mathur",
           "start_time": "11:00",
           "end_time": "11:30",
-          "track": "3"
+          "track": "2"
         },
         {
           "talk_id": "10",
@@ -87,26 +87,26 @@
           "end_time": "12:00",
           "track": "2"
         },
-        {
+        { 
           "talk_id": "12",
-          "title": "Lightning Talks",
+          "title": "Keynote: DataScience for social good, Dr. Ponnurangam Kumaraguru",
           "start_time": "12:00",
           "end_time": "12:45",
-          "track": "all"
+          "track": "1"
         },
         {
           "talk_id": "13",
           "title": "Lunch",
           "start_time": "12:45",
           "end_time": "01:45",
-          "track": "2"
+          "track": "all"
         },
         {
           "talk_id": "14",
-          "title": "Keynote: Ponnurangam Kumaraguru [Data Science for Social Good",
+          "title": "Lightning Talks",
           "start_time": "01:45",
           "end_time": "02:30",
-          "track": "all"
+          "track": "1"
         },
         {
           "talk_id": "15",
@@ -131,7 +131,7 @@
          },
         {
           "talk_id": "18",
-          "title": "  Transfer Learning Using Tensorflow and Keras - Dr. Amita Kapoor",
+          "title": "Interestingness of interestingness measures - Simrat Hanspal",
           "start_time": "03:00",
           "end_time": "03:30",
           "track": "1"
@@ -141,11 +141,11 @@
           "title": "Dimensionality Reduction Techniques - You can compress! - Manan Singh",
           "start_time": "03:00",
           "end_time": "03:30",
-          "track": "all"
+          "track": "2"
          },
          {
           "talk_id": "20",
-          "title":"Convex.jl: A native Julia package for real or complex domain Convex Optimization - Ayush Pandey",
+          "title":"Transfer Learning Using Tensorflow and Keras - Dr. Amita Kapoor",
           "start_time": "03:30",
           "end_time": "04:00",
           "track": "1"
@@ -162,21 +162,28 @@
             "title":"Hitchhiker's guide to using Neo4J: Trials & Tribulations of deploying a scalable graph API on Cloud - Vinay Kumar",
             "start_time": "04:00",
             "end_time": "04:30",
-            "track" : "1"
+            "track": "1"
           },
+         {
+          "talk_id": "20",
+          "title":"Convex.jl: A native Julia package for real or complex domain Convex Optimization - Ayush Pandey",
+          "start_time": "03:30",
+          "end_time": "04:00",
+          "track": "2"
+         },
           {
             "talk_id":"23",
             "title":"Tea & Snacks",
             "start_time": "04:30",
             "end_time": "4:45",
-            "track" : "all"
+            "track": "all"
           },
           {
             "talk_id":"24",
             "title":"Keynote: Farhat Habib [Machine Learning in Online Advertising]",
             "start_time": "4:45",
             "end_time": "5:30",
-            "track" : "all"
+            "track": "1"
           }
       ],
       "2017-09-03": [
@@ -192,7 +199,7 @@
           "title": "Keynote: Prabhu Ramachandran [My Experiments with Python]",
           "start_time": "09:00",
           "end_time": "09:45",
-          "track": "all"
+          "track": "1"
         },
         {
           "talk_id": "27",
@@ -217,32 +224,33 @@
         },
         {
           "talk_id": "30",
-          "title": "Interestingness of interestingness measures - Simrat Hanspal",
-          "start_time": "10:15",
-          "end_time": "10:45",
-          "track": "1"
-        },
-        {
-          "talk_id": "31",
-          "title": "Decoding Neural Image Captioning - Sachin Kumar",
-          "start_time": "10:15",
-          "end_time": "10:45",
-          "track": "2",
-          "type": "talk"
-        },
-        {
-          "talk_id": "32",
           "title": "Altair: Declarative Visualizations in Python - Nipun Batra",
-          "start_time": "10:45",
-          "end_time": "11:15",
+          "start_time": "10:15",
+          "end_time": "10:45",
           "track": "1"
         },
         {
           "talk_id": "33",
           "title": "Deep Learning for Semantic Segmentation - Vyom Sharma",
+          "start_time": "10:15",
+          "end_time": "11:45",
+          "track": "2"
+        },
+        {
+          "talk_id": "31",
+          "title": "Invited talk by James powell(VP Numfocus)",
           "start_time": "10:45",
           "end_time": "11:15",
-          "track": "2"
+          "track": "1",
+          "type": "talk"
+        },
+        {
+          "talk_id": "31",
+          "title": "Winning Vision through DenseNets Manan Singh",
+          "start_time": "10:45",
+          "end_time": "11:15",
+          "track": "1",
+          "type": "talk"
         },
         {
           "talk_id": "34",
@@ -284,8 +292,7 @@
           "title": "Keynote: Anuj Gupta [Recent Advances in NLP]",
           "start_time": "01:45",
           "end_time": "02:30",
-          "track": "all"
-
+          "track": "1"
         },
         {
           "talk_id": "40",
@@ -305,7 +312,7 @@
           "talk_id": "42",
           "title": "Visual Storytelling with D3 - Alok K. Shukla",
           "start_time": "02:30",
-          "end_time" : "3:30",
+          "end_time": "3:30",
           "track": "3"
         },
         {
@@ -317,9 +324,9 @@
         },
         {
           "talk_id": "44",
-          "title":"Winning Vision through DenseNets - Manan Singh",
+          "title":"Decoding Neural Image Captioning - Sachin Kumar",
           "start_time": "03:00",
-          "end_time" : "03:30",
+          "end_time": "03:30",
           "track": "2"
         },
         {
@@ -331,7 +338,7 @@
         },
         {
           "talk_id":"46",
-          "title":"TBD",
+          "title":"Pay some attention! - Prakhar Srivastava",
           "start_time": "03:30",
           "end_time": "04:30",
           "track": "2"
@@ -344,23 +351,16 @@
           "track": "3"
         },
         {
-          "talk_id":"47",
-          "title" : "Beyond Clicks: Deep Sequential Models for Task Satisfaction Prediction with Conversational Agents - Rishabh Mehrotra",
-          "start_time": "04:00",
-          "end_time": "04:30",
-          "track": "1"
-        },
-        {
           "talk_id":"48",
           "title": "Open Spaces",
-          "start_time": "04:30",
+          "start_time": "04:00",
           "end_time":"05:00",
           "track":"1"
         },
         {
           "talk_id": "49",
           "title": "BoF Session",
-          "start_time": "04:30",
+          "start_time": "04:00",
           "end_time": "05:00",
           "track": "2"
         },
@@ -369,14 +369,14 @@
           "title": "Closing Notes: Manoj Pandey",
           "start_time":"05:00",
           "end_time":"5:15",
-          "track":"all"
+          "track":"1"
         },
         {
           "talk_id":"51",
           "title":"Raffle Distribution",
           "start_time":"05:15",
           "end_time": "05:30",
-          "track":"all"
+          "track":"1"
         },
         {
           "talk_id":"52",

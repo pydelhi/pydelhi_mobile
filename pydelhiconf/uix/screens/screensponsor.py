@@ -61,6 +61,7 @@ class ScreenSponsor(Screen):
     BackLabel
         text: self.parent.data['name']
         size_hint: 1, None
+        backcolor: app.base_active_color[:3] + [.5]
         height: dp(20)
         font_size:dp(18)
     SponsorImage

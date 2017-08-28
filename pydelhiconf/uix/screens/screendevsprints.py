@@ -22,7 +22,7 @@ class ScreenDevSprints(Screen):
         orientation:'vertical'
         id:main
         BackLabel
-            backcolor: app.base_inactive_color[:3] + [.5]
+            backcolor: app.base_active_color[:3] + [.5]
             text: "Dev Sprints"        
             pos_hint:{'top':1}
             size_hint:1,None
@@ -36,9 +36,10 @@ class ScreenDevSprints(Screen):
             height: dp(200)
             mipmap: True
         BackLabel
+            backcolor: app.base_inactive_color[:3] + [.5]
             text: root.data.get('text1',"")
         BackLabel
-            backcolor: 0, 0, 0, 0
+            backcolor: app.base_active_color[:3] + [.5]
             text:root.data.get('text2',"")
 
 

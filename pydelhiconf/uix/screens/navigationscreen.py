@@ -53,12 +53,12 @@ class NavigationScreen(Screen):
                 MenuButton
                     text: 'OpenSpaces'
                     on_released: app.load_screen('ScreenOpenSpaces', manager=app.navigation_manager)
-                MenuButton
-                    text: 'DevSprints'
-                    on_released: app.load_screen('ScreenDevSprints', manager=app.navigation_manager)
-                MenuButton
-                    text: 'Feedback'
-                    on_released: app.load_screen('ScreenFeedback', manager=app.navigation_manager)
+                # MenuButton
+                #     text: 'DevSprints'
+                #     on_released: app.load_screen('ScreenDevSprints', manager=app.navigation_manager)
+                # MenuButton
+                #     text: 'Feedback'
+                #     on_released: app.load_screen('ScreenFeedback', manager=app.navigation_manager)
                 MenuButton
                     text: 'Ticket'
                     on_released: app.load_screen('ScreenTicket', manager=app.navigation_manager)

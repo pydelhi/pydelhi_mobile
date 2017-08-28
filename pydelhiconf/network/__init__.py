@@ -48,7 +48,6 @@ def _check_data(req, oldata):
         return
     # data is invalid in file
     # overwrite file with old data
-
     write_oldata(req.file_path, oldata)
 
 def on_failure(req, oldata, endpoint):
@@ -64,7 +63,7 @@ def fetch_remote_data(dt):
     endpoint, filepath, oldata = fetch_remote_data._args
     req = UrlRequest(
         #FIXME: initial url should be abstracted out too.
-        'http://conference.pydelhi.org/api/' + endpoint + '.json',
+        'https://raw.githubusercontent.com/akshayaurora/pydatadelhi.github.io/master/events/' + endpoint + '.json',
         file_path=filepath,
         on_success=lambda req ,r2:on_success(req, oldata, endpoint),
         on_error=lambda req ,r2:on_error(req, oldata, endpoint),

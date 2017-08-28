@@ -19,6 +19,7 @@ class ScreenCommunity(Screen):
                 height: dp(120)
             BackLabel
                 id: bcklbl
+                backcolor: app.base_active_color[:3] + [.5]
             GridLayout
                 id: container
                 row: 2

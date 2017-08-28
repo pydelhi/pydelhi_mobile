@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = PyDelhi Conf 2017
+title = PyData Delhi 2017
 
 # (str) Package name
 package.name = conference
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.pydelhiconf
+package.domain = org.pydataconf
 
 # (str) Source code where the main.py live
 source.dir = ./pydelhiconf
