@@ -32,6 +32,19 @@ class ScreenAbout(Screen):
                     width: dp(200)
                     center_x: comm_desc.center_x
                     top: comm_desc.y - dp(10)
+                ActiveButton
+                    size_hint: None, None
+                    width: dp(200)
+                    center_x: comm_desc.center_x
+                    top: but.y - dp(10)
+                    text: 'Fork me on Github.'
+                    on_release: import webbrowser; webbrowser.open('https://github.com/pydelhi/pydelhi_mobile/tree/pydata')
+    ActiveButton
+        text: 'An OpenSource initiative by Quanon Tech'
+        font_size: dp(27)
+        bold: True
+        on_release:
+            import webbrowser; webbrowser.open('http://quanontech.com')
         ''')
 
     def on_pre_enter(self):
