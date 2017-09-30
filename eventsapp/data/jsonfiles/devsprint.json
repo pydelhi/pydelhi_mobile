@@ -1,0 +1,8 @@
+{
+  "0.0.1": 
+    {
+      "image": "https://kushaldas.in/images/pyconin15-3.jpg",
+      "text1": "A sprint is a get-together of people involved in a project to further a focused development of the project. Sprints typically last from one week up to three weeks. Sprints have become popular events in some open-source projects.",
+      "text2": "Have you tried contributing to any Open Source project but lost because of not getting mentorship? Or Start contributing to any Open source project is still in your TODO list? If so, Dev sprint is the best place for you. During Dev sprint, Mentors/Contributors of Open source projects guides participants from generating development build to submit a patch for a bug. It is best opportunity to experience the culture of Open source. People from newbie to experienced together contribute to project. During the session if you are stuck you can solve your confusions instantly from the mentors. From past experience, we found dev sprint projects are not limited for conference days but participants are still active contributor from past year's Devsprint."
+    }
+}

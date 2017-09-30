@@ -1,0 +1,13 @@
+{
+  "0.0.1":[{
+  "name": "PyData Delhi",
+  "venue": "IIIT Delhi",
+  "start_date": "2017-09-2T8:00:00Z",
+  "end_date": "2017-09-3T18:00:00Z",
+  "venue_partners": [{
+      "name": "IIM Lucknow Noida Campus",
+      "about": "Indraprastha Institute of Information Technology, Delhi is an autonomous university in Delhi, India. It is a research-oriented university with a focus on Computer Science and Electronics. The institute began with its first batch of 60 BTech students in 2008. This first batch graduated in 2012 - the first Convocation took place in November, 2012. By that time, the institute has attracted nearly 30 faculty members, and its academic program consisted of B.Tech., M.Tech. and Ph.D. programs in CSE and ECE. Smt. Sheila Dikshit, Chief Minister of Delhi, inaugurated the campus on October, 2012.",
+      "url": "http://iiitd.ac.in/"
+    }]
+  }]
+}

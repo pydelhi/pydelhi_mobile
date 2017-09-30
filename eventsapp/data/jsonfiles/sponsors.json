@@ -1,0 +1,39 @@
+{
+  "0.0.1": [
+    {
+      "name": "Continuum Analytics",
+      "type": "Founding",
+      "website": "https://www.continuum.io/",
+      "logo": "https://paste.opensuse.org/view/raw/2a660545",
+      "about": "Continuum Analytics develops Anaconda, the leading modern open source analytics platform powered by Python. Continuum’s Python-based platform and consulting services empower organizations to analyze, manage and visualize big data - turning massive datasets into actionable insights and business value. Built on proven open-source technology and easily integrated within existing IT environments, Anaconda allows organizations to make critical business decisions based on their data quickly, easily, inexpensively, and with flexibility."
+    },
+    {
+      "name": "Python Software Foundation",
+      "type": "Platinum",
+      "website": "https://www.python.org/psf/",
+      "logo": "https://paste.opensuse.org/view/raw/fdcbff09",
+      "about":"The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and     international community of Python programmers.The Python Software Foundation (PSF) is a 501(c)(3) non-profit corporation that holds the intellectual property rights behind the Python programming language."
+    },
+    {
+      "name": "FOSEE",
+      "type": "Gold",
+      "website": "http://fossee.in/",
+      "logo":"https://paste.opensuse.org/view/raw/e9917ee9",
+      "about":"FOSSEE (Free and Open Source Software in Education) project promotes the use of FOSS tools to improve the quality of education in our country. We aim to reduce dependency on proprietary software in educational institutions."
+    },
+    {
+      "name": "Jetbrain",
+      "type":"Supporting",
+      "website": "https://www.jetbrains.com",
+      "logo":"https://paste.opensuse.org/view/raw/86359545",
+      "about":"At JetBrains, code is our passion. For over 15 years we have strived to make the strongest, most effective developer tools on earth. By automating routine checks and corrections, our tools speed up production, freeing developers to grow, discover and create."
+    },
+    {
+      "name": "Xebia",
+      "type": "Supporting",
+      "website": "http://www.xebia.com",
+      "logo":"https://paste.opensuse.org/view/raw/4844474",
+      "about":"Xebia explores and creates new frontiers. Always one step ahead of what businesses need, we turn the latest technology trends into advantages for our customers. As a mainstream frontrunner, we create new solutions and build the future with our clients.An international network of passionate technologists and pioneering craftsmen, Xebia provides the cutting-edge tools, training and consulting services that make businesses work better, smarter, and faster."
+    }
+  ]
+}

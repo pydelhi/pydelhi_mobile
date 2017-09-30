@@ -1,0 +1,472 @@
+{
+	"0.0.1": [{
+		"00": {
+			"title": "Registration",
+			"description": "Register yourselves and get your goodie bag. Have a great day!",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": " The team of PyDelhi would help you to get registered for the event.\n Please lineup on the registeration counter at the entrance of the venue.",
+				"photo": "https://cdn2.iconfinder.com/data/icons/healer-flat-vol-1/201/registration-reservation-admission-cashier-512.png"
+			}
+		},
+		"01": {
+			"title": "Opening ceremony",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "S R Mustafa & Sheeba Khan",
+				"info": "Official opening of PyDelhiConf 2017. Our presenters Anuvrat Parashar, S R Mustafa, V.P L-Incubator & Sheeba Khan Manager at L-Incubator, would be introducing our special guests to the audience and asking them to speak a few word about the event.",
+				"photo": "http://www.newscaststudio.com/wp-content/uploads/2016/07/2016-rio-olympics-opening-ceremony-promo.png"
+			}
+		},
+		"02": {
+			"title": "High Tea",
+			"description": "Food & Beverages",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "Afternoon tea is a creative way to build relationships. ... a spa, something special to add to a meeting agenda without the sweating",
+				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
+			}
+		},
+		"03": {
+			"title": "Keynote: How & where python is used by scientists",
+			"description": "",
+			"type": "keynote",
+			"speaker": {
+				"name": "Ricardo Rocha",
+				"info": "Ricardo Rocha is a software engineer at CERN. He's currently a member of the CERN OpenStack team, focusing on service and application orchestration and container deployments. Previous work included development of data storage, bookkeeping and monitoring services for the LHC Computing Grid (LCG).",
+				"photo": "https://openparallel.files.wordpress.com/2014/01/ricardo_rocha.jpg",
+				"social": [{
+					"linkedin": "https://www.linkedin.com/in/ricardo-rocha-739aa718"
+				}]
+			}
+		},
+		"04": {
+			"title": "Telegram bot using Python",
+			"description": "Telegram messenger has been a really interesting platform because of its Bot API and the cloud-based file management system. This talk will be a hands-on tutorial about Telegram Bot API and how to use it with Python. I'll be making a new bot on stage using Python Telegram Bot and Telepot.",
+			"type": "talk",
+			"speaker": {
+				"name": "Shashank Kumar",
+				"info": "Shashank is a Computer Science undergrad from Noida Institute Of Engineering and Technology. He's a Python Enthusiast, open source contributor and like to learn about the buzz-words in this technological era. You can find out more about him by the given links. He's given a lightning talk on Telegram Bot using Python on PyDelhi where Ihecreated a bot for PyDelhi's Telegram group which you can see in action on https://telegram.me/pydelhibot",
+				"photo": "https://avatars1.githubusercontent.com/u/10004530?v=3&s=400?=g.jpg",
+				"social": [{
+					"website": "http://shanky.xyz",
+					"github": "https://github.com/realslimshanky",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/telegram-bot-using-python~bW6Ja/"
+				}]
+			}
+		},
+		"05": {
+			"title": "Lets talk about GIL",
+			"description": "I will be talking about Global-Interpreter-Lock (GIL) in Python. It's a mutex that prevents multiple native threads from running in parallel. In essence, this says that a python program cannot do more than one thing at once via threading.There is lot of misconception in majority of Python Programmers regarding Global Interpreter Lock. Most of them think its the worst part of Python. I will try to demonstrate how it actually works and how we can leverage multiple CPU cores for multithreading for I/O and CPU Bound task using C-Extensions. I will also show some comparisons with different implementations of Python and the presence or absence of GIL in those, to answer questions like, why we can't just remove it from CPython and solve all our problems or why Jython performs better in Multithreading for CPU Bound task.",
+			"type": "talk",
+			"speaker": {
+				"name": "Amit Kumar",
+				"info": "I am a Software Development Engineer at Zomato's Machine Learning Team. Before Zomato I was a Software Engineering Intern at HackerEarth's R & D Team. I also participated in Google Summer of Code 2016 as a Mentor in SymPy organization. In 2015 I participated as a Student under Python Software Foundation to work on SymPy's Equation Solvers module in Google Summer of Code 2015. I graduated as a Mathematics and Computing Engineer from Delhi Technological University (formerly known as Delhi College of Engineering) in May 2016. I am a programmer, learner, presenter and a Software Engineer in the process. I have spoken at various national and international conferences and local meetups. I am usually found at New Delhi, India. You may find me with handle @aktech on the Web.",
+				"photo": "http://www.gravatar.com/avatar/8ba60fb7f1b68c0252bd8f63f3e60b24?s=290&20161115",
+				"social": [{
+					"twitter": "https://twitter.com/iaktech",
+					"github": "https://github.com/aktech",
+					"website": "http://iamit.in/",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/lets-talk-about-gil~bkR5a/"
+				}]
+			}
+		},
+		"06": {
+			"title": "Docker-izing and debugging Python applications with VS Code",
+			"description": "A fast paced introduction to Docker. Dockerize your first Python application, learn to debug it while running in containers.",
+			"type": "default",
+			"speaker": {
+				"name": "Brij Raj Singh",
+				"info": "Brij is a Sr. Tech evangelist @Microsoft. Brij has a decade worth of experience in both Microsoft technologies as well as with open source technologies. Brij has architected Highly scalable and reliable solutions using Open source technologies. Brij works with a number of startups to help them shape their products over cloud. He tweets interesting anecdotes on OSS, IOT and Microsoft at @brijrajsingh.",
+				"photo": "https://paste.opensuse.org/images/f539ebb8.jpg",
+				"social": [{
+					"twitter": "www.twitter.com/brijrajsingh",
+					"github": "www.github.com/brijrajsingh",
+					"website": "https://blogs.msdn.microsoft.com/brijrajsingh"
+				}]
+			}
+		},
+		"07": {
+			"title": "Concurrency in Python 3.0 world - Oh My!",
+			"description": "The aim of the workshop is to introduce concurrency and parallel programming to it via Python 3.x. We will be touching upon the basics such as GIL, concurrency vs parallelism etc with real world examples and analogies, so even if you are new to the entire topic, the workshop should suit you.",
+			"type": "workshop",
+			"speaker": {
+				"name": "Anand B. Pillai",
+				"info": "Anand has been a long time advocate and community leader of the Python programming language in India and Bangalore. Anand founded the BangPypers community in Feb 2005 as the result of a meeting of Bangalore Pythonistas. Discussions in this community went on to build other communities and laid the foundation of PyCon India and similar conferences. He has 17+ years of software development experience having worked in a variety of technical roles in a number of software companies. He is currently working as Director Engineering, Synup at Bangalore. His interests are high performance computing architectures, scalability & security. Recently he has been wetting his hands in data visualization and machine learning using Python.",
+				"photo": "https://lh3.googleusercontent.com/-lNLUWSZgn4c/AAAAAAAAAAI/AAAAAAAAAng/1Iz3uTFhRcM/s640/photo.jpg",
+				"social": [{
+					"twitter": "http://twitter.com/skeptichacker",
+					"github": "https://github.com/pythonhacker",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/concurrency-in-the-python-30-world-oh-my~aMj3b/"
+				}]
+			}
+		},
+		"08": {
+			"type": "workshop",
+			"title": "Python 101",
+			"description": "You will learn about the basics of Python. A in depth workshop to help you get started with python development.",
+			"speaker": {
+				"name": "Ashutosh Kumar Singh",
+				"info": "Full Stack Developer at RoadToNaukri.com",
+				"photo": "https://avatars3.githubusercontent.com/u/5015212?v=3&s=400",
+				"social": [{
+					"twitter": "https://twitter.com/juggernaut451",
+					"github": "https://github.com/juggernaut451",
+					"website": "http://ashutoshksingh.com",
+					"facebook": "https://www.facebook.com/ashutosh.k.singh.902?fref=hovercard",
+					"linkedin": "https://www.linkedin.com/in/ashutosh-kumar-singh-a4b59785/",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/developing-scalable-apps-in-python-with-google-app-engine~bmw0e/"
+				}]
+			}
+		},
+		"09": {
+			"title": "Building chatbots with Python/Django",
+			"description": "Conversational interfaces are considered to be the future of UI. Voicebots, text based chatbots are increasingly becoming popular. In this workshop, we will help participants build a chatbot using some of the popular AI engines like api.ai, luis.ai. We will also describe how natural language processing, machine learning play a role the working of chatbots. ",
+			"type": "workshop",
+			"speaker": {
+				"name": "Dorai Thodla & Bhavani Ravi",
+				"info": "Dorai Thodla - Designs and builds skillbots (chatbots for skill development and assessement), conducts Chatbot workshops, Bot Sprints and other events Bhavani Ravi - A developer of Interview Bot and helps Dorai in conductig chatbot workshops and Bot Sprints.",
+				"photo": "http://startupsclub.org/wp-content/uploads/2016/11/dorai-thodla-dd.jpg",
+				"social": [{
+					"website": "http://doraithodla.com/",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/building-chatbots-with-pythondjango~dJ62d/",
+					"github": "https://github.com/dorait",
+					"twitter": "https://twitter.com/dorait?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+				}]
+			}
+		},
+		"10": {
+			"title": "Lunch",
+			"description": "Lunch, the abbreviation for luncheon, is a light meal typically eaten at midday. The origin of the words lunch and luncheon relate to a small snack originally eaten at any time of the day or night. During the 20th century the meaning gradually narrowed to a small or mid-sized meal eaten at midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "Nature provides a free lunch, but only if we control our appetites.",
+				"photo": "https://cristinaparrotte.files.wordpress.com/2011/03/yotam-ottolenghi-vegetarian.jpg?w=640&h=392&crop=1"
+			}
+		},
+		"11": {
+			"title": "Panel Discussion: Data Science Training vs Data Science in the Industry",
+			"description": "- The rift between data science education and data science in the industry, especially how it may lead to bad hiring decisions. The applicability of data science, gap between research and its applicability in real life - Whether Python,as a technology, can help bridge this gap. - Shortcomings of Python as a data science language - if there a few reasons you could pick as to why Python 's a _bad_ language for data  science, what would those be? What can we do to fix these?",
+			"type": "panel",
+			"speaker": {
+				"name": "Jaidev Deshpande, Chris Stucchio, Ricardo Rocha, Kunal Jain",
+				"info": "Various members of industry, educational institutes, community.",
+				"photo": "http://thehipp.org/wp-content/uploads/2015/12/paneldis.jpg"
+			}
+		},
+		"12": {
+			"title": "Property based testing 101",
+			"description": "Writing 'Test' sometimes become a trivial task with the ever increasing code base and underlying feature-set. There are major Importance of testing in the part of writing the software and it is better to introduce testing in the early stage of software development, so it help to identify the defects in the early stage & try to avoid the bugs finding & get resolve in the last critical stage. But with time the TEST Code itself becomes quite huge that it becomes a trivial problem to write test-cases and maintain the same! Hence Property Based Testing",
+			"type": "talk",
+			"speaker": {
+				"name": "Aniket Maithani",
+				"info": "Aniket Maithani works @Corseco Technologies, handles Development & Dev-Ops, B.Tech (CS&E) graduate from Amity University Noida, loves to travel, blogs during free time, cricket Lover, 'CHAI' addict and Plays Guitar too!",
+				"photo": "http://www.aniketmaithani.net/wp-content/uploads/2014/01/298678_2472873745170_994848427_n-300x300.jpg",
+				"social": [{
+					"twitter": "https://twitter.com/2aniketmaithani",
+					"github": "https://github.com/aniketmaithani",
+					"linkedin": "https://in.linkedin.com/in/aniketmaithani",
+					"facebook": "https://facebook.com/aniket.maithani",
+					"Website": "http://www.aniketmaithani.net/",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/property-based-testing-101~aKOna/"
+
+				}]
+			}
+		},
+		"13": {
+			"title": "Debugging: An art for smart",
+			"description": "Debugging sometimes becomes nightmare for developers. Edsger Dijkstra says, If debugging is the process of removing software bugs, then programming must be the process of putting them in. So, we must know a smart and easy debugging style. In this talk we will discuss about python debugging tools pdb and pudb. How with command line we will set breakpoint ,see execution of code ,find the correct line from where and why and what type of error occurred.",
+			"type": "talk",
+			"speaker": {
+				"name": "Pushplata Ranjan",
+				"info": "Pushplata a full-stack developer having 3+ years of experience . BIT Mesra alumni. National player of volleyball. Love to cook.",
+				"photo": "https://pbs.twimg.com/profile_images/779995345220624384/xOJiOILu.jpg",
+				"social": [{
+					"github": "https://github.com/pushp",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/debugging-an-art-for-smart~aO7Na/"
+				}]
+			}
+		},
+		"14": {
+			"title": "Comparing word embeddings with Gensim",
+			"description": "Python has many Natural language processing tools. In particular if someone wants to implement a recommender or a document classifier they face a problem choosing from many open source word embeddings available. In this talk, I will highlight the differences between them. I’ll go through some evaluations, primarily on the three word embeddings, Word2Vec, FastText and WordRank, which are all available either as direct implementation or wrapper in the widely used python library gensim. The results will reflect how these different embeddings specialize on different downstream NLP tasks. As Visualizations are also a crucial part of Data analysis, to understand the structure and underlying patterns that may be held within the data, so I’ll cover about visualizing the word embeddings using TensorBoard and gensim.",
+			"type": "talk",
+			"speaker": {
+				"name": "Parul Sethi",
+				"info": "Parul a third year undergraduate student of Maths and IT at Cluster Innovation Centre, University of Delhi. I contributed for WordRank wrapper and Embedding comparison tutorial to gensim as part of my Incubator project with RaRe Technologies.",
+				"photo": "https://avatars3.githubusercontent.com/u/11822050?v=3&s=460",
+				"social": [{
+					"github": "https://github.com/parulsethi",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/comparing-word-embeddings-with-gensim~eERva/"
+				}]
+			}
+		},
+		"15": {
+			"title": "High Tea",
+			"description": "Food & Beverages",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
+				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
+			}
+		},
+		"16": {
+			"title": "Optimizing Django for building high performance systems",
+			"description": "This talk revolves around profiling & optimization of Django applications. It aims at accreating performance by optimal usage of Django ORM, in-memory caching & handling resource intensive requests asynchronously using task queues such as Celery.",
+			"type": "talk",
+			"speaker": {
+				"name": "Sanyam Khurana",
+				"info": "Sanyam is an Open Source Contributor from Delhi, India. Mostly goes by CuriousLearner all over the web. He contributes to various upstream projects in different organizations & maintains a few of them. He has contributed various patches and bug reports upstream to Gecko Engine from Mozilla Organization. He is a vouched Mozillian & an official Representative of Mozilla and has been listed in AUTHORS as well as credits section of every browser ever released by Mozilla. He mentored for PyDSA in RGSoC 2017. He volunteers for PyCon India and PyDelhiConf and has been an active member of PyDelhi, ILUG-D, LinuxChixIndia and DGPLUG.",
+				"photo": "https://www.gravatar.com/avatar/b3b24db20c76e4a24941c0382718dd43?s=328&d=identicon&r=PG",
+				"social": [{
+					"github": "http://www.github.com/CuriousLearner",
+					"website": "http://www.sanyamkhurana.com/",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/optimizing-django-for-building-high-performance-systems~b68ne/"
+				}]
+			}
+		},
+		"17": {
+			"title": "Functional Programming in Python",
+			"description": "Functional Programming is a programming paradigm that treats functions as the first class citizens and as the fundamental building blocks for any program. This results in a workflow where the programmer focuses on describing what is to be done and not on how it is to be done. Functional programming encourages concise code and safe programming (less OffByOne mistakes). Stateless functions and immutable data structures helps to write concurrent code. In the talk, I would cover the brief overview to Functional Programming and to what extent does Python (more specifically Python3) support these concepts.",
+			"type": "talk",
+			"speaker": {
+				"name": "Shagun Sodhani",
+				"info": "I am a developer working with the Analytics and Data Science team at Adobe Systems where I contribute to solving novel problems in the domain of Machine Learning. I recently won the Outstanding Young Engineers Award as well. I have been actively using Python for the past 4 years. I have previously given talks at PyCon India and Big Data Training Program, IIT Roorkee. I also worked as a teaching assistant for the 3-course series on Data Science and Engineering with Spark XSeries, created by professors from University of California, Berkeley, University of California, Los Angeles and Databricks and offered on the edX platform.",
+				"photo": "https://paste.opensuse.org/images/70594065.png",
+				"social": [{
+					"github": "https://github.com/shagunsodhani",
+					"website": "https://shagunsodhani.in/",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/functional-programming-in-python~aADOe/"
+				}]
+			}
+		},
+		"18": {
+			"title": "Open Spaces",
+			"description": "Open Space is the only process that focuses on expanding time and space for the force of self-organisation to do its thing. Although one can't predict specific outcomes, it's always highly productive for whatever issue people want to attend to. Some of the inspiring side effects that are regularly noted are laughter, hard work which feels like play, surprising results and fascinating new questions. -Michael M Pannwitz, Open Space practitioner.",
+			"type": "talk",
+			"speaker": {
+				"name": "",
+				"info": "The best part about attending any meetups or conferences is getting a chance to converse with people with similar interests. Know about their domains of expertise, tell them about yours and if the interests meet up, collaborate for any future projects/prospects. Open Spaces are exactly for providing such environment for you. So go ahead, find a place, interact with people and make the best of this conference. Have a great time!",
+				"photo": "https://s-media-cache-ak0.pinimg.com/originals/75/71/45/7571452d437eac4801e6c490f5d2401e.jpg",
+				"social": [{}]
+			}
+		},
+		"19": {
+			"title": "Lightning talks",
+			"description": "A lightning talk is a very short presentation lasting only a few minutes, given at a conference or similar forum. Several lightning talks will usually be delivered by different speakers in a single session, sometimes called a data blitz.",
+			"type": "lightningtalks",
+			"speaker": {
+				"name": "Enquire at registeration desk",
+				"info": "People are encouraged to register for lightning talks at the registeration desk",
+				"photo": "https://media.arabnet.me/site_media/uploads/home_page_images/2013/02/07/announcing-lightning-talks-arabnet-beirut-2013.jpg"
+			}
+		},
+		"20": {
+			"title": "Registration",
+			"description": "Register yourselves and get your goodie bag. Have a great day!",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": " The team of PyDelhi would help you to get registered for the event.\n Please lineup on the registeration counter at the entrance of the venue.",
+				"photo": "https://cdn2.iconfinder.com/data/icons/healer-flat-vol-1/201/registration-reservation-admission-cashier-512.png"
+			}
+		},
+		"21": {
+			"title": "High Tea",
+			"description": "Food & Beverages",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
+				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
+			}
+		},
+		"22": {
+			"title": "Multi-threading/Multi-Processing in Python using ZeroMQ.",
+			"description": "This talk will be about writing concurrent python code using ZMQ and its python bindings. There are two schools of thought with regard to concurrency. One believes in shared memory and embraces all the complexities that come bundled with it like mutexes, locks and inter-process communication. The other believes in message passing meaning that threads/processes interact explicitly by sending messages and do not share state. The speaker firmly believes in the message passing school because of its simplicity over shared memory and intends to convert every person in the room through this talk. ZeroMQ allows you to write concise and easy to understand multi threaded code that simulates the message passing model. Your threads dont share state, they communicate only by passing messages. This allows you to later split your threads into separate processes as your application needs evolve.",
+			"type": "talk",
+			"speaker": {
+				"name": "Akash Mishra",
+				"info": "Akash Mishra (@akash47) is working as a software developer at Betaout. He stumbled onto ZeroMQ while wandering in the python land for better concurrency options. ZeroMQ allowed him to keep his hair while writing concurrent code in python and hence he wants to tell everyone about how awesome it is. ",
+				"photo": "http://paste.opensuse.org/images/25961691.jpg",
+				"social": [{
+					"github": "https://github.com/akash-47",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/multi-threadingmulti-processing-in-python-using-zeromq~bDRne/"
+				}]
+			}
+		},
+		"23": {
+			"title": "Mocking in Python",
+			"description": "This talk is going to include introduction to mocking library, difference between mock and stubs, how to use mock in different scenarios, when and where to use.",
+			"type": "talk",
+			"speaker": {
+				"name": "Saurabh Kumar",
+				"info": "Saurabh is technical reviewer at Two Scoops of Django 1.8 & maintainer of pydanny/cookiecutter-django, core developer at python-dotenv, fueled/django-init, pythonindia/junction, fossevents/fossevents.in and senior backend developer at Fueled.",
+				"photo": "https://avatars1.githubusercontent.com/u/236356?v=3&s=460",
+				"social": [{
+					"website": "https://saurabh-kumar.com/",
+					"github": "https://github.com/theskumar",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/mocking-in-python-when-and-how-to-use~eVm1d/"
+				}]
+			}
+		},
+		"24": {
+			"title": "Android app with Python",
+			"description": "What if you could avoid the hassle of writing Java code for building an app for android? What if that app could also work on other platforms? You're looking for an amazing thing called Kivy. To top it all, the cross-platform app is written in Python.",
+			"type": "workshop",
+			"speaker": {
+				"name": "Shivani Bhardwaj",
+				"info": "Shivani Bhardwaj is a programmer from Delhi, India. She has recently started learning kivy and has been building apps for Android and iOS using Kivy. She was also an Outreachy intern for Linux kernel's netfilter project and the recipient of Training Scholarship by The Linux Foundation.",
+				"photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAe5AAAAJDRhNTgxYWM1LTBjYWMtNGZmYS1hMzNmLTg1M2VjNmU3YmYwOA.jpg",
+				"social": [{
+					"twitter": "www.twitter.com/tuxish",
+					"github": "https://github.com/shivan1b",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/android-app-with-python~dNxza/"
+				}]
+			}
+		},
+		"25": {
+			"title": "Tango with Django",
+			"description": "Django is a battery included framework. The framework has saved developers from many falls. It is experienced that development time of Django project is less than any other web framework. Despite having such advantages I have noticed it has a hard learning curve. Django documentation has a nice tutorial section but it is impossible to not lost while implementing it. During this workshop, I will try to introduce Django framework by hacking with blog project. Hands on development will help a newcomer to get an overview of the framework.",
+			"type": "workshop",
+			"speaker": {
+				"name": "Jaysinh Shukla",
+				"info": "Jaysinh Shukla is a Full-stack developer by profession, A Computer scientist by heart, An Actor by gene. I am Speaker, Vimmer, Blogger and Organizer. Core member of PyKutch.",
+				"photo": "https://res.cloudinary.com/hashnode/image/upload/w_400,h_400,c_thumb/v1470247967/ejfhvonpczwucjtao7fo.jpg",
+				"social": [{
+					"twitter": "https://twitter.com/jaysinhp",
+					"github": "https://github.com/ultimatecoder",
+					"website": "http://blog.jaysinh.com/",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/tango-with-django~enZle/"
+				}]
+			}
+		},
+		"26": {
+			"title": "Understanding Neural Networks with Theano",
+			"description": "Theano is not only a powerful tool to build and run deep and shallow neural networks, it is also a wonderful learning resource. Since it works primarily on symbolic mathematical expressions, it can help us understand how learning in neural networks can be interpreted in terms of equations, vectors, variables and Python functions. In this tutorial, participants will get a (very) brief background on the mathematics of neural networks and how to use theano to convert this knowledge into a Python program that can train and use a neural network.",
+			"type": "workshop",
+			"speaker": {
+				"name": "Jaidev Deshpande",
+				"info": "I am a data scientist based in New Delhi. I currently work at Juxt SmartMandate Analytic Solutions as Practice Lead in data science. I have been an active member of the Delhi, Pune and Mumbai Python users' groups and am also an organizer of the SciPy India conference. My background is in statistical signal processing and applications of machine learning in signal processing. I am currently working on various projects involving NLP, recommender systems and deep learning for computer vision.",
+				"photo": "https://pbs.twimg.com/profile_images/733651358662942725/4w2BSenZ.jpg",
+				"social": [{
+					"twitter": "http://twitter.com/jaidevd",
+					"github": "http://github.com/jaidevd",
+					"website": "http://jaidevd.github.io/",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/understanding-neural-networks-with-theano~dwpRe/"
+				}]
+			}
+		},
+		"27": {
+			"title": "Women in Python World",
+			"description": "There are numerous women making big names and doing great things in Python World. We're going to appreciate all such women and have a discussion about current and future state of diversity in the community.",
+			"type": "talk",
+			"speaker": {
+				"name": "Panelists",
+				"info": "",
+				"photo": "http://waysidehotel.com/wp-content/uploads/2015/08/Female-Silhouette.jpg"
+			}
+		},
+		"28": {
+			"title": "Panel Discussion on state of Python in Delhi/NCR",
+			"description": "Talking Points: Current state of education, Python and it's importance in education, Industry and it's expectation. How to bridge the gap?",
+			"type": "panel",
+			"speaker": {
+				"name": "Anuvrat Parashar(Community), Brij Raj Singh(Industry), Nikhil(Education), Shagun Sodhani(Industry)",
+				"info": "Various speakers from the industry, community and education institutes.",
+				"photo": "http://thehipp.org/wp-content/uploads/2015/12/paneldis.jpg"
+			}
+		},
+		"29": {
+			"title": "Lunch",
+			"description": "Lunch, the abbreviation for luncheon, is a light meal typically eaten at midday. The origin of the words lunch and luncheon relate to a small snack originally eaten at any time of the day or night. During the 20th century the meaning gradually narrowed to a small or mid-sized meal eaten at midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.",
+			"type": "default",
+			"speaker": {
+				"name": "Jagmohan & Company",
+				"info": "Nature provides a free lunch, but only if we control our appetites.",
+				"photo": "https://cristinaparrotte.files.wordpress.com/2011/03/yotam-ottolenghi-vegetarian.jpg?w=640&h=392&crop=1"
+			}
+		},
+		"30": {
+			"title": "A lazy programmer's guide to automation",
+			"description": "This talk will give an idea how python and different tool developed over python can be used to automate simple but boring things you do on the web and find out how to interface with whatever you're doing using Python. The main aim of this talk is to provide the attendees an exposure of web automation through various tools and techniques in python like extracting data from a website, browser automation and using different tools built from python to automate the boring stuff with code. Also, I will be going through some real world example codes to give the attendees a gist of what can be done with just the basic knowledge of python.",
+			"type": "talk",
+			"speaker": {
+				"name": "Pradhvan Bisht",
+				"info": "I am a Computer Science Junior at Greater Noida Institute of Technology. I am a web developer and an open source enthusiast. I am also a Python lover and use it to automate everything I can.",
+				"photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAiZAAAAJDQ3YzJkMTNiLWQ1ZmQtNGViYy05ZDM0LThhZTQ1NTdjNzY0Zg.jpg",
+				"social": [{
+					"linkedin": "https://in.linkedin.com/in/pradhvanbisht",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/a-lazy-programmers-guide-to-automation~avgrb/"
+				}]
+			}
+		},
+		"31": {
+			"title": "Creating Image Thumbnails using AWS Lamda",
+			"description": "Amazon web services has a feature which has been doing rounds that is AWS Lambda which allows to instantly react to actions carried in other AWS services, HTTP endpoints, or in-app activity. You can use AWS Lambda to run your code in response to events, such as changes to data in an Amazon S3 bucket or an Amazon DynamoDB table; to run your code in response to HTTP requests using Amazon API Gateway; or invoke your code using API calls made using AWS SDKs. When using AWS Lambda, you are responsible only for your code. AWS Lambda manages the compute fleet that offers a balance of memory, CPU, network, and other resources. So it is very convenient and fast and saves a lot of sweat but implementing it can become a pain if you follow amazon docs by the book.Thumbnail creation of images as a reaction to putting images in S3 is the use case I will be demonstraing to explain how AWS Lambda works.",
+			"type": "talk",
+			"speaker": {
+				"name": "Sidra Effendi",
+				"info": "B.Tech graduate in Computer Science and Engineering, Android app developer and lately dabbling with RESTful APIs and Amazon Web services. Co- founded a startup which has been selected by NASSCOM 10,000 Startups, Digital Ocean Hatch & IBM Global Entrepreneur for mentoring and growth.",
+				"photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAimAAAAJDc2ZDVjNjg5LTY0NzQtNDY5OS1hMWM2LTU0N2ZkMTRlMzFlNw.jpg",
+				"social": [{
+					"github": "https://github.com/Sid675E",
+					"linkedin": "https://www.linkedin.com/in/sidraeffendi/",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/creating-image-thumbnails-using-aws-lamda~bWnga/"
+				}]
+			}
+		},
+		"32": {
+			"title": "An Introduction to Bayesian Statistics for the Python Programmer (no data science experience needed) ",
+			"description": "The legendary economist Paul Samuelson once said, “When my information changes, I alter my conclusions. What do you do, sir?” When new data comes along, a smart man will change his opinion in response to it, rather than clinging to his old opinion when it no longer fits the facts. Bayesian statistics is the mathematically optimal way to change one’s opinions in response to new data. In this talk I’ll provide a pythonic, rather than mathematical, introduction to Bayesian statistics. The target audience is programmers, not data scientists. I’ll show how a numpy array can be used to represent our opinion about the world. I’ll then show how we can use Bayesian statistics to change our opinion when we gain new information. A number of examples will be used for illustration, including disease prediction, compass calibration and detecting errors in production systems. ",
+			"type": "talk",
+			"speaker": {
+				"name": "Chris Stucchio",
+				"info": "Chris Stucchio is the Director of Data Science at Wingify (the parent company of Visual Website Optimizer). He’s had a variety of careers, including physicist, stock trader, call center worker, bodyguard and demolition worker. He’s been using python for scientific computing since the Numarray days (anyone else remember life before Numpy?). He’s a big proponent of careful reasoning and wants to teach the world about the best tool to do that.",
+				"photo": "https://conversionhotel.com/wp-content/uploads/2015/11/chris_stucchio.jpg",
+				"social": [{
+					"github": "https://github.com/stucchio",
+					"website": "https://www.chrisstucchio.com/archives.html",
+					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/an-introduction-to-bayesian-statistics-for-the-python-programmer-no-data-science-experience-needed~e5yBe/"
+				}]
+			}
+		},
+		"33": {
+			"title": "Community efforts and the way forward",
+			"description": "Open Communities in Delhi/NCR. Common issues. How communities can collobrate to grow together.",
+			"type": "talk",
+			"speaker": {
+				"name": "Satyaakam Goswami, Akshay Arora, Anuvrat Parashar, Jaidev Deshpande, Mrutyunjay Mishra",
+				"info": "All open communities from Delhi/NCR are invited to be part of this discussion.",
+				"photo": "http://thehipp.org/wp-content/uploads/2015/12/paneldis.jpg"
+			}
+		},
+		"34": {
+			"title": "High Tea",
+			"description": "Food & Beverages",
+			"proposal": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
+				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg?=e.jpg"
+			}
+		},
+		"35": {
+			"title": "Closing ceremony/ Feedback session",
+			"description": "",
+			"proposal": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		}
+	}]
+}
