@@ -70,15 +70,38 @@ class NavigationScreen(Screen):
     size_hint_y: None
     height: dp(45)
 
+<LeftPanel@BoxLayout>
+    orientation: 'vertical'
+    Image
+        id: img_back
+        source: "data/images/background.png"
+        allow_stretch: True
+        keep_ratio: False
+        size_hint: 1, None
+        height: dp(150)
+        Image
+            source: 'data/images/logo.png'
+            size: img_back.width, img_back.height/3.
+            center: img_back.center
+    BoxLayout
+        orientation: 'vertical'
+        Button
+        Button
+        Button
+        Button
+            text: 'About'
+            on_release:
+                app.navigation_screen.ids.drawer.toggle_state()
+                app.load_screen('AboutScreen', manager=app.navigation_screen.ids.nav_manager)
+
 <NavigationScreen>
     name: 'NavigationScreen'
+    on_parent: app.navigation_screen = self
     NavigationDrawer
+        id: drawer
         anim_type: 'slide_above_anim'
         on_parent: if self.parent: app.navigationdrawer = self
-        BoxLayout
-            orientation: 'vertical'
-            Image
-            Button
+        LeftPanel
         ScreenManager
             id: nav_manager
             on_parent: if self.parent: app.load_screen('WelcomeScreen', manager=self)
