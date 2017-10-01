@@ -6,6 +6,6 @@ PYTHON = python
 theming:
 	$(PYTHON) -m kivy.atlas pydelhiconf/data/default 1024 tools/theming/*.png
 apk:
-	bulldozer android_new debug
+	buildozer android debug
 apk_release:
-	buildozer android_new release
+	buildozer android release
