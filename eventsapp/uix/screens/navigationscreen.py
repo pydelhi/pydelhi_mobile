@@ -26,7 +26,7 @@ But6    |       ----------------------     |
 
 
 # from kivy.factory import Factory
-#Factory.register('NavigationDrawer', module='uix.navigationdrawer')
+# Factory.register('NavigationDrawer', module='uix.navigationdrawer')
 from uix.navigationdrawer import NavigationDrawer
 from kivy.uix.screenmanager import Screen
 from kivy.properties import (ObjectProperty, NumericProperty, OptionProperty,
@@ -130,43 +130,50 @@ class NavigationScreen(Screen):
                 icon_source: 'data/images/menu/calendar.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
-                    app.load_screen('AboutScreen', manager=app.navigation_screen.ids.nav_manager)
+                    app.load_screen('AboutScreen',
+                                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'About'
                 icon_source: 'data/images/menu/about.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
-                    app.load_screen('AboutScreen', manager=app.navigation_screen.ids.nav_manager)
+                    app.load_screen('AboutScreen',
+                                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'Community'
                 icon_source: 'data/images/menu/community.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
-                    app.load_screen('AboutScreen', manager=app.navigation_screen.ids.nav_manager)
+                    app.load_screen('AboutScreen',
+                                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'Venue'
                 icon_source: 'data/images/menu/venue.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
-                    app.load_screen('AboutScreen', manager=app.navigation_screen.ids.nav_manager)
+                    app.load_screen('AboutScreen',
+                                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'Ticket'
                 icon_source: 'data/images/menu/ticket.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
-                    app.load_screen('AboutScreen', manager=app.navigation_screen.ids.nav_manager)
+                    app.load_screen('AboutScreen',
+                                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'Open Source'
                 icon_source: 'data/images/menu/community.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
-                    app.load_screen('AboutScreen', manager=app.navigation_screen.ids.nav_manager)
+                    app.load_screen('AboutScreen',
+                                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'Sponsors'
                 icon_source: 'data/images/menu/sponsor.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
-                    app.load_screen('AboutScreen', manager=app.navigation_screen.ids.nav_manager)
+                    app.load_screen('AboutScreen',
+                                    manager=app.navigation_screen.ids.nav_manager)
 
 <NavigationScreen>
     name: 'NavigationScreen'
@@ -180,7 +187,7 @@ class NavigationScreen(Screen):
         LeftPanel
         ScreenManager
             id: nav_manager
-            on_parent: if self.parent: app.load_screen('WelcomeScreen', manager=self)
-
+            on_parent: if self.parent: app.load_screen('WelcomeScreen',
+                                                       manager=self)
 
 ''')
