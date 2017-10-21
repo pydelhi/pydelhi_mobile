@@ -131,49 +131,49 @@ class NavigationScreen(Screen):
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
                     app.load_screen('AboutScreen',
-                                    manager=app.navigation_screen.ids.nav_manager)
+                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'About'
                 icon_source: 'data/images/menu/about.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
                     app.load_screen('AboutScreen',
-                                    manager=app.navigation_screen.ids.nav_manager)
+                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'Community'
                 icon_source: 'data/images/menu/community.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
                     app.load_screen('AboutScreen',
-                                    manager=app.navigation_screen.ids.nav_manager)
+                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'Venue'
                 icon_source: 'data/images/menu/venue.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
                     app.load_screen('AboutScreen',
-                                    manager=app.navigation_screen.ids.nav_manager)
+                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'Ticket'
                 icon_source: 'data/images/menu/ticket.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
                     app.load_screen('AboutScreen',
-                                    manager=app.navigation_screen.ids.nav_manager)
+                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'Open Source'
                 icon_source: 'data/images/menu/community.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
                     app.load_screen('AboutScreen',
-                                    manager=app.navigation_screen.ids.nav_manager)
+                    manager=app.navigation_screen.ids.nav_manager)
             NavButton
                 button_text: 'Sponsors'
                 icon_source: 'data/images/menu/sponsor.png'
                 on_release:
                     app.navigation_screen.ids.drawer.toggle_state()
                     app.load_screen('AboutScreen',
-                                    manager=app.navigation_screen.ids.nav_manager)
+                    manager=app.navigation_screen.ids.nav_manager)
 
 <NavigationScreen>
     name: 'NavigationScreen'
@@ -187,7 +187,6 @@ class NavigationScreen(Screen):
         LeftPanel
         ScreenManager
             id: nav_manager
-            on_parent: if self.parent: app.load_screen('WelcomeScreen',
-                                                       manager=self)
+            on_parent: if self.parent: app.load_screen('WelcomeScreen', manager=self)
 
 ''')
