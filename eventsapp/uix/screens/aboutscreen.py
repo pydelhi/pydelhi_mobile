@@ -12,5 +12,8 @@ class AboutScreen(Screen):
    Builder.load_string('''
 <AboutScreen>
     name: 'AboutScreen'
-    Button
+    BoxLayout
+        orientation: 'vertical'
+        TopBar
+        Button
  ''')
