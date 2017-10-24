@@ -93,6 +93,16 @@ class NavigationScreen(Screen):
             on_release:
                 app.navigation_screen.ids.drawer.toggle_state()
                 app.load_screen('AboutScreen', manager=app.navigation_screen.ids.nav_manager)
+        Button
+            text: 'Workshop'
+            on_release:
+                app.navigation_screen.ids.drawer.toggle_state()
+                app.load_screen('WorkshopScheduleScreen', manager=app.navigation_screen.ids.nav_manager)
+        Button
+            text: 'Conference'
+            on_release:
+                app.navigation_screen.ids.drawer.toggle_state()
+                app.load_screen('ConferenceScheduleScreen', manager=app.navigation_screen.ids.nav_manager)
 
 <NavigationScreen>
     name: 'NavigationScreen'
