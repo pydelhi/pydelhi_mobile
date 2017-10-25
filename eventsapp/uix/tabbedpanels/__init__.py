@@ -7,9 +7,11 @@ Tabbed Panels:
 from kivy.uix.tabbedpanel import TabbedPanel, TabbedPanelItem
 from kivy.lang import Builder
 from uix.schedulecards import ScheduleCardsContainer
+from kivy.properties import ObjectProperty
 
 
 class DateTabbedPanelItem(TabbedPanelItem):
+
     Builder.load_string('''
 <DateTabbedPanelItem>
     canvas:
@@ -20,9 +22,12 @@ class DateTabbedPanelItem(TabbedPanelItem):
             pos: self.pos[0] + (self.size[0]*.5)/2, self.pos[1]
     background_down: 'data/images/Detail_bar.png'
     background_normal: 'data/images/Detail_bar.png'
+    bold: True
+    font_size: dp(24)
     ''')
 
 class DateTabbedPanel(TabbedPanel):
+
     Builder.load_string('''
 
 <DateTabbedPanel>:
@@ -37,18 +42,9 @@ class DateTabbedPanel(TabbedPanel):
         Rectangle:
             size: self.size
             pos: self.pos
-    DateTabbedPanelItem
-        text: '2nd Nov'
-        bold: True
-        font_size: dp(24)
-        HallTabbedPanel
-    DateTabbedPanelItem:
-        text: '3rd Nov'
-        bold: True
-        font_size: dp(24)
-        HallTabbedPanel
 
     ''')
+
 
 class HallTabbedPanelItem(TabbedPanelItem):
     Builder.load_string('''
@@ -61,6 +57,8 @@ class HallTabbedPanelItem(TabbedPanelItem):
             pos: self.pos[0] + (self.size[0]*.5)/2, self.pos[1]
     background_down: 'data/images/lower-detail-bar.png'
     background_normal: 'data/images/lower-detail-bar.png'
+    bold: True
+    font_size: dp(24)
     ''')
 
 
@@ -71,24 +69,5 @@ class HallTabbedPanel(TabbedPanel):
     tab_pos: "bottom_mid"
     tab_width: self.width/3
     tab_height: dp(60)
-
-    HallTabbedPanelItem:
-        text: 'Audi'
-        bold: True
-        font_size: dp(24)
-        ScheduleCardsContainer
-
-    HallTabbedPanelItem:
-        text: 'Hall 1'
-        bold: True
-        font_size: dp(24)
-        Label:
-            text: 'Second tab content area'
-    HallTabbedPanelItem:
-        text: 'Hall 2'
-        bold: True
-        font_size: dp(24)
-        Label:
-            text: 'Third tab content area'
 
     ''')
