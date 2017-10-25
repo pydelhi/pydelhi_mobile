@@ -3,7 +3,7 @@
 	{
 	  "menu_item_text": "Schedule",
 	  "icon_source": "data/images/menu/calendar.png",
-	  "navigate_to": "AboutScreen"
+	  "navigate_to": "ConferenceScheduleScreen"
 	},
 	{
 	  "menu_item_text": "AboutScreen",

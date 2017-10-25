@@ -119,7 +119,7 @@ class NavigationScreen(Screen):
     background_normal: ''
     on_release:
         app.navigation_screen.ids.drawer.toggle_state()
-        app.load_screen('AboutScreen',
+        app.load_screen(root.navigate_to,
         manager=app.navigation_screen.ids.nav_manager)
     StackLayout:
         pos: self.parent.pos
@@ -163,7 +163,7 @@ class NavigationScreen(Screen):
             data = json.load(data_file)
         menuitems = data.get("0.0.1")
         for item in menuitems:
-            bl = Factory.NavButton(navigate_to="AboutScreen",
+            bl = Factory.NavButton(navigate_to=item['navigate_to'],
                                    menu_item_text=item['menu_item_text'],
                                    icon_source=item['icon_source'])
             menu_container.add_widget(bl)
