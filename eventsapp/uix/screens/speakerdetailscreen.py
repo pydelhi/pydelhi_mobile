@@ -7,6 +7,7 @@ Speaker Detail Screen:
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
 from uix.tabbedpanels import DateTabbedPanel
+import json
 
 
 class SpeakerDetailScreen(Screen):
@@ -17,6 +18,7 @@ class SpeakerDetailScreen(Screen):
     BoxLayout
         orientation: 'vertical'
         TopBar
+        ScheduleCard
  ''')
 
     def on_enter(self, onsuccess = False):

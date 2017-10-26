@@ -6,7 +6,6 @@ Tabbed Panels:
 
 from kivy.uix.tabbedpanel import TabbedPanel, TabbedPanelItem
 from kivy.lang import Builder
-from uix.schedulecards import ScheduleCardsContainer
 from kivy.properties import ObjectProperty
 
 
@@ -25,6 +24,7 @@ class DateTabbedPanelItem(TabbedPanelItem):
     bold: True
     font_size: dp(24)
     ''')
+
 
 class DateTabbedPanel(TabbedPanel):
 

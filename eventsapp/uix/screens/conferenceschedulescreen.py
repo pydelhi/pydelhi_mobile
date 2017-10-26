@@ -9,7 +9,9 @@ from kivy.lang import Builder
 from kivy.factory import Factory
 from kivy.uix.scrollview import ScrollView
 from uix.tabbedpanels import DateTabbedPanel
+from uix.cards import CardsContainer
 import json
+
 
 class ConferenceScheduleScreen(Screen):
 
@@ -41,9 +43,9 @@ class ConferenceScheduleScreen(Screen):
         conferencedatedtab.add_widget(dated_tab_item)
 
     def add_schedule_cards(self, hall_number, data):
-        schedule_card_container = Factory.ScheduleCardsContainer(cols=1,
-                                                                 size_hint_y=None,
-                                                                 size=(self.size[0], self.parent.size[1]))
+        schedule_card_container = CardsContainer(cols=1,
+                                                 size_hint_y=None,
+                                                 size=(self.size[0], self.parent.size[1]))
         hall_number += 1
 
         for talk in data:
@@ -59,12 +61,12 @@ class ConferenceScheduleScreen(Screen):
                                                      end_time=end_time)
                 schedule_card_container.add_widget(schedule_card)
 
-        scrollable_cards = Factory.ScheduleScrollContainer()
+        scrollable_cards = Factory.ScrollableCardContainer()
         scrollable_cards.add_widget(schedule_card_container)
 
         return scrollable_cards
 
-    def on_enter(self, onsuccess = False):
+    def on_pre_enter(self, onsuccess = False):
         with open('eventsapp/data/jsonfiles/schedule.json') as data_file:
             data = json.load(data_file)
 

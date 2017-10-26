@@ -156,7 +156,7 @@ class NavigationScreen(Screen):
 
     ''')
 
-    def on_enter(self, onsuccess = False):
+    def on_pre_enter(self, onsuccess = False):
         menu_container = self.ids.leftpanel.ids.menu_buttons_container
         menu_container.clear_widgets()
         with open('eventsapp/data/jsonfiles/menuitems.json') as data_file:
