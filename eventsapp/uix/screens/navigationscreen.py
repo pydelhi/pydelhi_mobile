@@ -35,6 +35,7 @@ from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.factory import Factory
 from kivy.lang import Builder
+from kivy.app import App
 
 import json
 
@@ -78,15 +79,27 @@ class LeftPanel(BoxLayout):
     ''')
 
 
-class NavigationScreen(Screen):
+class TopBar(BoxLayout):
+
+    back_button_image = StringProperty('data/images/hamburger.png')
+    navigate_back = BooleanProperty(False)
+
+    def on_menu_press(self):
+        app = App.get_running_app()
+        if self.navigate_back:
+            manager = app.navigation_screen.ids.nav_manager
+            manager.transition.direction = 'right'
+            app.load_screen("ConferenceScheduleScreen",
+                            manager=manager)
+        else:
+            app.navigationdrawer.toggle_state()
+
 
     Builder.load_string('''
-<ImgBut@ButtonBehavior+Image>
-
-<TopBar@BoxLayout>
+<TopBar>
     size_hint: 1, None
     height: dp(45)
-    width: dp(45)
+    width: dp(50)
     spacing: dp(15)
     canvas.before:
         Color:
@@ -95,17 +108,25 @@ class NavigationScreen(Screen):
             size: self.size
             pos: self.pos
     ImgBut
-        source: 'data/images/hamburger.png'
+        source: root.back_button_image
         size_hint_x: None
         size_hint_y: 1
         width: self.height
         allow_stretch: True
-        on_release: app.navigationdrawer.toggle_state()
+        on_release: root.on_menu_press()
     Label:
         text: 'PyCon India 2017'
         text_size: self.size
+        font_size: dp(22)
         halign: 'left'
         valign: 'center'
+    ''')
+
+
+class NavigationScreen(Screen):
+
+    Builder.load_string('''
+<ImgBut@ButtonBehavior+Image>
 
 <BButton@Button>
     border: 10, 10, 10, 10

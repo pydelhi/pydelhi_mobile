@@ -18,6 +18,7 @@ class ScheduleCard(ButtonBehavior, BoxLayout):
     start_time = StringProperty()
     end_time = StringProperty()
     navigate_to = StringProperty('SpeakerDetailScreen')
+    speaker_id = StringProperty('00')
 
     def __init__(self, *args, **kwargs):
         super(ScheduleCard, self).__init__(*args, **kwargs)

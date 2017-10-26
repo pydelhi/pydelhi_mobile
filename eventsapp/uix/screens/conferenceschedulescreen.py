@@ -10,6 +10,7 @@ from kivy.factory import Factory
 from kivy.uix.scrollview import ScrollView
 from uix.tabbedpanels import DateTabbedPanel
 from uix.cards import CardsContainer
+from kivy.app import App
 import json
 
 
@@ -66,7 +67,17 @@ class ConferenceScheduleScreen(Screen):
 
         return scrollable_cards
 
+    def on_enter(self):
+        '''
+        This is done to handle to create an effect of going back from SpeakerDetailScreen
+        to ConferenceScheduleScreen.
+        '''
+        app = App.get_running_app()
+        manager = app.navigation_screen.ids.nav_manager
+        manager.transition.direction = 'left'
+
     def on_pre_enter(self, onsuccess = False):
+
         with open('eventsapp/data/jsonfiles/schedule.json') as data_file:
             data = json.load(data_file)
 
