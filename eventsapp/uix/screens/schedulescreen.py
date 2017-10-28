@@ -1,5 +1,5 @@
 '''
-ConferenceScheduleScreen:
+ScheduleScreen:
 =============
 
 '''
@@ -8,6 +8,7 @@ from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
 from kivy.factory import Factory
 from kivy.uix.button import Button
+from kivy.properties import OptionProperty
 from kivy.uix.scrollview import ScrollView
 from uix.tabbedpanels import DateTabbedPanel
 from uix.cards import CardsContainer
@@ -15,19 +16,19 @@ from kivy.app import App
 import json
 
 
-class ConferenceScheduleScreen(Screen):
+class ScheduleScreen(Screen):
 
     Builder.load_string('''
-<ConferenceScheduleScreen>
-    name: 'ConferenceScheduleScreen'
+<ScheduleScreen>
+    name: 'ScheduleScreen'
     BoxLayout
         orientation: 'vertical'
         TopBar
         BoxLayout:
-            id: conferencetab
+            id: scheduletab
     ''')
 
-    def add_dated_tabs(self, conferencedatedtab, title, halls, data):
+    def add_dated_tabs(self, scheduledatedtab, title, halls, data):
         data = data[title]
 
         dated_tab_item = Factory.DateTabbedPanelItem(text=title)
@@ -42,7 +43,7 @@ class ConferenceScheduleScreen(Screen):
             hall_tab.add_widget(hall)
 
         dated_tab_item.add_widget(hall_tab)
-        conferencedatedtab.add_widget(dated_tab_item)
+        scheduledatedtab.add_widget(dated_tab_item)
 
     def add_schedule_cards(self, hall_number, data):
         schedule_card_container = CardsContainer(cols=1,
@@ -71,27 +72,28 @@ class ConferenceScheduleScreen(Screen):
     def on_enter(self):
         '''
         This is done to handle to create an effect of going back from SpeakerDetailScreen
-        to ConferenceScheduleScreen.
+        to ScheduleScreen.
         '''
         app = App.get_running_app()
         manager = app.navigation_screen.ids.nav_manager
         manager.transition.direction = 'left'
 
-    def on_pre_enter(self, onsuccess = False):
+    def on_pre_enter(self):
 
         with open('eventsapp/data/jsonfiles/schedule.json') as data_file:
             data = json.load(data_file)
 
         data = data.get("0.0.1")[0]
-        conferencetab = self.ids.conferencetab
+        scheduletab = self.ids.scheduletab
+        app = App.get_running_app()
 
-        if conferencetab.children:
-            conferencedatedtab = conferencetab.children[0]
+        if scheduletab.children:
+            scheduledatedtab = scheduletab.children[0]
         else:
-            conferencedatedtab = Factory.DateTabbedPanel()
-            conferencetab.add_widget(conferencedatedtab)
+            scheduledatedtab = Factory.DateTabbedPanel()
+            scheduletab.add_widget(scheduledatedtab)
 
         halls, *days = list(data.keys())
         halls = data[halls]
         for day in days:
-            self.add_dated_tabs(conferencedatedtab, day, halls, data)
+            self.add_dated_tabs(scheduledatedtab, day, halls, data)

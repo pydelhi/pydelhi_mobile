@@ -5,11 +5,10 @@ Welcome Screen
 
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
+from kivy.app import App
 
 
 class WelcomeScreen(Screen):
-    '''
-    '''
 
     Builder.load_string('''
 <WelcomeScreen>
@@ -47,6 +46,7 @@ class WelcomeScreen(Screen):
                         background_normal: 'data/images/btn.png'
                         background_down: 'data/images/btn.png'
                         opacity: .8 if self.state == 'normal' else .6
+                        on_release: root.on_press_schedule('workshop')
                     Button
                         size_hint: 1, .1
                         font_size: dp(18)
@@ -54,4 +54,11 @@ class WelcomeScreen(Screen):
                         background_normal: 'data/images/btn.png'
                         background_down: 'data/images/btn.png'
                         opacity: .8 if self.state == 'normal' else .6
-''')
+                        on_release: root.on_press_schedule('conference')
+    ''')
+
+    def on_press_schedule(self, scheduletype):
+        app = App.get_running_app()
+        app.scheduledatatype = scheduletype
+        manager = app.navigation_screen.ids.nav_manager
+        app.load_screen('ScheduleScreen', manager=manager)

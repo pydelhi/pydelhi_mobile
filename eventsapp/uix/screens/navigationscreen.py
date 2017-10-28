@@ -90,7 +90,7 @@ class TopBar(BoxLayout):
         if self.navigate_back:
             manager = app.navigation_screen.ids.nav_manager
             manager.transition.direction = 'right'
-            manager.current = 'ConferenceScheduleScreen'
+            manager.current = 'ScheduleScreen'
         else:
             app.navigationdrawer.toggle_state()
 
