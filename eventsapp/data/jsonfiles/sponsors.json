@@ -1,24 +1,24 @@
 {
   "0.0.1": [
     {
-      "name": "Continuum Analytics",
-      "type": "Founding",
+      "name": "TensorFlow",
+      "type": "Platinum",
       "website": "https://www.continuum.io/",
-      "logo": "https://paste.opensuse.org/view/raw/2a660545",
+      "logo": "https://in.pycon.org/2017/images/sponsor/tensor_flow.jpg",
       "about": "Continuum Analytics develops Anaconda, the leading modern open source analytics platform powered by Python. Continuum’s Python-based platform and consulting services empower organizations to analyze, manage and visualize big data - turning massive datasets into actionable insights and business value. Built on proven open-source technology and easily integrated within existing IT environments, Anaconda allows organizations to make critical business decisions based on their data quickly, easily, inexpensively, and with flexibility."
     },
     {
-      "name": "Python Software Foundation",
+      "name": "HyperTrack",
       "type": "Platinum",
       "website": "https://www.python.org/psf/",
-      "logo": "https://paste.opensuse.org/view/raw/fdcbff09",
+      "logo": "https://in.pycon.org/2017/images/sponsor/hypertrack.png",
       "about":"The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and     international community of Python programmers.The Python Software Foundation (PSF) is a 501(c)(3) non-profit corporation that holds the intellectual property rights behind the Python programming language."
     },
     {
-      "name": "FOSEE",
-      "type": "Gold",
+      "name": "Microsoft",
+      "type": "Platinum",
       "website": "http://fossee.in/",
-      "logo":"https://paste.opensuse.org/view/raw/e9917ee9",
+      "logo":"https://in.pycon.org/2017/images/sponsor/microsoft.png",
       "about":"FOSSEE (Free and Open Source Software in Education) project promotes the use of FOSS tools to improve the quality of education in our country. We aim to reduce dependency on proprietary software in educational institutions."
     },
     {

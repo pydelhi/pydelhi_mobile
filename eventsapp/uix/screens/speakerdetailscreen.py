@@ -54,29 +54,25 @@ class SpeakerDetailScreen(Screen):
         speaker_container.clear_widgets()
 
         def get_valid_value(data, *value):
-            details = []
+            details = {}
             for v in value:
                 try:
-                    v = data.get(v)
-                    if v == None:
-                        details.append("")
-                    details.append(v)
+                    val = data.get(v)
+                    if val == None:
+                        details[v] = ""
+                    details[v] = val
                 except:
-                    details.append("")
+                    details[v] = ""
             return details
 
-        title, description, talk_type = get_valid_value(data, 'title', 'description', 'type')
+        talk_data = get_valid_value(data, 'title', 'description', 'type')
         speaker = data.get('speaker')
-        name, info, photo = get_valid_value(speaker, 'name', 'info', 'photo')
+        speaker_data = get_valid_value(speaker, 'name', 'info', 'photo')
         speaker_social = [] if speaker.get('social') == None else speaker.get('social')
+        speaker_data['speaker_social'] = speaker_social
 
-        speaker_detail_card = Factory.SpeakerDetailCard(speaker_name=name,
-                                                        speaker_info=info,
-                                                        speaker_photo=photo,
-                                                        speaker_social=speaker_social)
-        talk_detail_card = Factory.TalkDetailCard(size_hint=(1, .75),
-                                                  talk_title=title,
-                                                  talk_description=description,
-                                                  talk_type=talk_type)
+        speaker_detail_card = Factory.SpeakerDetailCard(speaker_data=speaker_data)
+        talk_detail_card = Factory.TalkDetailCard(size_hint=(1, .75), talk_data=talk_data)
+
         speaker_container.add_widget(speaker_detail_card)
         speaker_container.add_widget(talk_detail_card)

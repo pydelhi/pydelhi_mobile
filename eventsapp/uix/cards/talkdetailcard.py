@@ -6,15 +6,13 @@ Talk Detail Card:
 
 from kivy.uix.boxlayout import BoxLayout
 from kivy.lang import Builder
-from kivy.properties import StringProperty
+from kivy.properties import ObjectProperty
 from kivy.app import App
 
 
 class TalkDetailCard(BoxLayout):
 
-    talk_title = StringProperty("")
-    talk_description = StringProperty("")
-    talk_type = StringProperty("")
+    talk_data = ObjectProperty()
 
     def __init__(self, *args, **kwargs):
         super(TalkDetailCard, self).__init__(*args, **kwargs)
@@ -31,7 +29,7 @@ class TalkDetailCard(BoxLayout):
     orientation: 'vertical'
     padding: dp(20), dp(10)
     Label:
-        text: root.talk_title
+        text: root.talk_data['title']
         size_hint: 1, .5
         text_size: self.size
         halign: 'left'
@@ -40,14 +38,14 @@ class TalkDetailCard(BoxLayout):
         bold: True
         color: 0, 0, 0, 1
     Label:
-        text: root.talk_description
+        text: root.talk_data['description']
         text_size: self.size
         halign: 'left'
         valign: 'top'
         font_size: dp(18)
         color: 0, 0, 0, 1
     Label:
-        text: root.talk_type
+        text: root.talk_data['type']
         size_hint: 1, .5
         text_size: self.size
         halign: 'left'

@@ -6,7 +6,7 @@ Speaker Detail Card:
 
 from kivy.uix.boxlayout import BoxLayout
 from kivy.lang import Builder
-from kivy.properties import StringProperty, ListProperty
+from kivy.properties import ObjectProperty, StringProperty
 from kivy.uix.image import Image
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.app import App
@@ -16,13 +16,11 @@ import webbrowser
 
 class SpeakerDetailCard(BoxLayout):
 
-    speaker_name = StringProperty("")
-    speaker_info = StringProperty("")
-    speaker_photo = StringProperty("")
-    speaker_social = ListProperty([])
+    speaker_data = ObjectProperty()
 
     def __init__(self, *args, **kwargs):
         super(SpeakerDetailCard, self).__init__(*args, **kwargs)
+        self.speaker_social = self.speaker_data['speaker_social']
         if self.speaker_social != []:
             self.add_social_icons()
 
@@ -39,11 +37,11 @@ class SpeakerDetailCard(BoxLayout):
     BoxLayout:
         orientation: 'vertical'
         AsyncImage
-            source: root.speaker_photo
+            source: root.speaker_data['photo']
         BoxLayout:
             orientation: 'vertical'
             Label:
-                text: root.speaker_name
+                text: root.speaker_data['name']
                 size_hint: 1, .5
                 text_size: self.size
                 halign: 'left'
@@ -52,7 +50,7 @@ class SpeakerDetailCard(BoxLayout):
                 bold: True
                 color: 0, 0, 0, 1
             Label:
-                text: root.speaker_info
+                text: root.speaker_data['info']
                 text_size: self.size
                 halign: 'left'
                 valign: 'top'
@@ -71,7 +69,7 @@ class SpeakerDetailCard(BoxLayout):
         social_icons.clear_widgets()
 
         for icon, address in self.speaker_social[0].items():
-            social_image = 'data/images/social/' + icon + '.png'
+            social_image = 'data/images/social/{}.png'.format(icon)
             social_icons.add_widget(SocialButton(social_image=social_image,
                                                  social_address=address))
 
