@@ -33,15 +33,25 @@ class WelcomeScreen(Screen):
                     text_size: self.size
                     valign: 'center'
                     halign: 'center'
-                    font_size: dp(18)
-                    color: 0, 0, 0, 1
+                    font_size: dp(34)
+                    color: 1, 1, 1, 1
                     bold: True
                 BoxLayout
                     orientation: 'vertical'
-                    padding: dp(50)
                     spacing: dp(45)
-                    BButton
+                    padding: dp(45), dp(45)
+                    Button
+                        size_hint: 1, .1
+                        font_size: dp(18)
                         text: 'Workshop & DevSprints'
-                    BButton
+                        background_normal: 'data/images/btn.png'
+                        background_down: 'data/images/btn.png'
+                        opacity: .8 if self.state == 'normal' else .6
+                    Button
+                        size_hint: 1, .1
+                        font_size: dp(18)
                         text: 'Conference Days'
+                        background_normal: 'data/images/btn.png'
+                        background_down: 'data/images/btn.png'
+                        opacity: .8 if self.state == 'normal' else .6
 ''')

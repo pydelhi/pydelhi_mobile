@@ -18,7 +18,7 @@
 	{
 	  "menu_item_text": "Venue",
 	  "icon_source": "data/images/menu/venue.png",
-	  "navigate_to": "AboutScreen"
+	  "navigate_to": "VenueScreen"
 	},
 	{
 	  "menu_item_text": "Ticket",

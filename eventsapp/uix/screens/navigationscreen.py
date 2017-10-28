@@ -82,6 +82,7 @@ class LeftPanel(BoxLayout):
 class TopBar(BoxLayout):
 
     back_button_image = StringProperty('data/images/hamburger.png')
+    title = StringProperty('PyCon India 2017')
     navigate_back = BooleanProperty(False)
 
     def on_menu_press(self):
@@ -97,8 +98,8 @@ class TopBar(BoxLayout):
     Builder.load_string('''
 <TopBar>
     size_hint: 1, None
-    height: dp(45)
-    width: dp(50)
+    height: dp(50)
+    width: dp(45)
     spacing: dp(15)
     canvas.before:
         Color:
@@ -114,7 +115,8 @@ class TopBar(BoxLayout):
         allow_stretch: True
         on_release: root.on_menu_press()
     Label:
-        text: 'PyCon India 2017'
+        text: root.title
+        shorten: True
         text_size: self.size
         font_size: dp(22)
         halign: 'left'
