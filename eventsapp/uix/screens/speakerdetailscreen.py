@@ -7,11 +7,14 @@ Speaker Detail Screen:
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
 from kivy.factory import Factory
+from kivy.properties import StringProperty, ObjectProperty
 from uix.cards import CardsContainer
 import json
 
 
 class SpeakerDetailScreen(Screen):
+
+    talk_id = StringProperty('')
 
     Builder.load_string('''
 <SpeakerDetailScreen>
@@ -34,51 +37,46 @@ class SpeakerDetailScreen(Screen):
             padding: dp(20), dp(20)
  ''')
 
-    def add_speaker_details(self, speaker_container, speaker_name, speaker_info, speaker_image, speaker_social):
-        speaker_detail_card = Factory.SpeakerDetailCard(speaker_name=speaker_name,
-                                                        speaker_info=speaker_info,
-                                                        speaker_image=speaker_image,
-                                                        speaker_social=speaker_social)
-        speaker_container.add_widget(speaker_detail_card)
-
-    def add_talk_details(self, speaker_container, talk_title, talk_description, talk_type):
-        talk_detail_card = Factory.TalkDetailCard(size_hint=(1, .75), 
-                                                  talk_title=talk_title,
-                                                  talk_description=talk_description,
-                                                  talk_type=talk_type)
-        speaker_container.add_widget(talk_detail_card)
-
     def load_data(self):
         with open('eventsapp/data/jsonfiles/tracks.json') as data_file:
             data = json.load(data_file)
 
-        data = data.get("0.0.1")[0].get('07')
-        return data
+        if self.talk_id:
+            data = data.get("0.0.1")[0].get(self.talk_id)
+            return data
 
-    def on_pre_enter(self, onsuccess = False):
+    def on_pre_enter(self):
+        speaker_container = self.ids.speaker_container
+
+    def on_enter(self, onsuccess = False):
         data = self.load_data()
-
-        talk_title = data.get('title')
-        talk_description = data.get('description')
-        talk_type = data.get('type')
-
-        speaker = data.get('speaker')
-        speaker_name = speaker.get('name')
-        speaker_info = speaker.get('info')
-        speaker_image = speaker.get('photo')
-        speaker_social = speaker.get('social')
-        if speaker_social == None:
-            speaker_social = []
-
         speaker_container = self.ids.speaker_container
         speaker_container.clear_widgets()
 
-        self.add_speaker_details(speaker_container,
-                                 speaker_name,
-                                 speaker_info,
-                                 speaker_image,
-                                 speaker_social)
-        self.add_talk_details(speaker_container,
-                              talk_title,
-                              talk_description,
-                              talk_type)
+        def get_valid_value(data, *value):
+            details = []
+            for v in value:
+                try:
+                    v = data.get(v)
+                    if v == None:
+                        details.append("")
+                    details.append(v)
+                except:
+                    details.append("")
+            return details
+
+        title, description, talk_type = get_valid_value(data, 'title', 'description', 'type')
+        speaker = data.get('speaker')
+        name, info, photo = get_valid_value(speaker, 'name', 'info', 'photo')
+        speaker_social = [] if speaker.get('social') == None else speaker.get('social')
+
+        speaker_detail_card = Factory.SpeakerDetailCard(speaker_name=name,
+                                                        speaker_info=info,
+                                                        speaker_photo=photo,
+                                                        speaker_social=speaker_social)
+        talk_detail_card = Factory.TalkDetailCard(size_hint=(1, .75),
+                                                  talk_title=title,
+                                                  talk_description=description,
+                                                  talk_type=talk_type)
+        speaker_container.add_widget(speaker_detail_card)
+        speaker_container.add_widget(talk_detail_card)

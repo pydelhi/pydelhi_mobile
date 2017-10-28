@@ -7,6 +7,7 @@ ConferenceScheduleScreen:
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
 from kivy.factory import Factory
+from kivy.uix.button import Button
 from kivy.uix.scrollview import ScrollView
 from uix.tabbedpanels import DateTabbedPanel
 from uix.cards import CardsContainer
@@ -22,8 +23,8 @@ class ConferenceScheduleScreen(Screen):
     BoxLayout
         orientation: 'vertical'
         TopBar
-        DateTabbedPanel
-            id: conferencedatedtab
+        BoxLayout:
+            id: conferencetab
     ''')
 
     def add_dated_tabs(self, conferencedatedtab, title, halls, data):
@@ -82,8 +83,13 @@ class ConferenceScheduleScreen(Screen):
             data = json.load(data_file)
 
         data = data.get("0.0.1")[0]
-        conferencedatedtab = self.ids.conferencedatedtab
-        conferencedatedtab.clear_widgets()
+        conferencetab = self.ids.conferencetab
+
+        if conferencetab.children:
+            conferencedatedtab = conferencetab.children[0]
+        else:
+            conferencedatedtab = Factory.DateTabbedPanel()
+            conferencetab.add_widget(conferencedatedtab)
 
         halls, *days = list(data.keys())
         halls = data[halls]

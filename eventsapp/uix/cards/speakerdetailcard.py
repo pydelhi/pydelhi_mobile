@@ -18,7 +18,7 @@ class SpeakerDetailCard(BoxLayout):
 
     speaker_name = StringProperty("")
     speaker_info = StringProperty("")
-    speaker_image = StringProperty("")
+    speaker_photo = StringProperty("")
     speaker_social = ListProperty([])
 
     def __init__(self, *args, **kwargs):
@@ -39,7 +39,7 @@ class SpeakerDetailCard(BoxLayout):
     BoxLayout:
         orientation: 'vertical'
         AsyncImage
-            source: root.speaker_image
+            source: root.speaker_photo
         BoxLayout:
             orientation: 'vertical'
             Label:
