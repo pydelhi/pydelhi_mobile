@@ -1,4 +1,4 @@
-PyCon India 2017 Application 
+PyCon India 2017 Application
 =======
 > Mobile App for PyConIndia
 
@@ -12,6 +12,7 @@ WIP
 ### To test install kivy and run the following::
 
     $ python eventsapp/main.py -m screen:droid2,portrait -m inspector
+    $ python3 eventsapp/main.py -m screen:droid2,portrait -m inspector
 
 ### Help on screens
 - https://kivy.org/docs/api-kivy.modules.screen.html
@@ -19,7 +20,7 @@ WIP
 ## To change images in app
    - Paste/change the image in PyCon-Mobile-App/tools/theming
    - Change your directory to PyCon-Mobile-App
-   - Run command ``make theming`` 
+   - Run command ``make theming``
 
 This command will aggregate all the png images in your file to one atlas
 from which the images are loaded.

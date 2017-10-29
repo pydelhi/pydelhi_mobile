@@ -35,6 +35,7 @@ from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.factory import Factory
 from kivy.lang import Builder
+from kivy.app import App
 
 import json
 
@@ -78,14 +79,26 @@ class LeftPanel(BoxLayout):
     ''')
 
 
-class NavigationScreen(Screen):
+class TopBar(BoxLayout):
+
+    back_button_image = StringProperty('data/images/hamburger.png')
+    title = StringProperty('PyCon India 2017')
+    navigate_back = BooleanProperty(False)
+
+    def on_menu_press(self):
+        app = App.get_running_app()
+        if self.navigate_back:
+            manager = app.navigation_screen.ids.nav_manager
+            manager.transition.direction = 'right'
+            manager.current = 'ScheduleScreen'
+        else:
+            app.navigationdrawer.toggle_state()
+
 
     Builder.load_string('''
-<ImgBut@ButtonBehavior+Image>
-
-<TopBar@BoxLayout>
+<TopBar>
     size_hint: 1, None
-    height: dp(45)
+    height: dp(50)
     width: dp(45)
     spacing: dp(15)
     canvas.before:
@@ -95,17 +108,26 @@ class NavigationScreen(Screen):
             size: self.size
             pos: self.pos
     ImgBut
-        source: 'data/images/hamburger.png'
+        source: root.back_button_image
         size_hint_x: None
         size_hint_y: 1
         width: self.height
         allow_stretch: True
-        on_release: app.navigationdrawer.toggle_state()
+        on_release: root.on_menu_press()
     Label:
-        text: 'PyCon India 2017'
+        text: root.title
+        shorten: True
         text_size: self.size
+        font_size: dp(22)
         halign: 'left'
         valign: 'center'
+    ''')
+
+
+class NavigationScreen(Screen):
+
+    Builder.load_string('''
+<ImgBut@ButtonBehavior+Image>
 
 <BButton@Button>
     border: 10, 10, 10, 10
@@ -119,7 +141,7 @@ class NavigationScreen(Screen):
     background_normal: ''
     on_release:
         app.navigation_screen.ids.drawer.toggle_state()
-        app.load_screen('AboutScreen',
+        app.load_screen(root.navigate_to,
         manager=app.navigation_screen.ids.nav_manager)
     StackLayout:
         pos: self.parent.pos
@@ -139,8 +161,6 @@ class NavigationScreen(Screen):
             bold: True
             color: 0, 0, 0, 1
 
-
-
 <NavigationScreen>
     name: 'NavigationScreen'
     on_parent: app.navigation_screen = self
@@ -158,15 +178,14 @@ class NavigationScreen(Screen):
 
     ''')
 
-    def on_enter(self, onsuccess = False):
+    def on_pre_enter(self, onsuccess = False):
         menu_container = self.ids.leftpanel.ids.menu_buttons_container
         menu_container.clear_widgets()
         with open('eventsapp/data/jsonfiles/menuitems.json') as data_file:
             data = json.load(data_file)
         menuitems = data.get("0.0.1")
-
         for item in menuitems:
-            bl = Factory.NavButton(navigate_to="AboutScreen",
+            bl = Factory.NavButton(navigate_to=item['navigate_to'],
                                    menu_item_text=item['menu_item_text'],
                                    icon_source=item['icon_source'])
             menu_container.add_widget(bl)

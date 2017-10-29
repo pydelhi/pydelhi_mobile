@@ -18,7 +18,7 @@ PyCon-Mobile-App
 |___ tests: "All our tests go here"
 '''
 
-# imports 
+# imports
 import os, sys
 from os.path import abspath, dirname
 script_path = os.path.dirname(os.path.realpath(__file__))
@@ -27,13 +27,15 @@ script_path = os.path.dirname(os.path.realpath(__file__))
 module_path = script_path + '/uix/screens/'
 sys.path.insert(0, module_path)
 
-
+from kivy.properties import OptionProperty
 from kivy.app import App
 
 
 class EventsApp(App):
     '''This is our entry point for the application
     '''
+
+    scheduledatatype = OptionProperty('all', options=["conference", "workshop", "all"])
     
     def build(self):
        from kivy.uix.screenmanager import ScreenManager
@@ -43,7 +45,7 @@ class EventsApp(App):
 
     def on_start(self):
        self.load_screen('LogoScreen')
-    
+
     def on_pause(self):
         # allow the app to pause on android and ios
         return True
@@ -69,13 +71,13 @@ class EventsApp(App):
         # load screen modules dynamically
         # for example load_screen('LoginScreen')
         # will look for uix/screens/loginscreen
-        # load LoginScreen 
+        # load LoginScreen
         module_path = screen.lower()
         if not hasattr(self, module_path):
             import imp
             module = imp.load_module(screen, *imp.find_module(module_path))
             screen_class = getattr(module, screen)
-            sc = screen_class() 
+            sc = screen_class()
             sc.from_back = not store_back
             setattr(self, module_path, sc)
             manager.add_widget(sc)
