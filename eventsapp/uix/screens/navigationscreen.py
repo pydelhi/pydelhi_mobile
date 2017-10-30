@@ -37,6 +37,8 @@ from kivy.factory import Factory
 from kivy.lang import Builder
 from kivy.app import App
 
+from uix.buttons import ImageButton
+
 import json
 
 
@@ -107,12 +109,8 @@ class TopBar(BoxLayout):
         Rectangle:
             size: self.size
             pos: self.pos
-    ImgBut
+    ImageButton:
         source: root.back_button_image
-        size_hint_x: None
-        size_hint_y: 1
-        width: self.height
-        allow_stretch: True
         on_release: root.on_menu_press()
     Label:
         text: root.title
@@ -127,16 +125,6 @@ class TopBar(BoxLayout):
 class NavigationScreen(Screen):
 
     Builder.load_string('''
-<ImgBut@ButtonBehavior+Image>
-
-<BButton@Button>
-    border: 10, 10, 10, 10
-    background_normal: 'data/images/btn.png'
-    background_down: 'data/images/btn.png'
-    opacity: 1 if self.state == 'normal' else .9
-    size_hint_y: None
-    height: dp(45)
-
 <NavButton>
     background_normal: ''
     on_release:

@@ -10,6 +10,7 @@ from kivy.properties import ObjectProperty, StringProperty
 from kivy.uix.image import Image
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.app import App
+from uix.buttons import SocialButton
 
 import webbrowser
 

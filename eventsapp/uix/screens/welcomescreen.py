@@ -6,6 +6,7 @@ Welcome Screen
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
 from kivy.app import App
+from uix.buttons import ThemeButton
 
 
 class WelcomeScreen(Screen):
@@ -39,21 +40,13 @@ class WelcomeScreen(Screen):
                     orientation: 'vertical'
                     spacing: dp(45)
                     padding: dp(45), dp(45)
-                    Button
+                    ThemeButton:
                         size_hint: 1, .1
-                        font_size: dp(18)
                         text: 'Workshop & DevSprints'
-                        background_normal: 'data/images/btn.png'
-                        background_down: 'data/images/btn.png'
-                        opacity: .8 if self.state == 'normal' else .6
                         on_release: root.on_press_schedule('workshop')
-                    Button
+                    ThemeButton:
                         size_hint: 1, .1
-                        font_size: dp(18)
                         text: 'Conference Days'
-                        background_normal: 'data/images/btn.png'
-                        background_down: 'data/images/btn.png'
-                        opacity: .8 if self.state == 'normal' else .6
                         on_release: root.on_press_schedule('conference')
     ''')
 
