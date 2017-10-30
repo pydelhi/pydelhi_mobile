@@ -1,7 +1,6 @@
 '''
 AboutScreen:
 =============
-Display the logo
 '''
 
 from kivy.uix.screenmanager import Screen
@@ -19,8 +18,6 @@ class AboutScreen(Screen):
 <AboutScreen>
     name: 'AboutScreen'
     BoxLayout
-        orientation: 'vertical'
-
         orientation: 'vertical'
         TopBar
         BoxLayout:
