@@ -5,14 +5,11 @@ Open Space Screen:
 
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
-from kivy.properties import ObjectProperty
 from uix.buttons import SocialButton
 import json
 
 
 class OpenSpaceScreen(Screen):
-
-    data = ObjectProperty()
 
     Builder.load_string('''
 <OpenSpaceScreen>
