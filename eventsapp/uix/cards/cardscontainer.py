@@ -7,6 +7,7 @@ Cards Container:
 from kivy.lang import Builder
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.stacklayout import StackLayout
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.gridlayout import GridLayout
 from kivy.app import App
@@ -57,4 +58,49 @@ class CardsContainer(GridLayout):
         Rectangle:
             size: self.size
             pos: self.pos
+    ''')
+
+
+class CardBoxLayout(BoxLayout):
+
+    Builder.load_string('''
+<CardBoxLayout>:
+    orientation: 'vertical'
+    padding: dp(20), dp(10)
+    spacing: dp(40)
+    canvas:
+        Color:
+            rgba: (.91, .91, .91, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [dp(10)]
+        Color:
+            rgba: (0, 0, 0, 1)
+            a: 1
+        Line:
+            rounded_rectangle: (self.pos[0],self.pos[1],self.size[0],self.size[1], 10)
+    ''')
+
+class CardStackLayout(StackLayout):
+
+    Builder.load_string('''
+<CardStackLayout>:
+    pos: self.parent.pos
+    size: self.parent.size
+    orientation: 'lr-tb'
+    padding: dp(20), dp(10)
+    spacing: dp(40)
+    canvas:
+        Color:
+            rgba: (.91, .91, .91, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [dp(10)]
+        Color:
+            rgba: (0, 0, 0, 1)
+            a: 1
+        Line:
+            rounded_rectangle: (self.pos[0],self.pos[1],self.size[0],self.size[1], 10)
     ''')

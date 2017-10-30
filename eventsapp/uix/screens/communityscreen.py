@@ -8,6 +8,7 @@ from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
 from kivy.properties import ObjectProperty
 from uix.buttons import SocialButton
+from uix.cards import CardsContainer, CardStackLayout
 import json
 from itertools import islice
 
@@ -17,44 +18,34 @@ class CommunityScreen(Screen):
     Builder.load_string('''
 <CommunityScreen>
     name: 'CommunityScreen'
-    BoxLayout
+    BoxLayout:
         orientation: 'vertical'
         TopBar
-        StackLayout:
-            pos: self.parent.pos
-            size: self.parent.size
-            orientation: 'lr-tb'
-
-            padding: dp(20), dp(10)
-            spacing: dp(40)
-            canvas:
-                Color:
-                    rgba: (.91, .91, .91, 1)
-                Rectangle:
-                    pos: self.pos
-                    size: self.size
-            AsyncImage
-                id: logo
-                size_hint_y: None
-                height: self.parent.height/4
-                source: 'data/images/logo.png'
-            Label:
-                id: about
-                text: ''
-                size_hint_y: None
-                height: self.parent.height/4
-                text_size: self.size
-                halign: 'center'
-                valign: 'center'
-                font_size: dp(20)
-                color: 0, 0, 0, 1
-            BoxLayout:
-                orientation: 'vertical'
-                spacing: dp(20)
-                size_hint_y: None
-                size: self.size[0], dp(150)
-                id: social_icons
-                padding: dp(10), dp(15)
+        CardsContainer:
+            size_hint_y: 1
+            CardStackLayout:
+                AsyncImage
+                    id: logo
+                    size_hint_y: None
+                    height: self.parent.height/4
+                    source: 'data/images/logo.png'
+                Label:
+                    id: about
+                    text: ''
+                    size_hint_y: None
+                    height: self.parent.height/4
+                    text_size: self.size
+                    halign: 'center'
+                    valign: 'center'
+                    font_size: dp(20)
+                    color: 0, 0, 0, 1
+                BoxLayout:
+                    orientation: 'vertical'
+                    spacing: dp(20)
+                    size_hint_y: None
+                    size: self.size[0], dp(150)
+                    id: social_icons
+                    padding: dp(10), dp(15)
     ''')
 
     def add_social_icons(self, instance, data):
