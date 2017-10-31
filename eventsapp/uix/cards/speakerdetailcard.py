@@ -6,10 +6,12 @@ Speaker Detail Card:
 
 from kivy.uix.boxlayout import BoxLayout
 from kivy.lang import Builder
-from kivy.properties import ObjectProperty, StringProperty
+from kivy.metrics import dp
+from kivy.properties import ObjectProperty, StringProperty, BoundedNumericProperty
 from kivy.uix.image import Image
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.app import App
+from uix.buttons import SocialButton
 
 import webbrowser
 
@@ -29,9 +31,16 @@ class SpeakerDetailCard(BoxLayout):
     canvas:
         Color:
             rgba: (.91, .91, .91, 1)
-        Rectangle:
-            pos: self.pos
+        RoundedRectangle:
             size: self.size
+            pos: self.pos
+            radius: [dp(10)]
+        Color:
+            rgba: (0, 0, 0, 1)
+            a: 1
+        Line:
+            rounded_rectangle: (self.pos[0],self.pos[1],self.size[0],self.size[1], 10)
+
     orientation: 'vertical'
     padding: dp(20), dp(10)
     BoxLayout:

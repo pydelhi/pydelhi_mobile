@@ -28,9 +28,15 @@ class SponsorDetailCard(BoxLayout):
     canvas:
         Color:
             rgba: (.91, .91, .91, 1)
-        Rectangle:
-            pos: self.pos
+        RoundedRectangle:
             size: self.size
+            pos: self.pos
+            radius: [dp(10)]
+        Color:
+            rgba: (0, 0, 0, 1)
+            a: 1
+        Line:
+            rounded_rectangle: (self.pos[0],self.pos[1],self.size[0],self.size[1], 10)
     orientation: 'vertical'
     padding: dp(10), dp(10)
     size_hint_y: None

@@ -13,7 +13,7 @@
 	{
 	  "menu_item_text": "Community",
 	  "icon_source": "data/images/menu/community.png",
-	  "navigate_to": "AboutScreen"
+	  "navigate_to": "CommunityScreen"
 	},
 	{
 	  "menu_item_text": "Venue",
@@ -26,9 +26,9 @@
 	  "navigate_to": "AboutScreen"
 	},
 	{
-	  "menu_item_text": "Open Source",
+	  "menu_item_text": "Open Space",
 	  "icon_source": "data/images/menu/community.png",
-	  "navigate_to": "AboutScreen"
+	  "navigate_to": "OpenSpaceScreen"
 	},
 	{
 	  "menu_item_text": "Sponsors",

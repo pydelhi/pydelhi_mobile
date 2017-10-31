@@ -70,3 +70,8 @@ target/
 
 # venv
 venv
+
+# maps
+cache/
+
+.DS_Store
