@@ -1,13 +1,13 @@
 {
-  "0.0.1":[{
-  "name": "PyCon India 2017",
-  "venue": "Shaheed Sukhdev College Of Business Studies",
+  "0.0.2":[{
+  "name": "PyCon India 2018",
+  "venue": "Hyderabad International Convention Centre",
   "start_date": "2017-10-02T8:00:00Z",
   "end_date": "2017-10-05T18:00:00Z",
   "venue_partners": [{
-      "name": "Shaheed Sukhdev College Of Business Studies",
-      "about": "Shaheed Sukhdev College of Business Studies (CBS) is one of the premier institution of the University of Delhi, imparting education in the fields of management and information technology with excellence and vision. It was established in August,1987 by the Delhi Administration on the initiation of UGC and the Ministry of Human Resources. The vision behind the college was of its first principal Dr. S.S. Gulshan.",
-      "url": "http://www.sscbs.du.ac.in/"
+      "name": "Hyderabad International Convention Centre",
+      "about": "Hyderabad International Convention Centre is India's first purpose - built and state - of - the - art convention facility managed by AccorHotels, the world's leading hospitality and tourism management group.",
+      "url": "http://www.hicc.com/"
     }]
   }]
 }
