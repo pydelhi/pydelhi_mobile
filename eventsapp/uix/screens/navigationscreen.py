@@ -153,7 +153,7 @@ class NavigationScreen(Screen):
         on_parent: if self.parent: app.navigationdrawer = self
         LeftPanel
             id: leftpanel
-            on_right: nav_manager.opacity = 1.15 - (self.right/drawer.side_panel_width) 
+            on_right: nav_manager.opacity = 1.15 - (self.right/drawer.side_panel_width)
         ScreenManager
             id: nav_manager
             on_parent: if self.parent: app.load_screen('WelcomeScreen', manager=self)
