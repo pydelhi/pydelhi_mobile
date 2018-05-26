@@ -31,8 +31,6 @@ from uix.navigationdrawer import NavigationDrawer
 from kivy.uix.screenmanager import Screen
 from kivy.properties import (ObjectProperty, NumericProperty, OptionProperty,
                              BooleanProperty, StringProperty)
-from kivy.uix.button import Button
-from kivy.uix.boxlayout import BoxLayout
 from kivy.factory import Factory
 from kivy.lang import Builder
 from kivy.app import App
@@ -42,13 +40,13 @@ from uix.buttons import ImageButton
 import json
 
 
-class NavButton(Button):
+class NavButton(Factory.ButtonBehavior, Factory.BoxLayout):
     menu_item_text = StringProperty('')
     icon_source = StringProperty('')
     navigate_to = StringProperty('')
 
 
-class LeftPanel(BoxLayout):
+class LeftPanel(Factory.BoxLayout):
     Builder.load_string('''
 <LeftPanel>
     orientation: 'vertical'
@@ -64,7 +62,7 @@ class LeftPanel(BoxLayout):
         allow_stretch: True
         keep_ratio: False
         size_hint: 1, None
-        height: max(dp(250), 0.25*self.parent.height)
+        height: self.width/2
         Image
             source: 'data/images/logo.png'
             size: img_back.width, img_back.height/3.
@@ -81,7 +79,7 @@ class LeftPanel(BoxLayout):
     ''')
 
 
-class TopBar(BoxLayout):
+class TopBar(Factory.BoxLayout):
 
     back_button_image = StringProperty('data/images/hamburger.png')
     title = StringProperty('PyCon India 2017')
@@ -126,28 +124,24 @@ class NavigationScreen(Screen):
 
     Builder.load_string('''
 <NavButton>
-    background_normal: ''
+    padding: dp(10)
+    spacing: dp(10)
     on_release:
         app.navigation_screen.ids.drawer.toggle_state()
         app.load_screen(root.navigate_to,
         manager=app.navigation_screen.ids.nav_manager)
-    StackLayout:
-        pos: self.parent.pos
-        size: self.parent.size
-        orientation: 'lr-tb'
-        Image:
-            source: root.icon_source
-            size_hint_x: None
-            width: 0.4*self.parent.width
-        Label:
-            size_hint_x: None
-            text: root.menu_item_text
-            text_size: dp(150), None
-            halign: 'left'
-            valign: 'center'
-            font_size: dp(18)
-            bold: True
-            color: 0, 0, 0, 1
+    Image:
+        source: root.icon_source
+        size_hint_x: None
+        width: self.height
+    Label:
+        text: root.menu_item_text
+        text_size: self.size
+        halign: 'left'
+        valign: 'center'
+        font_size: dp(18)
+        color: 0, 0, 0, 1
+
 
 <NavigationScreen>
     name: 'NavigationScreen'
@@ -155,11 +149,11 @@ class NavigationScreen(Screen):
     NavigationDrawer
         id: drawer
         anim_type: 'slide_above_simple'
-        separator_image_width: dp(0)
-        side_panel_width: max(dp(350), 0.8*self.width)
+        side_panel_width: max(dp(250), 0.8 * self.width)
         on_parent: if self.parent: app.navigationdrawer = self
         LeftPanel
             id: leftpanel
+            on_right: nav_manager.opacity = 1.15 - (self.right/drawer.side_panel_width) 
         ScreenManager
             id: nav_manager
             on_parent: if self.parent: app.load_screen('WelcomeScreen', manager=self)
