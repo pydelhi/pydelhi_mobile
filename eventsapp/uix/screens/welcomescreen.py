@@ -17,6 +17,7 @@ class WelcomeScreen(Screen):
     BoxLayout
         orientation: 'vertical'
         TopBar
+            title: 'PyCon India 2018'
         RelativeLayout
             Image
                 source: 'data/images/navback.png'
@@ -29,7 +30,7 @@ class WelcomeScreen(Screen):
             BoxLayout
                 orientation: 'vertical'
                 Label
-                    text: 'Welcome to\\n PyCon India 2017'
+                    text: 'Welcome to\\n PyCon India 2018'
                     text_size: self.size
                     valign: 'center'
                     halign: 'center'
