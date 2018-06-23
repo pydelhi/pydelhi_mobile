@@ -1,7 +1,9 @@
 buildozer==0.34
 certifi==2018.4.16
 chardet==3.0.4
+Cython==0.28.3
 docutils==0.14
+futures==3.2.0
 idna==2.7
 Kivy==1.10.0
 Kivy-Garden==0.1.4
