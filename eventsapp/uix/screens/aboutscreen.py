@@ -45,7 +45,10 @@ class AboutScreen(Screen):
                     valign: 'top'
                     font_size: dp(22)
                     color: 0, 0, 0, 1
-    ''')
+
+                    
+ '''
+    )
 
     def on_pre_enter(self):
 

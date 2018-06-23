@@ -4,6 +4,19 @@
     "logo": "https://in.pycon.org/2017/images/logo.png",
     "website":"https://in.pycon.org/2017/",
     "about":"PyCon India, the premier conference in India on using and developing the Python programming language is conducted annually by the Python developer community. It attracts the best Python programmers from across the country and abroad."
+
+				"photo":
+ "https://paste.opensuse.org/images/85253798.png",
+			"social":{
+				"website": "http://pydelhi.org/",
+				"twitter": "https://twitter.com/pydelhi",
+				"facebook": "https://www.facebook.com/groups/ncrpython",
+				"github": "https://github.com/pydelhi",
+				"telegram": "https://t.me/joinchat/AAAAAEK2nzPg0IlwbbAing",
+				"googleplus": "https://plus.google.com/communities/112480684024193475272",
+				"youtube": "https://www.youtube.com/channel/UC3QVyJ-Zt0QoYAibn4SD20A",
+				"meetup": "https://www.meetup.com/pydelhi/"
+
    }
   ]
 }
