@@ -49,7 +49,7 @@ class AboutPyConScreen(Screen):
 
     def on_pre_enter(self):
 
-        with open('eventsapp/data/jsonfiles/about.json') as data_file:
+        with open('eventsapp/data/jsonfiles/history.json') as data_file:
             data = json.load(data_file)
 
         data = data.get("0.0.1")[0]
