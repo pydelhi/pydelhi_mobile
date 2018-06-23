@@ -1,0 +1,17 @@
+buildozer==0.34
+certifi==2018.4.16
+chardet==3.0.4
+docutils==0.14
+idna==2.7
+Kivy==1.10.0
+Kivy-Garden==0.1.4
+kivy.deps.glew==0.1.9
+kivy.deps.sdl2==0.1.17
+pexpect==4.6.0
+ptyprocess==0.6.0
+Pygments==2.2.0
+pypiwin32==223
+pywin32==223
+requests==2.19.1
+urllib3==1.23
+virtualenv==16.0.0
