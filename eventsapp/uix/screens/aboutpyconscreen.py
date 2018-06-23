@@ -24,7 +24,7 @@ class AboutPyConScreen(Screen):
             CardBoxLayout:
                 AsyncImage
                     id: logo
-                    source: 'data/images/logo.png'
+                    source: 'data/images/pylogo.png'
                 SocialButton:
                     size_hint: 1, .2
                     id: website
