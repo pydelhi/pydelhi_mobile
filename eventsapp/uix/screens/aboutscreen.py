@@ -34,16 +34,16 @@ class AboutScreen(Screen):
                     text_size: self.size
                     halign: 'center'
                     valign: 'center'
-                    font_size: dp(24)
+                    font_size: dp(16)
                     bold: True
                     color: 0, 0, 0, 1
                 Label:
                     id: about
                     text: ''
                     text_size: self.size
-                    halign: 'left'
+                    halign: 'center'
                     valign: 'top'
-                    font_size: dp(22)
+                    font_size: dp(10)
                     color: 0, 0, 0, 1
     ''')
 

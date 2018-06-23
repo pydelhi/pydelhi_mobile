@@ -17,7 +17,7 @@ class ThemeButton(Button):
 
     Builder.load_string('''
 <ThemeButton>:
-    font_size: dp(18)
+    font_size: dp(12)
     border: 10, 10, 10, 10
     background_normal: root.background_normal
     background_down: root.background_down
