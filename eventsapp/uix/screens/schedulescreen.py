@@ -93,6 +93,6 @@ class ScheduleScreen(Screen):
             scheduledatedtab = Factory.DateTabbedPanel()
             scheduletab.add_widget(scheduledatedtab)
 
-        halls = data[data.keys()[0]]
-        for day in data.keys()[1:]:
+        halls = data[list(data.keys())[0]]
+        for day in list(data.keys())[1:]:
             self.add_dated_tabs(scheduledatedtab, day, halls, data)

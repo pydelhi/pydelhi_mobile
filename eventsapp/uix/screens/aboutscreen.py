@@ -34,7 +34,7 @@ class AboutScreen(Screen):
                     text_size: self.size
                     halign: 'center'
                     valign: 'center'
-                    font_size: dp(24)
+                    font_size: dp(16)
                     bold: True
                     color: 0, 0, 0, 1
                 Label:
@@ -43,7 +43,7 @@ class AboutScreen(Screen):
                     text_size: self.size
                     halign: 'left'
                     valign: 'top'
-                    font_size: dp(22)
+                    font_size: dp(11)
                     color: 0, 0, 0, 1
     ''')
 
