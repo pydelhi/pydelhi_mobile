@@ -4,29 +4,29 @@
       "name": "Visible Alpha",
       "type": "Gold",
       "website": "http://visiblealpha.com/",
-      "logo": "https://in.pycon.org/2017/images/sponsor/visiblealpha.png",
-      "about": "https://in.pycon.org/2017/"
+      "logo": "https://in.pycon.org/2018/images/sponsor/visiblealpha.png",
+      "about": "https://in.pycon.org/2018/"
     },
     {
       "name": "ZeOmega",
       "type": "Silver",
       "website": "http://www.zeomega.com/",
-      "logo": "https://in.pycon.org/2017/images/sponsor/zeomega.png",
-      "about": "https://in.pycon.org/2017/"
+      "logo": "https://in.pycon.org/2018/images/sponsor/zeomega.png",
+      "about": "https://in.pycon.org/2018/"
     },
     {
       "name": "Adobe",
       "type": "Silver",
       "website": "https://www.adobe.com/",
-      "logo": "https://in.pycon.org/2017/images/sponsor/adobe.jpg",
-      "about": "https://in.pycon.org/2017/"
+      "logo": "https://in.pycon.org/2018/images/sponsor/adobe.jpg",
+      "about": "https://in.pycon.org/2018/"
     },
     {
       "name": "Python Software Foundation",
       "type": "Silver",
       "website": "https://www.python.org/psf-landing/",
-      "logo": "https://in.pycon.org/2017/images/sponsor/psf.png",
-      "about": "https://in.pycon.org/2017/"
+      "logo": "https://in.pycon.org/2018/images/sponsor/psf.png",
+      "about": "https://in.pycon.org/2018/"
     }
   ]
 }
