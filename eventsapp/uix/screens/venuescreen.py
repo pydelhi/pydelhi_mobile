@@ -23,15 +23,15 @@ class VenueScreen(Screen):
                 size: self.size
                 pos: self.pos
         TopBar:
-            title: 'Shaheed Sukhdev College of Business Studies'
+            title: 'Hyderabad International Convention Centre (HICC)'
         BoxLayout:
             MapView:
                 zoom: 12
-                lat: 28.7312221
-                lon: 77.1203375
+                lat: 17.47289
+                lon: 78.373324
                 MapMarker
-                    lat: 28.7312221
-                    lon: 77.1203375
+                    lat: 17.47289
+                    lon: 78.373324
         BoxLayout:
             padding: dp(10), dp(10)
             size_hint: 1, .1
@@ -43,6 +43,6 @@ class VenueScreen(Screen):
                 opacity: 1 if self.state == 'normal' else .9
                 on_release:
                     import webbrowser
-                    webbrowser.open('https://www.google.co.in/maps/dir/''/Shaheed+Sukhdev+College+Of+Business+Studies')
+                    webbrowser.open('https://www.google.com/maps?ll=17.47289,78.373324&z=14&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=5683858870480190961')
 
 ''')
