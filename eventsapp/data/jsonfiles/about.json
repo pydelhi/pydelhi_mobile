@@ -1,4 +1,5 @@
 {
+
 	"0.0.1": [
 	  {
 	   "logo": "eventsapp/data/images/logo.png",
@@ -26,12 +27,12 @@
 			"photo": "https://paste.opensuse.org/images/85253798.png",
 			"social":
 				{
-				"website": "http://pydelhi.org/",
-				"twitter": "https://twitter.com/pydelhi",
-				"facebook": "https://www.facebook.com/groups/ncrpython",
-				"github": "https://github.com/pydelhi"
+				"website": "https://in.pycon.org/",
+				"twitter": "https://twitter.com/pyconindia",
+				"facebook": "https://www.facebook.com/PyConIndia/",
+				"github": "https://github.com/pythonindia"
 				}
 		   }
 	 ]
-   }
+}
    
