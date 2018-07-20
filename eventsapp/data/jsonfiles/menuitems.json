@@ -34,6 +34,11 @@
 	  "menu_item_text": "Sponsors",
 	  "icon_source": "data/images/menu/sponsor.png",
 	  "navigate_to": "SponsorScreen"
+	},
+	{
+		"menu_item_text": "History",
+		"icon_source": "data/images/menu/history.png",
+		"navigate_to": "AboutPyConScreen"
 	}
   ]
 }

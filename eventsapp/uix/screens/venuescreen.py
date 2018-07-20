@@ -44,6 +44,6 @@ class VenueScreen(Screen):
                 opacity: 1 if self.state == 'normal' else .9
                 on_release:
                     import webbrowser
-                    webbrowser.open('https://www.google.co.in/maps/dir/''/17.4728898,78.3733243/@17.47289,78.373324,14z?hl=en-IN')
+                    webbrowser.open('https://www.google.com/maps?ll=17.47289,78.373324&z=14&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=5683858870480190961')
 
 ''')
