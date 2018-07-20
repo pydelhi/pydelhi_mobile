@@ -5,6 +5,7 @@ Venue Screen
 
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
+from kivy.uix.image import Image
 from kivy.garden.mapview import MapView
 from kivy.garden.mapview import MapMarker
 
@@ -23,15 +24,15 @@ class VenueScreen(Screen):
                 size: self.size
                 pos: self.pos
         TopBar:
-            title: 'Hyderabad International Convention Centre (HICC)'
+            title: 'Hyderabad International Convention Centre'
         BoxLayout:
             MapView:
                 zoom: 12
-                lat: 17.47289
-                lon: 78.373324
+                lat: 17.4728898
+                lon: 78.3733243
                 MapMarker
-                    lat: 17.47289
-                    lon: 78.373324
+                    lat: 17.4728898
+                    lon: 78.3733243
         BoxLayout:
             padding: dp(10), dp(10)
             size_hint: 1, .1

@@ -1,0 +1,6 @@
+*.pyc
+*.pyo
+*.swp
+docs/build/*
+cache/*
+examples/cache/*

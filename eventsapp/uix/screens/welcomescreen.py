@@ -18,6 +18,7 @@ class WelcomeScreen(Screen):
         orientation: 'vertical'
         TopBar
             title: 'PyCon India 2018'
+            color: 196, 12, 76, 1
         RelativeLayout
             Image
                 source: 'data/images/navback.png'
