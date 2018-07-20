@@ -5,6 +5,7 @@ Venue Screen
 
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
+from kivy.uix.image import Image
 from kivy.garden.mapview import MapView
 from kivy.garden.mapview import MapMarker
 
@@ -23,15 +24,15 @@ class VenueScreen(Screen):
                 size: self.size
                 pos: self.pos
         TopBar:
-            title: 'Shaheed Sukhdev College of Business Studies'
+            title: 'Hyderabad International Convention Centre'
         BoxLayout:
             MapView:
                 zoom: 12
-                lat: 28.7312221
-                lon: 77.1203375
+                lat: 17.4728898
+                lon: 78.3733243
                 MapMarker
-                    lat: 28.7312221
-                    lon: 77.1203375
+                    lat: 17.4728898
+                    lon: 78.3733243
         BoxLayout:
             padding: dp(10), dp(10)
             size_hint: 1, .1
@@ -43,6 +44,6 @@ class VenueScreen(Screen):
                 opacity: 1 if self.state == 'normal' else .9
                 on_release:
                     import webbrowser
-                    webbrowser.open('https://www.google.co.in/maps/dir/''/Shaheed+Sukhdev+College+Of+Business+Studies')
+                    webbrowser.open('https://www.google.com/maps?ll=17.47289,78.373324&z=14&t=m&hl=en-GB&gl=IN&mapclient=embed&cid=5683858870480190961')
 
 ''')

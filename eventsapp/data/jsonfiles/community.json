@@ -5,11 +5,11 @@
 			"about": "PyCon India, the premier conference in India on using and developing the Python programming language is conducted annually by the Python developer community. It attracts the best Python programmers from across the country and abroad.",
 			"photo": "https://in.pycon.org/2017/images/logo.png",
 			"social":{
-				"website": "https://in.pycon.org/2017/",
+				"website": "https://in.pycon.org/2018/",
 				"twitter": "https://twitter.com/pyconindia",
 				"facebook": "https://www.facebook.com/pyconindia",
-				"github": "https://github.com/pyythonindia",
-				"youtube": "https://www.youtube.com/user/inpycon",
+				"github": "https://github.com/pythonindia",
+				"youtube": "https://www.youtube.com/user/inpycon"
 			}
 		}
 	]
