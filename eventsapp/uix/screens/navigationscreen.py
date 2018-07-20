@@ -103,7 +103,7 @@ class TopBar(Factory.BoxLayout):
     spacing: dp(15)
     canvas.before:
         Color:
-            rgba: 69/255., 132/255., 182/255., 1
+            rgba: 81/255., 47/255., 122/255., 1
         Rectangle:
             size: self.size
             pos: self.pos

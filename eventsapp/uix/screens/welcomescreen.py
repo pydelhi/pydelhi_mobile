@@ -9,25 +9,27 @@ from kivy.app import App
 from uix.buttons import ThemeButton
 
 
+
 class WelcomeScreen(Screen):
 
     Builder.load_string('''
 <WelcomeScreen>
     name: 'WelcomeScreen'
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
     BoxLayout
         orientation: 'vertical'
         TopBar
             title: 'PyCon India 2018'
-            color: 196, 12, 76, 1
-        RelativeLayout
+        RelativeLayout 
             Image
-                source: 'data/images/navback.png'
-                allow_stretch: True
-                keep_ratio: False
-            Image
-                source: 'data/images/overlay.png'
-                allow_stretch: True
-                keep_ratio: False
+                source: 'data/images/logocopy.png'
+                allow_stretch: False
+                keep_ratio: True
             BoxLayout
                 orientation: 'vertical'
                 Label
@@ -35,8 +37,8 @@ class WelcomeScreen(Screen):
                     text_size: self.size
                     valign: 'center'
                     halign: 'center'
-                    font_size: dp(34)
-                    color: 1, 1, 1, 1
+                    font_size: dp(22)
+                    color: 1,1,1,0
                     bold: True
                 BoxLayout
                     orientation: 'vertical'

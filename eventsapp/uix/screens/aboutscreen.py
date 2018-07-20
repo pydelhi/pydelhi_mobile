@@ -46,9 +46,9 @@ class AboutScreen(Screen):
                     id: about
                     text: ''
                     text_size: self.size
-                    halign: 'left'
+                    halign: 'center'
                     valign: 'top'
-                    font_size: dp(11)
+                    font_size: dp(10)
                     color: 0, 0, 0, 1
 
                     
