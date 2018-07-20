@@ -39,6 +39,11 @@
 		"menu_item_text": "Contact Us",
 	  "icon_source": "data/images/menu/contactus.png",
 	  "navigate_to": "ContactUsScreen"
+  },
+  {
+    "menu_item_text": "History",
+		"icon_source": "data/images/menu/history.png",
+		"navigate_to": "AboutPyConScreen"
 	}
   ]
 }

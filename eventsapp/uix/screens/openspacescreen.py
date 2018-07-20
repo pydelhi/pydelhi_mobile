@@ -21,6 +21,7 @@ class OpenSpaceScreen(Screen):
         CardsContainer:
             size_hint_y: 1
             CardBoxLayout:
+                spacing: dp(10)
                 AsyncImage
                     id: logo
                     size_hint: 1, .7
@@ -33,24 +34,24 @@ class OpenSpaceScreen(Screen):
                             pos: self.pos
                             size: self.size
                     orientation: 'vertical'
-                    padding: dp(5), dp(20)
+                    padding: dp(0), dp(5)
                     Label:
                         id: quote
                         text: ''
                         text_size: self.size
                         halign: 'center'
                         valign: 'top'
-                        font_size: dp(20)
+                        font_size: dp(10)
                         bold: True
                         color: 0, 0, 0, 1
                     Label:
-                        size_hint: 1, .5
+                        size_hint: 1, .7
                         id: author
                         text: 'Michael M Pannwitz, Open Space practitioner'
                         text_size: self.size
                         halign: 'center'
                         valign: 'center'
-                        font_size: dp(20)
+                        font_size: dp(10)
                         bold: True
                         color: 0, 0, 0, 1
                 Label:
@@ -59,7 +60,7 @@ class OpenSpaceScreen(Screen):
                     text_size: self.size
                     halign: 'left'
                     valign: 'top'
-                    font_size: dp(20)
+                    font_size: dp(10)
                     color: 0, 0, 0, 1
     ''')
 
