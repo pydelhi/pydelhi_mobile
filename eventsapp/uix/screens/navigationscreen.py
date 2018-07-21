@@ -114,7 +114,7 @@ class TopBar(Factory.BoxLayout):
     Label:
         text: root.title
         shorten: True
-        text_sizeobi: self.size
+        text_size: self.size
         font_size: dp(22)
         halign: 'left'
         valign: 'center'
