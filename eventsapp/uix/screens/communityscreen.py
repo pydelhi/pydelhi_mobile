@@ -24,29 +24,31 @@ class CommunityScreen(Screen):
         CardsContainer:
             size_hint_y: 1
             CardStackLayout:
-                spacing: dp(9)
+                spacing: dp(4)
                 AsyncImage
                     id: logo
                     size_hint_y: None
-                    height: self.parent.height/3
+                    height: self.parent.height/3.5
                     source: 'data/images/lg.png'
                 Label:
                     id: about
                     text: ''
                     size_hint_y: None
-                    height: self.parent.height/3
+                    height: self.parent.height/2.5
                     text_size: self.size
                     halign: 'center'
                     valign: 'center'
                     font_size: dp(15)
                     color: 0, 0, 0, 1
-                BoxLayout:
-                    orientation: 'horizontal'
-                    spacing: dp(7)
-                    size_hint_y: None
-                    size: self.size[0], dp(100)
+                GridLayout:
+                    cols: 5 if self.width > dp(200) else 3
+                    rows: 1 if self.width > dp(200) else 2
+                    size_hint_y: None 
+                    height: dp(100)
                     id: social_icons
                     padding: dp(20), dp(20)
+                    spacing: dp(10), dp(10)
+                    
     ''')
 
     def add_social_icons(self, instance, data):
