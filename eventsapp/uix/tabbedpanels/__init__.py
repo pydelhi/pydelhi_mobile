@@ -22,7 +22,7 @@ class DateTabbedPanelItem(TabbedPanelItem):
     background_down: 'data/images/Detail_bar.png'
     background_normal: 'data/images/Detail_bar.png'
     bold: True
-    font_size: dp(24)
+    font_size: dp(15)
     ''')
 
 
@@ -34,7 +34,7 @@ class DateTabbedPanel(TabbedPanel):
     do_default_tab: False
     tab_pos: "top_mid"
     tab_width: self.width/2
-    tab_height: dp(70)
+    tab_height: dp(40)
     spacing: dp(-5)
     canvas:
         Color:
@@ -58,7 +58,7 @@ class HallTabbedPanelItem(TabbedPanelItem):
     background_down: 'data/images/lower-detail-bar.png'
     background_normal: 'data/images/lower-detail-bar.png'
     bold: True
-    font_size: dp(24)
+    font_size: dp(14)
     ''')
 
 
@@ -68,6 +68,6 @@ class HallTabbedPanel(TabbedPanel):
     do_default_tab: False
     tab_pos: "bottom_mid"
     tab_width: self.width/3
-    tab_height: dp(60)
+    tab_height: dp(40)
 
     ''')
