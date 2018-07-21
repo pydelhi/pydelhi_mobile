@@ -114,7 +114,7 @@ class TopBar(Factory.BoxLayout):
     Label:
         text: root.title
         shorten: True
-        text_size: self.size
+        text_sizeobi: self.size
         font_size: dp(22)
         halign: 'left'
         valign: 'center'
@@ -125,7 +125,7 @@ class NavigationScreen(Screen):
 
     Builder.load_string('''
 <NavButton>
-    padding: dp(7)
+    padding: dp(6)
     spacing: dp(10)
     on_release:
         app.navigation_screen.ids.drawer.toggle_state()
