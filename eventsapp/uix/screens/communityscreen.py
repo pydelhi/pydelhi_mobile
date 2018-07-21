@@ -41,8 +41,8 @@ class CommunityScreen(Screen):
                     font_size: dp(15)
                     color: 0, 0, 0, 1
                 BoxLayout:
-                    orientation: 'vertical'
-                    spacing: dp(1)
+                    orientation: 'horizontal'
+                    spacing: dp(7)
                     size_hint_y: None
                     size: self.size[0], dp(100)
                     id: social_icons
@@ -75,7 +75,7 @@ class CommunityScreen(Screen):
                 yield {k:data[k] for k in islice(it, SIZE)}
 
         if self.community_social != []:
-            for items in chunks(self.community_social, 3):
+            for items in chunks(self.community_social, 1):
                 bl = BoxLayout()
                 self.add_social_icons(bl, items)
                 social_icons.add_widget(bl)
