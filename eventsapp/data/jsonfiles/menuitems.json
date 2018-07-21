@@ -1,15 +1,16 @@
 {
   "0.0.1": [
+  	{
+	  "menu_item_text": "Home",
+	  "icon_source": "data/images/menu/home.png",
+	  "navigate_to": "WelcomeScreen"
+	},
 	{
 	  "menu_item_text": "Schedule",
 	  "icon_source": "data/images/menu/calendar.png",
 	  "navigate_to": "ScheduleScreen"
 	},
-	{
-	  "menu_item_text": "About",
-	  "icon_source": "data/images/menu/about.png",
-	  "navigate_to": "AboutScreen"
-	},
+	
 	{
 	  "menu_item_text": "Community",
 	  "icon_source": "data/images/menu/community.png",
@@ -35,15 +36,24 @@
 	  "icon_source": "data/images/menu/sponsor.png",
 	  "navigate_to": "SponsorScreen"
 	},
+	
 	{
 		"menu_item_text": "Contact Us",
 	  "icon_source": "data/images/menu/contactus.png",
 	  "navigate_to": "ContactUsScreen"
   },
+
   {
     "menu_item_text": "History",
 		"icon_source": "data/images/menu/history.png",
 		"navigate_to": "AboutPyConScreen"
+	},
+
+	{
+	  "menu_item_text": "About",
+	  "icon_source": "data/images/menu/about.png",
+	  "navigate_to": "AboutScreen"
 	}
+	
   ]
 }

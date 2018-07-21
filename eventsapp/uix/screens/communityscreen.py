@@ -77,7 +77,7 @@ class CommunityScreen(Screen):
                 yield {k:data[k] for k in islice(it, SIZE)}
 
         if self.community_social != []:
-            for items in chunks(self.community_social, 1):
+            for items in chunks(self.community_social, 3):
                 bl = BoxLayout()
                 self.add_social_icons(bl, items)
                 social_icons.add_widget(bl)
