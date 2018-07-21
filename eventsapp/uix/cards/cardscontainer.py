@@ -51,7 +51,7 @@ class CardsContainer(GridLayout):
     Builder.load_string('''
 <CardsContainer>:
     spacing: dp(10)
-    padding: dp(20), dp(40)
+    padding: dp(10), dp(10)
     canvas:
         Color:
             rgba: (1, 1, 1, 1)
