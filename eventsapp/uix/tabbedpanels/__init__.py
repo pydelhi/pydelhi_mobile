@@ -17,7 +17,7 @@ class DateTabbedPanelItem(TabbedPanelItem):
         Color:
             rgba: (1, 1, 1, 1) if self.state == 'down' else (69/255., 132/255., 182/255., 1)
         Rectangle:
-            size: self.size[0]*.2, self.size[1]*.1
+            size: self.size[0]*.5, self.size[1]*.1
             pos: self.pos[0] + (self.size[0]*.5)/2, self.pos[1]
     background_down: 'data/images/Detail_bar.png'
     background_normal: 'data/images/Detail_bar.png'
