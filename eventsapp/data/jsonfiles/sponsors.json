@@ -1,32 +1,25 @@
 {
   "0.0.1": [
     {
-      "name": "Visible Alpha",
+      "name": "AQR Capital Management",
+      "type": "Platinum",
+      "website": "https://www.aqr.com/",
+      "logo": "https://in.pycon.org/2018/img/sponsors/aqr.jpg",
+      "about": "https://www.aqr.com/About-Us/OurFirm"
+    },
+    {
+      "name": "D.E. Shaw india",
+      "type": "Platinum",
+      "website": "https://www.deshawindia.com/",
+      "logo": "https://in.pycon.org/2018/img/sponsors/DESCO_Logo_2c.jpg",
+      "about": "https://www.deshawindia.com/WhoWeAre.shtml"
+    },
+    {
+      "name": "Pramati",
       "type": "Gold",
-      "website": "http://visiblealpha.com/",
-      "logo": "https://pbs.twimg.com/profile_images/819673534486245380/w_AQ4ild_400x400.jpg",
-      "about": "https://in.pycon.org/2018/"
-    },
-    {
-      "name": "ZeOmega",
-      "type": "Silver",
-      "website": "http://www.zeomega.com/",
-      "logo": "https://content3.jdmagicbox.com/comp/bangalore/40/080p5905740/catalogue/zeomega-infotech-pvt-ltd-basavanagudi-bangalore-health-management-services-2b6iizp.jpg",
-      "about": "https://in.pycon.org/2018/"
-    },
-    {
-      "name": "Adobe",
-      "type": "Silver",
-      "website": "https://www.adobe.com/",
-      "logo": "https://acclaim-production-app.s3.amazonaws.com/images/89ca1ec4-2df8-4ed8-a399-263946a2a272/de19749d89cad6357838f495045807330b165457.png",
-      "about": "https://in.pycon.org/2018/"
-    },
-    {
-      "name": "Python Software Foundation",
-      "type": "Silver",
-      "website": "https://www.python.org/psf-landing/",
-      "logo": "http://hoteleastlund.com/wp-content/uploads/2017/05/python.jpg",
-      "about": "https://in.pycon.org/2018/"
+      "website": "https://www.pramati.com/",
+      "logo": "https://in.pycon.org/2018/img/sponsors/Pramati.png",
+      "about": "https://www.pramati.com/about-pramati/"
     }
   ]
 }
