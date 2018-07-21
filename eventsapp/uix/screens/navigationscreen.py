@@ -22,6 +22,7 @@ But5    |       ----------------------     |
 But6    |       ----------------------     |
         |                                  |
         |                                  |
+But7    |                                  |
 '''
 
 
@@ -124,7 +125,7 @@ class NavigationScreen(Screen):
 
     Builder.load_string('''
 <NavButton>
-    padding: dp(10)
+    padding: dp(7)
     spacing: dp(10)
     on_release:
         app.navigation_screen.ids.drawer.toggle_state()
