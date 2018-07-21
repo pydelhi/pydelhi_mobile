@@ -1,5 +1,10 @@
 {
   "0.0.1": [
+  	{
+	  "menu_item_text": "Home",
+	  "icon_source": "data/images/menu/home.png",
+	  "navigate_to": "WelcomeScreen"
+	},
 	{
 	  "menu_item_text": "Schedule",
 	  "icon_source": "data/images/menu/calendar.png",
