@@ -68,6 +68,8 @@ COPY . .
 
 RUN buildozer android debug || /bin/true
 
+RUN cp /home/user/hostcwd/.buildozer/android/platform/build/dists/conference/build/outputs/apk/conference-debug.apk .
+
 CMD tail -f /var/log/faillog
 
 #ENTRYPOINT ["buildozer"]
