@@ -1,0 +1,60 @@
+{
+  "0.0.1": [
+    {
+      "name": "De Shaw & Co",
+      "type": "Platinum",
+      "website": "https://www.deshawindia.com/",
+      "logo": "https://in.pycon.org/2018/img/sponsors/DESCO_Logo_2c.jpg",
+      "about": "D. E. SHAW INDIA PRIVATE LIMITED ('DESIS') is a part of the D. E. Shaw group, a global investment and technology development firm founded in 1988 with more than $47 billion in investment capital as of January 1, 2018, and offices in North America, Europe, and Asia."
+    },
+    {
+      "name": "GOJEK",
+      "type": "Platinum",
+      "website": "https://www.go-jek.com/",
+      "logo": "https://in.pycon.org/2018/img/sponsors/go-jek.png",
+      "about": "Established in 2010 as a motorcycle ride-hailing phone service, GO-JEK has evolved into an on-demand mobile platform and a cutting-edge app, providing a wide range of services that includes transportation, logistics, mobile payments, food delivery, and many other on-demand services.”"
+    },
+    {
+      "name": "Indeed",
+      "type": "Platinum",
+      "website": "https://www.indeed.jobs/career/JobListHyderabad",
+      "logo": "https://in.pycon.org/2018/img/sponsors/indeed.png",
+      "about": "Come help Indeed work. We are looking to grow our teams with people who share our energy and enthusiasm for creating the best experience for job seekers and employers."
+    },
+    {
+      "name": "AQR",
+      "type": "Platinum",
+      "website": "https://www.aqr.com",
+      "logo": "https://in.pycon.org/2018/img/sponsors/aqr.jpg",
+      "about": "AQR is a global investment management firm dedicated to delivering results for our clients.  "
+    },
+    {
+      "name": "Pramati",
+      "type": "Gold",
+      "website": "https://www.pramati.com",
+      "logo": "https://in.pycon.org/2018/img/sponsors/Pramati.png",
+      "about": "Pramati builds independent companies focused on profitable, well-defined markets. Our model works because we increase the probability of success for our companies."
+    },
+    {
+      "name": "Fosee",
+      "type": "Silver",
+      "website": "https://www.fosee.in/",
+      "logo": "https://in.pycon.org/2018/img/sponsors/fossee.png",
+      "about": "FOSSEE (Free and Open Source Software in Education) project promotes the use of FOSS tools to improve the quality of education in our country. We aim to reduce dependency on proprietary software in educational institutions. We encourage the use of FOSS tools through various activities to ensure commercial software is replaced by equivalent FOSS tools. We also develop new FOSS tools and upgrade existing tools to meet requirements in academia and research. "
+    },
+    {
+      "name": "Reckonsys",
+      "type": "Associate",
+      "website": "https://www.reckonsys.com",
+      "logo": "https://in.pycon.org/2018/img/sponsors/reckonsys.png",
+      "about": "We are a Software Product Development Firm obsessed with creating uncommon solutions for common problems by making use of the right technologies and best practices. We work with Startup founders to build their MVP’s and with existing Enterprises to help solve interesting problems."
+    },
+    {
+      "name": "Pipal Academy",
+      "type": "Associate",
+      "website": "http://www.pipal.in/",
+      "logo": "http://paste.opensuse.org/view/raw/34063737",
+      "about": "Pipal Academy is a collective of experienced technologists, who care deeply about the art of software development. They offer in-depth courses on niche technical topics. Pipal Academy regularly conducts public workshops in Bangalore and also offer on-site corporate training."
+    }
+  ]
+}

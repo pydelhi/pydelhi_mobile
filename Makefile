@@ -4,7 +4,7 @@ PYTHON = python
 .PHONY: theming apk clean
 
 theming:
-	$(PYTHON) -m kivy.atlas pyconindia/data/default 2048 tools/theming/*.png
+	$(PYTHON) -m kivy.atlas eventsapp/data/default 2048 tools/theming/*.png
 apk:
 	buildozer android_new debug
 apk_release:

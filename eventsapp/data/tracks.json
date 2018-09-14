@@ -1,0 +1,638 @@
+{
+	"0.0.1": [{
+		"00": {
+			"title": "Registration",
+			"description": "Register yourselves and get your goodie bag. Have a great day!",
+			"type": "default",
+			"speaker": {
+				"name": "PyCon India Registeration Team",
+				"info": "Some Info about workshops here",
+				"photo": "https://conference.manipal.edu/ICCPM/ImgBanner1/register.jpg"
+			}
+		},
+		"01": {
+			"title": "Exploring PyTorch for AI assistance in Medical Imaging",
+			"description": "This workshop would be divided into two halfs.\n\nFirst Half: Pytorch Introduction Duration: 1 hour The first half would be a gentle introduction to PyTorch framework. \n\n Second Half: Let’s dive in. Duration: 1 hour 25 minutes.",
+			"type": "workshop",
+			"speaker": {
+				"name": "Abhishek Kumar (~vibrantabhi19) ",
+				"info": "DL Scientist @PredibleH, ML Intern | @matelabs_ai. An open source enthusiast & a Linux lover. An Athlete, a RM FC follower, a stand-up comedian.",
+				"photo": "https://avatars2.githubusercontent.com/u/6832471?s=460&v=4",
+				"cfp": "https://in.pycon.org/cfp/2018/proposals/exploring-pytorch-for-ai-assistance-in-medical-imaging~bqXpa/",
+				"social": {
+					"website": "https://t.co/nxGGSUorsb",
+					"twitter": "https://twitter.com/abhi_kumar07",
+					"github": "https://github.com/vibrantabhi19",
+					"linkedin": "https://www.linkedin.com/in/abhishek-kumar-74299887/",
+					"googleplus": "https://plus.google.com/u/0/+AbhishekKumarTiwari07"
+				}
+			}
+		},
+		"02": {
+			"title": "Decoding Bollywood with Python and data science",
+			"description": "Our Business Is Our Business None Of Your Business…`\n\n Yes, they wish, but we want to know everything about Bollywood!\n\nWho is more popular, Katrina Kaif or Deepika Padukone?\nWhat movie is the most similar to PK based on the storyline?\nWhich city in India is home of the most active actresses and actors?\nAnd lots of other questions. Do you want to know the answers? And even better, would you like to discover them yourself by using Python and popular libraries such as pandas, Gensim and scikit-learn? And cutting-edge data science techniques? Join us for a workshop full of insights where you will be able to answer your own questions while learning the most advanced Python libraries and algorithms.\n\nThe workshop is designed for Python programmers new to data science. Everybody is welcome, but data analysts and people experienced with pandas will find some parts basic.",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2018/proposals/decoding-bollywood-with-python-and-data-science~eEyWe/",
+			"speaker": {
+				"name": "Marc Garcia & Himanshu Awasthi",
+				"info": "Himanshu Awasthi is the organiser of Kanpur Python and PyData Kanpur. Free and open source software enthusiast, and passionate about Python and data analysis, He is currently working for KanpurFOSS organization which organize free technical workshops in India. Yai Workshop… Data Analysis Ke Workshop Hai… Kisi Ke Data Analysis sikha kar He Khatam Hoge...\n\nMarc Garcia is a Python fellow and pandas core developer. He has worked as software engineer and data scientist for companies like Bank of America, Tesco, Unilever or NTT Communications. He is a regular organiser of sprints, and speaker at PyCon and PyData conferences. His favourite actor is Aamir Khan, but wouldn't mind teaching Python to Asin.",
+				"photo": "http://paste.opensuse.org/view/raw/85948492",
+				"social": {
+					"twitter": "https://twitter.com/datapythonista",
+					"github": "https://github.com/datapythonista",
+					"website": "http://datapythonista.github.io"
+				}
+			}
+		},
+		"03": {
+			"title": "Web UI Automation",
+			"description": "Do you spend too much time manually testing your user interfaces? Automation is the answer. Python and Selenium offer a simple but powerful framework to script any testing. In this talk, I will show you how to use the combination of Selenium WebDriver and Python code to automate web UI tests. Follow along and learn how to locate elements, navigate pages, test user interactions with forms and drag-and-drop elements, and use waits to control test timing and execution. The lessons are practical and can be immediately applied to your development workflow.",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2018/proposals/web-ui-automation-using-selenium~ern4e/",
+			"speaker": {
+				"name": "Bhoomika Aggarwal",
+				"info": "Bhoomika Agarwal is a developer associate at SAP Labs India. She works in the field of cloud development, machine learning and open source technologies at SAP Labs. Prior to this, she has worked in Sprinklr and completed her graduation in Computer Science from PES Institute of Technology, Bangalore. She has done research in Big Data, Quantum Computing, Linear Algebra and Brain Computer Interface. She has published research papers and given presentations at numerous conferences about these topics. She has published tutorial courses online on Unacamedy and Lynda to disseminate the knowledge she has acquired over the years with experience.",
+				"photo": "https://media.licdn.com/dms/image/C5103AQFipi8rEDXnYw/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=yRrVMlPPd21D0SOZzo58EbOZIYNPqGm-1l24xOihXWo",
+				"social": {
+					"github": "https://github.com/bhoom10",
+					"linkedin": "https://www.linkedin.com/in/bhoomika-agarwal/"
+				}
+			}
+		},
+		"04": {
+			"title": "Advanced Objected oriented programming",
+			"description": "This workshop is dedicated to discuss and extrapolate on the core of Object Oriented Programming its finer details and nuances. The objective of the talk is to introduce concepts that will ensure OOP becomes second nature to a programmer. This is a beginner and an intermediate level talk and is meant to explore OOP concepts in detail.",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2018/proposals/advanced-object-oriented-programming~e7MQb/",
+			"speaker": {
+				"name": "Vishnu Kiran",
+				"info": "I am a Senior Software Engineer/Data scientist at NextOrbit, Technical Architect at Code Matrix. I am a startup guy who loves the idea of building teams and working with them from the ground up. I have been part of and lead teams that have built medium and large scale software. I am glued to the computer a lot, although that must be obvious. But when I am not peeled to a laptop I play badminton, chess, teach students software and find creative reasons to skip a session in the gym on a daily basis.",
+				"photo": "https://media.licdn.com/dms/image/C5603AQGY3oTTiOJ-aA/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=XIDoOPTWhxNLnUwHg7vrF5LJ6RuTphPIlAnO162HmZY",
+				"social": {
+					"linkedin": "https://www.linkedin.com/in/vishnu-kiran-k-v/"
+				}
+			}
+		},
+		"05": {
+			"title": "Lunch",
+			"description": "Delicious Hyderabadi cuisine",
+			"type": "workshop",
+			"speaker": {
+				"name": "HICC Caterors",
+				"info": "Gourmet? Street? What will be served?",
+				"photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_fI9DV8nZ_Jj4exyqWb04f5KQezQfAC__f9KAJsUiH8pG9Mg0"
+			}
+		},
+		"06": {
+			"title": "Free and Open Source libraries of Python for Geo spatial analysis",
+			"description": "Geospatial representation are so prevalent in day to day life, such as even in simple travel related conversation to maps, aerial/satellite images etc. In digital era, geospatial data is extensively produced and consumed in ever growing proportion. Python with its free and open source libraries are giving wide variety yet simple and effective set of tools to visualise and analyse geospatial data. The current workshop is directed for beginners of Python programming language, who have basic understanding on computing and data formats. The primary objective of the workshop is to introduce and give hands on training on selected list of FOSS libraries for geospatial analysis. The workshop as a do it yourself fashion tries to solve two real world problems in Geographical Information System (GIS) and its geospatial data sources.",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2018/proposals/free-and-open-source-libraries-of-python-for-geo-spatial-analysis-and-visualisationmaps-and-satellite-imageries~aQL5e/",
+			"speaker": {
+				"name": "Nisha KA",
+				"info": "I am a research associate at UrbanEmissions.info, PhD in Environmental Sciences from Sálim Ali Centre for Ornithology and Natural History, Bharathiar University, Coimbatore. My thesis was on `Particulate air pollution data for Coimbatore, India: real time monitoring and modeling with data-interoperability measures`, which emphasised need of open and standardised real time data for better management of air pollution in the country. I got exposure into programming and open source software related to my research studies. I used free and open source libraries of Python for most of my studies, especially on geospatial data compilation, analysis and visualization. I have conducted workshop similar to the current one in Kovaipy, Scipy-India 2017.",
+				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no"
+			}
+		},
+		"07": {
+			"title": "Jupiter Hub Binder",
+			"description": "",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2017/",
+			"speaker": {
+				"name": "Carol Willing",
+				"info": "Carol Willing is a Python Software Foundation Fellow and former Director, a core developer of CPython and Project Jupyter, and a Research Software Engineer at Cal Poly San Luis Obispo. She's also Geek-In-Residence at Fab Lab San Diego and co-organizes Pyladies San Diego and San Diego Python.",
+				"photo": "https://in.pycon.org/2018/img/carol-willing.png",
+				"social": {
+					"twitter": "https://twitter.com/WillingCarol",
+					"website": "http://willingconsulting.com/"
+				}
+			}
+		},
+		"08": {
+			"title": "Designing RESTful APIs",
+			"description": "APIs are all around. Everyone talks about RESTful APIs, but what does “RESTful” really mean? This hands-on workshop takes you through everything that you need to know to design great RESTful APIs.",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/kubernetes-101-workshop~b8OWa/",
+			"speaker": {
+				"name": "Anand Chitipothu",
+				"info": "Anand has been crafting beautiful software since a decade and half. He’s now building a data science platform, rorodata, which he recently co-founded. He regularly conducts advanced programming courses through Pipal Academy. He is co-author of web.py, a micro web framework in Python. He has worked at Strand Life Sciences and Internet Archive.",
+				"photo": "https://avatars2.githubusercontent.com/u/7569?s=460&v=4",
+				"social": {
+					"website": "https://anandology.com",
+					"github": "https://github.com/anandology"
+				}
+			}
+		},
+		"09": {
+			"title": "Scaling Python up and out with Numba and Dask",
+			"description": "",
+			"type": "workshop",
+			"cfp": "http://in.pycon.org",
+			"speaker": {
+				"name": "Travis E Oliphant",
+				"info": "Travis E. Oliphant is a Founder of Quansight and Director/Co-Founder at Anaconda Inc. He has worked with Python for numerical and scientific programming, notably as the primary developer of the NumPy and as a founding contributor of the SciPy",
+				"photo": "https://in.pycon.org/2018/img/travis-oliphant.png",
+				"social": {
+					"twitter": "https://twitter.com/teoliphant",
+					"website": "http://technicaldiscovery.blogspot.com/"
+				}
+			}
+		},
+		"12": {
+			"title": "Walkthrough cpython 3.6 source code",
+			"description": "\\n\\n#### **Description:**\\n\\nThis talk will be an introduction to cpython from a source code level. We will\\nwalk through the source code of python from the parser, compiler, assembler\\nand interpreter phases. We will also understand the design of the garbage\\ncollector, memory allocator from a source code perspective. We shall also\\nexplore the different design philosophies of cpython. There will be special\\nemphasis on python objects such as lists, tuples, dictionaries etc and their\\ndesign internals. This talk is for people who are interested to explore how\\ncpython works internally.\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  1. Python source code.\\n  2. gdb\\n  3. eclipse latest version\\n  4. linux\\n  5. make\\n\\n\\n\\n#### **Content URLs:**\\n\\nPlease read the books available for free download from\\n\\n<http://intopython.com>\\n\\nThe books are authored by the same speaker.\\n\\n\\n\\n#### **Speaker Info:**\\n\\nI am Prashanth Raghu and my interest in python began back in 2009 when I was\\nstudying at PES University, Bangalore. I used python as a part of my\\ninternship project in my final year. It was used to develop a hybrid cloud app\\nwith the web front end designed in PHP and monitoring and load testing on\\npython. I was a Google Summer of Code scholar for the year 2014. ( My work:\\nhttps://github.com/openstack/zaqar/tree/master/zaqar/storage/redis ).\\n\\nI studied at National University of Singapore and did my Masters in Wireless\\nComputation with a research paper between 2013-2014. I was struck by a rare\\ndisease called Steven Johnson Syndrome in 2015 due to this my startup failed.\\nAt this crucial time I decided to do something of my interest and opened up\\nthe source code of python 2.7. I was amazed at the simplicity yet profoundness\\nof the architecture and decided to share my views with the world. And the\\nresult of my efforts for a couple of months has resulted into the book\\n\u201cInternals of Cpython 2.7\u201d and \u201cInternals of Cpython3.6\u201d available as a free\\ndownload under CC 4.0 license.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * <https://github.com/openstack/zaqar/tree/master/zaqar/storage/redis> \\- My contribution as a part of Google summer of code\\n  * <http://intopython.com> \\- my technical blog on python source code\\n  * <https://www.linkedin.com/in/prashanthraghu/>\\n  * <http://bangalore.python.org.in/blog/2017/06/17/jun-talks/> \\- Video of my talk at Bangpypers Jun 2017 meetup. \\n\\n",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/walkthrough-cpython-36-source-code~azq5e/",
+			"speaker": {
+				"name": "Prashanth Raghu",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"13": {
+			"title": "Binary Analysis and Exploitation using Python",
+			"description": "\\n\\n#### **Description:**\\n\\nPython now has a lot of interesting libraries that can be used together to do\\nBinary Analysis and exploitation. We'll be using the great capstone engine\\nalongside, pyelftools and pefile to analyse a binary programatically.\\nAnalyzing includes getting information in the headers, assembly in the code\\nsection, imports, dynamic libraries and lots of other stuff. The second part\\nof the talk will be on Exploitation, where we'll try to exploit a buffer\\noverflow vulnerability on a linux application (with ASLR, Stack Cookies and\\nNX). We'll use pwntools and RopGadget . py to generate an exploit.\\n\\nI have written a blog post about how to use pyelftools and capstone engine to\\nreverse a simple elf crackme. Check it out here: http://anee.me/reversing-an-\\nelf/\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * Interest in computer security\\n  * Basic knowledge about ELFs and PE\\n  * Knowledge about buffer overflows\\n\\n\\n\\n#### **Content URLs:**\\n\\n[https://anee.me/reversing-an-elf-from-the-ground-\\nup-4fe1ec31db4a](https://anee.me/reversing-an-elf-from-the-ground-\\nup-4fe1ec31db4a/)\\n\\n\\n\\n#### **Speaker Info:**\\n\\nI am a recent CS grad from IIIT Delhi. I am currently working with DirectI as\\na DevOps engineer. I participate in a lot of CTFs and I love to work with\\nBinaries, trying to understand what they do and how to go about exploiting\\nthem. I also have experience in Network Security and anonymity and am\\ncurrently working on a research project on Decoy Routing. Besides that I\\nreally love opensource. I have contributed to a lot of organizations including\\nLibav, KDE, Sugarlabs, Radare2. I have participated in GSoC before and have\\nbeen winner of Google Code in 2012 and 2011.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * Github: <https://github.com/lionaneesh>\\n  * Website: <http://anee.me>\\n  * Mail: lionaneesh-at-gmail\\n  * Linkedin: [linkedin.com/in/aneeshdogra](http://linkedin.com/in/aneeshdogra)\\n\\n",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/binary-analysis-and-exploitation-using-python~ergBa/",
+			"speaker": {
+				"name": "Aneesh Dogra",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"14": {
+			"title": "Pyspark - Big Data applications using Python and Spark",
+			"description": "\\n\\n#### **Description:**\\n\\nHere is the high level outline for the workshop:\\n\\n  * Revision of basic python programming\\n  * Overview of Big Data eco system\\n  * Data Engineering at scale with Spark core APIs using Python as programming language\\n  * Overvew of Spark SQL and Data Frames\\n  * Development life cycle and execution life cycle\\n\\nTraining will be provided using state of the art 10 node Big Data cluster. If\\nthis workshop is selected, all the participants for the workshop will get 1\\nmonth free access to our state of the art lab with content and other resources\\nto learn Big Data in detail.\\n\\nIf you are interested in this workshop please vote up to get shortlisted.\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * A laptop (64 bit operating system and 4 GB RAM are highly desired)\\n  * Browser - Chrome or Firefox\\n  * Basic understanding of Python programming - loops, exception, file handling and collections\\n\\n\\n\\n#### **Content URLs:**\\n\\nhttp://www.itversity.com/courses/apache-spark-using-python\\n\\n\\n\\n#### **Speaker Info:**\\n\\nDurga Gadiraju is technology evangelist and consultant with close to 14 years\\nof experience in building data driven applications at scale. For past 4 years,\\nDurga is primarily focused on Big Data in the areas of consulting, delivery\\nand training. His online platform itversity, is well known in IT community in\\nthe areas of Big Data and Cloud. itversity will be a free continuous learning\\nplatform for IT professionals.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * LinkedIN [Profile](http://%20https://www.linkedin.com/in/durga0gadiraju/)\\n  * YouTube [Channel](https://www.YouTube.com/itversityin)\\n  * [Blog](http://www.itversity.com)\\n  * Big Data [labs](https://labs.itversity.com)\\n  * Support through [Forums](http://discuss.itversity.com)\\n  * Github [account](https://github.com/dgadiraju)\\n\\n",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/pyspark-big-data-applications-using-python-and-spark~b44kb/",
+			"speaker": {
+				"name": "Itversity Training",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"15": {
+			"title": "Deep Learning with Tensorflow : Techniques for achieving optimal model performance.",
+			"description": "\\n\\n#### **Description:**\\n\\nGiven enough data, lots of compute power and a clear objective, deep learning\\nmodels are powerful predictive tools that can be applied to a wide range of\\ntasks. Getting the best possible performance out of deep learning models\\nhowever, can take some work. While having more data to train the network on is\\nalways beneficial, carefully chosen model architectures and hyperparameters\\ncan yield faster and better convergence.\\n\\nThis workshop will be a tour of the important techniques that can be used to\\nget the best results from your deep learning models. The models will be\\nconstructed using Tensorflow and make use of Python 3.6. (Keras may also be\\nused to speed things up if suitable)\\n\\nWe will review a broad list of topics in the workshop, including:\\n\\n  * Weight initialization strategies\\n  * Batch Normalization\\n  * Dropout\\n  * Choice of optimizers\\n  * A discussion of activation functions\\n  * Optimizer hyperparameters\\n  * Model hyperparameters\\n  * Model architectures for specific tasks (CNNs, RNNs, GANs etc.)\\n\\n\\n\\n#### **Prerequisites:**\\n\\nBasic familiarity with neural networks will be a necessary prerequisite for\\nthe workshop. We will also be visualising model learning curves so previous\\ndata analysis/visualisation experience in python would be beneficial.\\n\\nIdeally, someone who is attending the workshop will have worked with neural\\nnetworks before and understands backpropagation and gradient descent. If\\nyou're not familiar with these topics but have a strong interest in deep\\nlearning, the following resources are great starting points:\\n\\n  * [Michael Nielsen's Book](http://neuralnetworksanddeeplearning.com) (Great for understanding backpropagation)\\n  * [Andrew Trask's blog](http://iamtrask.github.io) (neural network implementations in pure python)\\n  * [Tensorflow tutorials](https://www.tensorflow.org/get_started/get_started)\\n\\nSoftware Requirements:\\n\\n  * Python 3.6\\n  * Numpy 1.12+\\n  * Tensorflow 1.1+\\n  * Matplotlib 2.0.2\\n  * Seaborn 0.7+\\n\\n\\n\\n#### **Content URLs:**\\n\\nThe slides for the workshop will be put up soon.\\n\\n\\n\\n#### **Speaker Info:**\\n\\nI'm an economics graduate who found his passion for programming and experience\\nin economics merging together in machine learning. I've been working with\\nPython for the past 3 years and till recently was working as a Data Scientist\\nat Adpushup (a Microsoft Accelerator backed startup based in New Delhi).\\n\\nAlong with researching and implementing machine learning models, I've worked\\non big data applications developed using Spark and Spark Streaming.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * [Blog](http://sahilsingh.org)\\n  * [LinkedIn](https://www.linkedin.com/in/sngsahil)\\n\\n",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/deep-learning-with-tensorflow-techniques-for-achieving-optimal-model-performance~dRkYe/",
+			"speaker": {
+				"name": "sngsahil",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"16": {
+			"title": "Python packages",
+			"description": "\\n\\n#### **Description:**\\n\\nAll of our scripts need to eventually grow up into packages. Over the course\\nof this workshop, I'll help grow your script/scripts into fully fledged\\npackages.\\n\\nWe will start with a basic `setup.py` file and understand how installing a\\npackage makes it easy to use. We will look at examples of how to organise our\\npackage and understand how the organisation helps in understanding the\\npackage. We will use entry points to make your package more accessible. We\\nwill learn how GitHub can be used to host and share your package and what role\\nGit plays. We will understand the role of Continuous Integration services.\\nFinally, we will build and upload eggs & wheels for your package to PyPI.\\n\\n\\n\\n#### **Prerequisites:**\\n\\nIt would help if the participants had a basic understanding of Python syntax.\\nIt will also help if the participants knew how to use Git and how to navigate\\nGitHub. Neither is a concrete requirement though.\\n\\n\\n\\n#### **Content URLs:**\\n\\nThe workshop will extend and elaborate on slides from an earlier talk -\\nhttps://github.com/rahulporuri/talks/blob/master/python_packages.pdf\\n\\nGit and GitHub will also be introduced and used for the workshop; slides from\\nan earlier workshop are -\\nhttps://github.com/rahulporuri/talks/blob/master/git_and_github.pdf\\n\\n\\n\\n#### **Speaker Info:**\\n\\nI am a Scientific Software Developer at Enthought. By day, I work on\\nEnthought's Product offerings. I have a background in Physics. I like giving\\ntalks and conducting workshops because researching the topic increases my\\nunderstanding. I've been (semi-) active in the Python community in Pune over\\nthe last year and I've given talks at local meetups and organized workshops.\\n\\n\\n\\n#### **Speaker Links:**\\n\\nLinks to slides and Jupyter Notebooks for some of the talks/workshops I\\nconducted over the last year - https://github.com/rahulporuri/talks/\\n\\n",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/python-packages~dPr2a/",
+			"speaker": {
+				"name": "Rahul Poruri",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"17": {
+			"title": "Deep Learning for NLP from scratch",
+			"description": "\\n\\n#### **Description:**\\n\\n**King - Man + Woman = Queen**\\n\\nThe most famous example of word vectors paint an optimistic picture where\\ncomputers can represent word into vectors which can be used to infer\\nsimilarity. But can we extend it to sentences or to documents? How did word\\nvectors come into existence? What are its utilities?\\n\\nThough most of the people use [Mikolov et al's\\nWord2Vec](https://arxiv.org/abs/1301.3781) as a blackbox and train by:\\n\\n    \\n    \\n    import gensim\\n    sentences = [['content', 'of', 'first', 'sentence'], ['content', 'of', 'second', 'sentence'], ... , ['content', 'of', 'nth', 'sentence']]\\n    model = gensim.models.Word2Vec(sentences)\\n    \\n\\nAnd never know what is cooking inside the hood. This talk would cover a very\\nbasic implementation of Word2Vec, a small tutorial of how to use Gensim to\\ntrain your own word vectors. Building on this we would build vector\\nrepresentation of sentences. We would meanwhile learn about the novelty of\\nclassical and deep learning techniques.  \\nAfter learning all this we would explore the application of [Word Movers'\\nDistance](https://github.com/mkusner/wmd) for Information retrieval.  \\nThough these terms sound new, but this talk would build from the very\\nbasics(arrays as vectors) and myself being a programmer, along with Deep\\nLearning enthusiast, would focus more on a progammer's perspective.\\n\\nSlides:\\n[slides](https://docs.google.com/presentation/d/1ttn4fIfqvEqE5FhlB3l1lDPQ1JvZYu6ikz-\\nxmoEAD9Y/edit?usp=sharing)  \\nIPython notebook: [repo\\nlink](https://github.com/nishnik/word_embeddings_slides)\\n\\nCoverage of the talk:\\n\\n  1. Introduction to NLP -> 5 minutes\\n  2. Tokenization, Stemming and Lemmatization -> 15 minutes (5-7 minutes of Hands on session)\\n  3. Brief intro of POS and NER -> 5 minutes\\n  4. Word Embeddings (Theory and Motivation) -> 5 minutes\\n  5. Word Embeddings (Hands on)\\n    1. Basic Implementation -> 10 minutes\\n    2. Gensim based Implementation (Meanwhile explaining the possible use cases) -> 10 minutes\\n  6. Introduction to Deep Learning and exciting stuff for future (10 minutes) ( _60 minutes over here_ )\\n  7. Small intoduction to Keras (Hands on) (5 minutes)\\n  8. Basics about one-hot encoding, and explaining the hello world of neural networks (5 minutes)\\n  9. Using Keras for learning word embeddings and a glimpse of Transfer Learning (Hands on) (20 minutes)\\n  10. Introduction to Sentence embedding (5 minutes)\\n  11. Word Movers' Distance for Information Retrieval (10 minutes)\\n  12. Remaining as buffer time\\n\\n\\n\\n#### **Prerequisites:**\\n\\nThe participants should have interest in Natural Language Processing. The talk\\nwould be basically from scratch, but comfortableness with linear algebra would\\nhelp.\\n\\nInstalled libraries:\\n\\n  * NLTK\\n  * Gensim\\n  * Keras\\n\\n\\n\\n#### **Content URLs:**\\n\\n  * [Word embedding introduction and extending to cross lingual case - A blog post](https://medium.com/towards-data-science/cross-lingual-word-embeddings-what-they-are-af7987df6670)\\n  * [Brief introduction about setence embedding - A blog post](https://medium.com/towards-data-science/sentence-embedding-3053db22ea77)\\n  * [Gensim](https://github.com/RaRe-Technologies/gensim)\\n\\n\\n\\n#### **Speaker Info:**\\n\\nThe speaker is a fourth year undergraduate student at IIT Kharagpur. A\\nrobotics and deep learning enthusiast, he spends his time writing\\n[blogs](https://medium.com/@nishantnikhil/) about Artificial Intelligence\\nwhere he was a top writer till June 2017 or teaching humanoid robots to walk\\nand kick at the [KRSSG Lab](http://krssg.in/) otherwise maintaining the\\n[college wiki](https://wiki.metakgp.org/w/Main_Page).\\n\\nHe is currenty a GSoC mentor for\\n[SymEngine/SymPy](http://github.com/symengine/symengine) where he was a GSoC\\nstudent in 2016. Furthermore, he has worked on Cross Lingual Word embeddings\\nat [UFAL Prague](https://ufal.mff.cuni.cz/), generating pattern of birds'\\nsongs at [ETH Zurich](https://www.ethz.ch/en.html) and hierarchical embeddings\\nat [Stony Brooks NYC](http://www.stonybrook.edu/).\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * [Blog](https://medium.com/@nishantnikhil/)\\n  * [Github](https://github.com/nishnik)\\n\\n",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/deep-learning-for-nlp-from-scratch~b8B2e/",
+			"speaker": {
+				"name": "Nishant Nikhil",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"18": {
+			"title": "Applying Transfer Learning on Your Data",
+			"description": "\\n\\n#### **Description:**\\n\\nHumans have great ability to generalize; we can very efficiently apply the\\nknowledge we learned in classrooms to real world problems. **Transfer\\nlearning** provides a similar capability to artificial neural networks. The\\nWorkshop will introduce the concept of 'Transfer Learning' described by Andrew\\nNg, the leading expert in Machine Learning as the \" **next driver of ML\\ncommercial success.** \" Transfer Learning is important because training deep\\nneural networks from scratch have two key requirements. First, we need a large\\nlabeled dataset; the second one requires computationally efficient hardware\\n(GPUs). While such immensely large data exists for some tasks and domains, in\\nmost cases the data are usually proprietary or expensive. Transfer Learning,\\nthe technique to use models pre-trained on one domain for another problem\\ndomain, provides the ability to use DNNs even when the dataset is small.\\nMoreover, Transfer learning requires less computation and thus can be done in\\nrespectable time using CPUs as well.\\n\\nThe workshop will cover following topics:\\n\\n  * Introduction to Transfer Learning \\n  * Application of Transfer Learning\\n  * Transfer Learning Scenarios \\n  * Applying Transfer using Keras and Tensorflow\\n\\nAnd finally, we will have hands on session demonstrating how to use Xception\\nand Inception networks for Dog breed Recognition.\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * Anaconda installed (Python =3.5)\\n  * Tensorflow 1.x\\n  * Numpy\\n  * Matplotlib\\n  * Pandas\\n  * Seaborn\\n  * For the sake of convenience and due to limited time, Speaker, will also provide environment 'yml' files (Windows10, Ubuntu14.04/16.04, Mac OS X)\\n\\n\\n\\n#### **Content URLs:**\\n\\nTo make best use of the workshop it would be appreciated if participants are\\nwell versed with Anaconda, Python and understand Convolution Neural Networks.\\nThe information necessary can be accessed via following links\\n\\n  * How to manage Anaconda Environments: <https://conda.io/docs/user-guide/tasks/manage-environments.html>\\n  * Convolutional Neural Networks [here](https://adeshpande3.github.io/adeshpande3.github.io/A-Beginner%27s-Guide-To-Understanding-Convolutional-Neural-Networks/) and [here](http://colah.github.io/posts/2014-07-Conv-Nets-Modular/)\\n\\n\\n\\n#### **Speaker Info:**\\n\\n**Amita Kapoor** : Amita Kapoor is Associate Professor in the Department of\\nElectronics, SRCASW, University of Delhi. She has been actively teaching\\nneural networks for last twenty years. She did her Masters in Electronics in\\nthe year 1996, and her PhD in the year 2011. During the course of her PhD, she\\nwas awarded prestigious DAAD fellowship to pursue a part of her research work\\nin Karlsruhe Institute of Technology, Karlsruhe, Germany. She had been awarded\\nbest Presentation Award at International Conference Photonics 2008 for her\\npaper. She is a member of professional bodies like OSA (Optical Society of\\nAmerica), IEEE (Institute of Electrical and Electronics Engineers), INNS\\n(International Neural Network Society), ISBS (Indian Society for Buddhist\\nStudies). She has more than 40 publications in the international journals and\\nconferences. Her present research areas include Machine Learning, Artificial\\nIntelligence, Neural Networks, Photonics and Robotics.\\n\\n**Narotam Singh** : Narotam Singh has been with India Meteorological\\nDepartment, Ministry of Earth Sciences, India since 1996. He has been actively\\ninvolved with various technical programs and training of officers of GOI in\\nthe field of Information Technology and Communication. He did his post-\\ngraduation in the field of Electronics in 1996 and both Post graduate diploma\\nand Diploma in the field of Computer Engineering, in 1997 and 1994\\nrespectively. He is currently working in the enigmatic field of Neural\\nNetworks.\\n\\n\\n\\n#### **Speaker Links:**\\n\\nAmita Kapoor: [Personal Website](http://www.dramitakapoor.com),\\n[Github](https://github.com/amita-kapoor),\\n[Linkedin](https://www.linkedin.com/in/amitakapoor/)\\n\\nNarotam Singh: [Personal Website](http://narotam.com/),\\n[Github](https://github.com/narotamsingh),\\n[Linkedin](https://www.linkedin.com/in/narotamsingh/)\\n\\n",
+			"type": "workshop",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/applying-transfer-learning-on-your-data~eXqoa/",
+			"speaker": {
+				"name": "Amita Kapoor",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"19": {
+			"title": "Keynote - Mentoring : What, Why, How by Noufal Ibrahim",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"20": {
+			"title": "Child Care",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"21": {
+			"title": "Tea",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"22": {
+			"title": "Visualizing machine learning algorithms in Python",
+			"description": "\\n\\n#### **Description:**\\n\\nMachine learning algorithms are increasingly black-box models. However, their\\noutputs are business data that humans need to understand and act upon.\\n\\nFor example, if a clustering model suggests 4 customer clusters, how do we\\nidentify and characterize these? If a random forest model suggests a pattern\\nof classification, how do we understand the dominant factors and the\\nirrelevant ones?\\n\\nThese topics fall under the umbrella of model visualization -- where the\\ninputs, process and output of machine learning models are the topic of\\nunderstanding.\\n\\nThis talk explores some of the prevalent ways of visualizing machine learning\\nmodels.\\n\\n\\n\\n#### **Prerequisites:**\\n\\nA basic understanding of ML models\\n\\n\\n\\n#### **Speaker Info:**\\n\\nAnand is a co-founder of Gramener, a data science company. He leads a team of\\ndata enthusiasts with skills in analysis, design, programming and statistics.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * [Videos of previous talks](https://www.youtube.com/playlist?list=PLrn2FHBzHtaOGyyqkShkRsAzBCD7fFBqO)\\n  * [Slides of previous talks](https://www.slideshare.net/gramener)\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/visualizing-machine-learning-algorithms-in-python~eE64a/",
+			"speaker": {
+				"name": "Anand S",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"23": {
+			"title": "",
+			"description": "",
+			"type": "talk",
+			"cfp": "",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"24": {
+			"title": "HTTP Bottom Up - Live!",
+			"description": "\\n\\n#### **Description:**\\n\\nA deep-dive, live coding talk to explore everything that happens behind the\\nscenes of your favorite web framework.\\n\\nThis talk explores building web applications starting all the way from bare\\nsockets, without using any framework. Even though this is not the most\\nproduction way to build web applications, this exercise will give a chance to\\nobserve and understand everything that happens behind the scenes of any web\\napplication.\\n\\n### Outline\\n\\n  * Understand the difference between the Internet and World Wide Web\\n  * Play with some Internet Applications\\n  * Network programming and concurrency patterns\\n  * Understand how web browser and web server work\\n  * Build a web server\\n  * Understand WSGI\\n  * Build a web framework\\n  * Write a simple webapp using the web framework built above\\n\\n\\n\\n#### **Prerequisites:**\\n\\nOpen mind and curiosity.\\n\\n\\n\\n#### **Content URLs:**\\n\\nThis is going to be a live coding talk. I'm not planning to use any slides.\\n\\nI offer this as a 2-day workshop and notes from one my earlier workshops are\\navailable at:  \\n<https://github.com/anandology/httpbottomup>\\n\\n\\n\\n#### **Speaker Info:**\\n\\n[Anand](http://anandology.com/) has been crafting beautiful software since a\\ndecade and half. He\u2019s now building a data science platform,\\n[rorodata](http://rorodata.com/), which he recently co-founded. He regularly\\nconducts advanced programming courses through [Pipal\\nAcademy](https://pipal.in/). He is co-author of web.py, a micro web framework\\nin Python. He has worked at Strand Life Sciences and Internet Archive.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n<http://anandology.com/>\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/http-bottom-up-live~bDWka/",
+			"speaker": {
+				"name": "Anand Chitipothu",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"25": {
+			"title": "Making Of NextGen Fintech: Insights From Visible Alpha Tech Stack (Sponsored Talk)",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "Visible Alpha",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"26": {
+			"title": "Liberating tabular data from the clutches of PDFs",
+			"description": "\\n\\n#### **Description:**\\n\\nBudget Documents are moral documents that represent the priorities and values\\nof the states and its governing bodies. Unfortunately these documents are\\npublished in unstructured PDF formats which makes it difficult for\\nresearchers, economists and general public to analyse and use this crucial\\ndata.\\n\\nIn this session will delve into how we can create a data pipeline and leverage\\ncomputer vision techniques to parse these documents into clean machine-\\nreadable formats by leveraging libraries like OpenCV, numpy, pandas, PyPDF2,\\ntabula and poppler-pdf-to-text\\n\\n**Outline**\\n\\n  * Setting the scene\\n  * Issues with Indian Budget Documents\\n  * Extracting Tables with boundaries.\\n    * Detecting Table Boundaries using OpenCV\\n    * Leveraging Open Source Tools like \u201cTabula\u201d\\n  * What about tables without boundaries ?\\n  * Extracting information from tables without boundaries\\n    * Geometrical features using OpenCV library\\n    * Textual features using \u201cpdf to text\u201d poppler\u2019s version\\n  * Building a pipeline to detect table components\\n    * Headers\\n    * Number Cells\\n    * Text Based Cells / Groupings\\n  * Detecting Table layout\\n    * Detecting rows\\n    * Detecting columns\\n    * Where each component lies\\n  * Extracting tables split across Pages\\n  * Building a base for machine learning models while doing so.\\n  * Open Research using Jupyter Notebooks\\n  * How you can contribute ?\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * Python 2.7\\n  * pandas\\n  * numpy\\n  * Basic Image Manipulation using OpenCV\\n\\n\\n\\n#### **Content URLs:**\\n\\nRepo: https://github.com/heaven00/pycon_delhi_2017  \\nSlides: https://heaven00.github.io/pycon_delhi_2017\\n\\n\\n\\n#### **Speaker Info:**\\n\\nJayant works with Open Budgets India to help make India's Budgets open, usable\\nand easy to comprehend and during the weekends he works with Datakind as a\\ncore team member to help make social organisations data driven.\\n\\nJayant is also a machine learning enthusiast and enjoys good food and games.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * https://github.com/cbgaindia/parsers\\n  * https://github.com/cbgaindia/scrapers \\n  * https://github.com/heaven00\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/liberating-tabular-data-from-the-clutches-of-pdfs~dRjwd/",
+			"speaker": {
+				"name": "jayant",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"27": {
+			"title": "Reducing dead code ratio of your project with vulture",
+			"description": "\\n\\n#### **Description:**\\n\\nMaintaining a high level of code quality is important for any serious project.\\nOne aspect of this is ensuring that all code is actually used. There are many\\nreasons for dead code ending up in a project. The most common is refactoring,\\nbut another is misspellings, which are only detected at runtime for dynamic\\nlanguages. Finding and removing dead code allows to keep the code base clean\\nand reduces bugs.\\n\\nThis talk is focussed on how we can use Vulture to find dead code. It helps\\nyou find unused code in Python programs and it is useful for cleaning up and\\nfinding errors in large code bases. If you run Vulture on both your library\\nand test suite you can find untested code. Due to Python's dynamic nature,\\nstatic code analyzers like Vulture are likely to miss some dead code. Also,\\ncode that is only called implicitly may be reported as unused. Nonetheless,\\nVulture can be a very helpful tool for higher code quality.\\n\\nOne part of this talk is to discuss how to automate testing for dead code with\\nVulture. There are quite a few options available:\\n\\n  * Adding vulture to your continuous integration testing.\\n  * A script using the Vulture API for custom tests.\\n  * [VultureBear](https://github.com/coala/coala-bears/blob/master/bears/python/VultureBear.py): Integration with [coala](https://coala.io) \\- a static code analysis tool.\\n  * Integration with automatic analysis tools like [GitMate](https://gitmate.io), etc. for automatic code-reviews with native support for Github and Gitlab.\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * python (any version would do)\\n  * pip\\n\\nHaving coala installed will be a plus.\\n\\n\\n\\n#### **Content URLs:**\\n\\n  * [vulture](https://github.com/jendrikseipp/vulture)\\n\\n  * [coala.io](https://coala.io)\\n\\n  * [GitMate](https://gitmate.io)\\n\\n\\n\\n#### **Speaker Info:**\\n\\n**Rahul Jha**\\n\\nHe is currently pursuing B.Tech. (ECE) and has been developing software for 3\\nyears now. He is an Open source enthusiast and as part of his GSoC project, he\\ndeveloped the vulture API for easy integration with coala.\\n\\n\\n\\n#### **Speaker Links:**\\n\\nYou may find more about Rahul here:\\n\\n  * <https://github.com/RJ722>\\n  * <https://rj722.tech>\\n\\nThe best way to contact him is through e-mail: rahul722j@gmail.com,\\nrahul@rj722.tech\\n\\nSome of his work:\\n\\n  * <https://github.com/jendrikseipp/vulture/commits?author=RJ722>\\n  * <https://github.com/coala/coala-bears/commits?author=RJ722>\\n  * <https://github.com/coala/coala/commits?author=RJ722>\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/reducing-dead-code-ratio-of-your-project-with-vulture~e9GYb/",
+			"speaker": {
+				"name": "Rahul Jha",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"28": {
+			"title": "Building microservices with firefly",
+			"description": "\\n\\n#### **Description:**\\n\\n`firefly` is an open source micro framework to deploy Python functions as web\\nservices. `firefly` was created with the aim of simplifying the deployment\\nMachine Learning models as RESTful API. But as fate would have it, it became\\nour favourite tool for building microservices. `firefly` takes care of\\nprocessing the HTTP requests, forwarding the data to the python functions and\\nencoding the result back to a HTTP request. It also has data validation,\\nauthentication support, transfering any type of file. You can also define a\\nconfiguration file specifying the URL resource structure resulting in an\\nelegant RESTful API.\\n\\nIt comes with a client library that makes calling remote functions calling as\\neasy as calling functions present locally. It is a WSGI application and can be\\ndeployed and scaled through any WSGI server like `gunicorn`. There are many\\nother features in the pipeline like multiple authentication modes through the\\nplugin system.\\n\\nThis talk will focus on introducing `firefly`, it's notable features like\\nplugin support, building microservices efficiently with various examples.\\n\\n\\n\\n#### **Prerequisites:**\\n\\nThe participants should have a basic notion of making web services and RESTful\\nAPI's.\\n\\n\\n\\n#### **Content URLs:**\\n\\nSlides outline:\\n\\n  1. About me\\n  2. Microservices Architecture\\n  3. Comparison with monolithic architecture\\n  4. Design Patterns\\n  5. Forces in Action\\n  6. Solution\\n  7. Examples\\n  8. Benfits\\n  9. When to use?\\n  10. Who uses?\\n  11. Firefly to the rescue\\n  12. What is firefly?\\n  13. Why use firefly?\\n  14. Code\\n  15. Run\\n  16. Deploy\\n  17. Use (Client)\\n  18. Authentication\\n  19. Data Validation\\n  20. Canonical URL's\\n  21. Plugins\\n\\nGithub: <https://github.com/rorodata/firefly>  \\nDocumentation: <https://firefly-python.readthedocs.io/>\\n\\n\\n\\n#### **Speaker Info:**\\n\\nThe speaker is Nabarun Pal, a final year undergraduate student at [Indian\\nInstitute of Technology Roorkee](http://iitr.ac.in). Currently, he is working\\nfor [rorodata](https://rorodata.com) which aims at providing data scientists a\\nplatform to build and deploy their models without the need of worrying about\\ninfrastructure, scalability, and performance. He is working on an Open Source\\nFunctions as a Service framework called\\n[firefly](https://github.com/rorodata/firefly).\\n\\nHe is passionate about software development. He can also talk about Internet\\nof Things, Electronics, Robotics with equal spirit. His journey with the field\\nof software and robotics started in his schooling days. He represents the\\ncollege in various Robotics competitions and was involved in projects related\\nto the above domains, brief of which can be found\\n[here](https://nabarun.in/Nabarun_Pal_SDE.pdf). He actively participates in\\nconducting open lectures for students in the domains of Introductory Robotics,\\nControl, AI and ML through a curated\\n[community](https://www.facebook.com/groups/mnrsectioniitr/) of around 2000\\nmembers. He is also speaking at [PyData Delhi\\n2017](http://www.pydata.org/delhi2017).\\n\\n\\n\\n#### **Speaker Links:**\\n\\nHomepage: <https://nabarun.in>  \\nLinkedIn: <https://www.linkedin.com/in/nabarunpal/>  \\nGithub: <https://github.com/palnabarun>\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/building-microservices-with-firefly~bWoob/",
+			"speaker": {
+				"name": "Nabarun Pal",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"29": {
+			"title": "Panel Discussion 1",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"30": {
+			"title": "Lightning Talks",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"31": {
+			"title": "Sponsored Workshop/Talks 2",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"32": {
+			"title": "Machine learning & NLP at Goibibo: Keytopic extraction and contextual sentiment analysis of 20 million reviews, and a customer assistance bot",
+			"description": "\\n\\n#### **Description:**\\n\\n  * We, at Goibibo, extensively use Python as part of our app as well as data processing stack. \\n  * We receive a good volume of user generated content, and use natural language processing and machine learning to derive insights and data from them for our products.\\n  * The talk would cover how we build our user review analyzer system which **extracts keytopics/keywords from 20 million user reviews** and user sentiments about that keytopic. For example : How we detect that \"the rooms were very spacious\" is a positive experience for a consumer, or that a particular hotel has an amazing candle light dinner.\\n\\n  * The talk would cover language processing in Python using inbuilt/installed python modules, and dedicated NLP libraries like **NLTK and spaCy** , and sentiment analysis/categorization done by **Scikit-learn**.\\n\\nThis feature can be viewed and experienced on Goibibo mobile apps (\\n[Android](https://play.google.com/store/apps/details?id=com.goibibo)/\\n[iOS](https://itunes.apple.com/in/app/goibibo/id631927169?mt=8)) and visiting\\na hotel's product page.\\n\\n![enter image description\\nhere](https://gos3.ibcdn.com/keytopics-1504185022.jpg)\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * Intermediate level knowledge of Python is beneficial, however the concepts are language agnostic .\\n  * Knowledge of NLTK , spaCy and scikit-learn is a plus.\\n\\n\\n\\n#### **Content URLs:**\\n\\nTalk presentation link : https://prezi.com/view/m2Fe65t1RTuQK2s1LZrC/\\n\\n\\n\\n#### **Speaker Info:**\\n\\nI am Dhruv Pathak, a python enthusiast. I currently work at Goibibo as VP of\\nEngineering, where we ship many evolving and high scale products using Python.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * https://stackoverflow.com/users/533399/dhruvpathak\\n  * https://www.linkedin.com/in/dhruvpathak\\n  * https://github.com/dhruvpathak\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/machine-learning-nlp-at-goibibo-keytopic-extraction-and-contextual-sentiment-analysis-of-20-million-reviews-and-a-customer-assistance-bot~aMW1d/",
+			"speaker": {
+				"name": "Dhruv Pathak",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"33": {
+			"title": "Creating Cross Connectivity for Scalability - Hybrid Apps",
+			"description": "\\n\\n#### **Description:**\\n\\nEvery programming language has its own X-factor for which it is popular and\\npurposely meant for, for example, Concurrency , which is quite an issue Python\\n, can be done efficiently in Golang (which is popular for its concurrency by\\nusing Go Routines).\\n\\nSimilarly, Another example for Real Time Communication(RTC) is Erlang, though\\nit can be done in Python as well, but , Erlang is the most efficient in Real\\nTime Communication. To enlighten it, most of us has used \"web.whatsapp.com\"\\nwhich is a live and most widely used application of Erlang.\\n\\nAnd Similarly, Python, is the most versatile language which can implement\\nalmost any task of Computer Science, no matter, from Embedded to Data Mining.\\nBut while doing, as a Pure Python developer(Pythonista), I have to\\n**compromise with the resource consumption and efficiency**.\\n\\nBut, just imagine how amazing the world would be if combine all the rich\\nfeatures of Golang, Erlang etc. other programming languages to one central\\npoint i.e. Python which and eventually helps to develop Hybrid apps with less\\nresource consumption(achieving scalability). **And at the same point , we will\\nbe sticking to our favourite platform i.e. \"Python\".**\\n\\n**Scalability** , which is the hot topic of the scenario, since, now we have a\\nmassive number of people waiting for us everyday to develop something new for\\nthem, which would help to reduce the strain in their day to day life and we\\nhave to take care that our developed services shouldn't crash when they needed\\nit the most , that too at a reasonable cost.\\n\\n_Why Sticking to Python ?_\\n\\nBecause of the **easiness of doing from anything to everything on Python**. As\\nfar as I have tried programming languages, undoubtedly, Python is the most\\nquick going, less code, simple syntax.\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * Basic knowledge of Python\\n  * Basic Knowledge of Protocols like http, udp, tcp, protobuff etc. and RPCs like XMLrpc, JSONrpc etc.\\n  * Some awareness of Python GIL\\n  * Interest to learn something unsual and fascinating\\n\\n\\n\\n#### **Content URLs:**\\n\\nI've developed a couple of libraries to show the implementation of IDEA:\\n\\n  * https://github.com/chawlanikhil24/gopy\\n  * https://github.com/chawlanikhil24/goPyServer\\n\\n\\n\\n#### **Speaker Info:**\\n\\nNikhil is a jovial programmer who has been programming in Python for past 3\\nyears, and has been promoting Python heavily amongst the people, via the ways\\nof SIGs, which he conducted under IEEE-NIEC. He has been a very active member\\nof IEEE-NIEC student branch of NIEC and has done many projects in IOT,\\nEmbedded Programming.\\n\\nApart from IEEE, he has been doing some other projects on Socket Programming,\\nMicroservices-an implementation of Service Oriented Architecture(SOA), Data\\nmining, Data Visualisation and has been a part of many startups, developing\\ntheir platforms particularly on Flask and Django.\\n\\nCurrently he is an intern at \"The Linux Foundation\", working on Blockchain\\nTechnology for a project named Hyperledger, mentored by people at Huawei,\\nChina and IBM, China.\\n\\nApart from Python, what fascinates him the most is: **Containers and\\nOrchestration**.\\n\\nHis aim is to contribute to a future full of fruitful technologies which works\\nlightning fast and benefiting humanity.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  1. [Github](https://github.com/chawlanikhil24)\\n\\n  2. [Twitter](https://twitter.com/chawlanikhil24)\\n\\n  3. [LinkedIN](https://www.linkedin.com/in/chawlanikhil24/)\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/creating-cross-connectivity-for-scalability-hybrid-apps~b2Gjd/",
+			"speaker": {
+				"name": "Nikhil Chawla",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"34": {
+			"title": "Building single page javascript apps with Django, Graphql, Relay and React!",
+			"description": "\\n\\n#### **Description:**\\n\\nI'm the author of a boilerplate called Reango.\\n\\nhttps://github.com/ncrmro/reango\\n\\nIt features a GraphQL backend powered by Django. Django then serves a Webpack\\ncompiled single page application built using React, Relay.\\n\\nIt features authentication using JWT tokens and with unit and browser tests.\\n\\nI'd like to give a talk on when and how to use such a stack as Reango.\\n\\n\\n\\n#### **Prerequisites:**\\n\\nWhat an API is, the Django ORM, a bit of understanding of the difference\\nbetween server side and client side rendered front ends.\\n\\n\\n\\n#### **Content URLs:**\\n\\n[Reango Github Boilerplate](https://github.com/ncrmro/reango \"Reango Github\\nBoilerplate\")\\n\\n[Presentation\\nLink](https://drive.google.com/open?id=0B3Qoff7xwUhnanBEcThrR014NEU\\n\"Presentation\")\\n\\n\\n\\n#### **Speaker Info:**\\n\\nI grew up in Houston Texas, I've owned and worked as Software Developer/IT\\nconsulting company for the last four years, I'm currently using this stack too\\nIn one of my business projects and was also hired to implement the Reango\\nstack for a company in Silicon Valley.\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/building-single-page-javascript-apps-with-django-graphql-relay-and-react~axoze/",
+			"speaker": {
+				"name": "Nicholas Romero",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"35": {
+			"title": "How to Boost your Tensorflow model inference performance using  Asyncio.",
+			"description": "\\n\\n#### **Description:**\\n\\nLately, there has been a lot of interest in Deep Learning(dl) and thanks to\\nframeworks like tensorflow anyone can implement dl-papers and create models.\\nBut unfortunately, the deployment patterns followed are mostly rudimentary\\nREST calls to the model or using tensorflow-serving, which is fine when you\\nare experimenting but when the model gets deployed and the requests start\\nflying, such methods will create a bottleneck in your Architecture. There are\\nobvious workarounds like running multiple model instances behind a load\\nbalancer, but what if there is a much better Pythonic way.\\n\\n**Actor and CSP patterns** have been around since the 70s(73 and 78\\nrespectively) but only a niche group has taken a keen look at them and since\\nthe introduction of asyncio from Python3.5 onwards, the Python ecosystem has\\nbeen opened up to these patterns in some _limited but useful forms_. **This\\ntalk will show these patterns and how they can be used to deploy Deep Learning\\nmodels in the right way** , ( _the reference to Deep Learning alone has been\\nintentional and relates to the[batching in\\ntensorflow](https://www.tensorflow.org/serving/serving_advanced)_ ). As to the\\nquestion of the credibility of these patterns, **Actor model is used by Erlang\\nand CSP model is used by Go** , yep we can write Python3 code like these\\nlanguages.\\n\\nThis talk is not about.\\n\\n  * **Microservices** , are good but you cannot have 1000's if not tens of thousands unique Microservices created on the fly, connected uniquely for each user.(A unique pipeline per user). Also, microservices have the downside of depending on an external message passing solutions(Redis, Celery, RabbitMQ) which add to the latency. \\n  * **Deep Learning algorithms** , as there are plenty of resources for the same, we are only looking at the model deployment perspective i.e. inference time optimization.\\n\\n**The proposed method is implemented using Python alone without any external\\ndependencies including 3rd party message passing solutions making it faster\\nand lighter than microservices.**\\n\\n\\n\\n#### **Prerequisites:**\\n\\nA basic idea of asyncio coroutines and if possible streams.\\n\\n\\n\\n#### **Speaker Info:**\\n\\nI started using Python in 2014 to quickly hack together my master's thesis and\\nits been a steady relationship since then. Over the past few years, I have\\nbeen working on building scalable systems and deploying Data processing\\npipelines at scale.\\n\\nLately, I have been a part of a startup that offers Chatbot services and we\\nwere facing serious scale up issues, it was while solving these issues that I\\npicked up on the ideas for this talk. If you think of Chatbots, each\\nconversation is a unique data pipeline with each node depending on different\\nentities and topics and having its own states, these are difficult to model\\nusing prevalent graph traversal techniques in Python, thus the Actor/CSP model\\nwith asyncio.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * [LinkedIn](https://www.linkedin.com/in/derrick-joseph-545566a4/)\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/how-to-boost-your-tensorflow-model-inference-performance-using-asyncio~bWpnd/",
+			"speaker": {
+				"name": "Derrick Joseph",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"36": {
+			"title": "Self-Healing Code: A Journey Through Auto-Remediation",
+			"description": "\\n\\n#### **Description:**\\n\\nManaging modern Product Infrastructure and applications is daunting because\\nthe bigger the infrastructure, more complicated the operational challenges you\\nface. Things break, daemons die, services stop, clusters fall \u2013 not to mention\\nwriting the root cause analysis (RCA) documents and runbooks on how to fix the\\nsame problem in the future. If you keep on adding monitoring, you end up\\nhaving a huge pile of alerts and failures every day.\\n\\nTo ensure availability of product as you scale, either you automate or you\\ndie. This is where Auto- Remediation comes into picture.\\n\\nAuto-Remediation, or Self-Healing, is a workflow which triggers and responds\\nto alerts or events by executing actions that can prevent or fix the problem.\\n\\nThe simplest example of auto-remediation is restarting a service (let\u2019s say\\napache) when it\u2019s down. Imagine an automated action that is triggered by a\\nmonitoring system to restart the service and prevent the application outage.\\nIn addition, it creates a task and sends a notification so that the engineer\\ncan find the root cause during business hours, and there is no need to do it\\nin the middle of the night. Furthermore, the event-driven automation can be\\nused for assisted troubleshooting, so when you get an alert it includes\\nrelated logs, monitoring metrics/graphs, and so on.\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  1. Basic knowledge of Python\\n  2. Basic Knowledge of Saltstack (Python based open source configuration management tool)\\n  3. Knowledge of Nagios\\n  4. Basic Bash or Python scripting knowledge\\n\\n\\n\\n#### **Content URLs:**\\n\\nhttps://medium.com/adobe-io/self-healing-code-a-journey-through-auto-\\nremediation-60367eea312\\n\\nPresentation - https://speakerdeck.com/arusing/self-healing-code-a-journey-\\nthrough-auto-remediation\\n\\n\\n\\n#### **Speaker Info:**\\n\\nArun Singh is a seasoned Site Reliability Engineer & DevOps professional,\\ncurrently employed with Adobe Systems India Pvt Ltd. He has extensive\\nexperience in Linux administration, several monitoring tools, python and bash\\nprogramming, SQL and NoSQL databases etc. He has developed an expert level of\\nunderstanding in Saltstack, a configuration management tool. His recent work\\nhas been revolving around improving the efficiency and productivity of site\\nreliability engineers and devops professionals in day to day work scenario.\\n\\n\\n\\n#### **Speaker Links:**\\n\\nhttps://www.linkedin.com/in/arun-kumar-singh-17119b40/\\n\\nhttp://arunblogger.com/\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/self-healing-code-a-journey-through-auto-remediation~dw2Xb/",
+			"speaker": {
+				"name": "arusing@adobe.com",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"37": {
+			"title": "Boosting Python Web Applications with Protocol Buffers and GRPC",
+			"description": "\\n\\n#### **Description:**\\n\\n![enter image description\\nhere](https://image.slidesharecdn.com/microservicessummittalk-1-31-170208170653/95/bringing-\\nlearnings-from-googley-microservices-with-grpc-varun-talwar-\\ngoogle-42-638.jpg?cb=1486576122)\\n\\nDo you know in the current micro services world, how to spot the critical\\nparts of a monolith and replace them with modern efficient technologies? Have\\nyou ever wondered how Google or Netflix scale their traffic? For all these\\nquestions you should know how you can boost your web applications using\\nProtocol Buffers and GRPC. Protocol Buffer is the data format that allows you\\nto efficiently compose and read messages in binary format over HTTP/2. GRPC is\\na transport mechanism which delivers the protocol buffers over the wire. In\\nthe recent days, businesses may integrate with third party systems. For that\\nto be smooth, any system can implement a micro service and others can consume\\nit and vice versa.\\n\\n\\n\\n#### **Prerequisites:**\\n\\nKnowledge of JSON based REST services. Others will be covered in the talk.\\n\\n\\n\\n#### **Content URLs:**\\n\\nTalk's preliminary slides are here:\\n\\n<https://goo.gl/bb1RDh>\\n\\n\\n\\n#### **Speaker Info:**\\n\\n![enter image description here](https://challengepost-s3-challengepost.netdna-\\nssl.com/photos/production/user_photos/000/263/747/datas/profile.JPG)\\n\\nNaren Arya, currently working as Software Engineer 2 at Citrix R&D, India. He\\nis a Pythonista from the beginning. Currently joined the cloud services team\\nin Citrix in a full stack development role. He is well known with his Python\\nblog Impythonist. Gave many conference talks and presentations before. He is\\nwilling to share his knowledge of building micro services with Protocol\\nBuffers & GRPC. Naren previously worked at few innovative startups like\\nKnowlarity Cloud Telephony for integrating many different platforms using\\nDjango & BackboneJS.\\n\\nHe loves blogging on open source because it is the simplest way to explain\\nthings to the loving community. Apart from Python, he loves web development\\noverall, best practices of scaling etc.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n<https://github.com/narenaryan>\\n\\n<https://www.linkedin.com/in/narenarya/>\\n\\n<https://impythonist.wordpress.com/>\\n\\n<https://www.youtube.com/watch?v=NAwFrYcAY8Y>\\n\\n<https://medium.com/@narenarya>\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/boosting-python-web-applications-with-protocol-buffers-and-grpc~egQZb/",
+			"speaker": {
+				"name": "Naren",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"38": {
+			"title": "Keynote - Python Community Principles by Elizabeth Ferrao",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"39": {
+			"title": "Keynote by Peter Wang",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"40": {
+			"title": "Sponsored Workshop/Talks 3",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"41": {
+			"title": "Geospatial data science and analysis using ArcGIS API for Python",
+			"description": "\\n\\n#### **Description:**\\n\\nAnalysts and data scientists can use the ArcGIS API in combination with data\\nscience libraries in Python for mapping, visualization and geospatial data\\nanalysis. This live-demo style talk will demonstrate how to perform\\nsophisticated vector and raster analysis, geocoding, map making, routing and\\ndirections using a Pythonic API along with Jupyter notebooks and Pandas.\\n\\nPython has positioned itself as a highly suitable programming language for\\ndata exploration and analysis with its rich ecosystem of libraries such as\\nNumPy, SciPy, pandas, maptplolib, scikit-learn, etc. and interactive\\nvisualization environments such as Jupyter notebooks. The ArcGIS Python API\\nfollows suite in being your library for comprehensive analyses of geospatial\\ndata. With an intuitive design and easy to use syntax, the API opens up access\\nto rich geoprocessing services and big data analysis capabilities of spatial\\ndata.\\n\\nArcGIS API for Python is a Python library for working with maps and geospatial\\ndata. It provides simple and efficient tools for sophisticated vector and\\nraster analysis, geocoding, map making, routing and directions, as well as for\\norganizing and managing a GIS with users, groups and information items. In\\naddition to working with your own data, the library enables access to ready to\\nuse maps and curated geographic data from Esri and other autorotative sources.\\nIt also integrates well with the scientific Python ecosystem and includes rich\\nsupport for Pandas and Jupyter notebook.\\n\\nThis workshop will cover how analysts and data scientists can use the ArcGIS\\nplatform in combination with data science libraries from Python for mapping,\\nvisualization and geospatial data analysis.\\n\\nA proposed outline of the talk is below:\\n\\n  * **Jupyter notebooks for geospatial data science and analysis**\\n  * **Mapping**\\n  * the map widget\\n  * web maps\\n  * 3d maps / scenes\\n  * **Exploratory data analysis**\\n  * Feature and raster layers\\n  * pandas \\n  * spatial dataframe\\n  * **Visualization**\\n  * matplotlib and bokeh charting\\n  * smart mapping, heatmaps\\n  * hotspots, space time cubes\\n  * **Analysis**\\n  * Spatial analysis\\n  * GeoAnalytics (big data analysis)\\n  * Raster analysis\\n  * Integration with data science libraries\\n  * Opencv-python and imagery layers\\n  * **Machine learning with geospatial data**\\n  * Scikit-learn and feature data\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * Basic Python / programming knowldge\\n\\n\\n\\n#### **Content URLs:**\\n\\nhttps://developers.arcgis.com/python/sample-notebooks/\\n\\nhttps://developers.arcgis.com/python/\\n\\nhttps://github.com/Esri/arcgis-python-\\napi/blob/master/talks/uc2017/ArcGIS%20Python%20API%20for%20Analysts%20and%20Data%20Scientists/ArcGIS%20Python%20API%20for%20Analysts%20and%20Data%20Scientists.ipynb\\n\\n\\n\\n#### **Speaker Info:**\\n\\nRohit Singh is the lead developer of ArcGIS API for Python, at Esri, the world\\nleader in GIS.\\n\\nRohit graduated from IIT Kharagpur with a degree in Architecture and has\\nextensive experience and passion in the field of software design and\\ndevelopment. In a rich career spanning over 18 years, Rohit has worked for\\nlarge and small companies, including startups as well as global technology\\nbehemoths such as IBM and TCS. For the past 15 years, he has worked as a lead\\nsoftware architect at Esri, the world leader in GIS, and been instrumental in\\nthe design and development of several industry leading GIS products such as\\nArcGIS Engine, ArcGIS Enterprise and the ArcGIS API for Python. He frequently\\npresents at conferences around the world, showcasing the latest developments\\nin the field of geospatial analysis and technology.\\n\\n\\n\\n#### **Speaker Links:**\\n\\nhttps://github.com/rohitgeo\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/geospatial-data-science-and-analysis-using-arcgis-api-for-python~eZp8b/",
+			"speaker": {
+				"name": "Rohit Singh",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"42": {
+			"title": "Getting Started with Embedded Python: MicroPython and CircuitPython",
+			"description": "\\n\\n#### **Description:**\\n\\nThe **MicroPython** project is an open source implementation of Python 3 that\\nincludes a small subset of the Python standard libraries, and is optimised to\\nrun on microcontrollers with constrained environments like limited ROM, RAM\\nand processing power. It came to life after a successful Kick-starter campaign\\nby Damien George. CircuitPython is a fork of MicroPython further developed by\\nAdafruit Industries(https://www.adafruit.com) which includes great extension\\nto control analog sensors, RGB and neopixel LEDs etc.\\n\\nTraditionally Microcontrollers like AVR, ARM, ESP8266(WiFi SoC) are programmed\\nin Embedded C or Assembly which has a quite overwhelming learning curve,\\nMicroPython makes it easy and allows you to do same with your favourite\\nscripting language Python. Imagine you want to read a sensor or turn on lights\\nfrom a web server, now you don't need to learn register level programming for\\nthat, you can do that with MicroPython, It is also supported on 5$ WiFi SoC,\\nthe ESP8266 which is great for making small IoT devices.\\n\\nMicroPython is packed full of advanced features such as an interactive prompt,\\narbitrary precision integers, closures, list comprehension, generators,\\nexception handling and more. Yet it is compact enough to fit and run within\\njust 256k of code space and 16k of RAM.\\n\\nMicroPython aims to be as compatible with normal Python as possible to allow\\nyou to transfer code with ease from the desktop to a microcontroller or\\nembedded system. You get an interactive prompt (the REPL) to execute commands\\nimmediately, along with the ability to run and import scripts from the built-\\nin filesystem. The REPL has history, tab completion, auto-indent and paste\\nmode for a great user experience.\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * Basic Python programming language.\\n  * Basic understanding of processors and programming paradigm.\\n  * Basic command line exposure.\\n\\n\\n\\n#### **Content URLs:**\\n\\nMy article on \"Getting Started with MicroPython\" was published in:\\n\\n  * Open Source for you Magazine - Feb 2017 Link: [An Introduction to MicroPython](http://opensourceforu.com/2017/03/an-introduction-to-micropython/)\\n\\n  * Electronics for you Magazine - May 2017\\n\\n[Link to the\\npresentation](https://www.slideshare.net/AyanPahwa1/pyconindia2017micropythonayan)\\n\\n\\n\\n#### **Speaker Info:**\\n\\nI am working as an Embedded Software Engineer at Mentor Graphics- A Siemens\\nBusiness in Noida facility, working mainly on customised Linux kernel and user\\nland environment for Embedded Automotive Solutions like In-Vehicle-\\nInfotainment(IVI) and Advanced Driver Assistance Systems(ADAS).\\n\\nApart from that I am an IoT, Wearable Electronics and Artificial Intelligent\\nenthusiasts, managing operations in same for an IoT startup(http://sdiot.in).\\nI like to code and make DIY projects for fun or automating things. I am a\\nregular blogger for various communities and blog sites. I do lots of open\\nsource contribution in various projects ranging from Home Automations to Drone\\ntechnologies to Embedded libraries.\\n\\nI am also among few FPV drone racing pilot from India, member of Indian Drone\\nRacing League [IDRL](http://droneracingindia.com). I've organised various\\nworkshops, meet ups and drone air shows in Delhi/NCR on Drone technologies,\\nPython programming language, Linux bash scripting, Github, Contributing in\\nopen source, Microcontrollers etc, in companies, colleges and meet up groups.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * [**Website**](https://iayanpahwa.github.io)\\n  * [**Github**](https://www.github.com/iayanpahwa)\\n  * [**Youtube**](https://www.youtube.com/channel/UCgz03WhmWF3otcwXd38bQ9g)\\n  * [**Twitter**](https://www.twitter.com/iAyanPahwa)\\n  * [**Blog on security**](https://www.mentor.com/tannereda/blog/post/securing-iot-devices-2fb40c65-7b7e-4f73-a4c2-89d45b843bfc)\\n  * [**MicroPython article in open source for you magazine- Feb 2017 edition**](http://opensourceforu.com/2017/03/an-introduction-to-micropython/)\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/getting-started-with-embedded-python-micropython-and-circuitpython~dN7me/",
+			"speaker": {
+				"name": "Ayan Pahwa",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"43": {
+			"title": "Spinning local DNS server sourcing responses over HTTPS to combat Man-in-the-middle attack",
+			"description": "\\n\\n#### **Description:**\\n\\n  * It is close to impossible to use any port other than Port 53 to fetch DNS seamlessly across macOS, Windows, Android or iOS.\\n  * The **DNS protocol does not have any mechanism to avoid being tampered**.\\n  * This makes it very easy for any ISP, intermediary party or hacker to give wrong DNS values. We will be able to tell apart false IPs on HTTPS, but we are totally helpless while getting the correct IPs or safeguarding the services that do not implement SSL.\\n  * The solution lies by querying the DNS inside our own network, where we are sure of not being [MitM](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)'d.\\n\\nTo approach the above, we will be running a DNS Server on our system, and\\nsourcing the replies not by the conventional way of upstreaming it via port\\n53, but by fetching the DNS information via HTTPS using Google's DNS APIs.\\n\\nIn the attached repo, I have implemented a simple DNS Server written using\\nTwisted. It is based on a Twisted DNSServerFactory, using a custom DNS\\nresolver, which is **fetching the DNS by\\nquerying[dns.google.com](https://dns.google.com) over HTTPS** , fetching the\\nJSON response, and further translating it to a DNS response to be used\\nlocally.\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * Purpose of DNS\\n  * Familiarity with [`dig`](ftp://ftp.isc.org/isc/bind9/cur/9.11/doc/arm/man.dig.html)\\n  * How basic [Man in the Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) attack works, and how cryptographic systems beat it\\n  * What is [DNSSEC](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions)\\n\\n\\n\\n#### **Content URLs:**\\n\\n[github.com/arn7av/gDNS](https://github.com/arn7av/gDNS)\\n\\n[Presentation](http://slides.com/arn7av/gdns)\\n\\n[pip](https://pypi.org/project/gDNS/)\\n\\n\\n\\n#### **Speaker Info:**\\n\\nArnav is currently working as a Developer at [hedgehog\\nlab](https://hedgehoglab.com/), Hyderabad. He completed his bachelors from VIT\\nUniversity, Vellore. Having spent half a decade behind the computer screen, he\\noften gives valuable insight into Web Architecture, Network Infrastructure &\\nSecurity and Hardware. When he is unable to find the most elegant and\\npractical way to approach a solution, he is often found reading and outputting\\nchunks of python code. He also takes out time and enjoys mentoring peers on\\ngood coding etiquettes. Rest of the time he is deeply devoted leading his DotA\\nteam.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n[arnav.at](https://arnav.at/)\\n\\n[linkedin.com/in/arnav7/](https://www.linkedin.com/in/arnav7/)\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/spinning-local-dns-server-sourcing-responses-over-https-to-combat-man-in-the-middle-attack~eVnoe/",
+			"speaker": {
+				"name": " arnAV",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"44": {
+			"title": "Scientific computing using Cython: Best of both worlds!",
+			"description": "\\n\\n#### **Description:**\\n\\nCython is not only an excellent and widely used tool to speed up computational\\nPython code, it\u2019s also a very smart way to talk to native code and libraries.\\nThe Cython compiler translates Python code to C or C++ code, and supports\\nstatic type annotations to allow direct use of C/C++ data types and functions.\\nYou get the best of both worlds while working with Cython: Python like syntax\\nwith blazing fast C speed.\\n\\nThis talk/tutorial by a Python/Cython developer introduces Cython programming\\nlanguage and leads the participants all the way from their first Python\\nextension to an efficient integration with native C. Topics covered will be:\\n1. Using the Cython compiler to build a native extension module 2. Cython\\ndevelopment from Jupyter notebook 3. Mixing Python with static C types in the\\nCython language 4. Calling into native code from Cython code (Brief\\nintroduction) 5. Wrap up: A brief case study Cyvlfeat: A Cython/Python wrapper\\nfor Computer Vision library, VLFeat.\\n\\nParticipants are expected to have a good understanding of the Python language,\\nsome basic knowledge about C or C++. No deep C programming knowledge is\\nrequired, nor is any prior knowledge needed about writing extension modules\\nfor the CPython runtime.\\n\\n\\n\\n#### **Prerequisites:**\\n\\nParticipants should be familiar with Python syntax and C syntax (Optional).\\n\\n\\n\\n#### **Content URLs:**\\n\\nhttps://github.com/simmimourya1/europython17\\n\\n\\n\\n#### **Speaker Info:**\\n\\nSimmi Mourya is on a mission to promote the Python programming language to\\nfacilitate the growth of a diverse community of Python Ninjas. She is a deep\\nlearning engineer at Predible Health. Her interest lies in Deep Learning and\\nArtificial Intelligence. She is about to finish Udacity's Artificial\\nIntelligence Nano-degree. She has a good amount of experience in Cython\\nprogramming language because of her contributions to Cyvlfeat, a Cython/Python\\nwrapper for famous Computer Vision library named VLFeat. Find it here:\\nhttps://github.com/menpo/cyvlfeat She has a lot of speaking experience. She's\\nan active speaker at Women Tech Makers Delhi, India. Previously, she has\\npresented at Europython 2017, Fossasia Open Tech Summit 2017, Singapore. She\\nis a past Google Summer of Code scholar. She has also provided mentoring\\nsupport for Google Code-In 2016. You can find her stargazing almost every\\nnight! She loves photography and singing. She makes the best pasta!\\n\\n\\n\\n#### **Speaker Links:**\\n\\nhttps://github.com/simmimourya1 https://gsoc2016.wordpress.com\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/scientific-computing-using-cython-best-of-both-worlds~aO5Qd/",
+			"speaker": {
+				"name": "Simmi Mourya",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"45": {
+			"title": "How import works in Python",
+			"description": "\\n\\n#### **Description:**\\n\\n**Import machinery** has been revamped and has been re-written in Python3. Not\\nmany of the developers are aware of the internal mechanics of how the import\\nsystem works and how this can be leveraged for some specific use cases\\n\\nThis talk will introduce the audience to:\\n\\n  * Evolution of import system in python\\n  * What happens under the hoods when a module/package is imported into Python namespace\\n  * Various hooks available that can be leveraged for customization\\n  * Some of the usecases where this can be leveraged\\n\\nAfter the talk, audience will get a clear idea of how import system is\\nimplemented in Python3 and will be able to leverage the hooks available for\\nany future use cases\\n\\n\\n\\n#### **Prerequisites:**\\n\\nKnowledge of python programming, basic understanding of Python modules and\\nPackages, knowledge of python standard library modules like sys, os, etc\\n\\n\\n\\n#### **Content URLs:**\\n\\nhttps://github.com/sdonapar/how_import_works\\n\\nhttps://github.com/sdonapar/how_import_works/blob/master/how_import_works.pdf\\n\\n\\n\\n#### **Speaker Info:**\\n\\nI am a mechanical engineering graduate with 25+ years of experience in\\nmanufacturing and financial services domains, I have started my career as\\ndesign engineer in hydraulic turbine manufacturing company. After spending 5\\nyears, I have stated my IT journey at Aspect Development/i2 Technology. I have\\nworked primarily on data scrubbing, modelling, analysis and data migration\\nprojects for supply chain management. I then joined technology services side\\nof Fidelity, financial services company. I have been using python for last 5\\nyears for automation, data analysis, web development, etc. I am very excited\\nabout the endless opportunities that arise in day today work and application\\nof python for solving/automating the same. I am very passionate about teaching\\npython to engineering students thru pythonexpress program. I conduct regular\\ntraining sessions for data analys ( numpy, pandas and matplotlib).\\n\\n\\n\\n#### **Speaker Links:**\\n\\ngithub link - https://github.com/sdonapar\\n\\nlinkedin profile - https://www.linkedin.com/in/sasidonaparthi\\n\\ntwitter handle - **@sdonapar**\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/how-import-works-in-python~dypzb/",
+			"speaker": {
+				"name": "Sasidhar Donaparthi",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"46": {
+			"title": "Using Python and microservices to fuel WebPush at Mozilla",
+			"description": "\\n\\n#### **Description:**\\n\\nIn this talk, I\u2019ll be talking about how WebPush works, what are the key\\ncomponents involved and their roles in depth. Following this, I will be\\nexplaining how to build a webpush microservice written in Python for your\\napplication server.\\n\\nFollowing is the break up of my talk:\\n\\nWhat is Web Push?\\n\\n  * A brief about what the webpush technology is and how it works. \\n  * What are service workers and their role in webpush.\\n  * What are push servers and their role in webpush.\\n  * How to subscribe to push notifications\\n\\nHow to build a webpush microservice using Python?\\n\\n  * What are the various components?\\n  * How to handle authentication for requests?\\n  * What are channels and how to implement them?\\n  * How to implement subscription to a channel?\\n  * How to implement publishing to a channel?\\n\\n\\n\\n#### **Prerequisites:**\\n\\nHTTP Verbs\\n\\n\\n\\n#### **Content URLs:**\\n\\nhttps://docs.google.com/presentation/d/161Om8lLaXJYF5nqrYkoP8Zzm26Kxh8LpXAZ76LoYDSc/edit?usp=sharing\\n\\n\\n\\n#### **Speaker Info:**\\n\\nMansimar was a software developer intern at Mozilla and as part of her\\ninternship, developed a PubSub channels based push microservice. She has\\nspoken at [FOSDEM 2017](https://www.youtube.com/watch?v=Ld4PFVlbCPk&t=9s) and\\n[EuroPython 2017](https://ep2017.europython.eu/en/) about the webpush\\ntechnology and has written a series of\\n[articles](https://medium.com/@mansimarkaur.mks)) about her work and webpush\\ntechnology. She has worked on Brew as part of her Google Summer of Code with\\nHomebrew. Previously, she worked on HackerRank's autocompletion service as an\\nintern. Being an ardent open source enthusiast, she has contributed to Kinto -\\na minimalist JSON storage service, Brackets - a code editor by Adobe and also\\nhas a string of self-projects that she's proudly maintaining.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n[FOSDEM 2017](https://archive.fosdem.org/2017/schedule/event/python_kinto/)\\n\\n[Europython 2017](https://ep2017.europython.eu/conference/talks/using-python-\\nand-microservices-to-fuel-webpush)\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/using-python-and-microservices-to-fuel-webpush-at-mozilla~b6KNd/",
+			"speaker": {
+				"name": "Mansimar Kaur",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"47": {
+			"title": "Panel Discussion on Women in Open Source",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"48": {
+			"title": "Visualising the world of competitive programming with Python",
+			"description": "\\n\\n#### **Description:**\\n\\nCompetitive programming has grown exponentially in the last decade. Millions\\nof students, teachers, professionals solve problems including complex\\noptimisations every minute. With the influx of programming languages,\\ndevelopers have a wide range of tools to choose from and use them to solve\\ncompetitive challenges. Some of the popular platforms include Codeforces,\\nCodechef, Hackerrank, Hackerearth, Topcoder etc.\\n\\nIn this talk we are going to use the dataset of codes scraped from Codeforces\\nfrom a variety of challenges. These include programs written by top rated\\ncoders across the world to the newbies. The platform allows you to code in 26\\ndifferent languages which obviously include popular programming languages like\\nC, C++, Java, Javascript, PHP, Python etc. There are a very wide range of\\nchallenges in competitive programming like Sorting, Binary Search, Trees,\\nGraphs, Dynamic Programming to name a few. The talk will cover the\\nvisualization of the dataset among broad classifications of how each\\nprogramming language performs in these classifications. How efficient are\\nprogramming languages across classifications in terms of time and memory and\\nseveral others?The talk would also specifically cover the ease of using Python\\nto solve different classes of challenges in competitive programming and the\\nusage of Python over time.\\n\\nMajor takeaways :\\n\\n  1. ABC of web scraping and best practices. \\n  2. Optimizing web scraping to scale. \\n  3. No-SQL databases for storing unstructured data\\n  4. How does Python as a language fare in competitive programming in terms of efficiency and popularity?\\n  5. Can I pursue competitive programming using Python ONLY?\\n  6. An analysis of popular programming languages used for solving challenges.\\n\\n\\n\\n#### **Prerequisites:**\\n\\nFamiliarity with Python. Familiarity with web scraping is a huge plus.\\n\\n\\n\\n#### **Content URLs:**\\n\\nProposal Draft : https://www.slideshare.net/AnujMenta/visualising-the-world-\\nof-competitive-programming-with-python-codeforces\\n\\n\\n\\n#### **Speaker Info:**\\n\\nI am an IIT Kharagpur graduate(2017) who spent over 4 years coding in Python.\\nWorked with all styles of python from website development using Django and\\nFlask to scientific computing using numpy and scikit-learn to web-scraping\\nusing Selenium. It's been a wonderful journey all along and I'm now looking\\nforward to bring as many people on board as I can to experience what I've\\nexperienced.\\n\\nI am also the founder of Papercop, an examination preparation portal for the\\nstudents of IIT Kharagpur which has about 70k+ hits. I am a very passionate\\nspeedcuber( Can solve the rubiks cube in about 10s odd). Won plenty of medals\\nin speedcubing competitions across the country. I now work as an analyst with\\nAmerican Express.\\n\\n\\n\\n#### **Speaker Links:**\\n\\nGithub : https://github.com/anujmenta\\n\\nLinkedIn : https://in.linkedin.com/in/anuj-menta-314b5969\\n\\nWorld Cube Association Profile :\\nhttps://www.worldcubeassociation.org/persons/2013MENT01\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/visualising-the-world-of-competitive-programming-with-python~epBmb/",
+			"speaker": {
+				"name": "Anuj Menta",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"49": {
+			"title": "How is __metaclass__ used in real life.",
+			"description": "\\n\\n#### **Description:**\\n\\nClass objects in python are themselves instances of the `type` class. Usage of\\nthe `metaclass` allows you to modify the process of creating a class object.\\nPractical use-cases use `metaclass` attribute to add, delete, rename, or\\nsubstitute methods and attributes in the class that is initiated.\\n\\n**Content:**\\n\\n**Theory**\\n\\n  1. Class objects are instances of `type` class\\n  2. How to override the `type` class\\n  3. Introduction to the `__prepare__` method\\n\\n**Examples**\\n\\n  1. How to create singleton classes in Python\\n  2. Using `metaclass` to introduce methods in a class without inheritance \\n  3. How `metaclass` is used in Django REST Framework Serializers.\\n  4. How Django uses `metaclass` to maintain backward compatibility\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  1. Intermediate familiarity object oriented programming concepts and how inheritance works in Python\\n  2. Basic understanding of serializers (Not compulsory).\\n\\n\\n\\n#### **Content URLs:**\\n\\n[**My content**](https://github.com/vimarshc/metaclass-talk)\\n\\n**Other links**\\n\\n  1. [invoking metaclass](https://www.python.org/dev/peps/pep-3115/#invoking-the-metaclass)\\n  2. [metaclass docs](https://docs.python.org/3/reference/datamodel.html#customizing-class-creation)\\n\\n\\n\\n#### **Speaker Info:**\\n\\nVimarsh Chaturvedi is currently working at [Hedgehog\\nlabs](https://hedgehoglab.com/) as Developer. Graduated from Delhi\\nTechnological University in 2016. Lover of Python and small time contributor\\nto Django REST Framework. In his spare time he likes to get into the nuts and\\nbolts of Django and Django REST Framework. Likes to override DRF\\nfunctionalities and write `mixins` on steroids for fun. Firm believer of if\\nyou have to write the same code twice there is a more elegant way to do it.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n[Github](https://github.com/vimarshc)\\n\\n[Linkedin](https://www.linkedin.com/in/vimarshc/)\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/how-is-__metaclass__-used-in-real-life~epByb/",
+			"speaker": {
+				"name": "Vimarsh Chaturvedi",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"50": {
+			"title": "Django on Steroids -- Building Applications at Web Scale",
+			"description": "\\n\\n#### **Description:**\\n\\nDjango is an excellent web-application framework to build scalable, extensible\\nand high-performance web applications that can serve hundreds of thousands of\\nrequests per second -- while keeping the development cycle optimal and\\nmaintaining the sanity of developer mind-space. The success of the framework\\ncan be attributed to the well-thought out design patterns and opinionated\\ndecisions the framework makes that walks the thin line between having all\\nbatteries included and giving the developer tremendous room to grow out of the\\nbox.\\n\\nThis talk summarizes my learning from using Django as the core application\\nengine in multiple production applications for the past two years at DoSelect\\nto serve tens of millions of requests everyday, while maintaining stringent\\navailability SLAs and extremely low response times. The content of the talk\\noutlines the best practices and gotchas in using Django meant for web scale --\\nright from designing the project layouts to writing different components of\\nyour app, and finally breaking out of Django and using the best tools to\\nsupport performance and reliability of your application.\\n\\nThe talk would be structured around the following focus areas:\\n\\n  1. Structuring your Django project for extensibility and performance\\n  2. Designing your request-response workflow for optimal throughput\\n  3. How to write Django queries that don't kill your application\\n  4. Designing your caching workflow\\n  5. Using components around your Django app optimally -- Gunicorn, NGINX, PostgreSQL, etc.\\n\\nThe talk will include real-world code examples while illustrating the points\\nabove \u2013 explaining what I faced in production, and how I solved it (and then\\nrealized that\u2019s what I should have done in the first place). This talk builds\\non top of a talk given by me at [PyCon Pune\\n2017](https://pyconpune.talkfunnel.com/2017/63-django-on-steroids-lessons-\\nfrom-scale) \\-- the content has evolved as I have while continuing on quest to\\nuse Django better in production.\\n\\n\\n\\n#### **Prerequisites:**\\n\\nThe talk is intended for people who have a basic knowledge of Python / Django,\\nknow how web applications work in general. Key take-aways would be things you\\ncan directly drop into your production Django application for better\\nperformance.\\n\\n\\n\\n#### **Content URLs:**\\n\\n  1. [Talk at PyCon Pune 2017](https://www.youtube.com/watch?v=E5JQlHLimTA)\\n  2. [Talk at PyCon India 2013](https://www.youtube.com/watch?v=ZfnWRe0J4UE)\\n  3. [Django on Steroids -- Slides](https://sanketsaurav.github.io/django-on-steroids/)\\n  4. [Lessons from Scale: Django](https://sanketsaurav.com/lessons-from-scale-django-124f7b16ae0c)\\n\\n\\n\\n#### **Speaker Info:**\\n\\nSanket ([@sanketsaurav](https://twitter.com/sanketsaurav)) is co-founder and\\nChief of Geeks at [DoSelect](http://doselect.com). He\u2019s 50% developer and 50%\\ndesigner. He\u2019s been dabbling with computers since the age of 10, and had\\nstarted his first venture at 18. He loves the Web and likes building cool\\nstuff that matter. His languages of choice are Python, Go and JavaScript, and\\nhe\u2019s been building production apps using these for the past two years. He\u2019s\\nalso spoken at more than 50 events and hackathons across the country on open\\nsource technologies including Python, HTML5 and web applications in general.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  1. [GitHub](http://github.com/sanketsaurav)\\n  2. [Website](http://sanketsaurav.com)\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/django-on-steroids-building-applications-at-web-scale~ejLBb/",
+			"speaker": {
+				"name": "Sanket Saurav",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"51": {
+			"title": "OLMONK : Data validation package",
+			"description": "\\n\\n#### **Description:**\\n\\nThe cycle of data analysis involves many stages from data gathering to data\\nvisualization, with data filtering being one of the limiting steps. The need\\nfor data filtering will arise from problems in the way the data is entered and\\nstored. Mistakes as simple as setting a numeric column to character data type,\\nor passing null values to required parameters can result in crashes or\\nundefined behavior. OLMONK helps one avoid them, and enables smooth data\\nanalysis and visualization.\\n\\nThe package can be used as a validation layer before any kind of data analysis\\nsoftware. While building a software, the developer can import OLMONK and can\\ndefine constraints depending on the required input format. The package then\\nlogs appropriate warnings and errors, along with data location (i.e. row and\\ncolumn info), in a file, and notifies the user of the same. While most of the\\nstandard inconsistencies can be rectified by OLMONK, some cases may require\\nhuman intervention and for them the package raises errors.\\n\\nIt allows the user to ensure the correctness of data, before feeding the\\nanalysis tool with potentially incompatible data. One can validate different\\nkinds of data with tailor-made checks. It can currently process .csv, .txt,\\n.xlsx, .bed format files.\\n\\nOLMONK enables the user to:\\n\\n  1. Validate data with single config file \\n  2. Add external validation functions\\n  3. Generate report In different formats\\n  4. Use inbuilt data validation checks such as a check for subset, superset or duplicates\\n\\nThe code follows PEP8 and PEP256 guidelines throughout, and has been tested\\nwith >90% test coverage.\\n\\nThe talk will be focused on how to use the package for validating demo files\\nand discuss scope of the package in various industries.\\n\\n\\n\\n#### **Prerequisites:**\\n\\nPython\\n\\n\\n\\n#### **Content URLs:**\\n\\nhttps://drive.google.com/drive/folders/0B1x1H20bti0benpSS0l5eDQ4cWM?usp=sharing\\n\\n\\n\\n#### **Speaker Info:**\\n\\nAnkur is a developer with over 4 years of experience in domain varying across\\nEmbedded Systems, Robotics, and Data Science. He currently works as a\\ndeveloper at Elucidata Corporation, where he builds models that help\\nscientists process biological data. He holds Bachelor's degree from Indian\\nInstitute of Information Technology, Jabalpur.\\n\\n\\n\\n#### **Speaker Links:**\\n\\nLinkedIn Profile: https://linkedin.com/ankur-agrawal-9a280752/\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/olmonk-data-validation-package~aO6Ee/",
+			"speaker": {
+				"name": "ankur09011",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"52": {
+			"title": "PyBeacon: Eddystone Protocol implementation in Python",
+			"description": "\\n\\n#### **Description:**\\n\\nEddystone is a protocol specification, an open beacon format from Google, that\\ndefines a Bluetooth low energy (BLE) message format for proximity beacon\\nmessages. It describes several different frame types that may be used\\nindividually or in combinations to create beacons that can be used for a\\nvariety of applications. PyBeacon is an Eddystone implementation in Python for\\nLinux systems. Using this, Linux systems can be used as a beacon or a beacon\\nscanner.\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * Should have a basic understanding of Python.\\n\\n\\n\\n#### **Content URLs:**\\n\\n  * [Drafted Presentation](http://slides.com/prabhanshuattri/pybeacon-eddystone-protocol-implementation-in-python)\\n  * [PyBeacon](https://github.com/nirmankarta/PyBeacon)\\n  * [Eddystone](https://github.com/google/eddystone/)\\n  * [PyBeacon on PyPi](https://pypi.python.org/pypi/PyBeacon)\\n  * [Eddystone URL Protocol](https://github.com/google/eddystone/tree/master/eddystone-url)\\n  * [Eddystone UID Protocol](https://github.com/google/eddystone/tree/master/eddystone-uid)\\n  * [PyBeacon in Eddystone Repo](https://github.com/google/eddystone/tree/master/eddystone-url/implementations/PyBeacon)\\n\\n\\n\\n#### **Speaker Info:**\\n\\nPrabhanshu Attri is a RGSoC Mentor, an open source enthusiast, IEEE CS Richard\\nE Merwin Scholar and Former Summer Research Intern at Indian Institute of\\nTechnology Guwahati. He has also worked as a Software Development Engineer at\\nZomato.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * [Website](http://prabhanshu.com)\\n  * [GitHub](http://prabhanshu.com/github-repo)\\n  * [LinkedIn](http://prabhanshu.com/linkedin)\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/pybeacon-eddystone-protocol-implementation-in-python~eXpVe/",
+			"speaker": {
+				"name": "Prabhanshu Attri",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"53": {
+			"title": "Clean Architecture Applications in Python",
+			"description": "\\n\\n#### **Description:**\\n\\nClean Architecture helps you build applications that are:\\n\\n  * Independent of Frameworks\\n  * Testable\\n  * Independent of UI\\n  * Independent of Database\\n  * Independent of any external agency\\n\\nThis talk will be an introduction to Clean Architecture principles and system\\ndesign in Python. We will choose a sample application and walk through a\\nsimple usecase of creating clean code.\\n\\nWhat you will gain from this talk:\\n\\n  1. Grow your application with confidence\\n  2. Build applications to be independent of infrastructure like Web Frameworks, Database etc.\\n  3. Avoid mixing of business logic across different layers of your application\\n  4. Test close to 100% of your core business logic\\n  5. Keep your tests fast and independent of infrastructure (DB, Web Layer etc.)\\n\\n\\n\\n#### **Prerequisites:**\\n\\n  * Python Programming Fundamentals\\n  * Basic knowledge of Design concepts, like Dependency Injection, Single responsibility principle etc.\\n  * Experience with building web applications\\n\\n\\n\\n#### **Content URLs:**\\n\\nDraft WIP Slides: <https://www.slideshare.net/secret/65KBnY4zwSpVjA>\\n\\n\\n\\n#### **Speaker Info:**\\n\\nSubhash has 14+ years of software development experience in a variety of\\ndomains, technical roles, software languages and frameworks. His tryst with\\nPython began recently though, about an year ago. Currently, he runs a\\nConsultancy startup aimed at providing Platform Design, Architecture and\\nDevelopment services.\\n\\nHis interests are large scale web platform development, system\\ndesign/architecture and DevOps friendly processes.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * [Github](https://github.com/subhashb)\\n  * [Twitter](https://twitter.com/subhashbhushan)\\n\\n",
+			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/clean-architecture-applications-in-python~bqDka/",
+			"speaker": {
+				"name": "Subhash Bhushan",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"54": {
+			"title": "Sponsored Workshop/Talks 4",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"55": {
+			"title": "Closing Ceremony",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"56": {
+			"title": "DevOps @ Microsoft with Python (Sponsored Talk)",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "Microsoft",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		}
+	}]
+}
