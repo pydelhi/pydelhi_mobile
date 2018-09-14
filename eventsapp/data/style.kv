@@ -1,0 +1,351 @@
+#:kivy 1.0
+
+<Label>:
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            texture: self.texture
+            size: self.texture_size
+            pos: int(self.center_x - self.texture_size[0] / 2.), int(self.center_y - self.texture_size[1] / 2.)
+
+<-Button,-ToggleButton>:
+    state_image: self.background_normal if self.state == 'normal' else self.background_down
+    disabled_image: self.background_disabled_normal if self.state == 'normal' else self.background_disabled_down
+    canvas:
+        Color:
+            rgba: self.background_color
+        BorderImage:
+            border: self.border
+            pos: self.pos
+            size: self.size
+            source: self.disabled_image if self.disabled else self.state_image
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            texture: self.texture
+            size: self.texture_size
+            pos: int(self.center_x - self.texture_size[0] / 2.), int(self.center_y - self.texture_size[1] / 2.)
+
+<BubbleContent>
+    opacity: .7 if self.disabled else 1
+    rows: 1
+    canvas:
+        Color:
+            rgba: self.parent.background_color if self.parent else (1, 1, 1, 1)
+        BorderImage:
+            border: self.parent.border if self.parent else (16, 16, 16, 16)
+            texture: root.parent._bk_img.texture if root.parent else None
+            size: self.size
+            pos: self.pos
+
+<BubbleButton>:
+    background_normal: 'atlas://data/images/defaulttheme/bubble_btn'
+    background_down: 'atlas://data/images/defaulttheme/bubble_btn_pressed'
+    background_disabled_normal: 'atlas://data/images/defaulttheme/bubble_btn'
+    background_disabled_down: 'atlas://data/images/defaulttheme/bubble_btn_pressed'
+    border: (0, 0, 0, 0)
+
+<Scatter>:
+    canvas.before:
+        PushMatrix
+        MatrixInstruction:
+            matrix: self.transform
+    canvas.after:
+        PopMatrix
+
+
+<RelativeLayout>:
+    canvas.before:
+        PushMatrix
+        Translate:
+            xy: self.pos
+    canvas.after:
+        PopMatrix
+
+<Image,AsyncImage>:
+    canvas:
+        Color:
+            rgba: self.color
+        Rectangle:
+            texture: self.texture
+            size: self.norm_image_size
+            pos: self.center_x - self.norm_image_size[0] / 2., self.center_y - self.norm_image_size[1] / 2.
+
+<EffectWidget>:
+    canvas.before:
+        Translate:
+            xy: -self.x, -self.y
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            texture: self.texture
+            pos: self.pos
+            size: self.size
+
+<TabbedPanelContent>
+    rows: 1
+    padding: 3
+    canvas:
+        Color:
+            rgba: self.parent.background_color if self.parent else (1, 1, 1, 1)
+        BorderImage:
+            border: self.parent.border if self.parent else (16, 16, 16, 16)
+            source: (root.parent.background_disabled_image if self.disabled else root.parent.background_image) if root.parent else None
+            size: self.size
+            pos: self.pos
+
+<TabbedPanelStrip>
+    rows: 1
+
+<SplitterStrip>:
+    border: self.parent.border if self.parent else (3, 3, 3, 3)
+    horizontal: '_h' if self.parent and self.parent.sizable_from[0] in  ('t', 'b') else ''
+    background_normal: 'atlas://data/images/defaulttheme/splitter{}{}'.format('_disabled' if self.disabled else '', self.horizontal)
+    background_down: 'atlas://data/images/defaulttheme/splitter_down{}{}'.format('_disabled' if self.disabled else '', self.horizontal)
+    Image:
+        pos: root.pos
+        size: root.size
+        allow_stretch: True
+        source: 'atlas://data/images/defaulttheme/splitter_grip' + root.horizontal
+
+<StripLayout>
+    padding: '2dp', '2dp', '2dp', '2dp'
+    canvas.before:
+        BorderImage:
+            pos: self.pos
+            size: self.size
+            border: root.border
+            source: root.background_image
+
+<TabbedPanelHeader>:
+    halign: 'center'
+    valign: 'middle'
+    background_normal: 'atlas://data/images/defaulttheme/tab_btn'
+    background_disabled_normal: 'atlas://data/images/defaulttheme/tab_btn_disabled'
+    background_down: 'atlas://data/images/defaulttheme/tab_btn_pressed'
+    background_disabled_down: 'atlas://data/images/defaulttheme/tab_btn_pressed'
+    border: (8, 8, 8, 8)
+    font_size: '15sp'
+
+<Selector>
+    allow_stretch: True
+
+<TextInput>:
+    canvas.before:
+        Color:
+            rgba: self.background_color
+        BorderImage:
+            border: self.border
+            pos: self.pos
+            size: self.size
+            source: (self.background_disabled_active if self.disabled else self.background_active) if self.focus else (self.background_disabled_normal if self.disabled else self.background_normal)
+        Color:
+            rgba: (self.cursor_color if self.focus and not self.cursor_blink else (0, 0, 0, 0))
+        Rectangle:
+            pos: [int(x) for x in self.cursor_pos]
+            size: 1, -self.line_height
+        Color:
+            rgba: self.disabled_foreground_color if self.disabled else (self.hint_text_color if not self.text else self.foreground_color)
+
+<TextInputCutCopyPaste>:
+    but_cut: cut.__self__
+    but_copy: copy.__self__
+    but_paste: paste.__self__
+    but_selectall: selectall.__self__
+
+    size_hint: None, None
+    size: '150sp', '50sp'
+    BubbleButton:
+        id: cut
+        text: 'Cut'
+        on_release: root.do('cut')
+    BubbleButton:
+        id: copy
+        text: 'Copy'
+        on_release: root.do('copy')
+    BubbleButton:
+        id: paste
+        text: 'Paste'
+        on_release: root.do('paste')
+    BubbleButton:
+        id: selectall
+        text: 'Select All'
+        on_release: root.do('selectall')
+
+<StencilView>:
+    canvas.before:
+        StencilPush
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        StencilUse
+
+    canvas.after:
+        StencilUnUse
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        StencilPop
+
+<FileChooserListLayout>:
+    on_entry_added: treeview.add_node(args[1])
+    on_entries_cleared: treeview.root.nodes = []
+    on_subentry_to_entry: not args[2].locked and treeview.add_node(args[1], args[2])
+    on_remove_subentry: args[2].nodes = []
+    BoxLayout:
+        pos: root.pos
+        size: root.size
+        size_hint: None, None
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: None
+            height: '30dp'
+            orientation: 'horizontal'
+            Widget:
+                # Just for spacing
+                width: '10dp'
+                size_hint_x: None
+            Label:
+                text: 'Name'
+                text_size: self.size
+                halign: 'left'
+                bold: True
+            Label:
+                text: 'Size'
+                text_size: self.size
+                size_hint_x: None
+                halign: 'right'
+                bold: True
+            Widget:
+                # Just for spacing
+                width: '10dp'
+                size_hint_x: None
+        ScrollView:
+            id: scrollview
+            do_scroll_x: False
+            Scatter:
+                do_rotation: False
+                do_scale: False
+                do_translation: False
+                size: treeview.size
+                size_hint_y: None
+                TreeView:
+                    id: treeview
+                    hide_root: True
+                    size_hint_y: None
+                    width: scrollview.width
+                    height: self.minimum_height
+                    on_node_expand: root.controller.entry_subselect(args[1])
+                    on_node_collapse: root.controller.close_subselection(args[1])
+
+# ModalView widget
+<ModalView>:
+    canvas:
+        Color:
+            rgba: root.background_color[:3] + [root.background_color[-1] * self._anim_alpha]
+        Rectangle:
+            size: self._window.size if self._window else (0, 0)
+
+        Color:
+            rgb: 1, 1, 1
+        BorderImage:
+            source: root.background
+            border: root.border
+            pos: self.pos
+            size: self.size
+
+
+# Popup widget
+<Popup>:
+    _container: container
+    GridLayout:
+        padding: '12dp'
+        cols: 1
+        size_hint: None, None
+        pos: root.pos
+        size: root.size
+
+        Label:
+            text: root.title
+            color: root.title_color
+            size_hint_y: None
+            height: self.texture_size[1] + dp(16)
+            text_size: self.width - dp(16), None
+            font_size: root.title_size
+            font_name: root.title_font
+            halign: root.title_align
+
+        Widget:
+            size_hint_y: None
+            height: dp(4)
+            canvas:
+                Color:
+                    rgba: root.separator_color
+                Rectangle:
+                    pos: self.x, self.y + root.separator_height / 2.
+                    size: self.width, root.separator_height
+
+        BoxLayout:
+            id: container
+
+<ScrollView>:
+    canvas.after:
+        Color:
+            rgba: self._bar_color if (self.do_scroll_y and self.viewport_size[1] > self.height) else [0, 0, 0, 0]
+        Rectangle:
+            pos: (self.right - self.bar_width - self.bar_margin) if self.bar_pos_y == 'right' else (self.x + self.bar_margin), self.y + self.height * self.vbar[0]
+            size: min(self.bar_width, self.width), self.height * self.vbar[1]
+        Color:
+            rgba: self._bar_color if (self.do_scroll_x and self.viewport_size[0] > self.width) else [0, 0, 0, 0]
+        Rectangle:
+            pos: self.x + self.width * self.hbar[0], (self.y + self.bar_margin) if self.bar_pos_x == 'bottom' else (self.top - self.bar_margin - self.bar_width)
+            size: self.width * self.hbar[1], min(self.bar_width, self.height)
+
+
+# =============================================================================
+# Screen Manager
+# =============================================================================
+
+<ScreenManager>:
+    canvas.before:
+        StencilPush
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        StencilUse
+    canvas.after:
+        StencilUnUse
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        StencilPop
+   # =============================================================================
+# Accordion widget
+# =============================================================================
+
+[AccordionItemTitle@Label]:
+    text: ctx.title
+
+<AccordionItem>:
+    container: container
+    container_title: container_title
+
+    BoxLayout:
+        orientation: root.orientation
+        pos: root.pos
+        BoxLayout:
+            size_hint_x: None if root.orientation == 'horizontal' else 1
+            size_hint_y: None if root.orientation == 'vertical' else 1
+            width: root.min_space if root.orientation == 'horizontal' else 100
+            height: root.min_space if root.orientation == 'vertical' else 100
+            id: container_title
+
+        StencilView:
+            id: sv
+
+            BoxLayout:
+                id: container
+                pos: sv.pos
+                size: root.content_size

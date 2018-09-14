@@ -1,0 +1,192 @@
+{
+  "0.0.1": [
+    {
+      "tracks": ["Hall 1", "Hall 2", "Hall 3", "Hall 4"],
+      "2018-10-05": [
+        {
+          "talk_id": "00",
+          "title": "Workshop Registration",
+          "start_time": "08:00",
+          "end_time": "9:00",
+          "track": "all"
+        },
+        {
+          "talk_id": "01",
+          "title": "Exploring Pytorch for AI Assistance in Medical Imaging\n By Abhishek Kumar",
+          "start_time": "10:00",
+          "end_time": "13:00",
+          "track": "1"
+        },
+        {
+          "talk_id": "02",
+          "title": "Decoding Bollywood with Python and Data Science\n By Marc Garcia",
+          "start_time": "10:00",
+          "end_time": "13:00",
+          "track": "2"
+        },
+        {
+          "talk_id": "03",
+          "title": "WebUI Automation using Selenium\n By Bhoomika Aggarwal",
+          "start_time": "10:00",
+          "end_time": "13:00",
+          "track": "3"
+        },
+        {
+          "talk_id": "04",
+          "title": "Advanced Object oriented Programming\nBy Vishnu Kiran",
+          "start_time": "10:00",
+          "end_time": "13:00",
+          "track": "4"
+        },
+        {
+          "talk_id": "05",
+          "title": "Lunch",
+          "start_time": "13:00",
+          "end_time": "14:00",
+          "track": "all"
+        },
+        {
+          "talk_id": "06",
+          "title": "Free and Open Source libraries of Python for Geo spatial analysis\nBy Nishad KA",
+          "start_time": "14:00",
+          "end_time": "17:00",
+          "track": "1"
+        },
+        {
+          "talk_id": "07",
+          "title": "Jupyter hub and Binder\nBy Carol Willing",
+          "start_time": "14:00",
+          "end_time": "17:00",
+          "track": "2"
+        },
+        {
+          "talk_id": "08",
+          "title": "Designing RESTful APIs \nBy Anand Chitipothu",
+          "start_time": "14:00",
+          "end_time": "17:00",
+          "track": "3"
+        },
+        {
+          "talk_id": "09",
+          "title": "Scaling Python up and out with Numba and Dask \nBy Travis Oliphant",
+          "start_time": "14:00",
+          "end_time": "17:00",
+          "track": "4"
+        }
+      ],
+      "2018-10-06": [
+        {
+          "talk_id": "00",
+          "title": "Registration",
+          "start_time": "09:00",
+          "end_time": "10:00",
+          "track": "all"
+        },
+        {
+          "talk_id": "06",
+          "title": "Lunch",
+          "start_time": "13:00",
+          "end_time": "14:00",
+          "track": "all"
+        }
+      ],
+      "2018-10-07": [
+        {
+          "talk_id": "00",
+          "title": "Registration",
+          "start_time": "08:00",
+          "end_time": "09:00",
+          "track": "all"
+        },
+        {
+          "talk_id": "21",
+          "title": "Tea",
+          "start_time": "10:15",
+          "end_time": "10:40",
+          "track": "all"
+        },
+        {
+          "talk_id": "06",
+          "title": "Lunch",
+          "start_time": "13:15",
+          "end_time": "14:05",
+          "track": "all"
+        },
+        {
+          "talk_id": "21",
+          "title": "Tea",
+          "start_time": "15:35",
+          "end_time": "15:55",
+          "track": "all"
+        }
+      ],
+      "2018-10-08": [
+        {
+          "talk_id": "00",
+          "title": "Registration",
+          "start_time": "08:00",
+          "end_time": "09:00",
+          "track": "all"
+        },
+        {
+          "talk_id": "21",
+          "title": "Tea",
+          "start_time": "10:15",
+          "end_time": "10:40",
+          "track": "all"
+        },
+        {
+          "talk_id": "06",
+          "title": "Lunch",
+          "start_time": "13:15",
+          "end_time": "14:05",
+          "track": "all"
+        },
+        {
+          "talk_id": "21",
+          "title": "Tea",
+          "start_time": "15:35",
+          "end_time": "15:55",
+          "track": "all"
+        }
+      ],
+      "2018-10-09": [
+        {
+          "talk_id": "00",
+          "title": "Registration",
+          "start_time": "08:00",
+          "end_time": "09:00",
+          "track": "all"
+        },
+        {
+          "talk_id": "21",
+          "title": "Tea",
+          "start_time": "10:15",
+          "end_time": "10:40",
+          "track": "all"
+        },
+        {
+          "talk_id": "06",
+          "title": "Lunch",
+          "start_time": "13:15",
+          "end_time": "14:05",
+          "track": "all"
+        },
+        {
+          "talk_id": "21",
+          "title": "Tea",
+          "start_time": "15:35",
+          "end_time": "15:55",
+          "track": "all"
+        },
+        {
+          "talk_id": "55",
+          "title": "Closing Ceremony",
+          "start_time": "16:50",
+          "end_time": "17:25",
+          "track": "all"
+        }
+      ]
+    }
+  ]
+}
