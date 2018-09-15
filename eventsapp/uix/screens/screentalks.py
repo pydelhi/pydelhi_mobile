@@ -28,11 +28,6 @@ class SpeakerDetails(Factory.ScrollGrid):
         text: root.speaker['name']
     BackLabel
         text: root.speaker['info']
-    ActiveButton
-        text: "More details on cfp..."
-        on_release:
-            import webbrowser
-            if 'cfp' in root.speaker: webbrowser.open(root.speaker['cfp'])
         ''')
 
 
@@ -69,15 +64,30 @@ class ScreenTalks(Screen):
 <ScreenTalks>
     spacing: dp(9)
     name: 'ScreenTalks'
-    ScrollView
-        id: scroll
-        ScrollGrid
-            id: container
-            BackLabel:
-                active: True
-                id: talk_title
-            BackLabel:
-                id: talk_desc
+    BoxLayout:
+        orientation: 'vertical'
+        ScrollView
+            id: scroll
+            ScrollGrid
+                id: container
+                BackLabel:
+                    active: True
+                    id: talk_title
+                BackLabel:
+                    id: talk_desc
+        BoxLayout
+            size_hint_y: None
+            height: dp(54)
+            padding: dp(9)
+            ImBut
+                source: 'atlas://data/default/share'
+                color: app.base_active_bright[:3] + [.9]
+            ImBut
+                source: 'atlas://data/default/reminder'
+                color: app.base_active_bright[:3] + [.9]
+            ImBut
+                source: 'atlas://data/default/feedback'
+                color: app.base_active_bright[:3] + [.9]
         ''')
 
     def on_pre_enter(self):
@@ -118,7 +128,7 @@ class ScreenTalks(Screen):
                             social_acc.lower()
                         imbt.on_released = partial(
                             webbrowser.open, social_link)
-                        imbt.color = app.base_active_color
+                        imbt.color = app.base_active_bright[:3] + [.9]
                         gl.add_widget(imbt)
                     speaker_details.add_widget(gl)
                 self.ids.container.add_widget(speaker_details)

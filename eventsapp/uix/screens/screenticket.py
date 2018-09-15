@@ -16,7 +16,7 @@ class ScreenTicket(Screen):
         spacing: dp(12)
         orientation: 'vertical'
         AsyncImage:
-            source: 'https://www.wwkd.org/wp-content/uploads/2018/08/tickets.png'
+            source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnU9KBKU6YoSa7bLg08XxPvq7_sujdQoEJRAzD9sDCCaUcTYXnA'
             allow_stretch: True
             size: root.size
             opacity: 1
