@@ -40,7 +40,7 @@ class PyConApp(App):
     Our main app class:
     '''
 
-    base_active_bright = ListProperty((226/255., 168/255., 180/255., 1))
+    base_active_bright = ListProperty((216/255., 34/255., 118/255., 1))
     '''
     '''
 

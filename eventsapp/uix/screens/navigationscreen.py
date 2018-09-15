@@ -22,7 +22,7 @@ class NavigationScreen(Screen):
     halign: 'left'
     valign: 'center'
     padding: dp(15), dp(15)
-    color: app.base_active_color
+    color: app.base_active_bright
     on_released: app.navigationdrawer.toggle_state()
 
 <LeftPanel@BoxLayout+Image>

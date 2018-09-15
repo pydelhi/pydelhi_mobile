@@ -2,6 +2,7 @@ from kivy.uix.screenmanager import Screen
 from kivy.factory import Factory
 from kivy.lang import Builder
 from functools import partial
+from kivy.app import App
 
 
 class ScreenCommunity(Screen):
@@ -44,12 +45,13 @@ class ScreenCommunity(Screen):
 
         social_comm = community['social']
         # social_len = len(social_comm)
-
+        app = App.get_running_app()
         gl = self.ids.container
         gl.clear_widgets()
         import webbrowser
         for social_acc, social_link in social_comm.items():
             imbt = Factory.ImBut()
+            imbt.color = app.base_active_bright
             imbt.source = 'atlas://data/default/' + social_acc.lower()
             imbt.on_released = partial(webbrowser.open, social_link)
             gl.add_widget(imbt)
