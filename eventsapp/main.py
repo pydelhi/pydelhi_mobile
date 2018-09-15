@@ -14,7 +14,7 @@ from os.path import abspath, dirname
 # load only the images that you set here in this dir.
 # This way you avoid first loading kivy default images and .kv then
 # loading your data files on top.
-os.environ['KIVY_DATA_DIR'] = abspath(dirname(__file__)) + '/data'
+#os.environ['KIVY_DATA_DIR'] = abspath(dirname(__file__)) + '/data'
 os.environ["PYCONF_OFFLINE_MODE"] = "1"
 
 # import App this is the main Class that manages UI's event loop
