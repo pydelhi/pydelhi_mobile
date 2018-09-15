@@ -1,7 +1,7 @@
 # -*- coding: utf8 -*-
 '''App for PyConIndia 2018:
 
-Github Repo: http://github.com/
+Github Repo: http://github.com/pythonindia/PyCon-Mobile-App
 '''
 
 __version__ = '0.0.1'
@@ -26,7 +26,7 @@ from kivy.properties import ListProperty, StringProperty
 
 script_path = os.path.dirname(os.path.realpath(__file__))
 
-# add module path for screen so they can be ynamically be imported
+# add module path for screen so they can be dynamically be imported
 module_path = script_path + '/uix/screens/'
 sys.path.insert(0, module_path)
 
