@@ -2,18 +2,18 @@
 '''
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
-from uix.navigationdrawer import NavigationDrawer
 from kivy.factory import Factory
 
 Factory.register('TouchRippleBehavior', module='uix.behaviors')
 
 
 class NavigationScreen(Screen):
-  '''
-  '''
+    '''
+    '''
 
-  Builder.load_string('''
+    Builder.load_string('''
 #:import WipeTransition kivy.uix.screenmanager.WipeTransition
+#:import NavigationDrawer uix.navigationdrawer.NavigationDrawer
 
 
 <MenuButton@PyConButton>
@@ -39,6 +39,11 @@ class NavigationScreen(Screen):
         size_hint: 1, None
         height: dp(130)
         mipmap: True
+        on_touch_up:
+            if self.collide_point(*args[1].opos) and\
+            self.collide_point(*args[1].pos) and\
+            args[1].is_triple_tap: app.load_screen(\
+            'ScreenRegister', manager=app.navigation_manager)
     ScrollView
         GridLayout
             cols: 1
