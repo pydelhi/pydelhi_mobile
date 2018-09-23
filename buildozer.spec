@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma seperated e.g. requirements = sqlite3,kivy
-requirements = kivy, openssl, requests, pil, futures
+requirements = kivy, openssl, requests, pil, futures, sentry==0.3.0
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
