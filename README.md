@@ -5,6 +5,9 @@ PyCon India 2018 Application
 ## Requirements:
 ### Kivy Installation:
 -   https://kivy.org/docs/installation/installation.html
+### Dependencies-
+Install from pip
+-  ` pip install -r requirements.txt`
 
 WIP
 ====
@@ -46,5 +49,6 @@ Link to a existing vm that can be re-used will be added for convenience.
 ** Release Notes **
 
 TBD
+
 
 ***   Enjoy   ***
