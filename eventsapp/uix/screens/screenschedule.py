@@ -33,7 +33,8 @@ class TalkInfo(
     height: max(lblinfo.texture_size[1] + dp(24), dp(40))
     spacing: dp(9)
     on_release:
-        scr = app.load_screen('ScreenTalks', manager=app.navigation_manager)
+        from utils import load_screen
+        scr = load_screen('ScreenTalks', manager=app.navigation_manager)
         scr.talkid = self.talk['talk_id']
     LeftAlignedLabel:
         size_hint: None, 1

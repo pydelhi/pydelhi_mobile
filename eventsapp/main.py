@@ -4,12 +4,12 @@
 Github Repo: http://github.com/pythonindia/PyCon-Mobile-App
 '''
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 # setup error reporting
-import sentry_sdk
-sentry_sdk.init("https://0002ee03a88d419a886333ab69f01df5@sentry.io/1284618")
-# That's all for error reporting 
+# import sentry_sdk
+# sentry_sdk.init("https://0002ee03a88d419a886333ab69f01df5@sentry.io/1284618")
+# That's all for error reporting
 
 import os
 import sys
@@ -36,6 +36,7 @@ sys.path.insert(0, module_path)
 # patch the browser to open webview on mobile
 #from utils import patch_browser
 import webbrowser
+from utils import load_screen
 
 
 class PyConApp(App):
@@ -126,68 +127,7 @@ class PyConApp(App):
         from utils.keyboard import hook_keyboard
         hook_keyboard()
         # let's load our first screen
-        self.load_screen('StartupScreen')
-
-    def go_back_in_history(self):
-        try:
-            # check webbbrowser
-            # if webbrowser._opened:
-            #     webbrowser.close()
-            #     return
-            # go back to previous screen
-            # first pop current screen
-            scr = self._navigation_higherarchy.pop()
-            if scr.name == 'ScreenSchedule':
-                # we are at top of Nav higherarchy
-                from utils import pause_app
-                pause_app()
-                return
-
-            # we are not at root of Nav higherarchy
-            scr = self._navigation_higherarchy[-1]
-            self.load_screen(
-                scr.name,
-                manager=scr.manager,
-                store_back=False)
-        except IndexError:
-            # at root of app. Pause it.
-            from utils import pause_app
-            pause_app()
-
-    def load_screen(self, screen, manager=None, store_back=True):
-        '''Load the provided screen:
-        arguments::
-            `screen`: is the name of the screen to be loaded
-            `manager`: the manager to load this screen, this defaults to
-            the main class.
-        '''
-        store_back = False if screen == 'StartupScreen' else store_back
-
-        manager = manager or self.root
-        # load screen modules dynamically
-        # for example load_screen('LoginScreen')
-        # will look for uix/screens/loginscreen
-        # load LoginScreen
-        module_path = screen.lower()
-        if not hasattr(self, module_path):
-            import imp
-            module = imp.load_module(screen, *imp.find_module(module_path))
-            screen_class = getattr(module, screen)
-            sc = screen_class()
-            sc.from_back = not store_back
-            setattr(self, module_path, sc)
-            manager.add_widget(sc)
-
-        else:
-            sc = getattr(self, module_path)
-
-        sc.from_back = not store_back
-        manager.current = screen
-
-        if store_back:
-            self._navigation_higherarchy.append(sc)
-
-        return getattr(self, module_path)
+        load_screen('StartupScreen')
 
 # Check if app is started as main and only then insitantiate the App class.
 if __name__ == '__main__':

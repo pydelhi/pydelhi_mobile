@@ -98,9 +98,11 @@ class StartupScreen(Screen):
     on_enter:
         from kivy.animation import Animation
         img_logo.opacity=0
-        Animation(d=.5, top=self.height/1.3, height=self.height/2., width = self.width, opacity=1).start(img_logo)
+        Animation(d=.5, top=self.height/1.3, height=self.height/2., \
+        width = self.width, opacity=1).start(img_logo)
         from kivy.clock import Clock
-        Clock.schedule_once(lambda dt: app.load_screen('NavigationScreen'), 1)
+        from utils import load_screen
+        Clock.schedule_once(lambda dt: load_screen('NavigationScreen'), 1)
     Image
         source: 'data/images/dots.png'
         allow_stretch: True
