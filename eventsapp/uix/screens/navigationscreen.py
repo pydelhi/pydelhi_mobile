@@ -12,6 +12,7 @@ class NavigationScreen(Screen):
     '''
 
     Builder.load_string('''
+#:import load_screen utils.load_screen
 #:import WipeTransition kivy.uix.screenmanager.WipeTransition
 #:import NavigationDrawer uix.navigationdrawer.NavigationDrawer
 
@@ -42,8 +43,9 @@ class NavigationScreen(Screen):
         on_touch_up:
             if self.collide_point(*args[1].opos) and\
             self.collide_point(*args[1].pos) and\
-            args[1].is_triple_tap: app.load_screen(\
-            'ScreenRegister', manager=app.navigation_manager)
+            args[1].is_triple_tap: load_screen(\
+            'ScreenRegister', manager=app.navigation_manager);\
+            app.navigationdrawer.toggle_state()
     ScrollView
         GridLayout
             cols: 1
@@ -53,47 +55,42 @@ class NavigationScreen(Screen):
                 id: bt_sched
                 text: 'Schedule'
                 on_released:
-                    app.load_screen(\
+                    load_screen(\
                     'ScreenSchedule', manager=app.navigation_manager)
             MenuButton
                 text: 'Sponsors'
                 on_released:
-                    app.load_screen(\
+                    load_screen(\
                     'ScreenSponsor', manager=app.navigation_manager)
             MenuButton
                 text: 'Venue'
                 on_released:
-                    app.load_screen(\
+                    load_screen(\
                     'ScreenVenue', manager=app.navigation_manager)
             MenuButton
                 text: 'OpenSpaces'
                 on_released:
-                    app.load_screen(\
+                    load_screen(\
                     'ScreenOpenSpaces', manager=app.navigation_manager)
             MenuButton
                 text: 'DevSprints'
                 on_released:
-                    app.load_screen(\
+                    load_screen(\
                     'ScreenDevSprints', manager=app.navigation_manager)
-            MenuButton
-                text: 'FeedBack'
-                on_released:
-                    app.load_screen(\
-                    'ScreenFeedback', manager=app.navigation_manager)
             MenuButton
                 text: 'Ticket'
                 on_released:
-                    app.load_screen(\
+                    load_screen(\
                     'ScreenTicket', manager=app.navigation_manager)
             MenuButton
                 text: 'Community'
                 on_released:
-                    app.load_screen(\
+                    load_screen(\
                     'ScreenCommunity', manager=app.navigation_manager)
             MenuButton
                 text: 'About'
                 on_released:
-                    app.load_screen(\
+                    load_screen(\
                     'ScreenAbout', manager=app.navigation_manager)
 
 <Topic@Label>
@@ -155,7 +152,7 @@ class NavigationScreen(Screen):
     on_enter:
         import os
         scr = os.environ.get('PYCONF_STARTUP_SCREEN','ScreenSchedule')
-        app.load_screen(scr, manager=app.navigation_manager)
+        load_screen(scr, manager=app.navigation_manager)
         right_panel.ids.topbar.ids.topic.opacity=1
     NavigationDrawer
         id: navigationdrawer

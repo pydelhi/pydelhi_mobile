@@ -14,5 +14,4 @@ class ScreenFeedback(Screen):
         webbrowser.open('https://feedback.in.pycon.org')
 
     def on_enter(self):
-        app = App.get_running_app()
-        app.go_back_in_history()
+    	pass

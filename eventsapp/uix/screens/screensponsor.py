@@ -22,40 +22,44 @@ class ScreenSponsor(Screen):
     Builder.load_string('''
 <ScreenSponsor>
     name: 'ScreenSponsor'
-    ScrollView
-        GridLayout
-            cols: 1
-            orientation: 'vertical'
-            spacing: dp(4)
-            size_hint_y: None
-            height: self.minimum_height
-            id: main
-            # BackLabel
-            #     text: "Sponsors"
-            #     backcolor: app.base_inactive_color[:3] + [.5]
-            #     pos_hint:{'top':1}
-            #     size_hint: 1 , None
-            #     height: dp(10)
-            #     font_size:dp(20)
-# <Footer@BoxLayout>
-#     size_hint_y: .2
-#     padding: dp(9)
-#     spacing: dp(9)
-#     ActiveButton
-#         text: 'Sponsor Us'
-#         size_hint_y: None
-#         height: dp(40)
-#         on_release:
-#             import webbrowser
-#             webbrowser.open(\
-#             'https://in.pycon.org/data/SponsorshipProspectus2018.pdf')
-#     ActiveButton
-#         text: 'Contact Us'
-#         size_hint_y: None
-#         height: dp(40)
-#         on_release:
-#             import webbrowser
-#             webbrowser.open('mailto:sponsorship@in.pycon.org')
+    BoxLayout
+        orientation: "vertical"
+        BackLabel
+            text: "Sponsors"
+            backcolor: app.base_inactive_color[:3] + [.5]
+            pos_hint:{'top':1}
+            size_hint: 1 , None
+            height: dp(10)
+            font_size:dp(20)
+        ScrollView
+            GridLayout
+                cols: 1
+                orientation: 'vertical'
+                spacing: dp(4)
+                size_hint_y: None
+                height: self.minimum_height
+                id: main
+        Footer
+<Footer@BoxLayout>
+    size_hint_y: None
+    padding: dp(9)
+    spacing: dp(9)
+    height: dp(54)
+    ActiveButton
+        text: 'Sponsor Us'
+        size_hint_y: None
+        height: dp(40)
+        on_release:
+            import webbrowser
+            webbrowser.open(\
+            'https://in.pycon.org/2018/sponsorship_prospectus.pdf')
+    ActiveButton
+        text: 'Contact Us'
+        size_hint_y: None
+        height: dp(40)
+        on_release:
+            import webbrowser
+            webbrowser.open('mailto:sponsorship@in.pycon.org')
 
 <Sponsor>
     orientation: 'vertical'
@@ -96,7 +100,7 @@ class ScreenSponsor(Screen):
 
         sponsors = sponsors.get('0.0.1')
         main_box = self.ids.main
-        main_box.clear_widgets()
+        #main_box.clear_widgets()
         for s in sponsors:
             bl = Factory.Sponsor(size_hint_y=.8/len(sponsors), data=s)
             main_box.add_widget(bl)

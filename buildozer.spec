@@ -144,7 +144,11 @@ android.permissions = INTERNET
 
 # (list) Gradle dependencies to add (currently works only with sdl2_gradle
 # bootstrap)
-#android.gradle_dependencies =
+android.add_src = electrum/gui/kivy/data/java-classes/
+
+android.gradle_dependencies = me.dm7.barcodescanner:zxing:1.9.8
+
+android.add_activities = org.python.qr.SimpleScannerActivity
 
 # (list) Java classes to add as activities to the manifest.
 #android.add_activites = com.example.ExampleActivity

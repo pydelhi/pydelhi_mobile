@@ -36,11 +36,74 @@
       "about": "Pramati builds independent companies focused on profitable, well-defined markets. Our model works because we increase the probability of success for our companies."
     },
     {
+      "name": "Soroco",
+      "type": "Gold",
+      "website": "http://www.soroco.com/",
+      "logo": "https://in.pycon.org/2018/img/sponsors/soroco.png",
+      "about": "Data-driven automation of entire business functions"
+    },
+    {
+      "name": "Live Health",
+      "type": "Gold",
+      "website": "https://livehealth.in/",
+      "logo": "https://in.pycon.org/2018/img/sponsors/LiveHealth_logo.png",
+      "about": "Automating\nHealthcare Diagnostics\nWe enable our customers to deliver a more digital & connected experience."
+    },
+    {
+      "name": "IBM",
+      "type": "Gold",
+      "website": "http://www.ibm.com/in",
+      "logo": "https://in.pycon.org/2018/img/sponsors/ibm.png",
+      "about": "International Business Machine"
+    },
+    {
+      "name": "VMWare",
+      "type": "Gold",
+      "website": "https://www.vmware.com/in/company.html",
+      "logo": "https://in.pycon.org/2018/img/sponsors/VMware_logo.jpg",
+      "about": "We Are VMware\nAt VMware, we believe that software has the power to unlock new opportunities for people and our planet. We look beyond the barriers of compromise to engineer new ways to make technologies work together seamlessly. Our software forms a digital foundation that powers the apps, services and experiences that are transforming the world."
+    },
+    {
+      "name": "Corteva",
+      "type": "Gold",
+      "website": "https://www.corteva.com/",
+      "logo": "https://in.pycon.org/2018/img/sponsors/corteva.png",
+      "about": "We bring our global presence, deep knowledge and diverse resources so that farms can flourish, moving our world forward."
+    },
+    {
+      "name": "Zauba",
+      "type": "Gold",
+      "website": "https://zauba.company",
+      "logo": "https://in.pycon.org/2018/img/sponsors/zaubacorp.png",
+      "about": "We don’t build products, websites or applications.\n\nWe create impact that\nREVOLUTIONISES\nentire industries."
+    },
+    {
       "name": "Fosee",
       "type": "Silver",
       "website": "https://www.fosee.in/",
       "logo": "https://in.pycon.org/2018/img/sponsors/fossee.png",
       "about": "FOSSEE (Free and Open Source Software in Education) project promotes the use of FOSS tools to improve the quality of education in our country. We aim to reduce dependency on proprietary software in educational institutions. We encourage the use of FOSS tools through various activities to ensure commercial software is replaced by equivalent FOSS tools. We also develop new FOSS tools and upgrade existing tools to meet requirements in academia and research. "
+    },
+    {
+      "name": "Zomega",
+      "type": "Silver",
+      "website": "http://www.zeomega.com/",
+      "logo": "https://in.pycon.org/2018/img/sponsors/zeomega.png",
+      "about": "ZeOmega provides HIE-enabled population health management solutions for any healthcare organization that assumes clinical and financial risk. Our comprehensive solutions help you achieve the desired health quality and cost outcomes for your patients while putting them at the center of a collaborative approach to healthcare management and delivery. Any organization seeking to improve outcomes, control costs, and increase patient satisfaction needs capabilities built on five essential pillars."
+    },
+    {
+      "name": "DBS",
+      "type": "Silver",
+      "website": "https://www.dbs.com/asia-hub-2/index.html",
+      "logo": "https://in.pycon.org/2018/img/sponsors/DBS_Logo.png",
+      "about": "DBS is a leading financial services group in Asia that has been at the forefront of creating and delivering best-in-class solutions for our customers."
+    },
+    {
+      "name": "Pipal Academy",
+      "type": "Associate",
+      "website": "http://www.pipal.in/",
+      "logo": "http://paste.opensuse.org/view/raw/34063737",
+      "about": "Pipal Academy is a collective of experienced technologists, who care deeply about the art of software development. They offer in-depth courses on niche technical topics. Pipal Academy regularly conducts public workshops in Bangalore and also offer on-site corporate training."
     },
     {
       "name": "Reckonsys",
@@ -50,11 +113,11 @@
       "about": "We are a Software Product Development Firm obsessed with creating uncommon solutions for common problems by making use of the right technologies and best practices. We work with Startup founders to build their MVP’s and with existing Enterprises to help solve interesting problems."
     },
     {
-      "name": "Pipal Academy",
+      "name": "Atonarp",
       "type": "Associate",
-      "website": "http://www.pipal.in/",
-      "logo": "http://paste.opensuse.org/view/raw/34063737",
-      "about": "Pipal Academy is a collective of experienced technologists, who care deeply about the art of software development. They offer in-depth courses on niche technical topics. Pipal Academy regularly conducts public workshops in Bangalore and also offer on-site corporate training."
+      "website": "https://www.atonarp.com",
+      "logo": "https://in.pycon.org/2018/img/sponsors/atonarp.png",
+      "about": "At Atonarp, we are revolutionising how we sense, collect, process and interpret data at the molecular level. Our teams work out of Tokyo, California and Bengaluru with a focus on scientific technology platforms for molecular analysis. Backed by precision engineering and R&D in emerging technologies, we have built one of the most intelligent and user-friendly mass spectrometers in the world. Starting with pharmaceutical lyophilisation, we now enable powerful process analytical solutions across a range of industries."
     }
   ]
 }
