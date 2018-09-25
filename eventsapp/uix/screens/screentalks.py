@@ -62,6 +62,7 @@ class ScreenTalks(Screen):
     talkid = StringProperty('')
 
     Builder.load_string('''
+#:import do_share utils.do_share
 <ScreenTalks>
     spacing: dp(9)
     name: 'ScreenTalks'
@@ -82,10 +83,12 @@ class ScreenTalks(Screen):
             padding: dp(9)
             ImBut
                 id: but_share
+                data: talk_title.text
                 source: 'atlas://data/default/share'
                 color: app.base_active_bright[:3] + [.9]
                 on_release: do_share(self.data, "PyCon India 2018")
             ImBut
+                data: ''
                 source: 'atlas://data/default/reminder'
                 color: app.base_active_bright[:3] + [.9]
             ImBut
@@ -125,8 +128,12 @@ class ScreenTalks(Screen):
                     gl = GridLayout(cols=social_len, size_hint_y=None,
                                     padding='2dp', spacing='2dp')
                     import webbrowser
-                    self.ids.but_share.data = "Checkout this talk "\
-                        + speaker_social['cfp'] + " by " + speaker['name']
+                    # update data for share button
+                    if 'proposal' in speaker_social:
+                        self.ids.but_share.data = "Checkout this talk " \
+                            + speaker_social['proposal'] + " by "\
+                            + speaker['name']
+                    # display social buttons
                     for social_acc, social_link in items:
                         imbt = Factory.ImBut()
                         imbt.source = 'atlas://data/default/' + \
