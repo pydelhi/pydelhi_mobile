@@ -57,7 +57,7 @@ class ScreenRegister(Factory.Screen):
             spacing: dp(9)
             cols: 1
             BackLabel
-                text: 'Load Registeration Data'
+                text: 'Load Registration Data'
                 backcolor: app.base_active_color[:3] + [.5]
             BoxLayout
                 size_hint_y: None
@@ -105,7 +105,7 @@ class ScreenRegister(Factory.Screen):
                 background_active: 'atlas://data/default/ti_white'
                 background_normal: 'atlas://data/default/ti_white'
                 background_color: app.base_active_color
-                hint_text: 'Registeration Number'
+                hint_text: 'Registration Number'
                 input_type: 'number'
                 input_filter: 'int'
                 on_text_validate: bt_check.trigger_action()
@@ -118,7 +118,7 @@ class ScreenRegister(Factory.Screen):
                 pos_hint: {'center_y': .5}
                 on_release: root.check_attendee(ti.text)
         BackLabel
-            text: 'Registeration Details'
+            text: 'Registration Details'
             backcolor: app.base_active_color[:3] + [.5]
         ScrollView
             GridLayout
