@@ -6,6 +6,7 @@ from kivy.lang import Builder
 from kivy.properties import StringProperty
 from kivy.properties import ObjectProperty
 from functools import partial
+from utils import do_share
 
 app = App.get_running_app()
 
@@ -80,8 +81,10 @@ class ScreenTalks(Screen):
             height: dp(54)
             padding: dp(9)
             ImBut
+                id: but_share
                 source: 'atlas://data/default/share'
                 color: app.base_active_bright[:3] + [.9]
+                on_release: do_share(self.data, "PyCon India 2018")
             ImBut
                 source: 'atlas://data/default/reminder'
                 color: app.base_active_bright[:3] + [.9]
@@ -122,6 +125,8 @@ class ScreenTalks(Screen):
                     gl = GridLayout(cols=social_len, size_hint_y=None,
                                     padding='2dp', spacing='2dp')
                     import webbrowser
+                    self.ids.but_share.data = "Checkout this talk "\
+                        + speaker_social['cfp'] + " by " + speaker['name']
                     for social_acc, social_link in items:
                         imbt = Factory.ImBut()
                         imbt.source = 'atlas://data/default/' + \

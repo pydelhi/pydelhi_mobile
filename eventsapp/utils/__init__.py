@@ -19,6 +19,22 @@ def pause_app():
         app.stop()
 
 
+def do_share(data, title):
+    if platform != 'android':
+        return
+    from jnius import autoclass, cast
+    JS = autoclass('java.lang.String')
+    Intent = autoclass('android.content.Intent')
+    sendIntent = Intent()
+    sendIntent.setAction(Intent.ACTION_SEND)
+    sendIntent.setType("text/plain")
+    sendIntent.putExtra(Intent.EXTRA_TEXT, JS(data))
+    PythonActivity = autoclass('org.kivy.android.PythonActivity')
+    currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
+    it = Intent.createChooser(sendIntent, cast('java.lang.CharSequence', JS(title)))
+    currentActivity.startActivity(it)
+
+
 def scan_qr(on_complete):
     if platform != 'android':
         return
