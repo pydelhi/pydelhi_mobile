@@ -61,6 +61,7 @@ class ScreenRegister(Factory.Screen):
                 ActiveButton:
                     height: dp(30)
                     text: 'Change...'
+                    width: dp(100)
                     size_hint_x: None
                     pos_hint: {'center_y': .5}
                     on_release: root.show_file_chooser()
@@ -105,6 +106,7 @@ class ScreenRegister(Factory.Screen):
                 height: dp(30)
                 text: "Check..."
                 size_hint_x: None
+                width: dp(100)
                 pos_hint: {'center_y': .5}
                 on_release: root.check_attendee(ti.text)
         BackLabel
@@ -115,7 +117,7 @@ class ScreenRegister(Factory.Screen):
                 padding: dp(9)
                 size_hint: 1, None
                 height: self.minimum_height
-                spacing: dp(9)
+                spacing: dp(13)
                 cols: 1
                 BackLabel
                     id: lbl_name

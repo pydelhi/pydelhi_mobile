@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma seperated e.g. requirements = sqlite3,kivy
-requirements = kivy, openssl, requests, pil, futures, sentry==0.3.0
+requirements = android, kivy, openssl, requests, pil, futures, sentry-sdk==0.3.0, urllib3, certifi
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -46,7 +46,7 @@ requirements = kivy, openssl, requests, pil, futures, sentry==0.3.0
 #garden_requirements =
 
 # (str) Presplash of the application
-presplash.filename = %(source.dir)s/../tools/splash.png
+presplash.filename = %(source.dir)s/../tools/splash.jpg
 
 # (str) Icon of the application
 icon.filename = %(source.dir)s/data/icon.png
@@ -85,7 +85,7 @@ fullscreen = 0
 #android.presplash_color = #FFFFFF
 
 # (list) Permissions
-android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
+android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE, CAMERA
 
 # (int) Android API to use
 #android.api = 19
@@ -144,11 +144,11 @@ android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
 
 # (list) Gradle dependencies to add (currently works only with sdl2_gradle
 # bootstrap)
-android.add_src = electrum/gui/kivy/data/java-classes/
+android.add_src = eventsapp/data/java-classes/
 
 android.gradle_dependencies = me.dm7.barcodescanner:zxing:1.9.8
 
-android.add_activities = org.python.qr.SimpleScannerActivity
+android.add_activities = org.pythonindia.qr.SimpleScannerActivity
 
 # (list) Java classes to add as activities to the manifest.
 #android.add_activites = com.example.ExampleActivity

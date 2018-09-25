@@ -40,12 +40,6 @@ class NavigationScreen(Screen):
         size_hint: 1, None
         height: dp(130)
         mipmap: True
-        on_touch_up:
-            if self.collide_point(*args[1].opos) and\
-            self.collide_point(*args[1].pos) and\
-            args[1].is_triple_tap: load_screen(\
-            'ScreenRegister', manager=app.navigation_manager);\
-            app.navigationdrawer.toggle_state()
     ScrollView
         GridLayout
             cols: 1
@@ -87,6 +81,11 @@ class NavigationScreen(Screen):
                 on_released:
                     load_screen(\
                     'ScreenCommunity', manager=app.navigation_manager)
+            MenuButton
+                text: 'Registeration'
+                on_released:
+                    load_screen(\
+                    'ScreenRegister', manager=app.navigation_manager)
             MenuButton
                 text: 'About'
                 on_released:
