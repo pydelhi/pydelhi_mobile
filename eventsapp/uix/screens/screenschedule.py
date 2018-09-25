@@ -203,14 +203,14 @@ class ScreenSchedule(Screen):
                 tca(new_trk)
 
             for talk in day_sched:
-                try:
-                    stime = "%s -- %s" % (date, talk['start_time'])
-                    etime = "%s -- %s" % (date, talk['end_time'])
-                    stime = strt(stime, "%Y-%m-%d -- %H:%M")
-                    etime = strt(etime, "%Y-%m-%d -- %H:%M")
-                    talk['current'] = today > stime and today < etime
-                except:
-                    pass
+                # try:
+                #     stime = "%s -- %s" % (date, talk['start_time'])
+                #     etime = "%s -- %s" % (date, talk['end_time'])
+                #     stime = strt(stime, "%Y-%m-%d -- %H:%M")
+                #     etime = strt(etime, "%Y-%m-%d -- %H:%M")
+                #     talk['current'] = today > stime and today < etime
+                # except:
+                #     pass
                 tid = talk['track']
                 if tid.lower() == 'all':
                     for tlk in trackscreens:
