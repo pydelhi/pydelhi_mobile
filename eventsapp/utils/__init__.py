@@ -19,7 +19,7 @@ def pause_app():
         app.stop()
 
 
-def scan_qr(self, on_complete):
+def scan_qr(on_complete):
     if platform != 'android':
         return
     from jnius import autoclass
