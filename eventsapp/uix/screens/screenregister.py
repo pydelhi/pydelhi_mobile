@@ -8,6 +8,13 @@ import json
 
 
 app = App.get_running_app()
+from kivy.config import ConfigParser
+
+config = ConfigParser()
+config.read('myconfig.ini')
+
+config.adddefaultsection('pycon2018')
+config.setdefault('pycon2018', 'register_data_dir', 'data')
 
 
 class ScreenRegister(Factory.Screen):
@@ -17,7 +24,8 @@ class ScreenRegister(Factory.Screen):
     :attr:`_data` is a :type:`String`, defaults to False.
     '''
 
-    data_file_dir = StringProperty('data')
+    data_file_dir = StringProperty(config.get(
+        'pycon2018', 'register_data_dir'))
     '''This is the data dir where the registeration data is stored.
     All csv files should be present in this folder.
 
@@ -191,7 +199,8 @@ Popup
         FileChooserIconView
             id: fl
             filters: ['*.']
-            dirselect: True
+            path: '/mnt/sdcard/'
+            # dirselect: True
             #filter_dirs: True
         BoxLayout
             spacing: dp(9)
@@ -200,19 +209,21 @@ Popup
             ActiveButton
                 text: 'Select'
                 on_release:
-                    app.screenregister.data_file_dir = fl.selection[0]
+                    app.screenregister.data_file_dir = fl.path
                     root.dismiss()
             ActiveButton
                 text: 'Cancel'
                 on_release: root.dismiss()
 ''')
+        pop.ids.fl.path = self.data_file_dir
         pop.open()
 
     def on_data_file_dir(self, instance, data_file_dir):
         # read csv file here
         if not os.path.exists(data_file_dir):
             return
-
+        config.set('pycon2018', 'register_data_dir', data_file_dir)
+        config.write()
         _data = {}
         for fl in os.listdir(data_file_dir):
             if not fl.endswith('.csv'):
