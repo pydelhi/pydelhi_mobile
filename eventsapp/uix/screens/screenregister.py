@@ -17,7 +17,7 @@ class ScreenRegister(Factory.Screen):
     :attr:`_data` is a :type:`String`, defaults to False.
     '''
 
-    data_file_dir = StringProperty('data/registeration')
+    data_file_dir = StringProperty('data')
     '''This is the data dir where the registeration data is stored.
     All csv files should be present in this folder.
 
@@ -208,6 +208,9 @@ Popup
 
     def on_data_file_dir(self, instance, data_file_dir):
         # read csv file here
+        if not os.path.exists(data_file_dir):
+            return
+
         _data = {}
         for fl in os.listdir(data_file_dir):
             if not fl.endswith('.csv'):
