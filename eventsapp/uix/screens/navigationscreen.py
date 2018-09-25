@@ -82,7 +82,7 @@ class NavigationScreen(Screen):
                     load_screen(\
                     'ScreenCommunity', manager=app.navigation_manager)
             MenuButton
-                text: 'Registeration'
+                text: 'Registration'
                 on_released:
                     load_screen(\
                     'ScreenRegister', manager=app.navigation_manager)
