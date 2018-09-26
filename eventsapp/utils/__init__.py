@@ -2,15 +2,18 @@ __all__ = ['keyboard', 'pause_app']
 
 from kivy.app import App
 from kivy.utils import platform
+if platform == 'android':
+    from jnius import autoclass, cast
+    JS = autoclass('java.lang.String')
+    Intent = autoclass('android.content.Intent')
+    PythonActivity = autoclass('org.kivy.android.PythonActivity')
+    currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
 
 
 def pause_app():
     '''
     '''
     if platform == 'android':
-        from jnius import cast
-        from jnius import autoclass
-        PythonActivity = autoclass('org.kivy.android.PythonActivity')
         currentActivity = cast(
             'android.app.Activity', PythonActivity.mActivity)
         currentActivity.moveTaskToBack(True)
@@ -19,19 +22,27 @@ def pause_app():
         app.stop()
 
 
+def set_reminder(self, title, time):
+    intent = Intent()
+    Calendar = autoclass('java.util.Calendar')
+    calendar = Calendar.getInstance()
+    calendar.setTimeInMillis(1480103863835)
+    intent.setType("vnd.android.cursor.item/event")
+    intent.putExtra(Events.DESCRIPTION, "Download Examples")
+    intent.putExtra("title", "A Test Event from android app");
+    intent.setAction(Intent.ACTION_VIEW)
+    PythonActivity.mActivity.startActivity(intent)
+
+
 def do_share(data, title):
     if platform != 'android':
         return
-    from jnius import autoclass, cast
-    JS = autoclass('java.lang.String')
-    Intent = autoclass('android.content.Intent')
     sendIntent = Intent()
     sendIntent.setAction(Intent.ACTION_SEND)
     sendIntent.setType("text/plain")
     sendIntent.putExtra(Intent.EXTRA_TEXT, JS(data))
-    PythonActivity = autoclass('org.kivy.android.PythonActivity')
-    currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
-    it = Intent.createChooser(sendIntent, cast('java.lang.CharSequence', JS(title)))
+    it = Intent.createChooser(
+        sendIntent, cast('java.lang.CharSequence', JS(title)))
     currentActivity.startActivity(it)
 
 
