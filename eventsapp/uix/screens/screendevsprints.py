@@ -40,7 +40,12 @@ class ScreenDevSprints(Screen):
             active: True
             text: root.data.get('text1',"")
         BackLabel
-            text:root.data.get('text2',"")
+            text: root.data.get('text2',"")
+        ActiveButton:
+            text: 'More details ...'
+            on_released:
+                import webbrowser
+                webbrowser.open(root.data.get('link',""))
 
 
 ''')

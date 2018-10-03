@@ -74,16 +74,6 @@
 				}
 			}
 		},
-		"05": {
-			"title": "Lunch",
-			"description": "Delicious Hyderabadi cuisine",
-			"type": "workshop",
-			"speaker": {
-				"name": "HICC Caterors",
-				"info": "Gourmet? Street? What will be served?",
-				"photo": "https://az727346.vo.msecnd.net/content/images/lunch-combos/lunch-combos-soup-salad-170721-v2.png"
-			}
-		},
 		"06": {
 			"title": "Free and Open Source libraries of Python for Geo spatial analysis",
 			"description": "Geospatial representation are so prevalent in day to day life, such as even in simple travel related conversation to maps, aerial/satellite images etc. In digital era, geospatial data is extensively produced and consumed in ever growing proportion. Python with its free and open source libraries are giving wide variety yet simple and effective set of tools to visualise and analyse geospatial data. The current workshop is directed for beginners of Python programming language, who have basic understanding on computing and data formats. The primary objective of the workshop is to introduce and give hands on training on selected list of FOSS libraries for geospatial analysis. The workshop as a do it yourself fashion tries to solve two real world problems in Geographical Information System (GIS) and its geospatial data sources.",
@@ -137,12 +127,126 @@
 				"photo": "https://in.pycon.org/2018/img/travis-oliphant.png",
 				"social": {
 					"twitter": "https://twitter.com/teoliphant",
-					"proposal": "http://in.pycon.org",
 					"website": "http://technicaldiscovery.blogspot.com/"
 				}
 			}
 		},
-		"21": {
+		"10": {
+			"title": "Understanding NLP - What's the feeling ?",
+			"description": "",
+			"type": "workshop",
+			"speaker": {
+				"name": "By Lakshya Sivaramakrishnan",
+				"info": "Learner || Listener || Leader || Passionate about Technology, Enjoy Public Speaking and Love Connecting to People",
+				"photo": "https://lh3.googleusercontent.com/F1XnhyjRxX9DtiUx_JVMS-9gUa5OUR_lh7Vgau_JxKdVlDCbnykmQUjNQDeDeROX-R6soLY5p9mu=w540-h544-no",
+				"social": {
+					"twitter": "https://www.twitter.com/lakshyas90",
+					"linkedin": "https://www.linkedin.com/pub/lakshya-sivaramakrishnan/67/40/434",
+					"website": "https://about.me/lakshya.sivaramakrishnan",
+					"github": "https://github.com/lakshya90",
+					"googleplus": "https://plus.google.com/105412417430773044496/"
+				}
+			}
+		},
+		"11": {
+			"title": "Programming a Quantum Computer using Cirq",
+			"description": "",
+			"type": "workshop",
+			"speaker": {
+				"name": "By Vamsi Krishna Devabathini",
+				"info": "I deal with Artificial Intelligence (well, many know it is as Hollywood movie's genre) and Quantum Computing(here Hollywood has to seriously catch-up) at Google. At some point in my life, I experimented with research in Quantum Computing at CQT, NUS Singapore (PhD drop out :( ). I also tried to wrap my head around business thoughts from HBX CORe, Harvard Business School. I received my Masters in Interactive Intelligence from the College of Computing, Georgia Tech. I also hold a Bachelors degree in Computer Science from Indian Institute of Technology, Madras.",
+				"photo": "https://lh3.googleusercontent.com/RAs-5AlVlRH0BV8yMyvdEyKiKHsoOXUQl6ZeS94D4zO6_e4vcBy6f8_zIUxnS4tdCUF4ItWIVNmkJw=w638-h618-no",
+				"social": {
+					"linkedin": "https://in.linkedin.com/in/vamsikrishnadevabathini",
+					"website": "https://sites.google.com/view/vamsikrishna-devabathini",
+					"github": "https://github.com/iamvamsi",
+					"googleplus": "https://plus.google.com/+vamsikrishna_devabathini"
+				}
+			}
+		},
+		"12": {
+			"title": "Python ML On the Cloud",
+			"description": "",
+			"type": "workshop",
+			"speaker": {
+				"name": "By Lakshya Sivaramakrishnan",
+				"info": "",
+				"photo": "https://media.licdn.com/dms/image/C5103AQGuxye9qq4U5g/profile-displayphoto-shrink_200_200/0?e=1544054400&v=beta&t=Mnnc51rGpYKyE0FDL_1Dm8fsAkiCCIBHcM87mmaYmvw",
+				"social": {
+					"linkedin": "https://in.linkedin.com/in/krishna-chaitanya-balaga-14908258",
+					"website": "http://www.smartifyme.in"
+				}
+			}
+		},
+		"14": {
+			"title": "Keynote",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "Armin Ronacher",
+				"info": "Armin Ronacher is the creator of the Flask Web Framework and principal software engineer at sentry.io. He is leading an engineering team in Vienna Austria working on Sentry and a frequent speaker at tech and open source conferences.",
+				"photo": "https://in.pycon.org/2018/img/armin-ronacher.png",
+				"social": {
+					"twitter": "https://twitter.com/mitsuhiko",
+					"website": "http://lucumr.pocoo.org/"
+				}
+			}
+		},
+		"34": {
+			"title": "Keynote",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "Siddu Ponappa",
+				"info": "Sidu is 4x a Founder/CEO, 3x a failure, 1x profitable and 1x exit. His last venture, C42 Engineering was acquired by GO-JEK in 2015. Now, he handles Data Engineering, Tech People Operations and Tech Recruiting at GO-JEK. He is also a trustee of the Emerging Technology Trust, which organizes RubyConf India, GopherCon India and DevopsDays ",
+				"photo": "https://in.pycon.org/2018/img/sidu-ponnappa.png",
+				"social": {
+					"twitter": "https://twitter.com/ponnappa",
+					"website": "http://sidu.in"
+				}
+			}
+		},
+		"35": {
+			"title": "Keynote",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "Travis E Oliphant",
+				"info": "Travis E. Oliphant is a Founder of Quansight and Director/Co-Founder at Anaconda Inc. He has worked with Python for numerical and scientific programming, notably as the primary developer of the NumPy and as a founding contributor of the SciPy.",
+				"photo": "https://in.pycon.org/2018/img/travis-oliphant.png",
+				"social": {
+					"twitter": "https://twitter.com/teoliphant",
+					"website": "http://technicaldiscovery.blogspot.com/"
+				}
+			}
+		},
+		"54": {
+			"title": "Keynote",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "Carol Willing",
+				"info": "Carol Willing is a Python Software Foundation Fellow and former Director, a core developer of CPython and Project Jupyter, and a Research Software Engineer at Cal Poly San Luis Obispo. She's also Geek-In-Residence at Fab Lab San Diego and co-organizes Pyladies San Diego and San Diego Python.",
+				"photo": "https://in.pycon.org/2018/img/carol-willing.png",
+				"social": {
+					"twitter": "https://twitter.com/WillingCarol",
+					"website": "http://willingconsulting.com/",
+					"proposal": "https://in.pycon.org/cfp/2017/"
+				}
+			}
+		},
+
+		"97": {
+			"title": "Lunch",
+			"description": "Delicious Hyderabadi cuisine",
+			"type": "workshop",
+			"speaker": {
+				"name": "HICC Caterors",
+				"info": "Gourmet? Street? What will be served?",
+				"photo": "https://az727346.vo.msecnd.net/content/images/lunch-combos/lunch-combos-soup-salad-170721-v2.png"
+			}
+		},
+		"98": {
 			"title": "Tea",
 			"description": "",
 			"type": "talk",
@@ -152,16 +256,25 @@
 				"photo": "https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/1/9/0/2/3052091-1-eng-GB/Habitual-tea-consumption-may-help-reduce-arterial-stiffness.jpg"
 			}
 		},
-		"55": {
+		"99": {
+			"title": "Lightning Talks",
+			"description": "A lightning talk is a very short presentation lasting only a few minutes, given at a conference or similar forum. Several lightning talks will usually be delivered by different speakers in a single session, sometimes called a data blitz.\n\n Any one can give a talk on any topic related to the event.",
+			"type": "talk",
+			"speaker": {
+				"name": "Every one",
+				"info": "",
+				"photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8vFmQ9PPGjnlW4QxmYuaDylIWe-iVptOd_qwz4OEwvCOTz86Abg"
+			}
+		},
+		"100": {
 			"title": "Closing Ceremony",
 			"description": "",
 			"type": "talk",
 			"speaker": {
-				"name": "HICC Caterors",
+				"name": "By Manivannan Elangovan, Chair - PyCon India 2018",
 				"info": "",
 				"photo": "http://paste.opensuse.org/view/raw/14567693"
 			}
 		}
-
 	}]
 }

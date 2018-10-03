@@ -110,11 +110,11 @@ def load_screen(screen, manager=None, store_back=True):
 
 def go_back_in_history():
     app = App.get_running_app()
+    from utils import pause_app
     try:
         scr = app._navigation_higherarchy.pop()
         if scr.name == 'ScreenSchedule':
             # we are at top of Nav higherarchy
-            from utils import pause_app
             pause_app()
             return
 
@@ -127,8 +127,6 @@ def go_back_in_history():
     except IndexError:
         # check if current screen is schedule screen?
         if app.navigation_manager.current == 'ScreenSchedule':
-            # at root of app. Pause it.
-            from utils import pause_app
             pause_app()
             return
-        app.navigation_manager.current = 'ScreenSchedule'
+        load_screen('ScreenSchedule')

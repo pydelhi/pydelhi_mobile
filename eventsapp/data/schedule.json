@@ -1,8 +1,9 @@
 {
   "0.0.1": [
     {
-      "tracks": ["Hall 1", "Hall 2", "Hall 3", "Hall 4"],
-      "2018-09-24": [
+      "tracks": ["Hall 1", "Hall 2", "Hall 3", "Hall 4", "Hall 5", "Hall 6", "Main Hall"],
+      "2018-10-05": [
+        {"order":[1, 2, 3, 4, 5, 6]},
         {
           "talk_id": "00",
           "title": "Workshop Registration",
@@ -13,7 +14,7 @@
         {
           "talk_id": "01",
           "title": "Exploring Pytorch for AI Assistance in Medical Imaging\n By Abhishek Kumar",
-          "start_time": "02:00",
+          "start_time": "10:00",
           "end_time": "13:00",
           "track": "1"
         },
@@ -39,11 +40,32 @@
           "track": "4"
         },
         {
-          "talk_id": "05",
+          "talk_id": "10",
+          "title": "Understanding NLP - What's the feeling ?\nBy Lakshya Sivaramakrishnan (Google)",
+          "start_time": "10:00",
+          "end_time": "13:00",
+          "track": "5"
+        },
+        {
+          "talk_id": "97",
           "title": "Lunch",
           "start_time": "13:00",
           "end_time": "14:00",
           "track": "all"
+        },
+        {
+          "talk_id": "11",
+          "title": "Programming a Quantum Computer using Cirq\nBy Vamsi Krishna Devabathini (Google)",
+          "start_time": "14:00",
+          "end_time": "17:00",
+          "track": "5"
+        },
+        {
+          "talk_id": "12",
+          "title": "Python ML On the Cloud\nBy Krishna Balaga (IBM)",
+          "start_time": "14:00",
+          "end_time": "17:00",
+          "track": "6"
         },
         {
           "talk_id": "06",
@@ -75,117 +97,375 @@
         }
       ],
       "2018-10-06": [
+        {"order":[7, 1, 2]},
         {
           "talk_id": "00",
           "title": "Registration",
-          "start_time": "09:00",
-          "end_time": "10:00",
+          "start_time": "08:00",
+          "end_time": "9:30",
           "track": "all"
         },
         {
-          "talk_id": "05",
+          "talk_id": "13",
+          "title": "Opening Address By Manivannan Elangovan, Chair - PyCon India 2018",
+          "start_time": "09:30",
+          "end_time": "9:45",
+          "track": "1"
+        },
+        {
+          "talk_id": "14",
+          "title": "Keynote 1 by Armin Ronacher",
+          "start_time": "09:45",
+          "end_time": "10:45",
+          "track": "1"
+        },
+        {
+          "talk_id": "98",
+          "title": "Tea",
+          "start_time": "10:45",
+          "end_time": "11:15",
+          "track": "all"
+        },
+        {
+          "talk_id": "15",
+          "title": "How Helpshift built machine learning platform using Python at large scale\nBy Shyam Shinde",
+          "start_time": "11:20",
+          "end_time": "11:50",
+          "track": "1"
+        },
+        {
+          "talk_id": "16",
+          "title": "Large scale web crawling using Python By Anand B Pillai and Noufal Ibrahim",
+          "start_time": "11:20",
+          "end_time": "11:50",
+          "track": "2"
+        },
+        {
+          "talk_id": "17",
+          "title": "Creating 3rd generation Web APIs using Hydra and Hydrus\nBy Akshay Dahiya",
+          "start_time": "11:20",
+          "end_time": "11:50",
+          "track": "3"
+        },
+        {
+          "talk_id": "18",
+          "title": "Python Project Workflows - Continuous Deployment Friendly\nBy Abhijit Gadgil",
+          "start_time": "11:55",
+          "end_time": "12:25",
+          "track": "1"
+        },
+        {
+          "talk_id": "19",
+          "title": "Sponsor Talk - DEShaw\nPyflyby: Automatic imports for Python\nBy Karl Chen",
+          "start_time": "11:55",
+          "end_time": "12:25",
+          "track": "2"
+        },
+        {
+          "talk_id": "20",
+          "title": "Language Model (Text Analysis) using Python from scratch\nBy Divya Choudhary",
+          "start_time": "11:55",
+          "end_time": "12:25",
+          "track": "3"
+        },
+        {
+          "talk_id": "22",
+          "title": "Inside the World's Largest Python Course on Coursera\nBy Charles Severance",
+          "start_time": "12:30",
+          "end_time": "13:00",
+          "track": "1"
+        },
+        {
+          "talk_id": "23",
+          "title": "SManaging flood risk in this modern age - An Introduction to Geospatial Analytics with Python\nBy Arijit Saha and Atul Singh",
+          "start_time": "12:30",
+          "end_time": "13:00",
+          "track": "2"
+        },
+        {
+          "talk_id": "24",
+          "title": "Speed up your Python modules using Rust\nBy Abhiram Ravikumar",
+          "start_time": "12:30",
+          "end_time": "13:00",
+          "track": "3"
+        },
+        {
+          "talk_id": "97",
           "title": "Lunch",
           "start_time": "13:00",
           "end_time": "14:00",
           "track": "all"
+        },
+        {
+          "talk_id": "25",
+          "title": "The Growth of the Python Community in Africa and How Zimbabwe is Building One of the Biggest Artificial Intelligence Labs in the World\nBy Marlene Mhangami",
+          "start_time": "14:00",
+          "end_time": "14:30",
+          "track": "1"
+        },
+        {
+          "talk_id": "26",
+          "title": "Satellite Image Processing with Python\nBy Shubham Sharma",
+          "start_time": "14:00",
+          "end_time": "14:30",
+          "track": "2"
+        },
+        {
+          "talk_id": "27",
+          "title": "Metaclasses and decorators: a match made in space\nBy Ishan Srivastava",
+          "start_time": "14:00",
+          "end_time": "14:30",
+          "track": "3"
+        },
+        {
+          "talk_id": "28",
+          "title": "Community Talk \nBy Kushal Das, PSF & Mario Behling, FOSSASIA",
+          "start_time": "14:35",
+          "end_time": "15:05",
+          "track": "1"
+        },
+        {
+          "talk_id": "29",
+          "title": "Sponsor Talk - Indeed \nBy Subhas KS and Yosef Wehby",
+          "start_time": "14:35",
+          "end_time": "15:05",
+          "track": "2"
+        },
+        {
+          "talk_id": "30",
+          "title": "Deploying a Python web app onto a Kubernetes Cluster\nBy Tarun Pothulapati",
+          "start_time": "14:35",
+          "end_time": "15:05",
+          "track": "3"
+        },
+        {
+          "talk_id": "31",
+          "title": "Using NLP to demystify 'Terms and Conditions' and summarize the contents\nBy Aroma Rodrigues",
+          "start_time": "15:10",
+          "end_time": "15:40",
+          "track": "1"
+        },
+        {
+          "talk_id": "32",
+          "title": "Processing videos effectively - Piping the Parallelism out of Python\nBy R S Nikhil Krishna and Lokesh Kumar T",
+          "start_time": "15:10",
+          "end_time": "15:40",
+          "track": "2"
+        },
+        {
+          "talk_id": "33",
+          "title": "Handling DASH streams - Generation, Consumption & Clipping\nBy Arnav",
+          "start_time": "15:10",
+          "end_time": "15:40",
+          "track": "3"
+        },
+        {
+          "talk_id": "98",
+          "title": "Tea",
+          "start_time": "15:45",
+          "end_time": "16:15",
+          "track": "all"
+        },
+        {
+          "talk_id": "99",
+          "title": "Lightning Takls",
+          "start_time": "16:15",
+          "end_time": "17:00",
+          "track": "1"
+        },
+        {
+          "talk_id": "34",
+          "title": "Keynote 2 by Siddu Ponappa",
+          "start_time": "17:00",
+          "end_time": "18:00",
+          "track": "1"
         }
+
       ],
       "2018-10-07": [
+        {"order":[7, 1, 2]},
         {
           "talk_id": "00",
           "title": "Registration",
           "start_time": "08:00",
-          "end_time": "09:00",
+          "end_time": "9:30",
           "track": "all"
         },
         {
-          "talk_id": "21",
+          "talk_id": "35",
+          "title": "Keynote 3\nBy Travis Oliphant",
+          "start_time": "09:45",
+          "end_time": "10:45",
+          "track": "1"
+        },
+        {
+          "talk_id": "98",
           "title": "Tea",
-          "start_time": "10:15",
-          "end_time": "10:40",
+          "start_time": "10:45",
+          "end_time": "11:15",
           "track": "all"
         },
         {
-          "talk_id": "05",
+          "talk_id": "36",
+          "title": "Testing micro-services made easy\nBy Devi A S L",
+          "start_time": "11:20",
+          "end_time": "11:50",
+          "track": "1"
+        },
+        {
+          "talk_id": "37",
+          "title": "The art of effective visualization of multi-dimensional data - A hands-on approach\nBy Dipanjan Sarkar",
+          "start_time": "11:20",
+          "end_time": "11:50",
+          "track": "2"
+        },
+        {
+          "talk_id": "38",
+          "title": "Adventures in iterations\nBy Vikrant Patil",
+          "start_time": "11:20",
+          "end_time": "11:50",
+          "track": "3"
+        },
+        {
+          "talk_id": "39",
+          "title": "Django on day 500\nBy Amit Singh Sethi ",
+          "start_time": "11:55",
+          "end_time": "12:25",
+          "track": "1"
+        },
+        {
+          "talk_id": "40",
+          "title": "Sponsor Talk - AQR\nQuant De-Mystified\nBy Navraj Bhardwaj",
+          "start_time": "11:55",
+          "end_time": "12:25",
+          "track": "2"
+        },
+        {
+          "talk_id": "41",
+          "title": "Learn Guitar Via Python Programming (MIDI Parsing)\nBy Rishabh Shah and Srinivas Kalyani",
+          "start_time": "11:55",
+          "end_time": "12:25",
+          "track": "3"
+        },
+        {
+          "talk_id": "42",
+          "title": "Cleaning data with Python\nBy Anand S",
+          "start_time": "12:30",
+          "end_time": "13:00",
+          "track": "1"
+        },
+        {
+          "talk_id": "43",
+          "title": "What you need to know about data classes in Python 3.7\nBy Sasidhar Donaparthi ",
+          "start_time": "12:30",
+          "end_time": "13:00",
+          "track": "2"
+        },
+        {
+          "talk_id": "44",
+          "title": "Optimizations in Web Development: Journey from a college project to a professional product\nBy Megha Sharma",
+          "start_time": "12:30",
+          "end_time": "13:00",
+          "track": "3"
+        },
+        {
+          "talk_id": "97",
           "title": "Lunch",
-          "start_time": "13:15",
-          "end_time": "14:05",
+          "start_time": "13:00",
+          "end_time": "14:00",
           "track": "all"
         },
         {
-          "talk_id": "21",
+          "talk_id": "45",
+          "title": "Using Jupyter to Empower the Less Technical\nBy Marc Udoff and Sriram Nagarajan",
+          "start_time": "14:00",
+          "end_time": "14:30",
+          "track": "1"
+        },
+        {
+          "talk_id": "46",
+          "title": "Building better Python microservices using GRPC\nBy Narendran R",
+          "start_time": "14:00",
+          "end_time": "14:30",
+          "track": "2"
+        },
+        {
+          "talk_id": "47",
+          "title": "Bayesian A/B testing using Python\nBy Vaibhav Pawar",
+          "start_time": "14:00",
+          "end_time": "14:30",
+          "track": "3"
+        },
+        {
+          "talk_id": "48",
+          "title": "Executing scripts in a few milliseconds with MicroPython\nBy Marwan Al-Sabbagh",
+          "start_time": "14:35",
+          "end_time": "15:05",
+          "track": "1"
+        },
+        {
+          "talk_id": "49",
+          "title": "Understanding Caching in Python\nBy Chirag Shah",
+          "start_time": "14:35",
+          "end_time": "15:05",
+          "track": "2"
+        },
+        {
+          "talk_id": "50",
+          "title": "Alexa enabled smart home programming with Python\nBy Sonal Raj ",
+          "start_time": "14:35",
+          "end_time": "15:05",
+          "track": "3"
+        },
+        {
+          "talk_id": "51",
+          "title": "Experience with Python type hints\nBy Kracekumar Ramaraju",
+          "start_time": "15:10",
+          "end_time": "15:40",
+          "track": "1"
+        },
+        {
+          "talk_id": "52",
+          "title": "Amazing world of animation - powered by python\nBy Sreenivas Alapati",
+          "start_time": "15:10",
+          "end_time": "15:40",
+          "track": "2"
+        },
+        {
+          "talk_id": "53",
+          "title": "Automating testbed experiments, data collection and visualization with Python\nBy Sunit Kumar Nandi ",
+          "start_time": "15:10",
+          "end_time": "15:40",
+          "track": "3"
+        },
+        {
+          "talk_id": "98",
           "title": "Tea",
-          "start_time": "15:35",
-          "end_time": "15:55",
-          "track": "all"
-        }
-      ],
-      "2018-10-08": [
-        {
-          "talk_id": "00",
-          "title": "Registration",
-          "start_time": "08:00",
-          "end_time": "09:00",
+          "start_time": "15:45",
+          "end_time": "16:15",
           "track": "all"
         },
         {
-          "talk_id": "21",
-          "title": "Tea",
-          "start_time": "10:15",
-          "end_time": "10:40",
-          "track": "all"
+          "talk_id": "99",
+          "title": "Lightning Takls",
+          "start_time": "16:15",
+          "end_time": "17:00",
+          "track": "1"
         },
         {
-          "talk_id": "05",
-          "title": "Lunch",
-          "start_time": "13:15",
-          "end_time": "14:05",
-          "track": "all"
+          "talk_id": "54",
+          "title": "Keynote 4 by Carol willing",
+          "start_time": "17:00",
+          "end_time": "18:00",
+          "track": "1"
         },
         {
-          "talk_id": "21",
-          "title": "Tea",
-          "start_time": "15:35",
-          "end_time": "15:55",
-          "track": "all"
-        }
-      ],
-      "2018-10-09": [
-        {
-          "talk_id": "00",
-          "title": "Registration",
-          "start_time": "08:00",
-          "end_time": "09:00",
-          "track": "all"
-        },
-        {
-          "talk_id": "21",
-          "title": "Tea",
-          "start_time": "10:15",
-          "end_time": "10:40",
-          "track": "all"
-        },
-        {
-          "talk_id": "07",
-          "title": "Lunch",
-          "start_time": "13:15",
-          "end_time": "14:05",
-          "track": "all"
-        },
-        {
-          "talk_id": "21",
-          "title": "Tea",
-          "start_time": "15:35",
-          "end_time": "15:55",
-          "track": "all"
-        },
-        {
-          "talk_id": "55",
-          "title": "Closing Ceremony",
-          "start_time": "16:50",
-          "end_time": "17:25",
-          "track": "all"
-        }
+          "talk_id": "100",
+          "title": "Closing Address\nBy Manivannan Elangovan, Chair - PyCon India 2018",
+          "start_time": "17:00",
+          "end_time": "18:00",
+          "track": "1"
+        }  
       ]
     }
   ]

@@ -188,6 +188,8 @@ class ScreenSchedule(Screen):
                 first = cday
             acordion_add(cday)
             day_sched = schedule[date]
+            order, day_sched = day_sched[0]["order"], day_sched[1:]
+            tracks = [schedule['tracks'][int(trk)-1] for trk in order]
             # create a carousel for each track
             tcarousel = TabbedCarousel()
             ti = TalkInfo

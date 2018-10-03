@@ -6,7 +6,6 @@ from kivy.lang import Builder
 from kivy.properties import StringProperty
 from kivy.properties import ObjectProperty
 from functools import partial
-from utils import do_share
 
 app = App.get_running_app()
 
@@ -113,7 +112,14 @@ class ScreenTalks(Screen):
         gl = None
         if not talks:
             return
-        talk_info = talks['0.0.1'][0][self.talkid]
+        try:
+            talk_info = talks['0.0.1'][0][self.talkid]
+        except KeyError:
+            # no details for this talk exist...
+            # let's go back to previous screen
+            from utils import go_back_in_history
+            go_back_in_history()
+            return
 
         self.ids.talk_title.text = talk_info['title']
         self.ids.talk_desc.text = talk_info['description']
