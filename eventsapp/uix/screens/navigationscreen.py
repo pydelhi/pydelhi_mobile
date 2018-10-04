@@ -133,7 +133,7 @@ class NavigationScreen(Screen):
         keep_ratio: False
         on_parent:
             self.texture.wrap = 'repeat'
-            self.texture.uvsize = 7, 22
+            self.texture.uvsize = self.width/2., self.height/2
         #color: 225./255., 225./255., 225./255., 1
     Image
         mipmap: True
