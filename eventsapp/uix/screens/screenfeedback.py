@@ -74,11 +74,11 @@ class ScreenFeedback(Screen):
 
     def on_pre_leave(self):
         self.manager.transition.direction = 'down'
-
-    def on_leave(self):
-        self.manager.transition.direction = 'left'
         self.ids.sldr.value = 0
-        self.ids.root.talk = ''
+        self.ids.talk = ''
         self.ids.ti_description.text = ''
         self.ids.ti_name.text = ''
         self.ids.ti_ticketid.text = ''
+
+    def on_leave(self):
+        self.manager.transition.direction = 'left'

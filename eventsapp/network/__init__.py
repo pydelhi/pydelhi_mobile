@@ -25,7 +25,6 @@ def write_oldata(fpath, data):
 
 def on_success(oldata, endpoint, req, bl):
     # got new data, update the schedule
-    print 'success',  endpoint
     ndata = None
     with open(req.file_path) as f:
         ndata = f.read()
@@ -59,12 +58,10 @@ def _check_data(req, oldata):
 
 
 def on_failure(oldata, endpoint, req, bl):
-    print 'failure', endpoint, req.file_path
     _check_data(req, oldata)
 
 
 def on_error(oldata, endpoint, req, bl):
-    print 'error', endpoint, req.file_path
     _check_data(req, oldata)
 
 
@@ -73,7 +70,6 @@ def fetch_remote_data(dt):
     '''
     for args in fetch_remote_data._args:
         endpoint, filepath, oldata = args
-        print 'fetch', endpoint, filepath
         UrlRequest(
             #FIXME: initial url should be abstracted out too.
             'https://raw.githubusercontent.com/pythonindia/'
