@@ -7,8 +7,10 @@ class ScreenFeedback(Screen):
 <ScreenFeedback>
     name: 'ScreenFeedback'
     talk: ''
-    ScrollView
-        id: main
+    BoxLayout
+        padding: '9dp'
+        spacing: '9dp'
+        orientation: 'vertical'
         ScrollGrid
             padding: '9dp'
             spacing: '9dp'
@@ -38,11 +40,6 @@ class ScreenFeedback(Screen):
                     min: 0
                     max: 10
             TextInput:
-                id: ti_description
-                size_hint_y: None
-                height: dp(220)
-                hint_text: 'Enter detailed feedback here...'
-            TextInput:
                 id: ti_name
                 size_hint_y: None
                 height: dp(45)
@@ -52,21 +49,24 @@ class ScreenFeedback(Screen):
                 size_hint_y: None
                 height: dp(45)
                 hint_text: 'Your Ticket ID...'
-            ActiveButton
-                text: 'Submit'
-                size_hint_y: None
-                height: dp(45)
-                on_released:
-                    rating = '{} out of {}'.format(sldr.value, sldr.max)
-                    title = 'Title: ' + root.talk
-                    detailed_description = "Description:" + ti_description.text
-                    name = "Name: " + ti_name.text
-                    ticketid = "Ticketid: " + ti_ticketid.text
-                    import webbrowser
-                    webbrowser.open(\
-                    "mailto:feedback@in.pycon.org?Subject=TalkFeedback&body" +\
-                    "={}".format("\\n\\n".join((rating, title, detailed_description\
-                    , name, ticketid))))
+        TextInput:
+            id: ti_description
+            hint_text: 'Enter detailed feedback here...'
+        ActiveButton
+            text: 'Submit'
+            size_hint_y: None
+            height: dp(45)
+            on_released:
+                rating = '{} out of {}'.format(sldr.value, sldr.max)
+                title = 'Title: ' + root.talk
+                detailed_description = "Description:" + ti_description.text
+                name = "Name: " + ti_name.text
+                ticketid = "Ticketid: " + ti_ticketid.text
+                import webbrowser
+                webbrowser.open(\
+                "mailto:feedback@in.pycon.org?Subject=TalkFeedback&body" +\
+                "={}".format("\\n\\n".join((rating, title, detailed_description\
+                , name, ticketid))))
 ''')
 
     def on_pre_enter(self):
