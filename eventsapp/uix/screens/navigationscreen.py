@@ -82,10 +82,12 @@ class NavigationScreen(Screen):
                     load_screen(\
                     'ScreenCommunity', manager=app.navigation_manager)
             MenuButton
+                down_count: 0
                 text: 'Registration'
-                on_released:
-                    load_screen(\
-                    'ScreenRegister', manager=app.navigation_manager)
+                on_released: self.down_count += 1
+                on_down_count:
+                    if args[1] == 5:load_screen(\
+                    'ScreenRegister', manager=app.navigation_manager); self.down_count = 0
             MenuButton
                 text: 'About'
                 on_released:
