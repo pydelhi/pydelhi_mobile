@@ -86,13 +86,16 @@ class ScreenTalks(Screen):
                 source: 'atlas://data/default/share'
                 color: app.base_active_bright[:3] + [.9]
                 on_release: do_share(self.data, "PyCon India 2018")
-            ImBut
-                data: ''
-                source: 'atlas://data/default/reminder'
-                color: app.base_active_bright[:3] + [.9]
+            # ImBut
+            #     data: ''
+            #     source: 'atlas://data/default/reminder'
+            #     color: app.base_active_bright[:3] + [.9]
             ImBut
                 source: 'atlas://data/default/feedback'
                 color: app.base_active_bright[:3] + [.9]
+                on_release:
+                    scr = load_screen("ScreenFeedback", manager=root.manager)
+                    scr.talk = talk_title.text
         ''')
 
     def on_pre_enter(self):
@@ -103,6 +106,7 @@ class ScreenTalks(Screen):
         container = self.ids.container
 
         if self.from_back:
+            Factory.Animation(opacity=1, d=.3).start(container)
             return
 
         if len(container.children) > 2:
