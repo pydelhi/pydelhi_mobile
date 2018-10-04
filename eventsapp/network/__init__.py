@@ -5,6 +5,7 @@ from kivy.network.urlrequest import UrlRequest
 import os
 import json
 import time
+from functools import partial
 
 app = App.get_running_app()
 
@@ -22,8 +23,9 @@ def write_oldata(fpath, data):
         f.write(data)
 
 
-def on_success(req, oldata, endpoint):
+def on_success(oldata, endpoint, req, bl):
     # got new data, update the schedule
+    print 'success',  endpoint
     ndata = None
     with open(req.file_path) as f:
         ndata = f.read()
@@ -40,7 +42,8 @@ def on_success(req, oldata, endpoint):
         'sponsors': 'screensponsor',
         'about': 'screenabout',
         'venue': 'screenvenue',
-        'community': 'screencommunity'}[endpoint]
+        'community': 'screencommunity',
+        'event': 'screenschedule'}[endpoint]
     getattr(app, scr).on_enter(onsuccess=True)
 
 
@@ -55,27 +58,34 @@ def _check_data(req, oldata):
     write_oldata(req.file_path, oldata)
 
 
-def on_failure(req, oldata, endpoint):
+def on_failure(oldata, endpoint, req, bl):
+    print 'failure', endpoint, req.file_path
     _check_data(req, oldata)
 
 
-def on_error(req, oldata, endpoint):
+def on_error(oldata, endpoint, req, bl):
+    print 'error', endpoint, req.file_path
     _check_data(req, oldata)
 
 
 def fetch_remote_data(dt):
     '''Fetch remote data from the endpoint
     '''
-    endpoint, filepath, oldata = fetch_remote_data._args
-    UrlRequest(
-        #FIXME: initial url should be abstracted out too.
-        'https://raw.githubusercontent.com/pythonindia/PyCon_Mobile_App/\
-        blob/master/eventsapp/data/' + endpoint + '.json',
-        file_path=filepath,
-        on_success=lambda req, r2: on_success(req, oldata, endpoint),
-        on_error=lambda req, r2: on_error(req, oldata, endpoint),
-        on_failure=lambda req, r2: on_failure(req, oldata, endpoint),
-        timeout=15)
+    for args in fetch_remote_data._args:
+        endpoint, filepath, oldata = args
+        print 'fetch', endpoint, filepath
+        UrlRequest(
+            #FIXME: initial url should be abstracted out too.
+            'https://raw.githubusercontent.com/pythonindia/'
+            'PyCon-Mobile-App/master/eventsapp/data/{}.json'.format(endpoint),
+            file_path=filepath,
+            on_success=partial(on_success, oldata, endpoint),
+            on_error=partial(on_error, oldata, endpoint),
+            on_failure=partial(on_failure, oldata, endpoint),
+            timeout=15)
+    fetch_remote_data._args = []
+
+fetch_remote_data._args = []
 
 trigger_fetch_remote_data = Clock.create_trigger(fetch_remote_data, 9)
 '''Trigger fetching of data only once every 9 seconds
@@ -93,7 +103,7 @@ def get_data(endpoint, onsuccess=False):
     if os.environ.get("PYCONF_OFFLINE_MODE", None) == '1':
         onsuccess = True
     if not onsuccess:
-        fetch_remote_data._args = endpoint, filepath, oldata
+        fetch_remote_data._args.append([endpoint, filepath, oldata])
         trigger_fetch_remote_data()
 
     jsondata = json.loads(oldata)
