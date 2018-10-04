@@ -4,7 +4,7 @@
 Github Repo: http://github.com/pythonindia/PyCon-Mobile-App
 '''
 
-__version__ = '0.0.2'
+__version__ = '0.4.0'
 
 # setup error reporting
 import sentry_sdk
