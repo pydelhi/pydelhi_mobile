@@ -6,7 +6,7 @@
 			"type": "default",
 			"speaker": {
 				"name": "PyCon India Registeration Team",
-				"info": "Some Info about workshops here",
+				"info": "Bring your Tickets up to the counters and get registered.",
 				"photo": "https://images.yourstory.com/2016/06/registration.jpg?auto=compressedu/ICCPM/ImgBanner1/register.jpg"
 			}
 		},
@@ -79,7 +79,7 @@
 			"description": "Geospatial representation are so prevalent in day to day life, such as even in simple travel related conversation to maps, aerial/satellite images etc. In digital era, geospatial data is extensively produced and consumed in ever growing proportion. Python with its free and open source libraries are giving wide variety yet simple and effective set of tools to visualise and analyse geospatial data. The current workshop is directed for beginners of Python programming language, who have basic understanding on computing and data formats. The primary objective of the workshop is to introduce and give hands on training on selected list of FOSS libraries for geospatial analysis. The workshop as a do it yourself fashion tries to solve two real world problems in Geographical Information System (GIS) and its geospatial data sources.",
 			"type": "workshop",
 			"speaker": {
-				"name": "Nisha KA",
+				"name": "Nishad KA",
 				"info": "I am a research associate at UrbanEmissions.info, PhD in Environmental Sciences from Sálim Ali Centre for Ornithology and Natural History, Bharathiar University, Coimbatore. My thesis was on `Particulate air pollution data for Coimbatore, India: real time monitoring and modeling with data-interoperability measures`, which emphasised need of open and standardised real time data for better management of air pollution in the country. I got exposure into programming and open source software related to my research studies. I used free and open source libraries of Python for most of my studies, especially on geospatial data compilation, analysis and visualization. I have conducted workshop similar to the current one in Kovaipy, Scipy-India 2017.",
 				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no",
 				"social": {
@@ -189,6 +189,94 @@
 				"social": {
 					"twitter": "https://twitter.com/mitsuhiko",
 					"website": "http://lucumr.pocoo.org/"
+				}
+			}
+		},
+		"15": {
+			"title": "How Helpshift built machine learning platform using Python at large scale",
+			"description": "The purpose of this talk is to describe how helpshift has leveraged python ecosystem to build a machine learning platform without using any third party framework, and how you can build one too.\n\nIn particular, You can learn how to build the following components of machine learning platform using python from this talk.",
+			"type": "talk",
+			"speaker": {
+				"name": "Shyam Shinde",
+				"info": "Hello, I am shyam shinde, actively developing machine learning platform at helpshift.\n\n\nI have diverse experience in developing backend systems, designing and developing system to handle big data.\n\nDeveloped production systems using Java, Clojure and Python. Currently, interested in deploying machine learning services at scale. As side projects, I learn machine learning concepts and try to implement them.\n\nApart from that, I like trekking, reading books and watching movies.",
+				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no",
+				"social": {
+					"linkedin": "http://linkedin.com/in/shyam-shinde-4a867224",
+					"github": "https://github.com/shindesh1",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/how-helpshift-built-machine-learning-platform-using-python-at-large-scale~e0mLa/"
+				}
+			}
+		},
+		"16": {
+			"title": "Large scale web crawling using Python",
+			"description": "The purpose of this talk is to describe how helpshift has leveraged python ecosystem to build a machine learning platform without using any third party framework, and how you can build one too.\n\nIn particular, You can learn how to build the following components of machine learning platform using python from this talk.",
+			"type": "talk",
+			"speaker": {
+				"name": "Anand B Pillai & Noufal Ibrahim",
+				"info": "Anand B Pillai is a technology professional with 20 years of software development, design and architecture. He has worked in a number of companies over the years in fields ranging from Security, Search Engines, Large Scale Web Portals and Big Data. He is the founder of the Bangalore Python User's Group and the author of Software Architecture with Python (PacktPub, April 2017). Anand has a lot of experience in web-crawling having written the original Python web-crawler HarvestMan in 2005 and developing a number of custom crawlers for various startups solving various problems. Anand is an Independent Software Professional.\n\nNoufal Ibrahim is the CEO and Founder of Hamon Technologies at Calicut, Kerala. He was key to starting the very first PyCon India conference in 2009 and has since been involved in the conference closely throughout the years. Noufal was the keynote speaker of PyCon India 2017. Noufal has made a name not just by his Python community activities, but also by his creative Python introductory talks he has conducted in various universities and institutions in Kerala. He is also a professional trainer in Python and git.\n\nBoth Noufal and Anand are Fellows of the Python Software Foundation (PSF).",
+				"photo": "http://paste.opensuse.org/view/raw/10686651",
+				"social": {
+					"twitter": "https://twitter.com/skeptichacker",
+					"website": "http://hamon.in/",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/large-scale-web-crawling-using-python~bkl6d/"
+				}
+			}
+		},
+		"17": {
+			"title": "Creating 3rd generation Web APIs using Hydra and Hydrus",
+			"description": "3rd generation Web APIs enables the creation of truly RESTful services with all its benefits in terms of scalability, maintainability, and evolvability. This allows creating Generic Consoles and loosely coupled clients. The main objective of this talk is to provide an overview of Hydra and Hydrus and how we can create such APIs using Hydrus.",
+			"type": "talk",
+			"speaker": {
+				"name": "Akshay Dahiya",
+				"info": "Hi, my name is Akshay Dahiya. I'm a Mentor and Organization Admin for Python Hydra in Google Summer of Code 2018 and I love working on Semantic Web and Artificial Intelligence-related projects.\nI also mentor a couple of students across various Udacity Nanodegree programs (FullStack Nanodegree, React Nanodegree and Deep Learning Nanodegree) in my free time.",
+				"photo": "https://media.licdn.com/dms/image/C4E03AQHXk2hEjl0z0w/profile-displayphoto-shrink_200_200/0?e=1544054400&v=beta&t=3wVnzwg76YwPGXOXGPXVQsNd2fZn8yQr7h_ZoOQkEcg",
+				"social": {
+					"github": "https://github.com/xadahiya/",
+					"website": "http://www.xadahiya.me/",
+					"linkedin": "https://www.linkedin.com/in/xadahiya/",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/creating-3rd-generation-web-apis-using-hydra-and-hydrus~dBpYa/"
+				}
+			}
+		},
+		"18": {
+			"title": "Python Project Workflows - Continuous Deployment Friendly",
+			"description": "Have conflicting dependencies (unpleasantly) surprised you? (Darn: It worked on my laptop!)\nDo deterministic builds matter?\nWhat about those run-time errors, which were a typo while accessing an attribute of a class?\nHas the codebase already started smelling a bit?\nUnit tests and what about Dockerization?\nTypically, when your Python project grows beyond a few modules and your team size is more than a couple of developers, having the right tools built into your project development workflow saves one from a lot of surprises (and perhaps late night calls). In this talk, we start with challenges typically seen in Python Projects and look at ways of overcoming them, so that the velocity of code deployment increases. Specifically we are going to be looking at tools that are out there that allow you to -",
+			"type": "talk",
+			"speaker": {
+				"name": "Abhijit Gadgil",
+				"info": "Running a Consulting Company 'hyphenOs Software Labs' in Pune, India.\n\nPython/Go programmer - Mostly for things that pay the bills and ideas that I want to try out.\n\nDatacenter Networking Enthusiast (hacking a yet another Container Networking technology, borrowing ideas from different Projects)\nEternally grateful to whoever wrote tcpdump and the new Wireshark. Number of problems solved using these tools could run into triple digits.\nHates trailing white spaces in a file.",
+				"photo": "https://avatars3.githubusercontent.com/u/387214?s=400&v=4",
+				"social": {
+					"github": "https://github.com/gabhijit",
+					"linkedin": "https://www.linkedin.com/in/amgadgil/",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/python-project-workflows-continuous-deployment-friendly~bq8ya/"
+				}
+			}
+		},
+		"19": {
+			"title": "Sponsor Talk - DEShaw\nPyflyby: Automatic imports for Python",
+			"description": "",
+			"type": "talk",
+			"speaker": {
+				"name": "Karl Chen",
+				"info": "Vice President at D. E. Shaw & Co. New York, New York",
+				"photo": "https://media.licdn.com/dms/image/C4E03AQH_W9JeSHICAQ/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=6dNjlOAuCvHsIuryGeQFUlcLCA8FP2Mv72H-jfmvYv8",
+				"social": {
+					"linkedin": "https://www.linkedin.com/in/quarl/"
+				}
+			}
+		},
+		"20": {
+			"title": "Language Model (Text Analysis) using Python from scratch",
+			"description": "What is Language Model?\n\nLanguage Model is basically a way to determine how likely a certain sentence is in the language. 'You are reading my LM write up now ' is more likely to be said than `Now you are my LM reading write up`, even though both sentences contain only correct English words; and the sentence `I had ice-cream with a` is more likely to end with `spoon` than with `banana`. LM helps impart this understanding of a language to machines.\n\nWhat’s the need? `Computers are incredibly fast, accurate and stupid; humans are incredibly slow, inaccurate and brilliant; together they are powerful beyond imagination.` (Albert Einstein)",
+			"type": "talk",
+			"speaker": {
+				"name": "Divya Choudhary",
+				"info": "Data Scientist with ~4 years of experience. For more info, please pay a visit to my LinkedIn.",
+				"photo": "https://media.licdn.com/dms/image/C5603AQFbbWt9_kRVzw/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=Yl14rl2E9CNpBtgC0YLdfO7w6iWc6l5k3Iroo2xNyUY",
+				"social": {
+					"linkedin": "https://www.linkedin.com/in/divyachoudhary28/",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/python-project-workflows-continuous-deployment-friendly~bq8ya/"
 				}
 			}
 		},
