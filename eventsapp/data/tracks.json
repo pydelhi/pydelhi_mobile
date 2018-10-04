@@ -280,6 +280,160 @@
 				}
 			}
 		},
+		"22": {
+			"title": "Inside the World's Largest Python Course on Coursera",
+			"description": "This session will take a look at the “Python for Everybody” series of courses on the Coursera platform. This course has impacted over 1.3 million students over the last five years. We will look a the history and goals of the course and how the course works to create a learning community. We will show how the free open educational resources (OERs) and book associated with the course have been used by teachers, students, and courses around the world to form a network of educational activities centered around Python. We will also cover briefly the Tsugi (www.tsugi.org) software that is used to build the learning assessments and distribute the OER materials in a way that enables maximum reusability of the materials for other teachers.",
+			"type": "talk",
+			"speaker": {
+				"name": "Charles Severance",
+				"info": "Charles is a Clinical Professor and teaches in the School of Information at the University of Michigan. He is the Chair of the Sakai Project Magament Committee (PMC). Previously he was the Executive Director of the Sakai Foundation and the Chief Architect of the Sakai Project and worked with the IMS Global Learning Consortium promoting and developing standards for teaching and learning technology.",
+				"photo": "http://www.dr-chuck.com/csev_ian_dolphin_small.jpg",
+				"social": {
+					"website": "http://www.dr-chuck.com/",
+					"twitter": "https://twitter.com/drchuck/",
+					"github": "https://github.com/csev",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/inside-the-worlds-largest-python-course-on-coursera~bomYe/"
+				}
+			}
+		},
+		"23": {
+			"title": "Managing flood risk in this modern age - An Introduction to Geospatial Analytics with Python",
+			"description": "Catastrophic floods had a deep impact on the early human psyche resulting in a potpourri of great flood stories ingrained in the mythology of early human civilisations spread across the globe. Despite all the human progress floods can still cause massive property damages, economic losses and casualty. Several major cities and towns in India reported a series of devastating urban floods in recent times, and the resulting human and financial loss makes study of models that can identify the flood risk of an area extremely relevant.\n\nThis talk focuses on geo-spatial analytics and describes multiple techniques that can be used to assess the flood inundation risk of a geographical area. ",
+			"type": "talk",
+			"speaker": {
+				"name": "Arijit Saha and Atul Singh",
+				"info": "Arijit Saha is a data professional with over sixteen years of industry work experience in architecting, designing & developing large-scale data products, platforms & solutions for both big & medium size enterprises.\n\nAtul Singh is a data science enthusiast with over sixteen years of software industry work experience in product development, research, and innovation. He has a PhD in Computer Science. He has nine granted US patents, eleven pending US patent applications, and over fifteen research publications in various international forums.",
+				"photo": "https://media.licdn.com/dms/image/C4D03AQGm7Z-LNPOHnA/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=pVI4n_nXYG1oy1MIs7iskgwVkid-N520z8LseYG4ndc",
+				"social": {
+					"website": "https://www.linkedin.com/in/atulsinghphd/",
+					"linkedin": "https://www.linkedin.com/in/arijitsaha/",
+					"github": "https://github.com/arijitsaha",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/managing-flood-risk-in-this-modern-age-an-introduction-to-geospatial-analytics-with-python~avz0a/"
+				}
+			}
+		},
+		"24": {
+			"title": "Speed up your Python modules using Rust",
+			"description": "Python is a great language, we all know that. Although, sometimes Python can be a bit of a slowcoach when it comes to performing certain tasks. That's where developers have been using C/C++, building extensions and integrating them with Python to speed up processes. However, writing C/C++ extensions with strict deadlines and timelines is a bit difficult and also, these low level languages tend to introduce bugs with respect to memory management, lead to segmentation faults and data races. How often have we all faced the dangling pointer error in C/C++ just because we forgot the de-reference a pointer somewhere?\n\nEnter Rust, ...",
+			"type": "talk",
+			"speaker": {
+				"name": "Abhiram Ravikumar",
+				"info": "Abhiram has been a part of the open source world in Bangalore for over 3 years now. As a student volunteer in Bangalore, he started contributing to Mozilla as well as FSMK (Free Software Movement Karnataka).",
+				"photo": "https://pbs.twimg.com/profile_images/603524751290597376/vPJ3O-rE_400x400.jpg",
+				"social": {
+					"website": "http://abhiramrk.com",
+					"twitter": "https://twitter.com/abhi12ravi",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/speed-up-your-python-modules-using-rust~elNrb/"
+				}
+			}
+		},
+		"25": {
+			"title": "The Growth of the Python Community in Africa and How Zimbabwe is Building One of the Biggest Artificial Intelligence Labs in the World",
+			"description": "I will be discussing how the use of Python in Africa has grown significantly since 2010 and how, as a result new innovation centers like the High Performance Center in Zimbabwe are beginning to build an industry using it.",
+			"type": "talk",
+			"speaker": {
+				"name": "Marlene Mhangami",
+				"info": "Marlene Mhangami is the first African to have been voted onto the board of directors of the Python Software Foundation, the group organization behind the popular computer programming language Python. She is the Chair of PyCon Africa and heads up the Google's Women Techmakers Harare. Marlene is also the co-founder of ZimboPy an organization getting Zimbabwean girls excited about code.",
+				"photo": "https://media.licdn.com/dms/image/C4D03AQHIqJx5gAflWQ/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=dmEWU8qivKsakU5dLV_ASEgM295vr2N0nU6rm-JCzXs",
+				"social": {
+					"linkedin": "https://www.linkedin.com/in/marlene-mhangami-90a740130/",
+					"twitter": "https://twitter.com/zimbopy",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/the-growth-of-the-python-community-in-africa-and-how-zimbabwe-is-building-one-of-the-biggest-artificial-intelligence-labs-in-the-world~bWRQa/"
+				}
+			}
+		},
+		"26": {
+			"title": "Satellite Image Processing with Python",
+			"description": "The Talk will focus on the importance of satellite image processing with main focus on the utilisation of GDAL library to conduct various operations on satellite data. Datasets will include Optical imagery and Synthetic Aperture Radar Imagery. The power of GDAL library alongwith numpy and matplotlib will be demonstrated. Brief analysis of satellite images using python will be given.",
+			"type": "talk",
+			"speaker": {
+				"name": "shubham_thb",
+				"info": "Shubham Sharma is a Junior Research fellow currently working on a collaborative project with Calibration and Validation Division of Space Applications Centre, ISRO, Ahmedabad. He has a rich experience in handling and processing of Synthetic Aperture Radar Images. Also, he has experience in building software tools in python for satellite Image analysis.",
+				"photo": "https://media.licdn.com/dms/image/C4E03AQGQp9ryOpN5sA/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=a5vwsD5NOVtddLtJ6k-mu-Hm-97pk4nd-KjJKVMnLP8",
+				"social": {
+					"linkedin": "https://www.linkedin.com/in/shubham-sharma-54685780/?originalSubdomain=in",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/satellite-image-processing-with-python~dJKKe/"
+				}
+			}
+		},
+		"27": {
+			"title": "Metaclasses and decorators: a match made in space",
+			"description": "While introducing people to Python metaclasses I realized that sometimes the big problem of the most powerful Python features is that programmers do not perceive how they may simplify their usual tasks. Therefore, features like metaclasses are considered a fancy but rather unuseful addition to a standard OOP language, instead of a real game changer.\n\nThis talk wants to show how to use metaclasses and decorators to create a powerful class that can be inherited and customized by easily adding decorated methods.",
+			"type": "talk",
+			"speaker": {
+				"name": "ishan srivastava",
+				"info": "I am just an average guy who got into programming and fell in love with it.\n\n3rd year undergrad at IIT Dharwad and a Google Summer of Code 2018 student with coala",
+				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no",
+				"social": {
+					"github": "https://github.com/ishanSrt",
+					"twitter": "https://twitter.com/ishan_srt",
+					"website": "http://www.dowhatucant.com/about.html",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/metaclasses-and-decorators-a-match-made-in-space~ervpe/"
+				}
+			}
+		},
+		"30": {
+			"title": "Deploying a Python web app onto a Kubernetes Cluster",
+			"description": "Kubernetes is considered as the new Kernel of the Cloud. It's a distributed computing platform letting users not have to care about infra and helping them concentrate mainly on business logic. By having your web app deployed on a kubernetes cluster you can make sure your app is highly available, and can fail-over when there's a problem.\n\nOne of the main goals of the Kubernetes project is to democratize distributed computing. With Kubernetes being open source, Companies do not have to redo the mundane task of writing a distributed computing platform to achieve high availability, automated deployment, scaling and management of your applications. Kuberentes will take care of that for you. Kubernetes is also considered as a container orchestrator, as it manages containers to achieve the above said goals.\n\n",
+			"type": "talk",
+			"speaker": {
+				"name": "Tarun Pothulapati",
+				"info": "Tarun Pothulapati is currently pursuing his B.Tech in Computer Science and Engineering in Hyderabad. He is a Tech Enthusiast and codes mostly in Python and C#.",
+				"photo": "https://media.licdn.com/dms/image/C4D03AQFVQCBpSP6Iqg/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=YUqzLu4h8osLz3gkJLpTNx9sqKhjrl_W2IyBtBpbXK4",
+				"social": {
+					"github": "https://github.com/pothulapati",
+					"twitter": "https://twitter.com/Pothulapati",
+					"website": "http://www.tarunpothulapati.com/",
+					"linkedin": "https://www.linkedin.com/in/tpothulapati/",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/deploying-a-python-web-app-onto-a-kubernetes-cluster~bqo7e/"
+				}
+			}
+		},
+		"31": {
+			"title": "Using NLP to demystify `Terms and Conditions` and summarize the contents",
+			"description": "About a month ago my inbox was flooded with emails beginning with We have decided to update our Terms and Conditions.... Though I am a technical person working in a financial services company and thus terms and conditions are supposed to be my cup of tea, I couldn't get myself to go through any of the actual Terms and Conditions.\n\nA python based Natural Language Processing Engine to summarize the often twisted contents of a legal agreement and defining the pros and cons for the agreement in question for the user would better equip an user to understand what exactly they are agreeing to...",
+			"type": "talk",
+			"speaker": {
+				"name": "ARodz",
+				"info": "A recent tech graduate. A learner and a creator at core. I've majored in the Electronics and Communication domain and have worked on projects catering to software, hardware and communication needs/ problem statements.",
+				"photo": "https://media.licdn.com/dms/image/C5103AQFEDAjSQD07Bg/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=XatbsvTxU7GwabnG_CUS52ys_Qyh-mpq23sLfn9mvOo",
+				"social": {
+					"linkedin": "https://www.linkedin.com/in/aromarodrigues/",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/using-nlp-to-demystify-terms-and-conditions-and-summarize-the-contents~b2Aza/"
+				}
+			}
+		},
+		"32": {
+			"title": "Processing videos effectively - Piping the Parallelism out of Python",
+			"description": "Almost all of us have used VLC, simply because it's so good at what it does. Reads multiple file formats, transcodes videos, makes basic filtering (brightness correction, etc) effortless, etc\n\nBut have you ever wondered what makes VLC so efficient? VLC uses libavcodec in the backend, which is just a way for it to access the API of FFmpeg, a key software in video-processing. However, one is seldom satisfied with the basic filters that libraries like libavcodec offer, which leaves us to write our own code using libraries like OpenCV and Scikit-Image.\n\n",
+			"type": "talk",
+			"speaker": {
+				"name": "R S Nikhil Krishna",
+				"info": "R S Nikhil Krishna\n\nNikhil is a final year student at IIT Madras. He currently leads the Computer Vision and AI team at Detect Technologies and has headed the CVI group at CFI, IIT Madras in the past. In the past, He has worked on semi-autonomous tumour detection for automated brain surgery at the Division of Remote Handling and Robotics, BARC and on importance sampling for accelerated gradient optimization methods applied to Deep Learning at EPFL, Switzerland.",
+				"photo": "https://media.licdn.com/dms/image/C4D03AQGZc7jVUSjqXg/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=CTOS3n-kv0peZM9wZCU1zzAOWtIHNMrT-HXAWr1mA48",
+				"social": {
+					"twitter": "https://twitter.com/rsnk96",
+					"website": "https://rsnk96.github.io/",
+					"github": "https://github.com/rsnk96",
+					"linkedin": "https://linkedin.com/in/rsnk96",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/processing-videos-effectively-piping-the-parallelism-out-of-python~ejkva/"
+				}
+			}
+		},
+		"33": {
+			"title": "Handling DASH streams - Generation, Consumption & Clipping",
+			"description": "Due to lack of open libraries handling DASH media, we would be building a DASH utility toolkit. It would be carrying out activities of segmenting (generation), re-merging (consumption), and clipping out a specific period of clip, where the on-media tasks are carried out by ffmpeg. Special care will be taken for `dynamic` streams which are live streams. We will go through some production code behind https://esl.atx.sx which is specialized facebook streamer, and some challenges that came up serving its 1 million users.",
+			"type": "talk",
+			"speaker": {
+				"name": "_arnAV",
+				"info": "Arnav is currently working as a Developer at hedgehog lab, Hyderabad. He has presented technical talks at previous PyCons. He maintains several pet projects, his most recent https://esl.atx.sx serving the esports community.",
+				"photo": "https://media.licdn.com/dms/image/C4E03AQEj70dzcHfHNg/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=j-iPguESBR3Xcvtms-kKehAcDEmH2Yr3bOz8nmYpO0Y",
+				"social": {
+					"linkedin": "https://www.linkedin.com/in/arnav7/",
+					"proposal": "https://in.pycon.org/cfp/2018/proposals/handling-dash-streams-generation-consumption-clipping~dwv1b/"
+				}
+			}
+		},
 		"34": {
 			"title": "Keynote",
 			"description": "",
