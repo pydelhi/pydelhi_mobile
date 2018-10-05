@@ -126,7 +126,9 @@ def go_back_in_history():
             scr.name,
             manager=scr.manager,
             store_back=False)
-    except IndexError, ScreenManagerException:
+    except (IndexError, ScreenManagerException):
         # check if current screen is schedule screen?
         if app.navigation_manager.current == 'ScreenSchedule':
             pause_app()
+            return
+        load_screen("ScreenSchedule", manager=app.navigation_manager)
