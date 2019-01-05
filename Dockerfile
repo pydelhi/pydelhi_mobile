@@ -65,9 +65,6 @@ RUN sudo mkdir app  && sudo chown user app \
   && cd ${HOME_DIR} && sudo time -p wget --quiet ${DOT_PATH}/${DOT_VERSION}/${DOT_FILE} \
   && echo "${DOT_HASH}  ${DOT_FILE}" | sha256sum -c \
   && sudo tar -xf ${DOT_FILE} && sudo rm ${DOT_FILE} \
-  && cd ${WORK_DIR}/app && sudo time -p wget --quiet ${DOT_PATH}/${DOT_VERSION}/${DOT_FILE2} \
-  && echo "${DOT_HASH2}  ${DOT_FILE2}" | sha256sum -c \
-  && sudo tar -xf ${DOT_FILE2} && sudo rm ${DOT_FILE2} \
   && time -p sudo chown user -R ${HOME_DIR}/.buildozer && time -p sudo chown user -R ${HOME_DIR}
 
 #RUN cd /tmp/ && buildozer init && buildozer android adb -- version \
@@ -91,6 +88,9 @@ COPY . app
 
 RUN  sudo chown user -R app/ \
   && cd app \
+  && time -p wget --quiet ${DOT_PATH}/${DOT_VERSION}/${DOT_FILE2} \
+  && echo "${DOT_HASH2}  ${DOT_FILE2}" | sha256sum -c \
+  && tar -xf ${DOT_FILE2} && rm ${DOT_FILE2} \
   && time -p buildozer android debug || /bin/true
 
 RUN sudo cp /home/user/hostcwd/app/.buildozer/android/platform/build/dists/conference/bin/PyDelhiConf*debug.apk ${WORK_DIR}
