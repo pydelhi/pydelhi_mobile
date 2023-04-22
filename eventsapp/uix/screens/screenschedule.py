@@ -98,7 +98,7 @@ class ScreenSchedule(Screen):
 
             background_color: 1, 1, 1, 0
             do_default_tab: False
-            orientation: 'vertical'
+            # orientation: 'vertical'
             tab_width: self.width/5
             tab_pos: 'top_left'
 

@@ -12,7 +12,7 @@ app = App.get_running_app()
 
 class SpeakerDetails(Factory.ScrollGrid):
 
-    speaker = ObjectProperty(None)
+    speaker = ObjectProperty({'Photo': ''})
 
     Builder.load_string('''
 <SpeakerDetails>

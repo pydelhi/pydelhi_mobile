@@ -24,7 +24,7 @@ class NavigationScreen(Screen):
     valign: 'center'
     padding: dp(15), dp(15)
     color: app.base_active_bright
-    on_released: app.navigationdrawer.toggle_state()
+    on_release: app.navigationdrawer.toggle_state()
 
 <LeftPanel@BoxLayout+Image>
     orientation: 'vertical'
@@ -48,49 +48,49 @@ class NavigationScreen(Screen):
             MenuButton
                 id: bt_sched
                 text: 'Schedule'
-                on_released:
+                on_release:
                     load_screen(\
                     'ScreenSchedule', manager=app.navigation_manager)
             MenuButton
                 text: 'Sponsors'
-                on_released:
+                on_release:
                     load_screen(\
                     'ScreenSponsor', manager=app.navigation_manager)
             MenuButton
                 text: 'Venue'
-                on_released:
+                on_release:
                     load_screen(\
                     'ScreenVenue', manager=app.navigation_manager)
             MenuButton
                 text: 'OpenSpaces'
-                on_released:
+                on_release:
                     load_screen(\
                     'ScreenOpenSpaces', manager=app.navigation_manager)
             MenuButton
                 text: 'DevSprints'
-                on_released:
+                on_release:
                     load_screen(\
                     'ScreenDevSprints', manager=app.navigation_manager)
             MenuButton
                 text: 'Ticket'
-                on_released:
+                on_release:
                     load_screen(\
                     'ScreenTicket', manager=app.navigation_manager)
             MenuButton
                 text: 'Community'
-                on_released:
+                on_release:
                     load_screen(\
                     'ScreenCommunity', manager=app.navigation_manager)
             MenuButton
                 down_count: 0
                 text: 'Registration'
-                on_released: self.down_count += 1
+                on_release: self.down_count += 1
                 on_down_count:
                     if args[1] == 5:load_screen(\
                     'ScreenRegister', manager=app.navigation_manager); self.down_count = 0
             MenuButton
                 text: 'About'
-                on_released:
+                on_release:
                     load_screen(\
                     'ScreenAbout', manager=app.navigation_manager)
 
@@ -119,7 +119,7 @@ class NavigationScreen(Screen):
         size_hint_y: 1
         width: self.height
         allow_stretch: True
-        on_released: app.navigationdrawer.toggle_state()
+        on_release: app.navigationdrawer.toggle_state()
 
     Topic
         id: topic

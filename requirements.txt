@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 buildozer==0.34
 certifi==2018.4.16
 chardet==3.0.4
@@ -17,3 +18,18 @@ pywin32==223
 requests==2.20.0
 urllib3==1.24.2
 virtualenv==16.0.0
+=======
+buildozer
+certifi
+chardet
+cython
+docutils
+futures
+idna
+Kivy
+pexpect
+ptyprocess
+Pygments
+requests
+urllib3
+>>>>>>> Stashed changes
