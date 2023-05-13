@@ -12,7 +12,7 @@ class ScreenOpenSpaces(Screen):
     ScrollView
         ScrollGrid
             AsyncImage
-                source: "http://hrexperience.it/wp-content/uploads/2012/12/openspace.gif"
+                source: "https://static1.gensler.com/uploads/hero_element/3792/thumb_mobile/thumbs/open-spaces_large-2000AOS_1398956406_508x286.jpg"
                 size_hint_y: None
                 allow_stretch: True
                 height: dp(200)

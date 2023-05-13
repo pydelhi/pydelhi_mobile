@@ -56,7 +56,7 @@ class ScreenFeedback(Screen):
             text: 'Submit'
             size_hint_y: None
             height: dp(45)
-            on_released:
+            on_release:
                 rating = '{} out of {}'.format(sldr.value, sldr.max)
                 title = 'Title: ' + root.talk
                 detailed_description = "Description:" + ti_description.text

@@ -4,7 +4,7 @@ Display all the information about venue.
 
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
-from kivy.garden.mapview import MapView, MapMarker
+from kivy_garden.mapview import MapView, MapMarker
 
 
 class ScreenVenue(Screen):

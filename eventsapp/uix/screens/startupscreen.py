@@ -1,5 +1,7 @@
 '''Startup screen
 '''
+from kivy.loader import Loader
+Loader.loading_image = 'data/images/image-loading.gif'
 
 from kivy.uix.screenmanager import Screen
 from kivy.lang import Builder
@@ -12,6 +14,7 @@ class StartupScreen(Screen):
     Builder.load_string('''
 <AsyncImage>
     mipmap: True
+    anim_delay: .05
 
 <SingleLineLabel@Label>
     text_size: self.size
@@ -88,10 +91,6 @@ class StartupScreen(Screen):
             radius:[(8.0, 8.0), (8.0, 8.0), (8.0, 8.0), (8.0, 8.0)]
             size: self.width - dp(3), self.height - dp(3)
             pos: self.x + dp(1.5), self.y + dp(1.5)
-
-
-<AsyncImage>
-    anim_delay: .05
 
 <StartupScreen>
     name: 'StartupScreen'

@@ -34,7 +34,7 @@ class ScreenSponsor(Screen):
         ScrollView
             GridLayout
                 cols: 1
-                orientation: 'vertical'
+                orientation: 'lr-tb'
                 spacing: dp(4)
                 size_hint_y: None
                 height: self.minimum_height

@@ -43,7 +43,7 @@ class ScreenDevSprints(Screen):
             text: root.data.get('text2',"")
         ActiveButton:
             text: 'More details ...'
-            on_released:
+            on_release:
                 import webbrowser
                 webbrowser.open(root.data.get('link',""))
 

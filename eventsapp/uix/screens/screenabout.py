@@ -73,7 +73,7 @@ class ScreenAbout(Screen):
         about = about.get('0.0.1')[0]
         imbt = self.ids.imgbt
         imbt.source = about['logo']
-        self.ids.but.on_released = partial(webbrowser.open, about['website'])
+        self.ids.but.on_release = partial(webbrowser.open, about['website'])
 
         self.ids.comm_desc.text = about['about']
         Factory.Animation(opacity=1, d=.5).start(self.ids.scroll)

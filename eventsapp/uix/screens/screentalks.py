@@ -148,8 +148,8 @@ class ScreenTalks(Screen):
                         imbt = Factory.ImBut()
                         imbt.source = 'atlas://data/default/' + \
                             social_acc.lower()
-                        imbt.on_released = partial(
-                            webbrowser.open, social_link)
+                        imbt.bind(on_release = partial(
+                            webbrowser.open, social_link))
                         imbt.color = app.base_active_bright[:3] + [.9]
                         gl.add_widget(imbt)
                     speaker_details.add_widget(gl)
