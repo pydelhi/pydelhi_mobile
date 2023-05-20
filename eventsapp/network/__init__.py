@@ -70,10 +70,12 @@ def fetch_remote_data(dt):
     '''
     for args in fetch_remote_data._args:
         endpoint, filepath, oldata = args
+        repo = 'pydelhi_mobile'
+        org = 'pydelhi'
         UrlRequest(
             #FIXME: initial url should be abstracted out too.
-            'https://raw.githubusercontent.com/pythonindia/'
-            'PyCon-Mobile-App/master/eventsapp/data/{}.json'.format(endpoint),
+            f'https://raw.githubusercontent.com/{org}/'
+            f'{repo}/master/eventsapp/data/{endpoint}.json',
             file_path=filepath,
             on_success=partial(on_success, oldata, endpoint),
             on_error=partial(on_error, oldata, endpoint),
