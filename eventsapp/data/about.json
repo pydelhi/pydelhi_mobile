@@ -1,9 +1,8 @@
 {
  "0.0.1": [
    {
-    "logo": "https://in.pycon.org/2018/img/banner-logo.png",
-    "website":"https://in.pycon.org/2018/",
-    "about":"PyCon India, the premier conference in India on using and developing the Python programming language is conducted annually by the Python developer community. It attracts the best Python programmers from across the country and abroad."
-   }
+    "logo": "https://conference.pydelhi.org/img/logo.png",
+    "website":"https://conference.pydelhi.org",
+    "about":"PyDelhi conference is hosted annually by PyDelhi Community with an aim to promote Python programming language, for all. We provide a single platform for programmers from different domains & enthusiasts from different walks such as students, entrepreneurs and professionals. Startups, SMEs & Enterprises can also sponsor, connect, showcase and hire software professionals. Experts from various domains demonstrate their application of `Python` as a programming language, while discussion brew on recent and upcoming technologies."}
   ]
 }

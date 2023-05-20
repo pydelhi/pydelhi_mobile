@@ -1,10 +1,10 @@
 # -*- coding: utf8 -*-
-'''App for PyConIndia 2018:
+'''App for pydelhi_mobile 2023:
 
-Github Repo: http://github.com/pythonindia/PyCon-Mobile-App
+Github Repo: http://github.com/pydelhi/pydelhi_mobile
 '''
 
-__version__ = '0.4.0'
+__version__ = '0.5.0'
 
 # setup error reporting
 import sentry_sdk
@@ -21,7 +21,7 @@ from os.path import abspath, dirname
 # This way you avoid first loading kivy default images and .kv then
 # loading your data files on top.
 os.environ['KIVY_DATA_DIR'] = abspath(dirname(__file__)) + '/data'
-#os.environ["PYCONF_OFFLINE_MODE"] = "1"
+os.environ["PYCONF_OFFLINE_MODE"] = "1"
 
 # import App this is the main Class that manages UI's event loop
 from kivy.app import App
@@ -31,7 +31,7 @@ from kivy.properties import ListProperty, StringProperty
 
 script_path = os.path.dirname(os.path.realpath(__file__))
 
-# add module path for screen so they can be dynamically be imported
+# add module path for screen so they can be dynamically imported
 module_path = script_path + '/uix/screens/'
 sys.path.insert(0, module_path)
 
@@ -42,15 +42,14 @@ from utils import load_screen
 
 
 class PyConApp(App):
-    '''
-    Our main app class:
-    '''
-
-    base_active_bright = ListProperty((216/255., 34/255., 118/255., 1))
-    '''
+    '''Our main app class:
     '''
 
-    base_active_color = ListProperty([62./256., 30./256., 101./255, 1])
+    base_active_bright = ListProperty((6.5/255., 90/255., 98/255., 1))
+    '''
+    '''
+
+    base_active_color = ListProperty([54./256., 158./256., 127./255, 1])
     '''This is the base Color in the app that is used to denote the currently
     active widgets, active buttons and highlited areas. Format
     is RGBA.
@@ -70,17 +69,17 @@ class PyConApp(App):
     defaults to Red(217, 52, 47)
     '''
 
-    base_inactive_light = ListProperty([99./255., 34./255., 105./255., 1])
+    base_inactive_light = ListProperty([94./256., 198./256., 147./255, 1])
     '''This is the base Color in the app that is used to denote the currently
     active color used to display active buttons and highlited areas. Format
     is RGBA.
 
     :attr:`base_active_color` is a :class:`~kivy.properties.ListProperty`
 
-    defaults to Red(225p, 224, 224)
+    defaults to Red(225, 224, 224)
     '''
 
-    base_color = ListProperty([1, 1, 1, 1])
+    base_color = ListProperty([222/256, 222/256, 222/256, 1])
     '''This is the base Color in the app that is used to for bakgrounds.
 
     :attr:`base_color` is a :class:`~kivy.properties.ListProperty`

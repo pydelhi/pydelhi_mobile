@@ -1,4 +1,4 @@
-PyCon India 2018 Application
+PyDelhiConf India 2023 Application
 =======
 > Mobile App for PyConIndia
 
@@ -21,8 +21,8 @@ WIP
 - https://kivy.org/docs/api-kivy.modules.screen.html
 
 ## To change images in app
-   - Paste/change the image in PyCon-Mobile-App/tools/theming
-   - Change your directory to PyCon-Mobile-App
+   - Paste/change the image in pydelhi_mobile/tools/theming
+   - Change your directory to pydelhi_mobile
    - Run command ``make theming``
 
 This command will aggregate all the png images in your file to one atlas
@@ -33,7 +33,7 @@ from which the images are loaded.
 1. Install buildozer: pip install buildozer
 2. Edit the buildozer.spec to specify if you have android ndk and sdk,
    if not they will be automatically be downloaded by the next step.
-3. Connect your mobile, enable usb debugging, Then goto PyConIndia
+3. Connect your mobile, enable usb debugging, Then goto pydelhi_mobile
    folder and type `make apk`
 
 Link to a existing vm that can be re-used will be added for convenience.

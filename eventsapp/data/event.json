@@ -1,7 +1,7 @@
 {
   "0.0.1":[{
-  "name": "PyCon India 2018",
-  "venue": "Hyderabad internaitonal Convention Center [HICC]",
+  "name": "PyDelhi Conference 2023",
+  "venue": "IIT Delhi",
   "start_date": "2018-10-05T8:00:00Z",
   "end_date": "2018-10-09T18:00:00Z",
   "venue_partners": [{
@@ -9,7 +9,7 @@
       "about": "Hyderabad International Convention Centre (HICC) is managed by AccorHotels, one of the world’s leading hotel operators, and is jointly owned by Emaar Properties PJSC Dubai and Telangana State Industrial Infrastructure Corporation Ltd.  HICC is a purpose-built, state-of-the-art convention facility, the first of its kind in South Asia. It features an internal hall measuring 6,480 square meters that can be partitioned into six smaller halls. The facility has quite a few feathers in its cap. It has been the winner of the excellence award for “Best Standalone Convention Centre” for a record four times nationally and now regionally awarded by Ministry of Tourism, Government of India and Andhra Pradesh. HICC has also received the award for ‘Best Meeting & Conference Venue” at the South India Travel Awards 2015. HICC also holds ISO 14001:2014 certification. In every aspect, be it infrastructure, services or technology, it compares with the best in the world.",
       "url": "http://www.hicc.com",
       "directions": "",
-      "streetview": ""
+      "streetview": ""  
 
     }]
   }]

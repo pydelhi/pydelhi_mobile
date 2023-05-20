@@ -21,7 +21,7 @@ class ScreenFeedback(Screen):
                 # height: dp(100)
             BoxLayout
                 size_hint_y: None
-                height: dp(45)
+                height: dp(54)
                 BackLabel
                     text: 'Rating: {}'.format(sldr.value)
                     size_hint_x: .5

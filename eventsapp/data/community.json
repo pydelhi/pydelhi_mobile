@@ -1,15 +1,15 @@
 {
 	"0.0.1":[
 		{
-			"name": "PyCon India",
-			"about": "PyCon India, the premier conference in India on using and developing the Python programming language is conducted annually by the Python developer community. It attracts the best Python programmers from across the country and abroad.",
-			"photo": "https://in.pycon.org/2018/img/banner-logo.png",
+			"name": "PyDelhi Conf",
+			"about": "PyDelhi Conf, the premier conference in Delhi on using and developing the Python programming language is conducted annually by the Python developer community. It attracts the best Python programmers from across the country and abroad.",
+			"photo": "https://conference.pydelhi.org/img/logo.png",
 			"social":{
-				"website": "https://in.pycon.org/2018/",
-				"twitter": "https://twitter.com/pyconindia",
-				"facebook": "https://www.facebook.com/pyconindia",
-				"github": "https://github.com/pythonindia",
-				"youtube": "https://www.youtube.com/user/inpycon"
+				"website": "https://conference.pydelhi.org",
+				"twitter": "https://twitter.com/pydelhi",
+				"facebook": "https://www.facebook.com/pydelhi",
+				"github": "https://github.com/pydelhi",
+				"youtube": "https://www.youtube.com/@PyDelhiOrg"
 			}
 		}
 	]

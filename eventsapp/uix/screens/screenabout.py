@@ -42,7 +42,7 @@ class ScreenAbout(Screen):
                     on_release:
                         import webbrowser
                         webbrowser.open(\
-                        'https://github.com/pythonindia/PyCon-Mobile-App')
+                        'https://github.com/pydelhi/pydelhi_mobile')
     Label
         canvas.before:
             Color:
@@ -53,7 +53,7 @@ class ScreenAbout(Screen):
         size_hint_y: None
         height: dp(45)
         color: app.base_inactive_color
-        text: 'With Love by PyConIndia Volunteers'
+        text: 'With Love by PyDelhi Volunteers'
         font_size: dp(15)
         bold: True
         # size_hint_y: None
