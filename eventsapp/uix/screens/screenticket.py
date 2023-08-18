@@ -28,11 +28,11 @@ class ScreenTicket(Screen):
                 text: 'My tickets'
                 on_release:
                     webbrowser.open(\
-                    'http://in.explara.com/a/account/manage/my-orders')
+                    'https://konfhub.com/pc-2023#tickets')
             ActiveButton
                 text: 'Buy tickets'
                 disabled: True
                 on_touch_down: self.text = 'Sold Out'
                 # on_release:
-                #     webbrowser.open('http://bit.do/pyconf2018tickets')
+                #     webbrowser.open('https://konfhub.com/pc-2023#tickets')
 ''')

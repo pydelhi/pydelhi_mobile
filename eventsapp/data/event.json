@@ -1,18 +1,20 @@
 {
   "0.0.1":[{
-  "name": "PyDelhi Conference 2023",
-  "venue": "IIT Delhi",
-  "start_date": "2018-10-05T8:00:00Z",
-  "end_date": "2018-10-09T18:00:00Z",
+  "name": "PyDelhi Conf 2023",
+  "venue": "Conference Center , North Campus Delhi University ",
+  "start_date": "2023-08-19T8:00:00Z",
+  "end_date": "2017-03-20T18:00:00Z",
   "venue_partners": [{
-      "image": "https://home.iitd.ac.in/images/gallery/gallery-lg7.jpg",
-      "name": "Indian Institute of Technology Dellhi [IIT-D]",
-      "about": "Indian Institute of Technology Delhi is one of the 23 IITs created to be Centres of Excellence for training, research and development in science, engineering and technology in India.\n\nEstablished as College of Engineering in 1961, the Institute was later declared as an Institution of National Importance under the “Institutes of Technology (Amendment) Act, 1963” and was renamed as “Indian Institute of Technology Delhi”. It was then accorded the status of a Deemed University with powers to decide its own academic policy, to conduct its own examinations, and to award its own degrees.\n\nSince its inception, over 48000 have graduated from IIT Delhi in various disciplines including Engineering, Physical Sciences, Management and Humanities & Social Sciences. Of these, nearly 5070 received Ph.D. degrees. The number of students who graduated with B.Tech. degree is over 15738. The rest obtained Master’s Degree in Engineering, Sciences and Business Administration. These alumni today work as scientists, technologists, business managers and entrepreneurs. There are several alumni who have moved away from their original disciplines and have taken to administrative services, active politics or are with NGOs. In doing so, they have contributed significantly to building of this nation, and to industrialization around the world.",
-      "url": "https://home.iitd.ac.in/about.php",
-      "directions": "https://goo.gl/maps/cJkBhu4ceRwouRMT9?coh=178573&entry=tt",
-      "streetview": "",
-      "gps": ["28.5457", "77.1928"]
-
+      "name": "DUCC, Delhi North Campus",
+      "about": "DUCC is the central IT institution for the University of Delhi and one of the earliest and prestigious computer centre of the country, providing critical technology support to entire DU community including all its colleges. DUCC collaborates with University partners to advance teaching, learning, innovation and discovery at the Delhi University.  ",
+      "url": "https://ducc.du.ac.in/wp3/about-ducc/",
+      "image": "https://ducc.du.ac.in/wp3/wp-content/uploads/2021/10/DUCC-4.png"
+    },
+    {
+      "name": "Faculty of Technology University of Delhi",
+      "about": "https://fot.du.ac.in/Home",
+      "url": "https://fot.du.ac.in/Home",
+      "image": "https://fot.du.ac.in/userfiles/images/fot-logo.png"
     }]
   }]
 }

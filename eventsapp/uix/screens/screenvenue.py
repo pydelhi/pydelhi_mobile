@@ -12,13 +12,12 @@ class ScreenVenue(Screen):
     Builder.load_string('''
 <ScreenVenue>
     name: 'ScreenVenue'
-    directions: ''
-    url: 'https://google.com'
-    about: 'About Venue here'
-    venue_name: ''
+    directions: 'https://www.google.com/search?client=safari&rls=en&q=Conference+Centre%2C+University+of+Delhi&ie=UTF-8&oe=UTF-8#'
+    url: 'https://www.du.ac.in/index.php?page=Conference-Centre'
+    about: "Conference will be held in the Conference Centre on the University of Delhi.  This state of the art Conference Centre is located opposite the Department of Botany. This complex has a large air- conditioned conference hall, which can seat more than 300 people.\\nThe complex also has nine large and medium-sized committee rooms, board rooms, computer room, and space which can be used for video-conferencing and as a media centre. It has also a large room for coffee and tea breaks, a spacious and impressive lounge and a pantry. The Conference Centre has a beautiful green ambience. The University community organizes academic conferences, national and international, on campus in this Conference Centre.\\nThe Conference Centre is Accesible and Disabled friendly and passed the Access Audit conducted by the `National Centre for Accesible Environments` in 2008."
+    venue_name: 'Conference Centre - Delhi University'
     streetview: ''
-    directions: "https://www.google.com/maps/dir//Indian+Institute+of+Technology+Delhi,+IIT+Delhi+Main+Rd,+IIT+Campus,+Hauz+Khas,+New+Delhi,+Delhi+110016/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x390d1df6b9055fb5:0x81c10b266b1ea3c0!3e0?sa=X&ved=2ahUKEwjeqdGbwoP_AhUQPewKHROvCdAQox16BAgcEBQ"
-    gps: ["28.5457", "77.1928"]
+    gps: ["28.6877", "77.2103"]
     BoxLayout
         spacing: dp(13)
         orientation: 'vertical'

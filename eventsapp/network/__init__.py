@@ -70,12 +70,15 @@ def fetch_remote_data(dt):
     '''
     for args in fetch_remote_data._args:
         endpoint, filepath, oldata = args
+        website = "raw.githubusercontent.com"
         repo = 'pydelhi_mobile'
         org = 'pydelhi'
+        branch = '2023_pydelhi'
+        data_dir = 'eventsapp/data'
         UrlRequest(
             #FIXME: initial url should be abstracted out too.
-            f'https://raw.githubusercontent.com/{org}/'
-            f'{repo}/master/eventsapp/data/{endpoint}.json',
+            f'https://{website}/{org}/'
+            f'{repo}/{branch}/{data_dir}/{endpoint}.json',
             file_path=filepath,
             on_success=partial(on_success, oldata, endpoint),
             on_error=partial(on_error, oldata, endpoint),

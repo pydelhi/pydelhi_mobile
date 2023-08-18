@@ -133,7 +133,7 @@ class ScreenTalks(Screen):
                 speaker_details = SpeakerDetails(speaker=speaker)
                 if 'social' in speaker:
                     speaker_social = speaker['social']
-                    items = speaker_social.items()
+                    items = speaker_social[0].items()
                     social_len = len(items)
                     gl = GridLayout(cols=social_len, size_hint_y=None,
                                     padding='2dp', spacing='2dp')

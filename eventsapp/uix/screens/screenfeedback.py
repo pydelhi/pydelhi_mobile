@@ -64,7 +64,7 @@ class ScreenFeedback(Screen):
                 ticketid = "Ticketid: " + ti_ticketid.text
                 import webbrowser
                 webbrowser.open(\
-                "mailto:feedback@in.pycon.org?Subject=TalkFeedback&body" +\
+                "mailto:contact@pydelhi.org?Subject=TalkFeedback&body" +\
                 "={}".format("\\n\\n".join((rating, title, detailed_description\
                 , name, ticketid))))
 ''')

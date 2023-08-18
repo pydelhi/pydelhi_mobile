@@ -1,769 +1,780 @@
 {
-	"0.0.1": [{
-		"00": {
-			"title": "Registration",
-			"description": "Register yourselves and get your goodie bag. Have a great day!",
-			"type": "default",
-			"speaker": {
-				"name": "PyCon India Registeration Team",
-				"info": "Bring your Tickets up to the counters and get registered.",
-				"photo": "https://images.yourstory.com/2016/06/registration.jpg?auto=compressedu/ICCPM/ImgBanner1/register.jpg"
-			}
-		},
-		"01": {
-			"title": "Exploring PyTorch for AI assistance in Medical Imaging",
-			"description": "This workshop would be divided into two halfs.\n\nFirst Half: Pytorch Introduction Duration: 1 hour The first half would be a gentle introduction to PyTorch framework. \n\n Second Half: Let’s dive in. Duration: 1 hour 25 minutes.",
-			"type": "workshop",
-			"speaker": {
-				"name": "Abhishek Kumar (~vibrantabhi19) ",
-				"info": "DL Scientist @PredibleH, ML Intern | @matelabs_ai. An open source enthusiast & a Linux lover. An Athlete, a RM FC follower, a stand-up comedian.",
-				"photo": "https://avatars2.githubusercontent.com/u/6832471?s=460&v=4",
-				"social": {
-					"website": "https://t.co/nxGGSUorsb",
-					"twitter": "https://twitter.com/abhi_kumar07",
-					"github": "https://github.com/vibrantabhi19",
-					"linkedin": "https://www.linkedin.com/in/abhishek-kumar-74299887/",
-					"googleplus": "https://plus.google.com/u/0/+AbhishekKumarTiwari07",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/exploring-pytorch-for-ai-assistance-in-medical-imaging~bqXpa/"
+	"0.0.1": [
+		{
+			"00": {
+				"title": "Registration and Breakfast",
+				"description": "Register yourselves and get your goodie bag. Have a great day!",
+				"type": "default",
+				"speaker": {
+					"name": "",
+					"info": " The team of PyDelhi would help you to get registered for the event.\n Please lineup on the registration counter at the entrance of the venue.",
+					"photo": "https://cdn2.iconfinder.com/data/icons/healer-flat-vol-1/201/registration-reservation-admission-cashier-512.png"
 				}
-			}
-		},
-		"02": {
-			"title": "Decoding Bollywood with Python and data science",
-			"description": "Our Business Is Our Business None Of Your Business…`\n\n Yes, they wish, but we want to know everything about Bollywood!\n\nWho is more popular, Katrina Kaif or Deepika Padukone?\nWhat movie is the most similar to PK based on the storyline?\nWhich city in India is home of the most active actresses and actors?\nAnd lots of other questions. Do you want to know the answers? And even better, would you like to discover them yourself by using Python and popular libraries such as pandas, Gensim and scikit-learn? And cutting-edge data science techniques? Join us for a workshop full of insights where you will be able to answer your own questions while learning the most advanced Python libraries and algorithms.\n\nThe workshop is designed for Python programmers new to data science. Everybody is welcome, but data analysts and people experienced with pandas will find some parts basic.",
-			"type": "workshop",
-			"speaker": {
-				"name": "Marc Garcia & Himanshu Awasthi",
-				"info": "Himanshu Awasthi is the organiser of Kanpur Python and PyData Kanpur. Free and open source software enthusiast, and passionate about Python and data analysis, He is currently working for KanpurFOSS organization which organize free technical workshops in India. Yai Workshop… Data Analysis Ke Workshop Hai… Kisi Ke Data Analysis sikha kar He Khatam Hoge...\n\nMarc Garcia is a Python fellow and pandas core developer. He has worked as software engineer and data scientist for companies like Bank of America, Tesco, Unilever or NTT Communications. He is a regular organiser of sprints, and speaker at PyCon and PyData conferences. His favourite actor is Aamir Khan, but wouldn't mind teaching Python to Asin.",
-				"photo": "http://paste.opensuse.org/view/raw/85948492",
-				"social": {
-					"twitter": "https://twitter.com/datapythonista",
-					"github": "https://github.com/datapythonista",
-					"website": "http://datapythonista.github.io",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/decoding-bollywood-with-python-and-data-science~eEyWe/"
+			},
+			"01": {
+				"title": "Opening Ceremony",
+				"description": "Opening Ceremony with PyDelhi Community and Delhi University Guests",
+				"type": "default",
+				"speaker": {
+					"name": "",
+					"info": "Official opening of PyDelhiConf 2023. Our presenters Anuvrat Parashar and Dr Sanjeev Singh, would be introducing our special guests to the audience and asking them to speak a few word about the event.",
+					"photo": "http://www.newscaststudio.com/wp-content/uploads/2016/07/2016-rio-olympics-opening-ceremony-promo.png"
 				}
-			}
-		},
-		"03": {
-			"title": "Web UI Automation",
-			"description": "Do you spend too much time manually testing your user interfaces? Automation is the answer. Python and Selenium offer a simple but powerful framework to script any testing. In this talk, I will show you how to use the combination of Selenium WebDriver and Python code to automate web UI tests. Follow along and learn how to locate elements, navigate pages, test user interactions with forms and drag-and-drop elements, and use waits to control test timing and execution. The lessons are practical and can be immediately applied to your development workflow.",
-			"type": "workshop",
-			"speaker": {
-				"name": "Bhoomika Aggarwal",
-				"info": "Bhoomika Agarwal is a developer associate at SAP Labs India. She works in the field of cloud development, machine learning and open source technologies at SAP Labs. Prior to this, she has worked in Sprinklr and completed her graduation in Computer Science from PES Institute of Technology, Bangalore. She has done research in Big Data, Quantum Computing, Linear Algebra and Brain Computer Interface. She has published research papers and given presentations at numerous conferences about these topics. She has published tutorial courses online on Unacamedy and Lynda to disseminate the knowledge she has acquired over the years with experience.",
-				"photo": "https://media.licdn.com/dms/image/C5103AQFipi8rEDXnYw/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=yRrVMlPPd21D0SOZzo58EbOZIYNPqGm-1l24xOihXWo",
-				"social": {
-					"github": "https://github.com/bhoom10",
-					"linkedin": "https://www.linkedin.com/in/bhoomika-agarwal/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/web-ui-automation-using-selenium~ern4e/"
-			
+			},
+			"02": {
+				"title": "Keynote",
+				"description": "",
+				"type": "keynote",
+				"speaker": {
+					"name": "Sarabjot Singh",
+					"info": "Sarabjot Singh is Co-founder and Chief Data Scientist @TatrasData Co-founder @SabudhF Associate Professor at the University of Warwick, UK",
+					"photo": "https://media.licdn.com/dms/image/D4D03AQEezegI1mgevQ/profile-displayphoto-shrink_800_800/0/1677217744772?e=2147483647&v=beta&t=fYduQT0FKUJYyVYaEiNbYi7U4QgTHq4qc0n4GIEYYwY",
+					"social": [
+						{
+							"linkedin": "https://www.linkedin.com/in/sarabjot-singh-anand/"
+						}
+					]
 				}
-			}
-		},
-		"04": {
-			"title": "Advanced Objected oriented programming",
-			"description": "This workshop is dedicated to discuss and extrapolate on the core of Object Oriented Programming its finer details and nuances. The objective of the talk is to introduce concepts that will ensure OOP becomes second nature to a programmer. This is a beginner and an intermediate level talk and is meant to explore OOP concepts in detail.",
-			"type": "workshop",
-			"speaker": {
-				"name": "Vishnu Kiran",
-				"info": "I am a Senior Software Engineer/Data scientist at NextOrbit, Technical Architect at Code Matrix. I am a startup guy who loves the idea of building teams and working with them from the ground up. I have been part of and lead teams that have built medium and large scale software. I am glued to the computer a lot, although that must be obvious. But when I am not peeled to a laptop I play badminton, chess, teach students software and find creative reasons to skip a session in the gym on a daily basis.",
-				"photo": "https://media.licdn.com/dms/image/C5603AQGY3oTTiOJ-aA/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=XIDoOPTWhxNLnUwHg7vrF5LJ6RuTphPIlAnO162HmZY",
-				"social": {
-					"linkedin": "https://www.linkedin.com/in/vishnu-kiran-k-v/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/advanced-object-oriented-programming~e7MQb/"
+			},
+			"03": {
+				"title": "Networking Session",
+				"description": "Food & Beverages",
+				"type": "default",
+				"speaker": {
+					"name": "",
+					"info": "Afternoon tea is a creative way to build relationships. ... a spa, something special to add to a meeting agenda without the sweating",
+					"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
 				}
-			}
-		},
-		"06": {
-			"title": "Free and Open Source libraries of Python for Geo spatial analysis",
-			"description": "Geospatial representation are so prevalent in day to day life, such as even in simple travel related conversation to maps, aerial/satellite images etc. In digital era, geospatial data is extensively produced and consumed in ever growing proportion. Python with its free and open source libraries are giving wide variety yet simple and effective set of tools to visualise and analyse geospatial data. The current workshop is directed for beginners of Python programming language, who have basic understanding on computing and data formats. The primary objective of the workshop is to introduce and give hands on training on selected list of FOSS libraries for geospatial analysis. The workshop as a do it yourself fashion tries to solve two real world problems in Geographical Information System (GIS) and its geospatial data sources.",
-			"type": "workshop",
-			"speaker": {
-				"name": "Nishad KA",
-				"info": "I am a research associate at UrbanEmissions.info, PhD in Environmental Sciences from Sálim Ali Centre for Ornithology and Natural History, Bharathiar University, Coimbatore. My thesis was on `Particulate air pollution data for Coimbatore, India: real time monitoring and modeling with data-interoperability measures`, which emphasised need of open and standardised real time data for better management of air pollution in the country. I got exposure into programming and open source software related to my research studies. I used free and open source libraries of Python for most of my studies, especially on geospatial data compilation, analysis and visualization. I have conducted workshop similar to the current one in Kovaipy, Scipy-India 2017.",
-				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no",
-				"social": {
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/free-and-open-source-libraries-of-python-for-geo-spatial-analysis-and-visualisationmaps-and-satellite-imageries~aQL5e/"
+			},
+			"04": {
+				"title": "Deploying Python on the edge: Mistakes, pain and learnings of scaling Python applications on millions of IoT devices",
+				"description": "Unlock the power of Python on the edge! Optimize your deployments for resource-constrained uptime-critical environments. Join the session to level up your IoT applications using Python.Especially focused on data mining, automotive, computer vision, and AI applications.",
+				"type": "talk",
+				"speaker": {
+					"name": "Vipul Gupta",
+					"info": "Vipul Gupta is a software developer specializing in IoT applications, open-source docs, and sustaining communities. Occasionally reads, meticulously documents, and continuously automates, Vipul has been part of various programs like Google Summer of Code, & Google Code-in as a mentor.",
+					"photo": "https://avatars.githubusercontent.com/u/22801822?v=4",
+					"social": [
+						{
+							"website": "https://mixster.dev/",
+							"github": "https://github.com/vipulgupta2048/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"07": {
-			"title": "Jupiter Hub Binder",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "Carol Willing",
-				"info": "Carol Willing is a Python Software Foundation Fellow and former Director, a core developer of CPython and Project Jupyter, and a Research Software Engineer at Cal Poly San Luis Obispo. She's also Geek-In-Residence at Fab Lab San Diego and co-organizes Pyladies San Diego and San Diego Python.",
-				"photo": "https://in.pycon.org/2018/img/carol-willing.png",
-				"social": {
-					"twitter": "https://twitter.com/WillingCarol",
-					"website": "http://willingconsulting.com/",
-					"proposal": "https://in.pycon.org/cfp/2017/"
+			},
+			"05": {
+				"title": "[IWantOut] Subreddit Insights with NetworkX",
+				"description": "Explore the potential of NetworkX to transform raw data into vibrant visualizations, extract meaningful insights, and map global connections using data scraped from the [IWantOut] subreddit, a community of people who dream of relocating from their country of origin to another country.",
+				"type": "talk",
+				"speaker": {
+					"name": "Navya Agarwal",
+					"info": "I am Navya Agarwal, a second-year Computer Science undergrad at IGDTUW. I am currently an intern with NetworkX as part of the Outreachy program. I like to play around with websites and datasets, and I love contributing to open source. I have previously published a research paper that you can check out on my profile! I am also the co-founder of my college's first-ever Data Science club, The Arc.",
+					"photo": "https://media.licdn.com/dms/image/D4D03AQHP66qv0ftNyw/profile-displayphoto-shrink_400_400/0/1682079757699?e=1695859200&v=beta&t=jbXr3v3gJjXVUe34mDGqph-hpkJeRrjGYU2v3ndRgL8",
+					"social": [
+						{
+							"twitter": "",
+							"github": "https://github.com/navyagarwal",
+							"website": "https://navyaagarwal.com/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"08": {
-			"title": "Designing RESTful APIs",
-			"description": "APIs are all around. Everyone talks about RESTful APIs, but what does “RESTful” really mean? This hands-on workshop takes you through everything that you need to know to design great RESTful APIs.",
-			"type": "workshop",
-			"speaker": {
-				"name": "Anand Chitipothu",
-				"info": "Anand has been crafting beautiful software since a decade and half. He’s now building a data science platform, rorodata, which he recently co-founded. He regularly conducts advanced programming courses through Pipal Academy. He is co-author of web.py, a micro web framework in Python. He has worked at Strand Life Sciences and Internet Archive.",
-				"photo": "https://avatars2.githubusercontent.com/u/7569?s=460&v=4",
-				"social": {
-					"website": "https://anandology.com",
-					"proposal": "https://in.pycon.org/cfp/2017/proposals/kubernetes-101-workshop~b8OWa/",
-					"github": "https://github.com/anandology"
+			},
+			"06": {
+				"title": "Python dictionaries under the hood",
+				"description": "While interviewing a lot of engineers for my team in the past two years, I discovered how incorrectly people perceive the implementation of hashmaps / dictionaries in Python.In this talk, we go through the core implementation of a python dictionary and debunk such misconceptions.",
+				"type": "talk",
+				"speaker": {
+					"name": "Peeyush Aggarwal",
+					"info": "I work as a backend engineer at airbases where I deal with credit cards and real time transactions. Airbase is the 3rd startup I am working with. Both the two startups I worked earlier were acquired. One of those was a marketing automation startup where I worked as a backend and devops engineer. The other one was a AI chatbot startup where I worked as an NLP engineer.",
+					"photo": "https://media.licdn.com/dms/image/C5103AQHepJGluDdPpA/profile-displayphoto-shrink_400_400/0/1533559693467?e=1695859200&v=beta&t=3UpvaMN6-LPgnb3SfV7FrlqQXrUY12y-PINQYMiSvGQ",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": ""
+						}
+					]
 				}
-			}
-		},
-		"09": {
-			"title": "Scaling Python up and out with Numba and Dask",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "Travis E Oliphant",
-				"info": "Travis E. Oliphant is a Founder of Quansight and Director/Co-Founder at Anaconda Inc. He has worked with Python for numerical and scientific programming, notably as the primary developer of the NumPy and as a founding contributor of the SciPy",
-				"photo": "https://in.pycon.org/2018/img/travis-oliphant.png",
-				"social": {
-					"twitter": "https://twitter.com/teoliphant",
-					"website": "http://technicaldiscovery.blogspot.com/"
+			},
+			"07": {
+				"title": "Pragmatic Zen of Python",
+				"description": "Python is widely recognized as an easy-to-use programming language. However, this simplicity can sometimes lead to unforeseen challenges. The Zen of Python serves as a foundational framework, providing guiding principles that, when applied, help to avoid such pitfalls. Often, when working on quick prototypes, it is common for code to be hastily developed and deployed without thorough consideration. This can result in numerous potential issues arising in a production environment. In order to address this, we aim to revisit the concepts of the Zen of Python and explore how they can be effectively applied in typical scenarios. The goal is to produce high-quality code that is safe for production, minimizing the potential for any detrimental impacts.The subject of this talk is not new or unique. Similar topics have been covered in other PyCon chapters. The intended audience is beginners, with the goal of sharing insights and inviting audience participation to explore beyond the topics I have already mentioned.",
+				"type": "talk",
+				"speaker": {
+					"name": "Shantanu",
+					"info": "Developer",
+					"photo": " ",
+					"social": [
+						{
+							"twitter": "",
+							"github": "https://github.com/baali",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"10": {
-			"title": "Understanding NLP - What's the feeling ?",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "By Lakshya Sivaramakrishnan",
-				"info": "Learner || Listener || Leader || Passionate about Technology, Enjoy Public Speaking and Love Connecting to People",
-				"photo": "https://lh3.googleusercontent.com/F1XnhyjRxX9DtiUx_JVMS-9gUa5OUR_lh7Vgau_JxKdVlDCbnykmQUjNQDeDeROX-R6soLY5p9mu=w540-h544-no",
-				"social": {
-					"twitter": "https://www.twitter.com/lakshyas90",
-					"linkedin": "https://www.linkedin.com/pub/lakshya-sivaramakrishnan/67/40/434",
-					"website": "https://about.me/lakshya.sivaramakrishnan",
-					"github": "https://github.com/lakshya90",
-					"googleplus": "https://plus.google.com/105412417430773044496/"
+			},
+			"08": {
+				"type": "talk",
+				"title": "PyTest Optimization - Supercharging Your CircleCI Pipeline for Efficient Testing",
+				"description": "Are you tired of lengthy testing pipelines? Whether it's waiting for tests to complete, dealing with flaky test cases, or re-running tests due to merges, it can be frustrating. If you can relate, then this is the talk for you.",
+				"speaker": {
+					"name": "Martin Siby",
+					"info": " Martin Siby  works As a Senior Backend Engineer at Certa, I have the privilege of working on solving third-party ingestion challenges for enterprises like Walmart. My focus lies in serverless technology and cloud integration using Python.Beyond my professional endeavours, I find joy in optimizing infrastructure and pipelines as a hobby. It's a fascinating adventure that keeps me on my toes, constantly seeking ways to improve and streamline systems.",
+					"photo": "https://media.licdn.com/dms/image/D5603AQFnsCxZoWghlw/profile-displayphoto-shrink_400_400/0/1667543336542?e=1695859200&v=beta&t=Bx4w0D6N3h1NLssSYGydxxqhJrEM8bwS0fCJpvnAKsw",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/martin-siby/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"11": {
-			"title": "Programming a Quantum Computer using Cirq",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "By Vamsi Krishna Devabathini",
-				"info": "I deal with Artificial Intelligence (well, many know it is as Hollywood movie's genre) and Quantum Computing(here Hollywood has to seriously catch-up) at Google. At some point in my life, I experimented with research in Quantum Computing at CQT, NUS Singapore (PhD drop out :( ). I also tried to wrap my head around business thoughts from HBX CORe, Harvard Business School. I received my Masters in Interactive Intelligence from the College of Computing, Georgia Tech. I also hold a Bachelors degree in Computer Science from Indian Institute of Technology, Madras.",
-				"photo": "https://lh3.googleusercontent.com/RAs-5AlVlRH0BV8yMyvdEyKiKHsoOXUQl6ZeS94D4zO6_e4vcBy6f8_zIUxnS4tdCUF4ItWIVNmkJw=w638-h618-no",
-				"social": {
-					"linkedin": "https://in.linkedin.com/in/vamsikrishnadevabathini",
-					"website": "https://sites.google.com/view/vamsikrishna-devabathini",
-					"github": "https://github.com/iamvamsi",
-					"googleplus": "https://plus.google.com/+vamsikrishna_devabathini"
+			},
+			"09": {
+				"type": "default",
+				"title": "Lunch",
+				"description": "Lunch time",
+				"speaker": {
+					"name": "",
+					"info": "",
+					"photo": "",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"12": {
-			"title": "Python ML On the Cloud",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "By Lakshya Sivaramakrishnan",
-				"info": "",
-				"photo": "https://media.licdn.com/dms/image/C5103AQGuxye9qq4U5g/profile-displayphoto-shrink_200_200/0?e=1544054400&v=beta&t=Mnnc51rGpYKyE0FDL_1Dm8fsAkiCCIBHcM87mmaYmvw",
-				"social": {
-					"linkedin": "https://in.linkedin.com/in/krishna-chaitanya-balaga-14908258",
-					"website": "http://www.smartifyme.in"
+			},
+			"10": {
+				"type": "default",
+				"title": "Lightning Talks",
+				"description": "4 Lightning Talks",
+				"speaker": {
+					"name": "",
+					"info": "",
+					"photo": "",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"14": {
-			"title": "Keynote",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "Armin Ronacher",
-				"info": "Armin Ronacher is the creator of the Flask Web Framework and principal software engineer at sentry.io. He is leading an engineering team in Vienna Austria working on Sentry and a frequent speaker at tech and open source conferences.",
-				"photo": "https://in.pycon.org/2018/img/armin-ronacher.png",
-				"social": {
-					"twitter": "https://twitter.com/mitsuhiko",
-					"website": "http://lucumr.pocoo.org/"
+			},
+			"11": {
+				"type": "keynote",
+				"title": "Keynote: Python as a Gateway Language to Open Source",
+				"description": "Python has emerged as an excellent gateway language to open-source development for several reasons. Its simplicity, versatility, and large community make it an attractive choice for beginners looking to contribute to open-source projects. In this session, we will discuss and explore on what makes python a good candidate as a gateway language to open-source.",
+				"speaker": {
+					"name": "Manik Sidana",
+					"info": "A dynamic individual with 15+ years of experience. Throughout his career, Manik has successfully built products from scratch and led multiple teams. Apart from his professional work, he has a strong inclination towards open-source projects and has made significant contributions to projects like OpenStack, Perfkit, CNCF, and others. Moreover, Manik is a key member of the Akraino Technical Steering Committee and serves as the technical lead for the Akraino project Kontour, which focuses on defining Edge KPIs. He possesses expertise in cloud benchmarking, and his passion for coding and reading continues to drive his professional growth.",
+					"photo": "https://media.licdn.com/dms/image/C4D03AQEjs034ZprCsw/profile-displayphoto-shrink_800_800/0/1516556715045?e=1697068800&v=beta&t=DF8hMJSSITRIWqPH0qBKaXJGC9ja3bqcLAurotQcIeQ",
+					"social": [
+						{
+							"twitter": "https://twitter.com/manik019",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/maniksidana/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"15": {
-			"title": "How Helpshift built machine learning platform using Python at large scale",
-			"description": "The purpose of this talk is to describe how helpshift has leveraged python ecosystem to build a machine learning platform without using any third party framework, and how you can build one too.\n\nIn particular, You can learn how to build the following components of machine learning platform using python from this talk.",
-			"type": "talk",
-			"speaker": {
-				"name": "Shyam Shinde",
-				"info": "Hello, I am shyam shinde, actively developing machine learning platform at helpshift.\n\n\nI have diverse experience in developing backend systems, designing and developing system to handle big data.\n\nDeveloped production systems using Java, Clojure and Python. Currently, interested in deploying machine learning services at scale. As side projects, I learn machine learning concepts and try to implement them.\n\nApart from that, I like trekking, reading books and watching movies.",
-				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no",
-				"social": {
-					"linkedin": "http://linkedin.com/in/shyam-shinde-4a867224",
-					"github": "https://github.com/shindesh1",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/how-helpshift-built-machine-learning-platform-using-python-at-large-scale~e0mLa/"
+			},
+			"12": {
+				"type": "talk",
+				"title": "From chaos to order - Leveraging AWS Step Functions for Streamlined Data Processing",
+				"description": "Discover the art of efficient data processing with AWS Step Functions! Let's dive into a world of streamlined workflows, scalable solutions, and seamless automation as we unravel the secrets to transforming your data processing pipelines into a well-oiled (state) machine.",
+				"speaker": {
+					"name": "PS Solanki",
+					"info": "My name is Pankaj Singh Solanki. I am a Senior Backend Engineer at Certa. I work on enhancements to the integration abilities of Certa products and work closely with engineering, product and external teams.I am an avid computer science enthusiast and I love to stay on top of the most recent tech trends. I am very active in open source communities (github/pssolanki111). I also maintain and participate in many communities across discord, gitter and slack.",
+					"photo": "https://media.licdn.com/dms/image/D4D03AQH-uCRhx8SuNQ/profile-displayphoto-shrink_800_800/0/1691381696662?e=1697673600&v=beta&t=W6PglMvdh8Fv0saPtxnz72cmJpYrWC6c8vqe-PWWfak",
+					"social": [
+						{
+							"twitter": "http://twitter.com/_pssolanki",
+							"github": "https://github.com/pssolanki111",
+							"website": "pssolanki.com",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"16": {
-			"title": "Large scale web crawling using Python",
-			"description": "The purpose of this talk is to describe how helpshift has leveraged python ecosystem to build a machine learning platform without using any third party framework, and how you can build one too.\n\nIn particular, You can learn how to build the following components of machine learning platform using python from this talk.",
-			"type": "talk",
-			"speaker": {
-				"name": "Anand B Pillai & Noufal Ibrahim",
-				"info": "Anand B Pillai is a technology professional with 20 years of software development, design and architecture. He has worked in a number of companies over the years in fields ranging from Security, Search Engines, Large Scale Web Portals and Big Data. He is the founder of the Bangalore Python User's Group and the author of Software Architecture with Python (PacktPub, April 2017). Anand has a lot of experience in web-crawling having written the original Python web-crawler HarvestMan in 2005 and developing a number of custom crawlers for various startups solving various problems. Anand is an Independent Software Professional.\n\nNoufal Ibrahim is the CEO and Founder of Hamon Technologies at Calicut, Kerala. He was key to starting the very first PyCon India conference in 2009 and has since been involved in the conference closely throughout the years. Noufal was the keynote speaker of PyCon India 2017. Noufal has made a name not just by his Python community activities, but also by his creative Python introductory talks he has conducted in various universities and institutions in Kerala. He is also a professional trainer in Python and git.\n\nBoth Noufal and Anand are Fellows of the Python Software Foundation (PSF).",
-				"photo": "http://paste.opensuse.org/view/raw/27410096",
-				"social": {
-					"twitter": "https://twitter.com/skeptichacker",
-					"website": "http://hamon.in/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/large-scale-web-crawling-using-python~bkl6d/"
+			},
+			"13": {
+				"type": "talk",
+				"title": "Django Custom Permissions and Authorization: Implementing Fine-Grained Access Control",
+				"description": "I invite you to join me in exploring the world of fine-grained access control in Django! In our tech talk on “Custom Permissions & Authorization,” we will go through customizing permissions, implementing RBAC, managing dynamic access, and ensuring rock-solid security.",
+				"speaker": {
+					"name": "Mayank S Jha",
+					"info": "Hi, I'm a full stack engineer working out of Gurgaon, India. My skillset involves web development technologies such as python, django, typescript, node.js and react. I also have experience with cloud technologies, namely, AWS. I'm always interested to learn about new opportunities and grow myself in a way that allows me to help others and give back.",
+					"photo": "https://media.licdn.com/dms/image/D5603AQGIurzDelFurw/profile-displayphoto-shrink_400_400/0/1682484647680?e=1695859200&v=beta&t=PkY0IuVDRT37CSWMm8r0Ow_D5KZzrUmLzrb0NQoanBA",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/mayanksjha/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"17": {
-			"title": "Creating 3rd generation Web APIs using Hydra and Hydrus",
-			"description": "3rd generation Web APIs enables the creation of truly RESTful services with all its benefits in terms of scalability, maintainability, and evolvability. This allows creating Generic Consoles and loosely coupled clients. The main objective of this talk is to provide an overview of Hydra and Hydrus and how we can create such APIs using Hydrus.",
-			"type": "talk",
-			"speaker": {
-				"name": "Akshay Dahiya",
-				"info": "Hi, my name is Akshay Dahiya. I'm a Mentor and Organization Admin for Python Hydra in Google Summer of Code 2018 and I love working on Semantic Web and Artificial Intelligence-related projects.\nI also mentor a couple of students across various Udacity Nanodegree programs (FullStack Nanodegree, React Nanodegree and Deep Learning Nanodegree) in my free time.",
-				"photo": "https://media.licdn.com/dms/image/C4E03AQHXk2hEjl0z0w/profile-displayphoto-shrink_200_200/0?e=1544054400&v=beta&t=3wVnzwg76YwPGXOXGPXVQsNd2fZn8yQr7h_ZoOQkEcg",
-				"social": {
-					"github": "https://github.com/xadahiya/",
-					"website": "http://www.xadahiya.me/",
-					"linkedin": "https://www.linkedin.com/in/xadahiya/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/creating-3rd-generation-web-apis-using-hydra-and-hydrus~dBpYa/"
+			},
+			"14": {
+				"type": "talk",
+				"title": "Open Source Culture: Fostering Inclusivity and Diversity in Tech Communities",
+				"description": "My talk will focus on the importance of creating a diverse and inclusive tech community and how open source culture can help us achieve this goal. We will discuss the benefits of working in an inclusive environment, and how you can get involved in open-source projects.",
+				"speaker": {
+					"name": "Ayush Kumar",
+					"info": "Open Source Culture: Fostering Inclusivity and Diversity in Tech Communities” is an inspiring and informative talk that aims to ignite a profound shift towards creating more inclusive and diverse tech communities within the open-source movement. This engaging session delves into the importance of cultivating a culture that embraces and celebrates the unique perspectives, backgrounds, and talents of individuals from all walks of life.",
+					"photo": "https://media.licdn.com/dms/image/D4D03AQFjwlbUGVp0CQ/profile-displayphoto-shrink_400_400/0/1690229689659?e=1695859200&v=beta&t=p15sQ34axgsdxX76S2IdBnAGk9f-H5onOveKMNGEibY",
+					"social": [
+						{
+							"twitter": "https://twitter.com/AyushKu38757918",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/ayush-kumar-984443191/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"18": {
-			"title": "Python Project Workflows - Continuous Deployment Friendly",
-			"description": "Have conflicting dependencies (unpleasantly) surprised you? (Darn: It worked on my laptop!)\nDo deterministic builds matter?\nWhat about those run-time errors, which were a typo while accessing an attribute of a class?\nHas the codebase already started smelling a bit?\nUnit tests and what about Dockerization?\nTypically, when your Python project grows beyond a few modules and your team size is more than a couple of developers, having the right tools built into your project development workflow saves one from a lot of surprises (and perhaps late night calls). In this talk, we start with challenges typically seen in Python Projects and look at ways of overcoming them, so that the velocity of code deployment increases. Specifically we are going to be looking at tools that are out there that allow you to -",
-			"type": "talk",
-			"speaker": {
-				"name": "Abhijit Gadgil",
-				"info": "Running a Consulting Company 'hyphenOs Software Labs' in Pune, India.\n\nPython/Go programmer - Mostly for things that pay the bills and ideas that I want to try out.\n\nDatacenter Networking Enthusiast (hacking a yet another Container Networking technology, borrowing ideas from different Projects)\nEternally grateful to whoever wrote tcpdump and the new Wireshark. Number of problems solved using these tools could run into triple digits.\nHates trailing white spaces in a file.",
-				"photo": "https://avatars3.githubusercontent.com/u/387214?s=400&v=4",
-				"social": {
-					"github": "https://github.com/gabhijit",
-					"linkedin": "https://www.linkedin.com/in/amgadgil/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/python-project-workflows-continuous-deployment-friendly~bq8ya/"
+			},
+			"15": {
+				"type": "talk",
+				"title": "Python Inspector - Look Ma No Hands!",
+				"description": "Do you know pip does not support reporting resolved dependencies without actually installing them in a build and depends on run-time environment for the resolution? Python-Inspector comes to rescue here by doing platform independent resolution without building anything : )",
+				"speaker": {
+					"name": "Tushar Goel",
+					"info": "python-inspector is a tool to resolve Python dependencies without actually building or installing anything and does not depend on the runtime operating system and Python version to resolve a dependencies graph. This grew out of a need to resolve dependencies on demand and anywhere. In contrast, pip does not support resolving dependencies without installing or building them. These installations and the underlying dependency resolutions are only for the current Python version and runtime used to run pip that may not be the target version and OS we want to resolve dependencies for.",
+					"photo": "https://media.licdn.com/dms/image/C4E03AQFtDZd3FQWkkA/profile-displayphoto-shrink_800_800/0/1596570555063?e=1697673600&v=beta&t=VWVXB-tadQAQivxMMPmmw_VocmvlQR_7s9Q3PAs5UBY",
+					"social": [
+						{
+							"twitter": "https://twitter.com/caught_nd_bowld",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/tushar-goel-53b09411a/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"19": {
-			"title": "Sponsor Talk - DEShaw\nPyflyby: Automatic imports for Python",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "Karl Chen",
-				"info": "Vice President at D. E. Shaw & Co. New York, New York",
-				"photo": "https://media.licdn.com/dms/image/C4E03AQH_W9JeSHICAQ/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=6dNjlOAuCvHsIuryGeQFUlcLCA8FP2Mv72H-jfmvYv8",
-				"social": {
-					"linkedin": "https://www.linkedin.com/in/quarl/"
+			},
+			"16": {
+				"type": "default",
+				"title": "Networking Session",
+				"description": "Team Time",
+				"speaker": {
+					"name": "",
+					"info": "",
+					"photo": "",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"20": {
-			"title": "Language Model (Text Analysis) using Python from scratch",
-			"description": "What is Language Model?\n\nLanguage Model is basically a way to determine how likely a certain sentence is in the language. 'You are reading my LM write up now ' is more likely to be said than `Now you are my LM reading write up`, even though both sentences contain only correct English words; and the sentence `I had ice-cream with a` is more likely to end with `spoon` than with `banana`. LM helps impart this understanding of a language to machines.\n\nWhat’s the need? `Computers are incredibly fast, accurate and stupid; humans are incredibly slow, inaccurate and brilliant; together they are powerful beyond imagination.` (Albert Einstein)",
-			"type": "talk",
-			"speaker": {
-				"name": "Divya Choudhary",
-				"info": "Data Scientist with ~4 years of experience. For more info, please pay a visit to my LinkedIn.",
-				"photo": "https://media.licdn.com/dms/image/C5603AQFbbWt9_kRVzw/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=Yl14rl2E9CNpBtgC0YLdfO7w6iWc6l5k3Iroo2xNyUY",
-				"social": {
-					"linkedin": "https://www.linkedin.com/in/divyachoudhary28/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/python-project-workflows-continuous-deployment-friendly~bq8ya/"
+			},
+			"17": {
+				"type": "workshop",
+				"title": "Unleash the Power of Python: Automated Testing for Units, Functions, and APIs",
+				"description": "In today's rapidly evolving software landscape, robust testing is paramount to deliver high-quality products. Manual testing is time-consuming and error-prone, often resulting in inefficiencies and bottlenecks. This workshop is designed to empower you with the knowledge and tools required to automate your testing workflows.",
+				"speaker": {
+					"name": "Shailendra Pratap Singh",
+					"info": "An enigmatic professional with 20 years of experience, Head of Quality Assurance at Coredge, dedicated to driving excellence in software quality and automation. Holds a master's degree in computer applications and has served as Quality Head, QA Department Head, and Automation Architect. Contributed to shaping quality standards at Rakuten, XEBIA, Oracle, and Birlasoft.",
+					"photo": "https://media.licdn.com/dms/image/D4D03AQHAK9vaxerrtg/profile-displayphoto-shrink_800_800/0/1667495038950?e=1697673600&v=beta&t=CQvKm5DdBlHWgHJ4Bt78yPnh7MKkBXh4BcYWNC_r6LY",
+					"social": [
+						{
+							"twitter": "https://twitter.com/QAShailendra",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/shailendra-pratap-singh-38268222/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"22": {
-			"title": "Inside the World's Largest Python Course on Coursera",
-			"description": "This session will take a look at the “Python for Everybody” series of courses on the Coursera platform. This course has impacted over 1.3 million students over the last five years. We will look a the history and goals of the course and how the course works to create a learning community. We will show how the free open educational resources (OERs) and book associated with the course have been used by teachers, students, and courses around the world to form a network of educational activities centered around Python. We will also cover briefly the Tsugi (www.tsugi.org) software that is used to build the learning assessments and distribute the OER materials in a way that enables maximum reusability of the materials for other teachers.",
-			"type": "talk",
-			"speaker": {
-				"name": "Charles Severance",
-				"info": "Charles is a Clinical Professor and teaches in the School of Information at the University of Michigan. He is the Chair of the Sakai Project Magament Committee (PMC). Previously he was the Executive Director of the Sakai Foundation and the Chief Architect of the Sakai Project and worked with the IMS Global Learning Consortium promoting and developing standards for teaching and learning technology.",
-				"photo": "http://www.dr-chuck.com/csev_ian_dolphin_small.jpg",
-				"social": {
-					"website": "http://www.dr-chuck.com/",
-					"twitter": "https://twitter.com/drchuck/",
-					"github": "https://github.com/csev",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/inside-the-worlds-largest-python-course-on-coursera~bomYe/"
+			},
+			"18": {
+				"type": "workshop",
+				"title": "Quantum Quest: Exploring Quantum Computing in Python",
+				"description": "Join us on a captivating journey through the realm of Quantum Computing with Python! Discover the extraordinary potential of qubits, unravel mind-bending concepts like superposition and entanglement, and witness how Python empowers us to harness the power of quantum algorithms.",
+				"speaker": {
+					"name": "Divyansh Dwivedi",
+					"info": "Hello, I'm Divyansh Dwivedi, an ex-tech lead at Get My Parking, co-founder@NowIntern, founder@NellStudios and a coding enthusiast with over 12+ years of experience. Since my coding journey began in 2009, I have been captivated by the world of technology. I firmly believe that “Technology is the real superpower in this 21st century.",
+					"photo": "https://static.wixstatic.com/media/46775d_a7c15e3c2e2b4d5e85615c922225811e~mv2.jpg/v1/crop/x_2,y_0,w_370,h_368/fill/w_206,h_205,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_0066_edited.jpg",
+					"social": [
+						{
+							"twitter": "https://twitter.com/justdvnsh",
+							"github": "",
+							"website": "https://www.divyansh.co/",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"23": {
-			"title": "Managing flood risk in this modern age - An Introduction to Geospatial Analytics with Python",
-			"description": "Catastrophic floods had a deep impact on the early human psyche resulting in a potpourri of great flood stories ingrained in the mythology of early human civilisations spread across the globe. Despite all the human progress floods can still cause massive property damages, economic losses and casualty. Several major cities and towns in India reported a series of devastating urban floods in recent times, and the resulting human and financial loss makes study of models that can identify the flood risk of an area extremely relevant.\n\nThis talk focuses on geo-spatial analytics and describes multiple techniques that can be used to assess the flood inundation risk of a geographical area. ",
-			"type": "talk",
-			"speaker": {
-				"name": "Arijit Saha and Atul Singh",
-				"info": "Arijit Saha is a data professional with over sixteen years of industry work experience in architecting, designing & developing large-scale data products, platforms & solutions for both big & medium size enterprises.\n\nAtul Singh is a data science enthusiast with over sixteen years of software industry work experience in product development, research, and innovation. He has a PhD in Computer Science. He has nine granted US patents, eleven pending US patent applications, and over fifteen research publications in various international forums.",
-				"photo": "https://media.licdn.com/dms/image/C4D03AQGm7Z-LNPOHnA/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=pVI4n_nXYG1oy1MIs7iskgwVkid-N520z8LseYG4ndc",
-				"social": {
-					"website": "https://www.linkedin.com/in/atulsinghphd/",
-					"linkedin": "https://www.linkedin.com/in/arijitsaha/",
-					"github": "https://github.com/arijitsaha",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/managing-flood-risk-in-this-modern-age-an-introduction-to-geospatial-analytics-with-python~avz0a/"
+			},
+			"19": {
+				"type": "workshop",
+				"title": "Scaling ML Models on SageMaker",
+				"description": "Scaling ML Models using SageMaker, this is a Hands on Workshop with experts from AWS",
+				"speaker": {
+					"name": "Sanjay Kumar Tiwary",
+					"info": "Sanjay is a Specialist Solutions Architect at AWS India for the Worldwide Public Sector. He collaborates with the Public Sector team to assist government agencies, public sector undertakings, educational institutions, healthcare organizations, and non-profit organizations in adopting AWS Cloud services.",
+					"photo": "https://media.licdn.com/dms/image/D4D03AQEaXCF7AXrUeg/profile-displayphoto-shrink_800_800/0/1679109925449?e=1697068800&v=beta&t=4akH3MyAuIDvZBy3K7Io0H7Sgt6sQfW6Op06sreTPw8",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/sanjay-tiwary-6a363748/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"24": {
-			"title": "Speed up your Python modules using Rust",
-			"description": "Python is a great language, we all know that. Although, sometimes Python can be a bit of a slowcoach when it comes to performing certain tasks. That's where developers have been using C/C++, building extensions and integrating them with Python to speed up processes. However, writing C/C++ extensions with strict deadlines and timelines is a bit difficult and also, these low level languages tend to introduce bugs with respect to memory management, lead to segmentation faults and data races. How often have we all faced the dangling pointer error in C/C++ just because we forgot the de-reference a pointer somewhere?\n\nEnter Rust, ...",
-			"type": "talk",
-			"speaker": {
-				"name": "Abhiram Ravikumar",
-				"info": "Abhiram has been a part of the open source world in Bangalore for over 3 years now. As a student volunteer in Bangalore, he started contributing to Mozilla as well as FSMK (Free Software Movement Karnataka).",
-				"photo": "https://pbs.twimg.com/profile_images/603524751290597376/vPJ3O-rE_400x400.jpg",
-				"social": {
-					"website": "http://abhiramrk.com",
-					"twitter": "https://twitter.com/abhi12ravi",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/speed-up-your-python-modules-using-rust~elNrb/"
+			},
+			"20": {
+				"type": "default",
+				"title": "Registration and Breakfast",
+				"description": "Registration",
+				"speaker": {
+					"name": "",
+					"info": "",
+					"photo": "",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"25": {
-			"title": "The Growth of the Python Community in Africa and How Zimbabwe is Building One of the Biggest Artificial Intelligence Labs in the World",
-			"description": "I will be discussing how the use of Python in Africa has grown significantly since 2010 and how, as a result new innovation centers like the High Performance Center in Zimbabwe are beginning to build an industry using it.",
-			"type": "talk",
-			"speaker": {
-				"name": "Marlene Mhangami",
-				"info": "Marlene Mhangami is the first African to have been voted onto the board of directors of the Python Software Foundation, the group organization behind the popular computer programming language Python. She is the Chair of PyCon Africa and heads up the Google's Women Techmakers Harare. Marlene is also the co-founder of ZimboPy an organization getting Zimbabwean girls excited about code.",
-				"photo": "https://media.licdn.com/dms/image/C4D03AQHIqJx5gAflWQ/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=dmEWU8qivKsakU5dLV_ASEgM295vr2N0nU6rm-JCzXs",
-				"social": {
-					"linkedin": "https://www.linkedin.com/in/marlene-mhangami-90a740130/",
-					"twitter": "https://twitter.com/zimbopy",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/the-growth-of-the-python-community-in-africa-and-how-zimbabwe-is-building-one-of-the-biggest-artificial-intelligence-labs-in-the-world~bWRQa/"
+			},
+			"21": {
+				"type": "keynote",
+				"title": "Keynote: Python: A Catalyst for Builders",
+				"description": "Explore how Python, with its rich ecosystem and versatility, empowers builders across diverse domains. From rapid prototyping to large-scale cloud deployments, delve into Python's transformative role, making development efficient and accessible. From SDLC to MLOps to Generative AI solutions, learn why Python stands as the preferred tool for modern-day innovators aiming for scalable, efficient solutions",
+				"speaker": {
+					"name": "Sachin Punyani",
+					"info": "Sachin Punyani leads the Business Development of AI/ML, Analytics and IoT for India and South Asia with AWS and is helping AWS customers in modernizing their applications by integrating AI/ML and IoT capabilities in their business solutions. He has helped multiple Govt. and Industry organizations blend their domain expertise with new technology to build solutions that have citizen impact. He is certified in Big Data, Analytics and Machine Learning Specialties and holds multiple master degrees in various branches of IT and carries more than 16 years of experience in architecting and implementing scalable enterprise architectures.",
+					"photo": "https://media.licdn.com/dms/image/C4D03AQH-PGvka-OhoQ/profile-displayphoto-shrink_800_800/0/1598376311693?e=1697068800&v=beta&t=2e7pKr3tAF13-HsoyW7O-aftiiqMpdLICi0DrLYPtMY",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/sachin-punyani/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"26": {
-			"title": "Satellite Image Processing with Python",
-			"description": "The Talk will focus on the importance of satellite image processing with main focus on the utilisation of GDAL library to conduct various operations on satellite data. Datasets will include Optical imagery and Synthetic Aperture Radar Imagery. The power of GDAL library alongwith numpy and matplotlib will be demonstrated. Brief analysis of satellite images using python will be given.",
-			"type": "talk",
-			"speaker": {
-				"name": "shubham_thb",
-				"info": "Shubham Sharma is a Junior Research fellow currently working on a collaborative project with Calibration and Validation Division of Space Applications Centre, ISRO, Ahmedabad. He has a rich experience in handling and processing of Synthetic Aperture Radar Images. Also, he has experience in building software tools in python for satellite Image analysis.",
-				"photo": "https://media.licdn.com/dms/image/C4E03AQGQp9ryOpN5sA/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=a5vwsD5NOVtddLtJ6k-mu-Hm-97pk4nd-KjJKVMnLP8",
-				"social": {
-					"linkedin": "https://www.linkedin.com/in/shubham-sharma-54685780/?originalSubdomain=in",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/satellite-image-processing-with-python~dJKKe/"
+			},
+			"22": {
+				"type": "default",
+				"title": "Networking Session",
+				"description": "",
+				"speaker": {
+					"name": "",
+					"info": "",
+					"photo": "",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"27": {
-			"title": "Metaclasses and decorators: a match made in space",
-			"description": "While introducing people to Python metaclasses I realized that sometimes the big problem of the most powerful Python features is that programmers do not perceive how they may simplify their usual tasks. Therefore, features like metaclasses are considered a fancy but rather unuseful addition to a standard OOP language, instead of a real game changer.\n\nThis talk wants to show how to use metaclasses and decorators to create a powerful class that can be inherited and customized by easily adding decorated methods.",
-			"type": "talk",
-			"speaker": {
-				"name": "ishan srivastava",
-				"info": "I am just an average guy who got into programming and fell in love with it.\n\n3rd year undergrad at IIT Dharwad and a Google Summer of Code 2018 student with coala",
-				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no",
-				"social": {
-					"github": "https://github.com/ishanSrt",
-					"twitter": "https://twitter.com/ishan_srt",
-					"website": "http://www.dowhatucant.com/about.html",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/metaclasses-and-decorators-a-match-made-in-space~ervpe/"
+			},
+			"23": {
+				"type": "Talk",
+				"title": "What are JIT Compilers",
+				"description": "We all know Python is an interpreted programming language - but is it really? does it have to be? Let's clarify the misconceptions of what Python really is … and go into concepts of compilers and interpreters to understand what kind of a beast python really is !",
+				"speaker": {
+					"name": "Abdeali Kothari",
+					"info": "In this talk, we will first clarify the common misconception of what a language is. And what the Python language is.And go into various alternatives of the standard CPython that are available, and the key reason they exist (i.e. why not use CPython?) Then we will go into some of the choices CPython has made - specifically about being interpreted vs compiled.",
+					"photo": "/img/abdeali-kothari.jpeg",
+					"social": [
+						{
+							"twitter": "https://twitter.com/AbdealiLoKo",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"30": {
-			"title": "Deploying a Python web app onto a Kubernetes Cluster",
-			"description": "Kubernetes is considered as the new Kernel of the Cloud. It's a distributed computing platform letting users not have to care about infra and helping them concentrate mainly on business logic. By having your web app deployed on a kubernetes cluster you can make sure your app is highly available, and can fail-over when there's a problem.\n\nOne of the main goals of the Kubernetes project is to democratize distributed computing. With Kubernetes being open source, Companies do not have to redo the mundane task of writing a distributed computing platform to achieve high availability, automated deployment, scaling and management of your applications. Kuberentes will take care of that for you. Kubernetes is also considered as a container orchestrator, as it manages containers to achieve the above said goals.\n\n",
-			"type": "talk",
-			"speaker": {
-				"name": "Tarun Pothulapati",
-				"info": "Tarun Pothulapati is currently pursuing his B.Tech in Computer Science and Engineering in Hyderabad. He is a Tech Enthusiast and codes mostly in Python and C#.",
-				"photo": "https://media.licdn.com/dms/image/C4D03AQFVQCBpSP6Iqg/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=YUqzLu4h8osLz3gkJLpTNx9sqKhjrl_W2IyBtBpbXK4",
-				"social": {
-					"github": "https://github.com/pothulapati",
-					"twitter": "https://twitter.com/Pothulapati",
-					"website": "http://www.tarunpothulapati.com/",
-					"linkedin": "https://www.linkedin.com/in/tpothulapati/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/deploying-a-python-web-app-onto-a-kubernetes-cluster~bqo7e/"
+			},
+			"24": {
+				"type": "Talk",
+				"title": "Writing a Python interpreter from scratch",
+				"description": "Python's interpreter does a lot of things for you: checks the syntax is valid and properly indented, imports modules, and runs your code step by step.But if you've ever wondered how exactly it happens, this talk will teach you the whole process, by making a working python interpreter from scratch.",
+				"speaker": {
+					"name": "Tushar Sadhwani",
+					"info": "The plan is to write a really simple, but working interpreter that can run Python code, with zero dependencies.",
+					"photo": "https://avatars.githubusercontent.com/u/43412083?v=4",
+					"social": [
+						{
+							"twitter": " https://twitter.com/sadhlife",
+							"github": "",
+							"website": "https://tushar.lol/",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"31": {
-			"title": "Using NLP to demystify `Terms and Conditions` and summarize the contents",
-			"description": "About a month ago my inbox was flooded with emails beginning with We have decided to update our Terms and Conditions.... Though I am a technical person working in a financial services company and thus terms and conditions are supposed to be my cup of tea, I couldn't get myself to go through any of the actual Terms and Conditions.\n\nA python based Natural Language Processing Engine to summarize the often twisted contents of a legal agreement and defining the pros and cons for the agreement in question for the user would better equip an user to understand what exactly they are agreeing to...",
-			"type": "talk",
-			"speaker": {
-				"name": "ARodz",
-				"info": "A recent tech graduate. A learner and a creator at core. I've majored in the Electronics and Communication domain and have worked on projects catering to software, hardware and communication needs/ problem statements.",
-				"photo": "https://media.licdn.com/dms/image/C5103AQFEDAjSQD07Bg/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=XatbsvTxU7GwabnG_CUS52ys_Qyh-mpq23sLfn9mvOo",
-				"social": {
-					"linkedin": "https://www.linkedin.com/in/aromarodrigues/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/using-nlp-to-demystify-terms-and-conditions-and-summarize-the-contents~b2Aza/"
+			},
+			"25": {
+				"type": "Talk",
+				"title": "Playwright for Browser automation and E2E",
+				"description": "Browsers are our entrypoint into the internet, and have become one of the most commonly used app.Learn to control your browser programmatically in an easy way with Python and Playwright. Speed up your data scraping scripts or improve the way you test your web application !",
+				"speaker": {
+					"name": "Abdeali Kothari",
+					"info": "I have tried multiple frameworks for these tasks. With loads of attempts with selenium, webdriver, cypress, etc. and even hacky approaches like AutoIt, recorders, karma, etc. I finally stumbled upon the combination of playwright + python which has worked phenomenally well for us. I'd like to discuss this case study as I am sure this is a problem many people in the world must be facing. I have seen many discussions about the issues E2E testing poses - but never a “solution” to them, which is what I'd like to discuss.",
+					"photo": "/img/abdeali-kothari.jpeg",
+					"social": [
+						{
+							"twitter": "https://twitter.com/AbdealiLoKo",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"32": {
-			"title": "Processing videos effectively - Piping the Parallelism out of Python",
-			"description": "Almost all of us have used VLC, simply because it's so good at what it does. Reads multiple file formats, transcodes videos, makes basic filtering (brightness correction, etc) effortless, etc\n\nBut have you ever wondered what makes VLC so efficient? VLC uses libavcodec in the backend, which is just a way for it to access the API of FFmpeg, a key software in video-processing. However, one is seldom satisfied with the basic filters that libraries like libavcodec offer, which leaves us to write our own code using libraries like OpenCV and Scikit-Image.\n\n",
-			"type": "talk",
-			"speaker": {
-				"name": "R S Nikhil Krishna",
-				"info": "R S Nikhil Krishna\n\nNikhil is a final year student at IIT Madras. He currently leads the Computer Vision and AI team at Detect Technologies and has headed the CVI group at CFI, IIT Madras in the past. In the past, He has worked on semi-autonomous tumour detection for automated brain surgery at the Division of Remote Handling and Robotics, BARC and on importance sampling for accelerated gradient optimization methods applied to Deep Learning at EPFL, Switzerland.",
-				"photo": "https://media.licdn.com/dms/image/C4D03AQGZc7jVUSjqXg/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=CTOS3n-kv0peZM9wZCU1zzAOWtIHNMrT-HXAWr1mA48",
-				"social": {
-					"twitter": "https://twitter.com/rsnk96",
-					"website": "https://rsnk96.github.io/",
-					"github": "https://github.com/rsnk96",
-					"linkedin": "https://linkedin.com/in/rsnk96",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/processing-videos-effectively-piping-the-parallelism-out-of-python~ejkva/"
+			},
+			"26": {
+				"type": "Talk",
+				"title": "Rust for Python Developers",
+				"description": "Decode the hype around Rust — a language that offers modern solutions for concurrency, memory safety and expressiveness while retaining Python's readability and C-like performance. Join us to learn about Rust and take away ideas to overcome common woes in the Python world!",
+				"speaker": {
+					"name": "Tushar Malik",
+					"info": "Are you a Python developer looking to expand your horizons and explore new possibilities? Have you ever wondered about the hype surrounding Rust? Join me for a talk on “Rust for Python Developers,” where we'll decode this hype and explore why Python developers should be interested.",
+					"photo": "https://media.licdn.com/dms/image/D4D03AQFFH4vCFAaEkA/profile-displayphoto-shrink_400_400/0/1674634647925?e=1695859200&v=beta&t=koIrA0qCv1kRpt6NKExiyRpFLWUZxqhMbbrQRJLRThE",
+					"social": [
+						{
+							"twitter": "https://twitter.com/ditsukeX",
+							"github": "https://github.com/ditsuke",
+							"website": "https://ditsuke.com/",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/mtushar00/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"33": {
-			"title": "Handling DASH streams - Generation, Consumption & Clipping",
-			"description": "Due to lack of open libraries handling DASH media, we would be building a DASH utility toolkit. It would be carrying out activities of segmenting (generation), re-merging (consumption), and clipping out a specific period of clip, where the on-media tasks are carried out by ffmpeg. Special care will be taken for `dynamic` streams which are live streams. We will go through some production code behind https://esl.atx.sx which is specialized facebook streamer, and some challenges that came up serving its 1 million users.",
-			"type": "talk",
-			"speaker": {
-				"name": "_arnAV",
-				"info": "Arnav is currently working as a Developer at hedgehog lab, Hyderabad. He has presented technical talks at previous PyCons. He maintains several pet projects, his most recent https://esl.atx.sx serving the esports community.",
-				"photo": "https://media.licdn.com/dms/image/C4E03AQEj70dzcHfHNg/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=j-iPguESBR3Xcvtms-kKehAcDEmH2Yr3bOz8nmYpO0Y",
-				"social": {
-					"linkedin": "https://www.linkedin.com/in/arnav7/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/handling-dash-streams-generation-consumption-clipping~dwv1b/"
+			},
+			"27": {
+				"type": "Talk",
+				"title": "From Logs to Live Data: Building a Multi-Client Log Streaming Service with Python",
+				"description": "This talk will showcase how to build a real-time, multi-client log streaming service using Python and Server-Sent Events. Attendees will learn how to create a solution that delivers live log data to multiple clients simultaneously as well as understand the tradeoffs of choosing different technologies.",
+				"speaker": {
+					"name": "Yuvraj Singh Pathania",
+					"info": "Software Engineer @CloudSEK || Backend & AI enthusiast",
+					"photo": "https://media.licdn.com/dms/image/C4D03AQE3RNIWF3CRyg/profile-displayphoto-shrink_400_400/0/1662976952085?e=1695859200&v=beta&t=tdbS4gdWBjrmQep-L7Y-5v-uRMbf_fdIP2TP1sjA4Zw",
+					"social": [
+						{
+							"twitter": "https://twitter.com/yuvrajsp01",
+							"github": "",
+							"website": "https://yuvraj.super.site/",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"34": {
-			"title": "Keynote",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "Siddu Ponappa",
-				"info": "Sidu is 4x a Founder/CEO, 3x a failure, 1x profitable and 1x exit. His last venture, C42 Engineering was acquired by GO-JEK in 2015. Now, he handles Data Engineering, Tech People Operations and Tech Recruiting at GO-JEK. He is also a trustee of the Emerging Technology Trust, which organizes RubyConf India, GopherCon India and DevopsDays ",
-				"photo": "https://in.pycon.org/2018/img/sidu-ponnappa.png",
-				"social": {
-					"twitter": "https://twitter.com/ponnappa",
-					"website": "http://sidu.in"
+			},
+			"28": {
+				"type": "default",
+				"title": "Lunch",
+				"description": "Lunch Time",
+				"speaker": {
+					"name": "",
+					"info": "",
+					"photo": "",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"35": {
-			"title": "Keynote",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "Travis E Oliphant",
-				"info": "Travis E. Oliphant is a Founder of Quansight and Director/Co-Founder at Anaconda Inc. He has worked with Python for numerical and scientific programming, notably as the primary developer of the NumPy and as a founding contributor of the SciPy.",
-				"photo": "https://in.pycon.org/2018/img/travis-oliphant.png",
-				"social": {
-					"twitter": "https://twitter.com/teoliphant",
-					"website": "http://technicaldiscovery.blogspot.com/"
+			},
+			"29": {
+				"type": "default",
+				"title": "Lightning Talks",
+				"description": "4 Lightning Talks",
+				"speaker": {
+					"name": "",
+					"info": "TBD",
+					"photo": "",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"36": {
-			"title": "Testing micro-services made easy",
-			"description": "Most of us use micro-services for all the goodness that they bring in. But there are some pain points too, to be addressed while using multiple micro-services. One of the them is testing.\n\nWith all the micro-services as moving parts, how does one ensure that the whole app is coherent and well tested ? Is it enough if all the unit tests pass in each micro-service code base ? What else do we need to be confident in order to ship the code like a boss ?",
-			"type": "talk",
-			"speaker": {
-				"name": "Devi A S L",
-				"info": "Devi is an independent software consultant and trainer with an experience of more than 12 years in the industry. She has been working with PowerToFly as a lead developer/architect. She has given a couple of talks at PyCon India, RootConf before, which were well received.\n\nShe has done M.Tech in Computational Science from IISc, before which she tried out teaching mathematics. She spends her free time enjoying with her 2 daughters and painting with water colors.",
-				"photo": "https://media.licdn.com/dms/image/C4E03AQENqu7_JgL6XA/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=X7dnWtrn31Wl5rdFrzAX2aSeV8yTrUC7A7ZavKot-5E",
-				"social": {
-					"linkedin":"https://www.linkedin.com/in/asldevi/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/testing-micro-services-made-easy~axm3b/"
+			},
+			"30": {
+				"type": "Talk",
+				"title": "Scaling celery infrastructure on AWS with Python",
+				"description": "If you use celery and struggle with scaling your aws infrastructure for your application queue on AWS, this talk will share the solution that works and scales the application based on the queue.",
+				"speaker": {
+					"name": "Mohith Bansal",
+					"info": "Celery is a distributed system that allows application to process tasks asynchronously and allows task scheduling as well. Along with AMQP brokers and result store, celery allows the task to be processed in real-time.But if your message queues have variable amount of load and needs a scaling solution to help you scale the celery workers based on the load instead of keeping bigger instance running and save cost as well, this talk can be insightful to you.",
+					"photo": "https://pbs.twimg.com/profile_images/1222957461201547264/DpQEa7VE_400x400.jpg",
+					"social": [
+						{
+							"twitter": "https://twitter.com/miphilomath",
+							"github": "",
+							"website": "https://theknowledgeseeker.in/",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"37": {
-			"title": "The art of effective visualization of multi-dimensional data - A hands-on approach",
-			"description": "The talk is usually a 90 minutes session but we will be covering it in the scheduled 30 minute session focusing on the main aspects of effective data visualization with the grammar of graphics, leveraging popular open-source frameworks in Python and also as a bonus cover visualization in unstructured data including text, audio and images.",
-			"type": "talk",
-			"speaker": {
-				"name": "Dipanjan Sarkar",
-				"info": "Dipanjan Sarkar is a Data Scientist at Intel, on a mission to make the world more connected and productive. He primarily works on data science, analytics, business intelligence, application development, and building large-scale intelligent systems. He holds a master of technology degree in Information Technology with specializations in Data Science and Software Engineering. He is also an avid supporter of self-learning.",
-				"photo": "https://media.licdn.com/dms/image/C5103AQGuxbKNdtreIg/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=EYwtpAQGSScn8JhA-JwJq7TEEyK-6TLXfAtDRxHe3JI",
-				"social": {
-					"linkedin": "https://www.linkedin.com/in/dipanzan/",
-					"github": "https://github.com/dipanjanS",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/the-art-of-effective-visualization-of-multi-dimensional-data-a-hands-on-approach~ep6Vb/"
+			},
+			"31": {
+				"type": "talk",
+				"title": "Harnessing the Power of Web Scraping: A Practical Guide with Python",
+				"description": "",
+				"speaker": {
+					"name": "Shloka Shah",
+					"info": "Unleash the power of web scraping with Python! Explore traditional techniques and how Python libraries like BeautifulSoup and Scrapy have simplified the process. We will discover how to effortlessly extract valuable data from websites and how we can effectively use it for automation and research.",
+					"photo": "https://pbs.twimg.com/profile_images/1640553236804562947/VSRU6PlR_400x400.jpg",
+					"social": [
+						{
+							"twitter": "https://twitter.com/shlokashah0603",
+							"github": "",
+							"website": "https://blog.shlokashah.com/",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"38": {
-			"title": "Adventures in iterations",
-			"description": "playing makes learning fun. And how do you make learning mathematics fun? Obviously playing with mathematical abstractions. Early days people used to play with mathematical objects using pen and paper. But imagine playing with repetitive things using pen and paper. That will make it boring soon, won't it?\nin this talk I will show you how Python can be used to make simple to advanced iterative mathematics fun. Yes you are reading it right. From shuffling of a deck, sequences of numbers, calculus these are few steps of our journey through iterative mathematics using python.\nI will be using basic python data structures , list comprehensions, and some functional programming aspects to demonstrate this. ‌\ntake aways from this talk - if you are a maths enthusiast , you will understand how to write python code to solve your problem. If you are a programmer you will understand how do you make use of simple python functionality to do recreations in mathematics.",
-			"type": "talk",
-			"speaker": {
-				"name": "Vikrant Patil",
-				"info": "Vikrant has over 12 years of experience in crafting software solutions. He conducts python trainings through pipal academy. He has worked on diverse areas like Computational Fluid Dynamics, mathematical algorithms for bioinformatics, network-based license servers etc. He has worked at Strand Life Sciences and DRDO. He has a Masters in Computational Science from Indian Institute of Science.",
-				"photo": "https://avatars2.githubusercontent.com/u/30557?s=400&v=4",
-				"social": {
-					"github": "https://github.com/vikipedia/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/adventures-in-iterations~bYNMd/"
+			},
+			"32": {
+				"type": "talk",
+				"title": "Three Factors Blocking Contributions to Your Open Source Projects",
+				"description": "",
+				"speaker": {
+					"name": "Saurav Jain",
+					"info": "Saurav is an Open Source Evangelist and Pythonista from the last 4 years in the industry; he is also working as a Community Manager at Amplication. He has successfully contributed 100s of new contributors to OS projects in his career.",
+					"photo": "https://media.licdn.com/dms/image/D4D03AQFxachL8Q_M-Q/profile-displayphoto-shrink_800_800/0/1680504988942?e=1697673600&v=beta&t=7g_yXfKv_FKo1kwcJjG1A9K1Bf-SIq71Mb9pIgPM4Lk",
+					"social": [
+						{
+							"twitter": "https://twitter.com/Sauain",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/saurav-jain-384625147/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"39": {
-			"title": "Django on day 500",
-			"description": "All web developers who use python have come across django. It is both hated and loved to varying degrees. But what about day 500. What happens when you have a team of 15 people developing and 5 teams talking to the django application. What kind of baggage does django bring for day 500th. What kind of things it solves for the day 500.\n\nSome of the points we shall talk about?\n\nWhat kind questions does the day 500 bring?\nAdmin. Your friend and your foe.\nManaging your database changes\nConfiguration Management\nDjango in a muti-skill, multi-team environment.\nDjango in a distributed environment.\nBuilding visibility in your django app.",
-			"type": "talk",
-			"speaker": {
-				"name": "Amit Singh Sethi",
-				"info": "Amit Sethi, is a Software Developer at E2E networks. He has had his own love-hate relationship with django. Apart from that he has worked with frameworks like pyramid, tornado and flask with python. And also used rails and beego with ruby and golang. He is an opinionated developer with love for elegant API's",
-				"photo": "https://media.licdn.com/dms/image/C5603AQHDeK52ov0D-Q/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=IK_NO8LNnjwRL7Ak3a1NSOkcomvsBt4AfoHLpnxNFn4",
-				"social": {
-					"twitter": "https://twitter.com/Dusual",
-					"linkedin": "https://www.linkedin.com/in/amitsinghsethi/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/django-on-day-500~dyDEb/"
+			},
+			"33": {
+				"type": "talk",
+				"title": "Simplifying API Development in Python: Harnessing Pydantic Models and Mako Templates for Streamlined Validation and Formatting",
+				"description": "Validating API requests and formatting responses are integral aspects of the API lifecycle, but the multitude of approaches available can lead to repetitive and convoluted code, making responses complex and difficult to interpret. In this conference talk, we will explore how Pydantic models can be utilized to mitigate repetition by streamlining request validation. Additionally, we will demonstrate the efficacy of storing mock responses to enhance contract visibility. By integrating Mako templates into the development process, we can easily manage cosmetic changes in responses while maintaining the clarity of core services and introduce design first and then develop philosophy. Attendees will gain valuable insights and practical techniques to elevate their Python development process, resulting in more efficient and maintainable APIs.",
+				"speaker": {
+					"name": "Prashant Chaturvedi",
+					"info": "Software Developer at 1MG with 3 years of experience, Prashant is currently working on the common order taking system. He has previously excelled in the diagnostics team, where he managed and enhanced diagnostic systems. Additionally, he contributed significantly to the health records team, successfully implementing real-time digitization of records.",
+					"photo": "https://media.licdn.com/dms/image/D4D03AQFJnbxXK9WitQ/profile-displayphoto-shrink_800_800/0/1690461907938?e=1697673600&v=beta&t=MMFApLN_NC18XouUcG4w44L9liR1RJRpjJFEZldRE7w",
+					"social": [
+						{
+							"twitter": "https://twitter.com/prashantchat11",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/prashantvedi11/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"41": {
-			"title": "Learn Guitar Via Python Programming (MIDI Parsing)",
-			"description": "Ever wanted to play your favourite song on guitar quickly even when you don’t know how to play guitar? Our Python based MIDI to guitar tabs Transcriber can help you do that:\n\n\n• Find your song in MIDI format (with .mid as file extension)\n\n• Let our Python Transcriber do its magic\n\n• Enjoy the tablatures",
-			"type": "talk",
-			"speaker": {
-				"name": "Rishabh Shah",
-				"info": "1. Rishabh Shah\n\nRishabh has around 4 years of python programming experience, he has developed an array of applications of which one was this Transcriber. Inputs from real world guitar players have been quite useful while developing the Transcriber. He developed this transcriber with one of his colleagues Srinivas Kalyani 2. Srinivas Kalyani\n\nSrinivas has around 3 years of technical experience with nearly 1.5 years of experience in Python. He has worked primarily on Django and entered the world of Core Python while writing the Transcriber.",
-				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no",
-				"social": {
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/learn-guitar-via-python-programming-midi-parsing~bDAyd/"
+			},
+			"34": {
+				"type": "talk",
+				"title": "Introduction to the World of Research and Research Papers",
+				"description": "Researching topics and fields is very important and helpful in education. I have worked extensively in the field of Machine Learning and Deep learning and wrote 4 Conference papers and one journal paper and I am excited to share my journey, motivate the students and help them to start their journey.",
+				"speaker": {
+					"name": "Arushi Garg",
+					"info": "Upcoming Product Intern @Adobe | AWS Cloud Club Captain | Management Head @tnp | AI/ ML Circle Manager @GDSC-IGDTUW | Research Intern @ IGDTUW | HR Core @Innerve | Technical Head - Senior executive team @IEEE A zealous and self-motivated individual, enthusiastically keen to learn and explore. Flexible, reliable, possess excellent time-keeping skills, and always open to new learning opportunities. I sought new opportunities in teaching and tech internships. I have an interest in Machine Learning and Deep Learning and I am also working on my Data Structures and problem-solving skills. I am an enthusiastic researcher and currently working as a research intern under the HOD of the Electronics and Communication Dept, IGDTUW in the field of Machine Learning and Deep Learning.",
+					"photo": " https://media.licdn.com/dms/image/C4D03AQG06IeAv3qHJQ/profile-displayphoto-shrink_400_400/0/1653553264483?e=1695859200&v=beta&t=afc6O99ZuyQsCd0e0DsLAnT-XYpj1bvYq-2goXbIZqk",
+					"social": [
+						{
+							"twitter": "https://twitter.com/ArushiSpeaks105",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/arushi-garg105/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"42": {
-			"title": "Cleaning Data with python",
-			"description": "Data quality is a common concern. This talk is about common patterns of data quality errors, how these can be automatically detected in Python, and how they can be fixed (automatically where possible)",
-			"type": "talk",
-			"speaker": {
-				"name": "Anand S",
-				"info": "Anand is a co-founder of Gramener, a data science company, and an aspiring data storyteller",
-				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no",
-				"social": {
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/cleaning-data-with-python~azzma/"
+			},
+			"35": {
+				"type": "default",
+				"title": "Evening Tea, Closing Ceremony/Feedback session",
+				"description": "",
+				"speaker": {
+					"name": "",
+					"info": "",
+					"photo": "",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"43": {
-			"title": "What you need to know about data classes in Python 3.7",
-			"description": "Data classes have been introduced in Python 3.7 (Refer to PEP 557 -- Data Classes). This talk is to introduce data classes to the audience. Talk about why data classes and how they are different from other alternatives like named tuples, etc",
-			"type": "talk",
-			"speaker": {
-				"name": "Sasidhar Donaparthi ",
-				"info": "I am a mechanical engineering graduate with 25+ years of experience in manufacturing and financial services domains, I have started my career as design engineer in hydraulic turbine manufacturing company. After spending 5 years, I have stated my IT journey at Aspect Development/i2 Technology. I have worked primarily on data scrubbing, modelling, analysis and data migration projects for supply chain management. I then joined technology services side of Fidelity, financial services company...",
-				"photo": "https://media.licdn.com/dms/image/C4E03AQEXg2G0yQaXag/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=21Mm2jF57MenO6oa6aVmz7zb61hbQOdp-ZezOHKWaWQ",
-				"social": {
-					"github": "https://github.com/sdonapar linkedin profile",
-					"linkedin": "https://www.linkedin.com/in/sasidonaparthi",
-					"twitter": "https://twitter.com/sdonapar",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/what-you-need-to-know-about-data-classes-in-python-37~dRrEd/"
+			},
+			"36": {
+				"type": "Workshop",
+				"title": "Data Visualisation in Python",
+				"description": "",
+				"speaker": {
+					"name": "Jaidev Deshpande",
+					"info": "Associate Director Tech @ Gramener",
+					"photo": "https://media.licdn.com/dms/image/C5103AQE_YAqu_x8DmA/profile-displayphoto-shrink_800_800/0/1574873034524?e=1697673600&v=beta&t=xDBIcCZfiJW_f4_GHTtmq6OnDiwzDLNtvKpmYppZD9o",
+					"social": [
+						{
+							"twitter": "https://twitter.com/jaidevd",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/jaidevd/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"44": {
-			"title": "Optimizations in Web Development: Journey from a college project to a professional product",
-			"description": "There lies a huge gap between a website developed as a hobby/college project and that developed for professional purposes. The journey to cross this is marked through database optimizations, consistent look and feel, efficient cache layer and many other things! Before delving into the open source world, my code screamed that it's owned by a college kid. But things changed once I interned with Wikimedia (under the Outreachy program). I want to share this very experience with my audience that how some gotchas and design decisions can bring about this transition. In this talk, I'll touch upon some of these areas that mainly deal with backend and database. My talk will summarize my learning from using Django in an application built for Wikipedia and is capable of handling huge amount of Wikipedia's data. ",
-			"type": "talk",
-			"speaker": {
-				"name": "Megha Sharma",
-				"info": "I'm a final year student pursuing B.Tech from Punjab Engineering College. College made me fall in love with coding and after that there has been no looking back. I've been an Outreachy (https://www.outreachy.org/) intern and currently a part of Google Summer of Code. When it comes to the open source world, I'm a regular contributor in Wikimedia. Other than coding, I love reading, writing and trying out new things.",
-				"photo": "https://avatars1.githubusercontent.com/u/24650465?s=400&v=4",
-				"social": {
-					"website": "https://medium.com/@meghasharma4910",
-					"github": "https://github.com/MeghaSharma21",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/optimizations-in-web-development-journey-from-a-college-project-to-a-professional-product~dPp4d/"
+			},
+			"37": {
+				"type": "Workshop",
+				"title": "Making apps with Kivy",
+				"description": "We will go through a couple of template githib repos that guide you through making a intermediate level kivy app and package it.  There would be a mini sprint to make a app yourself. The best app of the lot would would earn a surprise gift. :)",
+				"speaker": {
+					"name": "Akshay Arora",
+					"info": "",
+					"photo": "https://media.licdn.com/dms/image/D4D03AQGTe3rWRTMl3A/profile-displayphoto-shrink_800_800/0/1689768075100?e=1697673600&v=beta&t=vjZDYtw4pJcJ8rNyHK599VAVsKZElcF3rvNaoIv0c84",
+					"social": [
+						{
+							"twitter": "https://twitter.com/quanon_akkshay",
+							"github": "https://github.com/akshayaurora",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/quanon/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"45": {
-			"title": "Using Jupyter to Empower the Less Technical",
-			"description": "Less technical people are often afraid of terminal and command line utilities but are happy to enter the same data on a website. What if Jupyter Notebook could provide cheap, human-friendly UIs for everyone?\n\nLess technical people are happy to interact with graphs and tables, but even with Jupyter Notebook, they are anxious to run cells.\n\nIn this talk we will first go over how an enterprise setup and a few Jupyter modifications can enable a different approach to notebooks that is more in line with Jupyter Hub ideologies. This includes topics like a notebook server per person and kerberization.",
-			"type": "talk",
-			"speaker": {
-				"name": "Marc Udoff",
-				"info": "Marc Udoff: I am a developer for the JavaScript team at the D. E. Shaw group. One of our core principles is that users come first; we are hyper focused on improving the user experience for developers, technical users, and non-technical users of everything from intranet sites to the interactive python environment. We aim to delight.\n\nSriram Nagarajan: I am a technical, product, and people manager in various capacities for various projects at D. E. Shaw India Private Limited. I am involved in building tools that make websites fast and fun to build. I also work on the python integration for our web products – delivering the web capabilities we’ve built to a wider audience via the awesome Python and Jupyter ecosystem.",
-				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no",
-				"social": {
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/using-jupyter-to-empower-the-less-technical~e5r8a/"
+			},
+			"38": {
+				"type": "default",
+				"title": "Sanic Unleashed: Mastering Asynchronous Unit Testing in Python",
+				"description": "In the fast-paced world of web development, Sanic, a Python web framework, has emerged as a powerful and efficient choice for building high-performance applications. However, ensuring the quality and reliability of Sanic applications requires mastering the art of asynchronous unit testing. Asynchronous code brings unique challenges to the testing landscape, and in this session, we will dive into essential topics, including setting up an optimal testing environment, leveraging Pythonic principles for seamless unit testing, and tackling the intricacies of asynchronous code.",
+				"speaker": {
+					"name": "Akshita Dixit",
+					"info": "Akshita has been working with 1MG for the last 7 months. She works with the Cart Team at the company as a Backend Developer. Apart from her role at 1MG, she is  a Hackathon Coach at MLH (Major League Hacking) and shares her knowledge to inspire and guide aspiring developers. Further she manages MLH Fellows as a Pod Leader for the Fellowship. Beyond her professional engagements, she also does freelance technical writing for tech companies and startups.",
+					"photo": "https://media.licdn.com/dms/image/D4D03AQFGx2SO99nJ5A/profile-displayphoto-shrink_800_800/0/1680695651316?e=1697673600&v=beta&t=9s6VHIIl3owoVU1g19Abv9N7jMY9w7GqvbAvIDrKFuY",
+					"social": [
+						{
+							"twitter": "https://twitter.com/plastic96_",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/akshitadixit/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"46": {
-			"title": "Building better Python microservices using GRPC",
-			"description": "Abstract\n\nToday, massive systems are running on microservices communicating with each other using REST APIs. REST is easy to get started, loosely structured and does good job in exchanging messages. But it's convenience comes with a performance trade-off, which takes us back to other optimal alternative: gRPC\n\nDescription\n\nIn this talk we will see what gRPC is and how it is different from REST. We will get started with GRPC by generating stubs for python and build a simple gRPC API server. We will try to find out the advantages of gRPC over REST by doing a side by side comparison of our APIs. We then deploy our server in Kubernetes and discuss how we could scale our microservices.",
-			"type": "talk",
-			"speaker": {
-				"name": "Narendran R",
-				"info": "Naren is a Product Engineer with specific focus on building robust backend systems. Past 5 years, he has built dozens of microservices and scalable systems using Python, Go and AWS cloud. He is an open source enthusiast who loves speaking at tech conferences and currently works as Senior Software Consultant at Tarka Labs. In his industry experience he’s worn plenty of hats- like the one of a Trainer, Embedded Engineer, Product Engineer and Consultant and sometimes even helmets- while he’s out cycling. When he’s not stirring up code, you can find him whipping up a delicious gluten-free treat or training for cycling races. He also blogs about software, productivity and goes by the handle DudeWhoCode across the internet.",
-				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no",
-				"social": {
-					"website": "http://www.dudewho.codes/talks",
-					"github": "https://github.com/dudewhocode/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/building-better-python-microservices-using-grpc~e9jJa/"
+			},
+			"39": {
+				"type": "default",
+				"title": "Best practices for continuous Integration in python",
+				"description": "Continuous integration has become a fundamental process in modern software development, but many Python developers struggle with establishing effective frameworks and standards. In this talk, we will explore practical best practices that empower developers to design efficient continuous integration pipelines for Python services and apps. We will delve into the key aspects of continuous integration and its significance in ensuring code quality, streamlining teamwork, and accelerating project timelines.",
+				"speaker": {
+					"name": "Dollar Dhingra",
+					"info": "",
+					"photo": "https://media.licdn.com/dms/image/C4D03AQEwqOCbrP-ndA/profile-displayphoto-shrink_800_800/0/1609328221457?e=1697673600&v=beta&t=nix3o4R_7MC1JFqKObCrtAItcYUbOoSSTM_HNcpNAfc",
+					"social": [
+						{
+							"twitter": "https://twitter.com/dollardhingra13",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "https://www.linkedin.com/in/dollardhingra/",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"47": {
-			"title": "Bayesian A/B testing using Python",
-			"description": "A/B testing is widely used to compare two alternatives of doing something in order to find out the better alternative. Typical A/B testing involves statistical hypothesis testing which is not intuitive. On the other hand, Bayesian methods are much more intuitive and are based on less assumptions. This talk aims to give a brief on how to do an A/B test with Bayesian methods using Python.",
-			"type": "talk",
-			"speaker": {
-				"name": "Vaibhav Pawar",
-				"info": "Vaibhav Pawar is the head of analytics at Loylty Rewardz. He has 10+ years of experience in using data science to solve business problems across industries like banking, retail, airlines, insurance etc. in the areas of marketing, product, digital and consumer loyalty analytics. He has deep understanding of machine learning techniques and has hands-on experience in automating and deploying ML solutions at scale. He graduated from IIT Bombay in 2008. His master's thesis was in the field of Bayesian networks.",
-				"photo": "https://media.licdn.com/dms/image/C5103AQH8mz0SA9O9VQ/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=mzzYNAlFfQj1N-Kiagvtq8xQB84Disb2eg80snQxsXI",
-				"social": {
-					"linkedin": "https://www.linkedin.com/in/vaibhav-pawar-588391a/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/bayesian-ab-testing-using-python~bmP9a/"
+			},
+			"40": {
+				"type": "default",
+				"title": "BOF",
+				"description": "",
+				"speaker": {
+					"name": "",
+					"info": "",
+					"photo": "",
+					"social": [
+						{
+							"twitter": "",
+							"github": "",
+							"website": "",
+							"facebook": "",
+							"linkedin": "",
+							"proposal": ""
+						}
+					]
 				}
-			}
-		},
-		"48": {
-			"title": "Executing scripts in a few milliseconds with MicroPython",
-			"description": "Command execution time can become important in a number of applications. Commands executed in command-line completion need to execute in less then 100ms or users will perceive a delay. In Shell scripting one might want to execute commands repeatedly in a for loop and fast execution times makes this more feasible.\n\nPython is a very powerful language but has a much slower startup time compared to other interpreted languages like Perl, Lua and Bash. It can take up to 10 times longer to startup then some of these other languages.\n\nMicroPython was written as a lean implementation of Python 3 with a small subset of the standard library mainly intended to run on microcontrollers. But it happily runs on Unix systems with excellent startup performance, making it an ideal candidate for implementing certain time sensitive commands.",
-			"type": "talk",
-			"speaker": {
-				"name": "Marwan Al-Sabbagh",
-				"info": "I'm a passionate Python developer living on the sunny island of Bahrain. I've been a speaker at Python conferences before and ran the Bahrain Linux User Group for five years. During that period I was a regular speaker at the groups monthly meetups. I’ve taught courses in python programing and computer networking to both students and working professionals.",
-				"photo": "https://yt3.ggpht.com/a-/AN66SAxdUNwCVJZ9YuYlGvMBwOTifUEYgUEPONisyA=s900-mo-c-c0xffffffff-rj-k-no",
-				"social": {
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/executing-scripts-in-a-few-milliseconds-with-micropython~e1DVd/"
-				}
-			}
-		},
-		"49": {
-			"title": "Understanding Caching in Python",
-			"description": "I will describe in depth the different methods of Caching, their pros and cons. This talk will help developers focus on their code before scaling their applications. It will provide immense performance improvements with this simple concept.\n\nOutcomes: The novice audience will be able to understand basic Caching Mechanisms. They will be able to utiilize their knowledge which will serve pivotal while scaling applications",
-			"type": "talk",
-			"speaker": {
-				"name": "Chirag Shah",
-				"info": "Marc Udoff: I am a developer for the JavaScript team at the D. E. Shaw group. One of our core principles is that users come first; we are hyper focused on improving the user experience for developers, technical users, and non-technical users of everything from intranet sites to the interactive python environment. We aim to delight.\n\nSriram Nagarajan: I am a technical, product, and people manager in various capacities for various projects at D. E. Shaw India Private Limited. I am involved in building tools that make websites fast and fun to build. I also work on the python integration for our web products – delivering the web capabilities we’ve built to a wider audience via the awesome Python and Jupyter ecosystem.",
-				"photo": "https://graph.facebook.com/1980144008865596/picture?type=large",
-				"social": {
-					"website": "https://avidlearnerinprogress.github.io/",
-					"github": "https://github.com/avidLearnerInProgress",
-					"linkedin": "https://www.linkedin.com/in/chirag-shah/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/understanding-caching-in-python~aQm9a/"
-				}
-			}
-		},
-		"50": {
-			"title": "Alexa enabled smart home programming with Python",
-			"description": "We have a word for it now - Domotics. The fun started a year back when I laid hands on this beautiful device from Amazon, which could not only manage your music, reminders, lists but also make calls and send messages. Basically, a smart phone in the cloud to be used without hands. But a developer sees endless possibilities with this powerful tool. Although speech recognition technology itself is nothing new, Amazon Echo has made its way to the homes of regular consumers.\n\nThis talk is specially focused on giving a head start to the attendees about building and using powerful applications in python for use with an Alexa device. Being a python developer for the past 10 years and working on alexa skills for the past year, I intend to share my experience with the python community and enthusiasts.",
-			"type": "talk",
-			"speaker": {
-				"name": "Sonal Raj",
-				"info": "Sonal Raj (@_sonalraj) has been an avid pythonista for 10 years. He has been working as an integral part of the financial technology industry for the past 4 years. Sonal holds a masters in Information Technology and has been a research fellow at the Indian Institute of Science, Bangalore. His domains of interest include distributed systems and graph databases, and he loves to explore new gadgets and develop new technology. He is also the author of the best selling book 'Neo4j High Performance'.",
-				"photo": "http://www.sonalraj.com/img/aboutme1.jpg",
-				"social": {
-					"website": "http://www.sonalraj.com/",
-					"github": "https://github.com/sonal-raj/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/alexa-enabled-smart-home-programming-with-python~dy5nd/"
-				}
-			}
-		},
-		"51": {
-			"title": "Experience with Python type hints",
-			"description": "Python 3.5 RC introduced type hints in the standard library, since then a lot of projects use Python hints in the code. The large open Python source projects like Zulip use it.\n\nFor past one year, at work, I have been using Python type hints in the data pipelines and neural networks. The talk is based on the experience. In this talk, I'll cover the following topics.",
-			"type": "talk",
-			"speaker": {
-				"name": "Krace Kumar Ramaraju",
-				"info": "I'm kracekumar, working as software engineer for past seven years. My experience has been around building web applications, data pipelines, and automating servers. Currently, I work as a Software Engineer at minds.ai.",
-				"photo": "https://avatars2.githubusercontent.com/u/311929?s=400&v=4",
-				"social": {
-					"website": "http://kracekumar.com/",
-					"github": "https://github.com/kracekumar",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/experience-with-python-type-hints~dwl1e/"
-				}
-			}
-		},
-		"52": {
-			"title": "Amazing world of animation - powered by python",
-			"description": "Do you know, your favorite superheroes in Avengers, cute characters of Kung Fu Panda and the epic wars of Baahubali were brought to screen with the help of python? If you are into gaming, you need to thank python for the characters you have played and the world you have explored. Even the next generation technologies like AR and VR use python to deliver their magic to you in new formats.\n\nIt won't be a overstatement if we say",
-			"type": "talk",
-			"speaker": {
-				"name": "Sreenivas Alapati",
-				"info": "Developer / Artist\n\nSreenivas started his career as an artist. He worked on oscar award winning movies like life of pi as an artist at Rhythm & Hues . He started programming for fun and thanks to his first programming language python, he got hooked on to it. He currently works as a Core Software Engineer at Digital Domain, where he battles the production issues on Hollywood movies with the power of python! He loves art and technology and excited about combining both. He is a self-learner and open-sorcerer. Apart from Python he is interested in Nodejs and Rust.",
-				"photo": "https://avatars2.githubusercontent.com/u/2767425?s=400&v=4",
-				"social": {
-					"twitter": "https://twitter.com/CgCnu",
-					"github": "http://github.com/cg-cnu/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/amazing-world-of-animation-powered-by-python~dLDrd/"
-				}
-			}
-		},
-		"53": {
-			"title": "Automating testbed experiments, data collection and visualization with Python",
-			"description": "During my M.Tech. programme at IIT Guwahati, I observed that researchers in both industry and academia work with testbeds, both real and virtual, for making advancements in Computer Science, whether it is in algorithms, networking protocols or data science by running exhaustive experiments. I realised that Python, being a very versatile language, can be used to do everything related to experimental research and analysis, without requiring the usage of any other scripting language. Based on my experiences, I am presenting a talk to explain how to build automated testbed experiments, data collection and analysis with Python and a few libraries, avoiding big and bulky frameworks as much as possible.",
-			"type": "talk",
-			"speaker": {
-				"name": "Sunit Kumar Nandi",
-				"info": "Hello everyone! I am Sunit Kumar Nandi, a Trainee Teacher at National Institute of Technology, Arunachal Pradesh. I have completed my M.Tech. at IIT Guwahati this year and am also enrolling for Ph.D.\n\nI am deeply interested in computer networking, telecommunications, operating systems and distributed systems design. I use Python for most of my daily work involving a great deal of experimentation. Apart from that I contribute to SuperX OS, a Linux distribution with KDE, based out of Assam, India. I love BSD and Linux based systems and have been involved with them since my childhood. As a result, I have had 14 years of experience with managing Linux servers, networking equipment and designing automated systems in the simplest way possible. In my free time, I spend my efforts running Techno FAQ, an e-magazine for science, technology, education and business.",
-				"photo": "https://scontent.fdel1-4.fna.fbcdn.net/v/t1.0-1/c1.0.160.160/p160x160/37949185_10156716908751617_7202399158819356672_n.jpg?_nc_cat=105&oh=219aae98f6b2c58f3f6a79c0ad96ee12&oe=5C236060",
-				"social": {
-					"facebook": "https://www.facebook.com/sunit.k.nandi",
-					"twitter": "https://twitter.com/sunitknandi",
-					"github": "https://superxos.com/",
-					"proposal": "https://in.pycon.org/cfp/2018/proposals/automating-testbed-experiments-data-collection-and-visualization-with-python~bo0Xd/"
-				}
-			}
-		},
-		"54": {
-			"title": "Keynote",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "Carol Willing",
-				"info": "Carol Willing is a Python Software Foundation Fellow and former Director, a core developer of CPython and Project Jupyter, and a Research Software Engineer at Cal Poly San Luis Obispo. She's also Geek-In-Residence at Fab Lab San Diego and co-organizes Pyladies San Diego and San Diego Python.",
-				"photo": "https://in.pycon.org/2018/img/carol-willing.png",
-				"social": {
-					"twitter": "https://twitter.com/WillingCarol",
-					"website": "http://willingconsulting.com/",
-					"proposal": "https://in.pycon.org/cfp/2017/"
-				}
-			}
-		},
-
-		"97": {
-			"title": "Lunch",
-			"description": "Delicious Hyderabadi cuisine",
-			"type": "workshop",
-			"speaker": {
-				"name": "HICC Caterors",
-				"info": "Gourmet? Street? What will be served?",
-				"photo": "https://az727346.vo.msecnd.net/content/images/lunch-combos/lunch-combos-soup-salad-170721-v2.png"
-			}
-		},
-		"98": {
-			"title": "Tea",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "HICC Caterors",
-				"info": "",
-				"photo": "https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/1/9/0/2/3052091-1-eng-GB/Habitual-tea-consumption-may-help-reduce-arterial-stiffness.jpg"
-			}
-		},
-		"99": {
-			"title": "Lightning Talks",
-			"description": "A lightning talk is a very short presentation lasting only a few minutes, given at a conference or similar forum. Several lightning talks will usually be delivered by different speakers in a single session, sometimes called a data blitz.\n\n Any one can give a talk on any topic related to the event.",
-			"type": "talk",
-			"speaker": {
-				"name": "Every one",
-				"info": "",
-				"photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8vFmQ9PPGjnlW4QxmYuaDylIWe-iVptOd_qwz4OEwvCOTz86Abg"
-			}
-		},
-		"100": {
-			"title": "Closing Ceremony",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "By Manivannan Elangovan, Chair - PyCon India 2018",
-				"info": "",
-				"photo": "http://paste.opensuse.org/view/raw/14567693"
 			}
 		}
-	}]
+	]
 }
