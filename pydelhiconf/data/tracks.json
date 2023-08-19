@@ -5,7 +5,7 @@
 			"description": "Register yourselves and get your goodie bag. Have a great day!",
 			"type": "default",
 			"speaker": {
-				"name": "Volunteers",
+				"name": "",
 				"info": " The team of PyDelhi would help you to get registered for the event.\n Please lineup on the registeration counter at the entrance of the venue.",
 				"photo": "https://cdn2.iconfinder.com/data/icons/healer-flat-vol-1/201/registration-reservation-admission-cashier-512.png"
 			}
@@ -25,7 +25,7 @@
 			"description": "Food & Beverages",
 			"type": "default",
 			"speaker": {
-				"name": "Cateror",
+				"name": "",
 				"info": "Afternoon tea is a creative way to build relationships. ... a spa, something special to add to a meeting agenda without the sweating",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
 			}
@@ -81,7 +81,7 @@
 			"speaker": {
 				"name": "Brij Raj Singh",
 				"info": "Brij is a Sr. Tech evangelist @Microsoft. Brij has a decade worth of experience in both Microsoft technologies as well as with open source technologies. Brij has architected Highly scalable and reliable solutions using Open source technologies. Brij works with a number of startups to help them shape their products over cloud. He tweets interesting anecdotes on OSS, IOT and Microsoft at @brijrajsingh.",
-				"photo": "http://opensourceindia.in/osidays/wp-content/uploads/2016/10/Brijraj-Singh.png",
+				"photo": "https://paste.opensuse.org/images/f539ebb8.jpg",
 				"social": [{
 					"twitter": "www.twitter.com/brijrajsingh",
 					"github": "www.github.com/brijrajsingh",
@@ -143,7 +143,7 @@
 			"description": "Lunch, the abbreviation for luncheon, is a light meal typically eaten at midday. The origin of the words lunch and luncheon relate to a small snack originally eaten at any time of the day or night. During the 20th century the meaning gradually narrowed to a small or mid-sized meal eaten at midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.",
 			"type": "default",
 			"speaker": {
-				"name": "Cateror",
+				"name": "",
 				"info": "Nature provides a free lunch, but only if we control our appetites.",
 				"photo": "https://cristinaparrotte.files.wordpress.com/2011/03/yotam-ottolenghi-vegetarian.jpg?w=640&h=392&crop=1"
 			}
@@ -210,7 +210,7 @@
 			"description": "Food & Beverages",
 			"type": "default",
 			"speaker": {
-				"name": "Cateror",
+				"name": "",
 				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
 			}
@@ -237,7 +237,7 @@
 			"speaker": {
 				"name": "Shagun Sodhani",
 				"info": "I am a developer working with the Analytics and Data Science team at Adobe Systems where I contribute to solving novel problems in the domain of Machine Learning. I recently won the Outstanding Young Engineers Award as well. I have been actively using Python for the past 4 years. I have previously given talks at PyCon India and Big Data Training Program, IIT Roorkee. I also worked as a teaching assistant for the 3-course series on Data Science and Engineering with Spark XSeries, created by professors from University of California, Berkeley, University of California, Los Angeles and Databricks and offered on the edX platform.",
-				"photo": "https://avatars0.githubusercontent.com/u/1321193?v=3&s=400",
+				"photo": "https://paste.opensuse.org/images/70594065.png",
 				"social": [{
 					"github": "https://github.com/shagunsodhani",
 					"website": "https://shagunsodhani.in/",
@@ -250,7 +250,7 @@
 			"description": "Open Space is the only process that focuses on expanding time and space for the force of self-organisation to do its thing. Although one can't predict specific outcomes, it's always highly productive for whatever issue people want to attend to. Some of the inspiring side effects that are regularly noted are laughter, hard work which feels like play, surprising results and fascinating new questions. -Michael M Pannwitz, Open Space practitioner.",
 			"type": "talk",
 			"speaker": {
-				"name": "Community",
+				"name": "",
 				"info": "The best part about attending any meetups or conferences is getting a chance to converse with people with similar interests. Know about their domains of expertise, tell them about yours and if the interests meet up, collaborate for any future projects/prospects. Open Spaces are exactly for providing such environment for you. So go ahead, find a place, interact with people and make the best of this conference. Have a great time!",
 				"photo": "https://s-media-cache-ak0.pinimg.com/originals/75/71/45/7571452d437eac4801e6c490f5d2401e.jpg",
 				"social": [{}]
@@ -271,7 +271,7 @@
 			"description": "Register yourselves and get your goodie bag. Have a great day!",
 			"type": "default",
 			"speaker": {
-				"name": "PyDelhi Team",
+				"name": "",
 				"info": " The team of PyDelhi would help you to get registered for the event.\n Please lineup on the registeration counter at the entrance of the venue.",
 				"photo": "https://cdn2.iconfinder.com/data/icons/healer-flat-vol-1/201/registration-reservation-admission-cashier-512.png"
 			}
@@ -281,7 +281,7 @@
 			"description": "Food & Beverages",
 			"type": "default",
 			"speaker": {
-				"name": "Caterors",
+				"name": "",
 				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg"
 			}
@@ -293,7 +293,7 @@
 			"speaker": {
 				"name": "Akash Mishra",
 				"info": "Akash Mishra (@akash47) is working as a software developer at Betaout. He stumbled onto ZeroMQ while wandering in the python land for better concurrency options. ZeroMQ allowed him to keep his hair while writing concurrent code in python and hence he wants to tell everyone about how awesome it is. ",
-				"photo": "https://secure.meetupstatic.com/photos/member/1/3/4/b/thumb_248464939.jpeg",
+				"photo": "http://paste.opensuse.org/images/25961691.jpg",
 				"social": [{
 					"github": "https://github.com/akash-47",
 					"proposal": "https://cfp.pydelhi.org/pydelhi-conference-2017/proposals/multi-threadingmulti-processing-in-python-using-zeromq~bDRne/"
@@ -452,7 +452,7 @@
 			"proposal": "",
 			"type": "default",
 			"speaker": {
-				"name": "Caterors",
+				"name": "",
 				"info": "A possible explanation why this type of meal was called high tea is the fact that it was eaten at a table. In comparison, Afternoon Tea was taken whilst seating in low, comfortable chairs or sofas. Of course, soon after, the upper classes developed their own variation and also called it 'high tea'.",
 				"photo": "http://www.telegraph.co.uk/content/dam/Food%20and%20drink/2015-09/25sept/green-tea-alamy-large.jpg?=e.jpg"
 			}

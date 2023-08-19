@@ -1,0 +1,27 @@
+name: Android Buildozer
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 1,15 * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request' && (github.event_name == 'schedule' || (github.event_name == 'create' && github.event.ref_type == 'tag') || contains(github.event.head_commit.message, '[build android apk]')) || contains(github.event.pull_request.title, '[build android apk]')
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup docker
+        id: buildozer
+        run: docker build . -t local -f tools/build/build_android.dockerfile
+      - name: build with buildozer
+        run: docker run -i -v $PWD:/srv -w/srv local /bin/bash ./tools/build/build_android.sh
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: package
+          path: build/android/bin/*.apk

@@ -1,0 +1,27 @@
+name: Linux Pyinstaller
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 1,15 * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request' && (github.event_name == 'schedule' || (github.event_name == 'create' && github.event.ref_type == 'tag') || contains(github.event.head_commit.message, '[build linux run]')) || contains(github.event.pull_request.title, '[build linux run]')
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup docker
+        id: linux-docker-kivy
+        run: docker build . -t local -f tools/build/build_linux_amd64.dockerfile
+      - name: build with pyinstaller
+        run: docker run -i -v $PWD:/srv -w/srv local /bin/bash ./tools/build/build_debian_8_docker.sh
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: package
+          path: 'build/linux/dist/**'

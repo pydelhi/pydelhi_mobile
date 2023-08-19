@@ -76,8 +76,7 @@ class NavigationScreen(Screen):
         on_released: app.navigationdrawer.toggle_state()
 
 
-<RightPanel@BoxLayout+Background>
-    source: 'atlas://data/default/bg'
+<RightPanel@BoxLayout>
     orientation: "vertical"
     TopBar
     ScreenManager

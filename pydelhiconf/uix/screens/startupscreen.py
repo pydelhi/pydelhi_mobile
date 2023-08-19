@@ -79,9 +79,13 @@ class StartupScreen(Screen):
         Animation(d=.5, top=self.height/1.3, height=self.height/2., width = self.width, opacity=1).start(img_logo)
         from kivy.clock import Clock
         Clock.schedule_once(lambda dt: app.load_screen('NavigationScreen'), 1)
-    Background:
-        backcolor: app.base_color
-        source: 'atlas://data/default/bg'
+    # Image:
+    #     source: 'atlas://data/default/bg'
+    #     allow_scale: True
+    #     on_texture:
+    #         self.texture.wrap = 'repeat'
+    #         self.texture.uvsize = self.size
+    #     backcolor: app.base_color
     Image
         id: img_logo
         allow_strech: True

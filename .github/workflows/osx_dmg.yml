@@ -1,0 +1,51 @@
+name: OSX dmg
+
+on:
+  push:
+  pull_request:
+  create:
+  schedule:
+    - cron: '0 0 1,15 * *'
+
+env:
+  CC: clang
+  CXX: clang
+  FFLAGS: '-ff2c'
+  USE_SDL2: 1
+
+jobs:
+  osx_dmg_create:
+    runs-on: macos-latest
+    if: github.event_name != 'pull_request' && (github.event_name == 'schedule' || (github.event_name == 'create' && github.event.ref_type == 'tag') || contains(github.event.head_commit.message, '[build app osx]')) || contains(github.event.pull_request.title, '[build app osx]')
+    env:
+      KIVY_SPLIT_EXAMPLES: 0
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+    - name: Make app bundle
+      run:
+        python3 tools/build/build_macosx.py
+    - name: Delete Old Artifacts
+      uses: actions/github-script@v6
+      id: artifact
+      with:
+        script: |
+          const res = await github.rest.actions.listArtifactsForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+          })
+          res.data.artifacts
+            .forEach(({ id }) => {
+              github.rest.actions.deleteArtifact({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                artifact_id: id,
+              })
+            })
+    - uses: actions/upload-artifact@v2
+      with:
+        name: osx_dmg
+        path: ./build/bin/KivyHelloWorld.dmg
